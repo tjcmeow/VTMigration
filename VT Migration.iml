@@ -149,15 +149,11 @@
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="VTMig_OrderProductInline" />
+                            <option name="name" value="testAccountHierarchy" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="VTMig_OrderProductsInlineController" />
-                            <option name="selected" value="true" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="testAccountHierarchy" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
                         </list>
