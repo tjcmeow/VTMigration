@@ -1,0 +1,937 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>VIdeotel Titles</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>BMS_Code__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Record Code from BMS</inlineHelpText>
+        <label>BMS Code</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Beneficial_Organization__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Beneficial Organization</label>
+        <referenceTo>Beneficial_Organizations__c</referenceTo>
+        <relationshipLabel>Titles</relationshipLabel>
+        <relationshipName>Titles</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CODE_NO_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>VALUE(CODE_NO__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>CODE NO (Number)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CODE_NO__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the Title Code / Catalog Number associated with the Title</inlineHelpText>
+        <label>CODE NO.</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>External_Id__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>External Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Included_in_VOD__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>This title is part of a standard title for this type of VOD</inlineHelpText>
+        <label>Included in VOD</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Mini VOD</fullName>
+                    <default>false</default>
+                    <label>Mini VOD</label>
+                </value>
+                <value>
+                    <fullName>Midi VOD</fullName>
+                    <default>false</default>
+                    <label>Midi VOD</label>
+                </value>
+                <value>
+                    <fullName>Full VOD</fullName>
+                    <default>false</default>
+                    <label>Full VOD</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Is_Certification_Available__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Check if Certification for this title is available</inlineHelpText>
+        <label>Is Certification Available</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Is_a_course__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Check if this title is offered as a course</inlineHelpText>
+        <label>Is a course</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Length__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the length of the Title in minutes</inlineHelpText>
+        <label>Length</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>List_Price__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the List Price</inlineHelpText>
+        <label>List Price</label>
+        <precision>11</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Platform_Type__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the platform type that the title is associated with.</inlineHelpText>
+        <label>Platform Type (Wet/Dry)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Dry Cargo</fullName>
+                    <default>false</default>
+                    <label>Dry Cargo</label>
+                </value>
+                <value>
+                    <fullName>Wet Cargo</fullName>
+                    <default>false</default>
+                    <label>Wet Cargo</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Rank__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the applicable Targeted Users/Ranks</inlineHelpText>
+        <label>Rank</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Deck Senior Officer</fullName>
+                    <default>false</default>
+                    <label>Deck Senior Officer</label>
+                </value>
+                <value>
+                    <fullName>Engineering Room Senior Officer</fullName>
+                    <default>false</default>
+                    <label>Engineering Room Senior Officer</label>
+                </value>
+                <value>
+                    <fullName>Deck Junior Officer</fullName>
+                    <default>false</default>
+                    <label>Deck Junior Officer</label>
+                </value>
+                <value>
+                    <fullName>Engineering Room Junior Officer</fullName>
+                    <default>false</default>
+                    <label>Engineering Room Junior Officer</label>
+                </value>
+                <value>
+                    <fullName>Engine &amp; General Purpose Rating</fullName>
+                    <default>false</default>
+                    <label>Engine &amp; General Purpose Rating</label>
+                </value>
+                <value>
+                    <fullName>Deck &amp; general Purpose Ratings</fullName>
+                    <default>false</default>
+                    <label>Deck &amp; general Purpose Ratings</label>
+                </value>
+                <value>
+                    <fullName>Electrical Officers &amp; ETO&apos;s</fullName>
+                    <default>false</default>
+                    <label>Electrical Officers &amp; ETO&apos;s</label>
+                </value>
+                <value>
+                    <fullName>Catering Officer, Cook &amp; Catering</fullName>
+                    <default>false</default>
+                    <label>Catering Officer, Cook &amp; Catering</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>8</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Regulations_Addressed__c</fullName>
+        <externalId>false</externalId>
+        <label>Regulations Addressed</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>STCW_FunctionalArea__c</fullName>
+        <description>12/5/14 Change requested by Raal Harris and Andrew Eardly as some titles are used in multiple categories.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the appropriate STCW Functional Area</inlineHelpText>
+        <label>STCW Functional Area</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Cargo handling &amp; stowage</fullName>
+                    <default>false</default>
+                    <label>Cargo handling &amp; stowage</label>
+                </value>
+                <value>
+                    <fullName>Electrical, electronic &amp; control engrg.</fullName>
+                    <default>false</default>
+                    <label>Electrical, electronic &amp; control engrg.</label>
+                </value>
+                <value>
+                    <fullName>Maintenance &amp; repairs</fullName>
+                    <default>false</default>
+                    <label>Maintenance &amp; repairs</label>
+                </value>
+                <value>
+                    <fullName>Marine engineering</fullName>
+                    <default>false</default>
+                    <label>Marine engineering</label>
+                </value>
+                <value>
+                    <fullName>Maritime training courses</fullName>
+                    <default>false</default>
+                    <label>Maritime training courses</label>
+                </value>
+                <value>
+                    <fullName>Navigation</fullName>
+                    <default>false</default>
+                    <label>Navigation</label>
+                </value>
+                <value>
+                    <fullName>Operation_of_the_Ship</fullName>
+                    <default>false</default>
+                    <label>Operation_of_the_Ship</label>
+                </value>
+                <value>
+                    <fullName>Other subject areas</fullName>
+                    <default>false</default>
+                    <label>Other subject areas</label>
+                </value>
+                <value>
+                    <fullName>Radio communications</fullName>
+                    <default>false</default>
+                    <label>Radio communications</label>
+                </value>
+                <value>
+                    <fullName>Emerg, occup. safety, med. care &amp; survl.</fullName>
+                    <default>false</default>
+                    <label>Emerg, occup. safety, med. care &amp; survl.</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Series__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the Series that the title is related</inlineHelpText>
+        <label>Series</label>
+        <referenceTo>Training_Series__c</referenceTo>
+        <relationshipLabel>Titles</relationshipLabel>
+        <relationshipName>Titles</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>In Production</fullName>
+                    <default>false</default>
+                    <label>In Production</label>
+                </value>
+                <value>
+                    <fullName>Available</fullName>
+                    <default>false</default>
+                    <label>Available</label>
+                </value>
+                <value>
+                    <fullName>Withdrawn</fullName>
+                    <default>false</default>
+                    <label>Withdrawn</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Target_Audience__c</fullName>
+        <externalId>false</externalId>
+        <label>Target Audience</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Title_Description__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Rich Text Format of the Description of a Title</inlineHelpText>
+        <label>Title Description</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Title_Platform_Detail__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Platform(s) that are related to the specific Title</inlineHelpText>
+        <label>Title Platform Detail</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Bulk Carrier</fullName>
+                    <default>false</default>
+                    <label>Bulk Carrier</label>
+                </value>
+                <value>
+                    <fullName>Chemical Tanker</fullName>
+                    <default>false</default>
+                    <label>Chemical Tanker</label>
+                </value>
+                <value>
+                    <fullName>Container</fullName>
+                    <default>false</default>
+                    <label>Container</label>
+                </value>
+                <value>
+                    <fullName>Container Ship</fullName>
+                    <default>false</default>
+                    <label>Container Ship</label>
+                </value>
+                <value>
+                    <fullName>Crude Oil Tanker</fullName>
+                    <default>false</default>
+                    <label>Crude Oil Tanker</label>
+                </value>
+                <value>
+                    <fullName>Crude Tanker</fullName>
+                    <default>false</default>
+                    <label>Crude Tanker</label>
+                </value>
+                <value>
+                    <fullName>Dry Cargo</fullName>
+                    <default>false</default>
+                    <label>Dry Cargo</label>
+                </value>
+                <value>
+                    <fullName>Gas Carrier</fullName>
+                    <default>false</default>
+                    <label>Gas Carrier</label>
+                </value>
+                <value>
+                    <fullName>General Cargo Vessel</fullName>
+                    <default>false</default>
+                    <label>General Cargo Vessel</label>
+                </value>
+                <value>
+                    <fullName>Heavy Lift Vessel</fullName>
+                    <default>false</default>
+                    <label>Heavy Lift Vessel</label>
+                </value>
+                <value>
+                    <fullName>LNG Carriers</fullName>
+                    <default>false</default>
+                    <label>LNG Carriers</label>
+                </value>
+                <value>
+                    <fullName>LPG Carrier</fullName>
+                    <default>false</default>
+                    <label>LPG Carrier</label>
+                </value>
+                <value>
+                    <fullName>Misc</fullName>
+                    <default>false</default>
+                    <label>Misc</label>
+                </value>
+                <value>
+                    <fullName>Offshore</fullName>
+                    <default>false</default>
+                    <label>Offshore</label>
+                </value>
+                <value>
+                    <fullName>Offshore Supply Vessel</fullName>
+                    <default>false</default>
+                    <label>Offshore Supply Vessel</label>
+                </value>
+                <value>
+                    <fullName>Passenger</fullName>
+                    <default>false</default>
+                    <label>Passenger</label>
+                </value>
+                <value>
+                    <fullName>Product Oil Tanker</fullName>
+                    <default>false</default>
+                    <label>Product Oil Tanker</label>
+                </value>
+                <value>
+                    <fullName>Reefer</fullName>
+                    <default>false</default>
+                    <label>Reefer</label>
+                </value>
+                <value>
+                    <fullName>RO-RO</fullName>
+                    <default>false</default>
+                    <label>RO-RO</label>
+                </value>
+                <value>
+                    <fullName>RO-RO PCC</fullName>
+                    <default>false</default>
+                    <label>RO-RO PCC</label>
+                </value>
+                <value>
+                    <fullName>Seismic Survey Vessels</fullName>
+                    <default>false</default>
+                    <label>Seismic Survey Vessels</label>
+                </value>
+                <value>
+                    <fullName>Tankers</fullName>
+                    <default>false</default>
+                    <label>Tankers</label>
+                </value>
+                <value>
+                    <fullName>Tugs</fullName>
+                    <default>false</default>
+                    <label>Tugs</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>VP_NO__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the VP# that is associated with the Title</inlineHelpText>
+        <label>VP NO.</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Titles</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Titles</fullName>
+        <columns>NAME</columns>
+        <columns>CODE_NO__c</columns>
+        <columns>List_Price__c</columns>
+        <columns>Series__c</columns>
+        <columns>VP_NO__c</columns>
+        <columns>Length__c</columns>
+        <columns>Platform_Type__c</columns>
+        <columns>STCW_FunctionalArea__c</columns>
+        <columns>Is_a_course__c</columns>
+        <columns>Is_Certification_Available__c</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Titles</label>
+    </listViews>
+    <listViews>
+        <fullName>Order_Administration_Titles</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Order Administration</label>
+        <queue>Order_Administration</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Titles_with_STCW_Codes_from_CTS</fullName>
+        <columns>NAME</columns>
+        <columns>CODE_NO__c</columns>
+        <columns>Title_Description__c</columns>
+        <columns>STCW_FunctionalArea__c</columns>
+        <columns>Series__c</columns>
+        <columns>List_Price__c</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>STCW_FunctionalArea__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <label>Titles with STCW Codes from CTS</label>
+    </listViews>
+    <nameField>
+        <label>Title Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Titles</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Titles</fullName>
+        <active>true</active>
+        <description>Titles Default Record Type</description>
+        <label>Titles</label>
+        <picklistValues>
+            <picklist>Included_in_VOD__c</picklist>
+            <values>
+                <fullName>Full VOD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Midi VOD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mini VOD</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Platform_Type__c</picklist>
+            <values>
+                <fullName>Dry Cargo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wet Cargo</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Rank__c</picklist>
+            <values>
+                <fullName>Catering Officer%2C Cook %26 Catering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deck %26 general Purpose Ratings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deck Junior Officer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deck Senior Officer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electrical Officers %26 ETO%27s</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Engine %26 General Purpose Rating</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Engineering Room Junior Officer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Engineering Room Senior Officer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>STCW_FunctionalArea__c</picklist>
+            <values>
+                <fullName>Navigation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Operation_of_the_Ship</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Available</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Production</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Withdrawn</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Title_Platform_Detail__c</picklist>
+            <values>
+                <fullName>Bulk Carrier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chemical Tanker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Container</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Container Ship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Crude Oil Tanker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Crude Tanker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dry Cargo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gas Carrier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Cargo Vessel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Heavy Lift Vessel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LNG Carriers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LPG Carrier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Misc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Offshore</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Offshore Supply Vessel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Passenger</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Oil Tanker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RO-RO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RO-RO PCC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reefer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seismic Survey Vessels</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tankers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tugs</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <searchResultsAdditionalFields>CODE_NO__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Included_in_VOD__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Is_a_course__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>List_Price__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Platform_Type__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Series__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Title_Platform_Detail__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>Title_XML</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Title XML</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/apex/TitlesXMLFile?titleID={!Titles__c.Id}</url>
+    </webLinks>
+</CustomObject>

@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Account__c</fullName>
+        <description>The Account/Customer who has made this Payment</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Account/Customer who has made this Payment</inlineHelpText>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Payments</relationshipLabel>
+        <relationshipName>Payments</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Accounting_Period__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Accounting Period</label>
+        <referenceTo>Accounting_Period__c</referenceTo>
+        <relationshipLabel>Payments</relationshipLabel>
+        <relationshipName>Payments</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Allocated_Amount__c</fullName>
+        <description>The Amount that has already been Allocated.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Amount that has already been Allocated.</inlineHelpText>
+        <label>Allocated Amount</label>
+        <summarizedField>Payment_Allocation__c.Amount__c</summarizedField>
+        <summaryFilterItems>
+            <field>Payment_Allocation__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Completed</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Payment_Allocation__c.Payment__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Amount</label>
+        <precision>12</precision>
+        <required>true</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Bank_Charges__c</fullName>
+        <externalId>false</externalId>
+        <label>Bank Charges</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Bank_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Bank Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Bank_Reference__c</fullName>
+        <externalId>false</externalId>
+        <label>Bank Reference</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cash_Allocation_Rule__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT( Account__r.Cash_Allocation_Rule__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Cash Allocation Rule</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cheque_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Cheque Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Cheque_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Cheque Number</label>
+        <length>15</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Data_Import__c</fullName>
+        <externalId>false</externalId>
+        <label>Data Import</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>2015-02-20 Legacy D/R Offset --&gt; CreditNotes</fullName>
+                    <default>false</default>
+                    <label>2015-02-20 Legacy D/R Offset --&gt; CreditNotes</label>
+                </value>
+                <value>
+                    <fullName>2015-02-20 Legacy D/R Offset -&gt; Paid Invoices</fullName>
+                    <default>false</default>
+                    <label>2015-02-20 Legacy D/R Offset -&gt; Paid Invoices</label>
+                </value>
+                <value>
+                    <fullName>2015-02-20 Legacy D/R Offset -&gt; Eight -Ve Invoices</fullName>
+                    <default>false</default>
+                    <label>2015-02-20 Legacy D/R Offset -&gt; Eight -Ve Invoices</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Exchange_Rate_Applied__c</fullName>
+        <externalId>false</externalId>
+        <label>Exchange Rate Applied</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>External_Id__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>External Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Invoice__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>If this is selected on creation of Payment, allocation is done automatically</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If this is selected on creation of Payment, allocation is done automatically</inlineHelpText>
+        <label>Invoice</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>$Source.Account__c</field>
+                <operation>equals</operation>
+                <valueField>Invoice__c.Account__r.Id</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Invoice__c</referenceTo>
+        <relationshipLabel>Payments</relationshipLabel>
+        <relationshipName>Payments</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Legal_Entity__c</fullName>
+        <externalId>false</externalId>
+        <label>Payment Legal Entity</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Legal_Entity</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>No_Of_Days_From_Payment_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>TODAY() - Payment_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>No Of Days From Payment Date</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Order__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Order</label>
+        <referenceTo>Job__c</referenceTo>
+        <relationshipLabel>Payments</relationshipLabel>
+        <relationshipName>Payments</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Paid_by__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Optionally choose the Contact who made this Payment. This Contact must belong to the same Account.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Optionally choose the Contact who made this Payment. This Contact must belong to the same Account.</inlineHelpText>
+        <label>Paid by</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>You can choose a contact that belongs to the same account as the payment.</errorMessage>
+            <filterItems>
+                <field>Contact.AccountId</field>
+                <operation>equals</operation>
+                <valueField>$Source.Account__c</valueField>
+            </filterItems>
+            <infoMessage>Choose the contact who made this payment. This contact must belong to the same account as the payment.</infoMessage>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Payments</relationshipLabel>
+        <relationshipName>Payments</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Payment_Created_From__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Payment Created From</label>
+        <referenceTo>Invoice__c</referenceTo>
+        <relationshipLabel>Payments (Payment Created From)</relationshipLabel>
+        <relationshipName>Payment_Created_From</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Payment_Date__c</fullName>
+        <defaultValue>TODAY()</defaultValue>
+        <description>The Date on which this Payment was made.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Date on which this Payment was made.</inlineHelpText>
+        <label>Payment Date</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Payment_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Payment Description</label>
+        <length>131072</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Payment_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Payment Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>ACH</fullName>
+                    <default>false</default>
+                    <label>ACH</label>
+                </value>
+                <value>
+                    <fullName>Bad Debt Write off</fullName>
+                    <default>false</default>
+                    <label>Bad Debt Write off</label>
+                </value>
+                <value>
+                    <fullName>Bank Fee</fullName>
+                    <default>false</default>
+                    <label>Bank Fee</label>
+                </value>
+                <value>
+                    <fullName>Bank Transfer</fullName>
+                    <default>false</default>
+                    <label>Bank Transfer</label>
+                </value>
+                <value>
+                    <fullName>BMS Receipt</fullName>
+                    <default>false</default>
+                    <label>BMS Receipt</label>
+                </value>
+                <value>
+                    <fullName>BMS Sales Payment</fullName>
+                    <default>false</default>
+                    <label>BMS Sales Payment</label>
+                </value>
+                <value>
+                    <fullName>Cash</fullName>
+                    <default>false</default>
+                    <label>Cash</label>
+                </value>
+                <value>
+                    <fullName>Cheque</fullName>
+                    <default>false</default>
+                    <label>Cheque</label>
+                </value>
+                <value>
+                    <fullName>Commission Deducted</fullName>
+                    <default>false</default>
+                    <label>Commission Deducted</label>
+                </value>
+                <value>
+                    <fullName>Credit Card</fullName>
+                    <default>false</default>
+                    <label>Credit Card</label>
+                </value>
+                <value>
+                    <fullName>FX Gain/Loss</fullName>
+                    <default>false</default>
+                    <label>FX Gain/Loss</label>
+                </value>
+                <value>
+                    <fullName>Legacy D/R Offset</fullName>
+                    <default>false</default>
+                    <label>Legacy D/R Offset</label>
+                </value>
+                <value>
+                    <fullName>Withholding Tax</fullName>
+                    <default>false</default>
+                    <label>Withholding Tax</label>
+                </value>
+                <value>
+                    <fullName>Int Co Transfer</fullName>
+                    <default>false</default>
+                    <label>Int Co Transfer</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Refunded_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Refunded Amount</label>
+        <summarizedField>Refund_Line__c.Refund_Amount__c</summarizedField>
+        <summaryForeignKey>Refund_Line__c.Payment__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Initiated</fullName>
+                    <color>#F3D904</color>
+                    <default>false</default>
+                    <label>Initiated</label>
+                </value>
+                <value>
+                    <fullName>Completed</fullName>
+                    <color>#78C953</color>
+                    <default>true</default>
+                    <label>Completed</label>
+                </value>
+                <value>
+                    <fullName>Cancelled</fullName>
+                    <color>#FF0000</color>
+                    <default>false</default>
+                    <label>Cancelled</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>UnAllocated_Amount_0_30_Days__c</fullName>
+        <description>UnAllocated Amount from the Invoice Date(0-30 days)</description>
+        <externalId>false</externalId>
+        <formula>IF(No_Of_Days_From_Payment_Date__c &lt;= 30, Unallocated_Amount__c, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>UnAllocated Amount(0-30 Days)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UnAllocated_Amount_121_180_Days__c</fullName>
+        <description>UnAllocated Amount from the Invoice Date(121-180 days)</description>
+        <externalId>false</externalId>
+        <formula>IF(No_Of_Days_From_Payment_Date__c &gt;= 121 &amp;&amp; No_Of_Days_From_Payment_Date__c &lt;= 180, Unallocated_Amount__c, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>UnAllocated Amount from the Invoice Date(121-180 days)</inlineHelpText>
+        <label>UnAllocated Amount(121-180 Days)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UnAllocated_Amount_180_Days__c</fullName>
+        <description>UnAllocated Amount from the Invoice Date(&gt; 180 days)</description>
+        <externalId>false</externalId>
+        <formula>IF(No_Of_Days_From_Payment_Date__c &gt; 180, Unallocated_Amount__c, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>UnAllocated Amount from the Invoice Date(&gt; 180 days)</inlineHelpText>
+        <label>UnAllocated Amount(&gt; 180 Days)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UnAllocated_Amount_31_60_Days__c</fullName>
+        <description>UnAllocated Amount from the Invoice Date(31-60 days)</description>
+        <externalId>false</externalId>
+        <formula>IF(No_Of_Days_From_Payment_Date__c &gt;= 31 &amp;&amp; No_Of_Days_From_Payment_Date__c &lt;= 60, Unallocated_Amount__c, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>UnAllocated Amount from the Invoice Date(31-60 days)</inlineHelpText>
+        <label>UnAllocated Amount(31-60 Days)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UnAllocated_Amount_61_90_Days__c</fullName>
+        <description>UnAllocated Amount from the Invoice Date(31-60 days)</description>
+        <externalId>false</externalId>
+        <formula>IF(No_Of_Days_From_Payment_Date__c &gt;= 61 &amp;&amp; No_Of_Days_From_Payment_Date__c &lt;= 90, Unallocated_Amount__c, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>UnAllocated Amount from the Invoice Date(31-60 days)</inlineHelpText>
+        <label>UnAllocated Amount(61-90 Days)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UnAllocated_Amount_91_120_Days__c</fullName>
+        <description>UnAllocated Amount from the Invoice Date(91-120 days)</description>
+        <externalId>false</externalId>
+        <formula>IF(No_Of_Days_From_Payment_Date__c &gt;= 91 &amp;&amp; No_Of_Days_From_Payment_Date__c &lt;= 120, Unallocated_Amount__c, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>UnAllocated Amount from the Invoice Date(91-120 days)</inlineHelpText>
+        <label>UnAllocated Amount(91-120 Days)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Unallocated_Amount__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( ISPICKVAL(Status__c, &apos;Cancelled&apos;), 0, Amount__c - Allocated_Amount__c - Refunded_Amount__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Unallocated Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Payment</label>
+    <nameField>
+        <label>Payment Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Payments</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Unit</fullName>
+        <default>true</default>
+        <label>Unit</label>
+    </customValue>
+    <customValue>
+        <fullName>Day</fullName>
+        <default>false</default>
+        <label>Day</label>
+    </customValue>
+    <customValue>
+        <fullName>Hour</fullName>
+        <default>false</default>
+        <label>Hour</label>
+    </customValue>
+    <customValue>
+        <fullName>License</fullName>
+        <default>false</default>
+        <label>License</label>
+    </customValue>
+    <masterLabel>UOM</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

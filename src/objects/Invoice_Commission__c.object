@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>This object will tract the commissions that are related to an Invoice, the order and the partner associated with the order.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Commission_Liability__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Invoice_Line__r.Product__r.Commissionable_Product__c = True, 
+(Invoice_Line__r.Line_Amount__c -  Invoice_Line__r.Credit_Line_Amount__c ) * Invoice_Line_Commission_Rate__c , 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>This is the amount of potential Commission Liability for the Invoice Line</inlineHelpText>
+        <label>Commission Liability</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Commission__c</fullName>
+        <externalId>false</externalId>
+        <formula>Commissionable_Amount__c *  Invoice_Line_Commission_Rate__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>(Calculated Commission based on Commissionable Amount - Credited Line Amount) * Invoice Line Commission Rate</inlineHelpText>
+        <label>Commission</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Commissionable_Amount__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(AND(Invoice_Line__r.Commissionable_Product__c = True, Invoice_Line__r.Invoice__r.Payment_Status__c = &quot;Paid&quot; ), (Invoice_Line__r.Total_Line_Amount__c -  Invoice_Line__r.Credit_Line_Amount__c ) , 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>If the Product is Commissionable, The Invoice is Paid, the Commissionable Amount = Total Line Value that Commission can be paid on. Otherwise the Commissionable Amount = 0.</inlineHelpText>
+        <label>Commissionable Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contract_Year__c</fullName>
+        <externalId>false</externalId>
+        <formula>Invoice_Line__r.Contract_Year__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Contract Year</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Date_Paid_from_Invoice__c</fullName>
+        <externalId>false</externalId>
+        <formula>Invoice_Line__r.Invoice__r.Date_Paid__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>This is the Date Paid from the Invoice, which is based on the Invoice Payment Status being updated to Paid Status</inlineHelpText>
+        <label>Date Paid from Invoice</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>External_Id__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>External Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Invoice_Comm_18_char__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(Id)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Invoice Comm 18-char</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Invoice_Line_Charge_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>Invoice_Line__r.Service_Start_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Invoice Line Charge Start Date</inlineHelpText>
+        <label>Invoice Line Charge Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Invoice_Line_Commission_Rate__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(Legacy_Order_Invoice_Commission_Rate__c &gt; 0, Legacy_Order_Invoice_Commission_Rate__c, IF( Invoice_Line__r.Contract_Year__c &gt;1, Subsequent_Year_Commission__c  ,  Year1_Commission__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>If Order Contract Year is less than or =1, use Year1 Comm. Otherwise use Subsequent Year Commission Rate</inlineHelpText>
+        <label>Invoice Line Comm Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Invoice_Line__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Invoice Line</inlineHelpText>
+        <label>Invoice Line</label>
+        <referenceTo>Invoice_Line__c</referenceTo>
+        <relationshipLabel>Invoice Line Commissions</relationshipLabel>
+        <relationshipName>Invoice_Commissions</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Invoice__c</fullName>
+        <externalId>false</externalId>
+        <formula>Invoice_Line__r.Invoice__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Invoice related to the Invoice Line</inlineHelpText>
+        <label>Invoice</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Legacy_Order_Invoice_Commission_Rate__c</fullName>
+        <description>Invoice commission rate on specific legacy orders</description>
+        <externalId>false</externalId>
+        <label>Legacy Order Invoice Commission Rate</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>OrderLegalEntity__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Invoice_Line__r.Job__r.Legal_Entity__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>OrderLegalEntity</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Order_Commissions__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Order Commissions</label>
+        <referenceTo>Order_Commissions__c</referenceTo>
+        <relationshipLabel>Invoice Commissions</relationshipLabel>
+        <relationshipName>Invoice_Commissions</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Partner_Commissioned__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>The Partner to be commissioned</inlineHelpText>
+        <label>Partner Commissioned</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Invoice Commissions</relationshipLabel>
+        <relationshipName>Invoice_Commissions</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SalesAgentDup__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If this checkbox is true then,order commission having duplicate salesagent and product</description>
+        <externalId>false</externalId>
+        <label>SalesAgentDup</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Service_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>Invoice_Line__r.Job_Rate_Plan_Charge__r.Service_Activation_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Invoice Line&apos;s RelatedOrder Rate Plan Charge Start date</inlineHelpText>
+        <label>Service Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Subsequent_Year_Commission__c</fullName>
+        <externalId>false</externalId>
+        <formula>Order_Commissions__r.Subsequent_Years_Commission_Rate__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Subsequent Year Commission Rate from Order Commission</inlineHelpText>
+        <label>Subsequent Year Commission</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Year1_Commission__c</fullName>
+        <externalId>false</externalId>
+        <formula>Order_Commissions__r.Year1_Commission__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Year1 Commission from the Order Commission</inlineHelpText>
+        <label>Year1 Commission</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <label>Invoice Commission</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Invoice__c</columns>
+        <columns>Invoice_Line__c</columns>
+        <columns>Partner_Commissioned__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>X2016_Invoice_Line_Commissions</fullName>
+        <columns>NAME</columns>
+        <columns>Partner_Commissioned__c</columns>
+        <columns>Invoice_Line__c</columns>
+        <columns>Invoice__c</columns>
+        <columns>Contract_Year__c</columns>
+        <columns>Order_Commissions__c</columns>
+        <columns>Year1_Commission__c</columns>
+        <columns>Subsequent_Year_Commission__c</columns>
+        <columns>Invoice_Line_Charge_Start_Date__c</columns>
+        <columns>Service_Start_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>greaterOrEqual</operation>
+            <value>1/1/2016 12:00 AM</value>
+        </filters>
+        <label>2016 Invoice Line Commissions</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <nameField>
+        <displayFormat>ICOM-{0000}</displayFormat>
+        <label>Invoice Commissions Name</label>
+        <trackHistory>true</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Invoice Commissions</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Invoice__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Invoice_Line__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Partner_Commissioned__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Partner_Commissioned__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Invoice__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Invoice_Line__c</lookupDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>Invoice__c</searchFilterFields>
+        <searchFilterFields>Invoice_Line__c</searchFilterFields>
+        <searchFilterFields>Order_Commissions__c</searchFilterFields>
+        <searchFilterFields>Partner_Commissioned__c</searchFilterFields>
+        <searchResultsAdditionalFields>Invoice_Line__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Order_Commissions__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Partner_Commissioned__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

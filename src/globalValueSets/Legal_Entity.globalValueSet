@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>VCR</fullName>
+        <default>false</default>
+        <label>VCR</label>
+    </customValue>
+    <customValue>
+        <fullName>VMA</fullName>
+        <default>false</default>
+        <label>VMA</label>
+    </customValue>
+    <customValue>
+        <fullName>VMI</fullName>
+        <default>false</default>
+        <label>VMI</label>
+    </customValue>
+    <customValue>
+        <fullName>VTS</fullName>
+        <default>false</default>
+        <label>VTS</label>
+    </customValue>
+    <masterLabel>Legal Entity</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

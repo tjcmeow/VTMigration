@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>External_ID__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <description>Old Id from KVH System</description>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>18</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>First_Manual_Schedule_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>First Manual Schedule Date</label>
+        <summarizedField>Revenue_Recognition_Schedule__c.Schedule_Date__c</summarizedField>
+        <summaryForeignKey>Revenue_Recognition_Schedule__c.Revenue_Recognition_Rule__c</summaryForeignKey>
+        <summaryOperation>min</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>First_Manual_Schedule_Month__c</fullName>
+        <externalId>false</externalId>
+        <label>First Manual Schedule Month #</label>
+        <summarizedField>Revenue_Recognition_Schedule__c.Month__c</summarizedField>
+        <summaryForeignKey>Revenue_Recognition_Schedule__c.Revenue_Recognition_Rule__c</summaryForeignKey>
+        <summaryOperation>min</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>No_of_Manual_Schedules__c</fullName>
+        <externalId>false</externalId>
+        <label>No of Manual Schedules</label>
+        <summaryForeignKey>Revenue_Recognition_Schedule__c.Revenue_Recognition_Rule__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Recognition_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Recognition Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Recognition_Type__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Service Activation Date</fullName>
+                    <default>true</default>
+                    <label>Service Activation Date</label>
+                </value>
+                <value>
+                    <fullName>Service End Date</fullName>
+                    <default>false</default>
+                    <label>Service End Date</label>
+                </value>
+                <value>
+                    <fullName>Revenue Recognition Date</fullName>
+                    <default>false</default>
+                    <label>Revenue Recognition Date</label>
+                </value>
+                <value>
+                    <fullName>Invoice Date</fullName>
+                    <default>false</default>
+                    <label>Invoice Date</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Daily Recognition Over Time</controllingFieldValue>
+                <controllingFieldValue>Full Recognition on Specific Date</controllingFieldValue>
+                <controllingFieldValue>Monthly Recognition Over Time</controllingFieldValue>
+                <controllingFieldValue>Weighted Monthly Recognition Over Time</controllingFieldValue>
+                <valueName>Service Activation Date</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Daily Recognition Over Time</controllingFieldValue>
+                <controllingFieldValue>Full Recognition on Specific Date</controllingFieldValue>
+                <controllingFieldValue>Monthly Recognition Over Time</controllingFieldValue>
+                <controllingFieldValue>Weighted Monthly Recognition Over Time</controllingFieldValue>
+                <valueName>Revenue Recognition Date</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Full Recognition on Specific Date</controllingFieldValue>
+                <controllingFieldValue>Weighted Monthly Recognition Over Time</controllingFieldValue>
+                <valueName>Service End Date</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Full Recognition on Specific Date</controllingFieldValue>
+                <controllingFieldValue>Weighted Monthly Recognition Over Time</controllingFieldValue>
+                <valueName>Invoice Date</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Recognition_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Recognition Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Daily Recognition Over Time</fullName>
+                    <default>false</default>
+                    <label>Daily Recognition Over Time</label>
+                </value>
+                <value>
+                    <fullName>Full Recognition on Specific Date</fullName>
+                    <default>false</default>
+                    <label>Full Recognition on Specific Date</label>
+                </value>
+                <value>
+                    <fullName>Manual Recognition</fullName>
+                    <default>false</default>
+                    <label>Manual Recognition</label>
+                </value>
+                <value>
+                    <fullName>Monthly Recognition Over Time</fullName>
+                    <default>false</default>
+                    <label>Monthly Recognition Over Time</label>
+                </value>
+                <value>
+                    <fullName>Weighted Monthly Recognition Over Time</fullName>
+                    <default>false</default>
+                    <label>Weighted Monthly Recognition Over Time</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Revenue_Recognition_Schedule_Total__c</fullName>
+        <externalId>false</externalId>
+        <label>Revenue Recognition Schedule - Total %</label>
+        <summarizedField>Revenue_Recognition_Schedule__c.Revenue_Percent__c</summarizedField>
+        <summaryForeignKey>Revenue_Recognition_Schedule__c.Revenue_Recognition_Rule__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <label>Revenue Recognition Rule</label>
+    <nameField>
+        <label>Revenue Recognition Schedule Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Revenue Recognition Rules</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

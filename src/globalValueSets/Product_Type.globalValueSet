@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Full NVOD</fullName>
+        <default>false</default>
+        <label>Full NVOD</label>
+    </customValue>
+    <customValue>
+        <fullName>G1 Flexi VOD</fullName>
+        <default>false</default>
+        <label>G1 Flexi VOD</label>
+    </customValue>
+    <customValue>
+        <fullName>G1 Full VOD</fullName>
+        <default>false</default>
+        <label>G1 Full VOD</label>
+    </customValue>
+    <customValue>
+        <fullName>G1 Midi VOD</fullName>
+        <default>false</default>
+        <label>G1 Midi VOD</label>
+    </customValue>
+    <customValue>
+        <fullName>G1 Mini VOD</fullName>
+        <default>false</default>
+        <label>G1 Mini VOD</label>
+    </customValue>
+    <customValue>
+        <fullName>G2 Flexi VOD</fullName>
+        <default>false</default>
+        <label>G2 Flexi VOD</label>
+    </customValue>
+    <customValue>
+        <fullName>G2 Full VOD</fullName>
+        <default>false</default>
+        <label>G2 Full VOD</label>
+    </customValue>
+    <customValue>
+        <fullName>G2 Midi VOD</fullName>
+        <default>false</default>
+        <label>G2 Midi VOD</label>
+    </customValue>
+    <customValue>
+        <fullName>G2 Mini VOD</fullName>
+        <default>false</default>
+        <label>G2 Mini VOD</label>
+    </customValue>
+    <customValue>
+        <fullName>KV Courses</fullName>
+        <default>false</default>
+        <label>KV Courses</label>
+    </customValue>
+    <customValue>
+        <fullName>Library</fullName>
+        <default>false</default>
+        <label>Library</label>
+    </customValue>
+    <customValue>
+        <fullName>Midi NVOD</fullName>
+        <default>false</default>
+        <label>Midi NVOD</label>
+    </customValue>
+    <customValue>
+        <fullName>Mini NVOD</fullName>
+        <default>false</default>
+        <label>Mini NVOD</label>
+    </customValue>
+    <customValue>
+        <fullName>Online Training</fullName>
+        <default>false</default>
+        <label>Online Training</label>
+    </customValue>
+    <customValue>
+        <fullName>SETS</fullName>
+        <default>false</default>
+        <label>SETS</label>
+    </customValue>
+    <customValue>
+        <fullName>SETS Pro</fullName>
+        <default>false</default>
+        <label>SETS Pro</label>
+    </customValue>
+    <customValue>
+        <fullName>Supplemental Library</fullName>
+        <default>false</default>
+        <label>Supplemental Library</label>
+    </customValue>
+    <customValue>
+        <fullName>Task-based Competency</fullName>
+        <default>false</default>
+        <label>Task-based Competency</label>
+    </customValue>
+    <customValue>
+        <fullName>VETS</fullName>
+        <default>false</default>
+        <label>VETS</label>
+    </customValue>
+    <customValue>
+        <fullName>Virtual Reality Training Portfolio</fullName>
+        <default>false</default>
+        <label>Virtual Reality Training Portfolio</label>
+    </customValue>
+    <customValue>
+        <fullName>VOA</fullName>
+        <default>false</default>
+        <label>VOA</label>
+    </customValue>
+    <customValue>
+        <fullName>VTS</fullName>
+        <default>false</default>
+        <label>VTS</label>
+    </customValue>
+    <customValue>
+        <fullName>webFSA</fullName>
+        <default>false</default>
+        <label>webFSA</label>
+    </customValue>
+    <customValue>
+        <fullName>webFTA</fullName>
+        <default>false</default>
+        <label>webFTA</label>
+    </customValue>
+    <masterLabel>Product Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

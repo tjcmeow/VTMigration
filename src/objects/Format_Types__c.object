@@ -1,0 +1,906 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>This object tracks the title types that are related to a specific title.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>BMS_Record_Code__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>BMS record Code</inlineHelpText>
+        <label>BMS Record Code</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Delivery_Method_s__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the delivery method(s) for this particular format type.</inlineHelpText>
+        <label>Delivery Method(s)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>VOD G1</fullName>
+                    <default>false</default>
+                    <label>VOD G1</label>
+                </value>
+                <value>
+                    <fullName>VOD G2</fullName>
+                    <default>false</default>
+                    <label>VOD G2</label>
+                </value>
+                <value>
+                    <fullName>VOD Online</fullName>
+                    <default>false</default>
+                    <label>VOD Online</label>
+                </value>
+                <value>
+                    <fullName>CD-ROM</fullName>
+                    <default>false</default>
+                    <label>CD-ROM</label>
+                </value>
+                <value>
+                    <fullName>DVD</fullName>
+                    <default>false</default>
+                    <label>DVD</label>
+                </value>
+                <value>
+                    <fullName>VHS</fullName>
+                    <default>false</default>
+                    <label>VHS</label>
+                </value>
+                <value>
+                    <fullName>Online</fullName>
+                    <default>false</default>
+                    <label>Online</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>External_Id__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>External Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Format__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the appropriate format for this type</inlineHelpText>
+        <label>Format</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>CBT</fullName>
+                    <default>false</default>
+                    <label>CBT</label>
+                </value>
+                <value>
+                    <fullName>VIDEO</fullName>
+                    <default>false</default>
+                    <label>VIDEO</label>
+                </value>
+                <value>
+                    <fullName>BOOK</fullName>
+                    <default>false</default>
+                    <label>BOOK</label>
+                </value>
+                <value>
+                    <fullName>ONLINE</fullName>
+                    <default>false</default>
+                    <label>ONLINE</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ID_media__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>ID_media from CTS</inlineHelpText>
+        <label>ID_media</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ID_media_course_format__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>ID_media_course_format from CTS. This is the same value as: ID_media</inlineHelpText>
+        <label>ID_media_course_format</label>
+        <length>5</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IncludeInVOD__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>IncludeInVOD from BMS</inlineHelpText>
+        <label>IncludeInVOD</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Language__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the language for this format and type</inlineHelpText>
+        <label>Language</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>English</fullName>
+                    <default>false</default>
+                    <label>English</label>
+                </value>
+                <value>
+                    <fullName>Bahasa</fullName>
+                    <default>false</default>
+                    <label>Bahasa</label>
+                </value>
+                <value>
+                    <fullName>Brazilian Portuguese</fullName>
+                    <default>false</default>
+                    <label>Brazilian Portuguese</label>
+                </value>
+                <value>
+                    <fullName>Chinese Mandarin</fullName>
+                    <default>false</default>
+                    <label>Chinese Mandarin</label>
+                </value>
+                <value>
+                    <fullName>Danish</fullName>
+                    <default>false</default>
+                    <label>Danish</label>
+                </value>
+                <value>
+                    <fullName>French</fullName>
+                    <default>false</default>
+                    <label>French</label>
+                </value>
+                <value>
+                    <fullName>German</fullName>
+                    <default>false</default>
+                    <label>German</label>
+                </value>
+                <value>
+                    <fullName>Greek</fullName>
+                    <default>false</default>
+                    <label>Greek</label>
+                </value>
+                <value>
+                    <fullName>Hindi</fullName>
+                    <default>false</default>
+                    <label>Hindi</label>
+                </value>
+                <value>
+                    <fullName>Hungarian</fullName>
+                    <default>false</default>
+                    <label>Hungarian</label>
+                </value>
+                <value>
+                    <fullName>Italian</fullName>
+                    <default>false</default>
+                    <label>Italian</label>
+                </value>
+                <value>
+                    <fullName>Japanese</fullName>
+                    <default>false</default>
+                    <label>Japanese</label>
+                </value>
+                <value>
+                    <fullName>Korean</fullName>
+                    <default>false</default>
+                    <label>Korean</label>
+                </value>
+                <value>
+                    <fullName>Norwegian</fullName>
+                    <default>false</default>
+                    <label>Norwegian</label>
+                </value>
+                <value>
+                    <fullName>Polish</fullName>
+                    <default>false</default>
+                    <label>Polish</label>
+                </value>
+                <value>
+                    <fullName>Portuguese</fullName>
+                    <default>false</default>
+                    <label>Portuguese</label>
+                </value>
+                <value>
+                    <fullName>Romanian</fullName>
+                    <default>false</default>
+                    <label>Romanian</label>
+                </value>
+                <value>
+                    <fullName>Russian</fullName>
+                    <default>false</default>
+                    <label>Russian</label>
+                </value>
+                <value>
+                    <fullName>Spanish</fullName>
+                    <default>false</default>
+                    <label>Spanish</label>
+                </value>
+                <value>
+                    <fullName>Swedish</fullName>
+                    <default>false</default>
+                    <label>Swedish</label>
+                </value>
+                <value>
+                    <fullName>Tagalog</fullName>
+                    <default>false</default>
+                    <label>Tagalog</label>
+                </value>
+                <value>
+                    <fullName>Thai</fullName>
+                    <default>false</default>
+                    <label>Thai</label>
+                </value>
+                <value>
+                    <fullName>Turkish</fullName>
+                    <default>false</default>
+                    <label>Turkish</label>
+                </value>
+                <value>
+                    <fullName>Urdu</fullName>
+                    <default>false</default>
+                    <label>Urdu</label>
+                </value>
+                <value>
+                    <fullName>Arabic Subtitles</fullName>
+                    <default>false</default>
+                    <label>Arabic Subtitles</label>
+                </value>
+                <value>
+                    <fullName>Bahasa Subtitles</fullName>
+                    <default>false</default>
+                    <label>Bahasa Subtitles</label>
+                </value>
+                <value>
+                    <fullName>Chinese Subtitles</fullName>
+                    <default>false</default>
+                    <label>Chinese Subtitles</label>
+                </value>
+                <value>
+                    <fullName>Croatian Subtitles</fullName>
+                    <default>false</default>
+                    <label>Croatian Subtitles</label>
+                </value>
+                <value>
+                    <fullName>English Subtitles</fullName>
+                    <default>false</default>
+                    <label>English Subtitles</label>
+                </value>
+                <value>
+                    <fullName>Finnish Subtitles</fullName>
+                    <default>false</default>
+                    <label>Finnish Subtitles</label>
+                </value>
+                <value>
+                    <fullName>Greek Subtitles</fullName>
+                    <default>false</default>
+                    <label>Greek Subtitles</label>
+                </value>
+                <value>
+                    <fullName>Japanese Subtitles</fullName>
+                    <default>false</default>
+                    <label>Japanese Subtitles</label>
+                </value>
+                <value>
+                    <fullName>Korean Subtitles</fullName>
+                    <default>false</default>
+                    <label>Korean Subtitles</label>
+                </value>
+                <value>
+                    <fullName>Russian Subtitles</fullName>
+                    <default>false</default>
+                    <label>Russian Subtitles</label>
+                </value>
+                <value>
+                    <fullName>Thai Subtitles</fullName>
+                    <default>false</default>
+                    <label>Thai Subtitles</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Material_Code__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>MaterialCode from BMS</inlineHelpText>
+        <label>Material Code</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Regional_Format__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the regional format is DVD or Video</inlineHelpText>
+        <label>Regional Format</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <controllingField>Format__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>PAL</fullName>
+                    <default>false</default>
+                    <label>PAL</label>
+                </value>
+                <value>
+                    <fullName>NTSC</fullName>
+                    <default>false</default>
+                    <label>NTSC</label>
+                </value>
+                <value>
+                    <fullName>SECAM</fullName>
+                    <default>false</default>
+                    <label>SECAM</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>VIDEO</controllingFieldValue>
+                <valueName>PAL</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>VIDEO</controllingFieldValue>
+                <valueName>NTSC</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>VIDEO</controllingFieldValue>
+                <valueName>SECAM</valueName>
+            </valueSettings>
+        </valueSet>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Release_Date__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the date this particular format was released</inlineHelpText>
+        <label>Release Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <description>The status is defaulted to In Production.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The status is defaulted to In Production, updated to Current when Release Date is entered, and Withdrawn when the Withdrawn Date is entered.</inlineHelpText>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Current</fullName>
+                    <default>false</default>
+                    <label>Current</label>
+                </value>
+                <value>
+                    <fullName>In Production</fullName>
+                    <default>true</default>
+                    <label>In Production</label>
+                </value>
+                <value>
+                    <fullName>Withdrawn</fullName>
+                    <default>false</default>
+                    <label>Withdrawn</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Subtitles__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the Available Subtitles</inlineHelpText>
+        <label>Subtitles</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>ARABIC SUBTITLES</fullName>
+                    <default>false</default>
+                    <label>ARABIC SUBTITLES</label>
+                </value>
+                <value>
+                    <fullName>BAHASA SUBTITLES</fullName>
+                    <default>false</default>
+                    <label>BAHASA SUBTITLES</label>
+                </value>
+                <value>
+                    <fullName>CHINESE SUBTITLES</fullName>
+                    <default>false</default>
+                    <label>CHINESE SUBTITLES</label>
+                </value>
+                <value>
+                    <fullName>CROATIAN SUBTITLES</fullName>
+                    <default>false</default>
+                    <label>CROATIAN SUBTITLES</label>
+                </value>
+                <value>
+                    <fullName>ENGLISH SUBTITLES</fullName>
+                    <default>false</default>
+                    <label>ENGLISH SUBTITLES</label>
+                </value>
+                <value>
+                    <fullName>FINNISH SUBTITLES</fullName>
+                    <default>false</default>
+                    <label>FINNISH SUBTITLES</label>
+                </value>
+                <value>
+                    <fullName>GREEK SUBTITLES</fullName>
+                    <default>false</default>
+                    <label>GREEK SUBTITLES</label>
+                </value>
+                <value>
+                    <fullName>JAPANESE SUBTITLES</fullName>
+                    <default>false</default>
+                    <label>JAPANESE SUBTITLES</label>
+                </value>
+                <value>
+                    <fullName>KOREAN SUBTITLES</fullName>
+                    <default>false</default>
+                    <label>KOREAN SUBTITLES</label>
+                </value>
+                <value>
+                    <fullName>RUSSIAN SUBTITLES</fullName>
+                    <default>false</default>
+                    <label>RUSSIAN SUBTITLES</label>
+                </value>
+                <value>
+                    <fullName>THAI SUBTITLES</fullName>
+                    <default>false</default>
+                    <label>THAI SUBTITLES</label>
+                </value>
+                <value>
+                    <fullName>VIETNAMESE SUBTITLES</fullName>
+                    <default>false</default>
+                    <label>VIETNAMESE SUBTITLES</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Title__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the title associated</inlineHelpText>
+        <label>Title</label>
+        <referenceTo>Titles__c</referenceTo>
+        <relationshipName>Title_Types</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Withdrawn_Date__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the date this title format has been withdrawn. Note that when the date is entered the status of the title format will be come withdrawn.</inlineHelpText>
+        <label>Withdrawn Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>course_id__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>course_id from CTS</inlineHelpText>
+        <label>course_id</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>course_implementation__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>course_implementation from CTS</inlineHelpText>
+        <label>course_implementation</label>
+        <length>5</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>media_details_revision__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>media_details__revision from CTS</inlineHelpText>
+        <label>media_details__revision</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>media_release_version__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>media__release_version from CTS</inlineHelpText>
+        <label>media__release_version</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>nvod_enabled__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>nvod_enabled from CTS</inlineHelpText>
+        <label>nvod_enabled</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>onlinecourses_enabled__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>onlinecourses_enabled</inlineHelpText>
+        <label>onlinecourses_enabled</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>product_code__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>product__code from CTS</inlineHelpText>
+        <label>product__code</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>product_revision__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>product__revision date &amp; Time from CTS</inlineHelpText>
+        <label>product__revision</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>product_type__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>product__type from CTS</inlineHelpText>
+        <label>product__type</label>
+        <length>25</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rank_group_Code__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>rank_group__Code from CTS</inlineHelpText>
+        <label>rank_group__Code</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rank_group_Name__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>rank_group__Name
+ from CTS</inlineHelpText>
+        <label>rank_group__Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>release_version__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>release_version from CTS</inlineHelpText>
+        <label>release_version</label>
+        <length>4</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vessel_type_Name__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>vessel_type__Name from CTS</inlineHelpText>
+        <label>vessel_type__Name</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vod_enabled__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>vod_enabled From CTS</inlineHelpText>
+        <label>vod_enabled</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>web_enabled__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>web_enabled from CTS</inlineHelpText>
+        <label>web_enabled</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Format Type</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>course_id__c</columns>
+        <columns>Delivery_Method_s__c</columns>
+        <columns>Status__c</columns>
+        <columns>Format__c</columns>
+        <columns>IncludeInVOD__c</columns>
+        <columns>Material_Code__c</columns>
+        <columns>media_release_version__c</columns>
+        <columns>product_code__c</columns>
+        <columns>product_revision__c</columns>
+        <columns>ID_media_course_format__c</columns>
+        <columns>release_version__c</columns>
+        <columns>Regional_Format__c</columns>
+        <columns>course_implementation__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>All1</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>F-{0000}</displayFormat>
+        <label>Format ID</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Format Types</pluralLabel>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>Title__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Subtitles__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Status__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Release_Date__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>IncludeInVOD__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Delivery_Method_s__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Title__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Subtitles__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Status__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Release_Date__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>Title__c</searchFilterFields>
+        <searchFilterFields>Status__c</searchFilterFields>
+        <searchFilterFields>Subtitles__c</searchFilterFields>
+        <searchFilterFields>course_id__c</searchFilterFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

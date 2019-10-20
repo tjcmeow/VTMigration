@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Created in Error</fullName>
+        <default>false</default>
+        <label>Created in Error</label>
+    </customValue>
+    <customValue>
+        <fullName>Duplicate order</fullName>
+        <default>false</default>
+        <label>Duplicate order</label>
+    </customValue>
+    <customValue>
+        <fullName>Layup</fullName>
+        <default>false</default>
+        <label>Layup</label>
+    </customValue>
+    <customValue>
+        <fullName>Lost VOD Charged – Rental Period Credited</fullName>
+        <default>false</default>
+        <label>Lost VOD Charged – Rental Period Credited</label>
+    </customValue>
+    <customValue>
+        <fullName>Other – add further comments</fullName>
+        <default>false</default>
+        <label>Other – add further comments</label>
+    </customValue>
+    <customValue>
+        <fullName>Rebilled – initial pricing error</fullName>
+        <default>false</default>
+        <label>Rebilled – initial pricing error</label>
+    </customValue>
+    <customValue>
+        <fullName>Rebilled – moved to new account</fullName>
+        <default>false</default>
+        <label>Rebilled – moved to new account</label>
+    </customValue>
+    <customValue>
+        <fullName>Rebilled – new alignment date</fullName>
+        <default>false</default>
+        <label>Rebilled – new alignment date</label>
+    </customValue>
+    <customValue>
+        <fullName>Rebilled – new product line</fullName>
+        <default>false</default>
+        <label>Rebilled – new product line</label>
+    </customValue>
+    <customValue>
+        <fullName>Rebilled – uplift error</fullName>
+        <default>false</default>
+        <label>Rebilled – uplift error</label>
+    </customValue>
+    <customValue>
+        <fullName>Service downtime</fullName>
+        <default>false</default>
+        <label>Service downtime</label>
+    </customValue>
+    <customValue>
+        <fullName>Test Invoice</fullName>
+        <default>false</default>
+        <label>Test Invoice</label>
+    </customValue>
+    <customValue>
+        <fullName>VOD/Library Returned – Lost contract</fullName>
+        <default>false</default>
+        <label>VOD/Library Returned – Lost contract</label>
+    </customValue>
+    <customValue>
+        <fullName>VOD/Library Returned – Renewal</fullName>
+        <default>false</default>
+        <label>VOD/Library Returned – Renewal</label>
+    </customValue>
+    <customValue>
+        <fullName>VOD/Library Returned – Sold or Scrapped</fullName>
+        <default>false</default>
+        <label>VOD/Library Returned – Sold or Scrapped</label>
+    </customValue>
+    <masterLabel>Credit Reasons</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

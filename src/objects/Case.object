@@ -1,0 +1,1853 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ChangeStatus</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ChangeStatus</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ChangeStatus</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CloneAsChild</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CloneAsChild</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CloneAsChild</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CloseCase</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CloseCase</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CloseCase</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>MassClose</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>MassClose</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>MassClose</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewCase</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewCase</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewCase</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <businessProcesses>
+        <fullName>Support Process</fullName>
+        <isActive>true</isActive>
+        <values>
+            <fullName>Awaiting Agent Response</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Awaiting Delivery Address</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Awaiting Reason for Return</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed As Duplicate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Documenting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Escalated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>New Customer Comment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Incoming Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Customer Information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Material Availability</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Recall</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Returned Material</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VOD RMA Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VOD Ready for Dispatch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VPM Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>With Admin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>With CTS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>With Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>With Repairs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>With VOD Prod</fullName>
+            <default>false</default>
+        </values>
+    </businessProcesses>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>true</enableFeeds>
+    <externalSharingModel>Private</externalSharingModel>
+    <fieldSets>
+        <fullName>E2CP__New_Comment_Case_Fields</fullName>
+        <availableFields>
+            <field>AccountId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>BusinessHoursId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>ContactId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Description</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>IsEscalated</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>E2CP__Knowledge_Base_URL__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Origin</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>OwnerId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>ParentId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Priority</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Reason</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Subject</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SuppliedCompany</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SuppliedEmail</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SuppliedName</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SuppliedPhone</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Type</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <description>New Comment</description>
+        <displayedFields>
+            <field>Status</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>New Comment Case Fields</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>csmrgp__Case_Merge_Find</fullName>
+        <availableFields>
+            <field>CreatedById</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LastModifiedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Origin</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Priority</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Reason</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SourceId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SuppliedCompany</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SuppliedEmail</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SuppliedName</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SuppliedPhone</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Type</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <description>Fields displayed in the  search results table of the Case Merge Premium Tab.</description>
+        <displayedFields>
+            <field>CaseNumber</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Subject</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>AccountId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>ContactId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>OwnerId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Status</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CreatedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Case Merge Find</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>csmrgp__Case_Merge_Select</fullName>
+        <availableFields>
+            <field>Priority</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SourceId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SuppliedCompany</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SuppliedEmail</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SuppliedName</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SuppliedPhone</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Type</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <description>Fields displayed in the table of cases when they are about to be merged.</description>
+        <displayedFields>
+            <field>CaseNumber</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>AccountId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>ContactId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Subject</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Reason</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>OwnerId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Status</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CreatedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Description</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Origin</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Case Merge Select</label>
+    </fieldSets>
+    <fields>
+        <fullName>AccountId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Action_Plan__c</fullName>
+        <externalId>false</externalId>
+        <label>Action Plan</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Add a Service</fullName>
+                    <default>false</default>
+                    <label>Add a Service</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>AssetId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>BusinessHoursId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ClosedDate</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Comments</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>ContactEmail</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>ContactFax</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>ContactId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ContactMobile</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>ContactPhone</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>E2CP__AdditionalBCC__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Stores email addresses entered on the New Comment page Additional BCC field.</description>
+        <externalId>false</externalId>
+        <label>Additional BCC</label>
+        <length>5000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>E2CP__AdditionalCC__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Stores email addresses entered on the New Comment page Additional CC field.</description>
+        <externalId>false</externalId>
+        <label>Additional CC</label>
+        <length>5000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>E2CP__AdditionalTo__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Stores email addresses entered on the New Comment page Additional To field. The SuppliedEmail (Web Email) value is added automatically on case creation if a valid Contact isn&apos;t associated.</description>
+        <externalId>false</externalId>
+        <label>Additional To</label>
+        <length>5000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>E2CP__Case_Thread_Id__c</fullName>
+        <deprecated>false</deprecated>
+        <description>A formula to generate the Salesforce Case Thread Id for display on detail pages or inclusion in email templates.</description>
+        <externalId>false</externalId>
+        <formula>&quot;[ ref:_&quot; &amp; 
+LEFT( $Organization.Id , 5) &amp; 
+IF (MID ( $Organization.Id, 6, 1) &lt;&gt; &quot;0&quot;, RIGHT($Organization.Id,10), 
+IF (MID ( $Organization.Id, 7, 1) &lt;&gt; &quot;0&quot;,RIGHT($Organization.Id, 9), 
+IF (MID ( $Organization.Id, 8, 1) &lt;&gt;&quot;0&quot;, RIGHT($Organization.Id, 8), 
+IF (MID ( $Organization.Id, 9, 1)&lt;&gt; &quot;0&quot;, RIGHT($Organization.Id, 7), 
+IF (MID ( $Organization.Id,10, 1) &lt;&gt; &quot;0&quot;, RIGHT($Organization.Id, 6), 
+IF (MID ($Organization.Id, 11, 1) &lt;&gt; &quot;0&quot;, RIGHT($Organization.Id, 5), 
+IF(MID ( $Organization.Id, 12, 1) &lt;&gt; &quot;0&quot;, RIGHT($Organization.Id,4), 
+IF (MID ( $Organization.Id, 13, 1) &lt;&gt; &quot;0&quot;,RIGHT($Organization.Id, 3), 
+IF (MID ( $Organization.Id, 14, 1) &lt;&gt;&quot;0&quot;, RIGHT($Organization.Id, 2), &quot;&quot;) ) ) ) ) ) ) ) )
+&amp; &quot;._&quot; &amp;LEFT( Id, 5) &amp; 
+IF(MID ( Id, 6, 1) &lt;&gt; &quot;0&quot;, RIGHT(Id, 10), 
+IF (MID ( Id, 7, 1)&lt;&gt; &quot;0&quot;, RIGHT(Id, 9), 
+IF (MID ( Id, 8, 1) &lt;&gt; &quot;0&quot;, RIGHT(Id,8), 
+IF (MID ( Id, 9, 1) &lt;&gt; &quot;0&quot;, RIGHT(Id, 7), 
+IF (MID ( Id, 10,1) &lt;&gt; &quot;0&quot;, RIGHT(Id, 6), 
+IF (MID ( Id, 11, 1) &lt;&gt; &quot;0&quot;,RIGHT(Id, 5), 
+IF (MID ( Id, 12, 1) &lt;&gt; &quot;0&quot;, RIGHT(Id, 4), 
+IF (MID( Id, 13, 1) &lt;&gt; &quot;0&quot;, RIGHT(Id, 3), 
+IF (MID ( Id, 14, 1) &lt;&gt;&quot;0&quot;, RIGHT(Id, 2), &quot;&quot;) ) ) ) ) ) ) ) ) &amp; &quot;:ref ]&quot;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Case Thread Id</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>E2CP__Disable_Email_Distribution__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Setting this field to true disables the Email Distribution feature on a case by case basis if Email Distribution is enabled.</description>
+        <externalId>false</externalId>
+        <label>Disable Email Distribution</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>E2CP__ExtraEmails__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Stores all email addresses on inbound emails. This data is used by Auto Create Contacts, Auto Add Case Team Members and Auto Add Contact Roles.</description>
+        <externalId>false</externalId>
+        <label>ExtraEmails</label>
+        <length>4000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>E2CP__HistoryText_Inc_Private__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>History Text Inc Private</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>E2CP__HistoryText__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Contains a chronology of the most recent 25 public case comments (up to 32,000 chars) for inclusion in email templates. This field is updated when inbound emails are received and outbound emails are sent through the New Comment page.</description>
+        <externalId>false</externalId>
+        <label>HistoryText</label>
+        <length>32000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>E2CP__Knowledge_Base_URL__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Knowledge Base URL</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>E2CP__Most_Recent_Private_Comment_HTML__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Contains the most recent private comment, as it was typed, without any pre-pended recipients or attachments notations that may be added to the case comment record. Used when HTML Support is enabled.</description>
+        <externalId>false</externalId>
+        <label>Most Recent Private Comment (HTML)</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>E2CP__Most_Recent_Private_Comment__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Contains the most recent private comment, as it was typed, without any pre-pended recipients or attachments notations that may be added to the case comment record.</description>
+        <externalId>false</externalId>
+        <label>Most Recent Private Comment</label>
+        <length>4000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>E2CP__Most_Recent_Public_Comment_HTML__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Contains the most recent public comment, as it was typed, without any pre-pended recipients or attachments notations that may be added to the case comment record. Used when HTML Support is enabled.</description>
+        <externalId>false</externalId>
+        <label>Most Recent Public Comment (HTML)</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>E2CP__Most_Recent_Public_Comment__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Contains the most recent public comment, as it was typed, without any pre-pended recipients or attachments notations that may be added to the case comment record.</description>
+        <externalId>false</externalId>
+        <label>Most Recent Public Comment</label>
+        <length>4000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>External_Id__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>External Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>FLAGS__Business_Hours_Age_1__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Business Hours Age 1</label>
+        <summarizedField>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Business_Hours_in_Age_1__c</summarizedField>
+        <summaryForeignKey>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Case__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>FLAGS__Business_Hours_Age_2__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Business Hours Age 2</label>
+        <summarizedField>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Business_Hours_in_Age_2__c</summarizedField>
+        <summaryForeignKey>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Case__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>FLAGS__Business_Hours_Age_3__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Business Hours Age 3</label>
+        <summarizedField>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Business_Hours_in_Age_3__c</summarizedField>
+        <summaryForeignKey>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Case__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>FLAGS__Business_Hours_Age_4__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Business Hours Age 4</label>
+        <summarizedField>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Business_Hours_in_Age_4__c</summarizedField>
+        <summaryForeignKey>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Case__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>FLAGS__CaseFlag__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This should be used  to display the Case Flag if your organization is not using business hours.</description>
+        <externalId>false</externalId>
+        <formula>IF(ISNULL(FLAGS__ViewedFlag__c),null, 
+IF(FLAGS__Case_Flag_Age__c &gt; (IF(ISBLANK(FLAGS__CaseTimeOffset4__c) , $Setup.FLAGS__FlagPref__c.FLAGS__TimeOffset4__c,FLAGS__CaseTimeOffset4__c)), 
+IMAGE( &quot;/servlet/servlet.FileDownload?flagsort=&quot; &amp; FLAGS__Case_Flag_Age_Text__c &amp; &quot;&amp;file=&quot; &amp; $Setup.FLAGS__FlagPref__c.FLAGS__Offset4Image__c, &quot;L4&quot;, 16, 16), 
+IF(FLAGS__Case_Flag_Age__c &gt;= (IF(ISBLANK(FLAGS__CaseTimeOffset3__c ), $Setup.FLAGS__FlagPref__c.FLAGS__TimeOffset3__c,FLAGS__CaseTimeOffset3__c)), 
+IMAGE( &quot;/servlet/servlet.FileDownload?flagsort=&quot; &amp; FLAGS__Case_Flag_Age_Text__c &amp; &quot;&amp;file=&quot; &amp; $Setup.FLAGS__FlagPref__c.FLAGS__Offset3Image__c, &quot;L3&quot;, 16, 16), 
+IF(FLAGS__Case_Flag_Age__c &gt;= (IF(ISBLANK(FLAGS__CaseTimeOffset2__c ), $Setup.FLAGS__FlagPref__c.FLAGS__TimeOffset2__c,FLAGS__CaseTimeOffset2__c)), 
+IMAGE( &quot;/servlet/servlet.FileDownload?flagsort=&quot; &amp; FLAGS__Case_Flag_Age_Text__c &amp; &quot;&amp;file=&quot; &amp; $Setup.FLAGS__FlagPref__c.FLAGS__Offset2Image__c, &quot;L2&quot;, 16, 16), 
+IF(FLAGS__Case_Flag_Age__c &gt;= (IF(ISBLANK(FLAGS__CaseTimeOffset1__c ), $Setup.FLAGS__FlagPref__c.FLAGS__TimeOffset1__c,FLAGS__CaseTimeOffset1__c)), 
+IMAGE( &quot;/servlet/servlet.FileDownload?flagsort=&quot; &amp; FLAGS__Case_Flag_Age_Text__c &amp; &quot;&amp;file=&quot; &amp; $Setup.FLAGS__FlagPref__c.FLAGS__Offset1Image__c, &quot;L1&quot;,16,16), 
+IMAGE( &quot;/servlet/servlet.FileDownload?flagsort=&quot; &amp; FLAGS__Case_Flag_Age_Text__c &amp; &quot;&amp;file=&quot; &amp; $Setup.FLAGS__FlagPref__c.FLAGS__BlankOffsetImage__c, &quot;L0&quot;,16,16)) 
+))) 
+)</formula>
+        <label>Flag</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FLAGS__CaseFlagsBusinessHours__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>A reference to the Case Flags Business Hours record used to calculate the Case Flag Business Age. This is set automatically and should not be manipulated.</description>
+        <externalId>false</externalId>
+        <label>Case Flags Business Hours</label>
+        <referenceTo>FLAGS__CaseFlagsBusinessHours__c</referenceTo>
+        <relationshipLabel>Cases</relationshipLabel>
+        <relationshipName>Cases</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>FLAGS__CaseFlagsEscalationTime1__c</fullName>
+        <deprecated>false</deprecated>
+        <description>A timestamp to indicate when the total business hours on the case will exceed Age 1 Hours. This can be used as the basis for workflow email alerts or other automation.</description>
+        <externalId>false</externalId>
+        <label>Case Flags Escalation Time 1</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>FLAGS__CaseFlagsEscalationTime2__c</fullName>
+        <deprecated>false</deprecated>
+        <description>A timestamp to indicate when the total business hours on the case will exceed Age 2 Hours. This can be used as the basis for workflow email alerts or other automation.</description>
+        <externalId>false</externalId>
+        <label>Case Flags Escalation Time 2</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>FLAGS__CaseFlagsEscalationTime3__c</fullName>
+        <deprecated>false</deprecated>
+        <description>A timestamp to indicate when the total business hours on the case will exceed Age 3 Hours. This can be used as the basis for workflow email alerts or other automation.</description>
+        <externalId>false</externalId>
+        <label>Case Flags Escalation Time 3</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>FLAGS__CaseFlagsEscalationTime4__c</fullName>
+        <deprecated>false</deprecated>
+        <description>A timestamp to indicate when the total business hours on the case will exceed Age 4 Hours. This can be used as the basis for workflow email alerts or other automation.</description>
+        <externalId>false</externalId>
+        <label>Case Flags Escalation Time 4</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>FLAGS__CaseTimeOffset1__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The number of hours after the Case Flag Date/Time when Flag 1 will be displayed.</description>
+        <externalId>false</externalId>
+        <label>Case Flags Age 1 Hours</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FLAGS__CaseTimeOffset2__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The number of hours after the Case Flag Date/Time when Flag 2 will be displayed.</description>
+        <externalId>false</externalId>
+        <label>Case Flags Age 2 Hours</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FLAGS__CaseTimeOffset3__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The number of hours after the Case Flag Date/Time when Flag 3 will be displayed.</description>
+        <externalId>false</externalId>
+        <label>Case Flags Age 3 Hours</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FLAGS__CaseTimeOffset4__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The number of hours after the Case Flag Date/Time when Flag 4 will be displayed.</description>
+        <externalId>false</externalId>
+        <label>Case Flags Age 4 Hours</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FLAGS__Case_Flag_Age_Text__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The Case Flag Age decimal rendered as a eight-digit string used to aid with sorting on list views.</description>
+        <externalId>false</externalId>
+        <formula>LPAD(TEXT(ROUND(FLAGS__Case_Flag_Age__c*100,0)),8,&apos;0&apos;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Case Flag Age Text</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FLAGS__Case_Flag_Age__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The total amount of time (in hours) since the Case Flag was set.</description>
+        <externalId>false</externalId>
+        <formula>(NOW() - FLAGS__ViewedFlag__c)*24</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Case Flag Age</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FLAGS__Case_Flag_Business_Age__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The total amount of time (in business hours) since the Case Flag was set.</description>
+        <externalId>false</externalId>
+        <formula>FLAGS__PreviousBusinessHours__c + FLAGS__CurrentBusinessHours__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Case Flag Business Age</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FLAGS__Case_Flag_Business__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This should be used  to display the Case Flag if your organization is using business hours.</description>
+        <externalId>false</externalId>
+        <formula>IF(ISNULL(FLAGS__ViewedFlag__c),null, 
+IF(FLAGS__Case_Flag_Business_Age__c &gt; (IF(ISBLANK(FLAGS__CaseTimeOffset4__c), $Setup.FLAGS__FlagPref__c.FLAGS__TimeOffset4__c,FLAGS__CaseTimeOffset4__c)), 
+IMAGE( &quot;/servlet/servlet.FileDownload?flagsort=&quot; &amp; FLAGS__Case_Flag_Age_Text__c &amp; &quot;&amp;file=&quot; &amp; $Setup.FLAGS__FlagPref__c.FLAGS__Offset4Image__c, &quot;L4&quot;, 16, 16), 
+IF(FLAGS__Case_Flag_Business_Age__c &gt;= (IF(ISBLANK(FLAGS__CaseTimeOffset3__c), $Setup.FLAGS__FlagPref__c.FLAGS__TimeOffset3__c,FLAGS__CaseTimeOffset3__c)), 
+IMAGE( &quot;/servlet/servlet.FileDownload?flagsort=&quot; &amp; FLAGS__Case_Flag_Age_Text__c &amp; &quot;&amp;file=&quot; &amp; $Setup.FLAGS__FlagPref__c.FLAGS__Offset3Image__c, &quot;L3&quot;, 16, 16), 
+IF(FLAGS__Case_Flag_Business_Age__c &gt;= (IF(ISBLANK(FLAGS__CaseTimeOffset2__c), $Setup.FLAGS__FlagPref__c.FLAGS__TimeOffset2__c,FLAGS__CaseTimeOffset2__c)), 
+IMAGE( &quot;/servlet/servlet.FileDownload?flagsort=&quot; &amp; FLAGS__Case_Flag_Age_Text__c &amp; &quot;&amp;file=&quot; &amp; $Setup.FLAGS__FlagPref__c.FLAGS__Offset2Image__c, &quot;L2&quot;, 16, 16), 
+IF(FLAGS__Case_Flag_Business_Age__c &gt;= (IF(ISBLANK(FLAGS__CaseTimeOffset1__c), $Setup.FLAGS__FlagPref__c.FLAGS__TimeOffset1__c,FLAGS__CaseTimeOffset1__c)), 
+IMAGE( &quot;/servlet/servlet.FileDownload?flagsort=&quot; &amp; FLAGS__Case_Flag_Age_Text__c &amp; &quot;&amp;file=&quot; &amp; $Setup.FLAGS__FlagPref__c.FLAGS__Offset1Image__c, &quot;L1&quot;,16,16), 
+IMAGE( &quot;/servlet/servlet.FileDownload?flagsort=&quot; &amp; FLAGS__Case_Flag_Age_Text__c &amp; &quot;&amp;file=&quot; &amp; $Setup.FLAGS__FlagPref__c.FLAGS__BlankOffsetImage__c, &quot;L0&quot;,16,16)) 
+))) 
+)</formula>
+        <label>Flag (BH)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FLAGS__CurrentBusinessHours__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The amount of business hours that have lapsed on the current day.</description>
+        <externalId>false</externalId>
+        <formula>IF(ISNULL(FLAGS__ViewedFlag__c) || FLAGS__CaseFlagsBusinessHours__r.FLAGS__TodayStartTime__c &gt; NOW() || FLAGS__ViewedFlag__c &gt; FLAGS__CaseFlagsBusinessHours__r.FLAGS__TodayEndTime__c,0,(
+IF(FLAGS__CaseFlagsBusinessHours__r.FLAGS__TodayEndTime__c &lt; NOW(),FLAGS__CaseFlagsBusinessHours__r.FLAGS__TodayEndTime__c,NOW()) - IF(FLAGS__CaseFlagsBusinessHours__r.FLAGS__TodayStartTime__c &gt; FLAGS__ViewedFlag__c,FLAGS__CaseFlagsBusinessHours__r.FLAGS__TodayStartTime__c,FLAGS__ViewedFlag__c))*24)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Current Business Hours</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FLAGS__Enable_Case_Flags__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Enable Case Flags</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>FLAGS__Hours_Age_1__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Hours Age 1</label>
+        <summarizedField>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Hours_in_Age_1__c</summarizedField>
+        <summaryForeignKey>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Case__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>FLAGS__Hours_Age_2__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Hours Age 2</label>
+        <summarizedField>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Hours_in_Age_2__c</summarizedField>
+        <summaryForeignKey>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Case__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>FLAGS__Hours_Age_3__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Hours Age 3</label>
+        <summarizedField>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Hours_in_Age_3__c</summarizedField>
+        <summaryForeignKey>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Case__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>FLAGS__Hours_Age_4__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Hours Age 4</label>
+        <summarizedField>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Hours_in_Age_4__c</summarizedField>
+        <summaryForeignKey>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Case__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>FLAGS__Initial_Response_Business_Hours__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The business hours between Date/Time Opened and Initial Response, based on the business hours assigned to the case.</description>
+        <externalId>false</externalId>
+        <label>Initial Response Business Hours</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FLAGS__Initial_Response_Hours__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The hours between Date/Time Opened and Initial Response.</description>
+        <externalId>false</externalId>
+        <formula>(FLAGS__Initial_Response__c - CreatedDate) * 24</formula>
+        <label>Initial Response Hours</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FLAGS__Initial_Response__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Timestamp of Initial Response set the first time the Case Flag is cleared.</description>
+        <externalId>false</externalId>
+        <label>Initial Response</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>FLAGS__PreviousBusinessHours__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The amount of business hours that have lapsed prior to, but not including, the current day.</description>
+        <externalId>false</externalId>
+        <label>Previous Business Hours</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FLAGS__ViewedFlag__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The timestamp that the Case Flag was set.</description>
+        <externalId>false</externalId>
+        <label>Case Flag Date/Time</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Invoice_Number__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Invoice Number</label>
+        <referenceTo>Invoice__c</referenceTo>
+        <relationshipLabel>Cases</relationshipLabel>
+        <relationshipName>Cases</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>IsClosedOnCreate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>IsEscalated</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>KV_Sales_Agent_from_Account__c</fullName>
+        <externalId>false</externalId>
+        <label>KV Sales Agent from Account</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Master_Order__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&apos;/&apos;+ Order__r.Master_Order__r.Id,  Order__r.Master_Order__r.Name )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Master Order</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Order__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Order</label>
+        <referenceTo>Job__c</referenceTo>
+        <relationshipLabel>Cases</relationshipLabel>
+        <relationshipName>Cases</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Origin</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ParentId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Platform_Asset_Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Search for the correct Platform or Asset Account</inlineHelpText>
+        <label>Search Platform / Asset Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Cases (Platform / Asset Account)</relationshipLabel>
+        <relationshipName>Cases1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Priority</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Reason</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Resolution__c</fullName>
+        <externalId>false</externalId>
+        <label>Resolution</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Done</fullName>
+                    <default>false</default>
+                    <label>Done</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Resolve_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Resolve Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SourceId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Subject</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SuppliedCompany</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SuppliedEmail</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SuppliedName</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SuppliedPhone</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>csmrgp__Merged_By__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>User that performed the merge.</description>
+        <externalId>false</externalId>
+        <label>Merged By</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Cases</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>csmrgp__Merged_Date_Time__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Date/Time that the case was merged.</description>
+        <externalId>false</externalId>
+        <label>Merged Date/Time</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>csmrgp__Subject_Conversation__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>TRIM(SUBSTITUTE(  SUBSTITUTE(   SUBSTITUTE(  SUBSTITUTE(  SUBSTITUTE( SUBSTITUTE(
+Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;Fw:&quot;, &quot;&quot;),&quot;RE:&quot;, &quot;&quot;), &quot;Re:&quot;, &quot;&quot;),&quot;[Email Loop Protection]&quot;,&quot;&quot;))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Subject Conversation</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <listViews>
+        <fullName>AllOpenCases</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>All Open Cases</label>
+    </listViews>
+    <listViews>
+        <fullName>Billing_Team_Case</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Billing Team</label>
+        <queue>Billing_Team</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>FLAGS__All_Open_or_Flagged</fullName>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <columns>FLAGS__CaseFlag__c</columns>
+        <columns>FLAGS__Case_Flag_Business__c</columns>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+        <columns>OWNER_NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>FLAGS__ViewedFlag__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <label>All Open or Flagged</label>
+    </listViews>
+    <listViews>
+        <fullName>FLAGS__All_Open_or_Flagged_for_4_Hours</fullName>
+        <booleanFilter>1</booleanFilter>
+        <columns>FLAGS__CaseFlag__c</columns>
+        <columns>FLAGS__Case_Flag_Business__c</columns>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>OWNER_NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>All Open or Flagged for &gt;= 4 Hours</label>
+    </listViews>
+    <listViews>
+        <fullName>FLAGS__My_Open_or_Flagged</fullName>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <columns>FLAGS__CaseFlag__c</columns>
+        <columns>FLAGS__Case_Flag_Business__c</columns>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>OWNER_NAME</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>FLAGS__ViewedFlag__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <label>My Open or Flagged</label>
+    </listViews>
+    <listViews>
+        <fullName>KV_DCU_Queue_Case</fullName>
+        <filterScope>Queue</filterScope>
+        <label>DCU Queue</label>
+        <queue>KV_DCU_Queue</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>KV_Support_Queue_Case</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Support Queue</label>
+        <queue>KV_Support_Queue</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>MyCases</fullName>
+        <filterScope>Mine</filterScope>
+        <label>My Cases</label>
+    </listViews>
+    <listViews>
+        <fullName>MyOpenCases</fullName>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>My Open Cases</label>
+    </listViews>
+    <listViews>
+        <fullName>Order_Administration_Case</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Order Administration</label>
+        <queue>Order_Administration</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>VOD_Production_Team_Case</fullName>
+        <filterScope>Queue</filterScope>
+        <label>VOD Production Team</label>
+        <queue>VOD_Production_Team</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <searchLayouts>
+        <customTabListAdditionalFields>CASES.CASE_NUMBER</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CASES.SUBJECT</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CASES.CREATED_DATE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CASES.PRIORITY</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>CASES.CASE_NUMBER</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CASES.SUBJECT</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CASES.STATUS</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CASES.CASE_NUMBER</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CASES.SUBJECT</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CASES.STATUS</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.CASE_NUMBER</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.SUBJECT</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.STATUS</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.CREATED_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <webLinks>
+        <fullName>APXTConga4__Conga_Composer_OAuth</fullName>
+        <availability>online</availability>
+        <description>*** DO NOT USE THIS BUTTON ON A PAGE LAYOUT *** 
+
+OAuth buttons require additional setup. Please see the Composer Installation Guide for more details.
+
+COPY THE URL FROM THIS BUTTON and paste it into your own custom button or link. Then add optional parameters to finely tune the button&apos;s behavior. See the Composer Configuration Guide for details.</description>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>660</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Conga Composer (OAuth)</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/apex/APXTConga4__Conga_Composer
+?serverUrl={!API.Partner_Server_URL_370}
+&amp;id={!Case.Id}</url>
+        <width>900</width>
+    </webLinks>
+    <webLinks>
+        <fullName>APXTConga4__Conga_Mail_Merge</fullName>
+        <availability>online</availability>
+        <description>*** DO NOT USE THIS BUTTON ON A PAGE LAYOUT *** 
+
+COPY THE URL FROM THIS BUTTON and paste it into your own custom button or link. Then add optional parameters to finely tune the button&apos;s behavior. See the Conga Configuration Guide for details.</description>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>false</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>660</height>
+        <isResizable>false</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Conga Composer</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>https://composer.congamerge.com
+?serverUrl={!API.Partner_Server_URL_370}
+&amp;id={!Case.Id}</url>
+        <width>900</width>
+    </webLinks>
+    <webLinks>
+        <fullName>E2CP__New_Comment</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>New Comment</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>var myURL=&apos;/apex/E2CP__New_Comment?id={!Case.Id}&apos;;
+
+if(typeof srcUp == &apos;function&apos;) {
+myURL+= &apos;&amp;isdtp=vw&amp;showheader=false&apos;;
+srcUp(myURL);
+} else {
+location=myURL;
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>E2CP__New_Comment_Lightning</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>page</linkType>
+        <masterLabel>New Comment</masterLabel>
+        <openType>replace</openType>
+        <page>E2CP__New_Comment</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>FLAGS__Clear_Flag</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>page</linkType>
+        <masterLabel>Clear Flag</masterLabel>
+        <openType>replace</openType>
+        <page>FLAGS__FlagClear</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>FLAGS__Clear_Flags</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Clear Flags</masterLabel>
+        <openType>noSidebar</openType>
+        <page>FLAGS__ClearFlags</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
+    <webLinks>
+        <fullName>FLAGS__Set_Flag</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>page</linkType>
+        <masterLabel>Set Flag</masterLabel>
+        <openType>replace</openType>
+        <page>FLAGS__FlagNow</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>FLAGS__Set_Flags</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Set Flags</masterLabel>
+        <openType>noSidebar</openType>
+        <page>FLAGS__SetFlags</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
+    <webLinks>
+        <fullName>csmrgp__CsMrgFindDupes</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Find Duplicates</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>var myURL = &apos;/apex/csmrgp__CsMrgPassThru?id={!Case.Id}&apos;;
+
+var isConsole = false; 
+if(typeof srcUp == &apos;function&apos;) isConsole = true; 
+
+if(isConsole)myURL += &apos;&amp;isdtp=vw&apos;; 
+
+if(!isConsole){ 
+location = myURL; 
+} 
+else { 
+srcUp(myURL); 
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>csmrgp__CsMrgFindDupes_Lightning</fullName>
+        <availability>online</availability>
+        <description>Visualforce Case Merge Premium Button. Used in the Lightning Experience.</description>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Find Duplicates</masterLabel>
+        <openType>sidebar</openType>
+        <page>csmrgp__CsMrgPassThru</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>csmrgp__CsMrgListBtn</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>page</linkType>
+        <masterLabel>Merge</masterLabel>
+        <openType>replace</openType>
+        <page>csmrgp__CsMrgSelect</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
+    <webLinks>
+        <fullName>dsfs__Send_with_DocuSign</fullName>
+        <availability>online</availability>
+        <description>This button will initiate a DocuSign Envelope that is linked to the Case</description>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Send with DocuSign</masterLabel>
+        <openType>noSidebar</openType>
+        <page>dsfs__CreateEnvelopeFromCase</page>
+        <protected>false</protected>
+    </webLinks>
+</CustomObject>

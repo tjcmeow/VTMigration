@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>Used to store the mapping of Case fields that should be tracked.</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>FLAGS__Case_Field__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Stores the name of the Case field to be tracked.</description>
+        <externalId>false</externalId>
+        <label>Case Field</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FLAGS__Mapped_Field__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Stores the name of the field to be mapped on the tracking object.</description>
+        <externalId>false</externalId>
+        <label>Mapped Field</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Case Flag Field Tracking</label>
+    <visibility>Public</visibility>
+</CustomObject>
