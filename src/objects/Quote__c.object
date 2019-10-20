@@ -1,0 +1,1396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Account__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <description>Select the Account for that Quote</description>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Quotes (InvoiceIT)</relationshipLabel>
+        <relationshipName>Quote</relationshipName>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Annual_Grand_Total__c</fullName>
+        <externalId>false</externalId>
+        <label>Annual Grand Total</label>
+        <summarizedField>Quote_Product__c.Roll_Up_Annual_Row_Total__c</summarizedField>
+        <summaryForeignKey>Quote_Product__c.Quote__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Annual_Net_Total__c</fullName>
+        <externalId>false</externalId>
+        <label>Annual Net Total</label>
+        <summarizedField>Quote_Product__c.Roll_Up_Annual_Net_Total__c</summarizedField>
+        <summaryForeignKey>Quote_Product__c.Quote__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Annual_VAT_Total__c</fullName>
+        <externalId>false</externalId>
+        <label>Annual VAT Total</label>
+        <summarizedField>Quote_Product__c.Roll_Up_Annual_VAT__c</summarizedField>
+        <summaryForeignKey>Quote_Product__c.Quote__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Approval_URL__c</fullName>
+        <externalId>false</externalId>
+        <formula>&quot;https://videotelmarineinternational.my.salesforce.com/&quot;&amp; Id</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Approval URL</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Approved_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Approved Status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pending</fullName>
+                    <default>true</default>
+                    <label>Pending</label>
+                </value>
+                <value>
+                    <fullName>Approved</fullName>
+                    <default>false</default>
+                    <label>Approved</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Billing_Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>It is loop up to Contact for Billing Contact</description>
+        <externalId>false</externalId>
+        <label>Billing Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Quotes (InvoiceIT)</relationshipLabel>
+        <relationshipName>Quotes_InvoiceIT</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Contracted_MRR__c</fullName>
+        <description>TCV / Terms(In Months)</description>
+        <externalId>false</externalId>
+        <label>Contracted MRR</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Create_Automatic_Order__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If this is true then it will create the Order from the Quote trigger.</description>
+        <externalId>false</externalId>
+        <label>Create Automatic Order?</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Discount_Code__c</fullName>
+        <description>The Discount Code will be applied to all the charges</description>
+        <externalId>false</externalId>
+        <label>Discount Code</label>
+        <length>30</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Discount_Percent__c</fullName>
+        <description>The Discount Percent will be applied to all the charges</description>
+        <externalId>false</externalId>
+        <label>Discount Percent</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Discount_Value__c</fullName>
+        <description>Discount offered on this Quote</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Discount offered on this Quote</inlineHelpText>
+        <label>Discount Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Email_Sent__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If it is checked that means an Email has been sent to the customer.</description>
+        <externalId>false</externalId>
+        <label>Email Sent</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>External_Id__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>External Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>IITIntended_Use__c</fullName>
+        <description>Select where the Titles will be used, which will drive VAT</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select where the Titles will be used, which will drive VAT</inlineHelpText>
+        <label>Intended Use</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>HIGH SEAS</fullName>
+                    <default>false</default>
+                    <label>HIGH SEAS</label>
+                </value>
+                <value>
+                    <fullName>LOCAL UK WATERS</fullName>
+                    <default>false</default>
+                    <label>LOCAL UK WATERS</label>
+                </value>
+                <value>
+                    <fullName>LOCAL EU WATERS</fullName>
+                    <default>false</default>
+                    <label>LOCAL EU WATERS</label>
+                </value>
+                <value>
+                    <fullName>LAND</fullName>
+                    <default>false</default>
+                    <label>LAND</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Legal_Entity__c</fullName>
+        <externalId>false</externalId>
+        <label>Legal Entity</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Legal_Entity</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Net_Total__c</fullName>
+        <description>Subtotal - Discount Value</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Subtotal - Discount Value</inlineHelpText>
+        <label>Net Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Number_Of_Terms__c</fullName>
+        <description>Leave this blank for &quot;Evergreen Subscriptions&quot; i.e., those that don&apos;t expire</description>
+        <externalId>false</externalId>
+        <label>Terms (Months)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Quotes (InvoiceIT)</relationshipLabel>
+        <relationshipName>Quotes</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Override_Vat_Tax__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If user enable this checkbox, it will not populate VAT/Tax</description>
+        <externalId>false</externalId>
+        <label>Override Vat/Tax ?</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Partner_Agent__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Partner Agent</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Partner_Agent_Quotes</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Partner__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Select the Partner who places this Quote on behalf of the Client</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the Partner who places this Quote on behalf of the Client</inlineHelpText>
+        <label>Partner</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Quotes (Partner)</relationshipLabel>
+        <relationshipName>Quotes</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Platform_or_Vessel_Detail__c</fullName>
+        <externalId>false</externalId>
+        <label>Platform or Vessel Detail</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Platform_Vessel_Detail</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Proposed_End_Date__c</fullName>
+        <description>End Date proposed by the User</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This value will auto populate the Order Service End Date and override other settings</inlineHelpText>
+        <label>Proposed End Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Proposed_Start_Date__c</fullName>
+        <description>Starting Date proposed by the user</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This value will auto populate the Order Service Start Date and override other settings</inlineHelpText>
+        <label>Proposed Start Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Quote_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Quote Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Quote_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Quote Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Rental</fullName>
+                    <default>false</default>
+                    <label>Rental</label>
+                </value>
+                <value>
+                    <fullName>Sale</fullName>
+                    <default>false</default>
+                    <label>Sale</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Quote__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>It tells the Parent Quote from which the Quote is cloned</description>
+        <externalId>false</externalId>
+        <label>Parent Quote</label>
+        <referenceTo>Quote__c</referenceTo>
+        <relationshipLabel>Cloned Quotes</relationshipLabel>
+        <relationshipName>Quotes</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Recalculate__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Calculates the Total Contract Value</description>
+        <externalId>false</externalId>
+        <label>Recalculate</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Renewed_From__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Renewed From</label>
+        <referenceTo>Job__c</referenceTo>
+        <relationshipLabel>Quotes</relationshipLabel>
+        <relationshipName>Quotes</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Roll_Up_Year_2_Net_total__c</fullName>
+        <externalId>false</externalId>
+        <label>Roll Up Year 2 Net total</label>
+        <summarizedField>Quote_Product__c.Roll_up_Year_2_Net_total__c</summarizedField>
+        <summaryForeignKey>Quote_Product__c.Quote__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Roll_Up_Year_3_Net_total__c</fullName>
+        <externalId>false</externalId>
+        <label>Roll Up Year 3 Net total</label>
+        <summarizedField>Quote_Product__c.Roll_up_Year_3_Net_total__c</summarizedField>
+        <summaryForeignKey>Quote_Product__c.Quote__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Roll_Up_Year_4_Net_total__c</fullName>
+        <externalId>false</externalId>
+        <label>Roll Up Year 4 Net total</label>
+        <summarizedField>Quote_Product__c.Roll_up_Year_4_Net_total__c</summarizedField>
+        <summaryForeignKey>Quote_Product__c.Quote__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Shipping_Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Shipping Account</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Account.RecordType.Name</field>
+                <operation>equals</operation>
+                <value>KV Platform</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Quotes (Shipping Account)</relationshipLabel>
+        <relationshipName>Shipping_Account_Quote</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Shipping_Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Delivers the product to the customer</description>
+        <externalId>false</externalId>
+        <label>Primary(Shipping) Contact</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Contact.AccountId</field>
+                <operation>equals</operation>
+                <valueField>$Source.Account__c</valueField>
+            </filterItems>
+            <infoMessage>You can pick a contact that belongs to the selected Account or Partner. This can be overridden.</infoMessage>
+            <isOptional>true</isOptional>
+        </lookupFilter>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Quotes (Shipping Contact)</relationshipLabel>
+        <relationshipName>Quote1</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Start_Date__c</fullName>
+        <defaultValue>TODAY()</defaultValue>
+        <description>Service Activation Date</description>
+        <externalId>false</externalId>
+        <label>Valid From</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <description>Based on the status user will check the Quote is Active/Converted or not</description>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>true</default>
+                    <label>Active</label>
+                </value>
+                <value>
+                    <fullName>Converted</fullName>
+                    <default>false</default>
+                    <label>Converted</label>
+                </value>
+                <value>
+                    <fullName>Expired</fullName>
+                    <default>false</default>
+                    <label>Expired</label>
+                </value>
+                <value>
+                    <fullName>Cancelled</fullName>
+                    <default>false</default>
+                    <label>Cancelled</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Sub_total__c</fullName>
+        <description>Quantity * Unit Price</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Quantity * Unit Price</inlineHelpText>
+        <label>Subtotal</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sync_Quote__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If the value is true then it copies the products from Quote to an Opportunity.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>When checked, the products from the Quote record will be synchronized to the related Opportunity record.</inlineHelpText>
+        <label>Sync Quote</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Tax__c</fullName>
+        <description>Populate the Tax for the particular charges related to Quote</description>
+        <externalId>false</externalId>
+        <label>Tax</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Todays_MRR__c</fullName>
+        <externalId>false</externalId>
+        <label>Obsolete_Today&apos;s MRR</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TotalProfitPercent__c</fullName>
+        <description>(Grand Total - Total Cost)
+---------------------------------- x 100
+Grand Total</description>
+        <externalId>false</externalId>
+        <inlineHelpText>(Grand Total - Total Cost)
+---------------------------------- x 100
+Grand Total</inlineHelpText>
+        <label>Total Profit Percent</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Total_Contract_Value__c</fullName>
+        <description>This field will auto populate based on Terms(Months) field</description>
+        <externalId>false</externalId>
+        <label>Total Contract Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Cost__c</fullName>
+        <description>Quantity*Unit Cost</description>
+        <externalId>false</externalId>
+        <label>Total Cost Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Profit_Percent__c</fullName>
+        <externalId>false</externalId>
+        <label>Obsolete Total Profit Percent</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Total_Profit__c</fullName>
+        <description>Calculated based on the Grand Total</description>
+        <externalId>false</externalId>
+        <label>Total Profit (Excl Tax/VAT)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Quote_Products__c</fullName>
+        <description>This field represents how many products involved for that Quote</description>
+        <externalId>false</externalId>
+        <label>Total Quote Products</label>
+        <summaryForeignKey>Quote_Product__c.Quote__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Total__c</fullName>
+        <description>Subtotal - Discount + VAT + Tax</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Subtotal - Discount + VAT + Tax</inlineHelpText>
+        <label>Grand Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>VAT__c</fullName>
+        <externalId>false</externalId>
+        <label>VAT</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Valid_To__c</fullName>
+        <description>Service End Date</description>
+        <externalId>false</externalId>
+        <label>Valid To</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Vat_Roll_Up__c</fullName>
+        <externalId>false</externalId>
+        <label>Vat Roll Up</label>
+        <summarizedField>Quote_Product__c.Vat_Roll_Up__c</summarizedField>
+        <summaryForeignKey>Quote_Product__c.Quote__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Wet_or_Dry_Cargo__c</fullName>
+        <externalId>false</externalId>
+        <label>Wet or Dry Cargo</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Dry Cargo</fullName>
+                    <default>false</default>
+                    <label>Dry Cargo</label>
+                </value>
+                <value>
+                    <fullName>Wet Cargo</fullName>
+                    <default>false</default>
+                    <label>Wet Cargo</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Quote (InvoiceIT)</label>
+    <nameField>
+        <label>Quote (InvoiceIT) Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Quotes (InvoiceIT)</pluralLabel>
+    <recordTypes>
+        <fullName>Approved</fullName>
+        <active>true</active>
+        <label>Approved</label>
+        <picklistValues>
+            <picklist>Approved_Status__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>IITIntended_Use__c</picklist>
+            <values>
+                <fullName>HIGH SEAS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LAND</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LOCAL EU WATERS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LOCAL UK WATERS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Legal_Entity__c</picklist>
+            <values>
+                <fullName>VCR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VMA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VMI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VTS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Platform_or_Vessel_Detail__c</picklist>
+            <values>
+                <fullName>Bulk Carrier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chemical Tanker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Container</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Container Ship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Crude Oil Tanker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Crude Tanker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dry Cargo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gas Carrier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Cargo Vessel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Heavy Lift Vessel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LNG Carriers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Misc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Offshore</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Offshore Supply Vessel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Passenger</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Oil Tanker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RO-RO PCC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reefer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seismic Survey Vessels</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tankers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tugs</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Quote_Type__c</picklist>
+            <values>
+                <fullName>Rental</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sale</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Active</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Converted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Expired</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Wet_or_Dry_Cargo__c</picklist>
+            <values>
+                <fullName>Dry Cargo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wet Cargo</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Pending_Approval_Rental</fullName>
+        <active>true</active>
+        <label>Pending Approval Rental</label>
+        <picklistValues>
+            <picklist>Approved_Status__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>IITIntended_Use__c</picklist>
+            <values>
+                <fullName>HIGH SEAS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LAND</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LOCAL EU WATERS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LOCAL UK WATERS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Legal_Entity__c</picklist>
+            <values>
+                <fullName>VCR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VMA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VMI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VTS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Platform_or_Vessel_Detail__c</picklist>
+            <values>
+                <fullName>Bulk Carrier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chemical Tanker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Container</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Container Ship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Crude Oil Tanker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Crude Tanker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dry Cargo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gas Carrier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Cargo Vessel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Heavy Lift Vessel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LNG Carriers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Misc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Offshore</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Offshore Supply Vessel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Passenger</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Oil Tanker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RO-RO PCC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reefer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seismic Survey Vessels</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tankers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tugs</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Quote_Type__c</picklist>
+            <values>
+                <fullName>Rental</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sale</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Active</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Converted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Expired</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Wet_or_Dry_Cargo__c</picklist>
+            <values>
+                <fullName>Dry Cargo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wet Cargo</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Sales_Quote</fullName>
+        <active>true</active>
+        <label>Create Sales Quote</label>
+        <picklistValues>
+            <picklist>Approved_Status__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>IITIntended_Use__c</picklist>
+            <values>
+                <fullName>HIGH SEAS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LAND</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LOCAL EU WATERS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LOCAL UK WATERS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Legal_Entity__c</picklist>
+            <values>
+                <fullName>VCR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VMA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VMI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VTS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Platform_or_Vessel_Detail__c</picklist>
+            <values>
+                <fullName>Bulk Carrier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chemical Tanker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Container</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Container Ship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Crude Oil Tanker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Crude Tanker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dry Cargo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gas Carrier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Cargo Vessel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Heavy Lift Vessel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LNG Carriers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Misc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Offshore</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Offshore Supply Vessel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Passenger</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Oil Tanker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RO-RO PCC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reefer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seismic Survey Vessels</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tankers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tugs</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Quote_Type__c</picklist>
+            <values>
+                <fullName>Rental</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sale</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Active</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Converted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Expired</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Wet_or_Dry_Cargo__c</picklist>
+            <values>
+                <fullName>Dry Cargo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wet Cargo</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

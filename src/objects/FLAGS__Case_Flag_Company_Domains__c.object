@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>Used to store company domains as entered on the Case Flags Setup Wizard.</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>FLAGS__Domain_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Domain Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Case Flag Company Domains</label>
+    <listViews>
+        <fullName>FLAGS__All</fullName>
+        <columns>NAME</columns>
+        <columns>FLAGS__Domain_Name__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <visibility>Public</visibility>
+</CustomObject>

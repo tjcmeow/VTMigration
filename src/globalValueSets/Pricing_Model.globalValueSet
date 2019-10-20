@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Default</fullName>
+        <default>true</default>
+        <label>Default</label>
+    </customValue>
+    <customValue>
+        <fullName>Flat Fee Pricing</fullName>
+        <default>false</default>
+        <label>Flat Fee Pricing</label>
+    </customValue>
+    <customValue>
+        <fullName>Percentage Pricing</fullName>
+        <default>false</default>
+        <label>Percentage Pricing</label>
+    </customValue>
+    <customValue>
+        <fullName>Per Unit Pricing</fullName>
+        <default>false</default>
+        <label>Per Unit Pricing</label>
+    </customValue>
+    <customValue>
+        <fullName>Tiered Pricing</fullName>
+        <default>false</default>
+        <label>Tiered Pricing</label>
+    </customValue>
+    <customValue>
+        <fullName>Volume Pricing</fullName>
+        <default>false</default>
+        <label>Volume Pricing</label>
+    </customValue>
+    <masterLabel>Pricing Model</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

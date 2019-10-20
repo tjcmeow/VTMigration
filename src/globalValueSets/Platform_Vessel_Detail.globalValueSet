@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Bulk Carrier</fullName>
+        <default>false</default>
+        <label>Bulk Carrier</label>
+    </customValue>
+    <customValue>
+        <fullName>Chemical Tanker</fullName>
+        <default>false</default>
+        <label>Chemical Tanker</label>
+    </customValue>
+    <customValue>
+        <fullName>Container</fullName>
+        <default>false</default>
+        <label>Container</label>
+    </customValue>
+    <customValue>
+        <fullName>Container Ship</fullName>
+        <default>false</default>
+        <label>Container Ship</label>
+    </customValue>
+    <customValue>
+        <fullName>Crude Oil Tanker</fullName>
+        <default>false</default>
+        <label>Crude Oil Tanker</label>
+    </customValue>
+    <customValue>
+        <fullName>Crude Tanker</fullName>
+        <default>false</default>
+        <label>Crude Tanker</label>
+    </customValue>
+    <customValue>
+        <fullName>Dry Cargo</fullName>
+        <default>false</default>
+        <label>Dry Cargo</label>
+    </customValue>
+    <customValue>
+        <fullName>Gas Carrier</fullName>
+        <default>false</default>
+        <label>Gas Carrier</label>
+    </customValue>
+    <customValue>
+        <fullName>General Cargo Vessel</fullName>
+        <default>false</default>
+        <label>General Cargo Vessel</label>
+    </customValue>
+    <customValue>
+        <fullName>Heavy Lift Vessel</fullName>
+        <default>false</default>
+        <label>Heavy Lift Vessel</label>
+    </customValue>
+    <customValue>
+        <fullName>LNG Carriers</fullName>
+        <default>false</default>
+        <label>LNG Carriers</label>
+    </customValue>
+    <customValue>
+        <fullName>Misc</fullName>
+        <default>false</default>
+        <label>Misc</label>
+    </customValue>
+    <customValue>
+        <fullName>Offshore</fullName>
+        <default>false</default>
+        <label>Offshore</label>
+    </customValue>
+    <customValue>
+        <fullName>Offshore Supply Vessel</fullName>
+        <default>false</default>
+        <label>Offshore Supply Vessel</label>
+    </customValue>
+    <customValue>
+        <fullName>Passenger</fullName>
+        <default>false</default>
+        <label>Passenger</label>
+    </customValue>
+    <customValue>
+        <fullName>Product Oil Tanker</fullName>
+        <default>false</default>
+        <label>Product Oil Tanker</label>
+    </customValue>
+    <customValue>
+        <fullName>Reefer</fullName>
+        <default>false</default>
+        <label>Reefer</label>
+    </customValue>
+    <customValue>
+        <fullName>RO-RO PCC</fullName>
+        <default>false</default>
+        <label>RO-RO PCC</label>
+    </customValue>
+    <customValue>
+        <fullName>Seismic Survey Vessels</fullName>
+        <default>false</default>
+        <label>Seismic Survey Vessels</label>
+    </customValue>
+    <customValue>
+        <fullName>Tankers</fullName>
+        <default>false</default>
+        <label>Tankers</label>
+    </customValue>
+    <customValue>
+        <fullName>Tugs</fullName>
+        <default>false</default>
+        <label>Tugs</label>
+    </customValue>
+    <masterLabel>Platform/Vessel Detail</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>
