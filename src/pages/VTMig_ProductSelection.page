@@ -1,0 +1,28 @@
+<!--
+ - Created by jerry on 10/24/2019.
+ -->
+
+<apex:page id="VTMig_ProductSelection" standardController="Opportunity" extensions="VTMig_ProductSelection_Extension">
+    <apex:form>
+        <apex:pageBlock>
+            <apex:pageBlockButtons location="both">
+                <apex:commandButton id="btnNextStep"/>
+                <apex:commandButton id="btnCancel"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection title="Opportunity Information" collapsible="true" columns="2">
+                <apex:inputField id="acctName" label="Account Name" value="{!Order.Account__c}"/>
+                <apex:inputField id="shipContact" label="Primary(Shipping) Contact" value="{!Order.Shipping_Contact__c}"/>
+                <apex:inputField id="shipAcct" label="Shipping Account" value="{!Order.Shipping_Account__c}"/>
+                <!-- FIND SOURCE FOR THIS <apex:inputField id="currency" label="Currency" value="{!Order.}"/>-->
+                <apex:inputField id="partnerAcct" label="Partner Agent Account" value="{!Order.Partner_Agent__c}"/>
+                <apex:inputField id="intendedUse" label="Intended Use" value="{!Order.IITIntended_Use__c}"/>
+                <apex:inputField id="cargotype" label="Wet or Dry Cargo" value="{!Order.Wet_or_Dry_Cargo__c}"/>
+                <apex:inputField id="platformOrVessel" label="Platform or Vessel Detail" value="{!Order.Platform_or_Vessel_detail__c}"/>
+                <apex:inputField id="legalEntity"  label="Legal Entity" value="{!Order.Legal_Entity__c}"/>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection title="Search Products" collapsible="true" columns="1">
+                <apex:inputField id="prodSearch" label="Search Products" onChange="openList"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
