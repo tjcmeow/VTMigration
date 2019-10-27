@@ -706,6 +706,11 @@
         <language>en_US</language>
     </listViews>
     <listViews>
+        <fullName>All1</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
         <fullName>KV_Partner_Visit_Reports</fullName>
         <columns>NAME</columns>
         <columns>Account__c</columns>

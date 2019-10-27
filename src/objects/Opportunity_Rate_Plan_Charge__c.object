@@ -213,6 +213,7 @@
     </fields>
     <fields>
         <fullName>Discount_Percent__c</fullName>
+        <defaultValue>0</defaultValue>
         <externalId>false</externalId>
         <label>Discount Percent</label>
         <precision>6</precision>
@@ -429,6 +430,19 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
+    </fields>
+    <fields>
+        <fullName>Product_Rate_Plan_Charge__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Product Rate Plan Charge</label>
+        <referenceTo>Product_Rate_Plan_Charge__c</referenceTo>
+        <relationshipLabel>Opportunity Rate Plan Charges</relationshipLabel>
+        <relationshipName>Opportunity_Rate_Plan_Charges</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
     </fields>
     <fields>
         <fullName>Profit__c</fullName>

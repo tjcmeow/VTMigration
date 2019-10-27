@@ -1,0 +1,45 @@
+<!--
+ - Created by triciaigoe on 2019-10-27.
+ -->
+
+<apex:page id="VTMig_OrderInlineProducts" standardController="Job__c" extensions="VTMig_OrderProductsInlineController">
+
+    <apex:form>
+        <apex:pageBlock>
+            <apex:pageBlockTable title="Products" value="{!charges}" var="charge">
+                <apex:column headerValue="Product Name" value="{!charge.Job_Rate_Plan__r.Product_Rate_Plan__r.Product__c}">
+                </apex:column>
+                <apex:column headerValue="Quantity" value="{!charge.Quantity__c}">
+                </apex:column>
+                <apex:column headerValue="Charge Name" value="{!charge.Name}">
+                </apex:column>
+                <apex:column value="{!charge.Price_Type__c}">
+                </apex:column>
+                <apex:column value="{!charge.Status__c}">
+                </apex:column>
+                <apex:column value="{!charge.Service_Activation_Date__c}">
+                </apex:column>
+                <apex:column value="{!charge.Service_End_Date__c}">
+                </apex:column>
+                <apex:column value="{!charge.Unit_Price__c}">
+                </apex:column>
+                <apex:column value="{!charge.Price__c}">
+                </apex:column>
+                <apex:column value="{!charge.Discount_Value__c}">
+                </apex:column>
+                <apex:column value="{!charge.Net_Total__c}">
+                </apex:column>
+                <apex:column value="{!charge.VAT__c}">
+                </apex:column>
+                <apex:column value="{!charge.Tax__c}">
+                </apex:column>
+                <apex:column value="{!charge.Row_Total__c}">
+                </apex:column>
+                <apex:column value="{!charge.Count_Of_Titles__c}">
+                </apex:column>
+                <apex:column value="{!charge.Revenue_Recognition_Rule__c}">
+                </apex:column>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

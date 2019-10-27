@@ -731,6 +731,11 @@ IF(Legal_Entity__c == &apos;VMA&apos;, &apos;a0C1300001PXlHY&apos;, &apos;a0C130
         <type>Percent</type>
     </fields>
     <label>Credit Note</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
     <nameField>
         <label>Credit Note Name</label>
         <trackHistory>false</trackHistory>

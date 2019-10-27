@@ -50,6 +50,10 @@
                 <behavior>Edit</behavior>
                 <field>Unit_Of_Measurement__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Product_Rate_Plan_Charge__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns/>
         <style>TwoColumnsTopToBottom</style>

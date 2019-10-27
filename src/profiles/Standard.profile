@@ -121,11 +121,15 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>VTMig_OrderProductInline</apexClass>
+        <apexClass>VTMig_CreateOrder</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>VTMig_OrderProductsInlineController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>VTMig_ProductSelection_Extension</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -6354,6 +6358,21 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.Approval_URL__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Approved__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Billing_Contact__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Opportunity.Budget_Confirmed__c</field>
         <readable>true</readable>
@@ -6380,6 +6399,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Opportunity.Discount_Value__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Opportunity.Discovery_Completed__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -6394,6 +6418,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.IITIntended_Use__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.IsPrivate</field>
         <readable>false</readable>
@@ -6405,7 +6434,17 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Opportunity.Legal_Entity__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Opportunity.Loss_Reason__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Net_Total__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -6420,6 +6459,16 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Opportunity.Partner_Agent__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Platform_or_Vessel_Detail__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Opportunity.Probability</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -6429,13 +6478,53 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Shipping_Account__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Shipping_Contact__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Sub_total__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.TotalOpportunityQuantity</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Opportunity.Total_Contract_Value__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.Total_Opportunity_Discount_Percent__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Total__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Opportunity.Type</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.VAT__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Wet_or_Dry_Cargo__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -6646,6 +6735,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Opportunity_Rate_Plan_Charge__c.Product_Charge_Category__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity_Rate_Plan_Charge__c.Product_Rate_Plan_Charge__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -7265,6 +7359,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Product_Rate_Plan_Charge__c.Quantity__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Product_Rate_Plan_Charge__c.Revenue_Recognition_Rule__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -7431,161 +7530,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Product__c.Valid_To_Date__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Quote.AccountId</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Quote.AdditionalAddress</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Quote.AdditionalName</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Quote.BillingAddress</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Quote.BillingName</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Quote.ContactId</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Quote.ContractId</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Quote.Description</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Quote.Discount</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Quote.Email</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Quote.ExpirationDate</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Quote.Fax</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Quote.GrandTotal</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Quote.Phone</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Quote.QuoteToAddress</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Quote.QuoteToName</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Quote.ShippingAddress</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Quote.ShippingHandling</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Quote.ShippingName</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Quote.Status</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Quote.Subtotal</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Quote.Tax</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Quote.TotalPrice</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>QuoteLineItem.Description</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>QuoteLineItem.Discount</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>QuoteLineItem.External_Id__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>QuoteLineItem.ListPrice</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>QuoteLineItem.ProductCode</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>QuoteLineItem.ServiceDate</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>QuoteLineItem.Subtotal</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>QuoteLineItem.TotalPrice</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -10631,12 +10575,6 @@
         <layout>QuickText-Quick Text Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Quote-Quote Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>QuoteLineItem-Quote Line Item Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Quote_Charge_Titles__c-Quote Charge Titles Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -10650,21 +10588,6 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Quote_Rate_Plan__c-Quote Rate Plan Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Quote__c-Quote %28InvoiceIT%29 Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Quote__c-Quote %28InvoiceIT%29 Layout</layout>
-        <recordType>Quote__c.Approved</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Quote__c-Quote %28InvoiceIT%29 Layout</layout>
-        <recordType>Quote__c.Pending_Approval_Rental</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Quote__c-Quote %28InvoiceIT%29 Layout</layout>
-        <recordType>Quote__c.Sales_Quote</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Rank_Codes__c-Rank Codes Layout</layout>
@@ -10913,15 +10836,6 @@
     </objectPermissions>
     <objectPermissions>
         <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>false</modifyAllRecords>
-        <object>Document</object>
-        <viewAllRecords>false</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
         <allowDelete>false</allowDelete>
         <allowEdit>false</allowEdit>
         <allowRead>true</allowRead>
@@ -11017,15 +10931,6 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>QuickText</object>
-        <viewAllRecords>false</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>false</modifyAllRecords>
-        <object>Quote</object>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -11162,6 +11067,14 @@
     </pageAccesses>
     <pageAccesses>
         <apexPage>UnderConstruction</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>VTMig_CreateOrder</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>VTMig_ProductSelection</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
     <recordTypeVisibilities>
@@ -11312,10 +11225,6 @@
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
-        <tab>standard-Document</tab>
-        <visibility>DefaultOn</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
         <tab>standard-DuplicateRecordSet</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
@@ -11361,10 +11270,6 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-QuickText</tab>
-        <visibility>DefaultOn</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>standard-Quote</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>

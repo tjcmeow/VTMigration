@@ -2,38 +2,151 @@
  - Created by jerry on 10/24/2019.
  -->
 
-<apex:page id="VTMig_ProductSelection" standardController="Opportunity" extensions="VTMig_ProductSelection_Extension">
-    <apex:form>
+<apex:page docType="html-5.0" id="VTMig_ProductSelection" standardController="Opportunity" extensions="VTMig_ProductSelection_Extension">
+
+    <script>
+        function confirmCancel() {
+            var isCancel = confirm("Cancelling this would discard the changes.  Please confirm.");
+            if (isCancel) return true;
+            return false;
+        }
+        function displayTheCharge(theCharge){
+            console.log(theCharge);
+        }
+    </script>
+    <apex:outputField value="{!Opportunity.Name}" rendered="false"/>
+    <apex:sectionHeader title="Step 1 of 2" subtitle="{!opportunity.Name}" rendered="{!IF(pageStep == '1', true, false)}" />
+    <apex:sectionHeader title="Step 2 of 2" subtitle="{!opportunity.Name}" rendered="{!IF(pageStep == '2', true, false)}" />
+    <apex:form >
+        <apex:actionFunction name="openList" action="{!openList}"/>
         <!-- pageBlocks below render for each step of process -->
         <apex:pageBlock rendered="{!IF(pageStep == '1', true, false)}">
             <apex:pageBlockButtons location="both">
-                <apex:commandButton id="btnNextStep"/>
-                <apex:commandButton id="btnCancel"/>
+                <apex:commandButton action="{!step2}" value="Next" />
+                <apex:commandButton action="{!cancel}" value="Cancel" onclick="return confirmCancel()" immediate="true" />
             </apex:pageBlockButtons>
             <apex:pageBlockSection title="Opportunity Information" collapsible="true" columns="2">
-                <apex:inputField id="acctName" label="Account Name" value="{!Order.Account__c}"/>
-                <apex:inputField id="shipContact" label="Primary(Shipping) Contact" value="{!Order.Shipping_Contact__c}"/>
-                <apex:inputField id="shipAcct" label="Shipping Account" value="{!Order.Shipping_Account__c}"/>
-                <apex:inputField id="legalEntity"  label="Legal Entity" value="{!Order.Legal_Entity__c}"/>
-                <apex:inputField id="partnerAcct" label="Partner Agent Account" value="{!Order.Partner_Agent__c}"/>
-                <apex:inputField id="intendedUse" label="Intended Use" value="{!Order.IITIntended_Use__c}"/>
-                <apex:inputField id="cargotype" label="Wet or Dry Cargo" value="{!Order.Wet_or_Dry_Cargo__c}"/>
-                <apex:inputField id="platformOrVessel" label="Platform or Vessel Detail" value="{!Order.Platform_or_Vessel_detail__c}"/>
+                <apex:inputField id="acctName" label="Account Name" value="{!Opp.AccountId}"/>
+                <apex:inputField id="shipContact" label="Primary(Shipping) Contact" value="{!Opp.Shipping_Contact__c}"/>
+                <apex:inputField id="shipAcct" label="Shipping Account" value="{!Opp.Shipping_Account__c}"/>
+                <apex:inputField id="legalEntity"  label="Legal Entity" value="{!Opp.Legal_Entity__c}"/>
+                <apex:inputField id="partnerAcct" label="Partner Agent Account" value="{!Opp.Partner_Agent__c}"/>
+                <apex:inputField id="intendedUse" label="Intended Use" value="{!Opp.IITIntended_Use__c}"/>
+                <apex:inputField id="cargotype" label="Wet or Dry Cargo" value="{!Opp.Wet_or_Dry_Cargo__c}"/>
+                <apex:inputField id="platformOrVessel" label="Platform or Vessel Detail" value="{!Opp.Platform_or_Vessel_Detail__c}"/>
             </apex:pageBlockSection>
             <apex:pageBlockSection title="Search Products" collapsible="true" columns="1" id="table">
-                <apex:inputText id="prodSearch" value="{!prodSearchText}" label="Search Products" onChange="openList"/>
-                <apex:pageBlockTable value="{!ProductList}" var="product" rendered="getshowProducts">
-                    <apex:column>
+                <apex:inputText id="prodSearch" value="{!prodSearchText}" label="Search Products" onChange="openList()"/>
+                <apex:pageBlockTable value="{!ProductList}" var="product" rendered="{!showProducts}">
+                    <apex:column >
                         <apex:commandButton value="Select" action="{!selectProduct}" reRender="table">
-                            <apex:param name="chooseProduct" value="product" assignTo="{!selectedProduct}"/>
+                            <apex:param name="chooseProduct" value="{!product.Id}" assignTo="{!selectedProductId}"/>
                         </apex:commandButton>
                     </apex:column>
                     <apex:column value="{!product.Name}">
                     </apex:column>
                 </apex:pageBlockTable>
+                <apex:pageBlockTable title="Rate Plans" value="{!plans}" var="plan" rendered="{!showPlans}">
+                    <apex:column >
+                        <apex:commandButton value="Select" action="{!selectPlan}" reRender="table">
+                            <apex:param name="choosePlan" value="{!plan.Id}" assignTo="{!selectedPlanId}"/>
+                        </apex:commandButton>
+                    </apex:column>
+                    <apex:column value="{!plan.Name}">
+                    </apex:column>
+                    <apex:column value="{!plan.Description__c}">
+                    </apex:column>
+                </apex:pageBlockTable>
+                <apex:pageBlockTable title="Rate Plan Charges" value="{!prodCharges}" var="charge" rendered="{!showCharges}">
+                    <apex:column headerValue="Quantity">
+                        <apex:input type="number" value="{!charge.quantity}">
+                        </apex:input>
+                    </apex:column>
+                    <apex:column headerValue="Product Rate Plan Charge Name" value="{!charge.prodCharge.Name}">
+                    </apex:column>
+                    <apex:column value="{!charge.prodCharge.Unit_Of_Measurement__c}">
+                    </apex:column>
+                    <apex:column value="{!charge.prodCharge.Price_Type__c}">
+                    </apex:column>
+                    <apex:column value="{!charge.prodCharge.Pricing_Format__c}">
+                    </apex:column>
+                    <apex:column value="{!charge.prodCharge.Unit_Price__c}">
+                    </apex:column>
+                    <apex:column >
+                        <apex:commandButton value="Add to Opportunity" action="{!selectCharge}" reRender="table">
+                            <apex:param name="chargeId" value="{!charge.prodCharge.Id}" assignTo="{!selectedChargeId}"/>
+                        </apex:commandButton>
+                    </apex:column>
+                </apex:pageBlockTable>
+                <apex:outputText value="Selected Products" rendered="{!showChosenCharges}" style="font-weight:bold;margin-top:15px;"/>
+                <apex:pageBlockTable title="Rate Plan Charges" value="{!selectedProdCharges}" var="charge" rendered="{!showChosenCharges}">
+                    <apex:column >
+                        <apex:commandButton value="Remove" action="{!removeCharge}" reRender="table">
+                            <apex:param name="chargeId" value="{!charge.prodCharge.Id}" assignTo="{!removeChargeId}"/>
+                        </apex:commandButton>
+                    </apex:column>
+                    <apex:column headerValue="Product Name" value="{!charge.prodCharge.Product_Rate_Plan__r.Product__r.Name}">
+                    </apex:column>
+                    <apex:column headerValue="Product Code" value="{!charge.prodCharge.Product_Rate_Plan__r.Product__r.Product_Code__c}">
+                    </apex:column>
+                    <apex:column headerValue="Quantity" value="{!charge.quantity}">
+                    </apex:column>
+                    <apex:column value="{!charge.prodCharge.Unit_Of_Measurement__c}">
+                    </apex:column>
+                    <apex:column headerValue="Charge Name" value="{!charge.prodCharge.Name}">
+                    </apex:column>
+                    <apex:column value="{!charge.prodCharge.Price_Type__c}">
+                    </apex:column>
+                    <apex:column value="{!charge.prodCharge.Pricing_Format__c}">
+                    </apex:column>
+                    <apex:column value="{!charge.prodCharge.Unit_Price__c}">
+                    </apex:column>
+                </apex:pageBlockTable>
             </apex:pageBlockSection>
         </apex:pageBlock>
         <apex:pageBlock rendered="{!IF(pageStep == '2', true, false)}">
+            <apex:pageBlockButtons location="both">
+                <apex:commandButton action="{!step1}" value="Previous" />
+                <apex:commandButton action="{!saveProducts}" value="Save" />
+                <apex:commandButton action="{!recalculate}" value="Recalculate" />
+                <apex:commandButton action="{!cancel}" value="Cancel" onclick="return confirmCancel()" immediate="true" />
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection title="Products" collapsible="false" columns="1">
+                <apex:pageBlockTable title="Selected Products" value="{!selectedCharges}" var="charge">
+                    <apex:column headerValue="Product Name" value="{!charge.opportunityProduct.Name}">
+                    </apex:column>
+                    <apex:column value="{!charge.opportunityProduct.Product_Code__c}">
+                    </apex:column>
+                    <apex:column value="{!charge.opportunityRatePlanCharge.Quantity__c}">
+                    </apex:column>
+                    <apex:column value="{!charge.opportunityRatePlanCharge.Unit_Of_Measurement__c}">
+                    </apex:column>
+                    <apex:column headerValue="Charge Name" value="{!charge.opportunityRatePlanCharge.Name}">
+                    </apex:column>
+                    <apex:column value="{!charge.opportunityRatePlanCharge.Price_Type__c}">
+                    </apex:column>
+                    <apex:column value="{!charge.opportunityRatePlanCharge.Unit_Price__c}">
+
+                    </apex:column>
+                    <apex:column value="{!charge.opportunityRatePlanCharge.Price__c}">
+                    </apex:column>
+                    <apex:column value="{!charge.opportunityRatePlanCharge.Discount_Value__c}">
+                    </apex:column>
+                    <apex:column headerValue="Discount Percent">
+                        <apex:inputField value="{!charge.opportunityRatePlanCharge.Discount_Percent__c}">
+                        </apex:inputField>
+                    </apex:column>
+                </apex:pageBlockTable>
+                <apex:outputPanel >
+                    <apex:outputText value="Overall Discount Percent" style="padding-left:700px;"/>
+                    <apex:input type="number" value="{!overallDiscount}" style="margin:20px;"/>
+                    <br/>
+                    <apex:outputText value="Grand Total" style="padding-left:700px;"/>
+                    <apex:outputText value="{0, number, 00.00}" style="margin:20px;">
+                        <apex:param value="{!grandTotal}" name="Grand Total"/>
+                    </apex:outputText>
+                </apex:outputPanel>
+            </apex:pageBlockSection>
         </apex:pageBlock>
     </apex:form>
 </apex:page>

@@ -951,29 +951,8 @@
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>HIGH SEAS</fullName>
-                    <default>false</default>
-                    <label>HIGH SEAS</label>
-                </value>
-                <value>
-                    <fullName>LOCAL UK WATERS</fullName>
-                    <default>false</default>
-                    <label>LOCAL UK WATERS</label>
-                </value>
-                <value>
-                    <fullName>LOCAL EU WATERS</fullName>
-                    <default>false</default>
-                    <label>LOCAL EU WATERS</label>
-                </value>
-                <value>
-                    <fullName>LAND</fullName>
-                    <default>false</default>
-                    <label>LAND</label>
-                </value>
-            </valueSetDefinition>
+            <restricted>true</restricted>
+            <valueSetName>Intended_Use</valueSetName>
         </valueSet>
     </fields>
     <fields>
@@ -2626,6 +2605,10 @@
     <label>Order</label>
     <listViews>
         <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>Shipping_Account__c</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>

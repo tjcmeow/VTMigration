@@ -175,11 +175,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>SyncedQuote</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Contract</field>
             <table>Opportunity</table>
         </columns>

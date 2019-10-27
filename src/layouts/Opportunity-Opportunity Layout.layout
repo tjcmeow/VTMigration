@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customButtons>Add_Products</customButtons>
+    <excludeButtons>ChangeRecordType</excludeButtons>
+    <excludeButtons>DeepClone</excludeButtons>
+    <excludeButtons>PrintableView</excludeButtons>
     <excludeButtons>Submit</excludeButtons>
     <layoutSections>
         <customLabel>false</customLabel>
@@ -46,6 +50,58 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>External_ID__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Discount_Value__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Sub_total__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Total_Opportunity_Discount_Percent__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Approved__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Approval_URL__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Shipping_Contact__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Billing_Contact__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Shipping_Account__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Legal_Entity__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Partner_Agent__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>IITIntended_Use__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Wet_or_Dry_Cargo__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Platform_or_Vessel_Detail__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -174,29 +230,19 @@
             <sortOrder>5</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>SendEmail</actionName>
-            <actionType>StandardButton</actionType>
-            <sortOrder>6</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
             <actionName>FeedItem.ContentNote</actionName>
             <actionType>QuickAction</actionType>
-            <sortOrder>7</sortOrder>
+            <sortOrder>6</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
             <actionName>FeedItem.TextPost</actionName>
             <actionType>QuickAction</actionType>
-            <sortOrder>8</sortOrder>
+            <sortOrder>7</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
             <actionName>FeedItem.ContentPost</actionName>
             <actionType>QuickAction</actionType>
-            <sortOrder>9</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
-            <actionName>SendEmail</actionName>
-            <actionType>QuickAction</actionType>
-            <sortOrder>10</sortOrder>
+            <sortOrder>8</sortOrder>
         </platformActionListItems>
     </platformActionList>
     <quickActionList>
@@ -244,16 +290,6 @@
         <relatedList>RelatedContactRoleList</relatedList>
     </relatedLists>
     <relatedLists>
-        <fields>QUOTE.QUOTENUMBER</fields>
-        <fields>QUOTE.NAME</fields>
-        <fields>QUOTE.ISSYNCING</fields>
-        <fields>QUOTE.EXPIRATIONDATE</fields>
-        <fields>QUOTE.SUBTOTAL</fields>
-        <fields>QUOTE.TOTALPRICE</fields>
-        <fields>CreatedBy</fields>
-        <relatedList>RelatedQuoteList</relatedList>
-    </relatedLists>
-    <relatedLists>
         <fields>Product2</fields>
         <fields>Quantity</fields>
         <fields>UnitPrice</fields>
@@ -287,7 +323,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h61000001Rgmy</masterLabel>
+        <masterLabel>00h4J000002FfLm</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

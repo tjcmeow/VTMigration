@@ -71,6 +71,10 @@
                 <behavior>Readonly</behavior>
                 <field>Master_Order_Number__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>IITIntended_Use__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -230,10 +234,6 @@
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>Number_of_Terms__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>IITIntended_Use__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>

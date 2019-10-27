@@ -149,7 +149,7 @@
     <enableHistory>false</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>false</enableReports>
-    <enableSearch>false</enableSearch>
+    <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
@@ -160,7 +160,6 @@
         <externalId>false</externalId>
         <label>Account</label>
         <referenceTo>Account</referenceTo>
-        <relationshipLabel>Quotes (InvoiceIT)</relationshipLabel>
         <relationshipName>Quote</relationshipName>
         <required>true</required>
         <trackTrending>false</trackTrending>
@@ -237,7 +236,6 @@
         <externalId>false</externalId>
         <label>Billing Contact</label>
         <referenceTo>Contact</referenceTo>
-        <relationshipLabel>Quotes (InvoiceIT)</relationshipLabel>
         <relationshipName>Quotes_InvoiceIT</relationshipName>
         <required>false</required>
         <trackTrending>false</trackTrending>
@@ -329,29 +327,8 @@
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>HIGH SEAS</fullName>
-                    <default>false</default>
-                    <label>HIGH SEAS</label>
-                </value>
-                <value>
-                    <fullName>LOCAL UK WATERS</fullName>
-                    <default>false</default>
-                    <label>LOCAL UK WATERS</label>
-                </value>
-                <value>
-                    <fullName>LOCAL EU WATERS</fullName>
-                    <default>false</default>
-                    <label>LOCAL EU WATERS</label>
-                </value>
-                <value>
-                    <fullName>LAND</fullName>
-                    <default>false</default>
-                    <label>LAND</label>
-                </value>
-            </valueSetDefinition>
+            <restricted>true</restricted>
+            <valueSetName>Intended_Use</valueSetName>
         </valueSet>
     </fields>
     <fields>
@@ -397,7 +374,6 @@
         <externalId>false</externalId>
         <label>Opportunity</label>
         <referenceTo>Opportunity</referenceTo>
-        <relationshipLabel>Quotes (InvoiceIT)</relationshipLabel>
         <relationshipName>Quotes</relationshipName>
         <required>false</required>
         <trackTrending>false</trackTrending>
@@ -431,7 +407,6 @@
         <inlineHelpText>Select the Partner who places this Quote on behalf of the Client</inlineHelpText>
         <label>Partner</label>
         <referenceTo>Account</referenceTo>
-        <relationshipLabel>Quotes (Partner)</relationshipLabel>
         <relationshipName>Quotes</relationshipName>
         <required>false</required>
         <trackTrending>false</trackTrending>
@@ -509,7 +484,6 @@
         <externalId>false</externalId>
         <label>Parent Quote</label>
         <referenceTo>Quote__c</referenceTo>
-        <relationshipLabel>Cloned Quotes</relationshipLabel>
         <relationshipName>Quotes</relationshipName>
         <required>false</required>
         <trackTrending>false</trackTrending>
@@ -530,7 +504,6 @@
         <externalId>false</externalId>
         <label>Renewed From</label>
         <referenceTo>Job__c</referenceTo>
-        <relationshipLabel>Quotes</relationshipLabel>
         <relationshipName>Quotes</relationshipName>
         <required>false</required>
         <trackTrending>false</trackTrending>
@@ -581,7 +554,6 @@
             <isOptional>false</isOptional>
         </lookupFilter>
         <referenceTo>Account</referenceTo>
-        <relationshipLabel>Quotes (Shipping Account)</relationshipLabel>
         <relationshipName>Shipping_Account_Quote</relationshipName>
         <required>false</required>
         <trackTrending>false</trackTrending>
@@ -604,7 +576,6 @@
             <isOptional>true</isOptional>
         </lookupFilter>
         <referenceTo>Contact</referenceTo>
-        <relationshipLabel>Quotes (Shipping Contact)</relationshipLabel>
         <relationshipName>Quote1</relationshipName>
         <required>false</required>
         <trackTrending>false</trackTrending>
@@ -838,12 +809,17 @@ Grand Total</inlineHelpText>
             </valueSetDefinition>
         </valueSet>
     </fields>
-    <label>Quote (InvoiceIT)</label>
+    <label>Quote</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
     <nameField>
-        <label>Quote (InvoiceIT) Name</label>
+        <label>Quote Name</label>
         <type>Text</type>
     </nameField>
-    <pluralLabel>Quotes (InvoiceIT)</pluralLabel>
+    <pluralLabel>Quotes</pluralLabel>
     <recordTypes>
         <fullName>Approved</fullName>
         <active>true</active>

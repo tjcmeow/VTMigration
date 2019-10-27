@@ -215,11 +215,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>IITIntended_Use__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Initial_Agreement_Date_BMS__c</field>
             <table>Job__c</table>
         </columns>

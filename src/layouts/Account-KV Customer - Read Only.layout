@@ -378,6 +378,12 @@
         <fields>CASES.PRIORITY</fields>
         <relatedList>Case.Platform_Asset_Account__c</relatedList>
     </relatedLists>
+    <relatedLists>
+        <fields>OPPORTUNITY.NAME</fields>
+        <fields>ACCOUNT.NAME</fields>
+        <fields>OPPORTUNITY.CLOSE_DATE</fields>
+        <relatedList>Opportunity.Shipping_Account__c</relatedList>
+    </relatedLists>
     <relatedObjects>ParentId</relatedObjects>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>

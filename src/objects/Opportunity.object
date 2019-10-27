@@ -169,6 +169,74 @@
         <trackTrending>false</trackTrending>
     </fields>
     <fields>
+        <fullName>Approval_URL__c</fullName>
+        <externalId>false</externalId>
+        <formula>&apos;https://videotelmarineinternational--dev.my.salesforce.com/&apos;&amp;Id</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Approval URL</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Approved__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>This will be updated part of the field updates for an Approval Process, defaulting to Not Required</inlineHelpText>
+        <label>Approval Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Not Required</fullName>
+                    <default>false</default>
+                    <label>Not Required</label>
+                </value>
+                <value>
+                    <fullName>Pending Approval</fullName>
+                    <default>false</default>
+                    <label>Pending Approval</label>
+                </value>
+                <value>
+                    <fullName>Approved</fullName>
+                    <default>false</default>
+                    <label>Approved</label>
+                </value>
+                <value>
+                    <fullName>Rejected</fullName>
+                    <default>false</default>
+                    <label>Rejected</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Billing_Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Billing Contact</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Contact.AccountId</field>
+                <operation>equals</operation>
+                <valueField>$Source.AccountId</valueField>
+            </filterItems>
+            <isOptional>true</isOptional>
+        </lookupFilter>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Opportunities (Billing Contact)</relationshipLabel>
+        <relationshipName>Opportunities2</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>Budget_Confirmed__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -274,6 +342,18 @@
         <trackTrending>false</trackTrending>
     </fields>
     <fields>
+        <fullName>Discount_Value__c</fullName>
+        <externalId>false</externalId>
+        <label>Discount Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Discovery_Completed__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -300,6 +380,19 @@
         <unique>true</unique>
     </fields>
     <fields>
+        <fullName>IITIntended_Use__c</fullName>
+        <externalId>false</externalId>
+        <label>Intended Use</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Intended_Use</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>IqScore</fullName>
         <trackTrending>false</trackTrending>
     </fields>
@@ -313,6 +406,19 @@
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Legal_Entity__c</fullName>
+        <externalId>false</externalId>
+        <label>Legal Entity</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Legal_Entity</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Loss_Reason__c</fullName>
@@ -359,6 +465,18 @@
         <trackTrending>false</trackTrending>
     </fields>
     <fields>
+        <fullName>Net_Total__c</fullName>
+        <externalId>false</externalId>
+        <label>Net Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>NextStep</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
@@ -374,6 +492,31 @@
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Partner_Agent__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Partner Agent</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Opportunities</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Platform_or_Vessel_Detail__c</fullName>
+        <externalId>false</externalId>
+        <label>Platform or Vessel Detail</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Platform_Vessel_Detail</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Pricebook2Id</fullName>
@@ -395,16 +538,66 @@
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>Shipping_Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Shipping Account</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Account.RecordType.Name</field>
+                <operation>equals</operation>
+                <value>KV Platform</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Opportunities</relationshipLabel>
+        <relationshipName>Shipping_Account_Opportunity</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Shipping_Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Primary(Shipping) Contact</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>$Source.AccountId</field>
+                <operation>equals</operation>
+                <valueField>Contact.AccountId</valueField>
+            </filterItems>
+            <isOptional>true</isOptional>
+        </lookupFilter>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Opportunities (Shipping Contact)</relationshipLabel>
+        <relationshipName>Opportunities1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>StageName</fullName>
         <trackFeedHistory>true</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
     </fields>
     <fields>
-        <fullName>SyncedQuoteId</fullName>
+        <fullName>Sub_total__c</fullName>
+        <externalId>false</externalId>
+        <label>Subtotal</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
-        <type>Lookup</type>
+        <type>Number</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>TotalOpportunityQuantity</fullName>
@@ -412,10 +605,84 @@
         <trackTrending>false</trackTrending>
     </fields>
     <fields>
+        <fullName>Total_Contract_Value__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Contract Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Opportunity_Discount_Percent__c</fullName>
+        <externalId>false</externalId>
+        <formula>Discount_Value__c / Sub_total__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Based on Discount Value of the Order and Total Order Value</inlineHelpText>
+        <label>Total Opportunity Discount Percent</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Total__c</fullName>
+        <externalId>false</externalId>
+        <label>Grand Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Type</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>VAT__c</fullName>
+        <externalId>false</externalId>
+        <label>VAT</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Wet_or_Dry_Cargo__c</fullName>
+        <externalId>false</externalId>
+        <label>Wet or Dry Cargo</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Dry Cargo</fullName>
+                    <default>false</default>
+                    <label>Dry Cargo</label>
+                </value>
+                <value>
+                    <fullName>Wet Cargo</fullName>
+                    <default>false</default>
+                    <label>Wet Cargo</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <listViews>
         <fullName>AllOpportunities</fullName>
@@ -573,6 +840,17 @@ COPY THE URL FROM THIS BUTTON and paste it into your own custom button or link. 
 ?serverUrl={!API.Partner_Server_URL_370}
 &amp;id={!Opportunity.Id}</url>
         <width>900</width>
+    </webLinks>
+    <webLinks>
+        <fullName>Add_Products</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Add Products</masterLabel>
+        <openType>sidebar</openType>
+        <page>VTMig_ProductSelection</page>
+        <protected>false</protected>
     </webLinks>
     <webLinks>
         <fullName>dsfs__Send_with_DocuSign</fullName>

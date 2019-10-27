@@ -50,8 +50,19 @@
     <site>Agent_Portal</site>
     <status>UnderConstruction</status>
     <tabs>
+        <customTab>Quote__c</customTab>
+        <customTab>Job__c</customTab>
+        <customTab>Visit_Report__c</customTab>
+        <customTab>dsfs__DocuSign_Status__c</customTab>
+        <customTab>dsfs__DocuSign_Admin</customTab>
         <defaultTab>home</defaultTab>
-        <standardTab>Chatter</standardTab>
+        <standardTab>home</standardTab>
+        <standardTab>Account</standardTab>
+        <standardTab>Contact</standardTab>
+        <standardTab>Lead</standardTab>
+        <standardTab>Opportunity</standardTab>
+        <standardTab>CollaborationGroup</standardTab>
+        <standardTab>Dashboard</standardTab>
     </tabs>
     <urlPathPrefix>partners</urlPathPrefix>
     <welcomeTemplate>unfiled$public/CommunityWelcomeEmailTemplate</welcomeTemplate>

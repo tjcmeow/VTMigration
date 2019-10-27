@@ -45,6 +45,10 @@
                 <behavior>Readonly</behavior>
                 <field>Master_Order_Number__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>IITIntended_Use__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -235,10 +239,6 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Payment_Terms__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>IITIntended_Use__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
