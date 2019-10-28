@@ -157,6 +157,10 @@
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="VTMig_OppProductsInlineController" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="VTMig_OrderProductsInlineController" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
@@ -300,6 +304,10 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="VTMig_CreateOrder" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="VTMig_OppInlineProducts" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
