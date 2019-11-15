@@ -10810,6 +10810,106 @@
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="New_Videotel_Pre_Invoicing_Validation/Inconsistent_Legal_Entity" />
+                            <option name="parentFolder" value="New_Videotel_Pre_Invoicing_Validation" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="New_Videotel_Pre_Invoicing_Validation/Incorrect_ORPC_on_Master_Order" />
+                            <option name="parentFolder" value="New_Videotel_Pre_Invoicing_Validation" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="New_Videotel_Pre_Invoicing_Validation/Invoices_without_Partner_Agent" />
+                            <option name="parentFolder" value="New_Videotel_Pre_Invoicing_Validation" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="New_Videotel_Pre_Invoicing_Validation/Missing_Billing_Email_Addresses" />
+                            <option name="parentFolder" value="New_Videotel_Pre_Invoicing_Validation" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="New_Videotel_Pre_Invoicing_Validation/Missing_Delivery_Type" />
+                            <option name="parentFolder" value="New_Videotel_Pre_Invoicing_Validation" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="New_Videotel_Pre_Invoicing_Validation/Missing_Intended_Use1" />
+                            <option name="parentFolder" value="New_Videotel_Pre_Invoicing_Validation" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="New_Videotel_Pre_Invoicing_Validation/Missing_Legal_Entity" />
+                            <option name="parentFolder" value="New_Videotel_Pre_Invoicing_Validation" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="New_Videotel_Pre_Invoicing_Validation/Missing_Payment_Terms" />
+                            <option name="parentFolder" value="New_Videotel_Pre_Invoicing_Validation" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="New_Videotel_Pre_Invoicing_Validation/NTSI_Orders_with_Wrong_Billing_Contact1" />
+                            <option name="parentFolder" value="New_Videotel_Pre_Invoicing_Validation" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="New_Videotel_Pre_Invoicing_Validation/Order_ORPC_Mismatch_2" />
+                            <option name="parentFolder" value="New_Videotel_Pre_Invoicing_Validation" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="New_Videotel_Pre_Invoicing_Validation/Orders_Ready_to_Bill_with_no_SSD" />
+                            <option name="parentFolder" value="New_Videotel_Pre_Invoicing_Validation" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="New_Videotel_Pre_Invoicing_Validation/Orders_to_Ad_Hoc" />
+                            <option name="parentFolder" value="New_Videotel_Pre_Invoicing_Validation" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="New_Videotel_Pre_Invoicing_Validation/Orders_Uplift_Errors" />
+                            <option name="parentFolder" value="New_Videotel_Pre_Invoicing_Validation" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="New_Videotel_Pre_Invoicing_Validation/Orders_with_Account_type_Prospect1" />
+                            <option name="parentFolder" value="New_Videotel_Pre_Invoicing_Validation" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="New_Videotel_Pre_Invoicing_Validation/Orders_with_no_Next_Charge_Date" />
+                            <option name="parentFolder" value="New_Videotel_Pre_Invoicing_Validation" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="New_Videotel_Pre_Invoicing_Validation/Orders_with_SED_Populated_but_RTB1" />
+                            <option name="parentFolder" value="New_Videotel_Pre_Invoicing_Validation" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="New_Videotel_Pre_Invoicing_Validation/Orders_without_ORPCs1" />
+                            <option name="parentFolder" value="New_Videotel_Pre_Invoicing_Validation" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="New_Videotel_Pre_Invoicing_Validation/Orders_without_Partner_Agent1" />
+                            <option name="parentFolder" value="New_Videotel_Pre_Invoicing_Validation" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="New_Videotel_Pre_Invoicing_Validation/Postal_Address_Validation" />
+                            <option name="parentFolder" value="New_Videotel_Pre_Invoicing_Validation" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="New_Videotel_Pre_Invoicing_Validation/RMA_Report_for_Credit_Notes" />
+                            <option name="parentFolder" value="New_Videotel_Pre_Invoicing_Validation" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="folder" value="true" />
                             <option name="name" value="Sales_and_Marketing_Reports" />
                           </MetadataEntry>
@@ -11897,6 +11997,16 @@
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Videotel_Reports/APXSSSCustEscalatedcasesYTD" />
+                            <option name="parentFolder" value="Videotel_Reports" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Videotel_Reports/APXSSSCustNewcasesAccountWeekYTD" />
+                            <option name="parentFolder" value="Videotel_Reports" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Videotel_Reports/APXSSSCustTotTimebyAccountYTD" />
                             <option name="parentFolder" value="Videotel_Reports" />
                             <option name="selected" value="true" />
@@ -11972,6 +12082,14 @@
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="dsfs__EnvelopeConfigurations_With_Envelopes_Report" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="dsfs__EnvelopeConfigurations_with_Status" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Opportunities_with_Opportunity_Products_with_Opportunity_Rate_Plans" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
@@ -11984,6 +12102,14 @@
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Orders_with_Charges" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Orders_with_Invoice_Lines_and_Invoice_Commissions" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Orders_with_Order_Products_with_Order_Rate_Plans_with_Order_Rate_Plan_Charges" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
@@ -11992,15 +12118,11 @@
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Orders_with_Rateplan_charges" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Orders_with_without_assets" />
-                            <option name="selected" value="true" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="dsfs__EnvelopeConfigurations_With_Envelopes_Report" />
-                            <option name="selected" value="true" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="dsfs__EnvelopeConfigurations_with_Status" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
                         </list>
