@@ -4,8 +4,8 @@
 
 <apex:page id="VTMig_OrderInlineProducts" standardController="Job__c" extensions="VTMig_OrderProductsInlineController">
 
-    <apex:form>
-        <apex:pageBlock>
+    <apex:form >
+        <apex:pageBlock >
             <apex:pageBlockTable title="Products" value="{!charges}" var="charge">
                 <apex:column headerValue="Product Name" value="{!charge.Job_Rate_Plan__r.Product_Rate_Plan__r.Product__c}">
                 </apex:column>

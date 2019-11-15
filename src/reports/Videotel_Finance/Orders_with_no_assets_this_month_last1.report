@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>invoiceit_s__Job__c$Name</field>
+    </columns>
+    <columns>
+        <field>invoiceit_s__Job__c$Despatch_Date__c</field>
+    </columns>
+    <columns>
+        <field>invoiceit_s__Job__c$Product_Type__c</field>
+    </columns>
+    <columns>
+        <field>invoiceit_s__Job__c.Assets__r$Name</field>
+    </columns>
+    <columns>
+        <field>invoiceit_s__Job__c$Shipping_Account__c</field>
+    </columns>
+    <columns>
+        <field>invoiceit_s__Job__c$invoiceit_s__Status__c</field>
+    </columns>
+    <crossFilters>
+        <operation>without</operation>
+        <primaryTableColumn>invoiceit_s__Job__c$Id</primaryTableColumn>
+        <relatedTable>Asset</relatedTable>
+        <relatedTableJoinColumn>Order__c</relatedTableJoinColumn>
+    </crossFilters>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>invoiceit_s__Job__c$RecordType</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>invoiceit_s__Job__c.Child_Order</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>invoiceit_s__Job__c$invoiceit_s__Status__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Ready for Dispatch,In Service,Awaiting Return</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>invoiceit_s__Job__c$Product_Type__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Full NVOD,G1 Flexi VOD,G1 Full VOD,G1 Midi VOD,G1 Mini VOD,G2 Flexi VOD,G2 Full VOD,G2 Midi VOD,G2 Mini VOD,Midi NVOD,Mini NVOD</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Orders with no assets this month &amp; last</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Orders_with_without_assets__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>invoiceit_s__Job__c$Despatch_Date__c</dateColumn>
+        <interval>INTERVAL_LASTTHISMONTH</interval>
+    </timeFrameFilter>
+</Report>

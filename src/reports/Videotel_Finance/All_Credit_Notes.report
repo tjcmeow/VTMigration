@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>invoiceit_s__Job__c.invoiceit_s__Credit_Notes__r$Legal_Entity__c</field>
+    </columns>
+    <columns>
+        <field>invoiceit_s__Job__c$Name</field>
+    </columns>
+    <columns>
+        <field>invoiceit_s__Job__c.invoiceit_s__Credit_Notes__r$Name</field>
+    </columns>
+    <columns>
+        <field>invoiceit_s__Job__c.invoiceit_s__Credit_Notes__r.invoiceit_s__Credit_Lines__r$Name</field>
+    </columns>
+    <columns>
+        <field>invoiceit_s__Job__c.invoiceit_s__Credit_Notes__r.invoiceit_s__Credit_Lines__r.invoiceit_s__Revenue_Transaction_CreditLine__r$Name</field>
+    </columns>
+    <currency>USD</currency>
+    <format>Tabular</format>
+    <name>All Credit Notes</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Orders_with_Credit_Notes_and_Credit_Lines__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>invoiceit_s__Job__c$Alignment_Date_1__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

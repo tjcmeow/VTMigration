@@ -1681,6 +1681,11 @@ AND(Unpaid_Amount__c != 0, Paid_Amount__c != 0),
         <type>Percent</type>
     </fields>
     <label>Invoice</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
     <nameField>
         <label>Invoice Name</label>
         <trackHistory>false</trackHistory>

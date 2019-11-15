@@ -59,7 +59,7 @@ Public Class OrderCommisionTriggerHandlerClass{
             partnerCommisionRates.put(productAgents.Product__c+'-'+productAgents.Partner_Agent_Account__c,productAgents);
         }
         
-        for(Order_Commissions__c orderCommision:ocListData){
+        for(Order_Commissions__c orderCommision:ocListData){ 
             System.Debug('=====>'+avoidOrderCommissionAgentDupes);
             System.Debug('=====>'+orderCommision.Order_for_Commission__c+'-'+orderCommision.Sales_Agent__c+'-'+orderCommision.Order_Product__c);
             if(!avoidOrderCommissionAgentDupes.Contains(orderCommision.Order_for_Commission__c+'-'+orderCommision.Sales_Agent__c+'-'+orderCommision.Order_Product__c)){

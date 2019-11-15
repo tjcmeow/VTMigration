@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Beijing_Shipping_Accounts</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>None</opportunityAccessLevel>
+        </accountSettings>
+        <label>Beijing Shipping Accounts</label>
+        <sharedTo>
+            <portalRoleAndSubordinates>BeijingShippingBusinessTechnologyDevelopmentCompanyLtdPartnerUser</portalRoleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>KV_SalesAgentText__c</field>
+            <operation>startsWith</operation>
+            <value>Beijing Shipping</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Egyptian_Maritime_Bureau_Accounts</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>None</opportunityAccessLevel>
+        </accountSettings>
+        <label>Egyptian Maritime Bureau Accounts</label>
+        <sharedTo>
+            <portalRoleAndSubordinates>EgyptianMaritimeBureauPartnerUser</portalRoleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>KV_SalesAgentText__c</field>
+            <operation>startsWith</operation>
+            <value>Egyptian Maritime Bureau</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>IMC_Group</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>None</opportunityAccessLevel>
+        </accountSettings>
+        <label>IMC Group</label>
+        <sharedTo>
+            <portalRoleAndSubordinates>IMCGroupPCPartnerUser</portalRoleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>KV_SalesAgentText__c</field>
+            <operation>contains</operation>
+            <value>IMC Group P.C.</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>KV_Sales_Agent_Scanocean</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>None</opportunityAccessLevel>
+        </accountSettings>
+        <description>Partner Shariong Rule for Scanocean Services Inc.</description>
+        <label>KV Sales Agent - Scanocean</label>
+        <sharedTo>
+            <portalRoleAndSubordinates>ScanoceanServicesIncPartnerUser</portalRoleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>KV_SalesAgentText__c</field>
+            <operation>startsWith</operation>
+            <value>Scanocean</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Multimedia_Accounts</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>None</opportunityAccessLevel>
+        </accountSettings>
+        <label>Multimedia Accounts</label>
+        <sharedTo>
+            <portalRoleAndSubordinates>MultimediaHRDPvtLtdPartnerUser</portalRoleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>KV_SalesAgentText__c</field>
+            <operation>startsWith</operation>
+            <value>Multimedia</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>NTSI_Accounts</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>None</opportunityAccessLevel>
+        </accountSettings>
+        <label>NTSI Accounts</label>
+        <sharedTo>
+            <portalRoleAndSubordinates>NauticalTrainingSystemsIncPartnerUser</portalRoleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>KV_SalesAgentText__c</field>
+            <operation>startsWith</operation>
+            <value>Nautical Training</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>North_Coast_Maritime_Sales_Agent_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>None</opportunityAccessLevel>
+        </accountSettings>
+        <description>Partner Sharing of Accounts and related objects for partner Community</description>
+        <label>North Coast Maritime Sales Agent Sharing</label>
+        <sharedTo>
+            <portalRoleAndSubordinates>NorthCoastMaritimeConsultingPartnerUser</portalRoleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>KV_SalesAgentText__c</field>
+            <operation>contains</operation>
+            <value>North Coast Maritime</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>R_R_International_Accounts</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>None</opportunityAccessLevel>
+        </accountSettings>
+        <label>R &amp; R International Accounts</label>
+        <sharedTo>
+            <portalRoleAndSubordinates>RRInternationalPartnerUser</portalRoleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>KV_SalesAgentText__c</field>
+            <operation>startsWith</operation>
+            <value>R &amp; R International</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Sales_Agent_D4_Dynamics</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>None</opportunityAccessLevel>
+        </accountSettings>
+        <description>Sharing of Accounts, Contacts and Assets for D4 Dynamics</description>
+        <label>Sales Agent - D4 Dynamics</label>
+        <sharedTo>
+            <portalRoleAndSubordinates>D4DynamicsGmbHPartnerUser</portalRoleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>KV_SalesAgentText__c</field>
+            <operation>startsWith</operation>
+            <value>D4 Dynamics</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Sales_Agent_Nautibond</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>None</opportunityAccessLevel>
+        </accountSettings>
+        <description>Sharing of Accounts, Contacts and Assets for D4 Dynamics</description>
+        <label>Sales Agent - Nautibond</label>
+        <sharedTo>
+            <portalRoleAndSubordinates>NautibondCAPartnerUser</portalRoleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>KV_SalesAgentText__c</field>
+            <operation>startsWith</operation>
+            <value>Nautibond</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Scorpio_shared_with_R_R</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Edit</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <label>Scorpio shared with R&amp;R</label>
+        <sharedTo>
+            <portalRoleAndSubordinates>RRInternationalPartnerUser</portalRoleAndSubordinates>
+        </sharedTo>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>contains</operation>
+            <value>Scorpio Ship Management S.A.M.</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Parent_Account_Text__c</field>
+            <operation>contains</operation>
+            <value>Scorpio Ship Management S.A.M.</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Spark_Accounts</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>None</opportunityAccessLevel>
+        </accountSettings>
+        <label>Spark Accounts</label>
+        <sharedTo>
+            <portalRoleAndSubordinates>SparkInternationalCoLtdPartnerUser</portalRoleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>KV_SalesAgentText__c</field>
+            <operation>startsWith</operation>
+            <value>Spark</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>Videotel_Users</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Edit</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <label>Videotel Users</label>
+        <sharedTo>
+            <group>Videotel_Employees</group>
+        </sharedTo>
+        <sharedFrom>
+            <role>Videotel</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

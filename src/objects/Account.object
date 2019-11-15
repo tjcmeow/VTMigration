@@ -545,58 +545,6 @@
         <unique>true</unique>
     </fields>
     <fields>
-        <fullName>FLAGS__AcctTimeOffset1__c</fullName>
-        <deprecated>false</deprecated>
-        <externalId>false</externalId>
-        <label>Case Flags Age 1 Hours</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>FLAGS__AcctTimeOffset2__c</fullName>
-        <deprecated>false</deprecated>
-        <externalId>false</externalId>
-        <label>Case Flags Age 2 Hours</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>FLAGS__AcctTimeOffset3__c</fullName>
-        <deprecated>false</deprecated>
-        <externalId>false</externalId>
-        <label>Case Flags Age 3 Hours</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>FLAGS__AcctTimeOffset4__c</fullName>
-        <deprecated>false</deprecated>
-        <externalId>false</externalId>
-        <label>Case Flags Age 4 Hours</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>Fax</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -1424,9 +1372,32 @@ PRINT &amp; STAMP- Customer receives the invoice in the Post (by mail), BUT the 
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Naval_Architect__c</fullName>
+        <externalId>false</externalId>
+        <label>Naval Architect</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>NumberOfEmployees</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Number_of_Cabins__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of Cabins</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Opportunity_in_Trial_Stage__c</fullName>
@@ -3241,6 +3212,17 @@ Account.Product_Interest_2__c</description>
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>Refit_Year__c</fullName>
+        <externalId>false</externalId>
+        <label>Refit Year</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Registered_Owner_Location__c</fullName>
         <externalId>false</externalId>
         <label>Registered Owner Location</label>
@@ -3848,11 +3830,11 @@ business/products</description>
             <value>Account.KV_Customers</value>
         </filters>
         <label>D4 Dynamics Customer Accounts</label>
-        <language>en_US</language>
         <sharedTo>
             <group>KV_Finance</group>
             <group>KV_Sales</group>
             <group>Salesforce_Admins</group>
+            <portalRole>D4DynamicsGmbHPartnerUser</portalRole>
         </sharedTo>
     </listViews>
     <listViews>
@@ -3873,6 +3855,7 @@ business/products</description>
             <group>KV_Sales</group>
             <group>KV_Support</group>
             <group>Salesforce_Admins</group>
+            <portalRole>D4DynamicsGmbHPartnerUser</portalRole>
         </sharedTo>
     </listViews>
     <listViews>

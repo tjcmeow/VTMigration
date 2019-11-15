@@ -619,6 +619,18 @@
         </valueSet>
     </fields>
     <fields>
+        <fullName>Alt_Contact_Email__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contact.Email_2__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Alt Contact Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>AssetId</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
@@ -631,6 +643,236 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Case_Symptom__c</fullName>
+        <externalId>false</externalId>
+        <label>Symptom / Service Request</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Administrative Account Update</fullName>
+                    <default>false</default>
+                    <label>Administrative Account Update</label>
+                </value>
+                <value>
+                    <fullName>Billing Inquiry or Dispute</fullName>
+                    <default>false</default>
+                    <label>Billing Inquiry or Dispute</label>
+                </value>
+                <value>
+                    <fullName>Configuration</fullName>
+                    <default>false</default>
+                    <label>Configuration</label>
+                </value>
+                <value>
+                    <fullName>General Questions</fullName>
+                    <default>false</default>
+                    <label>General Questions</label>
+                </value>
+                <value>
+                    <fullName>Import Export</fullName>
+                    <default>false</default>
+                    <label>Import Export</label>
+                </value>
+                <value>
+                    <fullName>Other (Ref. Subject</fullName>
+                    <default>false</default>
+                    <label>Other (Ref. Subject</label>
+                </value>
+                <value>
+                    <fullName>OTM Issue</fullName>
+                    <default>false</default>
+                    <label>OTM Issue</label>
+                </value>
+                <value>
+                    <fullName>Renew License</fullName>
+                    <default>false</default>
+                    <label>Renew License</label>
+                </value>
+                <value>
+                    <fullName>Report Request</fullName>
+                    <default>false</default>
+                    <label>Report Request</label>
+                </value>
+                <value>
+                    <fullName>Request Credits</fullName>
+                    <default>false</default>
+                    <label>Request Credits</label>
+                </value>
+                <value>
+                    <fullName>Schedules</fullName>
+                    <default>false</default>
+                    <label>Schedules</label>
+                </value>
+                <value>
+                    <fullName>Software Browser</fullName>
+                    <default>false</default>
+                    <label>Software Browser</label>
+                </value>
+                <value>
+                    <fullName>Software Content</fullName>
+                    <default>false</default>
+                    <label>Software Content</label>
+                </value>
+                <value>
+                    <fullName>Software Unlock</fullName>
+                    <default>false</default>
+                    <label>Software Unlock</label>
+                </value>
+                <value>
+                    <fullName>Software Update</fullName>
+                    <default>false</default>
+                    <label>Software Update</label>
+                </value>
+                <value>
+                    <fullName>Spam Email</fullName>
+                    <default>false</default>
+                    <label>Spam Email</label>
+                </value>
+                <value>
+                    <fullName>Status Report Request</fullName>
+                    <default>false</default>
+                    <label>Status Report Request</label>
+                </value>
+                <value>
+                    <fullName>System/User Error</fullName>
+                    <default>false</default>
+                    <label>System/User Error</label>
+                </value>
+                <value>
+                    <fullName>System Software</fullName>
+                    <default>false</default>
+                    <label>System Software</label>
+                </value>
+                <value>
+                    <fullName>Training Records</fullName>
+                    <default>false</default>
+                    <label>Training Records</label>
+                </value>
+                <value>
+                    <fullName>Training Request</fullName>
+                    <default>false</default>
+                    <label>Training Request</label>
+                </value>
+                <value>
+                    <fullName>Vessel List</fullName>
+                    <default>false</default>
+                    <label>Vessel List</label>
+                </value>
+                <value>
+                    <fullName>VOA</fullName>
+                    <default>false</default>
+                    <label>VOA</label>
+                </value>
+                <value>
+                    <fullName>VOD Activation</fullName>
+                    <default>false</default>
+                    <label>VOD Activation</label>
+                </value>
+                <value>
+                    <fullName>VOD DVD drive</fullName>
+                    <default>false</default>
+                    <label>VOD DVD drive</label>
+                </value>
+                <value>
+                    <fullName>VOD Graphics Card</fullName>
+                    <default>false</default>
+                    <label>VOD Graphics Card</label>
+                </value>
+                <value>
+                    <fullName>VOD HDD</fullName>
+                    <default>false</default>
+                    <label>VOD HDD</label>
+                </value>
+                <value>
+                    <fullName>VOD Memory</fullName>
+                    <default>false</default>
+                    <label>VOD Memory</label>
+                </value>
+                <value>
+                    <fullName>VOD Monitor</fullName>
+                    <default>false</default>
+                    <label>VOD Monitor</label>
+                </value>
+                <value>
+                    <fullName>VOD Mother Board</fullName>
+                    <default>false</default>
+                    <label>VOD Mother Board</label>
+                </value>
+                <value>
+                    <fullName>VOD Network</fullName>
+                    <default>false</default>
+                    <label>VOD Network</label>
+                </value>
+                <value>
+                    <fullName>VOD Power</fullName>
+                    <default>false</default>
+                    <label>VOD Power</label>
+                </value>
+                <value>
+                    <fullName>VOD Sound</fullName>
+                    <default>false</default>
+                    <label>VOD Sound</label>
+                </value>
+                <value>
+                    <fullName>VODstick</fullName>
+                    <default>false</default>
+                    <label>VODstick</label>
+                </value>
+                <value>
+                    <fullName>Clone VOD</fullName>
+                    <default>false</default>
+                    <label>Clone VOD</label>
+                </value>
+                <value>
+                    <fullName>Crew Issue</fullName>
+                    <default>false</default>
+                    <label>Crew Issue</label>
+                </value>
+                <value>
+                    <fullName>Data Issue</fullName>
+                    <default>false</default>
+                    <label>Data Issue</label>
+                </value>
+                <value>
+                    <fullName>VPM Crew Data</fullName>
+                    <default>false</default>
+                    <label>VPM Crew Data</label>
+                </value>
+                <value>
+                    <fullName>VPM Enhancement</fullName>
+                    <default>false</default>
+                    <label>VPM Enhancement</label>
+                </value>
+                <value>
+                    <fullName>VPM Reports</fullName>
+                    <default>false</default>
+                    <label>VPM Reports</label>
+                </value>
+                <value>
+                    <fullName>VPM Software</fullName>
+                    <default>false</default>
+                    <label>VPM Software</label>
+                </value>
+                <value>
+                    <fullName>New VOD Order</fullName>
+                    <default>false</default>
+                    <label>New VOD Order</label>
+                </value>
+                <value>
+                    <fullName>Replace Existing VOD</fullName>
+                    <default>false</default>
+                    <label>Replace Existing VOD</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>ClosedDate</fullName>
@@ -858,6 +1100,18 @@ IF (MID ( Id, 14, 1) &lt;&gt;&quot;0&quot;, RIGHT(Id, 2), &quot;&quot;) ) ) ) ) 
         <visibleLines>3</visibleLines>
     </fields>
     <fields>
+        <fullName>Ext__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contact.Ext__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Ext.</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>External_Id__c</fullName>
         <caseSensitive>false</caseSensitive>
         <externalId>true</externalId>
@@ -871,415 +1125,16 @@ IF (MID ( Id, 14, 1) &lt;&gt;&quot;0&quot;, RIGHT(Id, 2), &quot;&quot;) ) ) ) ) 
         <unique>true</unique>
     </fields>
     <fields>
-        <fullName>FLAGS__Business_Hours_Age_1__c</fullName>
-        <deprecated>false</deprecated>
+        <fullName>IMO__c</fullName>
         <externalId>false</externalId>
-        <label>Business Hours Age 1</label>
-        <summarizedField>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Business_Hours_in_Age_1__c</summarizedField>
-        <summaryForeignKey>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Case__c</summaryForeignKey>
-        <summaryOperation>sum</summaryOperation>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Summary</type>
-    </fields>
-    <fields>
-        <fullName>FLAGS__Business_Hours_Age_2__c</fullName>
-        <deprecated>false</deprecated>
-        <externalId>false</externalId>
-        <label>Business Hours Age 2</label>
-        <summarizedField>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Business_Hours_in_Age_2__c</summarizedField>
-        <summaryForeignKey>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Case__c</summaryForeignKey>
-        <summaryOperation>sum</summaryOperation>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Summary</type>
-    </fields>
-    <fields>
-        <fullName>FLAGS__Business_Hours_Age_3__c</fullName>
-        <deprecated>false</deprecated>
-        <externalId>false</externalId>
-        <label>Business Hours Age 3</label>
-        <summarizedField>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Business_Hours_in_Age_3__c</summarizedField>
-        <summaryForeignKey>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Case__c</summaryForeignKey>
-        <summaryOperation>sum</summaryOperation>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Summary</type>
-    </fields>
-    <fields>
-        <fullName>FLAGS__Business_Hours_Age_4__c</fullName>
-        <deprecated>false</deprecated>
-        <externalId>false</externalId>
-        <label>Business Hours Age 4</label>
-        <summarizedField>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Business_Hours_in_Age_4__c</summarizedField>
-        <summaryForeignKey>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Case__c</summaryForeignKey>
-        <summaryOperation>sum</summaryOperation>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Summary</type>
-    </fields>
-    <fields>
-        <fullName>FLAGS__CaseFlag__c</fullName>
-        <deprecated>false</deprecated>
-        <description>This should be used  to display the Case Flag if your organization is not using business hours.</description>
-        <externalId>false</externalId>
-        <formula>IF(ISNULL(FLAGS__ViewedFlag__c),null, 
-IF(FLAGS__Case_Flag_Age__c &gt; (IF(ISBLANK(FLAGS__CaseTimeOffset4__c) , $Setup.FLAGS__FlagPref__c.FLAGS__TimeOffset4__c,FLAGS__CaseTimeOffset4__c)), 
-IMAGE( &quot;/servlet/servlet.FileDownload?flagsort=&quot; &amp; FLAGS__Case_Flag_Age_Text__c &amp; &quot;&amp;file=&quot; &amp; $Setup.FLAGS__FlagPref__c.FLAGS__Offset4Image__c, &quot;L4&quot;, 16, 16), 
-IF(FLAGS__Case_Flag_Age__c &gt;= (IF(ISBLANK(FLAGS__CaseTimeOffset3__c ), $Setup.FLAGS__FlagPref__c.FLAGS__TimeOffset3__c,FLAGS__CaseTimeOffset3__c)), 
-IMAGE( &quot;/servlet/servlet.FileDownload?flagsort=&quot; &amp; FLAGS__Case_Flag_Age_Text__c &amp; &quot;&amp;file=&quot; &amp; $Setup.FLAGS__FlagPref__c.FLAGS__Offset3Image__c, &quot;L3&quot;, 16, 16), 
-IF(FLAGS__Case_Flag_Age__c &gt;= (IF(ISBLANK(FLAGS__CaseTimeOffset2__c ), $Setup.FLAGS__FlagPref__c.FLAGS__TimeOffset2__c,FLAGS__CaseTimeOffset2__c)), 
-IMAGE( &quot;/servlet/servlet.FileDownload?flagsort=&quot; &amp; FLAGS__Case_Flag_Age_Text__c &amp; &quot;&amp;file=&quot; &amp; $Setup.FLAGS__FlagPref__c.FLAGS__Offset2Image__c, &quot;L2&quot;, 16, 16), 
-IF(FLAGS__Case_Flag_Age__c &gt;= (IF(ISBLANK(FLAGS__CaseTimeOffset1__c ), $Setup.FLAGS__FlagPref__c.FLAGS__TimeOffset1__c,FLAGS__CaseTimeOffset1__c)), 
-IMAGE( &quot;/servlet/servlet.FileDownload?flagsort=&quot; &amp; FLAGS__Case_Flag_Age_Text__c &amp; &quot;&amp;file=&quot; &amp; $Setup.FLAGS__FlagPref__c.FLAGS__Offset1Image__c, &quot;L1&quot;,16,16), 
-IMAGE( &quot;/servlet/servlet.FileDownload?flagsort=&quot; &amp; FLAGS__Case_Flag_Age_Text__c &amp; &quot;&amp;file=&quot; &amp; $Setup.FLAGS__FlagPref__c.FLAGS__BlankOffsetImage__c, &quot;L0&quot;,16,16)) 
-))) 
-)</formula>
-        <label>Flag</label>
+        <formula>Platform_Asset_Account__r.Vessel_IMO__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>IMO#</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>FLAGS__CaseFlagsBusinessHours__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
-        <deprecated>false</deprecated>
-        <description>A reference to the Case Flags Business Hours record used to calculate the Case Flag Business Age. This is set automatically and should not be manipulated.</description>
-        <externalId>false</externalId>
-        <label>Case Flags Business Hours</label>
-        <referenceTo>FLAGS__CaseFlagsBusinessHours__c</referenceTo>
-        <relationshipLabel>Cases</relationshipLabel>
-        <relationshipName>Cases</relationshipName>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>FLAGS__CaseFlagsEscalationTime1__c</fullName>
-        <deprecated>false</deprecated>
-        <description>A timestamp to indicate when the total business hours on the case will exceed Age 1 Hours. This can be used as the basis for workflow email alerts or other automation.</description>
-        <externalId>false</externalId>
-        <label>Case Flags Escalation Time 1</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>DateTime</type>
-    </fields>
-    <fields>
-        <fullName>FLAGS__CaseFlagsEscalationTime2__c</fullName>
-        <deprecated>false</deprecated>
-        <description>A timestamp to indicate when the total business hours on the case will exceed Age 2 Hours. This can be used as the basis for workflow email alerts or other automation.</description>
-        <externalId>false</externalId>
-        <label>Case Flags Escalation Time 2</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>DateTime</type>
-    </fields>
-    <fields>
-        <fullName>FLAGS__CaseFlagsEscalationTime3__c</fullName>
-        <deprecated>false</deprecated>
-        <description>A timestamp to indicate when the total business hours on the case will exceed Age 3 Hours. This can be used as the basis for workflow email alerts or other automation.</description>
-        <externalId>false</externalId>
-        <label>Case Flags Escalation Time 3</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>DateTime</type>
-    </fields>
-    <fields>
-        <fullName>FLAGS__CaseFlagsEscalationTime4__c</fullName>
-        <deprecated>false</deprecated>
-        <description>A timestamp to indicate when the total business hours on the case will exceed Age 4 Hours. This can be used as the basis for workflow email alerts or other automation.</description>
-        <externalId>false</externalId>
-        <label>Case Flags Escalation Time 4</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>DateTime</type>
-    </fields>
-    <fields>
-        <fullName>FLAGS__CaseTimeOffset1__c</fullName>
-        <deprecated>false</deprecated>
-        <description>The number of hours after the Case Flag Date/Time when Flag 1 will be displayed.</description>
-        <externalId>false</externalId>
-        <label>Case Flags Age 1 Hours</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>FLAGS__CaseTimeOffset2__c</fullName>
-        <deprecated>false</deprecated>
-        <description>The number of hours after the Case Flag Date/Time when Flag 2 will be displayed.</description>
-        <externalId>false</externalId>
-        <label>Case Flags Age 2 Hours</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>FLAGS__CaseTimeOffset3__c</fullName>
-        <deprecated>false</deprecated>
-        <description>The number of hours after the Case Flag Date/Time when Flag 3 will be displayed.</description>
-        <externalId>false</externalId>
-        <label>Case Flags Age 3 Hours</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>FLAGS__CaseTimeOffset4__c</fullName>
-        <deprecated>false</deprecated>
-        <description>The number of hours after the Case Flag Date/Time when Flag 4 will be displayed.</description>
-        <externalId>false</externalId>
-        <label>Case Flags Age 4 Hours</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>FLAGS__Case_Flag_Age_Text__c</fullName>
-        <deprecated>false</deprecated>
-        <description>The Case Flag Age decimal rendered as a eight-digit string used to aid with sorting on list views.</description>
-        <externalId>false</externalId>
-        <formula>LPAD(TEXT(ROUND(FLAGS__Case_Flag_Age__c*100,0)),8,&apos;0&apos;)</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Case Flag Age Text</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>FLAGS__Case_Flag_Age__c</fullName>
-        <deprecated>false</deprecated>
-        <description>The total amount of time (in hours) since the Case Flag was set.</description>
-        <externalId>false</externalId>
-        <formula>(NOW() - FLAGS__ViewedFlag__c)*24</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Case Flag Age</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>FLAGS__Case_Flag_Business_Age__c</fullName>
-        <deprecated>false</deprecated>
-        <description>The total amount of time (in business hours) since the Case Flag was set.</description>
-        <externalId>false</externalId>
-        <formula>FLAGS__PreviousBusinessHours__c + FLAGS__CurrentBusinessHours__c</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Case Flag Business Age</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>FLAGS__Case_Flag_Business__c</fullName>
-        <deprecated>false</deprecated>
-        <description>This should be used  to display the Case Flag if your organization is using business hours.</description>
-        <externalId>false</externalId>
-        <formula>IF(ISNULL(FLAGS__ViewedFlag__c),null, 
-IF(FLAGS__Case_Flag_Business_Age__c &gt; (IF(ISBLANK(FLAGS__CaseTimeOffset4__c), $Setup.FLAGS__FlagPref__c.FLAGS__TimeOffset4__c,FLAGS__CaseTimeOffset4__c)), 
-IMAGE( &quot;/servlet/servlet.FileDownload?flagsort=&quot; &amp; FLAGS__Case_Flag_Age_Text__c &amp; &quot;&amp;file=&quot; &amp; $Setup.FLAGS__FlagPref__c.FLAGS__Offset4Image__c, &quot;L4&quot;, 16, 16), 
-IF(FLAGS__Case_Flag_Business_Age__c &gt;= (IF(ISBLANK(FLAGS__CaseTimeOffset3__c), $Setup.FLAGS__FlagPref__c.FLAGS__TimeOffset3__c,FLAGS__CaseTimeOffset3__c)), 
-IMAGE( &quot;/servlet/servlet.FileDownload?flagsort=&quot; &amp; FLAGS__Case_Flag_Age_Text__c &amp; &quot;&amp;file=&quot; &amp; $Setup.FLAGS__FlagPref__c.FLAGS__Offset3Image__c, &quot;L3&quot;, 16, 16), 
-IF(FLAGS__Case_Flag_Business_Age__c &gt;= (IF(ISBLANK(FLAGS__CaseTimeOffset2__c), $Setup.FLAGS__FlagPref__c.FLAGS__TimeOffset2__c,FLAGS__CaseTimeOffset2__c)), 
-IMAGE( &quot;/servlet/servlet.FileDownload?flagsort=&quot; &amp; FLAGS__Case_Flag_Age_Text__c &amp; &quot;&amp;file=&quot; &amp; $Setup.FLAGS__FlagPref__c.FLAGS__Offset2Image__c, &quot;L2&quot;, 16, 16), 
-IF(FLAGS__Case_Flag_Business_Age__c &gt;= (IF(ISBLANK(FLAGS__CaseTimeOffset1__c), $Setup.FLAGS__FlagPref__c.FLAGS__TimeOffset1__c,FLAGS__CaseTimeOffset1__c)), 
-IMAGE( &quot;/servlet/servlet.FileDownload?flagsort=&quot; &amp; FLAGS__Case_Flag_Age_Text__c &amp; &quot;&amp;file=&quot; &amp; $Setup.FLAGS__FlagPref__c.FLAGS__Offset1Image__c, &quot;L1&quot;,16,16), 
-IMAGE( &quot;/servlet/servlet.FileDownload?flagsort=&quot; &amp; FLAGS__Case_Flag_Age_Text__c &amp; &quot;&amp;file=&quot; &amp; $Setup.FLAGS__FlagPref__c.FLAGS__BlankOffsetImage__c, &quot;L0&quot;,16,16)) 
-))) 
-)</formula>
-        <label>Flag (BH)</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>FLAGS__CurrentBusinessHours__c</fullName>
-        <deprecated>false</deprecated>
-        <description>The amount of business hours that have lapsed on the current day.</description>
-        <externalId>false</externalId>
-        <formula>IF(ISNULL(FLAGS__ViewedFlag__c) || FLAGS__CaseFlagsBusinessHours__r.FLAGS__TodayStartTime__c &gt; NOW() || FLAGS__ViewedFlag__c &gt; FLAGS__CaseFlagsBusinessHours__r.FLAGS__TodayEndTime__c,0,(
-IF(FLAGS__CaseFlagsBusinessHours__r.FLAGS__TodayEndTime__c &lt; NOW(),FLAGS__CaseFlagsBusinessHours__r.FLAGS__TodayEndTime__c,NOW()) - IF(FLAGS__CaseFlagsBusinessHours__r.FLAGS__TodayStartTime__c &gt; FLAGS__ViewedFlag__c,FLAGS__CaseFlagsBusinessHours__r.FLAGS__TodayStartTime__c,FLAGS__ViewedFlag__c))*24)</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Current Business Hours</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>FLAGS__Enable_Case_Flags__c</fullName>
-        <defaultValue>false</defaultValue>
-        <deprecated>false</deprecated>
-        <externalId>false</externalId>
-        <label>Enable Case Flags</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>FLAGS__Hours_Age_1__c</fullName>
-        <deprecated>false</deprecated>
-        <externalId>false</externalId>
-        <label>Hours Age 1</label>
-        <summarizedField>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Hours_in_Age_1__c</summarizedField>
-        <summaryForeignKey>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Case__c</summaryForeignKey>
-        <summaryOperation>sum</summaryOperation>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Summary</type>
-    </fields>
-    <fields>
-        <fullName>FLAGS__Hours_Age_2__c</fullName>
-        <deprecated>false</deprecated>
-        <externalId>false</externalId>
-        <label>Hours Age 2</label>
-        <summarizedField>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Hours_in_Age_2__c</summarizedField>
-        <summaryForeignKey>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Case__c</summaryForeignKey>
-        <summaryOperation>sum</summaryOperation>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Summary</type>
-    </fields>
-    <fields>
-        <fullName>FLAGS__Hours_Age_3__c</fullName>
-        <deprecated>false</deprecated>
-        <externalId>false</externalId>
-        <label>Hours Age 3</label>
-        <summarizedField>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Hours_in_Age_3__c</summarizedField>
-        <summaryForeignKey>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Case__c</summaryForeignKey>
-        <summaryOperation>sum</summaryOperation>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Summary</type>
-    </fields>
-    <fields>
-        <fullName>FLAGS__Hours_Age_4__c</fullName>
-        <deprecated>false</deprecated>
-        <externalId>false</externalId>
-        <label>Hours Age 4</label>
-        <summarizedField>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Hours_in_Age_4__c</summarizedField>
-        <summaryForeignKey>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Case__c</summaryForeignKey>
-        <summaryOperation>sum</summaryOperation>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Summary</type>
-    </fields>
-    <fields>
-        <fullName>FLAGS__Initial_Response_Business_Hours__c</fullName>
-        <deprecated>false</deprecated>
-        <description>The business hours between Date/Time Opened and Initial Response, based on the business hours assigned to the case.</description>
-        <externalId>false</externalId>
-        <label>Initial Response Business Hours</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>FLAGS__Initial_Response_Hours__c</fullName>
-        <deprecated>false</deprecated>
-        <description>The hours between Date/Time Opened and Initial Response.</description>
-        <externalId>false</externalId>
-        <formula>(FLAGS__Initial_Response__c - CreatedDate) * 24</formula>
-        <label>Initial Response Hours</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>FLAGS__Initial_Response__c</fullName>
-        <deprecated>false</deprecated>
-        <description>Timestamp of Initial Response set the first time the Case Flag is cleared.</description>
-        <externalId>false</externalId>
-        <label>Initial Response</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>DateTime</type>
-    </fields>
-    <fields>
-        <fullName>FLAGS__PreviousBusinessHours__c</fullName>
-        <deprecated>false</deprecated>
-        <description>The amount of business hours that have lapsed prior to, but not including, the current day.</description>
-        <externalId>false</externalId>
-        <label>Previous Business Hours</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>FLAGS__ViewedFlag__c</fullName>
-        <deprecated>false</deprecated>
-        <description>The timestamp that the Case Flag was set.</description>
-        <externalId>false</externalId>
-        <label>Case Flag Date/Time</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>DateTime</type>
     </fields>
     <fields>
         <fullName>Invoice_Number__c</fullName>
@@ -1318,6 +1173,20 @@ IF(FLAGS__CaseFlagsBusinessHours__r.FLAGS__TodayEndTime__c &lt; NOW(),FLAGS__Cas
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Legal_Entity__c</fullName>
+        <externalId>false</externalId>
+        <label>Legal Entity</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Legal_Entity</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Master_Order__c</fullName>
@@ -1389,6 +1258,207 @@ IF(FLAGS__CaseFlagsBusinessHours__r.FLAGS__TodayEndTime__c &lt; NOW(),FLAGS__Cas
         <type>Picklist</type>
     </fields>
     <fields>
+        <fullName>Product_or_Service_Detail__c</fullName>
+        <externalId>false</externalId>
+        <label>Product or Service Detail</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Activate VOD Unit</fullName>
+                    <default>false</default>
+                    <label>Activate VOD Unit</label>
+                </value>
+                <value>
+                    <fullName>Courses Software</fullName>
+                    <default>false</default>
+                    <label>Courses Software</label>
+                </value>
+                <value>
+                    <fullName>LTE</fullName>
+                    <default>false</default>
+                    <label>LTE</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>OTM Software</fullName>
+                    <default>false</default>
+                    <label>OTM Software</label>
+                </value>
+                <value>
+                    <fullName>Questions about activation forms</fullName>
+                    <default>false</default>
+                    <label>Questions about activation forms</label>
+                </value>
+                <value>
+                    <fullName>Questions about an invoice you received</fullName>
+                    <default>false</default>
+                    <label>Questions about an invoice you received</label>
+                </value>
+                <value>
+                    <fullName>Questions about available services (e.g. airtime rate plans, GlobalCare)</fullName>
+                    <default>false</default>
+                    <label>Questions about available services (e.g. airtime rate plans, GlobalCare)</label>
+                </value>
+                <value>
+                    <fullName>Questions about policies (such as suspension or plan change policies)</fullName>
+                    <default>false</default>
+                    <label>Questions about policies (such as suspension or plan change policies)</label>
+                </value>
+                <value>
+                    <fullName>Reactivate a suspended service</fullName>
+                    <default>false</default>
+                    <label>Reactivate a suspended service</label>
+                </value>
+                <value>
+                    <fullName>Suspend a service</fullName>
+                    <default>false</default>
+                    <label>Suspend a service</label>
+                </value>
+                <value>
+                    <fullName>Terminate a service</fullName>
+                    <default>false</default>
+                    <label>Terminate a service</label>
+                </value>
+                <value>
+                    <fullName>Update account or credit card information (new contact information, etc)</fullName>
+                    <default>false</default>
+                    <label>Update account or credit card information (new contact information, etc)</label>
+                </value>
+                <value>
+                    <fullName>VOD Hardware</fullName>
+                    <default>false</default>
+                    <label>VOD Hardware</label>
+                </value>
+                <value>
+                    <fullName>VOD-Online Software</fullName>
+                    <default>false</default>
+                    <label>VOD-Online Software</label>
+                </value>
+                <value>
+                    <fullName>VOD Order</fullName>
+                    <default>false</default>
+                    <label>VOD Order</label>
+                </value>
+                <value>
+                    <fullName>VOD Software</fullName>
+                    <default>false</default>
+                    <label>VOD Software</label>
+                </value>
+                <value>
+                    <fullName>webFTA Software</fullName>
+                    <default>false</default>
+                    <label>webFTA Software</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Product_or_Service_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Product or Service Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Administrative Account Change</fullName>
+                    <default>false</default>
+                    <label>Administrative Account Change</label>
+                </value>
+                <value>
+                    <fullName>Billing Inquiry or Dispute</fullName>
+                    <default>false</default>
+                    <label>Billing Inquiry or Dispute</label>
+                </value>
+                <value>
+                    <fullName>Browser Problem</fullName>
+                    <default>false</default>
+                    <label>Browser Problem</label>
+                </value>
+                <value>
+                    <fullName>Courses</fullName>
+                    <default>false</default>
+                    <label>Courses</label>
+                </value>
+                <value>
+                    <fullName>Custom Configuration</fullName>
+                    <default>false</default>
+                    <label>Custom Configuration</label>
+                </value>
+                <value>
+                    <fullName>General Account or Service Inquiry</fullName>
+                    <default>false</default>
+                    <label>General Account or Service Inquiry</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Other Changes</fullName>
+                    <default>false</default>
+                    <label>Other Changes</label>
+                </value>
+                <value>
+                    <fullName>OTM</fullName>
+                    <default>false</default>
+                    <label>OTM</label>
+                </value>
+                <value>
+                    <fullName>VOA - Online Assessments</fullName>
+                    <default>false</default>
+                    <label>VOA - Online Assessments</label>
+                </value>
+                <value>
+                    <fullName>VOD</fullName>
+                    <default>false</default>
+                    <label>VOD</label>
+                </value>
+                <value>
+                    <fullName>VOD Online</fullName>
+                    <default>false</default>
+                    <label>VOD Online</label>
+                </value>
+                <value>
+                    <fullName>VOD Product</fullName>
+                    <default>false</default>
+                    <label>VOD Product</label>
+                </value>
+                <value>
+                    <fullName>VPM</fullName>
+                    <default>false</default>
+                    <label>VPM</label>
+                </value>
+                <value>
+                    <fullName>Web FTA</fullName>
+                    <default>false</default>
+                    <label>Web FTA</label>
+                </value>
+                <value>
+                    <fullName>Taskbooks</fullName>
+                    <default>false</default>
+                    <label>Taskbooks</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>Reason</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
@@ -1408,9 +1478,214 @@ IF(FLAGS__CaseFlagsBusinessHours__r.FLAGS__TodayEndTime__c &lt; NOW(),FLAGS__Cas
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
-                    <fullName>Done</fullName>
+                    <fullName>Activated New Service</fullName>
                     <default>false</default>
-                    <label>Done</label>
+                    <label>Activated New Service</label>
+                </value>
+                <value>
+                    <fullName>Activation Declined</fullName>
+                    <default>false</default>
+                    <label>Activation Declined</label>
+                </value>
+                <value>
+                    <fullName>Clone Info provided</fullName>
+                    <default>false</default>
+                    <label>Clone Info provided</label>
+                </value>
+                <value>
+                    <fullName>Crew File Sent</fullName>
+                    <default>false</default>
+                    <label>Crew File Sent</label>
+                </value>
+                <value>
+                    <fullName>Crew Issue resolved</fullName>
+                    <default>false</default>
+                    <label>Crew Issue resolved</label>
+                </value>
+                <value>
+                    <fullName>Data Issue resolved</fullName>
+                    <default>false</default>
+                    <label>Data Issue resolved</label>
+                </value>
+                <value>
+                    <fullName>Enhancement declined</fullName>
+                    <default>false</default>
+                    <label>Enhancement declined</label>
+                </value>
+                <value>
+                    <fullName>Enhancement made</fullName>
+                    <default>false</default>
+                    <label>Enhancement made</label>
+                </value>
+                <value>
+                    <fullName>File Sent</fullName>
+                    <default>false</default>
+                    <label>File Sent</label>
+                </value>
+                <value>
+                    <fullName>Issued Activation File</fullName>
+                    <default>false</default>
+                    <label>Issued Activation File</label>
+                </value>
+                <value>
+                    <fullName>Issued Credit(s)</fullName>
+                    <default>false</default>
+                    <label>Issued Credit(s)</label>
+                </value>
+                <value>
+                    <fullName>Issued License</fullName>
+                    <default>false</default>
+                    <label>Issued License</label>
+                </value>
+                <value>
+                    <fullName>No Fault</fullName>
+                    <default>false</default>
+                    <label>No Fault</label>
+                </value>
+                <value>
+                    <fullName>No Further Action</fullName>
+                    <default>false</default>
+                    <label>No Further Action</label>
+                </value>
+                <value>
+                    <fullName>No Response from Customer</fullName>
+                    <default>false</default>
+                    <label>No Response from Customer</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Provided Information</fullName>
+                    <default>false</default>
+                    <label>Provided Information</label>
+                </value>
+                <value>
+                    <fullName>Provided Report</fullName>
+                    <default>false</default>
+                    <label>Provided Report</label>
+                </value>
+                <value>
+                    <fullName>Provided User Training</fullName>
+                    <default>false</default>
+                    <label>Provided User Training</label>
+                </value>
+                <value>
+                    <fullName>Provision New VOD</fullName>
+                    <default>false</default>
+                    <label>Provision New VOD</label>
+                </value>
+                <value>
+                    <fullName>Report Sent</fullName>
+                    <default>false</default>
+                    <label>Report Sent</label>
+                </value>
+                <value>
+                    <fullName>Requested Batch ID</fullName>
+                    <default>false</default>
+                    <label>Requested Batch ID</label>
+                </value>
+                <value>
+                    <fullName>Solution Provided</fullName>
+                    <default>false</default>
+                    <label>Solution Provided</label>
+                </value>
+                <value>
+                    <fullName>Solution Sent</fullName>
+                    <default>false</default>
+                    <label>Solution Sent</label>
+                </value>
+                <value>
+                    <fullName>Spam Email - Closed</fullName>
+                    <default>false</default>
+                    <label>Spam Email - Closed</label>
+                </value>
+                <value>
+                    <fullName>Terminated Account</fullName>
+                    <default>false</default>
+                    <label>Terminated Account</label>
+                </value>
+                <value>
+                    <fullName>Third Party Network Provider Issue</fullName>
+                    <default>false</default>
+                    <label>Third Party Network Provider Issue</label>
+                </value>
+                <value>
+                    <fullName>Third Party Vendor Malfunction</fullName>
+                    <default>false</default>
+                    <label>Third Party Vendor Malfunction</label>
+                </value>
+                <value>
+                    <fullName>Train User</fullName>
+                    <default>false</default>
+                    <label>Train User</label>
+                </value>
+                <value>
+                    <fullName>Transfer to Sales</fullName>
+                    <default>false</default>
+                    <label>Transfer to Sales</label>
+                </value>
+                <value>
+                    <fullName>Unresolved</fullName>
+                    <default>false</default>
+                    <label>Unresolved</label>
+                </value>
+                <value>
+                    <fullName>Updated Account</fullName>
+                    <default>false</default>
+                    <label>Updated Account</label>
+                </value>
+                <value>
+                    <fullName>Update Data</fullName>
+                    <default>false</default>
+                    <label>Update Data</label>
+                </value>
+                <value>
+                    <fullName>Updated Configuration</fullName>
+                    <default>false</default>
+                    <label>Updated Configuration</label>
+                </value>
+                <value>
+                    <fullName>Upgraded Software</fullName>
+                    <default>false</default>
+                    <label>Upgraded Software</label>
+                </value>
+                <value>
+                    <fullName>Uploaded New Software</fullName>
+                    <default>false</default>
+                    <label>Uploaded New Software</label>
+                </value>
+                <value>
+                    <fullName>User Error</fullName>
+                    <default>false</default>
+                    <label>User Error</label>
+                </value>
+                <value>
+                    <fullName>User Provisioned</fullName>
+                    <default>false</default>
+                    <label>User Provisioned</label>
+                </value>
+                <value>
+                    <fullName>VOD Repaired</fullName>
+                    <default>false</default>
+                    <label>VOD Repaired</label>
+                </value>
+                <value>
+                    <fullName>VOD Replaced</fullName>
+                    <default>false</default>
+                    <label>VOD Replaced</label>
+                </value>
+                <value>
+                    <fullName>Works As Designed - Provided Information</fullName>
+                    <default>false</default>
+                    <label>Works As Designed - Provided Information</label>
+                </value>
+                <value>
+                    <fullName>Written-off (Bad Debt)</fullName>
+                    <default>false</default>
+                    <label>Written-off (Bad Debt)</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -1467,6 +1742,32 @@ IF(FLAGS__CaseFlagsBusinessHours__r.FLAGS__TodayEndTime__c &lt; NOW(),FLAGS__Cas
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>VOD_Production_Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>VOD Production Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Cases (VOD Production Account)</relationshipLabel>
+        <relationshipName>Cases</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>VOD_Production_Order_No__c</fullName>
+        <externalId>false</externalId>
+        <label>VOD Production Order No.</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>csmrgp__Merged_By__c</fullName>
@@ -1529,75 +1830,6 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
         </sharedTo>
     </listViews>
     <listViews>
-        <fullName>FLAGS__All_Open_or_Flagged</fullName>
-        <booleanFilter>1 OR 2</booleanFilter>
-        <columns>FLAGS__CaseFlag__c</columns>
-        <columns>FLAGS__Case_Flag_Business__c</columns>
-        <columns>CASES.CASE_NUMBER</columns>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>NAME</columns>
-        <columns>CASES.SUBJECT</columns>
-        <columns>CASES.PRIORITY</columns>
-        <columns>CASES.STATUS</columns>
-        <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
-        <columns>OWNER_NAME</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>CASES.CLOSED</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <filters>
-            <field>FLAGS__ViewedFlag__c</field>
-            <operation>notEqual</operation>
-        </filters>
-        <label>All Open or Flagged</label>
-    </listViews>
-    <listViews>
-        <fullName>FLAGS__All_Open_or_Flagged_for_4_Hours</fullName>
-        <booleanFilter>1</booleanFilter>
-        <columns>FLAGS__CaseFlag__c</columns>
-        <columns>FLAGS__Case_Flag_Business__c</columns>
-        <columns>CASES.CASE_NUMBER</columns>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>NAME</columns>
-        <columns>CASES.SUBJECT</columns>
-        <columns>CASES.STATUS</columns>
-        <columns>CASES.CREATED_DATE</columns>
-        <columns>OWNER_NAME</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>CASES.CLOSED</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <label>All Open or Flagged for &gt;= 4 Hours</label>
-    </listViews>
-    <listViews>
-        <fullName>FLAGS__My_Open_or_Flagged</fullName>
-        <booleanFilter>1 OR 2</booleanFilter>
-        <columns>FLAGS__CaseFlag__c</columns>
-        <columns>FLAGS__Case_Flag_Business__c</columns>
-        <columns>CASES.CASE_NUMBER</columns>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>NAME</columns>
-        <columns>CASES.SUBJECT</columns>
-        <columns>CASES.STATUS</columns>
-        <columns>CASES.CREATED_DATE</columns>
-        <columns>OWNER_NAME</columns>
-        <filterScope>Mine</filterScope>
-        <filters>
-            <field>CASES.CLOSED</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <filters>
-            <field>FLAGS__ViewedFlag__c</field>
-            <operation>notEqual</operation>
-        </filters>
-        <label>My Open or Flagged</label>
-    </listViews>
-    <listViews>
         <fullName>KV_DCU_Queue_Case</fullName>
         <filterScope>Queue</filterScope>
         <label>DCU Queue</label>
@@ -1648,6 +1880,2792 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
             <allInternalUsers></allInternalUsers>
         </sharedTo>
     </listViews>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>true</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Billing_Queries</fullName>
+        <active>true</active>
+        <businessProcess>Support Process</businessProcess>
+        <label>Billing Queries</label>
+        <picklistValues>
+            <picklist>Action_Plan__c</picklist>
+            <values>
+                <fullName>Add a Service</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Case_Symptom__c</picklist>
+            <values>
+                <fullName>Administrative Account Update</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing Inquiry or Dispute</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Configuration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Questions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Import Export</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OTM Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other %28Ref%2E Subject</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Renew License</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Report Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Request Credits</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Schedules</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Software Browser</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Software Content</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Software Unlock</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Software Update</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spam Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Status Report Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>System Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>System%2FUser Error</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training Records</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Activation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD DVD drive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Graphics Card</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD HDD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Memory</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Monitor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Mother Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Network</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Power</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Sound</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VODstick</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vessel List</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Legal_Entity__c</picklist>
+            <values>
+                <fullName>VCR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VMA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VMI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VTS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_or_Service_Detail__c</picklist>
+            <values>
+                <fullName>Activate VOD Unit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Courses Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LTE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OTM Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Questions about activation forms</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Questions about an invoice you received</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Questions about available services %28e%2Eg%2E airtime rate plans%2C GlobalCare%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Questions about policies %28such as suspension or plan change policies%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reactivate a suspended service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Suspend a service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminate a service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Update account or credit card information %28new contact information%2C etc%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Hardware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD-Online Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>webFTA Software</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_or_Service_Type__c</picklist>
+            <values>
+                <fullName>Administrative Account Change</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing Inquiry or Dispute</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Browser Problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Courses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Custom Configuration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Account or Service Inquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OTM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Changes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOA - Online Assessments</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Online</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Product</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VPM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web FTA</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>Complex functionality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Instructions not clear</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User didn%27t attend training</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Resolution__c</picklist>
+            <values>
+                <fullName>Activated New Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Activation Declined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>File Sent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Issued Activation File</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Issued Credit%28s%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Issued License</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Fault</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Response from Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Provided Information</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Provided Report</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Provided User Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Provision New VOD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Requested Batch ID</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Solution Provided</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Solution Sent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spam Email - Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminated Account</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Third Party Network Provider Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Third Party Vendor Malfunction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Train User</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transfer to Sales</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unresolved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Update Data</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Updated Account</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Updated Configuration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Upgraded Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Uploaded New Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User Error</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User Provisioned</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Repaired</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Replaced</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Works As Designed - Provided Information</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Written-off %28Bad Debt%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Add or Change a Video%2FTraining Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Feature Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Information on an Existing Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Question</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Report a Service or Product Problem</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>DCU</fullName>
+        <active>true</active>
+        <businessProcess>Support Process</businessProcess>
+        <description>Case Record Type for the KV DCU Support Team for managing VOD Production and Case Escalations</description>
+        <label>DCU</label>
+        <picklistValues>
+            <picklist>Action_Plan__c</picklist>
+            <values>
+                <fullName>Add a Service</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Case_Symptom__c</picklist>
+            <values>
+                <fullName>Administrative Account Update</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing Inquiry or Dispute</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Clone VOD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Configuration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Crew Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Questions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Import Export</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OTM Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other %28Ref%2E Subject</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Renew License</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Report Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Request Credits</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Schedules</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Software Browser</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Software Content</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Software Unlock</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Software Update</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spam Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Status Report Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>System Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>System%2FUser Error</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training Records</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Activation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD DVD drive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Graphics Card</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD HDD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Memory</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Monitor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Mother Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Network</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Power</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Sound</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VODstick</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VPM Crew Data</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VPM Enhancement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VPM Reports</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VPM Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vessel List</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Legal_Entity__c</picklist>
+            <values>
+                <fullName>VCR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VMA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VMI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VTS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_or_Service_Detail__c</picklist>
+            <values>
+                <fullName>Activate VOD Unit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Courses Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LTE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OTM Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Questions about activation forms</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Questions about an invoice you received</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Questions about available services %28e%2Eg%2E airtime rate plans%2C GlobalCare%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Questions about policies %28such as suspension or plan change policies%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reactivate a suspended service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Suspend a service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminate a service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Update account or credit card information %28new contact information%2C etc%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Hardware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD-Online Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>webFTA Software</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_or_Service_Type__c</picklist>
+            <values>
+                <fullName>Administrative Account Change</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing Inquiry or Dispute</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Browser Problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Courses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Custom Configuration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Account or Service Inquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OTM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Changes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Taskbooks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOA - Online Assessments</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Online</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Product</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VPM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web FTA</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>Complex functionality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Instructions not clear</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User didn%27t attend training</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Resolution__c</picklist>
+            <values>
+                <fullName>Activated New Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Activation Declined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Clone Info provided</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Crew File Sent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Crew Issue resolved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Issue resolved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Enhancement declined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Enhancement made</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>File Sent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Issued Activation File</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Issued Credit%28s%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Issued License</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Fault</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Further Action</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Response from Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Provided Information</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Provided Report</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Provided User Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Provision New VOD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Report Sent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Requested Batch ID</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Solution Provided</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Solution Sent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spam Email - Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminated Account</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Third Party Network Provider Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Third Party Vendor Malfunction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Train User</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transfer to Sales</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unresolved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Update Data</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Updated Account</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Updated Configuration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Upgraded Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Uploaded New Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User Error</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User Provisioned</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Repaired</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Replaced</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Works As Designed - Provided Information</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Written-off %28Bad Debt%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Add or Change a Video%2FTraining Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Feature Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Information on an Existing Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Question</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Report a Service or Product Problem</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>KV_Production_Support</fullName>
+        <active>true</active>
+        <businessProcess>Support Process</businessProcess>
+        <description>Case Record Type for the KV Support Team for managing VOD Production and Case Escalations</description>
+        <label>KV Production Support</label>
+        <picklistValues>
+            <picklist>Action_Plan__c</picklist>
+            <values>
+                <fullName>Add a Service</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Case_Symptom__c</picklist>
+            <values>
+                <fullName>Administrative Account Update</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing Inquiry or Dispute</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Configuration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Questions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Import Export</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New VOD Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OTM Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other %28Ref%2E Subject</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Renew License</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Replace Existing VOD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Report Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Request Credits</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Schedules</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Software Browser</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Software Content</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Software Unlock</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Software Update</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spam Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Status Report Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>System Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>System%2FUser Error</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training Records</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Activation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD DVD drive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Graphics Card</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD HDD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Memory</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Monitor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Mother Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Network</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Power</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Sound</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VODstick</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vessel List</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Legal_Entity__c</picklist>
+            <values>
+                <fullName>VCR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VMA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VMI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VTS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_or_Service_Detail__c</picklist>
+            <values>
+                <fullName>Activate VOD Unit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Courses Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LTE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OTM Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Questions about activation forms</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Questions about an invoice you received</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Questions about available services %28e%2Eg%2E airtime rate plans%2C GlobalCare%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Questions about policies %28such as suspension or plan change policies%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reactivate a suspended service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Suspend a service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminate a service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Update account or credit card information %28new contact information%2C etc%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Hardware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD-Online Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>webFTA Software</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_or_Service_Type__c</picklist>
+            <values>
+                <fullName>Administrative Account Change</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing Inquiry or Dispute</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Browser Problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Courses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Custom Configuration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Account or Service Inquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OTM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Changes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Taskbooks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOA - Online Assessments</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Online</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Product</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VPM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web FTA</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>Complex functionality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Instructions not clear</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User didn%27t attend training</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Resolution__c</picklist>
+            <values>
+                <fullName>Activated New Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Activation Declined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>File Sent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Issued Activation File</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Issued Credit%28s%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Issued License</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Fault</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Response from Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Provided Information</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Provided Report</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Provided User Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Provision New VOD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Requested Batch ID</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Solution Provided</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Solution Sent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spam Email - Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminated Account</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Third Party Network Provider Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Third Party Vendor Malfunction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Train User</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transfer to Sales</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unresolved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Update Data</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Updated Account</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Updated Configuration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Upgraded Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Uploaded New Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User Error</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User Provisioned</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Repaired</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Replaced</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Works As Designed - Provided Information</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Written-off %28Bad Debt%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Add or Change a Video%2FTraining Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Feature Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Information on an Existing Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Question</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Report a Service or Product Problem</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>KV_Support</fullName>
+        <active>true</active>
+        <businessProcess>Support Process</businessProcess>
+        <description>Videotel Support Case Record Type</description>
+        <label>KV Support</label>
+        <picklistValues>
+            <picklist>Action_Plan__c</picklist>
+            <values>
+                <fullName>Add a Service</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Case_Symptom__c</picklist>
+            <values>
+                <fullName>Administrative Account Update</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing Inquiry or Dispute</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Clone VOD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Configuration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Crew Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Questions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Import Export</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OTM Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other %28Ref%2E Subject</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Renew License</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Report Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Request Credits</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Schedules</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Software Browser</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Software Content</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Software Unlock</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Software Update</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spam Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Status Report Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>System Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>System%2FUser Error</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training Records</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Activation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD DVD drive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Graphics Card</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD HDD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Memory</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Monitor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Mother Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Network</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Power</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Sound</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VODstick</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VPM Crew Data</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VPM Enhancement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VPM Reports</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VPM Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vessel List</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Legal_Entity__c</picklist>
+            <values>
+                <fullName>VCR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VMA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VMI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VTS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_or_Service_Detail__c</picklist>
+            <values>
+                <fullName>Activate VOD Unit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Courses Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LTE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OTM Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Questions about activation forms</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Questions about an invoice you received</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Questions about available services %28e%2Eg%2E airtime rate plans%2C GlobalCare%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Questions about policies %28such as suspension or plan change policies%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reactivate a suspended service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Suspend a service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminate a service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Update account or credit card information %28new contact information%2C etc%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Hardware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD-Online Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>webFTA Software</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_or_Service_Type__c</picklist>
+            <values>
+                <fullName>Administrative Account Change</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing Inquiry or Dispute</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Browser Problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Courses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Custom Configuration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Account or Service Inquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OTM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Changes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Taskbooks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOA - Online Assessments</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Online</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Product</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VPM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web FTA</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>Complex functionality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Instructions not clear</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User didn%27t attend training</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Resolution__c</picklist>
+            <values>
+                <fullName>Activated New Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Activation Declined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Clone Info provided</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Crew File Sent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Crew Issue resolved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Issue resolved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Enhancement declined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Enhancement made</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>File Sent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Issued Activation File</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Issued Credit%28s%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Issued License</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Fault</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Response from Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Provided Information</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Provided Report</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Provided User Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Provision New VOD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Report Sent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Requested Batch ID</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Solution Provided</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Solution Sent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spam Email - Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminated Account</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Third Party Network Provider Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Third Party Vendor Malfunction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Train User</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transfer to Sales</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unresolved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Update Data</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Updated Account</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Updated Configuration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Upgraded Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Uploaded New Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User Error</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User Provisioned</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Repaired</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Replaced</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Works As Designed - Provided Information</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Written-off %28Bad Debt%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Add or Change a Video%2FTraining Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Feature Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Information on an Existing Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Question</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Report a Service or Product Problem</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Order_Admin</fullName>
+        <active>true</active>
+        <businessProcess>Support Process</businessProcess>
+        <description>Order Administration and customer service queries regarding orders</description>
+        <label>Order Admin</label>
+        <picklistValues>
+            <picklist>Action_Plan__c</picklist>
+            <values>
+                <fullName>Add a Service</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Case_Symptom__c</picklist>
+            <values>
+                <fullName>Administrative Account Update</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing Inquiry or Dispute</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Configuration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Questions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Import Export</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OTM Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other %28Ref%2E Subject</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Renew License</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Report Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Request Credits</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Schedules</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Software Browser</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Software Content</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Software Unlock</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Software Update</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spam Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Status Report Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>System Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>System%2FUser Error</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training Records</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Activation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD DVD drive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Graphics Card</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD HDD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Memory</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Monitor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Mother Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Network</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Power</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Sound</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VODstick</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vessel List</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Legal_Entity__c</picklist>
+            <values>
+                <fullName>VCR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VMA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VMI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VTS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_or_Service_Detail__c</picklist>
+            <values>
+                <fullName>Activate VOD Unit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Courses Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LTE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OTM Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Questions about activation forms</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Questions about an invoice you received</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Questions about available services %28e%2Eg%2E airtime rate plans%2C GlobalCare%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Questions about policies %28such as suspension or plan change policies%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reactivate a suspended service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Suspend a service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminate a service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Update account or credit card information %28new contact information%2C etc%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Hardware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD-Online Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>webFTA Software</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_or_Service_Type__c</picklist>
+            <values>
+                <fullName>Administrative Account Change</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing Inquiry or Dispute</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Browser Problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Courses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Custom Configuration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Account or Service Inquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OTM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Changes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOA - Online Assessments</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Online</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VPM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web FTA</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>Complex functionality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Instructions not clear</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User didn%27t attend training</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Resolution__c</picklist>
+            <values>
+                <fullName>Activated New Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Activation Declined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>File Sent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Issued Activation File</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Issued Credit%28s%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Issued License</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Fault</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Response from Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Provided Information</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Provided Report</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Provided User Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Provision New VOD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Requested Batch ID</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Solution Provided</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Solution Sent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spam Email - Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminated Account</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Third Party Network Provider Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Third Party Vendor Malfunction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Train User</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transfer to Sales</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unresolved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Update Data</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Updated Account</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Updated Configuration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Upgraded Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Uploaded New Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User Error</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User Provisioned</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Repaired</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOD Replaced</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Works As Designed - Provided Information</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Written-off %28Bad Debt%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Add or Change a Video%2FTraining Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Feature Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Information on an Existing Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Question</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Report a Service or Product Problem</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
     <searchLayouts>
         <customTabListAdditionalFields>CASES.CASE_NUMBER</customTabListAdditionalFields>
         <customTabListAdditionalFields>CASES.SUBJECT</customTabListAdditionalFields>
@@ -1748,50 +4766,6 @@ location=myURL;
         <openType>replace</openType>
         <page>E2CP__New_Comment</page>
         <protected>false</protected>
-    </webLinks>
-    <webLinks>
-        <fullName>FLAGS__Clear_Flag</fullName>
-        <availability>online</availability>
-        <displayType>button</displayType>
-        <linkType>page</linkType>
-        <masterLabel>Clear Flag</masterLabel>
-        <openType>replace</openType>
-        <page>FLAGS__FlagClear</page>
-        <protected>false</protected>
-    </webLinks>
-    <webLinks>
-        <fullName>FLAGS__Clear_Flags</fullName>
-        <availability>online</availability>
-        <displayType>massActionButton</displayType>
-        <height>600</height>
-        <linkType>page</linkType>
-        <masterLabel>Clear Flags</masterLabel>
-        <openType>noSidebar</openType>
-        <page>FLAGS__ClearFlags</page>
-        <protected>false</protected>
-        <requireRowSelection>true</requireRowSelection>
-    </webLinks>
-    <webLinks>
-        <fullName>FLAGS__Set_Flag</fullName>
-        <availability>online</availability>
-        <displayType>button</displayType>
-        <linkType>page</linkType>
-        <masterLabel>Set Flag</masterLabel>
-        <openType>replace</openType>
-        <page>FLAGS__FlagNow</page>
-        <protected>false</protected>
-    </webLinks>
-    <webLinks>
-        <fullName>FLAGS__Set_Flags</fullName>
-        <availability>online</availability>
-        <displayType>massActionButton</displayType>
-        <height>600</height>
-        <linkType>page</linkType>
-        <masterLabel>Set Flags</masterLabel>
-        <openType>noSidebar</openType>
-        <page>FLAGS__SetFlags</page>
-        <protected>false</protected>
-        <requireRowSelection>true</requireRowSelection>
     </webLinks>
     <webLinks>
         <fullName>csmrgp__CsMrgFindDupes</fullName>

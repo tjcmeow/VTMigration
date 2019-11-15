@@ -105,6 +105,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>OrderCommissionTriggerTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>SiteLoginController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -121,7 +125,15 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>VTMig_AddOrderProduct</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>VTMig_CreateOrder</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>VTMig_OppProductsInlineController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -130,6 +142,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>VTMig_ProductSelection_Extension</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>VTMig_ProductSelection_Extension_Test</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -813,26 +829,6 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.FLAGS__AcctTimeOffset1__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.FLAGS__AcctTimeOffset2__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.FLAGS__AcctTimeOffset3__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.FLAGS__AcctTimeOffset4__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>false</editable>
         <field>Account.Fax</field>
         <readable>false</readable>
@@ -979,7 +975,17 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Account.Naval_Architect__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Account.NumberOfEmployees</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Number_of_Cabins__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1061,6 +1067,11 @@
         <editable>false</editable>
         <field>Account.Receive_Statements__c</field>
         <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Refit_Year__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -1288,6 +1299,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Asset.Acct_Record_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Asset.AssetLevel</field>
         <readable>true</readable>
@@ -1315,6 +1331,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Asset.Date_Removed__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Asset.Date_Shipped__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1684,12 +1705,22 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Case.Alt_Contact_Email__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Case.AssetId</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Case.BusinessHoursId</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.Case_Symptom__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1778,154 +1809,19 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.Ext__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Case.External_Id__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.FLAGS__Business_Hours_Age_1__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.FLAGS__Business_Hours_Age_2__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.FLAGS__Business_Hours_Age_3__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.FLAGS__Business_Hours_Age_4__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.FLAGS__CaseFlag__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.FLAGS__CaseFlagsBusinessHours__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.FLAGS__CaseFlagsEscalationTime1__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.FLAGS__CaseFlagsEscalationTime2__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.FLAGS__CaseFlagsEscalationTime3__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.FLAGS__CaseFlagsEscalationTime4__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.FLAGS__CaseTimeOffset1__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.FLAGS__CaseTimeOffset2__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.FLAGS__CaseTimeOffset3__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.FLAGS__CaseTimeOffset4__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.FLAGS__Case_Flag_Age_Text__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.FLAGS__Case_Flag_Age__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.FLAGS__Case_Flag_Business_Age__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.FLAGS__Case_Flag_Business__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.FLAGS__CurrentBusinessHours__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.FLAGS__Enable_Case_Flags__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.FLAGS__Hours_Age_1__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.FLAGS__Hours_Age_2__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.FLAGS__Hours_Age_3__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.FLAGS__Hours_Age_4__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.FLAGS__Initial_Response_Business_Hours__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.FLAGS__Initial_Response_Hours__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.FLAGS__Initial_Response__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.FLAGS__PreviousBusinessHours__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.FLAGS__ViewedFlag__c</field>
-        <readable>true</readable>
+        <editable>false</editable>
+        <field>Case.IMO__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -1945,6 +1841,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Case.KV_Sales_Agent_from_Account__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.Legal_Entity__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1976,6 +1877,16 @@
         <editable>true</editable>
         <field>Case.Priority</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.Product_or_Service_Detail__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.Product_or_Service_Type__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -2028,6 +1939,16 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.VOD_Production_Account__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.VOD_Production_Order_No__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Case.csmrgp__Merged_By__c</field>
         <readable>true</readable>
@@ -2045,6 +1966,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Contact.AccountId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Contact.Acct_Name__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -3020,186 +2946,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Event.WhoId</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>FLAGS__CaseFlagsBusinessHours__c.FLAGS__BusinessHours__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>FLAGS__CaseFlagsBusinessHours__c.FLAGS__TodayEndTime__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>FLAGS__CaseFlagsBusinessHours__c.FLAGS__TodayStartTime__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Action__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Business_Hours_Elapsed__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Business_Hours_Offset__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Business_Hours_in_Age_1__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Business_Hours_in_Age_2__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Business_Hours_in_Age_3__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Business_Hours_in_Age_4__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>FLAGS__Case_Flags_History_Tracking__c.FLAGS__CaseTimeOffset1__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>FLAGS__Case_Flags_History_Tracking__c.FLAGS__CaseTimeOffset2__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>FLAGS__Case_Flags_History_Tracking__c.FLAGS__CaseTimeOffset3__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>FLAGS__Case_Flags_History_Tracking__c.FLAGS__CaseTimeOffset4__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Case_Flag_History_Number__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Case_Flags_Business_Hours__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Case_Status__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>FLAGS__Case_Flags_History_Tracking__c.FLAGS__End__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Event__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Flag_Business__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Flag_Level_BH__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Flag_Level__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Flag_Set__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Flag__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Hours_Elapsed__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Hours_Offset__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Hours_in_Age_1__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Hours_in_Age_2__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Hours_in_Age_3__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Hours_in_Age_4__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Owner_Is_Active__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Owner_License_Type__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Owner_Name__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Owner__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Queue_Id__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>FLAGS__Case_Flags_History_Tracking__c.FLAGS__Start__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -6304,6 +6050,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Lead.Job_Function__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Lead.LastTransferDate</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -6311,6 +6062,16 @@
         <editable>true</editable>
         <field>Lead.LeadSource</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Lead.Lead_Role__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Lead.Lead_Type__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -6336,6 +6097,11 @@
         <editable>true</editable>
         <field>Lead.Rating</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Lead.Sales_Office__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -6398,6 +6164,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.Discount_Percent__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Opportunity.Discount_Value__c</field>
         <readable>true</readable>
@@ -6456,6 +6227,11 @@
         <editable>false</editable>
         <field>Opportunity.PartnerAccountId</field>
         <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Partner_Agent_Account__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -10338,6 +10114,60 @@
         <readable>true</readable>
     </fieldPermissions>
     <layoutAssignments>
+        <layout>APXTConga4__Composer_QuickMerge__c-APXTConga4__Composer QuickMerge Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>APXTConga4__Composer_Refresh_Token__mdt-APXTConga4__Composer Refresh Token Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>APXTConga4__Composer_Setting__mdt-APXTConga4__Composer Setting Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>APXTConga4__Conga_Collection_Solution__c-APXTConga4__Conga Collection Solution Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>APXTConga4__Conga_Collection__c-APXTConga4__Conga Collection Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>APXTConga4__Conga_Email_Staging__c-APXTConga4__Conga Email Staging Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>APXTConga4__Conga_Email_Template__c-APXTConga4__Conga Email Template Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>APXTConga4__Conga_Merge_Query__c-APXTConga4__Conga Query Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>APXTConga4__Conga_Solution_Email_Template__c-APXTConga4__Conga Solution Email Template Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>APXTConga4__Conga_Solution_Export_Environment__mdt-APXTConga4__Conga Solution Export Environment Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>APXTConga4__Conga_Solution_Export_Setting__mdt-APXTConga4__Conga Solution Export Setting</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>APXTConga4__Conga_Solution_Parameter__c-APXTConga4__Conga Solution Parameter Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>APXTConga4__Conga_Solution_Query__c-APXTConga4__Conga Solution Query Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>APXTConga4__Conga_Solution_Report__c-APXTConga4__Conga Solution Report Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>APXTConga4__Conga_Solution_Template__c-APXTConga4__Conga Solution Template Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>APXTConga4__Conga_Solution__c-APXTConga4__Conga Solution Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>APXTConga4__Conga_Template__c-APXTConga4__Conga Template Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>APXTConga4__Connected_App_Setting__mdt-APXTConga4__Connected App Setting Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>AR_Snapshot__c-AR Snapshot Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -10395,6 +10225,26 @@
         <layout>Case-Case Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+        <recordType>Case.Billing_Queries</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+        <recordType>Case.DCU</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+        <recordType>Case.KV_Production_Support</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+        <recordType>Case.KV_Support</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+        <recordType>Case.Order_Admin</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>CaseClose-Close Case Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -10429,6 +10279,18 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>DuplicateRecordSet-Duplicate Record Set Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>E2CP__Canned_Comment_Filter__c-E2CP__Canned Comment Group Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>E2CP__Canned_Comment__c-E2CP__Canned Comment Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>E2CP__Case_Comment_Draft__c-E2CP__Case Comment Draft Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>E2CP__New_Comment_Action__c-E2CP__New Comment Action Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>EmailMessage-Email Message Layout</layout>
@@ -10681,6 +10543,48 @@
     <layoutAssignments>
         <layout>WorkThanks-Thanks Layout</layout>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>csmrgp__Duplicate_Case__c-csmrgp__Duplicate Case Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>csmrgp__Duplicate_Group__c-csmrgp__Duplicate Group Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>dsfs__CustomParameterMap__c-dsfs__DocuSign Custom Parameter Map Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>dsfs__DocuSignOrg__mdt-dsfs__DocuSignOrg Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>dsfs__DocuSign_Envelope_Document__c-dsfs__DocuSign Envelope Document Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>dsfs__DocuSign_Envelope_Recipient__c-dsfs__DocuSign Envelope Recipient Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>dsfs__DocuSign_Envelope__c-dsfs__DocuSign Envelope Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>dsfs__DocuSign_Recipient_Status__c-dsfs__DocuSign Recipient Status Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>dsfs__DocuSign_Status__c-dsfs__DocuSign Status With View Button</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>dsfs__EnvelopeConfiguration__c-dsfs__DocuSign Envelope Configuration Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>dsfs__EnvelopeLocalization__c-dsfs__DocuSign Localization Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>dsfs__Localization__mdt-dsfs__DocuSign Localization Metadata Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>dsfs__Organization__mdt-dsfs__DocuSign Metadata Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>dsfs__Recipient__c-dsfs__DocuSign Recipient Layout</layout>
+    </layoutAssignments>
     <objectPermissions>
         <allowCreate>false</allowCreate>
         <allowDelete>false</allowDelete>
@@ -10715,6 +10619,15 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
         <object>Contract</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Document</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -10863,7 +10776,19 @@
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
+        <apexPage>VTMig_AddOrderProducts</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
         <apexPage>VTMig_CreateOrder</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>VTMig_OppInlineProducts</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>VTMig_OrderInlineProducts</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
@@ -10898,6 +10823,31 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Account.Videotel_Internal_Account</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Billing_Queries</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.DCU</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.KV_Production_Support</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.KV_Support</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Order_Admin</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
@@ -11015,6 +10965,10 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-DataUsePurpose</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-Document</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>

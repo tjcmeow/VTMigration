@@ -66,5 +66,5 @@ public with sharing class VTMig_CreateOrder {
             newProducts.add(newProduct);
         }
         return newProducts;
-    }
+    } 
 }

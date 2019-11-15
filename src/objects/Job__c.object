@@ -7604,6 +7604,17 @@
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
     <webLinks>
+        <fullName>Add_Products</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Add Products</masterLabel>
+        <openType>sidebar</openType>
+        <page>VTMig_AddOrderProducts</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
         <fullName>Generate_Agreement_Queries</fullName>
         <availability>online</availability>
         <displayType>button</displayType>
@@ -7629,7 +7640,7 @@
 &amp;LG3=1
 &amp;DS4=1
 &amp;PartnerCode=0015000000Yd8nM
-&amp;QueryId=a3J13000002owI7,a3J13000002owIC,a3J13000002owIH,a3J13000002owIM,a3J13000002owIR
+&amp;QueryId=a1N0C0000009v0E,a1N0C0000009v0I,a1N0C0000009v0H,a1N0C0000009v0P,a1N0C0000009v0D
 &amp;TemplateGroup=Order
 &amp;OFN={! Job__c.Name }-{! Job__c.Account__c }</url>
     </webLinks>
@@ -7650,7 +7661,7 @@
         <protected>false</protected>
         <showsLocation>false</showsLocation>
         <showsStatus>false</showsStatus>
-        <url>https://kvhcommunity.force.com/partners/apex/dsfs__DocuSign_CreateEnvelope?DSEID=0&amp;SourceID={ob__c.Order_ID_18_Char__c}&amp;DSEDMAX=3</url>
+        <url>https://dev-videotelmarine.cs110.force.com/partners/apex/dsfs__DocuSign_CreateEnvelope?DSEID=0&amp;SourceID={ob__c.Order_ID_18_Char__c}&amp;DSEDMAX=3</url>
     </webLinks>
     <webLinks>
         <fullName>Upload_Esign_Agreement</fullName>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Beijing_Shipping_Leads</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Beijing Shipping Leads</label>
+        <sharedTo>
+            <portalRoleAndSubordinates>BeijingShippingBusinessTechnologyDevelopmentCompanyLtdPartnerUser</portalRoleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <portalRoleAndSubordinates>BeijingShippingBusinessTechnologyDevelopmentCompanyLtdPartnerUser</portalRoleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Egyptian_Maritime_Bureau_Lead</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Egyptian Maritime Bureau Lead</label>
+        <sharedTo>
+            <portalRoleAndSubordinates>EgyptianMaritimeBureauPartnerUser</portalRoleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <portalRoleAndSubordinates>EgyptianMaritimeBureauPartnerUser</portalRoleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>IMC_Group</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>IMC Group</label>
+        <sharedTo>
+            <portalRoleAndSubordinates>IMCGroupPCPartnerUser</portalRoleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <portalRoleAndSubordinates>IMCGroupPCPartnerUser</portalRoleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>KV_Sales_Agent_Nautibond_CA</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>KV Partner Users should be able to share within the same profile for Nautibond CA</description>
+        <label>KV Sales Agent - Nautibond CA</label>
+        <sharedTo>
+            <portalRoleAndSubordinates>NautibondCAPartnerUser</portalRoleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <portalRoleAndSubordinates>NautibondCAPartnerUser</portalRoleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>KV_Sales_Agent_Scanocean_Services_Inc</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>KV Partner Users should be able to share within the same profile for Scanocean Services Inc.</description>
+        <label>KV Sales Agent - Scanocean Services Inc.</label>
+        <sharedTo>
+            <portalRoleAndSubordinates>ScanoceanServicesIncPartnerUser</portalRoleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <portalRoleAndSubordinates>ScanoceanServicesIncPartnerUser</portalRoleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>KV_partner_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>KV Partner Users should be able to share within the same profile</description>
+        <label>KV partner Sharing</label>
+        <sharedTo>
+            <portalRole>D4DynamicsGmbHPartnerUser</portalRole>
+        </sharedTo>
+        <sharedFrom>
+            <portalRoleAndSubordinates>D4DynamicsGmbHPartnerUser</portalRoleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Multimedia_Leads</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Multimedia Leads</label>
+        <sharedTo>
+            <portalRoleAndSubordinates>MultimediaHRDPvtLtdPartnerUser</portalRoleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <portalRoleAndSubordinates>MultimediaHRDPvtLtdPartnerUser</portalRoleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>NTSI_Leads</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>NTSI Leads</label>
+        <sharedTo>
+            <portalRoleAndSubordinates>NauticalTrainingSystemsIncPartnerUser</portalRoleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <portalRoleAndSubordinates>NauticalTrainingSystemsIncPartnerUser</portalRoleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>North_Coast_Maritime_Partner_User</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Lead Sharing for North Coast Marketing for Partner Community</description>
+        <label>North Coast Maritime Partner User</label>
+        <sharedTo>
+            <portalRole>NorthCoastMaritimeConsultingPartnerUser</portalRole>
+        </sharedTo>
+        <sharedFrom>
+            <portalRoleAndSubordinates>NorthCoastMaritimeConsultingPartnerUser</portalRoleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>R_R_International_Leads</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>R &amp; R International Leads</label>
+        <sharedTo>
+            <portalRoleAndSubordinates>RRInternationalPartnerUser</portalRoleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <portalRoleAndSubordinates>RRInternationalPartnerUser</portalRoleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Spark_Leads</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Spark Leads</label>
+        <sharedTo>
+            <portalRoleAndSubordinates>SparkInternationalCoLtdPartnerUser</portalRoleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <portalRoleAndSubordinates>SparkInternationalCoLtdPartnerUser</portalRoleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Videotel_User</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Videotel User</label>
+        <sharedTo>
+            <group>Videotel_Employees</group>
+        </sharedTo>
+        <sharedFrom>
+            <role>Videotel</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

@@ -232,11 +232,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>DocuSign_Status__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Total__c</field>
             <table>Job__c</table>
         </columns>
@@ -347,7 +342,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Override_Vat_Tax__c</field>
+            <field>Override_VAT_Tax__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
@@ -472,7 +467,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Sub_Total__c</field>
+            <field>Sub_total__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
@@ -482,7 +477,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Number_Of_Terms__c</field>
+            <field>Number_of_Terms__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
@@ -537,7 +532,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Vat_Roll_Up__c</field>
+            <field>VAT_Roll_Up__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
@@ -740,7 +735,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>VOD_SUpplier__c</field>
+            <field>VOD_Supplier__c</field>
             <table>Job__c.Assets__r</table>
         </columns>
         <masterLabel>Assets</masterLabel>

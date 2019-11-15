@@ -106,6 +106,17 @@
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>Acct_Record_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account.RecordType.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Acct Record Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>AssetLevel</fullName>
         <trackHistory>false</trackHistory>
     </fields>
@@ -139,6 +150,14 @@
         <fullName>Date_Removed__c</fullName>
         <externalId>false</externalId>
         <label>Date Removed</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_Shipped__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Shipped</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <type>Date</type>
@@ -325,5 +344,5 @@
         <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CONTACT.NAME</searchResultsAdditionalFields>
     </searchLayouts>
-    <sharingModel>ControlledByParent</sharingModel>
+    <sharingModel>ReadWrite</sharingModel>
 </CustomObject>

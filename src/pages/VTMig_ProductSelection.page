@@ -138,10 +138,10 @@
                     </apex:column>
                 </apex:pageBlockTable>
                 <apex:outputPanel >
-                    <apex:outputText value="Overall Discount Percent" style="padding-left:700px;"/>
+                    <apex:outputText value="Overall Discount Percent" style="padding-left:500px;"/>
                     <apex:input type="number" value="{!overallDiscount}" style="margin:20px;"/>
                     <br/>
-                    <apex:outputText value="Grand Total" style="padding-left:700px;"/>
+                    <apex:outputText value="Grand Total" style="padding-left:500px;"/>
                     <apex:outputText value="{0, number, 00.00}" style="margin:20px;">
                         <apex:param value="{!grandTotal}" name="Grand Total"/>
                     </apex:outputText>

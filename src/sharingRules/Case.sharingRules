@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Beijing_Shipping_Cases</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Beijing Shipping Cases</label>
+        <sharedTo>
+            <portalRoleAndSubordinates>BeijingShippingBusinessTechnologyDevelopmentCompanyLtdPartnerUser</portalRoleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>KV_Sales_Agent_from_Account__c</field>
+            <operation>startsWith</operation>
+            <value>Beijing Shipping</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Egyptian_Maritime_Bureau_Cases</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Egyptian Maritime Bureau Cases</label>
+        <sharedTo>
+            <portalRoleAndSubordinates>EgyptianMaritimeBureauPartnerUser</portalRoleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>KV_Sales_Agent_from_Account__c</field>
+            <operation>startsWith</operation>
+            <value>Egyptian Maritime Bureau</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>IMC_Group</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>IMC Group</label>
+        <sharedTo>
+            <portalRoleAndSubordinates>IMCGroupPCPartnerUser</portalRoleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>KV_Sales_Agent_from_Account__c</field>
+            <operation>contains</operation>
+            <value>IMC Group P.C.</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>KV_Sales_Agent_Nautibond_CA</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Agent Community Sharing of Orders based on KV Sales Agent from the Account</description>
+        <label>KV Sales Agent - Nautibond CA</label>
+        <sharedTo>
+            <portalRoleAndSubordinates>NautibondCAPartnerUser</portalRoleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>KV_Sales_Agent_from_Account__c</field>
+            <operation>startsWith</operation>
+            <value>Nautibond</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>KV_Sales_Agent_Scanocean_Services_Inc</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Agent Community Sharing of Orders based on KV Sales Agent from the Account</description>
+        <label>KV Sales Agent - Scanocean Services Inc.</label>
+        <sharedTo>
+            <portalRoleAndSubordinates>ScanoceanServicesIncPartnerUser</portalRoleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>KV_Sales_Agent_from_Account__c</field>
+            <operation>startsWith</operation>
+            <value>Scanocean</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Multimedia_Cases</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Multimedia Cases</label>
+        <sharedTo>
+            <portalRoleAndSubordinates>MultimediaHRDPvtLtdPartnerUser</portalRoleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>KV_Sales_Agent_from_Account__c</field>
+            <operation>startsWith</operation>
+            <value>Multimedia</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>NTSI_Cases</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>NTSI Cases</label>
+        <sharedTo>
+            <portalRoleAndSubordinates>NauticalTrainingSystemsIncPartnerUser</portalRoleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>KV_Sales_Agent_from_Account__c</field>
+            <operation>startsWith</operation>
+            <value>Nautical</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>R_R_International_Cases</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>R &amp; R International Cases</label>
+        <sharedTo>
+            <portalRoleAndSubordinates>RRInternationalPartnerUser</portalRoleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>KV_Sales_Agent_from_Account__c</field>
+            <operation>startsWith</operation>
+            <value>R &amp; R International</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Sales_Agent_D4_Dynamics</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Case sharing based on custom field for D4 Dynamics</description>
+        <label>Sales Agent - D4 Dynamics</label>
+        <sharedTo>
+            <portalRoleAndSubordinates>D4DynamicsGmbHPartnerUser</portalRoleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>KV_Sales_Agent_from_Account__c</field>
+            <operation>startsWith</operation>
+            <value>D4 Dynamics</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Sales_Agent_North_Coast_Maritime</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Case Sharing for Partner Community for North Coast Maritime</description>
+        <label>Sales Agent - North Coast Maritime</label>
+        <sharedTo>
+            <portalRoleAndSubordinates>NorthCoastMaritimeConsultingPartnerUser</portalRoleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>KV_Sales_Agent_from_Account__c</field>
+            <operation>startsWith</operation>
+            <value>North Coast Maritime</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Scorpio_share_with_R_R</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Scorpio share with R&amp;R</label>
+        <sharedTo>
+            <portalRoleAndSubordinates>RRInternationalPartnerUser</portalRoleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>AccountId</field>
+            <operation>equals</operation>
+            <value>0011300001buiNR</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Spark_Cases</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Spark Cases</label>
+        <sharedTo>
+            <portalRoleAndSubordinates>SparkInternationalCoLtdPartnerUser</portalRoleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>KV_Sales_Agent_from_Account__c</field>
+            <operation>startsWith</operation>
+            <value>Spark</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>Queue_KV_Billing_Team</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Queue: KV Billing Team</label>
+        <sharedTo>
+            <group>Videotel_Employees</group>
+        </sharedTo>
+        <sharedFrom>
+            <queue>Billing_Team</queue>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Queue_KV_DCU_Queue</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Queue: KV DCU Queue</label>
+        <sharedTo>
+            <group>Videotel_Employees</group>
+        </sharedTo>
+        <sharedFrom>
+            <queue>KV_DCU_Queue</queue>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Queue_KV_Support_Queue</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Queue: KV Support Queue</label>
+        <sharedTo>
+            <group>Videotel_Employees</group>
+        </sharedTo>
+        <sharedFrom>
+            <queue>KV_Support_Queue</queue>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Queue_VOD_Production_Team</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Queue: VOD Production Team</label>
+        <sharedTo>
+            <group>Videotel_Employees</group>
+        </sharedTo>
+        <sharedFrom>
+            <queue>VOD_Production_Team</queue>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Videotel_Employees</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Videotel Employees</label>
+        <sharedTo>
+            <group>Videotel_Employees</group>
+        </sharedTo>
+        <sharedFrom>
+            <role>Videotel</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

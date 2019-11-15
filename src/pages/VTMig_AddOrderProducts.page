@@ -1,0 +1,142 @@
+<!--
+ - Created by triciaigoe on 2019-11-13.
+ -->
+
+<apex:page docType="html-5.0" id="VTMig_AddOrderProducts" standardController="Job__c" extensions="VTMig_AddOrderProduct">
+
+    <script>
+        function confirmCancel() {
+            var isCancel = confirm("Cancelling this would discard the changes.  Please confirm.");
+            if (isCancel) return true;
+            return false;
+        }
+        function displayTheCharge(theCharge){
+            console.log(theCharge);
+        }
+    </script>
+    <apex:outputField value="{!order.Name}" rendered="false"/>
+    <apex:sectionHeader title="Step 1 of 2" subtitle="{!order.Name}" rendered="{!IF(pageStep == '1', true, false)}" />
+    <apex:sectionHeader title="Step 2 of 2" subtitle="{!order.Name}" rendered="{!IF(pageStep == '2', true, false)}" />
+    <apex:form >
+        <apex:actionFunction name="openList" action="{!openList}"/>
+        <!-- pageBlocks below render for each step of process -->
+        <apex:pageBlock rendered="{!IF(pageStep == '1', true, false)}">
+            <apex:pageBlockButtons location="both">
+                <apex:commandButton action="{!step2}" value="Next" />
+                <apex:commandButton action="{!cancel}" value="Cancel" onclick="return confirmCancel()" immediate="true" />
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection title="Search Products" collapsible="true" columns="1" id="table">
+                <apex:inputText id="prodSearch" value="{!prodSearchText}" label="Search Products" onChange="openList()"/>
+                <apex:pageBlockTable value="{!ProductList}" var="product" rendered="{!showProducts}">
+                    <apex:column >
+                        <apex:commandButton value="Select" action="{!selectProduct}" reRender="table">
+                            <apex:param name="chooseProduct" value="{!product.Id}" assignTo="{!selectedProductId}"/>
+                        </apex:commandButton>
+                    </apex:column>
+                    <apex:column value="{!product.Name}">
+                    </apex:column>
+                </apex:pageBlockTable>
+                <apex:pageBlockTable title="Rate Plans" value="{!plans}" var="plan" rendered="{!showPlans}">
+                    <apex:column >
+                        <apex:commandButton value="Select" action="{!selectPlan}" reRender="table">
+                            <apex:param name="choosePlan" value="{!plan.Id}" assignTo="{!selectedPlanId}"/>
+                        </apex:commandButton>
+                    </apex:column>
+                    <apex:column value="{!plan.Name}">
+                    </apex:column>
+                    <apex:column value="{!plan.Description__c}">
+                    </apex:column>
+                </apex:pageBlockTable>
+                <apex:pageBlockTable title="Rate Plan Charges" value="{!prodCharges}" var="charge" rendered="{!showCharges}">
+                    <apex:column headerValue="Quantity">
+                        <apex:input type="number" value="{!charge.quantity}">
+                        </apex:input>
+                    </apex:column>
+                    <apex:column headerValue="Product Rate Plan Charge Name" value="{!charge.prodCharge.Name}">
+                    </apex:column>
+                    <apex:column value="{!charge.prodCharge.Unit_Of_Measurement__c}">
+                    </apex:column>
+                    <apex:column value="{!charge.prodCharge.Price_Type__c}">
+                    </apex:column>
+                    <apex:column value="{!charge.prodCharge.Pricing_Format__c}">
+                    </apex:column>
+                    <apex:column value="{!charge.prodCharge.Unit_Price__c}">
+                    </apex:column>
+                    <apex:column >
+                        <apex:commandButton value="Add to order" action="{!selectCharge}" reRender="table">
+                            <apex:param name="chargeId" value="{!charge.prodCharge.Id}" assignTo="{!selectedChargeId}"/>
+                        </apex:commandButton>
+                    </apex:column>
+                </apex:pageBlockTable>
+                <apex:outputText value="Selected Products" rendered="{!showChosenCharges}" style="font-weight:bold;margin-top:15px;"/>
+                <apex:pageBlockTable title="Rate Plan Charges" value="{!selectedProdCharges}" var="charge" rendered="{!showChosenCharges}">
+                    <apex:column >
+                        <apex:commandButton value="Remove" action="{!removeCharge}" reRender="table">
+                            <apex:param name="chargeId" value="{!charge.prodCharge.Id}" assignTo="{!removeChargeId}"/>
+                        </apex:commandButton>
+                    </apex:column>
+                    <apex:column headerValue="Product Name" value="{!charge.prodCharge.Product_Rate_Plan__r.Product__r.Name}">
+                    </apex:column>
+                    <apex:column headerValue="Product Code" value="{!charge.prodCharge.Product_Rate_Plan__r.Product__r.Product_Code__c}">
+                    </apex:column>
+                    <apex:column headerValue="Quantity" value="{!charge.quantity}">
+                    </apex:column>
+                    <apex:column value="{!charge.prodCharge.Unit_Of_Measurement__c}">
+                    </apex:column>
+                    <apex:column headerValue="Charge Name" value="{!charge.prodCharge.Name}">
+                    </apex:column>
+                    <apex:column value="{!charge.prodCharge.Price_Type__c}">
+                    </apex:column>
+                    <apex:column value="{!charge.prodCharge.Pricing_Format__c}">
+                    </apex:column>
+                    <apex:column value="{!charge.prodCharge.Unit_Price__c}">
+                    </apex:column>
+                </apex:pageBlockTable>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+        <apex:pageBlock rendered="{!IF(pageStep == '2', true, false)}">
+            <apex:pageBlockButtons location="both">
+                <apex:commandButton action="{!step1}" value="Previous" />
+                <apex:commandButton action="{!saveProducts}" value="Save" />
+                <apex:commandButton action="{!recalculate}" value="Recalculate" />
+                <apex:commandButton action="{!cancel}" value="Cancel" onclick="return confirmCancel()" immediate="true" />
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection title="Products" collapsible="false" columns="1">
+                <apex:pageBlockTable title="Selected Products" value="{!selectedCharges}" var="charge">
+                    <apex:column headerValue="Product Name" value="{!charge.orderProduct.Name}">
+                    </apex:column>
+                    <apex:column value="{!charge.orderProduct.Product_Code__c}">
+                    </apex:column>
+                    <apex:column value="{!charge.orderRatePlanCharge.Quantity__c}">
+                    </apex:column>
+                    <apex:column value="{!charge.orderRatePlanCharge.Unit_Of_Measurement__c}">
+                    </apex:column>
+                    <apex:column headerValue="Charge Name" value="{!charge.orderRatePlanCharge.Name}">
+                    </apex:column>
+                    <apex:column value="{!charge.orderRatePlanCharge.Price_Type__c}">
+                    </apex:column>
+                    <apex:column value="{!charge.orderRatePlanCharge.Unit_Price__c}">
+
+                    </apex:column>
+                    <apex:column value="{!charge.orderRatePlanCharge.Price__c}">
+                    </apex:column>
+                    <apex:column value="{!charge.orderRatePlanCharge.Discount_Value__c}">
+                    </apex:column>
+                    <apex:column headerValue="Discount Percent">
+                        <apex:inputField value="{!charge.orderRatePlanCharge.Discount_Percent__c}">
+                        </apex:inputField>
+                    </apex:column>
+                </apex:pageBlockTable>
+                <apex:outputPanel >
+                    <apex:outputText value="Overall Discount Percent" style="padding-left:500px;"/>
+                    <apex:input type="number" value="{!overallDiscount}" style="margin:20px;"/>
+                    <br/>
+                    <apex:outputText value="Grand Total" style="padding-left:500px;"/>
+                    <apex:outputText value="{0, number, 00.00}" style="margin:20px;">
+                        <apex:param value="{!grandTotal}" name="Grand Total"/>
+                    </apex:outputText>
+                </apex:outputPanel>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Account.Customer_Account_Number__c</field>
+    </columns>
+    <columns>
+        <field>invoiceit_s__Payment__c.invoiceit_s__Amount__c</field>
+    </columns>
+    <columns>
+        <field>invoiceit_s__Payment__c.invoiceit_s__Unallocated_Amount__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <currency>GBP</currency>
+    <description>Report showing unallocated payments, with amount and payment number.</description>
+    <filter>
+        <criteriaItems>
+            <column>invoiceit_s__Payment__c.invoiceit_s__Unallocated_Amount__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>0</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Unallocated Payments</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountCustomEntity$invoiceit_s__Payment__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>
