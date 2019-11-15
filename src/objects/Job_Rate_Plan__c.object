@@ -197,7 +197,7 @@
         <label>Order Product</label>
         <referenceTo>Job_Product__c</referenceTo>
         <relationshipLabel>Order Rate Plans</relationshipLabel>
-        <relationshipName>Order_Rate_Plans</relationshipName>
+        <relationshipName>Job_Rate_Plan</relationshipName>
         <relationshipOrder>0</relationshipOrder>
         <reparentableMasterDetail>false</reparentableMasterDetail>
         <trackHistory>false</trackHistory>

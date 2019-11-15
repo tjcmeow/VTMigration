@@ -5525,6 +5525,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Job__c.Master_Order_Record_Id__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Job__c.Master_Order_Special_Terms__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -10778,15 +10783,6 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
-        <object>Document</object>
-        <viewAllRecords>false</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>false</modifyAllRecords>
         <object>E2CP__Canned_Comment_Filter__c</object>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
@@ -11341,10 +11337,6 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-DataUsePurpose</tab>
-        <visibility>DefaultOn</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>standard-Document</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>

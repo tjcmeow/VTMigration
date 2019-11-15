@@ -24,7 +24,6 @@
     <columns>
         <field>Job__c.Order_Rate_Plan_Charges__r$Status__c</field>
     </columns>
-    <currency>GBP</currency>
     <filter>
         <criteriaItems>
             <column>Job__c$RecordType</column>

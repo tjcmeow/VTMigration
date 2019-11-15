@@ -205,7 +205,7 @@
         <label>Order</label>
         <referenceTo>Job__c</referenceTo>
         <relationshipLabel>Order Products</relationshipLabel>
-        <relationshipName>Order_Products</relationshipName>
+        <relationshipName>Job_Product</relationshipName>
         <relationshipOrder>0</relationshipOrder>
         <reparentableMasterDetail>false</reparentableMasterDetail>
         <trackHistory>false</trackHistory>

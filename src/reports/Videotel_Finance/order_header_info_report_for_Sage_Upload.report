@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
-        <field>Account.Orders__r$Order_Number__c</field>
+        <field>Account.Job__r$Order_Number__c</field>
     </columns>
     <columns>
-        <field>Account.Orders__r$Name</field>
+        <field>Account.Job__r$Name</field>
     </columns>
     <columns>
-        <field>Account.Orders__r$Customer_Purchase_Order_Number__c</field>
+        <field>Account.Job__r$Customer_Purchase_Order_Number__c</field>
     </columns>
     <columns>
-        <field>Account.Orders__r$Partner__c</field>
+        <field>Account.Job__r$Partner__c</field>
     </columns>
     <columns>
-        <field>Account.Orders__r$Legal_Entity__c</field>
+        <field>Account.Job__r$Legal_Entity__c</field>
     </columns>
     <columns>
-        <field>Account.Orders__r$Master_Order_Special_Terms__c</field>
+        <field>Account.Job__r$Master_Order_Special_Terms__c</field>
     </columns>
     <columns>
-        <field>Account.Orders__r$Status__c</field>
+        <field>Account.Job__r$Status__c</field>
     </columns>
     <columns>
-        <field>Account.Orders__r$Master_Order_Number__c</field>
+        <field>Account.Job__r$Master_Order_Number__c</field>
     </columns>
     <columns>
-        <field>Account.Orders__r$Official_Termination_Given__c</field>
+        <field>Account.Job__r$Official_Termination_Given__c</field>
     </columns>
     <columns>
         <field>Account$KV_Company_Ref_No__c</field>
@@ -34,105 +34,105 @@
         <field>Account$Name</field>
     </columns>
     <columns>
-        <field>Account.Orders__r$Billing_Contact__c</field>
+        <field>Account.Job__r$Billing_Contact__c</field>
     </columns>
     <columns>
-        <field>Account.Orders__r$Billing_Contact_Email__c</field>
+        <field>Account.Job__r$Billing_Contact_Email__c</field>
     </columns>
     <columns>
-        <field>Account.Orders__r$Shipping_Account__c</field>
+        <field>Account.Job__r$Shipping_Account__c</field>
     </columns>
     <columns>
-        <field>Account.Orders__r$BillingStreet__c</field>
+        <field>Account.Job__r$BillingStreet__c</field>
     </columns>
     <columns>
-        <field>Account.Orders__r$BillingCity__c</field>
+        <field>Account.Job__r$BillingCity__c</field>
     </columns>
     <columns>
-        <field>Account.Orders__r$BillingState__c</field>
+        <field>Account.Job__r$BillingState__c</field>
     </columns>
     <columns>
-        <field>Account.Orders__r$BillingCountry__c</field>
+        <field>Account.Job__r$BillingCountry__c</field>
     </columns>
     <columns>
-        <field>Account.Orders__r$BillingPostalCode__c</field>
+        <field>Account.Job__r$BillingPostalCode__c</field>
     </columns>
     <columns>
-        <field>Account.Orders__r$Second_Billing_Contact__c</field>
+        <field>Account.Job__r$Second_Billing_Contact__c</field>
     </columns>
     <columns>
-        <field>Account.Orders__r$Second_Contact_Email__c</field>
+        <field>Account.Job__r$Second_Contact_Email__c</field>
     </columns>
     <columns>
-        <field>Account.Orders__r$X3rd_Billing_Contact__c</field>
+        <field>Account.Job__r$X3rd_Billing_Contact__c</field>
     </columns>
     <columns>
-        <field>Account.Orders__r$Third_Billing_Contact__c</field>
+        <field>Account.Job__r$Third_Billing_Contact__c</field>
     </columns>
     <columns>
-        <field>Account.Orders__r$IMO__c</field>
+        <field>Account.Job__r$IMO__c</field>
     </columns>
     <columns>
-        <field>Account.Orders__r$IITIntended_Use__c</field>
+        <field>Account.Job__r$IITIntended_Use__c</field>
     </columns>
     <columns>
-        <field>Account.Orders__r$Invoice_Details__c</field>
+        <field>Account.Job__r$Invoice_Details__c</field>
     </columns>
     <columns>
-        <field>Account.Orders__r$Alignment_Date_1__c</field>
+        <field>Account.Job__r$Alignment_Date_1__c</field>
     </columns>
     <columns>
         <field>Account$Customer_Account_Number__c</field>
     </columns>
     <columns>
-        <field>Account.Orders__r$Payment_Terms__c</field>
+        <field>Account.Job__r$Payment_Terms__c</field>
     </columns>
     <columns>
-        <field>Account.Orders__r$Service_Activation_Date__c</field>
+        <field>Account.Job__r$Service_Activation_Date__c</field>
     </columns>
     <columns>
-        <field>Account.Orders__r$Preferred_Addressee__c</field>
+        <field>Account.Job__r$Preferred_Addressee__c</field>
     </columns>
     <columns>
-        <field>Account.Orders__r$Despatch_Date__c</field>
+        <field>Account.Job__r$Despatch_Date__c</field>
     </columns>
     <columns>
-        <field>Account.Orders__r$Billing_Contact_Phone__c</field>
+        <field>Account.Job__r$Billing_Contact_Phone__c</field>
     </columns>
     <filter>
         <booleanFilter>(1 AND 2 AND ((3 AND 4) OR 5)) AND 6</booleanFilter>
         <criteriaItems>
-            <column>Account.Orders__r$RecordType</column>
+            <column>Account.Job__r$RecordType</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Job__c.Child_Order</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Account.Orders__r.Order_Rate_Plan_Charges__r$Status__c</column>
+            <column>Account.Job__r.Order_Rate_Plan_Charges__r$Status__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Ready to Bill</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Account.Orders__r.Order_Rate_Plan_Charges__r$Price_Type__c</column>
+            <column>Account.Job__r.Order_Rate_Plan_Charges__r$Price_Type__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>One Time</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Account.Orders__r.Order_Rate_Plan_Charges__r$Charge_Date__c</column>
+            <column>Account.Job__r.Order_Rate_Plan_Charges__r$Charge_Date__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
-            <column>Account.Orders__r.Order_Rate_Plan_Charges__r$Price_Type__c</column>
+            <column>Account.Job__r.Order_Rate_Plan_Charges__r$Price_Type__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>One Time</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Account.Orders__r$Legal_Entity__c</column>
+            <column>Account.Job__r$Legal_Entity__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>VMI</value>

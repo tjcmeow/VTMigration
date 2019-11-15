@@ -39,7 +39,6 @@
     <columns>
         <field>Account.Job__r.Order_Rate_Plan_Charges__r$Status__c</field>
     </columns>
-    <currency>GBP</currency>
     <description>To be run after the batch job. Shows orders with uplift date prior to latest uplift run</description>
     <filter>
         <criteriaItems>

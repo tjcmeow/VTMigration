@@ -171,7 +171,8 @@
         <externalId>false</externalId>
         <label>Account</label>
         <referenceTo>Account</referenceTo>
-        <relationshipName>Orders</relationshipName>
+        <relationshipLabel>Orders (Account)</relationshipLabel>
+        <relationshipName>Job</relationshipName>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
@@ -1080,6 +1081,18 @@
         <externalId>false</externalId>
         <formula>Master_Order__r.Order_Number__c</formula>
         <label>Master Order Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Master_Order_Record_Id__c</fullName>
+        <externalId>false</externalId>
+        <formula>Master_Order__r.Account__r.Acct_ID_18_Char__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Master Order Record Id</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>

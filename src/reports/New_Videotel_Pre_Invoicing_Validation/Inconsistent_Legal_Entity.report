@@ -7,7 +7,7 @@
         <field>CUST_NAME</field>
     </columns>
     <columns>
-        <field>FK_CUSTENT_ID</field> 
+        <field>FK_CUSTENT_ID</field>
     </columns>
     <columns>
         <field>FK_NAME</field>
@@ -21,7 +21,6 @@
     <columns>
         <field>FK_$Job__c.Legal_Entity__c</field>
     </columns>
-    <currency>USD</currency>
     <filter>
         <booleanFilter>(1 AND 2) OR (3 AND 4) OR (5 AND 6) OR (7 AND 8)</booleanFilter>
         <criteriaItems>

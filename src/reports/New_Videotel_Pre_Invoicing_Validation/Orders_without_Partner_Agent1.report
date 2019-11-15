@@ -24,7 +24,6 @@
     <columns>
         <field>Account$CreatedDate</field>
     </columns>
-    <currency>GBP</currency>
     <filter>
         <criteriaItems>
             <column>Account.Job__r$Partner__c</column>

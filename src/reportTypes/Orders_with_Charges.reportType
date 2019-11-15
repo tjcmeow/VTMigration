@@ -225,7 +225,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Master_Order_Record_ID__c</field>
+            <field>Master_Order_Record_Id__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
@@ -375,7 +375,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Override_Vat_Tax__c</field>
+            <field>Override_VAT_Tax__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
@@ -500,7 +500,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Sub_Total__c</field>
+            <field>Sub_total__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
@@ -510,7 +510,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Number_Of_Terms__c</field>
+            <field>Number_of_Terms__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
@@ -555,7 +555,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Vat_Roll_Up__c</field>
+            <field>VAT_Roll_Up__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
@@ -839,7 +839,7 @@
     <sections>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Percentage_of_other_Charges__c</field>
+            <field>Percentage_of_Other_Charges__c</field>
             <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
         </columns>
         <columns>
@@ -1084,7 +1084,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>annualRentYear4__c</field>
+            <field>AnnualRentYear4__c</field>
             <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
         </columns>
         <columns>
@@ -1259,7 +1259,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Year_3_net_Total__c</field>
+            <field>Year_3_Net_Total__c</field>
             <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
         </columns>
         <columns>

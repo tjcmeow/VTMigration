@@ -18,7 +18,6 @@
     <columns>
         <field>Job__c.IITIntended_Use__c</field>
     </columns>
-    <currency>USD</currency>
     <filter>
         <criteriaItems>
             <column>Job__c.IITIntended_Use__c</column>

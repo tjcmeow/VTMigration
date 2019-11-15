@@ -21,7 +21,6 @@
     <columns>
         <field>Job__c.Payment_Terms__c</field>
     </columns>
-    <currency>USD</currency>
     <filter>
         <criteriaItems>
             <column>Job__c.Payment_Terms__c</column>

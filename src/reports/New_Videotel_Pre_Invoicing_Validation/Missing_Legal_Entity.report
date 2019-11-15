@@ -24,7 +24,6 @@
     <columns>
         <field>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r$Name</field>
     </columns>
-    <currency>USD</currency>
     <filter>
         <criteriaItems>
             <column>Job__c$Legal_Entity__c</column>

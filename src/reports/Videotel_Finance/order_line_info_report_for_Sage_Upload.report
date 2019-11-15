@@ -90,7 +90,6 @@
     <columns>
         <field>Account.Job__r.Order_Rate_Plan_Charges__r$Discount_Value__c</field>
     </columns>
-    <currency>GBP</currency>
     <description>order line info report for Sage initial upload. Filter for VMA and VMI and run as separate reports</description>
     <filter>
         <booleanFilter>((1 AND 2 AND ((3 AND 4) OR 5)) ) AND 6</booleanFilter>

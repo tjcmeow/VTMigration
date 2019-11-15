@@ -25,19 +25,19 @@
         <field>Job__c$Service_End_Date__c</field>
     </columns>
     <columns>
-        <field>Job__c.Order_Products__r.Order_Rate_Plans__r.Order_Rate_Plan_Charges__r$Unit_Price__c</field>
+        <field>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r$Unit_Price__c</field>
     </columns>
     <columns>
         <field>Job__c$Status__c</field>
     </columns>
     <columns>
-        <field>Job__c.Order_Products__r.Order_Rate_Plans__r.Order_Rate_Plan_Charges__r$Status__c</field>
+        <field>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r$Status__c</field>
     </columns>
     <columns>
         <field>Job__c$Product_Type__c</field>
     </columns>
     <columns>
-        <field>Job__c.Order_Products__r$Name</field>
+        <field>Job__c.Job_Product__r$Name</field>
     </columns>
     <filter>
         <criteriaItems>
@@ -59,7 +59,7 @@
             <value>Cancelled</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Job__c.Order_Products__r$Name</column>
+            <column>Job__c.Job_Product__r$Name</column>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>VOA (Videotel Online Assessment),ATR (Administration of Training Records),VOD Additional Titles &amp; Courses,Other Charges and Fees,Rental Library Additional Titles &amp; Courses,webFTA,Online Training,Task-based Competency</value>

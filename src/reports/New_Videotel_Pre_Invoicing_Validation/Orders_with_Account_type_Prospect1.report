@@ -27,7 +27,6 @@
         <relatedTable>Job__c</relatedTable>
         <relatedTableJoinColumn>Account__c</relatedTableJoinColumn>
     </crossFilters>
-    <currency>GBP</currency>
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>

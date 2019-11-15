@@ -30,7 +30,6 @@
     <columns>
         <field>Job__c.Shipping_Account__c</field>
     </columns>
-    <currency>USD</currency>
     <filter>
         <criteriaItems>
             <column>Job__c.Status__c</column>

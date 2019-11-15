@@ -376,7 +376,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Master_Order_Record_ID__c</field>
+            <field>Master_Order_Record_Id__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
@@ -436,7 +436,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Override_Vat_Tax__c</field>
+            <field>Override_VAT_Tax__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
@@ -561,7 +561,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Sub_Total__c</field>
+            <field>Sub_total__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
@@ -571,7 +571,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Number_Of_Terms__c</field>
+            <field>Number_of_Terms__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
@@ -626,7 +626,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Vat_Roll_Up__c</field>
+            <field>VAT_Roll_Up__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
@@ -975,7 +975,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Unit_of_Measurement__c</field>
+            <field>Unit_Of_Measurement__c</field>
             <table>Job__c.Invoice_Lines__r</table>
         </columns>
         <columns>

@@ -39,7 +39,6 @@
     <columns>
         <field>Job__c.Job_Product__r$Name</field>
     </columns>
-    <currency>GBP</currency>
     <filter>
         <criteriaItems>
             <column>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r$Status__c</column>

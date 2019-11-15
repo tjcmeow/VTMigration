@@ -30,7 +30,6 @@
     <columns>
         <field>RMA__c.RMA_Comment__c</field>
     </columns>
-    <currency>GBP</currency>
     <filter>
         <criteriaItems>
             <column>RMA__c.Reason_for_RMA__c</column>

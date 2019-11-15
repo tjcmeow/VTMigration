@@ -27,7 +27,6 @@
     <columns>
         <field>Job__c$Partner__c</field>
     </columns>
-    <currency>GBP</currency>
     <filter>
         <criteriaItems>
             <column>Job__c$Partner__c</column>

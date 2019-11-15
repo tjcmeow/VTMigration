@@ -24,7 +24,6 @@
     <columns>
         <field>Job__c.Billing_Contact_Email__c</field>
     </columns>
-    <currency>GBP</currency>
     <format>Tabular</format>
     <name>All Billing Contacts - M &amp; C Orders</name>
     <params>

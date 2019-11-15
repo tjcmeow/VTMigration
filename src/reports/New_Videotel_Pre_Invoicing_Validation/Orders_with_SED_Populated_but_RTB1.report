@@ -36,7 +36,6 @@
     <columns>
         <field>Account.Job__r.Order_Rate_Plan_Charges__r$Service_End_Date__c</field>
     </columns>
-    <currency>GBP</currency>
     <filter>
         <booleanFilter>1 AND 2 AND 3 AND 4 AND (5 OR 6)</booleanFilter>
         <criteriaItems>

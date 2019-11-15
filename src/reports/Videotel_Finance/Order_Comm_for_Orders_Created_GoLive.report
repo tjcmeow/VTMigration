@@ -43,9 +43,8 @@
         <field>FK_CUSTENT_ID</field>
     </columns>
     <columns>
-        <field>FK_$Job__c.Master_Order_Record_ID__c</field>
+        <field>FK_$Job__c.Master_Order_Record_Id__c</field>
     </columns>
-    <currency>USD</currency>
     <description>These Order Commissions were initially missing data.</description>
     <format>Tabular</format>
     <name>Order Comm for Orders Created - GoLive</name>

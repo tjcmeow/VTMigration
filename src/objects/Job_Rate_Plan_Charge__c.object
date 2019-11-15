@@ -638,7 +638,7 @@
         <label>Order Rate Plan</label>
         <referenceTo>Job_Rate_Plan__c</referenceTo>
         <relationshipLabel>Order Rate Plan Charges</relationshipLabel>
-        <relationshipName>Order_Rate_Plan_Charges</relationshipName>
+        <relationshipName>Job_Rate_Plan_Charge</relationshipName>
         <relationshipOrder>0</relationshipOrder>
         <reparentableMasterDetail>false</reparentableMasterDetail>
         <trackHistory>false</trackHistory>

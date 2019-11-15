@@ -5525,6 +5525,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Job__c.Master_Order_Record_Id__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Job__c.Master_Order_Special_Terms__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -10875,10 +10880,6 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-DataUsePurpose</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>standard-Document</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>

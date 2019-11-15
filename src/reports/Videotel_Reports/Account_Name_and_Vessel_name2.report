@@ -27,7 +27,6 @@
     <columns>
         <field>Account.Job__r$Billing_Contact_Email__c</field>
     </columns>
-    <currency>USD</currency>
     <format>Tabular</format>
     <name>Account Name and Vessel name</name>
     <params>

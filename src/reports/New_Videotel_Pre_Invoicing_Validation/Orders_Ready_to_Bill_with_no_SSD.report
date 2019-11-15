@@ -12,7 +12,6 @@
     <columns>
         <field>Job__c$Service_Activation_Date__c</field>
     </columns>
-    <currency>GBP</currency>
     <filter>
         <criteriaItems>
             <column>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r$Status__c</column>

@@ -40,13 +40,13 @@
         <field>Job__c$Name</field>
     </columns>
     <columns>
-        <field>Job__c.Order_Products__r$Name</field>
+        <field>Job__c.Job_Product__r$Name</field>
     </columns>
     <columns>
-        <field>Job__c.Order_Products__r.Order_Rate_Plans__r$Name</field>
+        <field>Job__c.Job_Product__r.Job_Rate_Plan__r$Name</field>
     </columns>
     <columns>
-        <field>Job__c.Order_Products__r.Order_Rate_Plans__r.Order_Rate_Plan_Charges__r$Name</field>
+        <field>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r$Name</field>
     </columns>
     <columns>
         <field>Job__c$Despatch_Date__c</field>

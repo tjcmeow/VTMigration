@@ -28,19 +28,19 @@
         <field>Job__c$Service_End_Date__c</field>
     </columns>
     <columns>
-        <field>Job__c.Order_Products__r.Order_Rate_Plans__r.Order_Rate_Plan_Charges__r$Unit_Price__c</field>
+        <field>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r$Unit_Price__c</field>
     </columns>
     <columns>
         <field>Job__c$Status__c</field>
     </columns>
     <columns>
-        <field>Job__c.Order_Products__r.Order_Rate_Plans__r.Order_Rate_Plan_Charges__r$Status__c</field>
+        <field>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r$Status__c</field>
     </columns>
     <columns>
         <field>Job__c$Product_Type__c</field>
     </columns>
     <columns>
-        <field>Job__c.Order_Products__r$Product__c</field>
+        <field>Job__c.Job_Product__r$Product__c</field>
     </columns>
     <columns>
         <field>Job__c$IMO__c</field>
@@ -53,7 +53,7 @@
             <value>Job__c.Child_Order</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Job__c.Order_Products__r$Product__c</column>
+            <column>Job__c.Job_Product__r$Product__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>RENTAL LIBRARY,MEETS,SETSPlus,SETS Pro</value>
@@ -65,7 +65,7 @@
             <value>In Service,Awaiting Return</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Job__c.Order_Products__r.Order_Rate_Plans__r.Order_Rate_Plan_Charges__r$Status__c</column>
+            <column>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r$Status__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Ready to Bill</value>

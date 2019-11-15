@@ -27,7 +27,6 @@
     <columns>
         <field>Job__c.Billing_Contact_Email__c</field>
     </columns>
-    <currency>USD</currency>
     <filter>
         <criteriaItems>
             <column>Job__c.No_of_Products__c</column>
