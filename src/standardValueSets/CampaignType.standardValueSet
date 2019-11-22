@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Banner Ads</fullName>
+        <default>false</default>
+        <label>Banner Ads</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Digital Marketing</fullName>
+        <default>false</default>
+        <label>Digital Marketing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email</fullName>
+        <default>false</default>
+        <label>Email</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Partners</fullName>
+        <default>false</default>
+        <label>Partners</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Print Advertisement</fullName>
+        <default>false</default>
+        <label>Print Advertisement</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Prospecting</fullName>
+        <default>false</default>
+        <label>Prospecting</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Public Relations</fullName>
+        <default>false</default>
+        <label>Public Relations</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Referral Program</fullName>
+        <default>false</default>
+        <label>Referral Program</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Search Engine Marketing/PPC</fullName>
+        <default>false</default>
+        <label>Search Engine Marketing/PPC</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Seminar / Conference</fullName>
+        <default>false</default>
+        <label>Seminar / Conference</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Social Media</fullName>
+        <default>false</default>
+        <label>Social Media</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Telemarketing</fullName>
+        <default>false</default>
+        <label>Telemarketing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Tradeshow</fullName>
+        <default>false</default>
+        <label>Tradeshow</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Webinar</fullName>
+        <default>false</default>
+        <label>Webinar</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Website</fullName>
+        <default>false</default>
+        <label>Website</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Scheduled Network Maintenance</fullName>
+        <default>false</default>
+        <label>Scheduled Network Maintenance</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Emergency Network Maintenance</fullName>
+        <default>false</default>
+        <label>Emergency Network Maintenance</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Extended Network Maintenance</fullName>
+        <default>false</default>
+        <label>Extended Network Maintenance</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Recovered Extended Network Maintenance</fullName>
+        <default>false</default>
+        <label>Recovered Extended Network Maintenance</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Rescheduled Network Maintenance</fullName>
+        <default>false</default>
+        <label>Rescheduled Network Maintenance</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Scheduled Maintenance Modem Files</fullName>
+        <default>false</default>
+        <label>Scheduled Maintenance Modem Files</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Rescheduled Network Outage Modem Files</fullName>
+        <default>false</default>
+        <label>Rescheduled Network Outage Modem Files</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Upgrade modem software</fullName>
+        <default>false</default>
+        <label>Upgrade modem software</label>
+    </standardValue>
+    <standardValue>
+        <fullName>New modem files</fullName>
+        <default>false</default>
+        <label>New modem files</label>
+    </standardValue>
+</StandardValueSet>

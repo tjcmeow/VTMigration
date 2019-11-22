@@ -8378,6 +8378,11 @@
                             <option name="parentFolder" value="Service_Dashboards" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Videotel_Support_Dashboards/Top_Customer_Issues_Case_Record_Type_Filter_KV1" />
+                            <option name="parentFolder" value="Videotel_Support_Dashboards" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
                         </list>
                       </option>
                       <option name="name" value="Dashboard" />
@@ -9389,6 +9394,10 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Macro-Macro Layout" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Opportunity-Invoice IT Opportunity Layout" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -11079,6 +11088,81 @@
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="KV_Agent_Community/Account_overview" />
+                            <option name="parentFolder" value="KV_Agent_Community" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="KV_Agent_Community/Activity_Report" />
+                            <option name="parentFolder" value="KV_Agent_Community" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="KV_Agent_Community/Closed_Opportunities_by_Owner" />
+                            <option name="parentFolder" value="KV_Agent_Community" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="KV_Agent_Community/Closed_Opportunities_by_Owner_Partners" />
+                            <option name="parentFolder" value="KV_Agent_Community" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="KV_Agent_Community/dashboard_full_debt" />
+                            <option name="parentFolder" value="KV_Agent_Community" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="KV_Agent_Community/In_Service_Fleet_list" />
+                            <option name="parentFolder" value="KV_Agent_Community" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="KV_Agent_Community/KV_Customers_by_Country" />
+                            <option name="parentFolder" value="KV_Agent_Community" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="KV_Agent_Community/KV_Customers_by_Country_updated" />
+                            <option name="parentFolder" value="KV_Agent_Community" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="KV_Agent_Community/KV_Open_Opportunities" />
+                            <option name="parentFolder" value="KV_Agent_Community" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="KV_Agent_Community/KV_Opps_by_Stage" />
+                            <option name="parentFolder" value="KV_Agent_Community" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="KV_Agent_Community/Order_Booking_Report_KVCommunity" />
+                            <option name="parentFolder" value="KV_Agent_Community" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="KV_Agent_Community/Renewals_in_the_next_6_months" />
+                            <option name="parentFolder" value="KV_Agent_Community" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="KV_Agent_Community/Unallocated_Cash4" />
+                            <option name="parentFolder" value="KV_Agent_Community" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="KV_Agent_Community/Visit_Reports1" />
+                            <option name="parentFolder" value="KV_Agent_Community" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="KV_Agent_Community/VOD_dispatches_by_Quarter" />
+                            <option name="parentFolder" value="KV_Agent_Community" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="folder" value="true" />
                             <option name="name" value="New_Videotel_Pre_Invoicing_Validation" />
                             <option name="selected" value="true" />
@@ -11774,6 +11858,11 @@
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Videotel_Admin_Reports/Videotel_Leads_Past_7_Days" />
+                            <option name="parentFolder" value="Videotel_Admin_Reports" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Videotel_Admin_Reports/VOD_Reconciliation_AIP_NEW" />
                             <option name="parentFolder" value="Videotel_Admin_Reports" />
                             <option name="selected" value="true" />
@@ -11785,6 +11874,11 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Videotel_Admin_Reports/VOD_Reconciliation_with_IMO_Acc_Name" />
+                            <option name="parentFolder" value="Videotel_Admin_Reports" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Videotel_Admin_Reports/VOD_Renewals" />
                             <option name="parentFolder" value="Videotel_Admin_Reports" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
@@ -11908,6 +12002,66 @@
                             <option name="parentFolder" value="Videotel_Reports" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Videotel_Support_Dashboards/ALL_Open_Cases_by_Account1" />
+                            <option name="parentFolder" value="Videotel_Support_Dashboards" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Videotel_Support_Dashboards/APXSSSCust_Avg_case_age_per_account" />
+                            <option name="parentFolder" value="Videotel_Support_Dashboards" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Videotel_Support_Dashboards/APXSSSCust_Escalated_cases_MTD" />
+                            <option name="parentFolder" value="Videotel_Support_Dashboards" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Videotel_Support_Dashboards/APXSSSCust_Escalated_cases_YTD" />
+                            <option name="parentFolder" value="Videotel_Support_Dashboards" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Videotel_Support_Dashboards/APXSSSCust_New_cases_Account_Week_YTD" />
+                            <option name="parentFolder" value="Videotel_Support_Dashboards" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Videotel_Support_Dashboards/APXSSSCust_Tot_Time_by_Account_YTD" />
+                            <option name="parentFolder" value="Videotel_Support_Dashboards" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Videotel_Support_Dashboards/Closed_Cases_by_Account_YTD1" />
+                            <option name="parentFolder" value="Videotel_Support_Dashboards" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Videotel_Support_Dashboards/Cust_HIGH_priority_cases_MTD1" />
+                            <option name="parentFolder" value="Videotel_Support_Dashboards" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Videotel_Support_Dashboards/Cust_HIGH_priority_cases_YTD1" />
+                            <option name="parentFolder" value="Videotel_Support_Dashboards" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Videotel_Support_Dashboards/Cust_Open_HIGH_priority_cases2" />
+                            <option name="parentFolder" value="Videotel_Support_Dashboards" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Videotel_Support_Dashboards/New_Cases_by_Account_by_Type_YTD1" />
+                            <option name="parentFolder" value="Videotel_Support_Dashboards" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Videotel_Support_Dashboards/New_open_Cases_by_Account_MTD_AFP1" />
+                            <option name="parentFolder" value="Videotel_Support_Dashboards" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
                         </list>
                       </option>
                       <option name="name" value="Report" />
@@ -11989,6 +12143,10 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Orders_with_Rate_Plan_Charges_and_Products" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Orders_with_Rate_Plans_and_Charges" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -12613,51 +12771,67 @@
                         <list>
                           <MetadataEntry>
                             <option name="name" value="AccountContactMultiRoles" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="AccountContactRole" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="AccountOwnership" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="AccountRating" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="AccountType" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="AssetStatus" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="CampaignMemberStatus" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="CampaignStatus" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="CampaignType" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="CaseContactRole" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="CaseOrigin" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="CasePriority" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="CaseReason" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="CaseStatus" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="CaseType" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="ContactRole" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="ContractContactRole" />
@@ -12697,33 +12871,39 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Industry" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="LeadSource" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="LeadStatus" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="OpportunityCompetitor" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="OpportunityStage" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="OpportunityType" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="OrderStatus" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="OrderType" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="PartnerRole" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Product2Family" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="QuickTextCategory" />
@@ -12742,6 +12922,7 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Salutation" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="ServiceContractApprovalStatus" />
@@ -12760,15 +12941,19 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="TaskPriority" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="TaskStatus" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="TaskSubject" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="TaskType" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="WorkOrderLineItemStatus" />

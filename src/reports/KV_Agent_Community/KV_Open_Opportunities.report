@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_52717168</developerName>
+        <masterLabel>Mobile Broadband Regions</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>ACCOUNT_OWNER</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Svend Larsen</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Claire Chauvel</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Roger Negaard</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Morten Aasen</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Niels Reuther</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Andrew Bush</sourceValue>
+            </sourceValues>
+            <value>Emea</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Steve Griffin</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ryan Smith</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ken Lokey</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Chad Impey</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jim George</sourceValue>
+            </sourceValues>
+            <value>KU</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Albert Chung</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tommy Fung</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Vivian Quenet</sourceValue>
+            </sourceValues>
+            <value>Asia Pac</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>BucketField_52717168</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>LEAD_SOURCE</field>
+    </columns>
+    <columns>
+        <field>STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>CAMPAIGN_SOURCE</field>
+    </columns>
+    <columns>
+        <field>CONTACT</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Account.Sales_Office__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>KV UK,KV ASIA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Closed PO/Verbal,Closed/Won,Closed Lost,Deferred,Closed - no deal</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FULL_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>KV Open Opportunities</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

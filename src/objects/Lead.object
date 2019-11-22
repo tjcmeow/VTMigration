@@ -285,8 +285,112 @@
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
+        <fullName>Crew_Nationality__c</fullName>
+        <description>Added for HM Integration</description>
+        <externalId>false</externalId>
+        <label>Crew Nationality(ies)</label>
+        <length>48</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Crew_per_Site__c</fullName>
+        <description>Added from HM Integration</description>
+        <externalId>false</externalId>
+        <label>Crew per Site</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Current_Medium_of_Training_Used__c</fullName>
+        <description>Videotel/InvoiceIT Project</description>
+        <externalId>false</externalId>
+        <label>Current Medium of Training Used</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Description</fullName>
         <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Disqualified_Reason__c</fullName>
+        <description>These are maintained by Ronda Vye.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>When a Lead is Disqualified, please choose a Disqualification Reason.</inlineHelpText>
+        <label>Disqualification Reason</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Support Case</fullName>
+                    <default>false</default>
+                    <label>Support Case</label>
+                </value>
+                <value>
+                    <fullName>Junk</fullName>
+                    <default>false</default>
+                    <label>Junk</label>
+                </value>
+                <value>
+                    <fullName>Tracfone</fullName>
+                    <default>false</default>
+                    <label>Tracfone</label>
+                </value>
+                <value>
+                    <fullName>Competitor</fullName>
+                    <default>false</default>
+                    <label>Competitor</label>
+                </value>
+                <value>
+                    <fullName>Human Resources</fullName>
+                    <default>false</default>
+                    <label>Human Resources</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Do_you_have_training_onboard__c</fullName>
+        <description>Include as part of Videotel and InvoiceIT integration</description>
+        <externalId>false</externalId>
+        <label>Do you have training onboard?</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>DoNotCall</fullName>
@@ -295,6 +399,18 @@
     <fields>
         <fullName>Email</fullName>
         <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Email_2__c</fullName>
+        <description>alternate email address</description>
+        <externalId>false</externalId>
+        <inlineHelpText>alternate email address</inlineHelpText>
+        <label>Email 2</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Email</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>External_Id__c</fullName>
@@ -310,6 +426,19 @@
     <fields>
         <fullName>Fax</fullName>
         <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Fleet_Size__c</fullName>
+        <description>Added during HM Integration</description>
+        <externalId>false</externalId>
+        <label>Fleet Size</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>HasOptedOutOfEmail</fullName>
@@ -352,6 +481,41 @@
         <fullName>LeadSource</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Lead_Category__c</fullName>
+        <externalId>false</externalId>
+        <label>Lead Category</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>MQL</fullName>
+                    <default>true</default>
+                    <label>MQL</label>
+                </value>
+                <value>
+                    <fullName>SRL</fullName>
+                    <default>false</default>
+                    <label>SRL</label>
+                </value>
+                <value>
+                    <fullName>SAL</fullName>
+                    <default>false</default>
+                    <label>SAL</label>
+                </value>
+                <value>
+                    <fullName>PQL</fullName>
+                    <default>false</default>
+                    <label>PQL</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Lead_Role__c</fullName>
@@ -445,6 +609,17 @@
         <trackFeedHistory>true</trackFeedHistory>
     </fields>
     <fields>
+        <fullName>Naval_Architect__c</fullName>
+        <externalId>false</externalId>
+        <label>Naval Architect</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>NumberOfEmployees</fullName>
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
@@ -459,6 +634,19 @@
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>Partner_Given_This_Lead__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Partner Given This Lead</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Leads</relationshipLabel>
+        <relationshipName>Leads</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>Phone</fullName>
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
@@ -466,6 +654,29 @@
         <fullName>Rating</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Related_Shipping_Company_Training_Center__c</fullName>
+        <description>Videotel/InvoiceIT Integration project</description>
+        <externalId>false</externalId>
+        <label>Related Shipping Company Training Center</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rig__c</fullName>
+        <externalId>false</externalId>
+        <label>Rig</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Sales_Office__c</fullName>
@@ -497,12 +708,113 @@
         <type>Picklist</type>
     </fields>
     <fields>
+        <fullName>Subscription_Value__c</fullName>
+        <description>Added per HM Integration</description>
+        <externalId>false</externalId>
+        <label>Subscription Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
         <fullName>Title</fullName>
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
+        <fullName>Vessel_Brand__c</fullName>
+        <externalId>false</externalId>
+        <label>Vessel Brand</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Vessel_Flag__c</fullName>
+        <description>Videotel/InvoiceIT project</description>
+        <externalId>false</externalId>
+        <label>Vessel Flag</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Vessel_Length__c</fullName>
+        <externalId>false</externalId>
+        <label>Vessel Length</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Vessel_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Vessel Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Vessel_Route__c</fullName>
+        <description>Where does/do your vessel(s) typically operate?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Where does/do your vessel(s) typically operate?</inlineHelpText>
+        <label>Vessel Route</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Local, coastal waters</fullName>
+                    <default>false</default>
+                    <label>Local, coastal waters</label>
+                </value>
+                <value>
+                    <fullName>Regionally</fullName>
+                    <default>false</default>
+                    <label>Regionally</label>
+                </value>
+                <value>
+                    <fullName>Globally</fullName>
+                    <default>false</default>
+                    <label>Globally</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
         <fullName>Website</fullName>
         <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Who_is_the_existing_Training_Provider__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter (text) the existing Training Provider</inlineHelpText>
+        <label>Who is the existing Training Provider?</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <listViews>
         <fullName>AllOpenLeads</fullName>
@@ -543,11 +855,32 @@
         <label>Today&apos;s Leads</label>
     </listViews>
     <listViews>
+        <fullName>Videotel_Invididual_Leads_2019</fullName>
+        <columns>Sales_Office__c</columns>
+        <columns>LEAD.CREATED_DATE</columns>
+        <columns>LEAD.FIRST_NAME</columns>
+        <columns>LEAD.LAST_NAME</columns>
+        <columns>LEAD.COMPANY</columns>
+        <columns>LEAD.COUNTRY</columns>
+        <columns>LEAD.STATUS</columns>
+        <columns>LEAD.LEAD_SOURCE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>LEAD.CREATED_DATE</field>
+            <operation>greaterThan</operation>
+            <value>1/1/2019 12:00 AM</value>
+        </filters>
+        <label>Videotel Invididual Leads 2019</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
         <fullName>Videotel_Leads_Lead</fullName>
         <filterScope>Queue</filterScope>
         <label>Videotel Leads</label>
         <queue>Videotel_Leads</queue>
         <sharedTo>
+            <group>KV_Sales_Agents</group>
             <allInternalUsers></allInternalUsers>
         </sharedTo>
     </listViews>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Not Applicable</fullName>
+        <default>false</default>
+        <label>Not Applicable</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Gov/Military Agency</fullName>
+        <default>false</default>
+        <label>Gov/Military Agency</label>
+    </standardValue>
+    <standardValue>
+        <fullName>OEM</fullName>
+        <default>false</default>
+        <label>OEM</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Prime Contractor</fullName>
+        <default>false</default>
+        <label>Prime Contractor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>University</fullName>
+        <default>false</default>
+        <label>University</label>
+    </standardValue>
+    <standardValue>
+        <fullName>------------------------------</fullName>
+        <default>false</default>
+        <label>------------------------------</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Analyst</fullName>
+        <default>false</default>
+        <label>Analyst</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Investor</fullName>
+        <default>false</default>
+        <label>Investor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Press</fullName>
+        <default>false</default>
+        <label>Press</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Airtime Wholesaler</fullName>
+        <default>false</default>
+        <label>Airtime Wholesaler</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Airtime Provider</fullName>
+        <default>false</default>
+        <label>Airtime Provider</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Supplier</fullName>
+        <default>false</default>
+        <label>Supplier</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Box Retailer</fullName>
+        <default>false</default>
+        <label>Box Retailer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Dockwalker</fullName>
+        <default>false</default>
+        <label>Dockwalker</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Internet Merchant</fullName>
+        <default>false</default>
+        <label>Internet Merchant</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Mass Merchant/Big Box Retailer</fullName>
+        <default>false</default>
+        <label>Mass Merchant/Big Box Retailer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Owner/Operator</fullName>
+        <default>false</default>
+        <label>Owner/Operator</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sales Representative</fullName>
+        <default>false</default>
+        <label>Sales Representative</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Service-only</fullName>
+        <default>false</default>
+        <label>Service-only</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Service Only-Logistics Provider</fullName>
+        <default>false</default>
+        <label>Service Only-Logistics Provider</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Service Only-Parts Depot</fullName>
+        <default>false</default>
+        <label>Service Only-Parts Depot</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Service Only-Onboard Maritime</fullName>
+        <default>false</default>
+        <label>Service Only-Onboard Maritime</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Service Only-Repair Depot</fullName>
+        <default>false</default>
+        <label>Service Only-Repair Depot</label>
+    </standardValue>
+    <standardValue>
+        <fullName>System Integrator</fullName>
+        <default>false</default>
+        <label>System Integrator</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Fleet/Ship Management Company</fullName>
+        <default>false</default>
+        <label>Fleet/Ship Management Company</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Ship Management/Fleet Owner</fullName>
+        <default>false</default>
+        <label>Ship Management/Fleet Owner</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Ship Yard/Boat Builder</fullName>
+        <default>false</default>
+        <label>Ship Yard/Boat Builder</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Network Service Provider</fullName>
+        <default>false</default>
+        <label>Network Service Provider</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Satellite Operator</fullName>
+        <default>false</default>
+        <label>Satellite Operator</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Teleport Operator</fullName>
+        <default>false</default>
+        <label>Teleport Operator</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Internet Service Provider</fullName>
+        <default>false</default>
+        <label>Internet Service Provider</label>
+    </standardValue>
+    <standardValue>
+        <fullName>VoIP Service Provider</fullName>
+        <default>false</default>
+        <label>VoIP Service Provider</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Telecommunication Provider</fullName>
+        <default>false</default>
+        <label>Telecommunication Provider</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Hardware Provider</fullName>
+        <default>false</default>
+        <label>Hardware Provider</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Trade Association</fullName>
+        <default>false</default>
+        <label>Trade Association</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Regulatory Agency</fullName>
+        <default>false</default>
+        <label>Regulatory Agency</label>
+    </standardValue>
+    <standardValue>
+        <fullName>--------------------</fullName>
+        <default>false</default>
+        <label>--------------------</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Not Specified</fullName>
+        <default>false</default>
+        <label>Not Specified</label>
+    </standardValue>
+</StandardValueSet>

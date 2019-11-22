@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Airtime Services Billing Contact</fullName>
+        <default>false</default>
+        <label>Airtime Services Billing Contact</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Authorized Representative</fullName>
+        <default>false</default>
+        <label>Authorized Representative</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Airtime Billing Representative</fullName>
+        <default>false</default>
+        <label>Airtime Billing Representative</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Airtime Main Contact</fullName>
+        <default>false</default>
+        <label>Airtime Main Contact</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Business Development</fullName>
+        <default>false</default>
+        <label>Business Development</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Business User</fullName>
+        <default>false</default>
+        <label>Business User</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Decision Maker</fullName>
+        <default>false</default>
+        <label>Decision Maker</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Economic Buyer</fullName>
+        <default>false</default>
+        <label>Economic Buyer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Economic Decision Maker</fullName>
+        <default>false</default>
+        <label>Economic Decision Maker</label>
+    </standardValue>
+    <standardValue>
+        <fullName>End User</fullName>
+        <default>false</default>
+        <label>End User</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Evaluator</fullName>
+        <default>false</default>
+        <label>Evaluator</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Executive Sponsor</fullName>
+        <default>false</default>
+        <label>Executive Sponsor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Indirect Customer Contact</fullName>
+        <default>false</default>
+        <label>Indirect Customer Contact</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Influencer</fullName>
+        <default>false</default>
+        <label>Influencer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Media Alt. Contact</fullName>
+        <default>false</default>
+        <label>Media Alt. Contact</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Onboard Vessel Contact</fullName>
+        <default>false</default>
+        <label>Onboard Vessel Contact</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sales Rep</fullName>
+        <default>false</default>
+        <label>Sales Rep</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Technical Buyer</fullName>
+        <default>false</default>
+        <label>Technical Buyer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>System Support Contact</fullName>
+        <default>false</default>
+        <label>System Support Contact</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Onboard Contact</fullName>
+        <default>false</default>
+        <label>Onboard Contact</label>
+    </standardValue>
+    <standardValue>
+        <fullName>INACTIVE_CONTACT</fullName>
+        <default>false</default>
+        <label>INACTIVE CONTACT</label>
+    </standardValue>
+</StandardValueSet>

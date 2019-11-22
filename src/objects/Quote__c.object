@@ -263,6 +263,21 @@
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>CurrencyL__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Based on the Currency the Products will be generated</description>
+        <externalId>false</externalId>
+        <label>Currency</label>
+        <referenceTo>Currency__c</referenceTo>
+        <relationshipLabel>Quote</relationshipLabel>
+        <relationshipName>Quote</relationshipName>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>Discount_Code__c</fullName>
         <description>The Discount Code will be applied to all the charges</description>
         <externalId>false</externalId>

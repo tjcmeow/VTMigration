@@ -218,7 +218,7 @@
         <layoutColumns>
             <layoutItems>
                 <height>200</height>
-                <page>opportunityProductsInline</page>
+                <page>VTMig_OppInlineProducts</page>
                 <showLabel>false</showLabel>
                 <showScrollbars>true</showScrollbars>
                 <width>100%</width>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>USERS.NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>DUE_DATE</field>
+    </columns>
+    <columns>
+        <field>LAST_UPDATE</field>
+    </columns>
+    <columns>
+        <field>ADDRESS1_STATE</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <currency>GBP</currency>
+    <filter>
+        <criteriaItems>
+            <column>Account.Sales_Office__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>KV UK,KV ASIA</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.KV_Sales_Agent__c</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsDown>
+    <name>Visit Reports</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountCustomEntity$Visit_Report__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_LASTTHISMONTH</interval>
+    </timeFrameFilter>
+</Report>

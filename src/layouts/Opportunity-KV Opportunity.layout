@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
-    <customButtons>invoiceit_crmx__Add_Invoice_IT_Products</customButtons>
-    <customButtons>invoiceit_crmx__Create_Quote</customButtons>
-    <customButtons>Create_Order</customButtons>
-    <customButtons>invoiceit_crmx__Clone_Opportunity</customButtons>
-    <customButtons>invoiceit_crmx__Clone_Opportunity_with_Different_Currency</customButtons>
     <excludeButtons>Submit</excludeButtons>
     <layoutSections>
         <customLabel>false</customLabel>
@@ -38,14 +33,6 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>invoiceit_crmx__Discount_Code__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>invoiceit_crmx__Synced_Quote__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
                 <field>Platform_or_Vessel_Detail__c</field>
             </layoutItems>
             <layoutItems>
@@ -70,10 +57,6 @@
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>RecordTypeId</field>
-            </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>Amount</field>
@@ -101,10 +84,6 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>CampaignId</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Required</behavior>
-                <field>CurrencyIsoCode</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -170,17 +149,17 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>invoiceit_crmx__Shipping_Contact__c</field>
+                <field>Shipping_Contact__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>invoiceit_crmx__Billing_Contact__c</field>
+                <field>Billing_Contact__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>invoiceit_crmx__Total_Contract_Value__c</field>
+                <field>Total_Contract_Value__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
@@ -193,15 +172,15 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>invoiceit_crmx__Sub_Total__c</field>
+                <field>Sub_Total__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>invoiceit_crmx__Discount_Value__c</field>
+                <field>Discount_Value__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>invoiceit_crmx__Net_Total__c</field>
+                <field>Net_Total__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
@@ -209,17 +188,13 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>invoiceit_crmx__Total__c</field>
+                <field>Total__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>invoiceit_crmx__CurrencyL__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>invoiceit_crmx__Exchange_Rate_Applied__c</field>
+                <field>CurrencyL__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
@@ -232,14 +207,10 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>invoiceit_crmx__TotalOrderValue__c</field>
+                <field>TotalOrderValue__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>invoiceit_crmx__TotalQuoteValue__c</field>
-            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
     </layoutSections>
@@ -251,7 +222,7 @@
         <layoutColumns>
             <layoutItems>
                 <height>200</height>
-                <page>invoiceit_crmx__opportunityProductsInline</page>
+                <page>VTMig_OppInlineProducts</page>
                 <showLabel>false</showLabel>
                 <showScrollbars>true</showScrollbars>
                 <width>100%</width>
@@ -300,24 +271,22 @@
     <relatedLists>
         <excludeButtons>New</excludeButtons>
         <fields>NAME</fields>
-        <fields>invoiceit_s__Account__c</fields>
-        <fields>invoiceit_s__Billing_Contact__c</fields>
-        <fields>invoiceit_s__Shipping_Contact__c</fields>
-        <fields>invoiceit_s__Status__c</fields>
-        <fields>invoiceit_s__CurrencyL__c</fields>
-        <fields>invoiceit_s__Sync_Quote__c</fields>
-        <fields>invoiceit_s__Total__c</fields>
-        <fields>invoiceit_s__Start_Date__c</fields>
-        <fields>invoiceit_s__Valid_To__c</fields>
-        <relatedList>invoiceit_s__Quote__c.invoiceit_crmx__Opportunity__c</relatedList>
+        <fields>Account__c</fields>
+        <fields>Billing_Contact__c</fields>
+        <fields>Shipping_Contact__c</fields>
+        <fields>Status__c</fields>
+        <fields>Total__c</fields>
+        <fields>Start_Date__c</fields>
+        <fields>Valid_To__c</fields>
+        <relatedList>Quote__c.Opportunity__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
-        <fields>invoiceit_s__Account__c</fields>
-        <fields>invoiceit_s__Shipping_Contact__c</fields>
-        <fields>invoiceit_s__Status__c</fields>
-        <fields>invoiceit_s__Total__c</fields>
-        <relatedList>invoiceit_s__Job__c.invoiceit_crmx__Opportunity__c</relatedList>
+        <fields>Account__c</fields>
+        <fields>Shipping_Contact__c</fields>
+        <fields>Status__c</fields>
+        <fields>Total__c</fields>
+        <relatedList>Job__c.Opportunity__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>Product2</fields>

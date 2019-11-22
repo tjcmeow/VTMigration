@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Automobiles</fullName>
+        <default>false</default>
+        <label>Automobiles</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Autonomous Vehicles</fullName>
+        <default>false</default>
+        <label>Autonomous Vehicles</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Automotive</fullName>
+        <default>false</default>
+        <label>Automotive</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Aviation Space</fullName>
+        <default>false</default>
+        <label>Aviation Space</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Buses</fullName>
+        <default>false</default>
+        <label>Buses</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Civilian Government</fullName>
+        <default>false</default>
+        <label>Civilian Government</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Commercial (for hire)</fullName>
+        <default>false</default>
+        <label>Commercial (for hire)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Computer</fullName>
+        <default>false</default>
+        <label>Computer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Consulting Services</fullName>
+        <default>false</default>
+        <label>Consulting Services</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Consumer Electronics</fullName>
+        <default>false</default>
+        <label>Consumer Electronics</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Defense</fullName>
+        <default>false</default>
+        <label>Defense</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Education Academic</fullName>
+        <default>false</default>
+        <label>Education Academic</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Fishing</fullName>
+        <default>false</default>
+        <label>Fishing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Government</fullName>
+        <default>false</default>
+        <label>Government</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Information Technology</fullName>
+        <default>false</default>
+        <label>Information Technology</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Law Enforcement</fullName>
+        <default>false</default>
+        <label>Law Enforcement</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Limousines</fullName>
+        <default>false</default>
+        <label>Limousines</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Manufacturing</fullName>
+        <default>false</default>
+        <label>Manufacturing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Medical/Healthcare</fullName>
+        <default>false</default>
+        <label>Medical/Healthcare</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Megayacht</fullName>
+        <default>false</default>
+        <label>Megayacht</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Merchant</fullName>
+        <default>false</default>
+        <label>Merchant</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Military</fullName>
+        <default>false</default>
+        <label>Military</label>
+    </standardValue>
+    <standardValue>
+        <fullName>NGO</fullName>
+        <default>false</default>
+        <label>NGO</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Offshore Oil &amp; Gas</fullName>
+        <default>false</default>
+        <label>Offshore Oil &amp; Gas</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Offshore Tugs &amp; Tows</fullName>
+        <default>false</default>
+        <label>Offshore Tugs &amp; Tows</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Paramilitary</fullName>
+        <default>false</default>
+        <label>Paramilitary</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Passenger</fullName>
+        <default>false</default>
+        <label>Passenger</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Platform Stabilization &amp; Pointing</fullName>
+        <default>false</default>
+        <label>Platform Stabilization &amp; Pointing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Power/Energy</fullName>
+        <default>false</default>
+        <label>Power/Energy</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Private</fullName>
+        <default>false</default>
+        <label>Private</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Recreation Vehicles</fullName>
+        <default>false</default>
+        <label>Recreation Vehicles</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Scientific</fullName>
+        <default>false</default>
+        <label>Scientific</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Survey &amp; Mapping</fullName>
+        <default>false</default>
+        <label>Survey &amp; Mapping</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Telecommunications</fullName>
+        <default>false</default>
+        <label>Telecommunications</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Transportation</fullName>
+        <default>false</default>
+        <label>Transportation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Trucks</fullName>
+        <default>false</default>
+        <label>Trucks</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Yacht</fullName>
+        <default>false</default>
+        <label>Yacht</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+</StandardValueSet>

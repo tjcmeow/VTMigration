@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Airtime</fullName>
+        <default>false</default>
+        <label>Airtime</label>
+    </standardValue>
+    <standardValue>
+        <fullName>CommBox</fullName>
+        <default>false</default>
+        <label>CommBox</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Compass</fullName>
+        <default>false</default>
+        <label>Compass</label>
+    </standardValue>
+    <standardValue>
+        <fullName>FOG</fullName>
+        <default>false</default>
+        <label>FOG</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Hardware</fullName>
+        <default>false</default>
+        <label>Hardware</label>
+    </standardValue>
+    <standardValue>
+        <fullName>MV103</fullName>
+        <default>false</default>
+        <label>MV103</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Service</fullName>
+        <default>false</default>
+        <label>Service</label>
+    </standardValue>
+    <standardValue>
+        <fullName>TACNAV Domestic</fullName>
+        <default>false</default>
+        <label>TACNAV Domestic</label>
+    </standardValue>
+    <standardValue>
+        <fullName>TACNAV International</fullName>
+        <default>false</default>
+        <label>TACNAV International</label>
+    </standardValue>
+    <standardValue>
+        <fullName>TracPhone</fullName>
+        <default>false</default>
+        <label>TracPhone</label>
+    </standardValue>
+    <standardValue>
+        <fullName>TracVision</fullName>
+        <default>false</default>
+        <label>TracVision</label>
+    </standardValue>
+    <standardValue>
+        <fullName>VSAT</fullName>
+        <default>false</default>
+        <label>VSAT</label>
+    </standardValue>
+    <standardValue>
+        <fullName>KM - Media</fullName>
+        <default>false</default>
+        <label>KM - Media</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Walport Training</fullName>
+        <default>false</default>
+        <label>Walport Training</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Component</fullName>
+        <default>false</default>
+        <label>Component</label>
+    </standardValue>
+    <standardValue>
+        <fullName>VOD</fullName>
+        <default>false</default>
+        <label>VOD</label>
+    </standardValue>
+    <standardValue>
+        <fullName>File Services</fullName>
+        <default>false</default>
+        <label>File Services</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Media</fullName>
+        <default>false</default>
+        <label>Media</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Accessory</fullName>
+        <default>false</default>
+        <label>Accessory</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Airtime Service Product</fullName>
+        <default>false</default>
+        <label>Airtime Service Product</label>
+    </standardValue>
+    <standardValue>
+        <fullName>OneCare</fullName>
+        <default>false</default>
+        <label>OneCare</label>
+    </standardValue>
+    <standardValue>
+        <fullName>AgilePlans</fullName>
+        <default>false</default>
+        <label>AgilePlans</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Hardware Bundles</fullName>
+        <default>false</default>
+        <label>Hardware Bundles</label>
+    </standardValue>
+    <standardValue>
+        <fullName>IPMC</fullName>
+        <default>false</default>
+        <label>IPMC</label>
+    </standardValue>
+</StandardValueSet>

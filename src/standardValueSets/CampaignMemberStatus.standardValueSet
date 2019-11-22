@@ -1,0 +1,1119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>true</sorted>
+    <standardValue>
+        <fullName>Added</fullName>
+        <default>false</default>
+        <label>Added</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Added to Nurture Campaign</fullName>
+        <default>false</default>
+        <label>Added to Nurture Campaign</label>
+    </standardValue>
+    <standardValue>
+        <fullName>AgilePlans Form Fill</fullName>
+        <default>false</default>
+        <label>AgilePlans Form Fill</label>
+    </standardValue>
+    <standardValue>
+        <fullName>AgilePlans Port Form Fill</fullName>
+        <default>false</default>
+        <label>AgilePlans Port Form Fill</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Airtime Pooled Plans Form Fill</fullName>
+        <default>false</default>
+        <label>Airtime Pooled Plans Form Fill</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Approached Client- Indifferent Reaction</fullName>
+        <default>false</default>
+        <label>Approached Client- Indifferent Reaction</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Attended</fullName>
+        <default>false</default>
+        <label>Attended</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Attended Discussion</fullName>
+        <default>false</default>
+        <label>Attended Discussion</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Attended Event</fullName>
+        <default>false</default>
+        <label>Attended Event</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Attended In Booth Event</fullName>
+        <default>false</default>
+        <label>Attended In Booth Event</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Attended Live</fullName>
+        <default>false</default>
+        <label>Attended Live</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Attended - Live</fullName>
+        <default>false</default>
+        <label>Attended - Live</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Attended On Demand</fullName>
+        <default>false</default>
+        <label>Attended On Demand</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Attended On-demand</fullName>
+        <default>false</default>
+        <label>Attended On-demand</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Attended - On Demand</fullName>
+        <default>false</default>
+        <label>Attended - On Demand</label>
+    </standardValue>
+    <standardValue>
+        <fullName>attended our speaking</fullName>
+        <default>false</default>
+        <label>attended our speaking</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Attended Palma</fullName>
+        <default>false</default>
+        <label>Attended Palma</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Attended Presentation</fullName>
+        <default>false</default>
+        <label>Attended Presentation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Attended Show</fullName>
+        <default>false</default>
+        <label>Attended Show</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Attended Sint Maarten</fullName>
+        <default>false</default>
+        <label>Attended Sint Maarten</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Attended Tradeshow</fullName>
+        <default>false</default>
+        <label>Attended Tradeshow</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Attended training</fullName>
+        <default>false</default>
+        <label>Attended training</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Booked a Meeting</fullName>
+        <default>false</default>
+        <label>Booked a Meeting</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Certificate sent</fullName>
+        <default>false</default>
+        <label>Certificate sent</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Check mailed</fullName>
+        <default>false</default>
+        <label>Check mailed</label>
+    </standardValue>
+    <standardValue>
+        <fullName>CIO Forum Delegate</fullName>
+        <default>false</default>
+        <label>CIO Forum Delegate</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Claim Form Submitted</fullName>
+        <default>false</default>
+        <label>Claim Form Submitted</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Claim Form TV1</fullName>
+        <default>false</default>
+        <label>Claim Form TV1</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Claim Form TV3</fullName>
+        <default>false</default>
+        <label>Claim Form TV3</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Claim Form TV5</fullName>
+        <default>false</default>
+        <label>Claim Form TV5</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Claim Form TV6</fullName>
+        <default>false</default>
+        <label>Claim Form TV6</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Claim Form TV8</fullName>
+        <default>false</default>
+        <label>Claim Form TV8</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Clicked</fullName>
+        <default>false</default>
+        <label>Clicked</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Clicked Ad</fullName>
+        <default>false</default>
+        <label>Clicked Ad</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Clicked eNewsletter Ad</fullName>
+        <default>false</default>
+        <label>Clicked eNewsletter Ad</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Clicked Web Ad</fullName>
+        <default>false</default>
+        <label>Clicked Web Ad</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Commercial Maritime Form Fill</fullName>
+        <default>false</default>
+        <label>Commercial Maritime Form Fill</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Commercial Vehicle Form Fill</fullName>
+        <default>false</default>
+        <label>Commercial Vehicle Form Fill</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Contact Page Form Fill [Bottom]</fullName>
+        <default>false</default>
+        <label>Contact Page Form Fill [Bottom]</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Contact Requested</fullName>
+        <default>false</default>
+        <label>Contact Requested</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Contact Support Form Fill [Top Nav]</fullName>
+        <default>false</default>
+        <label>Contact Support Form Fill [Top Nav]</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Contest Entry</fullName>
+        <default>false</default>
+        <label>Contest Entry</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Converted</fullName>
+        <default>false</default>
+        <label>Converted</label>
+    </standardValue>
+    <standardValue>
+        <fullName>CruiseShow Form Fill</fullName>
+        <default>false</default>
+        <label>CruiseShow Form Fill</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Customer Referral</fullName>
+        <default>false</default>
+        <label>Customer Referral</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Database Program</fullName>
+        <default>false</default>
+        <label>Database Program</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Declined</fullName>
+        <default>false</default>
+        <label>Declined</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Demo</fullName>
+        <default>false</default>
+        <label>Demo</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Developers Kit Form Fill</fullName>
+        <default>false</default>
+        <label>Developers Kit Form Fill</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Download E-Book</fullName>
+        <default>false</default>
+        <label>Download E-Book</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Downloaded</fullName>
+        <default>false</default>
+        <label>Downloaded</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Downloaded 4K Paper</fullName>
+        <default>false</default>
+        <label>Downloaded 4K Paper</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Downloaded Article</fullName>
+        <default>false</default>
+        <label>Downloaded Article</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Downloaded Blast</fullName>
+        <default>false</default>
+        <label>Downloaded Blast</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Downloaded Case Study</fullName>
+        <default>false</default>
+        <label>Downloaded Case Study</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Downloaded Drawing</fullName>
+        <default>false</default>
+        <label>Downloaded Drawing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Downloaded eBook</fullName>
+        <default>false</default>
+        <label>Downloaded eBook</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Downloaded Flyover Paper</fullName>
+        <default>false</default>
+        <label>Downloaded Flyover Paper</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Downloaded Geodetics</fullName>
+        <default>false</default>
+        <label>Downloaded Geodetics</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Downloaded Greensea</fullName>
+        <default>false</default>
+        <label>Downloaded Greensea</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Downloaded Happiness Index</fullName>
+        <default>false</default>
+        <label>Downloaded Happiness Index</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Downloaded Infographic</fullName>
+        <default>false</default>
+        <label>Downloaded Infographic</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Downloaded IT Check List</fullName>
+        <default>false</default>
+        <label>Downloaded IT Check List</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Downloaded Northfinder Paper</fullName>
+        <default>false</default>
+        <label>Downloaded Northfinder Paper</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Downloaded Package</fullName>
+        <default>false</default>
+        <label>Downloaded Package</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Downloaded Paper</fullName>
+        <default>false</default>
+        <label>Downloaded Paper</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Downloaded Presentation</fullName>
+        <default>false</default>
+        <label>Downloaded Presentation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Downloaded Report</fullName>
+        <default>false</default>
+        <label>Downloaded Report</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Downloaded Ripple Effect</fullName>
+        <default>false</default>
+        <label>Downloaded Ripple Effect</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Downloaded Ripple Poster</fullName>
+        <default>false</default>
+        <label>Downloaded Ripple Poster</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Downloaded Slides</fullName>
+        <default>false</default>
+        <label>Downloaded Slides</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Downloaded Special Offer</fullName>
+        <default>false</default>
+        <label>Downloaded Special Offer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Downloaded Training Package</fullName>
+        <default>false</default>
+        <label>Downloaded Training Package</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Downloaded Video</fullName>
+        <default>false</default>
+        <label>Downloaded Video</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Downloaded Whitepaper</fullName>
+        <default>false</default>
+        <label>Downloaded Whitepaper</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Downloaded White Paper</fullName>
+        <default>false</default>
+        <label>Downloaded White Paper</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Downloaded WPI</fullName>
+        <default>false</default>
+        <label>Downloaded WPI</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Download Slideshare</fullName>
+        <default>false</default>
+        <label>Download Slideshare</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email Blast direct response</fullName>
+        <default>false</default>
+        <label>Email Blast direct response</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Engaged</fullName>
+        <default>false</default>
+        <label>Engaged</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Entered Raffle</fullName>
+        <default>false</default>
+        <label>Entered Raffle</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Entertainment Bundle Requested</fullName>
+        <default>false</default>
+        <label>Entertainment Bundle Requested</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Entertainment Bundle Request - SP</fullName>
+        <default>false</default>
+        <label>Entertainment Bundle Request - SP</label>
+    </standardValue>
+    <standardValue>
+        <fullName>EOB Trial Request</fullName>
+        <default>false</default>
+        <label>EOB Trial Request</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Fishbowl Contacts</fullName>
+        <default>false</default>
+        <label>Fishbowl Contacts</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Flyer Form</fullName>
+        <default>false</default>
+        <label>Flyer Form</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Fog &amp; Inertial Form Fill</fullName>
+        <default>false</default>
+        <label>Fog &amp; Inertial Form Fill</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Form Completion</fullName>
+        <default>false</default>
+        <label>Form Completion</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Given to G&amp;S Sales</fullName>
+        <default>false</default>
+        <label>Given to G&amp;S Sales</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Given to Satcom Sales</fullName>
+        <default>false</default>
+        <label>Given to Satcom Sales</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Global Plan</fullName>
+        <default>false</default>
+        <label>Global Plan</label>
+    </standardValue>
+    <standardValue>
+        <fullName>GNSS download</fullName>
+        <default>false</default>
+        <label>GNSS download</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Has Forthcoming Project</fullName>
+        <default>false</default>
+        <label>Has Forthcoming Project</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Has Pending Project</fullName>
+        <default>false</default>
+        <label>Has Pending Project</label>
+    </standardValue>
+    <standardValue>
+        <fullName>In Process</fullName>
+        <default>false</default>
+        <label>In Process</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Invited</fullName>
+        <default>false</default>
+        <label>Invited</label>
+    </standardValue>
+    <standardValue>
+        <fullName>iPad Promo</fullName>
+        <default>false</default>
+        <label>iPad Promo</label>
+    </standardValue>
+    <standardValue>
+        <fullName>IPMC Order Form</fullName>
+        <default>false</default>
+        <label>IPMC Order Form</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Jersey Raffle</fullName>
+        <default>false</default>
+        <label>Jersey Raffle</label>
+    </standardValue>
+    <standardValue>
+        <fullName>KMG Initiated Opportunity</fullName>
+        <default>false</default>
+        <label>KMG Initiated Opportunity</label>
+    </standardValue>
+    <standardValue>
+        <fullName>KVH Responded</fullName>
+        <default>false</default>
+        <label>KVH Responded</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Learn More - LTE MiniVSAT</fullName>
+        <default>false</default>
+        <label>Learn More - LTE MiniVSAT</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Leisure Marine Form Fill</fullName>
+        <default>false</default>
+        <label>Leisure Marine Form Fill</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Leisure Vehicle Form Fill</fullName>
+        <default>false</default>
+        <label>Leisure Vehicle Form Fill</label>
+    </standardValue>
+    <standardValue>
+        <fullName>LinkedIn download</fullName>
+        <default>false</default>
+        <label>LinkedIn download</label>
+    </standardValue>
+    <standardValue>
+        <fullName>LinkedIn Group member</fullName>
+        <default>false</default>
+        <label>LinkedIn Group member</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Meeting Requested</fullName>
+        <default>false</default>
+        <label>Meeting Requested</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Member</fullName>
+        <default>false</default>
+        <label>Member</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Microsite - Combine LTE &amp; MiniVSAT</fullName>
+        <default>false</default>
+        <label>Microsite - Combine LTE &amp; MiniVSAT</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Microsite - Question</fullName>
+        <default>false</default>
+        <label>Microsite - Question</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Military &amp; Government Form Fill</fullName>
+        <default>false</default>
+        <label>Military &amp; Government Form Fill</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Mkto LP download</fullName>
+        <default>false</default>
+        <label>Mkto LP download</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Needs Assessment</fullName>
+        <default>false</default>
+        <label>Needs Assessment</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Negative Reaction - Dead End</fullName>
+        <default>false</default>
+        <label>Negative Reaction - Dead End</label>
+    </standardValue>
+    <standardValue>
+        <fullName>NEWSlink Trial Form Fill</fullName>
+        <default>false</default>
+        <label>NEWSlink Trial Form Fill</label>
+    </standardValue>
+    <standardValue>
+        <fullName>No Project Forseen</fullName>
+        <default>false</default>
+        <label>No Project Forseen</label>
+    </standardValue>
+    <standardValue>
+        <fullName>No Show</fullName>
+        <default>false</default>
+        <label>No Show</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Not Approached Yet</fullName>
+        <default>false</default>
+        <label>Not Approached Yet</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Not Interested</fullName>
+        <default>false</default>
+        <label>Not Interested</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Opened</fullName>
+        <default>false</default>
+        <label>Opened</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Paperwork Submitted by Customer</fullName>
+        <default>false</default>
+        <label>Paperwork Submitted by Customer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Paperwork Submitted to Finance</fullName>
+        <default>false</default>
+        <label>Paperwork Submitted to Finance</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Partner Referral</fullName>
+        <default>false</default>
+        <label>Partner Referral</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Pending</fullName>
+        <default>false</default>
+        <label>Pending</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Pending Approval</fullName>
+        <default>false</default>
+        <label>Pending Approval</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Positive Reaction - Progressing</fullName>
+        <default>false</default>
+        <label>Positive Reaction - Progressing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Post Launch - Requested Contact</fullName>
+        <default>false</default>
+        <label>Post Launch - Requested Contact</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Pre Launch Sign Up</fullName>
+        <default>false</default>
+        <label>Pre Launch Sign Up</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Premium Plan</fullName>
+        <default>false</default>
+        <label>Premium Plan</label>
+    </standardValue>
+    <standardValue>
+        <fullName>QR Promo</fullName>
+        <default>false</default>
+        <label>QR Promo</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Question Asked</fullName>
+        <default>false</default>
+        <label>Question Asked</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Raffle In Booth</fullName>
+        <default>false</default>
+        <label>Raffle In Booth</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Raffle Name</fullName>
+        <default>false</default>
+        <label>Raffle Name</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Raffle Winner</fullName>
+        <default>false</default>
+        <label>Raffle Winner</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Received Video Package</fullName>
+        <default>false</default>
+        <label>Received Video Package</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Registered</fullName>
+        <default>false</default>
+        <label>Registered</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Registered for training</fullName>
+        <default>false</default>
+        <label>Registered for training</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Registered Palma</fullName>
+        <default>false</default>
+        <label>Registered Palma</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Registration Error</fullName>
+        <default>false</default>
+        <label>Registration Error</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Rejected</fullName>
+        <default>false</default>
+        <label>Rejected</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Request a Meeting</fullName>
+        <default>false</default>
+        <label>Request a Meeting</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Request Contact</fullName>
+        <default>false</default>
+        <label>Request Contact</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Requested a meeting</fullName>
+        <default>false</default>
+        <label>Requested a meeting</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Requested AWT contact</fullName>
+        <default>false</default>
+        <label>Requested AWT contact</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Requested Catalog</fullName>
+        <default>false</default>
+        <label>Requested Catalog</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Requested contact</fullName>
+        <default>false</default>
+        <label>Requested contact</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Requested contact, Print Ad</fullName>
+        <default>false</default>
+        <label>Requested contact, Print Ad</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Requested Content Contact</fullName>
+        <default>false</default>
+        <label>Requested Content Contact</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Requested demo</fullName>
+        <default>false</default>
+        <label>Requested demo</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Requested Demo/More Information</fullName>
+        <default>false</default>
+        <label>Requested Demo/More Information</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Requested demo english</fullName>
+        <default>false</default>
+        <label>Requested demo english</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Requested demo spanish</fullName>
+        <default>false</default>
+        <label>Requested demo spanish</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Requested General contact</fullName>
+        <default>false</default>
+        <label>Requested General contact</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Requested HD7_HD11</fullName>
+        <default>false</default>
+        <label>Requested HD7_HD11</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Requested Info on Kit</fullName>
+        <default>false</default>
+        <label>Requested Info on Kit</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Requested info on Multiple Services</fullName>
+        <default>false</default>
+        <label>Requested info on Multiple Services</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Requested info on One Care</fullName>
+        <default>false</default>
+        <label>Requested info on One Care</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Requested Info RE Seasonal Promos</fullName>
+        <default>false</default>
+        <label>Requested Info RE Seasonal Promos</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Requested IPCM FIFA Info</fullName>
+        <default>false</default>
+        <label>Requested IPCM FIFA Info</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Requested Jeppesen contact</fullName>
+        <default>false</default>
+        <label>Requested Jeppesen contact</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Requested KMG Contact</fullName>
+        <default>false</default>
+        <label>Requested KMG Contact</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Requested KVH contact</fullName>
+        <default>false</default>
+        <label>Requested KVH contact</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Requested MBB Contact</fullName>
+        <default>false</default>
+        <label>Requested MBB Contact</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Requested Media Server</fullName>
+        <default>false</default>
+        <label>Requested Media Server</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Requested Meeting</fullName>
+        <default>false</default>
+        <label>Requested Meeting</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Requested More Information</fullName>
+        <default>false</default>
+        <label>Requested More Information</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Requested Preview Package</fullName>
+        <default>false</default>
+        <label>Requested Preview Package</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Requested Preview Package Trial</fullName>
+        <default>false</default>
+        <label>Requested Preview Package Trial</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Requested Rebate</fullName>
+        <default>false</default>
+        <label>Requested Rebate</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Requested SATCOM Contact</fullName>
+        <default>false</default>
+        <label>Requested SATCOM Contact</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Requested Special Offer</fullName>
+        <default>false</default>
+        <label>Requested Special Offer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Requested Title of the Month</fullName>
+        <default>false</default>
+        <label>Requested Title of the Month</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Requested Training Assessment</fullName>
+        <default>false</default>
+        <label>Requested Training Assessment</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Requested Training Title Info</fullName>
+        <default>false</default>
+        <label>Requested Training Title Info</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Requested Transas Contact</fullName>
+        <default>false</default>
+        <label>Requested Transas Contact</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Requested Trial</fullName>
+        <default>false</default>
+        <label>Requested Trial</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Requested Upgrade</fullName>
+        <default>false</default>
+        <label>Requested Upgrade</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Requested Upgrade V7IP to HTS</fullName>
+        <default>false</default>
+        <label>Requested Upgrade V7IP to HTS</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Requested Videotel Contact</fullName>
+        <default>false</default>
+        <label>Requested Videotel Contact</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Requested Videotel Training</fullName>
+        <default>false</default>
+        <label>Requested Videotel Training</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Responded</fullName>
+        <default>false</default>
+        <label>Responded</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Responded Social - Question</fullName>
+        <default>false</default>
+        <label>Responded Social - Question</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Revert back to company</fullName>
+        <default>false</default>
+        <label>Revert back to company</label>
+    </standardValue>
+    <standardValue>
+        <fullName>RSVP</fullName>
+        <default>false</default>
+        <label>RSVP</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SATCOM Initiated Opportunity</fullName>
+        <default>false</default>
+        <label>SATCOM Initiated Opportunity</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Send Catalogue</fullName>
+        <default>false</default>
+        <label>Send Catalogue</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sent</fullName>
+        <default>false</default>
+        <label>Sent</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sent Invitation</fullName>
+        <default>false</default>
+        <label>Sent Invitation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sent Receiver</fullName>
+        <default>false</default>
+        <label>Sent Receiver</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Show Registrant</fullName>
+        <default>false</default>
+        <label>Show Registrant</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Soccer Draw</fullName>
+        <default>false</default>
+        <label>Soccer Draw</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Soccer Jersey</fullName>
+        <default>false</default>
+        <label>Soccer Jersey</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Social  - Question</fullName>
+        <default>false</default>
+        <label>Social  - Question</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Standard Plan</fullName>
+        <default>false</default>
+        <label>Standard Plan</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Submission</fullName>
+        <default>false</default>
+        <label>Submission</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Submitted a Request</fullName>
+        <default>false</default>
+        <label>Submitted a Request</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Submitted forms</fullName>
+        <default>false</default>
+        <label>Submitted forms</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Submitted HD7 Claim Form</fullName>
+        <default>false</default>
+        <label>Submitted HD7 Claim Form</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Submitted Rebate form</fullName>
+        <default>false</default>
+        <label>Submitted Rebate form</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SuperYacht Form Fill</fullName>
+        <default>false</default>
+        <label>SuperYacht Form Fill</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Support Page Form Fill</fullName>
+        <default>false</default>
+        <label>Support Page Form Fill</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Target profile</fullName>
+        <default>false</default>
+        <label>Target profile</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Taverna Event</fullName>
+        <default>false</default>
+        <label>Taverna Event</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Trial Requested</fullName>
+        <default>false</default>
+        <label>Trial Requested</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Turned over to rep</fullName>
+        <default>false</default>
+        <label>Turned over to rep</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Updated</fullName>
+        <default>false</default>
+        <label>Updated</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Updated Info</fullName>
+        <default>false</default>
+        <label>Updated Info</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Upgrade Requested</fullName>
+        <default>false</default>
+        <label>Upgrade Requested</label>
+    </standardValue>
+    <standardValue>
+        <fullName>V3 Upgrade</fullName>
+        <default>false</default>
+        <label>V3 Upgrade</label>
+    </standardValue>
+    <standardValue>
+        <fullName>V7 Upgrade</fullName>
+        <default>false</default>
+        <label>V7 Upgrade</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Video Book Returned</fullName>
+        <default>false</default>
+        <label>Video Book Returned</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Video Package Was Received</fullName>
+        <default>false</default>
+        <label>Video Package Was Received</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Videotel Initiated Opportunity</fullName>
+        <default>false</default>
+        <label>Videotel Initiated Opportunity</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Visited Booth</fullName>
+        <default>false</default>
+        <label>Visited Booth</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Visited Page</fullName>
+        <default>false</default>
+        <label>Visited Page</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Visited Presentation</fullName>
+        <default>false</default>
+        <label>Visited Presentation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Visted Booth</fullName>
+        <default>false</default>
+        <label>Visted Booth</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Wait List</fullName>
+        <default>false</default>
+        <label>Wait List</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Waitlisted</fullName>
+        <default>false</default>
+        <label>Waitlisted</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Wait Listed</fullName>
+        <default>false</default>
+        <label>Wait Listed</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Was Invited</fullName>
+        <default>false</default>
+        <label>Was Invited</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Was sent video package</fullName>
+        <default>false</default>
+        <label>Was sent video package</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Won Raffle</fullName>
+        <default>false</default>
+        <label>Won Raffle</label>
+    </standardValue>
+</StandardValueSet>

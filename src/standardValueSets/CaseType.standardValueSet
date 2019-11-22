@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Airtime Inside Sales</fullName>
+        <default>false</default>
+        <label>Airtime Inside Sales</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Report a Service or Product Problem</fullName>
+        <default>false</default>
+        <label>Report a Service or Product Problem</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Change or Add an Airtime Service</fullName>
+        <default>false</default>
+        <label>Change or Add an Airtime Service</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Information on an Existing Service</fullName>
+        <default>false</default>
+        <label>Information on an Existing Service</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Order a New Airtime Service</fullName>
+        <default>false</default>
+        <label>Order a New Airtime Service</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Add or Change a Video / Training Service</fullName>
+        <default>false</default>
+        <label>Add or Change a Video / Training Service</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Professional Services Request</fullName>
+        <default>false</default>
+        <label>Professional Services Request</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Product Registration</fullName>
+        <default>false</default>
+        <label>Product Registration</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Request AgilePlans Installation Support</fullName>
+        <default>false</default>
+        <label>Request AgilePlans Installation Support</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Request Installation Support</fullName>
+        <default>false</default>
+        <label>Request Installation Support</label>
+    </standardValue>
+    <standardValue>
+        <fullName>myKVH Feedback</fullName>
+        <default>false</default>
+        <label>myKVH Feedback</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Request Configuration Change</fullName>
+        <default>false</default>
+        <label>Request Configuration Change</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Request Static IP</fullName>
+        <default>false</default>
+        <label>Request Static IP</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Report Request</fullName>
+        <default>false</default>
+        <label>Report Request</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Preventative Maintenance</fullName>
+        <default>false</default>
+        <label>Preventative Maintenance</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>TracVision Customer Care</fullName>
+        <default>false</default>
+        <label>TracVision Customer Care</label>
+    </standardValue>
+    <standardValue>
+        <fullName>KVH Partner Portal Question/Problem</fullName>
+        <default>false</default>
+        <label>KVH Partner Portal Question/Problem</label>
+    </standardValue>
+    <standardValue>
+        <fullName>New AgilePlans Service Order</fullName>
+        <default>false</default>
+        <label>New AgilePlans Service Order</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Request for Agile Decommissioning</fullName>
+        <default>false</default>
+        <label>Request for Agile Decommissioning</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Request Migration Installation Support</fullName>
+        <default>false</default>
+        <label>Request Migration Installation Support</label>
+    </standardValue>
+    <standardValue>
+        <fullName>New Migration Order</fullName>
+        <default>false</default>
+        <label>New Migration Order</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Orientation Call</fullName>
+        <default>false</default>
+        <label>Orientation Call</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Lease Order</fullName>
+        <default>false</default>
+        <label>Lease Order</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Swap Request</fullName>
+        <default>false</default>
+        <label>Swap Request</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Decommission Request</fullName>
+        <default>false</default>
+        <label>Decommission Request</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Credit Request</fullName>
+        <default>false</default>
+        <label>Credit Request</label>
+    </standardValue>
+</StandardValueSet>

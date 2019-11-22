@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Email</fullName>
+        <default>false</default>
+        <label>Email</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Phone</fullName>
+        <default>false</default>
+        <label>Phone</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Web</fullName>
+        <default>false</default>
+        <label>Web</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email - mvbsupport@kvh.com</fullName>
+        <default>false</default>
+        <label>Email - mvbsupport@kvh.com</label>
+    </standardValue>
+    <standardValue>
+        <fullName>parts@kvh.com</fullName>
+        <default>false</default>
+        <label>parts@kvh.com</label>
+    </standardValue>
+    <standardValue>
+        <fullName>parts@emea.kvh.com</fullName>
+        <default>false</default>
+        <label>parts@emea.kvh.com</label>
+    </standardValue>
+    <standardValue>
+        <fullName>support@kvh.com</fullName>
+        <default>false</default>
+        <label>support@kvh.com</label>
+    </standardValue>
+    <standardValue>
+        <fullName>support@emea.kvh.com</fullName>
+        <default>false</default>
+        <label>support@emea.kvh.com</label>
+    </standardValue>
+    <standardValue>
+        <fullName>repairs@emea.kvh.com</fullName>
+        <default>false</default>
+        <label>repairs@emea.kvh.com</label>
+    </standardValue>
+    <standardValue>
+        <fullName>repairs@kvh.com</fullName>
+        <default>false</default>
+        <label>repairs@kvh.com</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email - SF_Support@kvh.com</fullName>
+        <default>false</default>
+        <label>Email - SF_Support@kvh.com</label>
+    </standardValue>
+    <standardValue>
+        <fullName>prof_services@kvh.com</fullName>
+        <default>false</default>
+        <label>prof_services@kvh.com</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email - satelliteservices@kvh.com</fullName>
+        <default>false</default>
+        <label>Email - satelliteservices@kvh.com</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email - Videotel Support</fullName>
+        <default>false</default>
+        <label>Email - Videotel Support</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email - WebFTA Support</fullName>
+        <default>false</default>
+        <label>Email - WebFTA Support</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email - VODProduction@kvh.com</fullName>
+        <default>false</default>
+        <label>Email - VODProduction@kvh.com</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email - Order Administration</fullName>
+        <default>false</default>
+        <label>Email - Order Administration</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email - Abuse@kvh.com</fullName>
+        <default>false</default>
+        <label>Email - Abuse@kvh.com</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email - KC_Repairs@kvh.com</fullName>
+        <default>false</default>
+        <label>Email - KC_Repairs@kvh.com</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Warranty@kvh.com</fullName>
+        <default>false</default>
+        <label>Warranty@kvh.com</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email - Invoicing@videotel.com</fullName>
+        <default>false</default>
+        <label>Email - Invoicing@videotel.com</label>
+    </standardValue>
+    <standardValue>
+        <fullName>PriorityCare@KVH.com</fullName>
+        <default>false</default>
+        <label>PriorityCare@KVH.com</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Chatter Answers</fullName>
+        <default>false</default>
+        <label>Chatter Answers</label>
+    </standardValue>
+    <standardValue>
+        <fullName>System Generated</fullName>
+        <default>false</default>
+        <label>System Generated</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Existing Case</fullName>
+        <default>false</default>
+        <label>Existing Case</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Opportunity</fullName>
+        <default>false</default>
+        <label>Opportunity</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email - News@Videotel.com</fullName>
+        <default>false</default>
+        <label>Email - News@Videotel.com</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Online Product Registration</fullName>
+        <default>false</default>
+        <label>Online Product Registration</label>
+    </standardValue>
+    <standardValue>
+        <fullName>LTE Activation Form</fullName>
+        <default>false</default>
+        <label>LTE Activation Form</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email - servicedeliverygroup@kvh.com</fullName>
+        <default>false</default>
+        <label>Email - servicedeliverygroup@kvh.com</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email - agileplansorders@kvh.com</fullName>
+        <default>false</default>
+        <label>Email - agileplansorders@kvh.com</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Customer Portal</fullName>
+        <default>false</default>
+        <label>Customer Portal</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Partner Portal</fullName>
+        <default>false</default>
+        <label>Partner Portal</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email - dealerlocator@kvh.com</fullName>
+        <default>false</default>
+        <label>Email - dealerlocator@kvh.com</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email - directv@kvh.com</fullName>
+        <default>false</default>
+        <label>Email - directv@kvh.com</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email - dtvactivation@kvh.com</fullName>
+        <default>false</default>
+        <label>Email - dtvactivation@kvh.com</label>
+    </standardValue>
+    <standardValue>
+        <fullName>myKVH Customer Portal</fullName>
+        <default>false</default>
+        <label>myKVH Customer Portal</label>
+    </standardValue>
+    <standardValue>
+        <fullName>VOC Survey</fullName>
+        <default>false</default>
+        <label>VOC Survey</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email - Network Engineering</fullName>
+        <default>false</default>
+        <label>Email - Network Engineering</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email - AppEng@kvh.com</fullName>
+        <default>false</default>
+        <label>Email - AppEng@kvh.com</label>
+    </standardValue>
+</StandardValueSet>
