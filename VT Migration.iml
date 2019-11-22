@@ -181,6 +181,10 @@
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="VTMig_CreateOrderFromOpp" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="VTMig_OppProductsInlineController" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
@@ -356,6 +360,10 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="VTMig_CreateOrder" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="VTMig_CreateOrderFromOpp" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -8327,6 +8335,11 @@
                     <MetadataType>
                       <option name="entries">
                         <list>
+                          <MetadataEntry>
+                            <option name="name" value="KV_Agent_Community_Dashboard/KV_Agent_Dashboard" />
+                            <option name="parentFolder" value="KV_Agent_Community_Dashboard" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
                           <MetadataEntry>
                             <option name="folder" value="true" />
                             <option name="name" value="Sales_and_Marketing_Dashboards" />
