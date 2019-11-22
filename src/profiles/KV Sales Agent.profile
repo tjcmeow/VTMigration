@@ -129,7 +129,23 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>VTMig_AddOrderProduct_Test</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>VTMig_CloneOrder</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>VTMig_CloneOrder_Test</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>VTMig_CreateOrder</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>VTMig_CreateOrder_Test</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -137,7 +153,15 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>VTMig_OppProductsInlineController_Test</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>VTMig_OrderProductsInlineController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>VTMig_OrderProductsInlineController_Test</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -146,6 +170,14 @@
     </classAccesses>
     <classAccesses>
         <apexClass>VTMig_ProductSelection_Extension_Test</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>VTMig_UpdateOrderStatus</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>VTMig_UpdateOrderStatus_Test</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -840,7 +872,22 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Account.Fleet_Ship_Management_Co_Type__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Fleet_Size__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Account.Generate_Statement__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Google_Platform_Search__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -940,6 +987,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Account.Key_Account__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Account.Length__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -956,6 +1008,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Maker_Builder__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Maritime_Links__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1000,6 +1057,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Account.Owner_Operator_Role__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Account.Ownership</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -1026,6 +1088,41 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Partner_Detail__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Partner_Portal_Account_Name__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Partner_Portal_Email__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Partner_Portal_Main_Contact_Email__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Partner_Portal_Main_Contact_Phone__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Partner_Portal_Main_Contact__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Partner_Portal_Phone__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Partner_Portal_Secondary_Phone__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1091,6 +1188,26 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Sales_Office__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.SeaWeb_Call_Sign__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.SeaWeb_Flag__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.SeaWeb_MMSI__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.SeaWeb_Vessel_IMO__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2720,6 +2837,21 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Currency__c.Auto_Number__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Currency__c.Currency_Name__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Currency__c.Symbol__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Customer_Statement__c.Amount_Applied__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -4340,6 +4472,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Job_Product__c.Cloned_Id__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Job_Product__c.Description__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -4536,6 +4673,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Job_Rate_Plan_Charge__c.Charge_Name__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Job_Rate_Plan_Charge__c.Cloned_Id__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -5085,6 +5227,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Job_Rate_Plan__c.Cloned_Id__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Job_Rate_Plan__c.Description__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -5387,6 +5534,16 @@
         <editable>false</editable>
         <field>Job__c.Course_Delivery_Method__c</field>
         <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Job__c.CurrencyL__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Job__c.Currency_Symbol__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -9110,7 +9267,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Visit_Report__c.Main_competitor__c</field>
+        <field>Visit_Report__c.Main_Competitor__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -10191,10 +10348,6 @@
         <recordType>Account.KV_Prospect</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Account-KV Sales Prospect</layout>
-        <recordType>Account.Prospect</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Account-KV Vessel %2F Platform</layout>
         <recordType>Account.KV_Platform</recordType>
     </layoutAssignments>
@@ -10329,18 +10482,18 @@
         <layout>Job_Rate_Plan__c-Order Rate Plan Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Job__c-Order %28InvoiceIT%29 Layout</layout>
+        <layout>Job__c-KV Sales Agent Master Order</layout>
+        <recordType>Job__c.Master_Order</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Job__c-Order %28InvoiceIT%29 Layout</layout>
+        <layout>Job__c-KV Sales Child Order</layout>
         <recordType>Job__c.Child_Order</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Job__c-Order %28InvoiceIT%29 Layout</layout>
-        <recordType>Job__c.Master_Order</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Job__c-Order %28InvoiceIT%29 Layout</layout>
+        <layout>Job__c-Sale Layout</layout>
         <recordType>Job__c.Sale_Order</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -11170,6 +11323,10 @@
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
+        <apexPage>VTMig_CloneOrder</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
         <apexPage>VTMig_CreateOrder</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
@@ -11183,6 +11340,10 @@
     </pageAccesses>
     <pageAccesses>
         <apexPage>VTMig_ProductSelection</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>VTMig_UpdateOrderStatus</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
     <recordTypeVisibilities>
@@ -11203,11 +11364,6 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Account.KV_Prospect</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Account.Prospect</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
@@ -11362,10 +11518,6 @@
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
-        <tab>standard-Event</tab>
-        <visibility>DefaultOn</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
         <tab>standard-Idea</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
@@ -11399,7 +11551,7 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-ProfileSkill</tab>
-        <visibility>DefaultOn</visibility>
+        <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-Recommendation</tab>
@@ -11424,10 +11576,6 @@
     <tabVisibilities>
         <tab>standard-StreamingChannel</tab>
         <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>standard-Task</tab>
-        <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-WorkBadge</tab>

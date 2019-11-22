@@ -10,6 +10,11 @@
         <default>false</default>
         <label>Maritime</label>
     </customValue>
+    <customValue>
+        <fullName>Land</fullName>
+        <default>false</default>
+        <label>Land</label>
+    </customValue>
     <masterLabel>Market Sector</masterLabel>
     <sorted>false</sorted>
 </GlobalValueSet>

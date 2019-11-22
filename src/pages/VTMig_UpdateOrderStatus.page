@@ -1,0 +1,77 @@
+<!--
+ - Created by triciaigoe on 2019-11-20.
+ -->
+
+<apex:page id="VTMig_UpdateOrderStatus" standardController="Job__c" extensions="VTMig_UpdateOrderStatus">
+
+    <script>
+        function confirmCancel() {
+            var isCancel = confirm("Cancelling this would discard the changes.  Please confirm.");
+            if (isCancel) return true;
+            return false;
+        }
+    </script>
+
+    <apex:sectionHeader title="Update Order Status for " subtitle="{!order.Name}" />
+
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockButtons location="both">
+                <apex:commandButton action="{!saveOrder}" value="Save"/>
+                <apex:commandButton action="{!cancel}" value="Cancel" onclick="return confirmCancel()" immediate="true" />
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection title="Update Order Status" collapsible="true" columns="2" id="table">
+                <apex:outputField value="{!order.Order_Number__c}"/>
+                <apex:inputField value="{!order.Despatch_Date__c}"/>
+                <apex:inputField value="{!order.Status__c}"/>
+                <apex:inputField value="{!order.Service_Activation_Date__c}"/>
+                <apex:inputField value="{!order.Service_End_Date__c}"/>
+                <apex:inputField value="{!order.Initial_Term__c}"/>
+                <apex:inputField value="{!order.Alignment_Date_1__c}"/>
+                <apex:inputField value="{!order.Alignment_Date_2__c}"/>
+            </apex:pageBlockSection>
+            <apex:pageBlockTable value="{!selectedCharges}" var="charge" style="margin-top: 20px;">
+                <apex:column headerValue="Product Name" value="{!charge.Job_Rate_Plan__r.Job_Product__r.Name}">
+                </apex:column>
+                <apex:column headerValue="Product Code" value="{!charge.Job_Rate_Plan__r.Job_Product__r.Product_Code__c}">
+                </apex:column>
+                <apex:column headerValue="Quantity">
+                    <apex:inputField value="{!charge.Quantity__c}"/>
+                </apex:column>
+                <apex:column value="{!charge.Unit_Of_Measurement__c}">
+                </apex:column>
+                <apex:column headerValue="Charge Name" value="{!charge.Name}">
+                </apex:column>
+                <apex:column headerValue="Auto Renew">
+                    <apex:inputField value="{!charge.Auto_Renew__c}"/>
+                </apex:column>
+                <apex:column headerValue="Price Type">
+                    <apex:inputField value="{!charge.Price_Type__c}"/>
+                </apex:column>
+                <apex:column headerValue="Uplift">
+                    <apex:inputField value="{!charge.Uplift__c}"/>
+                </apex:column>
+                <apex:column headerValue="Unit Price">
+                    <apex:inputField value="{!charge.Unit_Price__c}"/>
+                </apex:column>
+                <apex:column value="{!charge.Row_Total__c}">
+                </apex:column>
+                <apex:column headerValue="Airway Bill Number">
+                    <apex:inputField value="{!charge.Airway_Bill_Number__c}"/>
+                </apex:column>
+                <apex:column headerValue="Courier">
+                    <apex:inputField value="{!charge.Courier__c}"/>
+                </apex:column>
+                <apex:column headerValue="Service Start Date">
+                    <apex:inputField value="{!charge.Service_Activation_Date__c}"/>
+                </apex:column>
+                <apex:column headerValue="Service End Date">
+                    <apex:inputField value="{!charge.Service_End_Date__c}"/>
+                </apex:column>
+                <apex:column headerValue="Status">
+                    <apex:inputField value="{!charge.Status__c}"/>
+                </apex:column>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

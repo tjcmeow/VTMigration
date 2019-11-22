@@ -563,6 +563,53 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Fleet_Ship_Management_Co_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Ship Management/Fleet Owner Role</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Group Owner</fullName>
+                    <default>false</default>
+                    <label>Group Owner</label>
+                </value>
+                <value>
+                    <fullName>Registered Owner</fullName>
+                    <default>false</default>
+                    <label>Registered Owner</label>
+                </value>
+                <value>
+                    <fullName>Ship Manager</fullName>
+                    <default>false</default>
+                    <label>Ship Manager</label>
+                </value>
+                <value>
+                    <fullName>Technical Manager</fullName>
+                    <default>false</default>
+                    <label>Technical Manager</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Fleet_Size__c</fullName>
+        <description>Added during HM Integration</description>
+        <externalId>false</externalId>
+        <label>Fleet Size</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Generate_Statement__c</fullName>
         <externalId>false</externalId>
         <formula>&quot;&amp;id=&quot; + Id + 
@@ -582,6 +629,19 @@
 &quot;&amp;EmailFromId=0D213000000PD8r&amp;EmailBCC=creditcontrol@videotel.com&quot;</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Generate Statement</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Google_Platform_Search__c</fullName>
+        <description>This hyperlink is created from Name, Vessel IMO#, MMSI, and Vessel Radio Call sign (whatever is available) and searches Google for those parameters.</description>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;http://www.google.com/search?q=&quot;+ Name +&quot; &quot;+ Vessel_IMO__c +&quot; &quot;+ MMSI__c +&quot; &quot;+ Vessel_Radio_Call_Sign__c , &quot;Click Here to Search&quot; ,&quot;_blank&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Searches Google based on available Platform data</inlineHelpText>
+        <label>Google Platform Search</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <type>Text</type>
@@ -1245,6 +1305,17 @@ PRINT &amp; STAMP- Customer receives the invoice in the Post (by mail), BUT the 
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Key_Account__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field is for to identify strategic accounts.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is to be check if this is a Key Strategic Account. Only the Account Owner and their Manager are to update this field.</inlineHelpText>
+        <label>Key Account</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>Length__c</fullName>
         <description>Used for Platform Record Types, Maps to Sea-Web field</description>
         <externalId>false</externalId>
@@ -1286,6 +1357,21 @@ PRINT &amp; STAMP- Customer receives the invoice in the Post (by mail), BUT the 
         <length>100</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Maritime_Links__c</fullName>
+        <description>Links to Maritime websites that may provide additional ship details</description>
+        <externalId>false</externalId>
+        <formula>IF( ISBLANK( Vessel_IMO__c ) ,
+            &quot;Populate the Vessel IMO# Field to enable links&quot;,
+            HYPERLINK(&quot;http://www.marinetraffic.com/ais/shipdetails.aspx?imo=&quot;+ Vessel_IMO__c , &quot;Marine Traffic&quot;,&quot;_blank&quot;)+&quot; | &quot;+HYPERLINK(&quot;http://maritime-connector.com/ship/&quot;+ Vessel_IMO__c , &quot;Maritime Connector&quot;,&quot;_blank&quot;))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>These links require an IMO#</inlineHelpText>
+        <label>Maritime Links</label>
+        <required>false</required>
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
@@ -1429,6 +1515,41 @@ PRINT &amp; STAMP- Customer receives the invoice in the Post (by mail), BUT the 
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>Owner_Operator_Role__c</fullName>
+        <externalId>false</externalId>
+        <label>Ship Owner/Operator Role</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Brokerage &amp; Charter</fullName>
+                    <default>false</default>
+                    <label>Brokerage &amp; Charter</label>
+                </value>
+                <value>
+                    <fullName>Registered Owner</fullName>
+                    <default>false</default>
+                    <label>Registered Owner</label>
+                </value>
+                <value>
+                    <fullName>Yacht Management</fullName>
+                    <default>false</default>
+                    <label>Yacht Management</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>Ownership</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -1504,6 +1625,84 @@ PRINT &amp; STAMP- Customer receives the invoice in the Post (by mail), BUT the 
             </valueSetDefinition>
         </valueSet>
         <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Partner_Portal_Account_Name__c</fullName>
+        <description>This has been brought over from SiteCore</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Partner Portal Account Name</inlineHelpText>
+        <label>Partner Portal Account Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Partner_Portal_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Partner Portal Email</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Partner_Portal_Main_Contact_Email__c</fullName>
+        <externalId>false</externalId>
+        <formula>Partner_Portal_Main_Contact__r.Email</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Partner Portal Main Contact Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Partner_Portal_Main_Contact_Phone__c</fullName>
+        <externalId>false</externalId>
+        <formula>Partner_Portal_Main_Contact__r.Phone</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Partner Portal Main Contact Phone</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Partner_Portal_Main_Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>This is a contact lookup field for the Main Contact that will be displayed in the Partner Portal and Where to Buy.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This is a contact lookup field for the Main Contact that will be displayed in the Partner Portal and Where to Buy.</inlineHelpText>
+        <label>Partner Portal Main Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Accounts Where Partner Portal Main Contact</relationshipLabel>
+        <relationshipName>Accounts1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Partner_Portal_Phone__c</fullName>
+        <externalId>false</externalId>
+        <label>Partner Portal Phone</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Partner_Portal_Secondary_Phone__c</fullName>
+        <externalId>false</externalId>
+        <label>Partner Portal Secondary Phone</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Phone</type>
     </fields>
     <fields>
         <fullName>Payment_Terms__c</fullName>
@@ -3370,6 +3569,52 @@ Account.Product_Interest_2__c</description>
         </valueSet>
     </fields>
     <fields>
+        <fullName>SeaWeb_Call_Sign__c</fullName>
+        <externalId>false</externalId>
+        <formula>Vessel_Radio_Call_Sign__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>SeaWeb Call Sign</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SeaWeb_Flag__c</fullName>
+        <description>This is the Vessel&apos;s flag as recorded in SeaWeb</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is only to be populated with a value from SeaWeb</inlineHelpText>
+        <label>SeaWeb Flag</label>
+        <length>64</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SeaWeb_MMSI__c</fullName>
+        <externalId>false</externalId>
+        <formula>MMSI__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>SeaWeb MMSI</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SeaWeb_Vessel_IMO__c</fullName>
+        <externalId>false</externalId>
+        <formula>Vessel_IMO__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>SeaWeb Vessel IMO</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Secondary_Phone__c</fullName>
         <description>An alternate general phone number for the account</description>
         <externalId>false</externalId>
@@ -4839,6 +5084,25 @@ business/products</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Fleet_Ship_Management_Co_Type__c</picklist>
+            <values>
+                <fullName>Group Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Registered Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ship Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technical Manager</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Industry</picklist>
             <values>
                 <fullName>Agriculture</fullName>
@@ -5274,6 +5538,25 @@ business/products</description>
             </values>
             <values>
                 <fullName>Leisure</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Owner_Operator_Role__c</picklist>
+            <values>
+                <fullName>Brokerage %26 Charter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Registered Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yacht Management</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -6348,6 +6631,25 @@ business/products</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Fleet_Ship_Management_Co_Type__c</picklist>
+            <values>
+                <fullName>Group Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Registered Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ship Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technical Manager</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Industry</picklist>
             <values>
                 <fullName>Agriculture</fullName>
@@ -6775,6 +7077,25 @@ business/products</description>
             </values>
             <values>
                 <fullName>Leisure</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Owner_Operator_Role__c</picklist>
+            <values>
+                <fullName>Brokerage %26 Charter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Registered Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yacht Management</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -7837,6 +8158,25 @@ business/products</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Fleet_Ship_Management_Co_Type__c</picklist>
+            <values>
+                <fullName>Group Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Registered Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ship Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technical Manager</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Industry</picklist>
             <values>
                 <fullName>Agriculture</fullName>
@@ -8268,6 +8608,25 @@ business/products</description>
             </values>
             <values>
                 <fullName>Leisure</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Owner_Operator_Role__c</picklist>
+            <values>
+                <fullName>Brokerage %26 Charter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Registered Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yacht Management</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -9337,6 +9696,25 @@ business/products</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Fleet_Ship_Management_Co_Type__c</picklist>
+            <values>
+                <fullName>Group Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Registered Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ship Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technical Manager</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Industry</picklist>
             <values>
                 <fullName>Agriculture</fullName>
@@ -9772,1439 +10150,21 @@ business/products</description>
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Ownership</picklist>
+            <picklist>Owner_Operator_Role__c</picklist>
             <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Private</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Public</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Subsidiary</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Partner_Detail__c</picklist>
-            <values>
-                <fullName>-----------------------------------</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Beneficial Organization</fullName>
+                <fullName>Brokerage %26 Charter</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Other</fullName>
                 <default>false</default>
             </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Payment_Terms__c</picklist>
             <values>
-                <fullName>Due On Receipt</fullName>
+                <fullName>Registered Owner</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Net 30</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Net 45</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Net 60</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Platform_Detail__c</picklist>
-            <values>
-                <fullName>Accommodation Ship</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Air</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Alcohol Tanker</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Anchor Handling Tug Supply</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Anchor Handling Vessel</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Asphalt%2FBitumen Tanker</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Beer Tanker</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Bitumen Tanker</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Bulk Cement Carrier</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Bulk Cement Storage Ship</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Bulk Dry Storage Ship</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Bunkering Tanker</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Buoy %26 Lighthouse Tender</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Buoy%2FLighthouse Vessel</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>CO2 Tanker</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Cable Layer</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Caprolactam Tanker</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Chemical Tanker</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Chemical%2FOil Products Tanker</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Chemical%2FProducts Tanker</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Coal%2FOil Mixture Tanker</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Container Ship %28Fully Cellular%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Crane Ship</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Crew Boat</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Crew%2FSupply Vessel</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Crude Oil Tanker</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Crude%2FOil Products Tanker</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Cruise Ship%2FOcean Liner</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Cruiser</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Diplomatic Services</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Diving Support Vessel</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dredger</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dredging</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Drilling Ship</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dry Storage</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Edible Oil Tanker</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Effluent carrier</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Emergency Management</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Emergency Services</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Exhibition Vessel</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>FPSO %28Floating%2C Production%2C Storage%2C Offloading%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>FPSO%2C Oil</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>FSO %28Floating%2C Storage%2C Offloading%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>FSO%2C Oil</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Factory Stern Trawler</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Fire Fighting Vessel</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Fish Carrier</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Fish Factory Ship</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Fish Farm Support Vessel</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Fishery Patrol Vessel</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Fishery Research Vessel</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Fishery Support Vessel</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Fishing</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Fishing Support Vessel</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Fruit Juice Tanker</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Gas Processing Vessel</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>General Cargo</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>General Cargo%2FPassenger Ship</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Glue Tanker</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Ground</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Homeland Security</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Hospital Vessel</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Houseboat</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Icebreaker</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Icebreaker%2FResearch</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Incinerator</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Kelp Dredger</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>LNG Tanker</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>LPG Tanker</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>LPG%2FChemical Tanker</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Latex Tanker</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lift Boat</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lighthouse Tender</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Liquefied Gas</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Live Fish Carrier</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Live Fish Carrier %28Well Boat%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Livestock Carrier</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Log Tipping Ship</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Mining Vessel</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Mission Ship</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Molasses Tanker</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Molten Sulphur Tanker</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Mooring Vessel</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Motor Hopper</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Not Specified</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Offshore Support Vessel</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Offshore Tug%2FSupply Ship</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Oil Products Tanker</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Oil Tanker</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Passenger Ship</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Passenger%2FContainer Ship</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Passenger%2FGeneral Cargo</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Passenger%2FLanding Craft</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Passenger%2FRo-Ro Cargo</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Passenger%2FRo-Ro Cargo Ship</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Passenger%2FRo-Ro Ship %28Vehicles%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Passenger%2FRo-Ro Ship %28Vehicles%2FTrain%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Patrol Vessel</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pearl Shells Carrier</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pile Driving Vessel</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pilot Vessel</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pipe Burying Vessel</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pipe Carrier</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pipe Layer</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pipe Layer Crane Vessel</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Platform Supply Ship</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pollution Control Vessel</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Power Station Vessel</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Production Testing Vessel</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Products Tanker</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pusher Tug</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Research</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Research Survey Vessel</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Research Vessel</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Ro-Ro Cargo Ship</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Salvage Ship</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Scientific Research</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Seal Catcher</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Search %26 Rescue Vessel</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Shuttle Tanker</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Sportfishing</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Standby Safety Vessel</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Stern Trawler</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Stone Carrier</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Sub-surface</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Supply Tender</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Surface</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Tank Cleaning Vessel</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Tanker</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Theatre Vessel</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Towing%2FPushing</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Training Ship</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Trans Shipment Vessel</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Trawler</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Trenching Support Vessel</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Tug</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Utility Vessel</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Vegetable Oil Tanker</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Waste Disposal Vessel</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Water Tanker</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Well Stimulation Vessel</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Whale Catcher</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Wind Turbine Installation Vessel</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Wind Turbine Vessel</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Wine Tanker</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Work%2FRepair Vessel</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Preferred_Billing_Day__c</picklist>
-            <values>
-                <fullName>1</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>10</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>11</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>12</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>13</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>14</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>15</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>16</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>17</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>18</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>19</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>2</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>20</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>21</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>22</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>23</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>24</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>25</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>26</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>27</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>28</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>29</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>3</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>30</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>31</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>4</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>5</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>6</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>7</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>8</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>9</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Product_Interest__c</picklist>
-            <values>
-                <fullName>NVOD</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Rental Library</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Training Titles</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>TrainingLink_Walport</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>VOA %28Videotel OnLine Assessment%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>VOD</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>VOD Additonal Titles</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>VOD Online</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>webFSA</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>webFTA</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Rating</picklist>
-            <values>
-                <fullName>Cold</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Hot</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Warm</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Sales_Agent_Partner__c</picklist>
-            <values>
-                <fullName>Winwell</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Sales_Office__c</picklist>
-            <values>
-                <fullName>KV ASIA</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>KV UK</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Type</picklist>
-            <values>
-                <fullName>Analyst</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Competitor</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Customer</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Integrator</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Investor</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Partner</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Press</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Prospect</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Reseller</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Vessel_Length_ft_m__c</picklist>
-            <values>
-                <fullName>%3E 80 ft %2824m%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>%E2%89%A4 20 ft %286m%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>20-30 ft %286-9 m%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>30-40 ft %289-12 m%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>40-60 ft %2812-18 m%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>60-80 ft %2818-24 m%29</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Videotel_Legal_Entity__c</picklist>
-            <values>
-                <fullName>VMA</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>VMI</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>VOA</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-    </recordTypes>
-    <recordTypes>
-        <fullName>Prospect</fullName>
-        <active>true</active>
-        <description>A qualified company or individual that is not yet purchasing directly from either KVH or a partner</description>
-        <label>Prospect</label>
-        <picklistValues>
-            <picklist>AccountSource</picklist>
-            <values>
-                <fullName>Customer Referral</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Digital Marketing</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Info Request</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>List Append</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Support Departments</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Account_Status__c</picklist>
-            <values>
-                <fullName>Active</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>In Review</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Inactive</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Cash_Allocation_Rule__c</picklist>
-            <values>
-                <fullName>Match Invoice Amount</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>No Allocation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Oldest Invoice First</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Customer_Class__c</picklist>
-            <values>
-                <fullName>*</fullName>
-                <default>true</default>
-            </values>
-            <values>
-                <fullName>Default</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Industry</picklist>
-            <values>
-                <fullName>Agriculture</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Apparel</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Banking</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Biotechnology</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Chemicals</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Communications</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Construction</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Consulting</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Education</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Electronics</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Energy</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Engineering</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Entertainment</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Environmental</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Finance</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Food %26 Beverage</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Government</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Healthcare</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Hospitality</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Insurance</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Machinery</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Manufacturing</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Media</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Not For Profit</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Recreation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Retail</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Shipping</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Technology</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Telecommunications</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Transportation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Utilities</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Industry_Designation__c</picklist>
-            <values>
-                <fullName>5th wheel</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Antenna Stabilization %26 Pointing</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Automobiles</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Autonomous Vehicles</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Bulk Carriers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Charter Coach</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Civilian Government</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Class A Coach</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Class B Vehicle</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Class C</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>College%2FSchool Bus</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Commercial %28for hire%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Container Ship</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Conversion Van</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Custom Conversion Vehicle</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dry Cargo</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Education</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Entertainer Coach</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Fishing</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>GPS-denied Navigation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Gimbals</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Gov%27t</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Governm%27t</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Government</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Inland Waterways</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Law Enforcement</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Limousine%2FTransport Vehicle</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Long-haul Truck</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Marketing Vehicle</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Merchant</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Military</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Mining</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Miscellaneous</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Missiles %26 Interceptors</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Mobile ATMs%2FBank</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>NGO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Non-propelled</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Non-ship Structures</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Not Specified</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Offshore</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Offshore Oil %26 Gas</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Offshore Tugs %26 Tows</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Oil %26 Gas</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Optical Stabilization %26 Pointing</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Paramilitary</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Passenger</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Passenger Car</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Platform Stabilization %26 Pointing</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Power Boat%2FYacht 40-80 ft %2812-24m%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Power Megayacht %3E80 ft %2824m%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Private</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Recreation Vehicles</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Remote Weapon Stations</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SUV%2Fcrossover</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Sail Boat%2FYacht 40-80 ft %2812-24m%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Sail Superyacht %3E80 ft %2824m%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Satellite News Gathering</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Scientific</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Survey %26 Mapping</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Tankers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Towed Trailer%2FToy Hauler</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Transit Bus</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Van%2FMiniVan</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Invoice_Delivery_Type__c</picklist>
-            <values>
-                <fullName>Email</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Email %26 Print</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Print</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Print %26 Stamp</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Web Upload</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Market_Sector__c</picklist>
-            <values>
-                <fullName>Marine</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Maritime</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Market__c</picklist>
-            <values>
-                <fullName>Commercial%2FSATCOM%2C TV %26 Network Mgmt</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Leisure</fullName>
+                <fullName>Yacht Management</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -12194,6 +11154,25 @@ business/products</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Fleet_Ship_Management_Co_Type__c</picklist>
+            <values>
+                <fullName>Group Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Registered Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ship Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technical Manager</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Industry</picklist>
             <values>
                 <fullName>Agriculture</fullName>
@@ -12605,6 +11584,25 @@ business/products</description>
             <picklist>Market__c</picklist>
             <values>
                 <fullName>Not Applicable</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Owner_Operator_Role__c</picklist>
+            <values>
+                <fullName>Brokerage %26 Charter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Registered Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yacht Management</fullName>
                 <default>false</default>
             </values>
         </picklistValues>

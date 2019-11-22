@@ -331,9 +331,9 @@
         <type>TextArea</type>
     </fields>
     <fields>
-        <fullName>Main_competitor__c</fullName>
+        <fullName>Main_Competitor__c</fullName>
         <externalId>false</externalId>
-        <label>Main competitor</label>
+        <label>Main Competitor</label>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
@@ -341,204 +341,14 @@
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
-                    <fullName>Analog Devices</fullName>
-                    <default>false</default>
-                    <label>Analog Devices</label>
-                </value>
-                <value>
-                    <fullName>C2Sat</fullName>
-                    <default>false</default>
-                    <label>C2Sat</label>
-                </value>
-                <value>
-                    <fullName>Condor International</fullName>
-                    <default>false</default>
-                    <label>Condor International</label>
-                </value>
-                <value>
-                    <fullName>Electro-Mechanical Gyro</fullName>
-                    <default>false</default>
-                    <label>Electro-Mechanical Gyro</label>
-                </value>
-                <value>
-                    <fullName>Emcore</fullName>
-                    <default>false</default>
-                    <label>Emcore</label>
-                </value>
-                <value>
-                    <fullName>Epak</fullName>
-                    <default>false</default>
-                    <label>Epak</label>
-                </value>
-                <value>
-                    <fullName>Fizoptica</fullName>
-                    <default>false</default>
-                    <label>Fizoptica</label>
-                </value>
-                <value>
-                    <fullName>Furuno</fullName>
-                    <default>false</default>
-                    <label>Furuno</label>
-                </value>
-                <value>
-                    <fullName>Goodrich (Atlantic Inertial)</fullName>
-                    <default>false</default>
-                    <label>Goodrich (Atlantic Inertial)</label>
-                </value>
-                <value>
-                    <fullName>Honeywell</fullName>
-                    <default>false</default>
-                    <label>Honeywell</label>
-                </value>
-                <value>
-                    <fullName>IAI Tamam</fullName>
-                    <default>false</default>
-                    <label>IAI Tamam</label>
-                </value>
-                <value>
-                    <fullName>IDESS</fullName>
-                    <default>false</default>
-                    <label>IDESS</label>
-                </value>
-                <value>
-                    <fullName>iMar</fullName>
-                    <default>false</default>
-                    <label>iMar</label>
-                </value>
-                <value>
                     <fullName>Inmarsat</fullName>
                     <default>false</default>
                     <label>Inmarsat</label>
                 </value>
                 <value>
-                    <fullName>Intellian</fullName>
+                    <fullName>Marine Learning Systems (MLS)</fullName>
                     <default>false</default>
-                    <label>Intellian</label>
-                </value>
-                <value>
-                    <fullName>Ixsea</fullName>
-                    <default>false</default>
-                    <label>Ixsea</label>
-                </value>
-                <value>
-                    <fullName>John Sabella</fullName>
-                    <default>false</default>
-                    <label>John Sabella</label>
-                </value>
-                <value>
-                    <fullName>Jotron</fullName>
-                    <default>false</default>
-                    <label>Jotron</label>
-                </value>
-                <value>
-                    <fullName>JRC</fullName>
-                    <default>false</default>
-                    <label>JRC</label>
-                </value>
-                <value>
-                    <fullName>Kearfott</fullName>
-                    <default>false</default>
-                    <label>Kearfott</label>
-                </value>
-                <value>
-                    <fullName>KNS</fullName>
-                    <default>false</default>
-                    <label>KNS</label>
-                </value>
-                <value>
-                    <fullName>l Cielo</fullName>
-                    <default>false</default>
-                    <label>l Cielo</label>
-                </value>
-                <value>
-                    <fullName>Litef</fullName>
-                    <default>false</default>
-                    <label>Litef</label>
-                </value>
-                <value>
-                    <fullName>Loyds Maritime Academy</fullName>
-                    <default>false</default>
-                    <label>Loyds Maritime Academy</label>
-                </value>
-                <value>
-                    <fullName>Marine Learning Systems</fullName>
-                    <default>false</default>
-                    <label>Marine Learning Systems</label>
-                </value>
-                <value>
-                    <fullName>Marlinx</fullName>
-                    <default>false</default>
-                    <label>Marlinx</label>
-                </value>
-                <value>
-                    <fullName>MEMS Gyro</fullName>
-                    <default>false</default>
-                    <label>MEMS Gyro</label>
-                </value>
-                <value>
-                    <fullName>MEMS IMU</fullName>
-                    <default>false</default>
-                    <label>MEMS IMU</label>
-                </value>
-                <value>
-                    <fullName>MicroStrain</fullName>
-                    <default>false</default>
-                    <label>MicroStrain</label>
-                </value>
-                <value>
-                    <fullName>Moog (Crossbow)</fullName>
-                    <default>false</default>
-                    <label>Moog (Crossbow)</label>
-                </value>
-                <value>
-                    <fullName>Moxi-Media</fullName>
-                    <default>false</default>
-                    <label>Moxi-Media</label>
-                </value>
-                <value>
-                    <fullName>MTS</fullName>
-                    <default>false</default>
-                    <label>MTS</label>
-                </value>
-                <value>
-                    <fullName>No Competitors</fullName>
-                    <default>false</default>
-                    <label>No Competitors</label>
-                </value>
-                <value>
-                    <fullName>Northrop Grumman</fullName>
-                    <default>false</default>
-                    <label>Northrop Grumman</label>
-                </value>
-                <value>
-                    <fullName>Orbit</fullName>
-                    <default>false</default>
-                    <label>Orbit</label>
-                </value>
-                <value>
-                    <fullName>Other</fullName>
-                    <default>false</default>
-                    <label>Other</label>
-                </value>
-                <value>
-                    <fullName>PNI</fullName>
-                    <default>false</default>
-                    <label>PNI</label>
-                </value>
-                <value>
-                    <fullName>Red Ensign, Ltd</fullName>
-                    <default>false</default>
-                    <label>Red Ensign, Ltd</label>
-                </value>
-                <value>
-                    <fullName>Saab Bofors</fullName>
-                    <default>false</default>
-                    <label>Saab Bofors</label>
-                </value>
-                <value>
-                    <fullName>Sagem</fullName>
-                    <default>false</default>
-                    <label>Sagem</label>
+                    <label>Marine Learning Systems (MLS)</label>
                 </value>
                 <value>
                     <fullName>Seagull</fullName>
@@ -546,44 +356,9 @@
                     <label>Seagull</label>
                 </value>
                 <value>
-                    <fullName>SeaTel</fullName>
+                    <fullName>Other</fullName>
                     <default>false</default>
-                    <label>SeaTel</label>
-                </value>
-                <value>
-                    <fullName>Sensonor</fullName>
-                    <default>false</default>
-                    <label>Sensonor</label>
-                </value>
-                <value>
-                    <fullName>Silicon Sensing</fullName>
-                    <default>false</default>
-                    <label>Silicon Sensing</label>
-                </value>
-                <value>
-                    <fullName>Sque Marine</fullName>
-                    <default>false</default>
-                    <label>Sque Marine</label>
-                </value>
-                <value>
-                    <fullName>Systron Donner</fullName>
-                    <default>false</default>
-                    <label>Systron Donner</label>
-                </value>
-                <value>
-                    <fullName>T&amp;T</fullName>
-                    <default>false</default>
-                    <label>T&amp;T</label>
-                </value>
-                <value>
-                    <fullName>Vectronix</fullName>
-                    <default>false</default>
-                    <label>Vectronix</label>
-                </value>
-                <value>
-                    <fullName>Watson Industries</fullName>
-                    <default>false</default>
-                    <label>Watson Industries</label>
+                    <label>Other</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -763,9 +538,21 @@
         <active>true</active>
         <label>KV Trip Report</label>
         <picklistValues>
-            <picklist>Main_competitor__c</picklist>
+            <picklist>Main_Competitor__c</picklist>
             <values>
-                <fullName>Marine Learning Systems</fullName>
+                <fullName>Inmarsat</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marine Learning Systems %28MLS%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seagull</fullName>
                 <default>false</default>
             </values>
         </picklistValues>

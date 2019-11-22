@@ -40,6 +40,10 @@
                 <behavior>Edit</behavior>
                 <field>Summary_and_Action__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Main_Competitor__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -86,12 +90,7 @@
         <detailHeading>true</detailHeading>
         <editHeading>true</editHeading>
         <label>Competition</label>
-        <layoutColumns>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Main_competitor__c</field>
-            </layoutItems>
-        </layoutColumns>
+        <layoutColumns/>
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>

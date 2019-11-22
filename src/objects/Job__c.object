@@ -174,7 +174,7 @@
         <relationshipLabel>Orders (Account)</relationshipLabel>
         <relationshipName>Job</relationshipName>
         <required>false</required>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
@@ -551,7 +551,7 @@
         <relationshipLabel>Orders (Billing Contact)</relationshipLabel>
         <relationshipName>Job2</relationshipName>
         <required>false</required>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
@@ -764,6 +764,31 @@
         </valueSet>
     </fields>
     <fields>
+        <fullName>CurrencyL__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Currency</label>
+        <referenceTo>Currency__c</referenceTo>
+        <relationshipLabel>Orders</relationshipLabel>
+        <relationshipName>Orders</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Currency_Symbol__c</fullName>
+        <externalId>false</externalId>
+        <formula>CurrencyL__r.Currency_Symbol__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Currency Symbol</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Current_Agreement_Date_BMS__c</fullName>
         <externalId>false</externalId>
         <label>Current Agreement Date (BMS)</label>
@@ -789,7 +814,7 @@
         <label>Customer Purchase Order Number</label>
         <length>50</length>
         <required>false</required>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -851,7 +876,7 @@
         <externalId>false</externalId>
         <label>Despatch Date</label>
         <required>false</required>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
     </fields>
@@ -885,7 +910,7 @@
         <precision>12</precision>
         <required>false</required>
         <scale>2</scale>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
@@ -948,7 +973,7 @@
         <externalId>false</externalId>
         <label>Intended Use</label>
         <required>false</required>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -1057,7 +1082,7 @@
         <externalId>false</externalId>
         <label>Legal Entity</label>
         <required>false</required>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -1116,9 +1141,10 @@
         <externalId>false</externalId>
         <label>Master Order</label>
         <referenceTo>Job__c</referenceTo>
+        <relationshipLabel>Child Orders</relationshipLabel>
         <relationshipName>ChildOrders</relationshipName>
         <required>false</required>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
@@ -1190,7 +1216,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
     </fields>
@@ -1268,7 +1294,7 @@
         <label>Order Number</label>
         <length>25</length>
         <required>false</required>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -1278,7 +1304,7 @@
         <externalId>false</externalId>
         <label>Order Type (VT)</label>
         <required>false</required>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -1362,7 +1388,7 @@
         <referenceTo>Account</referenceTo>
         <relationshipName>Orders2</relationshipName>
         <required>false</required>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
@@ -1625,7 +1651,7 @@
         <externalId>false</externalId>
         <label>Product Type</label>
         <required>false</required>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -1813,7 +1839,7 @@
         <externalId>false</externalId>
         <label>Service Start Date / Delivery Date</label>
         <required>false</required>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
     </fields>
@@ -2032,7 +2058,7 @@
         <externalId>false</externalId>
         <label>Order Date</label>
         <required>false</required>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
     </fields>
@@ -2617,13 +2643,909 @@
     </fields>
     <label>Order</label>
     <listViews>
-        <fullName>All</fullName>
+        <fullName>ChildOrders_Administration_in_Progress</fullName>
+        <columns>Legal_Entity__c</columns>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Shipping_Account__c</columns>
+        <columns>Shipping_Account_Email__c</columns>
+        <columns>Billing_Contact_Email__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <columns>Partner__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Administration in Progress</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Job__c.Child_Order</value>
+        </filters>
+        <label>Child Order Administration in Progress</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Child_Order_In_Fulfillment</fullName>
         <columns>NAME</columns>
         <columns>Account__c</columns>
         <columns>RECORDTYPE</columns>
+        <columns>Order_Type_VT__c</columns>
+        <columns>Status__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>Service_Activation_Date__c</columns>
         <columns>Shipping_Account__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
         <filterScope>Everything</filterScope>
-        <label>All</label>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>In Fulfillment</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Job__c.Child_Order</value>
+        </filters>
+        <label>Child Order In Fulfillment</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Child_Order_Ready_for_Fulfillment</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>Order_Type_VT__c</columns>
+        <columns>Status__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>Service_Activation_Date__c</columns>
+        <columns>Shipping_Account__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Ready for Fulfillment</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Job__c.Child_Order</value>
+        </filters>
+        <label>Child Order Ready for Fulfillment</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Child_Order_Ready_for_Fulfilment</fullName>
+        <columns>Legal_Entity__c</columns>
+        <columns>Sales_Office__c</columns>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Shipping_Account__c</columns>
+        <columns>Shipping_Account_Email__c</columns>
+        <columns>Despatch_Date__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <columns>Partner__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Job__c.Child_Order</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Ready for Dispatch</value>
+        </filters>
+        <label>Child Order Ready for Dispatch</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Child_Orders</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Shipping_Account__c</columns>
+        <columns>Master_Order__c</columns>
+        <columns>Service_Activation_Date__c</columns>
+        <columns>Service_End_Date__c</columns>
+        <columns>Billing_Contact__c</columns>
+        <columns>Status__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <columns>Total__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Job__c.Child_Order</value>
+        </filters>
+        <label>Child Order</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Consolidated_Invoicing_Orders</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>CustAcctNo_BMS__c</columns>
+        <columns>Company_Cod_from_BMS__c</columns>
+        <columns>BMS_ScheduleNo__c</columns>
+        <columns>Initial_Agreement_Date_BMS__c</columns>
+        <columns>Legal_Entity__c</columns>
+        <columns>Order_Type_VT__c</columns>
+        <columns>Ship_Count_BMS__c</columns>
+        <columns>Invoice_Details__c</columns>
+        <columns>Preferred_Billing_Day__c</columns>
+        <columns>Billing_Contact__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Invoice_Details__c</field>
+            <operation>equals</operation>
+            <value>Consolidated</value>
+        </filters>
+        <filters>
+            <field>Legal_Entity__c</field>
+            <operation>equals</operation>
+            <value>VMA</value>
+        </filters>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>greaterThan</operation>
+            <value>1/14/2015 12:00 AM</value>
+        </filters>
+        <label>VMA Consolidated Invoicing Orders</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>D4_Dynamics_Child_Orders</fullName>
+        <columns>NAME</columns>
+        <columns>Master_Order__c</columns>
+        <columns>Account__c</columns>
+        <columns>Shipping_Account__c</columns>
+        <columns>Service_Activation_Date__c</columns>
+        <columns>Service_End_Date__c</columns>
+        <columns>Despatch_Date__c</columns>
+        <columns>Status__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Job__c.Child_Order</value>
+        </filters>
+        <filters>
+            <field>Partner__c</field>
+            <operation>startsWith</operation>
+            <value>D4 Dynamics</value>
+        </filters>
+        <label>D4 Dynamics Child Orders</label>
+        <sharedTo>
+            <group>KV_Finance</group>
+            <group>KV_Sales</group>
+            <group>KV_Support</group>
+            <group>Salesforce_Admins</group>
+            <portalRole>D4DynamicsGmbHPartnerUser</portalRole>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>D4_Dynamics_Master_Orders</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Status__c</columns>
+        <columns>VOD_Order__c</columns>
+        <columns>Scheduled_Date__c</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Partner__c</field>
+            <operation>startsWith</operation>
+            <value>D4 Dynamics</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Job__c.Master_Order</value>
+        </filters>
+        <label>D4 Dynamics Master Orders</label>
+        <sharedTo>
+            <group>KV_Finance</group>
+            <group>KV_Sales</group>
+            <group>Salesforce_Admins</group>
+            <portalRole>D4DynamicsGmbHPartnerUser</portalRole>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>KV_Agent_Beijing_Shipping_Orders</fullName>
+        <columns>NAME</columns>
+        <columns>Master_Order__c</columns>
+        <columns>Account__c</columns>
+        <columns>Shipping_Account__c</columns>
+        <columns>Service_Activation_Date__c</columns>
+        <columns>Service_End_Date__c</columns>
+        <columns>Despatch_Date__c</columns>
+        <columns>Status__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Partner__c</field>
+            <operation>startsWith</operation>
+            <value>Beijing Shipping Business</value>
+        </filters>
+        <label>KV Agent - Beijing Shipping Orders</label>
+        <sharedTo>
+            <group>KV_Finance</group>
+            <group>KV_Sales</group>
+            <group>KV_Support</group>
+            <group>Salesforce_Admins</group>
+            <portalRoleAndSubordinates>BeijingShippingBusinessTechnologyDevelopmentCompanyLtdPartnerUser</portalRoleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>KV_Agent_D4_Dynamics_Orders</fullName>
+        <columns>NAME</columns>
+        <columns>Master_Order__c</columns>
+        <columns>Account__c</columns>
+        <columns>Shipping_Account__c</columns>
+        <columns>Service_Activation_Date__c</columns>
+        <columns>Service_End_Date__c</columns>
+        <columns>Despatch_Date__c</columns>
+        <columns>Status__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Partner__c</field>
+            <operation>startsWith</operation>
+            <value>D4 Dynamics</value>
+        </filters>
+        <label>KV Agent - D4 Dynamics Orders</label>
+        <sharedTo>
+            <group>KV_Finance</group>
+            <group>KV_Sales</group>
+            <group>KV_Support</group>
+            <group>Salesforce_Admins</group>
+            <portalRole>D4DynamicsGmbHPartnerUser</portalRole>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>KV_Agent_Egyptian_Maritime_Accounts</fullName>
+        <columns>NAME</columns>
+        <columns>Master_Order__c</columns>
+        <columns>Account__c</columns>
+        <columns>Shipping_Account__c</columns>
+        <columns>Service_Activation_Date__c</columns>
+        <columns>Service_End_Date__c</columns>
+        <columns>Despatch_Date__c</columns>
+        <columns>Status__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Partner__c</field>
+            <operation>startsWith</operation>
+            <value>Egyptian Maritime Bureau,IMC</value>
+        </filters>
+        <label>KV Agent - Egyptian Maritime Accounts</label>
+        <sharedTo>
+            <group>KV_Finance</group>
+            <group>KV_Sales</group>
+            <group>KV_Support</group>
+            <group>Salesforce_Admins</group>
+            <portalRoleAndSubordinates>EgyptianMaritimeBureauPartnerUser</portalRoleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>KV_Agent_IMC_Group_P_C_Orders</fullName>
+        <columns>NAME</columns>
+        <columns>Master_Order__c</columns>
+        <columns>Account__c</columns>
+        <columns>Shipping_Account__c</columns>
+        <columns>Service_Activation_Date__c</columns>
+        <columns>Service_End_Date__c</columns>
+        <columns>Despatch_Date__c</columns>
+        <columns>Status__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Partner__c</field>
+            <operation>startsWith</operation>
+            <value>IMC Group P.C.</value>
+        </filters>
+        <label>KV Agent - IMC Group P.C. Orders</label>
+        <sharedTo>
+            <group>KV_Finance</group>
+            <group>KV_Sales</group>
+            <group>KV_Support</group>
+            <group>Salesforce_Admins</group>
+            <portalRoleAndSubordinates>IMCGroupPCPartnerUser</portalRoleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>KV_Agent_ISM_Solutions_Inc_Accounts</fullName>
+        <columns>NAME</columns>
+        <columns>Master_Order__c</columns>
+        <columns>Account__c</columns>
+        <columns>Shipping_Account__c</columns>
+        <columns>Service_Activation_Date__c</columns>
+        <columns>Service_End_Date__c</columns>
+        <columns>Despatch_Date__c</columns>
+        <columns>Status__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Partner_Agent__c</field>
+            <operation>startsWith</operation>
+            <value>ISM Solutions Inc</value>
+        </filters>
+        <label>KV Agent - ISM Solutions Inc Accounts</label>
+        <sharedTo>
+            <group>KV_Finance</group>
+            <group>KV_Sales</group>
+            <group>KV_Support</group>
+            <group>Salesforce_Admins</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>KV_Agent_MCTC_Marine_Ltd_Orders</fullName>
+        <columns>NAME</columns>
+        <columns>Master_Order__c</columns>
+        <columns>Account__c</columns>
+        <columns>Shipping_Account__c</columns>
+        <columns>Service_Activation_Date__c</columns>
+        <columns>Service_End_Date__c</columns>
+        <columns>Despatch_Date__c</columns>
+        <columns>Status__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Partner__c</field>
+            <operation>startsWith</operation>
+            <value>MCTC Marine Ltd</value>
+        </filters>
+        <label>KV Agent - MCTC Marine Ltd Orders</label>
+        <sharedTo>
+            <group>KV_Finance</group>
+            <group>KV_Sales</group>
+            <group>KV_Support</group>
+            <group>Salesforce_Admins</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>KV_Agent_Marcas_Limited_Orders</fullName>
+        <columns>NAME</columns>
+        <columns>Master_Order__c</columns>
+        <columns>Account__c</columns>
+        <columns>Shipping_Account__c</columns>
+        <columns>Service_Activation_Date__c</columns>
+        <columns>Service_End_Date__c</columns>
+        <columns>Despatch_Date__c</columns>
+        <columns>Status__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Partner__c</field>
+            <operation>startsWith</operation>
+            <value>Marcas Limited</value>
+        </filters>
+        <label>KV Agent - Marcas Limited Orders</label>
+        <sharedTo>
+            <group>KV_Finance</group>
+            <group>KV_Sales</group>
+            <group>KV_Support</group>
+            <group>Salesforce_Admins</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>KV_Agent_Multimedia_HRD_Pvt_Orders</fullName>
+        <columns>NAME</columns>
+        <columns>Master_Order__c</columns>
+        <columns>Account__c</columns>
+        <columns>Shipping_Account__c</columns>
+        <columns>Service_Activation_Date__c</columns>
+        <columns>Service_End_Date__c</columns>
+        <columns>Despatch_Date__c</columns>
+        <columns>Status__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Partner__c</field>
+            <operation>startsWith</operation>
+            <value>Multimedia HRD Pvt. Ltd.</value>
+        </filters>
+        <label>KV Agent - Multimedia HRD Pvt. Orders</label>
+        <sharedTo>
+            <group>KV_Finance</group>
+            <group>KV_Sales</group>
+            <group>KV_Support</group>
+            <group>Salesforce_Admins</group>
+            <portalRoleAndSubordinates>MultimediaHRDPvtLtdPartnerUser</portalRoleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>KV_Agent_Nautibond_C_A_Orders</fullName>
+        <columns>NAME</columns>
+        <columns>Master_Order__c</columns>
+        <columns>Account__c</columns>
+        <columns>Shipping_Account__c</columns>
+        <columns>Service_Activation_Date__c</columns>
+        <columns>Service_End_Date__c</columns>
+        <columns>Despatch_Date__c</columns>
+        <columns>Status__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Partner__c</field>
+            <operation>startsWith</operation>
+            <value>Nautibond C.A</value>
+        </filters>
+        <label>KV Agent - Nautibond C.A. Orders</label>
+        <sharedTo>
+            <group>KV_Finance</group>
+            <group>KV_Sales</group>
+            <group>KV_Support</group>
+            <group>Salesforce_Admins</group>
+            <portalRole>NautibondCAPartnerUser</portalRole>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>KV_Agent_Nautical_Training_Orders</fullName>
+        <columns>NAME</columns>
+        <columns>Master_Order__c</columns>
+        <columns>Account__c</columns>
+        <columns>Shipping_Account__c</columns>
+        <columns>Service_Activation_Date__c</columns>
+        <columns>Service_End_Date__c</columns>
+        <columns>Despatch_Date__c</columns>
+        <columns>Status__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Partner__c</field>
+            <operation>startsWith</operation>
+            <value>Nautical Training Systems Inc</value>
+        </filters>
+        <label>KV Agent - Nautical Training Orders</label>
+        <sharedTo>
+            <group>KV_Finance</group>
+            <group>KV_Sales</group>
+            <group>KV_Support</group>
+            <group>Salesforce_Admins</group>
+            <portalRole>NauticalTrainingSystemsIncPartnerUser</portalRole>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>KV_Agent_North_Coast_Maritime_Orders</fullName>
+        <columns>NAME</columns>
+        <columns>Master_Order__c</columns>
+        <columns>Account__c</columns>
+        <columns>Shipping_Account__c</columns>
+        <columns>Service_Activation_Date__c</columns>
+        <columns>Service_End_Date__c</columns>
+        <columns>Despatch_Date__c</columns>
+        <columns>Status__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Partner__c</field>
+            <operation>startsWith</operation>
+            <value>North Coast Maritime</value>
+        </filters>
+        <label>KV Agent - North Coast Maritime Orders</label>
+        <sharedTo>
+            <group>KV_Finance</group>
+            <group>KV_Sales</group>
+            <group>KV_Support</group>
+            <group>Salesforce_Admins</group>
+            <portalRole>NorthCoastMaritimeConsultingPartnerUser</portalRole>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>KV_Agent_R_R_International_Orders</fullName>
+        <columns>NAME</columns>
+        <columns>Master_Order__c</columns>
+        <columns>Account__c</columns>
+        <columns>Shipping_Account__c</columns>
+        <columns>Service_Activation_Date__c</columns>
+        <columns>Service_End_Date__c</columns>
+        <columns>Despatch_Date__c</columns>
+        <columns>Status__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Partner__c</field>
+            <operation>startsWith</operation>
+            <value>R &amp; R International</value>
+        </filters>
+        <label>KV Agent - R &amp; R International Orders</label>
+        <sharedTo>
+            <group>KV_Finance</group>
+            <group>KV_Sales</group>
+            <group>KV_Support</group>
+            <group>Salesforce_Admins</group>
+            <portalRoleAndSubordinates>RRInternationalPartnerUser</portalRoleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>KV_Agent_Scanocean_Services_Orders</fullName>
+        <columns>NAME</columns>
+        <columns>Master_Order__c</columns>
+        <columns>Account__c</columns>
+        <columns>Shipping_Account__c</columns>
+        <columns>Service_Activation_Date__c</columns>
+        <columns>Service_End_Date__c</columns>
+        <columns>Despatch_Date__c</columns>
+        <columns>Status__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <columns>Invoice_Details__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Partner__c</field>
+            <operation>startsWith</operation>
+            <value>Scanocean Services Inc.</value>
+        </filters>
+        <label>KV Agent - Scanocean Services Orders</label>
+        <sharedTo>
+            <group>KV_Finance</group>
+            <group>KV_Sales</group>
+            <group>KV_Support</group>
+            <group>Salesforce_Admins</group>
+            <portalRole>ScanoceanServicesIncPartnerUser</portalRole>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>KV_Agent_Spark_International_Orders</fullName>
+        <columns>NAME</columns>
+        <columns>Master_Order__c</columns>
+        <columns>Account__c</columns>
+        <columns>Shipping_Account__c</columns>
+        <columns>Service_Activation_Date__c</columns>
+        <columns>Service_End_Date__c</columns>
+        <columns>Despatch_Date__c</columns>
+        <columns>Status__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Partner__c</field>
+            <operation>startsWith</operation>
+            <value>Spark International Co Ltd.</value>
+        </filters>
+        <label>KV Agent - Spark International Orders</label>
+        <sharedTo>
+            <group>KV_Finance</group>
+            <group>KV_Sales</group>
+            <group>KV_Support</group>
+            <group>Salesforce_Admins</group>
+            <portalRoleAndSubordinates>SparkInternationalCoLtdPartnerUser</portalRoleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>KV_Agent_Spectral_Technologies_Orders</fullName>
+        <columns>NAME</columns>
+        <columns>Master_Order__c</columns>
+        <columns>Account__c</columns>
+        <columns>Shipping_Account__c</columns>
+        <columns>Service_Activation_Date__c</columns>
+        <columns>Service_End_Date__c</columns>
+        <columns>Despatch_Date__c</columns>
+        <columns>Status__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Partner__c</field>
+            <operation>startsWith</operation>
+            <value>Spectral Technologies Inc</value>
+        </filters>
+        <label>KV Agent - Spectral Technologies Orders</label>
+        <sharedTo>
+            <group>KV_Finance</group>
+            <group>KV_Sales</group>
+            <group>KV_Support</group>
+            <group>Salesforce_Admins</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Local_UK_EU_Waters_FOR_VAT</fullName>
+        <columns>NAME</columns>
+        <columns>Shipping_Account__c</columns>
+        <columns>Legal_Entity__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>IITIntended_Use__c</field>
+            <operation>equals</operation>
+            <value>LOCAL UK WATERS,LOCAL EU WATERS</value>
+        </filters>
+        <filters>
+            <field>Legal_Entity__c</field>
+            <operation>notEqual</operation>
+            <value>VMA</value>
+        </filters>
+        <label>Local UK or EU Waters For VAT</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Master_Order_Ready_for_Admin_Processing</fullName>
+        <columns>Status__c</columns>
+        <columns>Legal_Entity__c</columns>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Partner__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Job__c.Master_Order</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Awaiting Customer Signature,New</value>
+        </filters>
+        <label>Master Orders in Sales Work Queue</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Master_Orders</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>BMS_Initial_Invoice_Date2__c</columns>
+        <columns>BMS_ScheduleNo__c</columns>
+        <columns>Current_Agreement_Date_BMS__c</columns>
+        <columns>Initial_Agreement_Date_BMS__c</columns>
+        <columns>Service_Activation_Date__c</columns>
+        <columns>Status__c</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Job__c.Master_Order</value>
+        </filters>
+        <label>Master Orders</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Master_Orders_Ready_for_Admin_Processing</fullName>
+        <columns>Status__c</columns>
+        <columns>Legal_Entity__c</columns>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>Partner__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Job__c.Master_Order</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Ready for Admin Processing,Administration in Progress</value>
+        </filters>
+        <label>Master Orders in Admin Work Queue</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>North_Coast_Maritime_Child_Orders</fullName>
+        <columns>NAME</columns>
+        <columns>Master_Order__c</columns>
+        <columns>Account__c</columns>
+        <columns>Shipping_Account__c</columns>
+        <columns>Service_Activation_Date__c</columns>
+        <columns>Service_End_Date__c</columns>
+        <columns>Despatch_Date__c</columns>
+        <columns>Status__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Partner__c</field>
+            <operation>startsWith</operation>
+            <value>North Coast Maritime</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Job__c.Child_Order</value>
+        </filters>
+        <label>KV Agent - North Coast  Child Orders</label>
+        <sharedTo>
+            <group>KV_Finance</group>
+            <group>KV_Sales</group>
+            <group>KV_Support</group>
+            <group>Salesforce_Admins</group>
+            <portalRole>NorthCoastMaritimeConsultingPartnerUser</portalRole>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>North_Coast_Maritime_Master_Orders</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Status__c</columns>
+        <columns>VOD_Order__c</columns>
+        <columns>Scheduled_Date__c</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Partner__c</field>
+            <operation>startsWith</operation>
+            <value>North Coast Maritime</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Job__c.Master_Order</value>
+        </filters>
+        <label>North Coast Maritime Master Orders</label>
+        <sharedTo>
+            <group>KV_Finance</group>
+            <group>KV_Sales</group>
+            <group>Salesforce_Admins</group>
+            <portalRole>NorthCoastMaritimeConsultingPartnerUser</portalRole>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Sale_Orders</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>BMS_ScheduleNo__c</columns>
+        <columns>Initial_Agreement_Date_BMS__c</columns>
+        <columns>Service_Activation_Date__c</columns>
+        <columns>Status__c</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Job__c.Sale_Order</value>
+        </filters>
+        <label>Sale Orders</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Task_based_Competency</fullName>
+        <columns>NAME</columns>
+        <columns>Order_Number__c</columns>
+        <columns>Shipping_Account__c</columns>
+        <columns>Account__c</columns>
+        <columns>Partner__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Product_Type__c</field>
+            <operation>equals</operation>
+            <value>Task-based Competency</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>On boarding in progress</value>
+        </filters>
+        <label>KV Task-based Competency (Onboarding)</label>
+        <language>en_US</language>
+        <sharedTo>
+            <group>KV_Sales</group>
+            <group>KV_Support</group>
+            <group>Salesforce_Admins</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Test_Invoices_Creation</fullName>
+        <columns>NAME</columns>
+        <columns>Preferred_Billing_Day__c</columns>
+        <columns>BMS_Next_Invoice_Date__c</columns>
+        <columns>Recalculate__c</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>Invoice_Details__c</columns>
+        <columns>Status__c</columns>
+        <columns>Total__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Test_Invoice_Creation__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Test Invoices Created</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>VMI_Child_Orders</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Despatch_Date__c</columns>
+        <columns>Service_Activation_Date__c</columns>
+        <columns>Shipping_Account__c</columns>
+        <columns>Invoice_Details__c</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Job__c.Child_Order</value>
+        </filters>
+        <filters>
+            <field>Legal_Entity__c</field>
+            <operation>equals</operation>
+            <value>VMI</value>
+        </filters>
+        <label>VMI Child Orders</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
     </listViews>
     <listViews>
         <fullName>VOD_Production_Team_Job</fullName>
@@ -2634,9 +3556,30 @@
             <allInternalUsers></allInternalUsers>
         </sharedTo>
     </listViews>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Despatch_Date__c</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>Account__c</columns>
+        <columns>Billing_Contact__c</columns>
+        <columns>Service_Activation_Date__c</columns>
+        <columns>Status__c</columns>
+        <columns>Service_End_Date__c</columns>
+        <columns>Total__c</columns>
+        <columns>No_of_Products__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Orders</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
     <nameField>
         <label>Order (InvoiceIT) Name</label>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <type>Text</type>
     </nameField>
     <pluralLabel>Orders</pluralLabel>
@@ -7628,6 +8571,17 @@
         <protected>false</protected>
     </webLinks>
     <webLinks>
+        <fullName>Clone</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Clone</masterLabel>
+        <openType>sidebar</openType>
+        <page>VTMig_CloneOrder</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
         <fullName>Generate_Agreement_Queries</fullName>
         <availability>online</availability>
         <displayType>button</displayType>
@@ -7675,6 +8629,17 @@
         <showsLocation>false</showsLocation>
         <showsStatus>false</showsStatus>
         <url>https://dev-videotelmarine.cs110.force.com/partners/apex/dsfs__DocuSign_CreateEnvelope?DSEID=0&amp;SourceID={ob__c.Order_ID_18_Char__c}&amp;DSEDMAX=3</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Update_Order_Status</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Update Order Status</masterLabel>
+        <openType>sidebar</openType>
+        <page>VTMig_UpdateOrderStatus</page>
+        <protected>false</protected>
     </webLinks>
     <webLinks>
         <fullName>Upload_Esign_Agreement</fullName>

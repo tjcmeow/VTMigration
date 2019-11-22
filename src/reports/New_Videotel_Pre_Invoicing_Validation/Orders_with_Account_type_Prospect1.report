@@ -32,7 +32,7 @@
             <column>RECORDTYPE</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Account.Prospect</value>
+            <value>0120C0000006j0S</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Sales_Office__c</column>

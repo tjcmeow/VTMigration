@@ -368,6 +368,17 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Cloned_Id__c</fullName>
+        <externalId>false</externalId>
+        <label>Cloned Id</label>
+        <length>18</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Committed_Quantity__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>The quantity your customer commits to spend on a minimum.</inlineHelpText>
@@ -521,7 +532,7 @@
         <fullName>External_Id__c</fullName>
         <caseSensitive>false</caseSensitive>
         <externalId>true</externalId>
-        <label>External Id</label>
+        <label>Legacy Order Rate Plan Charge Order Id</label>
         <length>255</length>
         <required>false</required>
         <trackHistory>false</trackHistory>
@@ -1853,6 +1864,11 @@
         <unique>false</unique>
     </fields>
     <label>Order Rate Plan Charge</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
     <nameField>
         <label>Order Rate Plan Charge Name</label>
         <trackHistory>false</trackHistory>

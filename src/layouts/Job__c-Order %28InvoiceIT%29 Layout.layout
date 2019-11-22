@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customButtons>Clone</customButtons>
     <customButtons>Add_Products</customButtons>
+    <customButtons>Update_Order_Status</customButtons>
     <customButtons>Generate_Agreement_Queries</customButtons>
     <customButtons>New_Agent_Upload_and_Send_Agreement</customButtons>
     <customButtons>Upload_Esign_Agreement</customButtons>
+    <excludeButtons>ChangeOwnerOne</excludeButtons>
+    <excludeButtons>ChangeRecordType</excludeButtons>
+    <excludeButtons>Clone</excludeButtons>
+    <excludeButtons>PrintableView</excludeButtons>
+    <excludeButtons>Share</excludeButtons>
     <excludeButtons>Submit</excludeButtons>
     <layoutSections>
         <customLabel>false</customLabel>
@@ -66,6 +73,14 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>DocuSign_Status__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>CurrencyL__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Currency_Symbol__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -343,6 +358,10 @@
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
+    <relatedLists>
+        <fields>NAME</fields>
+        <relatedList>Job__c.Master_Order__c</relatedList>
+    </relatedLists>
     <relatedLists>
         <fields>TASK.SUBJECT</fields>
         <fields>TASK.WHO_NAME</fields>

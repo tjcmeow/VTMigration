@@ -121,7 +121,7 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>VTMig_CreateOrder</apexClass>
+        <apexClass>VTMig_CloneOrder</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
