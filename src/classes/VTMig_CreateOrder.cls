@@ -180,6 +180,7 @@ public with sharing class VTMig_CreateOrder {
         newOrder.Platform_or_Vessel_detail__c = opp.Platform_or_Vessel_detail__c;
         newOrder.Wet_or_Dry_Cargo__c = opp.Wet_or_Dry_Cargo__c;
         newOrder.Partner_Agent__c = opp.Partner_Agent__c;
+        newOrder.Opportunity__c = opp.Id;
         return newOrder;
     }
 

@@ -12,9 +12,9 @@ public with sharing class VTMig_OppProductsInlineController {
         newOpportunity = [SELECT Name FROM Opportunity WHERE Id =: newOpportunity.Id];
         charges = [
                 SELECT Opportunity_Rate_Plan__c, Name, Id, Row_Total__c, Tax__c, VAT__c,
-                        Net_Total__c, Discount_Value__c, Price__c, Unit_Price__c,
-                        Status__c, Price_Type__c, Quantity__c,
-                        Opportunity_Rate_Plan__r.Product_Rate_Plan__r.Product__c
+                        Net_Total__c, Discount_Value__c, Price__c, Unit_Price__c, Opportunity_Rate_Plan__r.Opportunity_Product__r.Product_Code__c,
+                        Status__c, Price_Type__c, Quantity__c, Opportunity_Rate_Plan__r.Product_Rate_Plan__r.Product__r.Name,
+                        Opportunity_Rate_Plan__r.Product_Rate_Plan__r.Product__c, Unit_Of_Measurement__c
                 FROM Opportunity_Rate_Plan_Charge__c
                 WHERE Opportunity__c = : newOpportunity.Id
         ];

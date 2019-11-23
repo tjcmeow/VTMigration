@@ -7,11 +7,17 @@
     <apex:form >
         <apex:pageBlock >
             <apex:pageBlockTable title="Products" value="{!charges}" var="charge">
-                <apex:column headerValue="Product Name" value="{!charge.Job_Rate_Plan__r.Product_Rate_Plan__r.Product__c}">
+                <apex:column headerValue="Product">
+                    <a target="_blank" href="{!'/'+charge.Job_Rate_Plan__r.Product_Rate_Plan__r.Product__c}">
+                        <apex:outputText value="{!charge.Job_Rate_Plan__r.Product_Rate_Plan__r.Product__r.Name}"/>
+                    </a>
                 </apex:column>
                 <apex:column headerValue="Quantity" value="{!charge.Quantity__c}">
                 </apex:column>
-                <apex:column headerValue="Charge Name" value="{!charge.Name}">
+                <apex:column headerValue="Charge Name">
+                    <a target="_blank" href="{!'/'+charge.Id}">
+                        <apex:outputText value="{!charge.Name}"/>
+                    </a>
                 </apex:column>
                 <apex:column value="{!charge.Price_Type__c}">
                 </apex:column>
@@ -37,7 +43,10 @@
                 </apex:column>
                 <apex:column value="{!charge.Count_Of_Titles__c}">
                 </apex:column>
-                <apex:column value="{!charge.Revenue_Recognition_Rule__c}">
+                <apex:column headerValue="Revenue Recognition Rule">
+                    <a href="{!'/'+charge.Revenue_Recognition_Rule__c}" target="_blank">
+                        <apex:outputText value="{!charge.Revenue_Recognition_Rule__r.Name}"/>
+                    </a>
                 </apex:column>
             </apex:pageBlockTable>
         </apex:pageBlock>

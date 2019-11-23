@@ -7,27 +7,29 @@
     <apex:form >
         <apex:pageBlock >
             <apex:pageBlockTable title="Products" value="{!charges}" var="charge">
-                <apex:column headerValue="Product Name" value="{!charge.Opportunity_Rate_Plan__r.Product_Rate_Plan__r.Product__c}">
+                <apex:column headerValue="Product Name">
+                    <apex:outputText value="{!charge.Opportunity_Rate_Plan__r.Product_Rate_Plan__r.Product__r.Name}"/>
+                </apex:column>
+                <apex:column value="{!charge.Opportunity_Rate_Plan__r.Opportunity_Product__r.Product_Code__c}">
                 </apex:column>
                 <apex:column headerValue="Quantity" value="{!charge.Quantity__c}">
                 </apex:column>
-                <apex:column headerValue="Charge Name" value="{!charge.Name}">
+                <apex:column headerValue="UOM" value="{!charge.Unit_Of_Measurement__c}">
+                </apex:column>
+                <apex:column headerValue="Charge Name">
+                    <a href="{!'/'+charge.Id}" target="_blank">
+                        <apex:outputText value="{!charge.Name}"/>
+                    </a>
                 </apex:column>
                 <apex:column value="{!charge.Price_Type__c}">
-                </apex:column>
-                <apex:column value="{!charge.Status__c}">
                 </apex:column>
                 <apex:column value="{!charge.Unit_Price__c}">
                 </apex:column>
                 <apex:column value="{!charge.Price__c}">
                 </apex:column>
-                <apex:column value="{!charge.Discount_Value__c}">
-                </apex:column>
                 <apex:column value="{!charge.Net_Total__c}">
                 </apex:column>
                 <apex:column value="{!charge.VAT__c}">
-                </apex:column>
-                <apex:column value="{!charge.Tax__c}">
                 </apex:column>
                 <apex:column value="{!charge.Row_Total__c}">
                 </apex:column>

@@ -1177,6 +1177,51 @@ PRINT &amp; STAMP- Customer receives the invoice in the Post (by mail), BUT the 
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
+        <fullName>KVH_Service_Office__c</fullName>
+        <description>This field described the KVH service office to which the account is associated. It provides for marketing support, and reporting to field service managers.</description>
+        <externalId>false</externalId>
+        <label>KVH Service Office</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>KU</fullName>
+                    <default>false</default>
+                    <label>KU</label>
+                </value>
+                <value>
+                    <fullName>KE</fullName>
+                    <default>false</default>
+                    <label>KE</label>
+                </value>
+                <value>
+                    <fullName>KC</fullName>
+                    <default>false</default>
+                    <label>KC</label>
+                </value>
+                <value>
+                    <fullName>KN</fullName>
+                    <default>false</default>
+                    <label>KN</label>
+                </value>
+                <value>
+                    <fullName>KS</fullName>
+                    <default>false</default>
+                    <label>KS</label>
+                </value>
+                <value>
+                    <fullName>KV</fullName>
+                    <default>false</default>
+                    <label>KV</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>KV_Account_Notes__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Misc. Acct Fields imported from BMS</inlineHelpText>
@@ -1597,6 +1642,52 @@ PRINT &amp; STAMP- Customer receives the invoice in the Post (by mail), BUT the 
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Partner_Attribute_Type__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>these attributes corresponds with what appears on the KVH website</inlineHelpText>
+        <label>Partner Attribute Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>CSN</fullName>
+                    <default>false</default>
+                    <label>CSN</label>
+                </value>
+                <value>
+                    <fullName>Sales &amp; Service</fullName>
+                    <default>false</default>
+                    <label>Sales &amp; Service</label>
+                </value>
+                <value>
+                    <fullName>Service Only</fullName>
+                    <default>false</default>
+                    <label>Service Only</label>
+                </value>
+                <value>
+                    <fullName>Sales Only</fullName>
+                    <default>false</default>
+                    <label>Sales Only</label>
+                </value>
+                <value>
+                    <fullName>Live Demo Vehicle</fullName>
+                    <default>false</default>
+                    <label>Live Demo Vehicle</label>
+                </value>
+                <value>
+                    <fullName>Unknown</fullName>
+                    <default>false</default>
+                    <label>Unknown</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>6</visibleLines>
+    </fields>
+    <fields>
         <fullName>Partner_Detail__c</fullName>
         <externalId>false</externalId>
         <label>Partner Detail</label>
@@ -1606,11 +1697,21 @@ PRINT &amp; STAMP- Customer receives the invoice in the Post (by mail), BUT the 
         <type>MultiselectPicklist</type>
         <valueSet>
             <valueSetDefinition>
-                <sorted>false</sorted>
+                <sorted>true</sorted>
                 <value>
                     <fullName>-----------------------------------</fullName>
                     <default>false</default>
                     <label>-----------------------------------</label>
+                </value>
+                <value>
+                    <fullName>Airtime Provider</fullName>
+                    <default>false</default>
+                    <label>Airtime Provider</label>
+                </value>
+                <value>
+                    <fullName>Airtime Wholesaler</fullName>
+                    <default>false</default>
+                    <label>Airtime Wholesaler</label>
                 </value>
                 <value>
                     <fullName>Beneficial Organization</fullName>
@@ -1618,13 +1719,113 @@ PRINT &amp; STAMP- Customer receives the invoice in the Post (by mail), BUT the 
                     <label>Beneficial Organization</label>
                 </value>
                 <value>
+                    <fullName>Dockwalker</fullName>
+                    <default>false</default>
+                    <label>Dockwalker</label>
+                </value>
+                <value>
+                    <fullName>Internet Merchant</fullName>
+                    <default>false</default>
+                    <label>Internet Merchant</label>
+                </value>
+                <value>
+                    <fullName>Mass Merchant/Big Box Retailer</fullName>
+                    <default>false</default>
+                    <label>Mass Merchant/Big Box Retailer</label>
+                </value>
+                <value>
+                    <fullName>Not Specified</fullName>
+                    <default>false</default>
+                    <label>Not Specified</label>
+                </value>
+                <value>
+                    <fullName>OEM</fullName>
+                    <default>false</default>
+                    <label>OEM</label>
+                </value>
+                <value>
                     <fullName>Other</fullName>
                     <default>false</default>
                     <label>Other</label>
                 </value>
+                <value>
+                    <fullName>Owner/Operator</fullName>
+                    <default>false</default>
+                    <label>Owner/Operator</label>
+                </value>
+                <value>
+                    <fullName>Prime Contractor</fullName>
+                    <default>false</default>
+                    <label>Prime Contractor</label>
+                </value>
+                <value>
+                    <fullName>Reseller/Storefront</fullName>
+                    <default>false</default>
+                    <label>Reseller/Storefront</label>
+                </value>
+                <value>
+                    <fullName>Sales/Rental</fullName>
+                    <default>false</default>
+                    <label>Sales/Rental</label>
+                </value>
+                <value>
+                    <fullName>Service Only - Commercial</fullName>
+                    <default>false</default>
+                    <label>Service Only - Commercial</label>
+                </value>
+                <value>
+                    <fullName>Service Only - Commercial &amp; Leisure</fullName>
+                    <default>false</default>
+                    <label>Service Only - Commercial &amp; Leisure</label>
+                </value>
+                <value>
+                    <fullName>Service Only - Leisure</fullName>
+                    <default>false</default>
+                    <label>Service Only - Leisure</label>
+                </value>
+                <value>
+                    <fullName>Service Only-Logistics Provider</fullName>
+                    <default>false</default>
+                    <label>Service Only-Logistics Provider</label>
+                </value>
+                <value>
+                    <fullName>Service Only-Onboard Maritime</fullName>
+                    <default>false</default>
+                    <label>Service Only-Onboard Maritime</label>
+                </value>
+                <value>
+                    <fullName>Service Only-Parts Depot</fullName>
+                    <default>false</default>
+                    <label>Service Only-Parts Depot</label>
+                </value>
+                <value>
+                    <fullName>Service Only-Repair Depot</fullName>
+                    <default>false</default>
+                    <label>Service Only-Repair Depot</label>
+                </value>
+                <value>
+                    <fullName>Ship Management/Fleet Owner</fullName>
+                    <default>false</default>
+                    <label>Ship Management/Fleet Owner</label>
+                </value>
+                <value>
+                    <fullName>Ship Yard/Boat Builder</fullName>
+                    <default>false</default>
+                    <label>Ship Yard/Boat Builder</label>
+                </value>
+                <value>
+                    <fullName>System Integrator</fullName>
+                    <default>false</default>
+                    <label>System Integrator</label>
+                </value>
+                <value>
+                    <fullName>Value Added Service Provider (VASP)</fullName>
+                    <default>false</default>
+                    <label>Value Added Service Provider (VASP)</label>
+                </value>
             </valueSetDefinition>
         </valueSet>
-        <visibleLines>3</visibleLines>
+        <visibleLines>6</visibleLines>
     </fields>
     <fields>
         <fullName>Partner_Portal_Account_Name__c</fullName>
@@ -1703,6 +1904,96 @@ PRINT &amp; STAMP- Customer receives the invoice in the Post (by mail), BUT the 
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Partner_Role__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Service Provider resells Airtime Service and Hardware</inlineHelpText>
+        <label>Partner Role</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Dealer</fullName>
+                    <default>true</default>
+                    <label>Dealer</label>
+                </value>
+                <value>
+                    <fullName>Distributor</fullName>
+                    <default>false</default>
+                    <label>Distributor</label>
+                </value>
+                <value>
+                    <fullName>Media Supplier</fullName>
+                    <default>false</default>
+                    <label>Media Supplier</label>
+                </value>
+                <value>
+                    <fullName>Rep</fullName>
+                    <default>false</default>
+                    <label>Rep</label>
+                </value>
+                <value>
+                    <fullName>Service Provider</fullName>
+                    <default>false</default>
+                    <label>Service Provider</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Sales Agent</fullName>
+                    <default>false</default>
+                    <label>Sales Agent</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Partner_Role_Display_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Partner Role Display Name</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Dealer</fullName>
+                    <default>false</default>
+                    <label>Dealer</label>
+                </value>
+                <value>
+                    <fullName>Distributor</fullName>
+                    <default>false</default>
+                    <label>Distributor</label>
+                </value>
+                <value>
+                    <fullName>Representative</fullName>
+                    <default>false</default>
+                    <label>Representative</label>
+                </value>
+                <value>
+                    <fullName>Service Provider</fullName>
+                    <default>false</default>
+                    <label>Service Provider</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Payment_Terms__c</fullName>
@@ -3544,7 +3835,72 @@ Account.Product_Interest_2__c</description>
         </valueSet>
     </fields>
     <fields>
-        <fullName>Sales_Office__c</fullName>
+        <fullName>Product_Line_Interest__c</fullName>
+        <description>The values for this Picklist and it&apos;s dependencies are provided by Marketing.
+            The values in this picklist should exactly match the values in:
+            Campaign.Product_Line_Interest__c
+            Lead.Product_Line_Interest__c
+            Account.Product_Line_Interest__c</description>
+        <externalId>false</externalId>
+        <label>Product Line Interest</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Audio Services</fullName>
+                    <default>false</default>
+                    <label>Audio Services</label>
+                </value>
+                <value>
+                    <fullName>DVD Services</fullName>
+                    <default>false</default>
+                    <label>DVD Services</label>
+                </value>
+                <value>
+                    <fullName>Network Mgmt</fullName>
+                    <default>false</default>
+                    <label>Network Mgmt</label>
+                </value>
+                <value>
+                    <fullName>News Services</fullName>
+                    <default>false</default>
+                    <label>News Services</label>
+                </value>
+                <value>
+                    <fullName>Satellite Communications</fullName>
+                    <default>false</default>
+                    <label>Satellite Communications</label>
+                </value>
+                <value>
+                    <fullName>Satellite Content Delivery - Entertainment</fullName>
+                    <default>false</default>
+                    <label>Satellite Content Delivery - Entertainment</label>
+                </value>
+                <value>
+                    <fullName>Satellite Content Delivery - Operations</fullName>
+                    <default>false</default>
+                    <label>Satellite Content Delivery - Operations</label>
+                </value>
+                <value>
+                    <fullName>Satellite TV</fullName>
+                    <default>false</default>
+                    <label>Satellite TV</label>
+                </value>
+                <value>
+                    <fullName>Training</fullName>
+                    <default>false</default>
+                    <label>Training</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>KVH_Sales_Office__c</fullName>
         <description>This field represents Sales office with which the account is associated. It provides a means for summary reporting by each particular Sales office. This Picklist should always match the corresponding Picklist in the Lead Object</description>
         <externalId>false</externalId>
         <label>Sales Office</label>
@@ -5105,87 +5461,7 @@ business/products</description>
         <picklistValues>
             <picklist>Industry</picklist>
             <values>
-                <fullName>Agriculture</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Apparel</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Banking</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Biotechnology</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Chemicals</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Communications</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Construction</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Consulting</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Education</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Electronics</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Energy</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Engineering</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Entertainment</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Environmental</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Finance</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Food %26 Beverage</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Government</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Healthcare</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Hospitality</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Insurance</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Machinery</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -5193,31 +5469,7 @@ business/products</description>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Media</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Not For Profit</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Recreation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Retail</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Shipping</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Technology</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -5226,10 +5478,6 @@ business/products</description>
             </values>
             <values>
                 <fullName>Transportation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Utilities</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -6474,18 +6722,6 @@ business/products</description>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Competitor</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Customer</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Integrator</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Investor</fullName>
                 <default>false</default>
             </values>
@@ -6494,19 +6730,7 @@ business/products</description>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Partner</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Press</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Prospect</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Reseller</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -6652,87 +6876,7 @@ business/products</description>
         <picklistValues>
             <picklist>Industry</picklist>
             <values>
-                <fullName>Agriculture</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Apparel</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Banking</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Biotechnology</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Chemicals</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Communications</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Construction</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Consulting</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Education</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Electronics</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Energy</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Engineering</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Entertainment</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Environmental</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Finance</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Food %26 Beverage</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Government</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Healthcare</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Hospitality</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Insurance</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Machinery</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -6740,31 +6884,7 @@ business/products</description>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Media</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Not For Profit</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Recreation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Retail</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Shipping</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Technology</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -6773,10 +6893,6 @@ business/products</description>
             </values>
             <values>
                 <fullName>Transportation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Utilities</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -7961,18 +8077,6 @@ business/products</description>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Competitor</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Customer</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Integrator</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Investor</fullName>
                 <default>false</default>
             </values>
@@ -7981,19 +8085,7 @@ business/products</description>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Partner</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Press</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Prospect</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Reseller</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -8064,7 +8156,7 @@ business/products</description>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Google AdWords</fullName>
+                <fullName>Google Adwords</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -8179,87 +8271,7 @@ business/products</description>
         <picklistValues>
             <picklist>Industry</picklist>
             <values>
-                <fullName>Agriculture</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Apparel</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Banking</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Biotechnology</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Chemicals</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Communications</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Construction</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Consulting</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Education</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Electronics</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Energy</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Engineering</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Entertainment</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Environmental</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Finance</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Food %26 Beverage</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Government</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Healthcare</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Hospitality</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Insurance</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Machinery</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -8267,31 +8279,7 @@ business/products</description>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Media</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Not For Profit</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Recreation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Retail</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Shipping</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Technology</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -8300,10 +8288,6 @@ business/products</description>
             </values>
             <values>
                 <fullName>Transportation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Utilities</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -9548,18 +9532,6 @@ business/products</description>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Competitor</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Customer</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Integrator</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Investor</fullName>
                 <default>false</default>
             </values>
@@ -9568,19 +9540,7 @@ business/products</description>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Partner</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Press</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Prospect</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Reseller</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -9717,87 +9677,7 @@ business/products</description>
         <picklistValues>
             <picklist>Industry</picklist>
             <values>
-                <fullName>Agriculture</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Apparel</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Banking</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Biotechnology</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Chemicals</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Communications</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Construction</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Consulting</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Education</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Electronics</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Energy</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Engineering</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Entertainment</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Environmental</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Finance</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Food %26 Beverage</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Government</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Healthcare</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Hospitality</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Insurance</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Machinery</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -9805,31 +9685,7 @@ business/products</description>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Media</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Not For Profit</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Recreation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Retail</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Shipping</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Technology</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -9838,10 +9694,6 @@ business/products</description>
             </values>
             <values>
                 <fullName>Transportation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Utilities</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -11022,18 +10874,6 @@ business/products</description>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Competitor</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Customer</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Integrator</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Investor</fullName>
                 <default>false</default>
             </values>
@@ -11042,19 +10882,7 @@ business/products</description>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Partner</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Press</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Prospect</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Reseller</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -11175,87 +11003,7 @@ business/products</description>
         <picklistValues>
             <picklist>Industry</picklist>
             <values>
-                <fullName>Agriculture</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Apparel</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Banking</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Biotechnology</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Chemicals</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Communications</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Construction</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Consulting</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Education</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Electronics</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Energy</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Engineering</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Entertainment</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Environmental</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Finance</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Food %26 Beverage</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Government</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Healthcare</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Hospitality</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Insurance</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Machinery</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -11263,31 +11011,7 @@ business/products</description>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Media</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Not For Profit</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Recreation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Retail</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Shipping</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Technology</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -11296,10 +11020,6 @@ business/products</description>
             </values>
             <values>
                 <fullName>Transportation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Utilities</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -11932,18 +11652,6 @@ business/products</description>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Competitor</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Customer</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Integrator</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Investor</fullName>
                 <default>false</default>
             </values>
@@ -11952,19 +11660,7 @@ business/products</description>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Partner</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Press</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Prospect</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Reseller</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
