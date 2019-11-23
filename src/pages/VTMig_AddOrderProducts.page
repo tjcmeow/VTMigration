@@ -75,21 +75,31 @@
                             <apex:param name="chargeId" value="{!charge.prodCharge.Id}" assignTo="{!removeChargeId}"/>
                         </apex:commandButton>
                     </apex:column>
-                    <apex:column headerValue="Product Name" value="{!charge.prodCharge.Product_Rate_Plan__r.Product__r.Name}">
+                    <apex:column headerValue="Product Name">
+                        <apex:inputField value="{!charge.prodCharge.Product_Rate_Plan__r.Product__r.Name}"/>
                     </apex:column>
-                    <apex:column headerValue="Product Code" value="{!charge.prodCharge.Product_Rate_Plan__r.Product__r.Product_Code__c}">
+                    <apex:column headerValue="Product Code">
+                        <apex:inputField value="{!charge.prodCharge.Product_Rate_Plan__r.Product__r.Product_Code__c}"/>
                     </apex:column>
-                    <apex:column headerValue="Quantity" value="{!charge.quantity}">
+                    <apex:column headerValue="Quantity">
+                        <apex:input type="number" value="{!charge.quantity}" required="true"/>
                     </apex:column>
                     <apex:column value="{!charge.prodCharge.Unit_Of_Measurement__c}">
                     </apex:column>
-                    <apex:column headerValue="Charge Name" value="{!charge.prodCharge.Name}">
+                    <apex:column headerValue="Charge Name">
+                        <a target="_blank" href="{!'/'+charge.chargeId}">
+                            <apex:outputText value="{!charge.chargeName}" rendered="{!charge.chargeId != ''}"/>
+                        </a>
                     </apex:column>
                     <apex:column value="{!charge.prodCharge.Price_Type__c}">
                     </apex:column>
                     <apex:column value="{!charge.prodCharge.Pricing_Format__c}">
                     </apex:column>
-                    <apex:column value="{!charge.prodCharge.Unit_Price__c}">
+                    <apex:column headerValue="Unit Price">
+                        <apex:inputField value="{!charge.prodCharge.Unit_Price__c}"/>
+                    </apex:column>
+                    <apex:column headerValue="Uplift">
+                        <apex:inputField value="{!charge.prodCharge.Uplift__c}"/>
                     </apex:column>
                 </apex:pageBlockTable>
             </apex:pageBlockSection>
@@ -107,7 +117,8 @@
                     </apex:column>
                     <apex:column value="{!charge.orderProduct.Product_Code__c}">
                     </apex:column>
-                    <apex:column value="{!charge.orderRatePlanCharge.Quantity__c}">
+                    <apex:column headerValue="Quantity">
+                        <apex:inputField value="{!charge.orderRatePlanCharge.Quantity__c}"/>
                     </apex:column>
                     <apex:column value="{!charge.orderRatePlanCharge.Unit_Of_Measurement__c}">
                     </apex:column>
