@@ -1,0 +1,7 @@
+An approval request with a Discount Percent of {!Opportunity.invoiceit_crmx__Discount_Percent__c}% is pending your review for Approval for Opportunity Name: {!Opportunity.Name} .
+
+Here is a Link to the Opportunity: {!Opportunity.Approval_URL__c}
+
+Thanks,
+{!Opportunity.OwnerFullName}
+{!Organization.Name}

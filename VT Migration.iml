@@ -519,6 +519,15 @@
                           <MetadataEntry>
                             <option name="name" value="Case.Support Process" />
                           </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Lead.KVH Lead Process" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Opportunity.KV Media" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Opportunity.Master" />
+                          </MetadataEntry>
                         </list>
                       </option>
                       <option name="name" value="BusinessProcess" />
@@ -1209,6 +1218,12 @@
                             <option name="name" value="Account.Invoice_Delivery_Type__c" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Account.KVH_Sales_Office__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Account.KVH_Service_Office__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Account.KV_Account_Notes__c" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -1293,6 +1308,9 @@
                             <option name="name" value="Account.Parent_Account_Text__c" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Account.Partner_Attribute_Type__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Account.Partner_Detail__c" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -1317,6 +1335,12 @@
                             <option name="name" value="Account.Partner_Portal_Secondary_Phone__c" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Account.Partner_Role_Display_Name__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Account.Partner_Role__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Account.Payment_Terms__c" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -1330,6 +1354,9 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Account.Product_Interest__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Account.Product_Line_Interest__c" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Account.Receive_Statements__c" />
@@ -1942,6 +1969,9 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Currency__c.Currency_Symbol__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Currency__c.External_Id__c" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Currency__c.Symbol__c" />
@@ -3012,6 +3042,9 @@
                             <option name="name" value="Job_Rate_Plan_Charge__c.Courier__c" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Job_Rate_Plan_Charge__c.CurrencyL__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Job_Rate_Plan_Charge__c.Deferred_Revenue_Accounting_Code__c" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -3891,10 +3924,34 @@
                             <option name="name" value="Job__c.Year_4_VAT__c" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Lead.Crew_Nationality__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Lead.Crew_per_Site__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Lead.Current_Medium_of_Training_Used__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Lead.Disqualified_Reason__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Lead.Do_you_have_training_onboard__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Lead.Email_2__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Lead.External_Id__c" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Lead.Fleet_Size__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Lead.Job_Function__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Lead.Lead_Category__c" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Lead.Lead_Role__c" />
@@ -3903,7 +3960,49 @@
                             <option name="name" value="Lead.Lead_Type__c" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Lead.Market__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Lead.Naval_Architect__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Lead.Partner_Given_This_Lead__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Lead.Related_Shipping_Company_Training_Center__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Lead.Rig__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Lead.Sales_Office__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Lead.Subscription_Value__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Lead.Vessel_Brand__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Lead.Vessel_Flag__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Lead.Vessel_Length__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Lead.Vessel_Name__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Lead.Vessel_Route__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Lead.Who_is_the_existing_Training_Provider__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Opportunity.Anticipated_Contract_Start_Date__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Opportunity.Anticipated_Contract_Term_Months__c" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Opportunity.Approval_URL__c" />
@@ -3918,7 +4017,13 @@
                             <option name="name" value="Opportunity.Budget_Confirmed__c" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Opportunity.CurrencyL__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Opportunity.Deal_Lost_to_Training_Provider__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Opportunity.Discount_Code__c" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Opportunity.Discount_Percent__c" />
@@ -3930,10 +4035,16 @@
                             <option name="name" value="Opportunity.Discovery_Completed__c" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Opportunity.Exchange_Rate_Applied__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Opportunity.External_ID__c" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Opportunity.IITIntended_Use__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Opportunity.KVH_Sales_Office__c" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Opportunity.Legal_Entity__c" />
@@ -3943,6 +4054,18 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Opportunity.Net_Total__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Opportunity.Number_of_Terms__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Opportunity.Opportunity_ID_18_char__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Opportunity.Override_Vat_Tax__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Opportunity.Parent_Opportunity__c" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Opportunity.Partner_Agent_Account__c" />
@@ -3963,22 +4086,55 @@
                             <option name="name" value="Opportunity.Shipping_Contact__c" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Opportunity.Start_Date__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Opportunity.Sub_total__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Opportunity.Synced_Quote__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Opportunity.Tax__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Opportunity.TotalOrderValue__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Opportunity.TotalProfitPercent__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Opportunity.TotalQuoteValue__c" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Opportunity.Total_Contract_Value__c" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Opportunity.Total_Cost__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Opportunity.Total_Opportunity_Discount_Percent__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Opportunity.Total_Profit__c" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Opportunity.Total__c" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Opportunity.Total_of_Vessels_in_the_Fleet__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Opportunity.VAT__c" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Opportunity.Vat_Roll_Up__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Opportunity.Wet_or_Dry_Cargo__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Opportunity.of_Vessels__c" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Opportunity_Product__c.Bundle_SequenceNumber__c" />
@@ -4915,6 +5071,9 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Quote__c.Create_Automatic_Order__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Quote__c.CurrencyL__c" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Quote__c.Discount_Code__c" />
@@ -6431,6 +6590,9 @@
                     <MetadataType>
                       <option name="entries">
                         <list>
+                          <MetadataEntry>
+                            <option name="name" value="Jon_Buttler_UserID" />
+                          </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="NewLine" />
                           </MetadataEntry>
@@ -8340,9 +8502,12 @@
                       <option name="entries">
                         <list>
                           <MetadataEntry>
+                            <option name="folder" value="true" />
+                            <option name="name" value="KV_Agent_Community_Dashboard" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="KV_Agent_Community_Dashboard/KV_Agent_Dashboard" />
                             <option name="parentFolder" value="KV_Agent_Community_Dashboard" />
-                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="folder" value="true" />
@@ -8383,9 +8548,12 @@
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="folder" value="true" />
+                            <option name="name" value="Videotel_Support_Dashboards" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Videotel_Support_Dashboards/Top_Customer_Issues_Case_Record_Type_Filter_KV1" />
                             <option name="parentFolder" value="Videotel_Support_Dashboards" />
-                            <option name="selected" value="true" />
                           </MetadataEntry>
                         </list>
                       </option>
@@ -8480,135 +8648,166 @@
                           <MetadataEntry>
                             <option name="folder" value="true" />
                             <option name="name" value="unfiled$public" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="unfiled$public/CommunityChangePasswordEmailTemplate" />
                             <option name="parentFolder" value="unfiled$public" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="unfiled$public/CommunityForgotPasswordEmailTemplate" />
                             <option name="parentFolder" value="unfiled$public" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="unfiled$public/CommunityLockoutEmailTemplate" />
                             <option name="parentFolder" value="unfiled$public" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="unfiled$public/CommunityVerificationEmailTemplate" />
                             <option name="parentFolder" value="unfiled$public" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="unfiled$public/CommunityWelcomeEmailTemplate" />
                             <option name="parentFolder" value="unfiled$public" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="unfiled$public/ContactFollowUpSAMPLE" />
                             <option name="parentFolder" value="unfiled$public" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="unfiled$public/LeadsNewassignmentnotificationSAMPLE" />
                             <option name="parentFolder" value="unfiled$public" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="unfiled$public/LeadsWebtoLeademailresponseSAMPLE" />
                             <option name="parentFolder" value="unfiled$public" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="unfiled$public/Notify_Opportunity_Discount_Email_Template" />
                             <option name="parentFolder" value="unfiled$public" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="unfiled$public/SUPPORTCaseResponsewithSolutionSAMPLE" />
-                            <option name="parentFolder" value="unfiled$public" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="unfiled$public/SUPPORTCaseescalationnotificationSAMPLE" />
-                            <option name="parentFolder" value="unfiled$public" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="unfiled$public/SUPPORTNewassignmentnotificationSAMPLE" />
-                            <option name="parentFolder" value="unfiled$public" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="unfiled$public/SUPPORTSelfServiceNewCommentNotificationSAMPLE" />
-                            <option name="parentFolder" value="unfiled$public" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="unfiled$public/SUPPORTSelfServiceNewCommentSAMPLE" />
-                            <option name="parentFolder" value="unfiled$public" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="unfiled$public/SUPPORTSelfServiceNewUserLoginInformationSAMPLE" />
-                            <option name="parentFolder" value="unfiled$public" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="unfiled$public/SUPPORTSelfServiceNewUserLoginSAMPLE" />
-                            <option name="parentFolder" value="unfiled$public" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="unfiled$public/SUPPORTSelfServiceResetPasswordSAMPLE" />
-                            <option name="parentFolder" value="unfiled$public" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="unfiled$public/SUPPORTSelfServiceResetPasswordSAMPLE2" />
-                            <option name="parentFolder" value="unfiled$public" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="unfiled$public/SUPPORTWebtoCaseemailresponseSAMPLE" />
-                            <option name="parentFolder" value="unfiled$public" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="unfiled$public/Sample_CallNoAnswer" />
                             <option name="parentFolder" value="unfiled$public" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="unfiled$public/Sample_CustomerInterest" />
                             <option name="parentFolder" value="unfiled$public" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="unfiled$public/Sample_DealClosed" />
                             <option name="parentFolder" value="unfiled$public" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="unfiled$public/Sample_GreatMeetingYou" />
                             <option name="parentFolder" value="unfiled$public" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="unfiled$public/Sample_HappyBirthday" />
                             <option name="parentFolder" value="unfiled$public" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="unfiled$public/Sample_MeetOnsite" />
                             <option name="parentFolder" value="unfiled$public" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="unfiled$public/Sample_NewAccountManager" />
                             <option name="parentFolder" value="unfiled$public" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="unfiled$public/Sample_NextSteps" />
                             <option name="parentFolder" value="unfiled$public" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="unfiled$public/Sample_OutofOffice" />
                             <option name="parentFolder" value="unfiled$public" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="unfiled$public/Sample_Promotion" />
                             <option name="parentFolder" value="unfiled$public" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="unfiled$public/Sample_Reconnecting" />
                             <option name="parentFolder" value="unfiled$public" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="unfiled$public/Sample_ScheduleMeeting" />
                             <option name="parentFolder" value="unfiled$public" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="unfiled$public/SUPPORTCaseescalationnotificationSAMPLE" />
+                            <option name="parentFolder" value="unfiled$public" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="unfiled$public/SUPPORTCaseResponsewithSolutionSAMPLE" />
+                            <option name="parentFolder" value="unfiled$public" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="unfiled$public/SUPPORTNewassignmentnotificationSAMPLE" />
+                            <option name="parentFolder" value="unfiled$public" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="unfiled$public/SUPPORTSelfServiceNewCommentNotificationSAMPLE" />
+                            <option name="parentFolder" value="unfiled$public" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="unfiled$public/SUPPORTSelfServiceNewCommentSAMPLE" />
+                            <option name="parentFolder" value="unfiled$public" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="unfiled$public/SUPPORTSelfServiceNewUserLoginInformationSAMPLE" />
+                            <option name="parentFolder" value="unfiled$public" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="unfiled$public/SUPPORTSelfServiceNewUserLoginSAMPLE" />
+                            <option name="parentFolder" value="unfiled$public" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="unfiled$public/SUPPORTSelfServiceResetPasswordSAMPLE" />
+                            <option name="parentFolder" value="unfiled$public" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="unfiled$public/SUPPORTSelfServiceResetPasswordSAMPLE2" />
+                            <option name="parentFolder" value="unfiled$public" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="unfiled$public/SUPPORTWebtoCaseemailresponseSAMPLE" />
+                            <option name="parentFolder" value="unfiled$public" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                         </list>
                       </option>
                       <option name="name" value="EmailTemplate" />
-                      <option name="wildcard" value="false" />
                     </MetadataType>
                     <MetadataType>
                       <option name="name" value="EmbeddedServiceBranding" />
@@ -8722,6 +8921,9 @@
                       <option name="entries">
                         <list>
                           <MetadataEntry>
+                            <option name="name" value="Active_Orders" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Credit_Line_Creation" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
@@ -8767,6 +8969,9 @@
                     <MetadataType>
                       <option name="entries">
                         <list>
+                          <MetadataEntry>
+                            <option name="name" value="Active_Orders" />
+                          </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Credit_Line_Creation" />
                           </MetadataEntry>
@@ -8976,6 +9181,9 @@
                           <MetadataEntry>
                             <option name="name" value="Account-KV Customers for Partners" />
                             <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Account-KV Partner" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Account-KV Sales Prospect" />
@@ -9357,8 +9565,7 @@
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="Job__c-Order %28InvoiceIT%29 Layout" />
-                            <option name="selected" value="true" />
+                            <option name="name" value="Job__c-Order Layout" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Job__c-Order Layout for Child" />
@@ -9402,10 +9609,6 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Opportunity-Invoice IT Opportunity Layout" />
-                            <option name="selected" value="true" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="Opportunity-invoiceit_crmx__Invoice IT Opportunity Layout" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -10057,6 +10260,105 @@
                             <option name="name" value="Job__c.All" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Job__c.ChildOrders_Administration_in_Progress" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Job__c.Child_Order_In_Fulfillment" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Job__c.Child_Order_Ready_for_Fulfillment" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Job__c.Child_Order_Ready_for_Fulfilment" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Job__c.Child_Orders" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Job__c.Consolidated_Invoicing_Orders" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Job__c.D4_Dynamics_Child_Orders" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Job__c.D4_Dynamics_Master_Orders" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Job__c.KV_Agent_Beijing_Shipping_Orders" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Job__c.KV_Agent_D4_Dynamics_Orders" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Job__c.KV_Agent_Egyptian_Maritime_Accounts" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Job__c.KV_Agent_IMC_Group_P_C_Orders" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Job__c.KV_Agent_ISM_Solutions_Inc_Accounts" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Job__c.KV_Agent_MCTC_Marine_Ltd_Orders" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Job__c.KV_Agent_Marcas_Limited_Orders" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Job__c.KV_Agent_Multimedia_HRD_Pvt_Orders" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Job__c.KV_Agent_Nautibond_C_A_Orders" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Job__c.KV_Agent_Nautical_Training_Orders" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Job__c.KV_Agent_North_Coast_Maritime_Orders" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Job__c.KV_Agent_R_R_International_Orders" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Job__c.KV_Agent_Scanocean_Services_Orders" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Job__c.KV_Agent_Spark_International_Orders" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Job__c.KV_Agent_Spectral_Technologies_Orders" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Job__c.Local_UK_EU_Waters_FOR_VAT" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Job__c.Master_Order_Ready_for_Admin_Processing" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Job__c.Master_Orders" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Job__c.Master_Orders_Ready_for_Admin_Processing" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Job__c.North_Coast_Maritime_Child_Orders" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Job__c.North_Coast_Maritime_Master_Orders" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Job__c.Sale_Orders" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Job__c.Task_based_Competency" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Job__c.Test_Invoices_Creation" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Job__c.VMI_Child_Orders" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Job__c.VOD_Production_Team_Job" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -10064,6 +10366,9 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Lead.TodaysLeads" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Lead.Videotel_Invididual_Leads_2019" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Lead.Videotel_Leads_Lead" />
@@ -10079,6 +10384,51 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Opportunity.Default_Opportunity_Pipeline" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Opportunity.KV_Agent_Beijing_Shipping_Opportunities" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Opportunity.KV_Agent_D4_Dynamics_Opportunities" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Opportunity.KV_Agent_Egyptian_Maritime_Opportunities" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Opportunity.KV_Agent_IMC_Group_P_C_Opportunities" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Opportunity.KV_Agent_ISM_Solutions_Opportunities" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Opportunity.KV_Agent_MCTC_Marine_Ltd_Opportunities" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Opportunity.KV_Agent_Marcas_Limited_Opportunities" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Opportunity.KV_Agent_Multimedia_HRD_Opportunities" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Opportunity.KV_Agent_Nautibond_C_A_Opportunities" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Opportunity.KV_Agent_Nautical_Training_Opportunities" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Opportunity.KV_Agent_North_Coast_Opportunities" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Opportunity.KV_Agent_R_R_Int_l_Opportunities" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Opportunity.KV_Agent_Scanocean_Serv_Opportunities" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Opportunity.KV_Agent_Spark_Int_l_Opportunities" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Opportunity.KV_Agent_Spectral_Tech_Opportunities" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Opportunity.MyOpportunities" />
@@ -11092,8 +11442,8 @@
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="KV_Agent_Community/Account_overview" />
-                            <option name="parentFolder" value="KV_Agent_Community" />
+                            <option name="folder" value="true" />
+                            <option name="name" value="KV_Agent_Community" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -11122,16 +11472,6 @@
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="KV_Agent_Community/KV_Customers_by_Country" />
-                            <option name="parentFolder" value="KV_Agent_Community" />
-                            <option name="selected" value="true" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="KV_Agent_Community/KV_Customers_by_Country_updated" />
-                            <option name="parentFolder" value="KV_Agent_Community" />
-                            <option name="selected" value="true" />
-                          </MetadataEntry>
-                          <MetadataEntry>
                             <option name="name" value="KV_Agent_Community/KV_Open_Opportunities" />
                             <option name="parentFolder" value="KV_Agent_Community" />
                             <option name="selected" value="true" />
@@ -11142,27 +11482,12 @@
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="KV_Agent_Community/Order_Booking_Report_KVCommunity" />
-                            <option name="parentFolder" value="KV_Agent_Community" />
-                            <option name="selected" value="true" />
-                          </MetadataEntry>
-                          <MetadataEntry>
                             <option name="name" value="KV_Agent_Community/Renewals_in_the_next_6_months" />
                             <option name="parentFolder" value="KV_Agent_Community" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="KV_Agent_Community/Unallocated_Cash4" />
-                            <option name="parentFolder" value="KV_Agent_Community" />
-                            <option name="selected" value="true" />
-                          </MetadataEntry>
-                          <MetadataEntry>
                             <option name="name" value="KV_Agent_Community/Visit_Reports1" />
-                            <option name="parentFolder" value="KV_Agent_Community" />
-                            <option name="selected" value="true" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="KV_Agent_Community/VOD_dispatches_by_Quarter" />
                             <option name="parentFolder" value="KV_Agent_Community" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
@@ -11907,6 +12232,11 @@
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Videotel_Finance/Commission_Rates_for_agents_by_product" />
+                            <option name="parentFolder" value="Videotel_Finance" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Videotel_Finance/Missing_Intended_Use" />
                             <option name="parentFolder" value="Videotel_Finance" />
                             <option name="selected" value="true" />
@@ -12004,6 +12334,11 @@
                           <MetadataEntry>
                             <option name="name" value="Videotel_Reports/New_Open_Cases_by_Account_MTD" />
                             <option name="parentFolder" value="Videotel_Reports" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="folder" value="true" />
+                            <option name="name" value="Videotel_Support_Dashboards" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -12902,6 +13237,9 @@
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="OrderType" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="PartnerRole" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
@@ -12982,6 +13320,10 @@
                         <list>
                           <MetadataEntry>
                             <option name="name" value="jQuery" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="jQuery1" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -13548,6 +13890,9 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Opportunity.Add_Products" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Opportunity.Create_Order" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Opportunity.dsfs__Send_with_DocuSign" />
