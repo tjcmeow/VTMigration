@@ -1,7 +1,7 @@
 *** CASE ASSIGNMENT NOTIFICATION - 30 minutes ago ***  
 
 The following case has been assigned to your queue. 
-Company:  {!Account.Name} 
+Company:  {!Account.Name}
 Contact Name:  {!Contact.Name} 
 Case #:  {!Case.CaseNumber} 
 Subject:  {!Case.Subject} 

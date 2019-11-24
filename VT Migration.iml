@@ -10888,6 +10888,34 @@
                           <MetadataEntry>
                             <option name="name" value="APXTConga4__Conga_Email_Letterhead" />
                           </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Blank" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="KVH_Letterhead" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="KVH_Letterhead_no_footer" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="KVH_Videotel" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Salesforce_Support" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Technical_Support_Letterhead" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Technical_Support_Letterhead_SATCOM" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
                         </list>
                       </option>
                       <option name="name" value="Letterhead" />
