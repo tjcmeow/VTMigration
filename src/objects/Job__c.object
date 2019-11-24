@@ -951,7 +951,7 @@
         <fullName>External_Id__c</fullName>
         <caseSensitive>false</caseSensitive>
         <externalId>true</externalId>
-        <label>External Id</label>
+        <label>Legacy Order Id</label>
         <length>255</length>
         <required>false</required>
         <trackHistory>false</trackHistory>
@@ -2643,6 +2643,27 @@
     </fields>
     <label>Order</label>
     <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Despatch_Date__c</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>Account__c</columns>
+        <columns>Billing_Contact__c</columns>
+        <columns>Service_Activation_Date__c</columns>
+        <columns>Status__c</columns>
+        <columns>Service_End_Date__c</columns>
+        <columns>Total__c</columns>
+        <columns>No_of_Products__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Orders</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
         <fullName>ChildOrders_Administration_in_Progress</fullName>
         <columns>Legal_Entity__c</columns>
         <columns>NAME</columns>
@@ -3556,29 +3577,8 @@
             <allInternalUsers></allInternalUsers>
         </sharedTo>
     </listViews>
-    <listViews>
-        <fullName>All</fullName>
-        <columns>NAME</columns>
-        <columns>Despatch_Date__c</columns>
-        <columns>RECORDTYPE</columns>
-        <columns>Account__c</columns>
-        <columns>Billing_Contact__c</columns>
-        <columns>Service_Activation_Date__c</columns>
-        <columns>Status__c</columns>
-        <columns>Service_End_Date__c</columns>
-        <columns>Total__c</columns>
-        <columns>No_of_Products__c</columns>
-        <columns>CREATED_DATE</columns>
-        <columns>UPDATEDBY_USER.ALIAS</columns>
-        <columns>LAST_UPDATE</columns>
-        <filterScope>Everything</filterScope>
-        <label>All Orders</label>
-        <sharedTo>
-            <allInternalUsers></allInternalUsers>
-        </sharedTo>
-    </listViews>
     <nameField>
-        <label>Order (InvoiceIT) Name</label>
+        <label>Order Name</label>
         <trackHistory>true</trackHistory>
         <type>Text</type>
     </nameField>
@@ -5116,19 +5116,7 @@
             <picklist>Status__c</picklist>
             <values>
                 <fullName>Administration in Progress</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Assessment Passed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Awaiting Customer Signature</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Awaiting Documents</fullName>
-                <default>false</default>
+                <default>true</default>
             </values>
             <values>
                 <fullName>Awaiting Return</fullName>
@@ -5136,26 +5124,6 @@
             </values>
             <values>
                 <fullName>Cancelled</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Certificate Dispatched</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Completed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Documents Recieved</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Documents sent for Assessment</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Enrollment</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -5167,19 +5135,7 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>New</fullName>
-                <default>true</default>
-            </values>
-            <values>
                 <fullName>On boarding in progress</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Order Entry Complete</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Ready for Admin Processing</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -5188,10 +5144,6 @@
             </values>
             <values>
                 <fullName>Ready for Fulfillment</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Registration</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -6777,51 +6729,7 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>Assessment Passed</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Awaiting Customer Signature</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Awaiting Documents</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Awaiting Return</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Cancelled</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Certificate Dispatched</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Completed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Documents Recieved</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Documents sent for Assessment</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Enrollment</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>In Fulfillment</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>In Service</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -6829,27 +6737,11 @@
                 <default>true</default>
             </values>
             <values>
-                <fullName>On boarding in progress</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Order Entry Complete</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Ready for Admin Processing</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Ready for Dispatch</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Ready for Fulfillment</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Registration</fullName>
                 <default>false</default>
             </values>
         </picklistValues>

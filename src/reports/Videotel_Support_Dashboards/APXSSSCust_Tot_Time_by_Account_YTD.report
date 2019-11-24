@@ -38,7 +38,6 @@
     <columns>
         <field>CLOSED</field>
     </columns>
-    <currency>GBP</currency>
     <filter>
         <criteriaItems>
             <column>ACCOUNT_RECORDTYPE</column>

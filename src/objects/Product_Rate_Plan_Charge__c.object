@@ -509,7 +509,7 @@
     </fields>
     <label>Product Rate Plan Charge</label>
     <nameField>
-        <label>Product Rate Plan Name</label>
+        <label>Product Rate Plan Charge Name</label>
         <type>Text</type>
     </nameField>
     <pluralLabel>Product Rate Plan Charges</pluralLabel>

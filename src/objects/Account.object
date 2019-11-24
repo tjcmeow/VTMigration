@@ -1177,6 +1177,31 @@ PRINT &amp; STAMP- Customer receives the invoice in the Post (by mail), BUT the 
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
+        <fullName>KVH_Sales_Office__c</fullName>
+        <description>This field represents Sales office with which the account is associated. It provides a means for summary reporting by each particular Sales office. This Picklist should always match the corresponding Picklist in the Lead Object</description>
+        <externalId>false</externalId>
+        <label>Sales Office</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>KV UK</fullName>
+                    <default>false</default>
+                    <label>KV UK</label>
+                </value>
+                <value>
+                    <fullName>KV ASIA</fullName>
+                    <default>false</default>
+                    <label>KV ASIA</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>KVH_Service_Office__c</fullName>
         <description>This field described the KVH service office to which the account is associated. It provides for marketing support, and reporting to field service managers.</description>
         <externalId>false</externalId>
@@ -1697,7 +1722,7 @@ PRINT &amp; STAMP- Customer receives the invoice in the Post (by mail), BUT the 
         <type>MultiselectPicklist</type>
         <valueSet>
             <valueSetDefinition>
-                <sorted>true</sorted>
+                <sorted>false</sorted>
                 <value>
                     <fullName>-----------------------------------</fullName>
                     <default>false</default>
@@ -1906,6 +1931,46 @@ PRINT &amp; STAMP- Customer receives the invoice in the Post (by mail), BUT the 
         <type>Phone</type>
     </fields>
     <fields>
+        <fullName>Partner_Role_Display_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Partner Role Display Name</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Dealer</fullName>
+                    <default>false</default>
+                    <label>Dealer</label>
+                </value>
+                <value>
+                    <fullName>Distributor</fullName>
+                    <default>false</default>
+                    <label>Distributor</label>
+                </value>
+                <value>
+                    <fullName>Representative</fullName>
+                    <default>false</default>
+                    <label>Representative</label>
+                </value>
+                <value>
+                    <fullName>Service Provider</fullName>
+                    <default>false</default>
+                    <label>Service Provider</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>Partner_Role__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Service Provider resells Airtime Service and Hardware</inlineHelpText>
@@ -1951,46 +2016,6 @@ PRINT &amp; STAMP- Customer receives the invoice in the Post (by mail), BUT the 
                     <fullName>Sales Agent</fullName>
                     <default>false</default>
                     <label>Sales Agent</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
-        <fullName>Partner_Role_Display_Name__c</fullName>
-        <externalId>false</externalId>
-        <label>Partner Role Display Name</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Dealer</fullName>
-                    <default>false</default>
-                    <label>Dealer</label>
-                </value>
-                <value>
-                    <fullName>Distributor</fullName>
-                    <default>false</default>
-                    <label>Distributor</label>
-                </value>
-                <value>
-                    <fullName>Representative</fullName>
-                    <default>false</default>
-                    <label>Representative</label>
-                </value>
-                <value>
-                    <fullName>Service Provider</fullName>
-                    <default>false</default>
-                    <label>Service Provider</label>
-                </value>
-                <value>
-                    <fullName>Other</fullName>
-                    <default>false</default>
-                    <label>Other</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -3683,6 +3708,71 @@ Account.Product_Interest_2__c</description>
         <visibleLines>10</visibleLines>
     </fields>
     <fields>
+        <fullName>Product_Line_Interest__c</fullName>
+        <description>The values for this Picklist and it&apos;s dependencies are provided by Marketing.
+            The values in this picklist should exactly match the values in:
+            Campaign.Product_Line_Interest__c
+            Lead.Product_Line_Interest__c
+            Account.Product_Line_Interest__c</description>
+        <externalId>false</externalId>
+        <label>Product Line Interest</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Audio Services</fullName>
+                    <default>false</default>
+                    <label>Audio Services</label>
+                </value>
+                <value>
+                    <fullName>DVD Services</fullName>
+                    <default>false</default>
+                    <label>DVD Services</label>
+                </value>
+                <value>
+                    <fullName>Network Mgmt</fullName>
+                    <default>false</default>
+                    <label>Network Mgmt</label>
+                </value>
+                <value>
+                    <fullName>News Services</fullName>
+                    <default>false</default>
+                    <label>News Services</label>
+                </value>
+                <value>
+                    <fullName>Satellite Communications</fullName>
+                    <default>false</default>
+                    <label>Satellite Communications</label>
+                </value>
+                <value>
+                    <fullName>Satellite Content Delivery - Entertainment</fullName>
+                    <default>false</default>
+                    <label>Satellite Content Delivery - Entertainment</label>
+                </value>
+                <value>
+                    <fullName>Satellite Content Delivery - Operations</fullName>
+                    <default>false</default>
+                    <label>Satellite Content Delivery - Operations</label>
+                </value>
+                <value>
+                    <fullName>Satellite TV</fullName>
+                    <default>false</default>
+                    <label>Satellite TV</label>
+                </value>
+                <value>
+                    <fullName>Training</fullName>
+                    <default>false</default>
+                    <label>Training</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
         <fullName>Rating</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -3835,72 +3925,7 @@ Account.Product_Interest_2__c</description>
         </valueSet>
     </fields>
     <fields>
-        <fullName>Product_Line_Interest__c</fullName>
-        <description>The values for this Picklist and it&apos;s dependencies are provided by Marketing.
-            The values in this picklist should exactly match the values in:
-            Campaign.Product_Line_Interest__c
-            Lead.Product_Line_Interest__c
-            Account.Product_Line_Interest__c</description>
-        <externalId>false</externalId>
-        <label>Product Line Interest</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>MultiselectPicklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Audio Services</fullName>
-                    <default>false</default>
-                    <label>Audio Services</label>
-                </value>
-                <value>
-                    <fullName>DVD Services</fullName>
-                    <default>false</default>
-                    <label>DVD Services</label>
-                </value>
-                <value>
-                    <fullName>Network Mgmt</fullName>
-                    <default>false</default>
-                    <label>Network Mgmt</label>
-                </value>
-                <value>
-                    <fullName>News Services</fullName>
-                    <default>false</default>
-                    <label>News Services</label>
-                </value>
-                <value>
-                    <fullName>Satellite Communications</fullName>
-                    <default>false</default>
-                    <label>Satellite Communications</label>
-                </value>
-                <value>
-                    <fullName>Satellite Content Delivery - Entertainment</fullName>
-                    <default>false</default>
-                    <label>Satellite Content Delivery - Entertainment</label>
-                </value>
-                <value>
-                    <fullName>Satellite Content Delivery - Operations</fullName>
-                    <default>false</default>
-                    <label>Satellite Content Delivery - Operations</label>
-                </value>
-                <value>
-                    <fullName>Satellite TV</fullName>
-                    <default>false</default>
-                    <label>Satellite TV</label>
-                </value>
-                <value>
-                    <fullName>Training</fullName>
-                    <default>false</default>
-                    <label>Training</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-        <visibleLines>4</visibleLines>
-    </fields>
-    <fields>
-        <fullName>KVH_Sales_Office__c</fullName>
+        <fullName>Sales_Office__c</fullName>
         <description>This field represents Sales office with which the account is associated. It provides a means for summary reporting by each particular Sales office. This Picklist should always match the corresponding Picklist in the Lead Object</description>
         <externalId>false</externalId>
         <label>Sales Office</label>
@@ -5768,6 +5793,44 @@ business/products</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>KVH_Sales_Office__c</picklist>
+            <values>
+                <fullName>KV ASIA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KV UK</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>KVH_Service_Office__c</picklist>
+            <values>
+                <fullName>KC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KV</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Market_Sector__c</picklist>
             <values>
                 <fullName>Marine</fullName>
@@ -5828,6 +5891,33 @@ business/products</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Partner_Attribute_Type__c</picklist>
+            <values>
+                <fullName>CSN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Live Demo Vehicle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales %26 Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Partner_Detail__c</picklist>
             <values>
                 <fullName>-----------------------------------</fullName>
@@ -5839,6 +5929,60 @@ business/products</description>
             </values>
             <values>
                 <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Partner_Role_Display_Name__c</picklist>
+            <values>
+                <fullName>Dealer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Distributor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Representative</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service Provider</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Partner_Role__c</picklist>
+            <values>
+                <fullName>Dealer</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Distributor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Media Supplier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rep</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Agent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service Provider</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -6615,6 +6759,45 @@ business/products</description>
             </values>
             <values>
                 <fullName>webFTA</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_Line_Interest__c</picklist>
+            <values>
+                <fullName>Audio Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DVD Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Network Mgmt</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>News Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satellite Communications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satellite Content Delivery - Entertainment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satellite Content Delivery - Operations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satellite TV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -7175,6 +7358,44 @@ business/products</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>KVH_Sales_Office__c</picklist>
+            <values>
+                <fullName>KV ASIA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KV UK</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>KVH_Service_Office__c</picklist>
+            <values>
+                <fullName>KC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KV</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Market_Sector__c</picklist>
             <values>
                 <fullName>Marine</fullName>
@@ -7235,6 +7456,33 @@ business/products</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Partner_Attribute_Type__c</picklist>
+            <values>
+                <fullName>CSN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Live Demo Vehicle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales %26 Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Partner_Detail__c</picklist>
             <values>
                 <fullName>-----------------------------------</fullName>
@@ -7246,6 +7494,60 @@ business/products</description>
             </values>
             <values>
                 <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Partner_Role_Display_Name__c</picklist>
+            <values>
+                <fullName>Dealer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Distributor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Representative</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service Provider</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Partner_Role__c</picklist>
+            <values>
+                <fullName>Dealer</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Distributor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Media Supplier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rep</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Agent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service Provider</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -8034,6 +8336,45 @@ business/products</description>
             </values>
             <values>
                 <fullName>webFTA</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_Line_Interest__c</picklist>
+            <values>
+                <fullName>Audio Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DVD Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Network Mgmt</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>News Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satellite Communications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satellite Content Delivery - Entertainment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satellite Content Delivery - Operations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satellite TV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -8574,6 +8915,44 @@ business/products</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>KVH_Sales_Office__c</picklist>
+            <values>
+                <fullName>KV ASIA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KV UK</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>KVH_Service_Office__c</picklist>
+            <values>
+                <fullName>KC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KV</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Market_Sector__c</picklist>
             <values>
                 <fullName>Marine</fullName>
@@ -8634,6 +9013,33 @@ business/products</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Partner_Attribute_Type__c</picklist>
+            <values>
+                <fullName>CSN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Live Demo Vehicle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales %26 Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Partner_Detail__c</picklist>
             <values>
                 <fullName>-----------------------------------</fullName>
@@ -8645,6 +9051,60 @@ business/products</description>
             </values>
             <values>
                 <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Partner_Role_Display_Name__c</picklist>
+            <values>
+                <fullName>Dealer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Distributor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Representative</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service Provider</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Partner_Role__c</picklist>
+            <values>
+                <fullName>Dealer</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Distributor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Media Supplier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rep</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Agent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service Provider</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -9433,6 +9893,45 @@ business/products</description>
             </values>
             <values>
                 <fullName>webFTA</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_Line_Interest__c</picklist>
+            <values>
+                <fullName>Audio Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DVD Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Network Mgmt</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>News Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satellite Communications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satellite Content Delivery - Entertainment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satellite Content Delivery - Operations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satellite TV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -9980,6 +10479,44 @@ business/products</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>KVH_Sales_Office__c</picklist>
+            <values>
+                <fullName>KV ASIA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KV UK</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>KVH_Service_Office__c</picklist>
+            <values>
+                <fullName>KC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KV</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Market_Sector__c</picklist>
             <values>
                 <fullName>Marine</fullName>
@@ -10040,6 +10577,33 @@ business/products</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Partner_Attribute_Type__c</picklist>
+            <values>
+                <fullName>CSN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Live Demo Vehicle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales %26 Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Partner_Detail__c</picklist>
             <values>
                 <fullName>-----------------------------------</fullName>
@@ -10051,6 +10615,60 @@ business/products</description>
             </values>
             <values>
                 <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Partner_Role_Display_Name__c</picklist>
+            <values>
+                <fullName>Dealer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Distributor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Representative</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service Provider</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Partner_Role__c</picklist>
+            <values>
+                <fullName>Dealer</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Distributor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Media Supplier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rep</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Agent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service Provider</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -10835,6 +11453,45 @@ business/products</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Product_Line_Interest__c</picklist>
+            <values>
+                <fullName>Audio Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DVD Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Network Mgmt</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>News Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satellite Communications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satellite Content Delivery - Entertainment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satellite Content Delivery - Operations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satellite TV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Rating</picklist>
             <values>
                 <fullName>Cold</fullName>
@@ -11290,6 +11947,44 @@ business/products</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>KVH_Sales_Office__c</picklist>
+            <values>
+                <fullName>KV ASIA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KV UK</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>KVH_Service_Office__c</picklist>
+            <values>
+                <fullName>KC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KV</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Market_Sector__c</picklist>
             <values>
                 <fullName>Marine</fullName>
@@ -11346,6 +12041,33 @@ business/products</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Partner_Attribute_Type__c</picklist>
+            <values>
+                <fullName>CSN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Live Demo Vehicle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales %26 Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Partner_Detail__c</picklist>
             <values>
                 <fullName>-----------------------------------</fullName>
@@ -11357,6 +12079,60 @@ business/products</description>
             </values>
             <values>
                 <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Partner_Role_Display_Name__c</picklist>
+            <values>
+                <fullName>Dealer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Distributor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Representative</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service Provider</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Partner_Role__c</picklist>
+            <values>
+                <fullName>Dealer</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Distributor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Media Supplier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rep</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Agent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service Provider</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -11613,6 +12389,45 @@ business/products</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Product_Line_Interest__c</picklist>
+            <values>
+                <fullName>Audio Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DVD Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Network Mgmt</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>News Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satellite Communications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satellite Content Delivery - Entertainment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satellite Content Delivery - Operations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satellite TV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Rating</picklist>
             <values>
                 <fullName>Cold</fullName>
@@ -11718,13 +12533,15 @@ business/products</description>
         <customTabListAdditionalFields>KV_Asia_Account_Code__c</customTabListAdditionalFields>
         <customTabListAdditionalFields>KV_CustAcctNo__c</customTabListAdditionalFields>
         <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Customer_Account_Number__c</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>PARENT_NAME</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>ACCOUNT.ACCOUNT_NUMBER</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>KV_Asia_Account_Code__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Account_Status__c</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>ACCOUNT.RECORDTYPE</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>CORE.USERS.ALIAS</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>ACCOUNT.TYPE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>KV_Company_Ref_No__c</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>ACCOUNT.ADDRESS1_COUNTRY</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Previous_Name_s__c</lookupDialogsAdditionalFields>
         <lookupFilterFields>ACCOUNT.RECORDTYPE</lookupFilterFields>
         <lookupFilterFields>ACCOUNT.ADDRESS1_COUNTRY</lookupFilterFields>
         <lookupFilterFields>Sales_Office__c</lookupFilterFields>

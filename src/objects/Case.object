@@ -2068,21 +2068,6 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Priority</picklist>
-            <values>
-                <fullName>High</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Low</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Medium</fullName>
-                <default>true</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Product_or_Service_Detail__c</picklist>
             <values>
                 <fullName>Activate VOD Unit</fullName>
@@ -2385,27 +2370,11 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
         <picklistValues>
             <picklist>Type</picklist>
             <values>
-                <fullName>Add or Change a Video%2FTraining Service</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Feature Request</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Information on an Existing Service</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Problem</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Question</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -2626,21 +2595,6 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
             <values>
                 <fullName>Web</fullName>
                 <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Priority</picklist>
-            <values>
-                <fullName>High</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Low</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Medium</fullName>
-                <default>true</default>
             </values>
         </picklistValues>
         <picklistValues>
@@ -2978,27 +2932,11 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
         <picklistValues>
             <picklist>Type</picklist>
             <values>
-                <fullName>Add or Change a Video%2FTraining Service</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Feature Request</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Information on an Existing Service</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Problem</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Question</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -3199,21 +3137,6 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
             <values>
                 <fullName>Web</fullName>
                 <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Priority</picklist>
-            <values>
-                <fullName>High</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Low</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Medium</fullName>
-                <default>true</default>
             </values>
         </picklistValues>
         <picklistValues>
@@ -3523,27 +3446,11 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
         <picklistValues>
             <picklist>Type</picklist>
             <values>
-                <fullName>Add or Change a Video%2FTraining Service</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Feature Request</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Information on an Existing Service</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Problem</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Question</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -3764,21 +3671,6 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
             <values>
                 <fullName>Web</fullName>
                 <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Priority</picklist>
-            <values>
-                <fullName>High</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Low</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Medium</fullName>
-                <default>true</default>
             </values>
         </picklistValues>
         <picklistValues>
@@ -4112,27 +4004,11 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
         <picklistValues>
             <picklist>Type</picklist>
             <values>
-                <fullName>Add or Change a Video%2FTraining Service</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Feature Request</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Information on an Existing Service</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Problem</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Question</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -4325,21 +4201,6 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
             <values>
                 <fullName>Web</fullName>
                 <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Priority</picklist>
-            <values>
-                <fullName>High</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Low</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Medium</fullName>
-                <default>true</default>
             </values>
         </picklistValues>
         <picklistValues>
@@ -4637,27 +4498,11 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
         <picklistValues>
             <picklist>Type</picklist>
             <values>
-                <fullName>Add or Change a Video%2FTraining Service</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Feature Request</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Information on an Existing Service</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Problem</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Question</fullName>
                 <default>false</default>
             </values>
             <values>

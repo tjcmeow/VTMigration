@@ -439,6 +439,19 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>CurrencyL__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Currency</label>
+        <referenceTo>Currency__c</referenceTo>
+        <relationshipLabel>Order Rate Plan Charges</relationshipLabel>
+        <relationshipName>Order_Rate_Plan_Charges</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>Deferred_Revenue_Accounting_Code__c</fullName>
         <externalId>false</externalId>
         <label>Deferred Revenue Account</label>

@@ -20,12 +20,6 @@
         <closed>false</closed>
     </standardValue>
     <standardValue>
-        <fullName>Accepted</fullName>
-        <default>false</default>
-        <label>Accepted</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
         <fullName>Awaiting Agent Response</fullName>
         <default>false</default>
         <label>Awaiting Agent Response</label>
@@ -62,42 +56,6 @@
         <closed>false</closed>
     </standardValue>
     <standardValue>
-        <fullName>Completed Pending Service Invoice</fullName>
-        <default>false</default>
-        <label>Completed Pending Service Invoice</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Completed Pending Service Report</fullName>
-        <default>false</default>
-        <label>Completed Pending Service Report</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Consultation</fullName>
-        <default>false</default>
-        <label>Consultation</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Conveyed to Customer</fullName>
-        <default>false</default>
-        <label>Conveyed to Customer</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Developer Fix Completed</fullName>
-        <default>false</default>
-        <label>Developer Fix Completed</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Developing Quote</fullName>
-        <default>false</default>
-        <label>Developing Quote</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
         <fullName>Development</fullName>
         <default>false</default>
         <label>Development</label>
@@ -116,99 +74,9 @@
         <closed>false</closed>
     </standardValue>
     <standardValue>
-        <fullName>Escalated To Investigator</fullName>
-        <default>false</default>
-        <label>Escalated To Investigator</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Follow-Up Pending Closure</fullName>
-        <default>false</default>
-        <label>Follow-Up Pending Closure</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Follow Up with Customer in 6 Months</fullName>
-        <default>false</default>
-        <label>Follow Up with Customer in 6 Months</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Forward Child Case to Airtime Sales</fullName>
-        <default>false</default>
-        <label>Forward Child Case to Airtime Sales</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Implementation in progress</fullName>
-        <default>false</default>
-        <label>Implementation In Progress</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Include in Pending/Future Project</fullName>
-        <default>false</default>
-        <label>Include in Pending/Future Project</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>In Dispute</fullName>
-        <default>false</default>
-        <label>In Dispute</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
         <fullName>In Progress</fullName>
         <default>false</default>
         <label>In Progress</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Install Completed – Pending Documentation</fullName>
-        <default>false</default>
-        <label>Install Completed – Pending Documentation</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Completed Pending Invoice/Reimbursement</fullName>
-        <default>false</default>
-        <label>Completed Pending Invoice/Reimbursement</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>In-Testing</fullName>
-        <default>false</default>
-        <label>In-Testing</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Investigation</fullName>
-        <default>false</default>
-        <label>Investigation</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Completed Invoice Received</fullName>
-        <default>false</default>
-        <label>Completed Invoice Received</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>KVH QA Verification Fix Completed</fullName>
-        <default>false</default>
-        <label>KVH QA Verification Fix Completed</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>New AgilePlans Installation Request</fullName>
-        <default>false</default>
-        <label>New AgilePlans Installation Request</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Notification Sent</fullName>
-        <default>false</default>
-        <label>Notification Sent</label>
         <closed>false</closed>
     </standardValue>
     <standardValue>
@@ -218,135 +86,9 @@
         <closed>false</closed>
     </standardValue>
     <standardValue>
-        <fullName>Pending Acceptance of Work Order</fullName>
-        <default>false</default>
-        <label>Pending Acceptance of Work Order</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Pending Activation Order Requirement</fullName>
-        <default>false</default>
-        <label>Pending Activation Order Requirement</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Pending Agile Service Order</fullName>
-        <default>false</default>
-        <label>Pending Agile Service Order</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Pending Airtime Billing Manager Review</fullName>
-        <default>false</default>
-        <label>Pending Airtime Billing Manager Review</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Pending Airtime Collections Review</fullName>
-        <default>false</default>
-        <label>Pending Airtime Collections Review</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Pending Airtime Deviation</fullName>
-        <default>false</default>
-        <label>Pending Airtime Deviation</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Pending Airtime Supervisor Review</fullName>
-        <default>false</default>
-        <label>Pending Airtime Supervisor Review</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Pending Approval</fullName>
-        <default>false</default>
-        <label>Pending Approval</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Pending Assignment of Investigator</fullName>
-        <default>false</default>
-        <label>Pending Assignment of Investigator</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Pending Baan Acct</fullName>
-        <default>false</default>
-        <label>Pending Baan Acct</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Pending Billing Dispute Approval</fullName>
-        <default>false</default>
-        <label>Pending Billing Dispute Approval</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Pending CC/PO</fullName>
-        <default>false</default>
-        <label>Pending CC/PO</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Pending Customer Chargeback</fullName>
-        <default>false</default>
-        <label>Pending Customer Chargeback</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
         <fullName>Pending Customer Information</fullName>
         <default>false</default>
         <label>Pending Customer Information</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Pending Customer Response</fullName>
-        <default>false</default>
-        <label>Pending Customer Response</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Pending Dev. Resources</fullName>
-        <default>false</default>
-        <label>Pending Dev. Resources</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Pending Hardware Shipment</fullName>
-        <default>false</default>
-        <label>Pending Hardware Shipment</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Pending Implementation</fullName>
-        <default>false</default>
-        <label>Pending Implementation</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Pending Invoice</fullName>
-        <default>false</default>
-        <label>Pending Invoice</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Pending KVH Approval</fullName>
-        <default>false</default>
-        <label>Pending KVH Approval</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Pending Lost Customer / Termination</fullName>
-        <default>false</default>
-        <label>Pending Lost Customer / Termination</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Pending Maintenance Date</fullName>
-        <default>false</default>
-        <label>Pending Maintenance Date</label>
         <closed>false</closed>
     </standardValue>
     <standardValue>
@@ -356,57 +98,9 @@
         <closed>false</closed>
     </standardValue>
     <standardValue>
-        <fullName>Pending Port of Call Details</fullName>
-        <default>false</default>
-        <label>Pending Port of Call Details</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Pending Prep Work Completion</fullName>
-        <default>false</default>
-        <label>Pending Prep Work Completion</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Pending Project Kickoff</fullName>
-        <default>false</default>
-        <label>Pending Project Kickoff</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Pending Quote and Acceptance</fullName>
-        <default>false</default>
-        <label>Pending Quote and Acceptance</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
         <fullName>Pending Recall</fullName>
         <default>false</default>
         <label>Pending Recall</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Pending Requirements</fullName>
-        <default>false</default>
-        <label>Pending Requirements</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Pending Requirements Review</fullName>
-        <default>false</default>
-        <label>Pending Requirements Review</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Pending Resoluton Acceptance</fullName>
-        <default>false</default>
-        <label>Pending Resoluton Acceptance</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Pending Resource Availability</fullName>
-        <default>false</default>
-        <label>Pending Resource Availability</label>
         <closed>false</closed>
     </standardValue>
     <standardValue>
@@ -416,141 +110,9 @@
         <closed>false</closed>
     </standardValue>
     <standardValue>
-        <fullName>Pending Sales Order</fullName>
-        <default>false</default>
-        <label>Pending Sales Order</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Pending Sales Order and Site Survey</fullName>
-        <default>false</default>
-        <label>Pending Sales Order and Site Survey</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
         <fullName>Pending Service</fullName>
         <default>false</default>
         <label>Pending Service</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Pending Service Material Availability</fullName>
-        <default>false</default>
-        <label>Pending Service Material Availability</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Pending Service Report</fullName>
-        <default>false</default>
-        <label>Pending Service Report</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Pending Site Survey</fullName>
-        <default>false</default>
-        <label>Pending Site Survey</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Pending Termination Approval</fullName>
-        <default>false</default>
-        <label>Pending Termination Approval</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Pending TracVision Customer Service</fullName>
-        <default>false</default>
-        <label>Pending TracVision Customer Service</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Pending User Acceptance Testing</fullName>
-        <default>false</default>
-        <label>Pending User Acceptance Testing</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Pending Vendor Chargeback</fullName>
-        <default>false</default>
-        <label>Pending Vendor Chargeback</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Pending Vessel Availability</fullName>
-        <default>false</default>
-        <label>Pending Vessel Availability</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Product / Part / Repair Shipped</fullName>
-        <default>false</default>
-        <label>Product / Part / Repair Shipped</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Project</fullName>
-        <default>false</default>
-        <label>Project</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Region Recovered</fullName>
-        <default>false</default>
-        <label>Region Recovered</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Rejected</fullName>
-        <default>false</default>
-        <label>Rejected</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Requires Followup</fullName>
-        <default>false</default>
-        <label>Requires Followup</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Roadmap</fullName>
-        <default>false</default>
-        <label>Roadmap</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Service Completed - Pending Followup</fullName>
-        <default>false</default>
-        <label>Service Completed - Pending Followup</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Service In Progress</fullName>
-        <default>false</default>
-        <label>Service In Progress</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Service Request / Order Cancelled</fullName>
-        <default>false</default>
-        <label>Service Request / Order Cancelled</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Solution Identified</fullName>
-        <default>false</default>
-        <label>Solution Identified</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Solution Implemented</fullName>
-        <default>false</default>
-        <label>Solution Implemented</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>To Be Rescheduled</fullName>
-        <default>false</default>
-        <label>To Be Rescheduled</label>
         <closed>false</closed>
     </standardValue>
     <standardValue>
@@ -599,12 +161,6 @@
         <fullName>With VOD Prod</fullName>
         <default>false</default>
         <label>With VOD Prod</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Pending Vendor Response</fullName>
-        <default>false</default>
-        <label>Pending Vendor Response</label>
         <closed>false</closed>
     </standardValue>
 </StandardValueSet>

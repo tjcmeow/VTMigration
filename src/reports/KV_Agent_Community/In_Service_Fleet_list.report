@@ -72,7 +72,6 @@
     <columns>
         <field>Job__c$BMS_Year_4__c</field>
     </columns>
-    <currency>GBP</currency>
     <description>Update Order Name and Account Name (5&amp;6) in the filter section to the company you wish to view.</description>
     <filter>
         <booleanFilter>(1 AND 2 AND 3 AND 4) AND ( 5 OR 6)</booleanFilter>

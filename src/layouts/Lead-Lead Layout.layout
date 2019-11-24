@@ -46,6 +46,10 @@
                 <behavior>Edit</behavior>
                 <field>Job_Function__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Market__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

@@ -374,7 +374,6 @@
     <fields>
         <fullName>CurrencyL__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
-        <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Currency</label>
         <referenceTo>Currency__c</referenceTo>
@@ -469,7 +468,6 @@
     </fields>
     <fields>
         <fullName>Discount_Code__c</fullName>
-        <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Discount Code</label>
         <length>30</length>
@@ -518,7 +516,6 @@
     </fields>
     <fields>
         <fullName>Exchange_Rate_Applied__c</fullName>
-        <deprecated>false</deprecated>
         <description>Exchange Rate Applied</description>
         <externalId>false</externalId>
         <inlineHelpText>If you are a multi currency org, this field will hold the exchange rate between the Opportunity Currency and your Corporate Currency.
@@ -550,6 +547,20 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>IITIntended_Use__c</fullName>
+        <externalId>false</externalId>
+        <label>Intended Use</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Intended_Use</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>IqScore</fullName>
@@ -687,7 +698,6 @@
     <fields>
         <fullName>Override_Vat_Tax__c</fullName>
         <defaultValue>false</defaultValue>
-        <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Override Vat/Tax ?</label>
         <trackFeedHistory>false</trackFeedHistory>
@@ -849,7 +859,6 @@
     </fields>
     <fields>
         <fullName>Start_Date__c</fullName>
-        <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Start Conversion  Date</label>
         <required>false</required>
@@ -874,7 +883,6 @@
     <fields>
         <fullName>Synced_Quote__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
-        <deprecated>false</deprecated>
         <externalId>false</externalId>
         <inlineHelpText>Shows the Quote record that is being synchronized with the Opportunity record.</inlineHelpText>
         <label>Synced Quote</label>
@@ -894,20 +902,6 @@
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Total_of_Vessels_in_the_Fleet__c</fullName>
-        <externalId>false</externalId>
-        <inlineHelpText>Include the Total number of vessels in the fleet if applicable.</inlineHelpText>
-        <label>Total # of Vessels in the Fleet</label>
-        <precision>4</precision>
-        <required>false</required>
-        <scale>0</scale>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
@@ -947,7 +941,6 @@
     </fields>
     <fields>
         <fullName>TotalQuoteValue__c</fullName>
-        <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Total Quote Value</label>
         <precision>18</precision>
@@ -1001,7 +994,6 @@
     </fields>
     <fields>
         <fullName>Total_Profit__c</fullName>
-        <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Total Profit (Excl Tax/VAT)</label>
         <precision>18</precision>
@@ -1020,6 +1012,20 @@
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_of_Vessels_in_the_Fleet__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Include the Total number of vessels in the fleet if applicable.</inlineHelpText>
+        <label>Total # of Vessels in the Fleet</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>

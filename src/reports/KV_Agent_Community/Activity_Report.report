@@ -30,7 +30,6 @@
     <columns>
         <field>OPPORTUNITY</field>
     </columns>
-    <currency>GBP</currency>
     <description>Tasks and Events for Next week</description>
     <filter>
         <criteriaItems>

@@ -18,7 +18,6 @@
     <columns>
         <field>CUST_NAME</field>
     </columns>
-    <currency>GBP</currency>
     <filter>
         <criteriaItems>
             <column>Account.Sales_Office__c</column>

@@ -94,7 +94,7 @@
             <groupingSortProperties/>
             <header>Videotel Visit Reports by Sales Agent</header>
             <legendPosition>Bottom</legendPosition>
-            <report>SF_Dashboard_Reports/Visit_Reports1</report>
+            <report>KV_Agent_Community/Visit_Reports1</report>
             <showPercentage>false</showPercentage>
             <showValues>true</showValues>
             <sortBy>RowLabelAscending</sortBy>
@@ -112,7 +112,7 @@
             <indicatorHighColor>#C25454</indicatorHighColor>
             <indicatorLowColor>#54C254</indicatorLowColor>
             <indicatorMiddleColor>#C28B54</indicatorMiddleColor>
-            <report>Videotel_Credit_Control/dashboard_full_debt</report>
+            <report>KV_Agent_Community/dashboard_full_debt</report>
             <showPercentage>false</showPercentage>
             <showRange>false</showRange>
             <showTotal>true</showTotal>
@@ -216,7 +216,7 @@
             <title>click into report for full details</title>
         </components>
     </rightSection>
-    <runningUser>triciaigoe@yahoo.com.dev</runningUser>
+    <runningUser>triciaigoe@yahoo.com</runningUser>
     <textColor>#000000</textColor>
     <title>KV Agent Dashboard</title>
     <titleColor>#000000</titleColor>

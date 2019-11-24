@@ -31,7 +31,6 @@
     <columns>
         <field>Invoice__c.Due_Date__c</field>
     </columns>
-    <currency>USD</currency>
     <filter>
         <criteriaItems>
             <column>Invoice__c.Invoice_Status__c</column>

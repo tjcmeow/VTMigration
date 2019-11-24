@@ -129,10 +129,6 @@
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="OrderCommisionTriggerHandlerClass" />
-                            <option name="selected" value="true" />
-                          </MetadataEntry>
-                          <MetadataEntry>
                             <option name="name" value="OrderCommissionTriggerTest" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
@@ -190,6 +186,14 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="VTMig_OppProductsInlineController_Test" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="VTMig_OrderCommisionTriggerHandler" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="VTMig_OrderInvoiceITTriggerClass" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>

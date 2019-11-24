@@ -24,6 +24,7 @@ public with sharing class VTMig_AddOrderProduct {
         public String pageStep {get; set;}
         public List<OrderCharge> selectedCharges {get;set;}
         public List<ProdCharge> selectedProdCharges {get;set;}
+        public List<Id> removedCharges {get;set;}
 
         public VTMig_AddOrderProduct(ApexPages.StandardController ctrlr){
             orderId = ApexPages.currentPage().getParameters().get('Id');
@@ -36,6 +37,7 @@ public with sharing class VTMig_AddOrderProduct {
             showCharges = false;
             pageStep = '1';
             grandTotal = 0;
+            removedCharges = new List<Id>();
             order = [
                     SELECT Id, Account__c, Shipping_Contact__c, Shipping_Account__c, Legal_Entity__c, Partner_Agent__c, IITIntended_Use__c,
                             Wet_or_Dry_Cargo__c, Platform_or_Vessel_detail__c, Name
@@ -94,9 +96,11 @@ public with sharing class VTMig_AddOrderProduct {
         public void selectPlan(){
             showProducts = false;
             showPlans = false;
-            List<Product_Rate_Plan_Charge__c> charges = [SELECT Id, Name, Product_Charge_Category__c, Subscription_Product__c, Product_Rate_Plan__r.Product__r.Name,
-                    Title_Product__c, Unit_Of_Measurement__c, Price_Type__c, Pricing_Format__c, Unit_Price__c, Quantity__c, Product_Rate_Plan__r.Product__r.Product_Code__c
-            FROM Product_Rate_Plan_Charge__c WHERE Product_Rate_Plan__c = : selectedPlanId];
+            List<Product_Rate_Plan_Charge__c> charges = [
+                    SELECT Id, Name, Product_Charge_Category__c, Subscription_Product__c, Product_Rate_Plan__r.Product__r.Name,
+                            Title_Product__c, Unit_Of_Measurement__c, Price_Type__c, Pricing_Format__c, Unit_Price__c,
+                            Quantity__c, Product_Rate_Plan__r.Product__r.Product_Code__c, Uplift__c
+                    FROM Product_Rate_Plan_Charge__c WHERE Product_Rate_Plan__c = : selectedPlanId];
             for(Product_Rate_Plan_Charge__c charge : charges) {
                 ProdCharge newProdCharge = new ProdCharge();
                 newProdCharge.prodCharge = charge;
@@ -134,6 +138,9 @@ public with sharing class VTMig_AddOrderProduct {
 
             for(Integer i = 0; i<selectedProdCharges.size(); i++) {
                 if(removeChargeId == selectedProdCharges[i].prodCharge.Id) {
+                    if(selectedProdCharges[i].chargeId != null && selectedProdCharges[i].chargeId != '') {
+                        removedCharges.add(selectedProdCharges[i].chargeId);
+                    }
                     selectedProdCharges.remove(i);
                 }
             }
@@ -200,8 +207,30 @@ public with sharing class VTMig_AddOrderProduct {
             order.Discount_Value__c = runningTotal - grandTotal;
             order.Total__c = grandTotal;
             update order;
+            if(removedCharges.size() > 0) {
+                removeCharges();
+            }
             PageReference pageRef = new PageReference('/'+orderId);
             return pageRef;
+        }
+
+        public void removeCharges(){
+
+            List<Job_Rate_Plan_Charge__c> charges = [SELECT Id, Job_Rate_Plan__c FROM Job_Rate_Plan_Charge__c WHERE Id IN : removedCharges];
+            List<Id> removedPlanIds = new List<Id>();
+            for(Job_Rate_Plan_Charge__c charge : charges) {
+                removedPlanIds.add(charge.Job_Rate_Plan__c);
+            }
+            List<Job_Rate_Plan__c> plans = [SELECT Id, Job_Product__c FROM Job_Rate_Plan__c WHERE Id IN : removedPlanIds];
+            List<Id> removedProductIds = new List<Id>();
+            List<Job_Product__c> products = [SELECT Id FROM Job_Product__c WHERE Id IN : removedProductIds];
+            try {
+                delete charges;
+                delete plans;
+                delete products;
+            } catch (Exception e) {
+                System.debug(e.getMessage());
+            }
         }
 
         public Job_Rate_Plan__c configOrderPlan(String planId, String OrderProdId, Id chargeId) {

@@ -49,10 +49,7 @@
         <aggregateTypes>Average</aggregateTypes>
         <field>AGE</field>
     </columns>
-    <currency>GBP</currency>
     <description>Closed Won and Lost Opportunities</description>
-    <filter>
-    </filter>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>

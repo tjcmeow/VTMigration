@@ -41,7 +41,6 @@
     <columns>
         <field>CLOSED</field>
     </columns>
-    <currency>GBP</currency>
     <filter>
         <criteriaItems>
             <column>OPEN</column>

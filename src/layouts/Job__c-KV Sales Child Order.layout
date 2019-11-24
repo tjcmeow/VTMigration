@@ -24,7 +24,7 @@
                 <field>Customer_Purchase_Order_Number__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
+                <behavior>Required</behavior>
                 <field>Partner__c</field>
             </layoutItems>
             <layoutItems>
@@ -32,11 +32,11 @@
                 <field>Sales_Office__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
+                <behavior>Required</behavior>
                 <field>Legal_Entity__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
+                <behavior>Required</behavior>
                 <field>Product_Type__c</field>
             </layoutItems>
             <layoutItems>
@@ -56,7 +56,7 @@
                 <field>Renewal_Order__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
                 <field>Initial_Term__c</field>
             </layoutItems>
             <layoutItems>
@@ -70,22 +70,6 @@
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>Master_Order_Number__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>IITIntended_Use__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>DocuSign_Status__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>CurrencyL__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Currency_Symbol__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -113,6 +97,10 @@
                 <behavior>Readonly</behavior>
                 <field>Scheduled_Date__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>External_Id__c</field>
+            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
@@ -131,7 +119,7 @@
                 <field>Preferred_Addressee__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
+                <behavior>Required</behavior>
                 <field>Billing_Contact__c</field>
             </layoutItems>
             <layoutItems>
@@ -248,6 +236,10 @@
                 <field>Number_of_Terms__c</field>
             </layoutItems>
             <layoutItems>
+                <behavior>Required</behavior>
+                <field>IITIntended_Use__c</field>
+            </layoutItems>
+            <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>Service_End_Date__c</field>
             </layoutItems>
@@ -343,6 +335,14 @@
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>VAT_Roll_Up__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>CurrencyL__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Currency_Symbol__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
@@ -498,7 +498,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h1300000CIVlv</masterLabel>
+        <masterLabel>00h4J000002Gif1</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

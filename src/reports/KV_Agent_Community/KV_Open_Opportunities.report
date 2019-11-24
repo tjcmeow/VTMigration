@@ -80,7 +80,6 @@
     <columns>
         <field>CONTACT</field>
     </columns>
-    <currency>USD</currency>
     <filter>
         <criteriaItems>
             <column>Account.Sales_Office__c</column>

@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
     <customButtons>Statement_by_Legal_Entity</customButtons>
-    <excludeButtons>DataDotComAccountInsights</excludeButtons>
-    <excludeButtons>DataDotComCompanyHierarchy</excludeButtons>
+    <excludeButtons>DataDotComClean</excludeButtons>
     <excludeButtons>Submit</excludeButtons>
     <layoutSections>
         <customLabel>true</customLabel>
@@ -109,7 +108,7 @@
                 <field>Active_Orders__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Readonly</behavior>
                 <field>Previous_Name_s__c</field>
             </layoutItems>
         </layoutColumns>
@@ -387,6 +386,15 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
+        <fields>Invoice_Date__c</fields>
+        <fields>Total_Invoice_Value__c</fields>
+        <fields>Invoice_Status__c</fields>
+        <fields>Status_Flag__c</fields>
+        <fields>Payment_Status__c</fields>
+        <relatedList>Invoice__c.Account__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
         <relatedList>Invoice_Line__c.Account__c</relatedList>
     </relatedLists>
     <relatedLists>
@@ -396,15 +404,6 @@
         <fields>Allocated_Amount__c</fields>
         <fields>Unallocated_Amount__c</fields>
         <relatedList>Payment__c.Account__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
-        <fields>Invoice_Date__c</fields>
-        <fields>Total_Invoice_Value__c</fields>
-        <fields>Invoice_Status__c</fields>
-        <fields>Status_Flag__c</fields>
-        <fields>Payment_Status__c</fields>
-        <relatedList>Invoice__c.Account__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
@@ -441,23 +440,6 @@
     <relatedLists>
         <fields>NAME</fields>
         <relatedList>Customer_Statement__c.Account__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>OPPORTUNITY.NAME</fields>
-        <fields>ACCOUNT.NAME</fields>
-        <fields>OPPORTUNITY.CLOSE_DATE</fields>
-        <relatedList>Opportunity.Shipping_Account__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
-        <relatedList>RMA__c.Account__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>CASES.CASE_NUMBER</fields>
-        <fields>CASES.SUBJECT</fields>
-        <fields>CASES.CREATED_DATE</fields>
-        <fields>CASES.PRIORITY</fields>
-        <relatedList>Case.VOD_Production_Account__c</relatedList>
     </relatedLists>
     <relatedObjects>ParentId</relatedObjects>
     <showEmailCheckbox>false</showEmailCheckbox>

@@ -101,7 +101,7 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>OrderCommisionTriggerHandlerClass</apexClass>
+        <apexClass>VTMig_OrderCommisionTriggerHandler</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>

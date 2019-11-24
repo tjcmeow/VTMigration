@@ -11,13 +11,13 @@
  * 
  * ************************************************************/
 
-Public Class OrderCommisionTriggerHandlerClass{
+Public Class VTMig_OrderCommisionTriggerHandler {
     
     Public Static void AutoPopulateCommisionValues(List<Order_Commissions__c> ocListData,Map<Id,Order_Commissions__c> ocNewMapData,Map<Id,Order_Commissions__c> ocOldMapData,String DMLOperation){
         
         Set<ID> accIds = New Set<ID>();
         Set<String> validateMasterOrdersCommisions = New Set<String>(); 
-        Set<String> avoidOrderCommissionAgentDupes = New Set<String>();
+        Set<String> avoidOrderCommissionAgentDupes = New Set<String>(); 
         
         
         for(Order_Commissions__c orderCommision:ocListData){

@@ -27,7 +27,6 @@
     <columns>
         <field>CREATED_DATE</field>
     </columns>
-    <currency>USD</currency>
     <filter>
         <criteriaItems>
             <column>OWNER</column>

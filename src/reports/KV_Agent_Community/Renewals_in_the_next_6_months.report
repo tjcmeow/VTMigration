@@ -9,7 +9,6 @@
     <columns>
         <field>FK_$Account.Sales_Agent_Partner__c</field>
     </columns>
-    <currency>GBP</currency>
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
