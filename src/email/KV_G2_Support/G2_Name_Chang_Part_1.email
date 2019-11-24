@@ -1,0 +1,26 @@
+Dear Captain
+
+The patch has been  prepared to change the name of the vessel on our VOD unit, however prior to sending this we ask that you download a final training export file from the unit and send this to otm@webfta.videotel.co.uk
+
+I also require a copy of your database and would be grateful if you could follow the below instructions
+
+I have attached a file, it will produce a single file called “nvod-lfb-{datastamp}.zip” which contains both log and database files, it will allow us to examine and diagnose the issue on the machine. 
+
+Please extract the attached file and copy the file to an empty USB pen (FAT formatted). Please insert the pen into your VOD unit and leave inserted for about 10 minutes (the machine must be turned on). This will write the new file to the pen. Please can you send us the file created.
+
+Once we have received the above 2 items your patch will be sent
+
+Kind regards
+
+Videotel Support Team
+E:mail: support@videotel.com
+Direct Phone: +44 207 299 1801
+
+Videotel Marine International Ltd. 
+2nd Floor, The Place
+175 High Holborn
+London 
+WC1V 7AA
+United Kingdom
+
+{!Case.Thread_Id}

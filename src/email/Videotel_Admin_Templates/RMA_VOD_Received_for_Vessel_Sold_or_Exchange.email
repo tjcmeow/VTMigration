@@ -1,0 +1,3 @@
+This RMA for this Order: {!RMA__c.Order__c} has been received {!RMA__c.Date_Received__c}.
+
+The RMA reason for request was: {!RMA__c.Reason_for_RMA__c}.

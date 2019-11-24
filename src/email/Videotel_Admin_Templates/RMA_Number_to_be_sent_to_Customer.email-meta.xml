@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This template is used to send RMA number to Customer for KV Product Returns</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>RMA Number to be sent to Customer</name>
+    <style>none</style>
+    <subject>{!RMA__c.Name} for {!RMA__c.Order_Shipping_Acct__c}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

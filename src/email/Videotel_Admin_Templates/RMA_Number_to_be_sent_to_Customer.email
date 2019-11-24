@@ -1,0 +1,16 @@
+An RMA has been assigned to your account so you can return {!RMA__c.Asset__c}
+
+When returning {!RMA__c.Asset__c} please put the RMA number  {!RMA__c.Name} on the outside of your shipping box and return the product to Videotel HQ at:
+
+Videotel Marine International LTD
+Attn: Katie Gardner RMA {!RMA__c.Name}
+84 Newman Street
+London W1T 3 EU
+United Kingdom
+
+If you have any questions on this RMA please contact Videotel at +44 207 299 1800
+
+Thank you, 
+
+{!User.Name}
+{!User.Email}

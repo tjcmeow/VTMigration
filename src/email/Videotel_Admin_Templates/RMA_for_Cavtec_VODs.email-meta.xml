@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>RMA for Cavtec VODs</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>RMA for Cavtec VODs</name>
+    <style>none</style>
+    <subject>RMA # for VOD</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

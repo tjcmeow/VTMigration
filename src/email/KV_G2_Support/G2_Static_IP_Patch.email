@@ -1,0 +1,36 @@
+Dear Captain,
+
+Good day,
+
+Please find attached VOD update, which will set the static IP address for the VOD unit.
+
+After you have unzipped the file you will have two files :
+
+nvod_config.sig
+nvod_config
+
+Copy these two files to an empty USB that is 1-2GB in size and FAT32 formatted.
+
+To update the machine, plug a separate keyboard and monitor into the NVOD unit so you can see the progress.
+
+Once the information screen showing name, IP address is displayed, please press CTRL ALT F4 then insert the USB Key into the unit.
+
+After a while the NVOD unit will restart, remove the key and let it boot up to the information screen. You should now see the IP address has changed.
+
+Please let me know how you get on.
+
+Kind regards
+
+Videotel Support Team
+
+E:mail: support@videotel.com
+Direct Phone: +44 207 299 1801
+
+Videotel Marine International Ltd. 
+2nd Floor, The Place
+175 High Holborn
+London 
+WC1V 7AA
+United Kingdom
+
+{!Case.Thread_Id}

@@ -1,0 +1,37 @@
+Dear Captain
+Please find attached VOD update, which as requested by your Head Office will disable the add user functionality on your VOD unit.
+ 
+Please can you un-zip the contents of the zip file attached and copy them to an empty USB stick.
+ 
+After you have unzipped the file you will have two files :
+ 
+nvod_config.sig
+nvod_config
+ 
+Copy these two files to an empty USB key.
+ 
+Please insert the VODstick  directly into the VOD unit and leave  for 10 minutes so that the files can upload onto the unit.
+You will not receive a confirmation that this has completed
+ 
+Please then remove the VODstick from the unit and restart unit
+ 
+Please then log in as Administrator and go to OTM+
+The Add user button in the bottom right hand corner should not now be showing
+ 
+Please confirm that this has been applied.
+
+
+Kind regards
+
+Videotel Support Team
+E:mail: support@videotel.com
+Direct Phone: +44 207 299 1801
+
+Videotel Marine International Ltd. 
+2nd Floor, The Place
+175 High Holborn
+London 
+WC1V 7AA
+United Kingdom
+
+{!Case.Thread_Id}

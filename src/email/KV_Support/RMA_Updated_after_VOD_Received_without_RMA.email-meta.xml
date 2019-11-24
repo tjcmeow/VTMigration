@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Template to be used when VOD received without an RMA, but is now dispositioned</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>RMA Updated after VOD Received without RMA</name>
+    <style>none</style>
+    <subject>{!RMA__c.Name} - VOD Returned without an RMA#</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

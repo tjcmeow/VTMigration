@@ -1,0 +1,34 @@
+Dear Captain
+
+To add a new user:
+
+1.	Click Personnel from the main OTMplus menu.
+2.	Click Add User. The Create User screen is displayed.
+3.	Enter the first and last names of the user in the appropriate fields.
+4.	Enter the user's Training ID in the Training ID field.
+5.	Enter the Birth Date (dd/mm/yyyy)
+6.	Check the Credit Privilege? Checkbox if the new user is to be allowed to spend VOD/NVOD credits.
+7.	From the Rank drop-down menu, select the rank of the new user.
+8.	From the Nationality drop-down menu, select the nationality of the new user.
+9.	Enter the user name of the new user in the User Name field. The user name is the specific name for the user to login to the VOD/NVOD system.
+10.	Enter the password for the new user in the Password field. The password is the password used by the user when logging into the VOD/NVOD system.
+11.	From the Status drop-down menu, select whether the user is a Normal User or Administrator.
+12.	If the user is onboard, check the Sign On? Checkbox.
+13.	Enter a sign on date.
+14.	Click Save to save the new user to the system.
+15.	Click Refresh to display the user in the crew records.
+
+Best regards
+
+Videotel Support Team
+E:mail: support@videotel.com
+Direct Phone: +44 207 299 1801
+
+Videotel Marine International Ltd. 
+2nd Floor, The Place
+175 High Holborn
+London 
+WC1V 7AA
+United Kingdom
+
+{!Case.Thread_Id}

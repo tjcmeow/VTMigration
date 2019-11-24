@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Template to be used when VOD received on RMA</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>RMA VOD Replaced or Vessel Sold</name>
+    <style>none</style>
+    <subject>RMA {!RMA__c.Name}  - VOD Returned on Exchange or Vessel Sold</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

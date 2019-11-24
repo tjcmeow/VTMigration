@@ -1,0 +1,17 @@
+Dear {!RMA__c.Person_Requesting_RMA__c} :
+Dear Captain 
+
+Thank you for your e-mail. 
+
+After looking into the problem, our conclusion is that it is necessary to send you a replacement unit. Please check with your head office and advise shipping instruction for your replacement unit
+
+
+Once you have received the new unit. Please could you return the faulty unit only (NOT the monitor, keyboard, mouse or cables) to PIL SIN QSSD 
+
+An RMA has been assigned to your account so you can return the faulty unit
+
+When returning the unit,   please put the RMA number {!RMA__c.Name} on the outside of your shipping box, together with the vessel name. Also, mark the unit: Faulty computer, return to country of origin for repair. 
+
+
+Kind Regards
+Videotel Support

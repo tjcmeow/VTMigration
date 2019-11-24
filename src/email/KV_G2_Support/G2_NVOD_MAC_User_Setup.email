@@ -1,0 +1,50 @@
+Dear Captain
+
+So that the MAC users onboard can connect to the NVOD server the following instructions need to be followed
+
+The procedure for owners of OSX is as follows :
+
+1.) To begin editing the hosts file, you will need to use a Terminal window. 
+Open one either by clicking on Applications, then Utilities and then Terminal, 
+or by pressing Cmd-Spacebar to open Spotlight, typing Terminal and pressing 
+Return. 
+
+2.) We now need to open the hosts file for editing in the Terminal. We do this 
+by entering the following command (or Copy and Paste from below) at the Terminal 
+prompt: 
+sudo nano /private/etc/hosts 
+
+Press Return(enter). Terminal will ask you to enter your Administrator Password:
+
+Do so and again press Return (enter).
+
+3.) The hosts file will open in the Terminal window for editing:
+
+To navigate the hosts file, use your arrow keys to move up and down. The lines 
+beginning with the hash (#) symbol are comments and should not be edited. 
+
+4.) Use the ↓ Arrow Key to move the cursor to a blank space at the bottom of the 
+hosts file, and enter your new mapping here 10.0.2.60 nvod. 
+
+5.) To save the hosts file after editing, press Ctrl-o. This will bring up a 
+prompt for the file name to write to: 
+
+Press Return (enter) to save the hosts file. You can then exit editing the hosts file by 
+pressing Ctrl-x. This will return you to the Terminal prompt:
+
+Once complete please open a browser and type http://nvod
+
+Kind regards
+
+Videotel Support Team
+E:mail: support@videotel.com
+Direct Phone: +44 207 299 1801
+
+Videotel Marine International Ltd. 
+2nd Floor, The Place
+175 High Holborn
+London 
+WC1V 7AA
+United Kingdom
+
+{!Case.Thread_Id}

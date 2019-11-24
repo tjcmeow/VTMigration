@@ -1,0 +1,11 @@
+Good Day 
+
+An RMA has been assigned to your account so that you can destroy the VOD unit assigned to vessel {!RMA__c.Account__c} (IMO # {!RMA__c.Order_Shipping_Account_IMO__c}) under order {!RMA__c.Order__c}. 
+
+The RMA reason for request was: {!RMA__c.Reason_for_RMA__c}.
+
+Please sign the attached Contract Addendum and Affidavit of Destruction and return to AdministrationTeam@Videotel.com.
+
+Please note that rental charges will accrue until the date both the signed Contract Addendum/Affidavit of Destruction are received. There will also be an administration charge of £100 added to your account [delete if a Library].
+
+If you have any questions on this RMA, please contact AdministrationTeam@Videotel.com.

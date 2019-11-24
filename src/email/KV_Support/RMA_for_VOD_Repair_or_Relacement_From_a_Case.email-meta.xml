@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Template used for sending RMA# to Contact for VOD Return from a Case</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>RMA for VOD Repair or Replacement From a Case</name>
+    <style>none</style>
+    <subject>Case# {!Case.CaseNumber} - RMA # for VOD Return: &lt;________&gt;</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

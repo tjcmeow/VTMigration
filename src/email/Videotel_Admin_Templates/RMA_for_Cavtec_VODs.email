@@ -1,0 +1,12 @@
+An RMA has been assigned to your account so you can return your VOD unit.
+
+When returning, please put the RMA number {!RMA__c.Name} on the outside of your shipping box and return the product to Videotel Marine International at:
+
+Videotel Marine International
+Attn: Videotel Returns {!RMA__c.Name}
+2 Brunton Road
+Kenton Bankfoot
+Newcastle upon Tyne NE13 8AF
+United Kingdom
+
+If you have any questions on this RMA please contact Videotel at +44 (0)113 2337818

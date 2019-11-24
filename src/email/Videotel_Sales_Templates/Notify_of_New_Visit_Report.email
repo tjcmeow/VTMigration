@@ -1,0 +1,3 @@
+Hello, 
+
+Please find link to Visit Report: {!Visit_Report__c.Name} added by {!Visit_Report__c.CreatedBy} at  {!Visit_Report__c.Link}

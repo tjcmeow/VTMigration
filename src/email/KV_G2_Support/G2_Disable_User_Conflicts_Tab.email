@@ -1,0 +1,27 @@
+Dear Captain
+
+The purpose of this update is to disable (remove) the Conflict Users tab in OTM on G2 units.
+
+Unzip the attached file and copy the contents onto your USB stick. Two files should be copied onto the media:
+
+nvod_config
+nvod_config.sig
+            
+Insert the USB stick into the NVOD server and wait 10 minutes. No notification is given when the process is complete.
+
+To complete the process, reboot the VOD box. Your issue should be fixed.
+
+Kind regards
+
+Videotel Support Team
+E:mail: support@videotel.com
+Direct Phone: +44 207 299 1801
+
+Videotel Marine International Ltd. 
+2nd Floor, The Place
+175 High Holborn
+London 
+WC1V 7AA
+United Kingdom 
+
+{!Case.Thread_Id}

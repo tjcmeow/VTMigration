@@ -1,0 +1,32 @@
+Dear Captain,
+
+Thank you for your e-mail.
+
+Please try this procedure.
+
+1. Insert your VODStick into a different computer.
+2. In the 'My Computer' section, right click the drive that the VODStick has been allocated to. (It may be simply displayed as 'USB Mass Storage Device')
+3. Click 'Format'
+4. A box will appear starting with the capacity size. Make sure the File System is set to 'FAT'
+5. If it isn't already listed, type the word 'VODStick' in the Volume Label.
+6. Click 'Start'
+7. Click 'OK' that you want to erase all files. When it has finished, click 'OK' again and remove the VODStick.
+8. Select the 'Refresh' option from the 'Edit' menu. Check that the VODStick drive is present with an appropriate letter. 
+
+Alternatively, you could try using a different USB stick.
+
+Please ensure you have tried using all the USB ports on the unit.
+
+Kind regards
+
+Videotel Support Team
+E:mail: support@videotel.com
+Direct Phone: +44 207 299 1801
+
+Videotel Marine International Ltd. 
+84 Newman Street 
+London 
+W1T 3EU 
+United Kingdom 
+
+{!Case.Thread_Id}

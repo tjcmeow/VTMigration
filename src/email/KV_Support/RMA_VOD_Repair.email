@@ -1,0 +1,3 @@
+Refer to RMA {!RMA__c.Name} to find a VOD that has been returned for repair or replacement.
+
+{!RMA__c.Case_Reference_ID__c}

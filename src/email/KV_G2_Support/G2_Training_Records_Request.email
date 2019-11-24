@@ -1,0 +1,55 @@
+Dear Captain,
+
+You can sign-on (add) and sign-off (remove) crew from your VOD unit by sending an e-mail to otm@videotel-cloud.com.
+
+Please make sure to format your request as follows.
+
+The subject line MUST read:
+
+Crew Request – vessel’s IMO number
+
+e.g.
+
+                Crew Request - 9103452
+
+In the message body please list the crew IDs you wish to sign-on (add); one per line:
+
+e.g.
+
+                561882
+                384377
+
+To sign-off (remove) a crew member place a – (minus sign) in front of the crew ID; one per line:
+
+e.g.
+
+                -215912
+                -334484
+
+You can include sign-on and sign-off requests in the same e-mail but please remember to only put one crew ID per line.
+
+Please do not add any other text, comments, requests or explanation to the body or your e-mail. If you require support please contact our Support team at support@videotel.com
+
+On receipt of your e-mail a crew import file containing the requested changes will be generated and returned to your e-mail address automatically.
+
+If you have crew that are new to the Company then you will need to contact your Head Office to ensure that their details have been registered in the database.  If the details are not registered then you will not get these crew members included in the crew file you receive.
+
+(Some users will know that crew assignment requests have, in the past, been sent to otm@webfta.videotel.co.uk; please note that this address will continue to work for the foreseeable future however otm@videotel-cloud.com is the preferred address).
+ 
+In case of any queries please do not hesitate to contact us at support@videotel.com - in the case of requests that aren’t completed automatically by the server.
+
+
+Kind regards
+
+Videotel Support Team
+E:mail: support@videotel.com
+Direct Phone: +44 207 299 1801
+
+Videotel Marine International Ltd. 
+2nd Floor, The Place
+175 High Holborn
+London 
+WC1V 7AA
+United Kingdom 
+
+{!Case.Thread_Id}

@@ -1,0 +1,9 @@
+Good Day
+
+The materials for vessel {!RMA__c.Order_Shipping_Acct__c}  (IMO {!RMA__c.Order_Shipping_Account_IMO__c}) under order {!RMA__c.Order__c}  have been received on {!RMA__c.Date_Received__c}.
+
+The RMA reason for request was: {!RMA__c.Reason_for_RMA__c}.
+
+Please confirm to the customer that this return has been received.
+
+If you have any questions on this RMA, please contact AdministrationTeam@Videotel.com.

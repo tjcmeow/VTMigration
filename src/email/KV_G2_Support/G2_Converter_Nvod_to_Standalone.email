@@ -1,0 +1,34 @@
+Dear Captain,
+
+The attached files will convert your VOD unit to a Standalone unit
+
+This update needs to be installed directly onto the VOD.
+
+The attached file should be unzipped.
+
+Can you take the nvod_config and nvod_config.sig out of the zipped folder so that they are directly on the USB stick.
+
+Please ensure that you are downloading the attached files to the blue VODStick or a USB that is 1-2GB in size and FAT32 formatted.
+
+Please press CTRL+ALT+F4 before inserting USB stick. You will receive a prompt to proceed.
+
+Process will take about 10 seconds to run. Once the patch has been applied, the system will display:
+
+"The G2 needs to restart. Please remove any VODSticks or DVDs and press any key when ready.”
+
+After system reboot, your unit will be a Standalone unit
+
+Kind regards,
+
+Videotel Support Team
+E:mail: support@videotel.com
+Direct Phone: +44 207 299 1801
+
+Videotel Marine International Ltd. 
+2nd Floor, The Place
+175 High Holborn
+London 
+WC1V 7AA
+United Kingdom
+
+{!Case.Thread_Id}

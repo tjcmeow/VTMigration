@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>KV Case AutoResponse for New Case</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Technical_Support_Letterhead</letterhead>
+    <name>KV Case Auto Response Template</name>
+    <style>freeForm</style>
+    <subject>KVH/VIdeotel Support Case #: {!Case.CaseNumber}.{!Case.Subject}</subject>
+    <textOnly>Thank you for submitting your support request to KVH / Videotel Support!
+
+
+
+A KVH Services or Support Agent may be contacting you regarding your feedback.
+
+
+Your Case # is: {!Case.CaseNumber}.  Please refer to this case number in any correspondence you have with myKVH Support.
+
+
+
+-------------------------------------------------------------------------------------------------
+
+From: {!Case.SuppliedEmail}, {!Case.SuppliedName}
+
+Description: {!Case.Description}
+
+------------------------------------------------------------------------------------------------
+
+{!Case.Thread_Id}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,30 @@
+Dear Captain,
+
+On the main VOD log-in screen
+1 Press ALT CTRL F6.
+1.1 You should see the "Product Installer for VOD G2" screen.
+
+2 Now press CTRL G
+2.1 This will take you to the admin screen.
+
+3 From the admin screen first press 3 to stop the services.
+3.1 When the menu is visible again reset the cache by pressing 1
+3.2 Once the cache is clear and the menu is visible again press 4 to start the services back up again.
+
+4 Press m to get back to the main activity menu.  
+You should start to see products in the pending (p) list transferring to your installed list (i)
+
+Kind regards,
+
+Videotel Support Team
+E:mail: support@videotel.com
+Direct Phone: +44 207 299 1801
+
+Videotel Marine International Ltd. 
+2nd Floor, The Place
+175 High Holborn
+London 
+WC1V 7AA
+United Kingdom
+
+{!Case.Thread_Id}

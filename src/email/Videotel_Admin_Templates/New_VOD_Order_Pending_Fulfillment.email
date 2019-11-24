@@ -1,0 +1,7 @@
+This case is being assigned to the VOD Production Team to Review a new orrder for VOD Fulfillment.
+
+Please refer to this Order record for all of the details pertaining to the Static IP: 
+{!invoiceit_s__Job_Rate_Plan_Charge__c.invoiceit_s__Order__c}
+Order ID: {!invoiceit_s__Job_Rate_Plan_Charge__c.OrderID__c}
+Order Rate Plan Charge: {!invoiceit_s__Job_Rate_Plan_Charge__c.Name}
+Count of Titles:{!invoiceit_s__Job_Rate_Plan_Charge__c.Count_Of_Titles__c}

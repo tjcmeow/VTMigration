@@ -1,0 +1,38 @@
+Dear Captain
+
+Please ensure that the following instructions are followed
+
+Add the administrator 
+  First Name :  
+  Last Name : 
+  Birth Date :   
+  Training ID : 
+  User Name :(leave same as Training ID)  
+  Password :  
+  Confirm Password : 
+
+Adding vessel details 
+  Vessel Name :  (can’t change)  
+  Ship Type :        (can’t change)   
+  Vessel Email :  (if default is ctsadmin@videotel.com, leave as that, if default is vessel email, do not change)
+  DWT :  (numbers only, letters will not be accepted) 
+  Year Build : 
+  Engine :  (no spaces or special characters)
+  Flag State :   
+  Telex :  (no spaces)
+
+
+Kind regards
+
+Videotel Support Team
+E:mail: support@videotel.com
+Direct Phone: +44 207 299 1801
+
+Videotel Marine International Ltd. 
+2nd Floor, The Place
+175 High Holborn
+London 
+WC1V 7AA
+United Kingdom
+
+{!Case.Thread_Id}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Request to Videotel Admin Team to destroy VOD Unit</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Destroy VOD Unit</name>
+    <style>none</style>
+    <subject>RMA has been assigned to your account so that you can destroy the VOD unit</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

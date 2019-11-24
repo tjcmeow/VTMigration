@@ -1,0 +1,49 @@
+Dear Captain
+
+We would like you to run the 'system restore' program built into VOD.  This will return the machine to the factory settings and should solve this problem.
+ 
+However, before carrying out the procedure, you should first back up your OTM+ Training records as these would be lost during the restore. To do this please follow these instructions:
+ 
+1. Start OTM+ from the Administrator screen
+2. On the menu bar click 'Admin Tools'
+3. Select 'Backup/Restore'
+4. A Window appears with the 'Backup' tab already displayed. Insert your Vodstick and click the 'Backup' button.
+5. This will create a file with all your training records with the file extension '.obk' on the VODstick.
+6. For peace of mind, check the file exists by inserting the VODstick on another computer.
+7. Exit out from the Administrator section and turn off the VODBox.
+ 
+Once you have done this, please follow these instructions for the system restore:
+ 
+1. Switch ON your VOD.
+ 
+1.  As soon as your see the first screen saying 'Shuttle XPC', hold down the 'alt' key.
+ 
+2. After about 10 seconds a screen called: Videotel VOD Recovery System: will appear.
+ 
+3.  Click OK.
+ 
+The recovery will take about 10 hours to complete. Following the system restore, you will need to send us an activation key in the same way as when you first used your VODbox. Once this has been done, you can then add your training records back to OTM+. To do this please follow these instructions:
+ 
+1. Start OTM+ from the Administrator screen
+2. On the menu bar click 'Admin Tools'
+3. Select 'Backup/Restore'
+4. Select the 'Restore' tab
+5. Insert your VODstick and highlight the restore file
+6. Click 'Restore' and then answer 'Yes' to confirm.
+7. Your training records will then be added to your OTM+ section
+ 
+Please let us know how you get on.
+
+Kind regards
+
+Videotel Support Team
+E:mail: support@videotel.com
+Direct Phone: +44 207 299 1801
+
+Videotel Marine International Ltd. 
+84 Newman Street 
+London 
+W1T 3EU 
+United Kingdom 
+
+{!Case.Thread_Id}

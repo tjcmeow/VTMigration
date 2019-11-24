@@ -1,0 +1,5 @@
+Refer to RMA {!RMA__c.Name} to find a VOD that has been because the Vessel has been sold or the unit is sent back for Exchange / Renewal.
+
+Reference this order. {!RMA__c.Order__c}
+
+The Date Remove will need to be updated on the Asset, and the assed moved to the VOD End of Life Account.

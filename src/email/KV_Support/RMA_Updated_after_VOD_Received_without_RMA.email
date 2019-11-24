@@ -1,0 +1,5 @@
+Refer to RMA {!RMA__c.Name} to find a VOD that had been received without an RMA, but the reason has now been clarified and updated on the RMA.
+
+Reference this order. {!RMA__c.Order__c}
+
+The Order for the returned RMA will need to be researched and updated for the correct order.

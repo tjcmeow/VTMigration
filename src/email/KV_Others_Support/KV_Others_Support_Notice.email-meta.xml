@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Give this Email a Description so you will know when and why you send this email</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>KV Others Support Notice</name>
+    <style>none</style>
+    <subject>Videotel Support for  {!Account.Name}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

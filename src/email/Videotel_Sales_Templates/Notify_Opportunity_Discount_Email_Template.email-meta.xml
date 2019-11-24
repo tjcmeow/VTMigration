@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notify the Approver of a new Discount for Approval</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Notify Opportunity Discount Email Template</name>
+    <style>none</style>
+    <subject>An approval request need to be approved For Opportunity: {!Opportunity.Name}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>
