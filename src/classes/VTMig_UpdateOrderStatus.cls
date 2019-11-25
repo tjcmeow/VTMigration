@@ -19,7 +19,8 @@ public with sharing class VTMig_UpdateOrderStatus {
         selectedCharges = [SELECT Id, Name, Product_Charge_Category__c, Subscription_Product__c, Job_Rate_Plan__r.Job_Product__r.Name,
                 Job_Rate_Plan__r.Job_Product__r.Product__c, Product_Rate_Plan_Charge__c, Job_Rate_Plan__r.Job_Product__r.Product_Code__c,
                 Title_Product__c, Unit_Of_Measurement__c, Price_Type__c, Price_Format__c, Unit_Price__c, Uplift__c, Auto_Renew__c, Courier__c,
-                Quantity__c, Job_Rate_Plan__r.Product_Rate_Plan__c, Row_Total__c, Airway_Bill_Number__c, Service_End_Date__c, Service_Activation_Date__c, Status__c
+                Quantity__c, Job_Rate_Plan__r.Product_Rate_Plan__c, Row_Total__c, Airway_Bill_Number__c, Service_End_Date__c,
+                Service_Activation_Date__c, Status__c, Discount_Value__c
         FROM Job_Rate_Plan_Charge__c WHERE Order__c = : orderId];
     }
 
@@ -35,6 +36,9 @@ public with sharing class VTMig_UpdateOrderStatus {
         update newOrder;
         for(Job_Rate_Plan_Charge__c selectedCharge : selectedCharges) {
             selectedCharge.Price__c = selectedCharge.Unit_Price__c * selectedCharge.Quantity__c;
+            if(selectedCharge.Discount_Value__c == null) {
+                selectedCharge.Discount_Value__c = 0;
+            }
             selectedCharge.Net_Total__c = selectedCharge.Price__c - selectedCharge.Discount_Value__c;
         }
         update selectedCharges;

@@ -46,7 +46,7 @@
                     <apex:inputField value="{!charge.Auto_Renew__c}"/>
                 </apex:column>
                 <apex:column headerValue="Price Type">
-                    <apex:inputField value="{!charge.Price_Type__c}"/>
+                    <apex:outputField value="{!charge.Price_Type__c}"/>
                 </apex:column>
                 <apex:column headerValue="Uplift">
                     <apex:inputField value="{!charge.Uplift__c}"/>

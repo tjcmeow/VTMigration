@@ -250,6 +250,31 @@
         <type>Picklist</type>
     </fields>
     <fields>
+        <fullName>Account_Currency__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used for Walport Training</inlineHelpText>
+        <label>Account Currency</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>GBP</fullName>
+                    <default>false</default>
+                    <label>GBP</label>
+                </value>
+                <value>
+                    <fullName>USD</fullName>
+                    <default>false</default>
+                    <label>USD</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>Account_Name_Text_NOT_EDITABLE__c</fullName>
         <externalId>false</externalId>
         <formula>Name</formula>
@@ -3771,6 +3796,32 @@ Account.Product_Interest_2__c</description>
             </valueSetDefinition>
         </valueSet>
         <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Prospect_Type__c</fullName>
+        <description>Part of SFT Changes</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This the of Prospect Account Type.</inlineHelpText>
+        <label>Account Type (Prospect)</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Customer</fullName>
+                    <default>false</default>
+                    <label>Customer</label>
+                </value>
+                <value>
+                    <fullName>Partner</fullName>
+                    <default>false</default>
+                    <label>Partner</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Rating</fullName>

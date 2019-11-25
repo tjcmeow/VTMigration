@@ -793,6 +793,59 @@
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>Partner_Role__c</fullName>
+        <description>Mapped to Account Partner Role - SFT Change</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Mapped to Account Partner Role.</inlineHelpText>
+        <label>Partner Role</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Lead_Type__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Dealer</fullName>
+                    <default>false</default>
+                    <label>Dealer</label>
+                </value>
+                <value>
+                    <fullName>Distributor</fullName>
+                    <default>false</default>
+                    <label>Distributor</label>
+                </value>
+                <value>
+                    <fullName>Rep</fullName>
+                    <default>false</default>
+                    <label>Rep</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Partner</controllingFieldValue>
+                <valueName>Dealer</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Partner</controllingFieldValue>
+                <valueName>Distributor</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Partner</controllingFieldValue>
+                <valueName>Rep</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Partner</controllingFieldValue>
+                <valueName>Other</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>Phone</fullName>
         <trackFeedHistory>false</trackFeedHistory>
     </fields>

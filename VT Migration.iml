@@ -10800,6 +10800,7 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="RMA__c-RMA Layout" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Scorecard-Scorecard Layout" />

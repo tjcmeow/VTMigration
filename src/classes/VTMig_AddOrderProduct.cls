@@ -101,6 +101,7 @@ public with sharing class VTMig_AddOrderProduct {
                             Title_Product__c, Unit_Of_Measurement__c, Price_Type__c, Pricing_Format__c, Unit_Price__c,
                             Quantity__c, Product_Rate_Plan__r.Product__r.Product_Code__c, Uplift__c
                     FROM Product_Rate_Plan_Charge__c WHERE Product_Rate_Plan__c = : selectedPlanId];
+            prodCharges.clear();
             for(Product_Rate_Plan_Charge__c charge : charges) {
                 ProdCharge newProdCharge = new ProdCharge();
                 newProdCharge.prodCharge = charge;
