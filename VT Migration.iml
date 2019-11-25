@@ -181,6 +181,14 @@
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="VTMig_NewOrder" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="VTMig_NewOrder_Test" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="VTMig_OppProductsInlineController" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
@@ -367,7 +375,7 @@
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="VTMig_CreateOrderFromOpp" />
+                            <option name="name" value="VTMig_NewOrder" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -10597,6 +10605,14 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Job_Rate_Plan_Charge_Tier__c-Order Rate Plan Charge Tier Layout" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Lead-KV Lead" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Lead-KV Partner Lead" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>

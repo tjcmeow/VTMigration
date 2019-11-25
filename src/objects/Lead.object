@@ -317,6 +317,77 @@
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>Chart_File_Delivery_Method__c</fullName>
+        <description>How are digital charts and operational files currently delivered to the vessel?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>How are digital charts and operational files currently delivered to the vessel?</inlineHelpText>
+        <label>Chart/File Delivery Method</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Background/multicast satellite delivery</fullName>
+                    <default>false</default>
+                    <label>Background/multicast satellite delivery</label>
+                </value>
+                <value>
+                    <fullName>CDs</fullName>
+                    <default>false</default>
+                    <label>CDs</label>
+                </value>
+                <value>
+                    <fullName>Flash drives</fullName>
+                    <default>false</default>
+                    <label>Flash drives</label>
+                </value>
+                <value>
+                    <fullName>Primary SATCOM plan</fullName>
+                    <default>false</default>
+                    <label>Primary SATCOM plan</label>
+                </value>
+                <value>
+                    <fullName>Separate SATCOM subscription</fullName>
+                    <default>false</default>
+                    <label>Separate SATCOM subscription</label>
+                </value>
+                <value>
+                    <fullName>Wi-Fi in port</fullName>
+                    <default>false</default>
+                    <label>Wi-Fi in port</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Charter__c</fullName>
+        <externalId>false</externalId>
+        <label>Charter</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>Company</fullName>
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
@@ -478,6 +549,18 @@
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
+        <fullName>Import_ID__c</fullName>
+        <description>Used to track the import record ID., i.e. Importing Leads from HM Walport SFDC</description>
+        <externalId>false</externalId>
+        <label>Import ID</label>
+        <length>24</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>IndividualId</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Lookup</type>
@@ -501,6 +584,31 @@
         <valueSet>
             <restricted>true</restricted>
             <valueSetName>Job_Function</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>KVH_Sales_Office__c</fullName>
+        <description>This field represents Sales office with which the lead will most likely be associated. It provides a means for summary reporting by each particular Sales office. This Picklist should always match the corresponding Picklist in the Account Object</description>
+        <externalId>false</externalId>
+        <label>KVH Sales Office</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>KV UK</fullName>
+                    <default>false</default>
+                    <label>KV UK</label>
+                </value>
+                <value>
+                    <fullName>KV Asia</fullName>
+                    <default>false</default>
+                    <label>KV Asia</label>
+                </value>
+            </valueSetDefinition>
         </valueSet>
     </fields>
     <fields>

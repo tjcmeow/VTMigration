@@ -1,0 +1,65 @@
+<!--
+ - Created by triciaigoe on 2019-11-24.
+ -->
+
+<apex:page id="VTMig_NewOrder" standardController="Job__c" extensions="VTMig_NewOrder">
+
+    <script>
+        function confirmCancel() {
+            var isCancel = confirm("Cancelling this would discard the changes.  Please confirm.");
+            if (isCancel) return true;
+            return false;
+        }
+    </script>
+
+    <apex:sectionHeader subtitle="{!'(Record Type : '+recordTypeName+' )'}" title="Order Edit" />
+
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockButtons location="both">
+                <apex:commandButton action="{!saveOrder}" value="Save"/>
+                <apex:commandButton action="{!cancel}" value="Cancel" onclick="return confirmCancel()" immediate="true" />
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection title="{!'Order Information - '+recordTypeName}" collapsible="true" columns="2" id="table">
+                <apex:outputField value="{!order.Order_Number__c}"/>
+                <apex:inputField value="{!order.Name}"/>
+                <apex:inputField value="{!order.Customer_Purchase_Order_Number__c}"/>
+                <apex:inputField value="{!order.CurrencyL__c}"/>
+                <apex:inputField value="{!order.Account__c}"/>
+                <apex:inputField value="{!order.Billing_Account__c}"/>
+                <apex:inputField value="{!order.Initial_Term__c}"/>
+                <apex:inputField value="{!order.Preferred_Addressee__c}"/>
+                <apex:inputField value="{!order.Shipping_Account__c}"/>
+                <apex:inputField value="{!order.BillingStreet__c}"/>
+                <apex:inputField value="{!order.BillingCity__c}"/>
+                <apex:inputField value="{!order.BillingState__c}"/>
+                <apex:inputField value="{!order.BillingCountry__c}"/>
+                <apex:inputField value="{!order.BillingPostalCode__c}"/>
+                <apex:inputField value="{!order.Billing_and_Shipping_Address_the_same__c}"/>
+                <apex:inputField value="{!order.Partner__c}"/>
+                <apex:inputField value="{!order.Billing_and_Shipping_ACCOUNTS_the_same__c}"/>
+                <apex:inputField value="{!order.Billing_Contact__c}"/>
+                <apex:inputField value="{!order.Partner_Agent__c}"/>
+                <apex:inputField value="{!order.Start_Date__c}"/>
+                <apex:inputField value="{!order.Despatch_Date__c}"/>
+                <apex:inputField value="{!order.Second_Billing_Contact__c}"/>
+                <apex:inputField value="{!order.X3rd_Billing_Contact__c}"/>
+                <apex:inputField value="{!order.Status__c}"/>
+                <apex:inputField value="{!order.Payment_Terms__c}"/>
+                <apex:inputField value="{!order.Legal_Entity__c}"/>
+                <apex:inputField value="{!order.IITIntended_Use__c}"/>
+                <apex:inputField value="{!order.Platform_or_Vessel_detail__c}"/>
+                <apex:inputField value="{!order.Regional_Format__c}"/>
+                <apex:inputField value="{!order.Invoice_Details__c}"/>
+                <apex:inputField value="{!order.Withholding_Tax_Percentage__c}"/>
+                <apex:inputField value="{!order.Order_Type_VT__c}"/>
+                <apex:inputField value="{!order.Alignment_Date_1__c}"/>
+                <apex:inputField value="{!order.Test_Invoice_Creation__c}"/>
+                <apex:inputField value="{!order.Alignment_Date_2__c}"/>
+                <apex:inputField value="{!order.Product_Type__c}"/>
+                <apex:inputField value="{!order.Scheduled_Date__c}"/>
+                <apex:inputField value="{!order.Official_Termination_Given__c}"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
