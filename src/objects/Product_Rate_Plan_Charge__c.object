@@ -149,7 +149,7 @@
     <enableHistory>false</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>false</enableReports>
-    <enableSearch>false</enableSearch>
+    <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>ControlledByParent</externalSharingModel>
@@ -197,6 +197,18 @@
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CurrencyL__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Currency</label>
+        <referenceTo>Currency__c</referenceTo>
+        <relationshipLabel>Product Rate Plan Charges</relationshipLabel>
+        <relationshipName>Product_Rate_Plan_Charges</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
     </fields>
     <fields>
         <fullName>Default_Quantity__c</fullName>
@@ -508,6 +520,19 @@
         <type>Percent</type>
     </fields>
     <label>Product Rate Plan Charge</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Default_Quantity__c</columns>
+        <columns>External_ID__c</columns>
+        <columns>Product_Rate_Plan__c</columns>
+        <columns>Quantity__c</columns>
+        <columns>Unit_Price__c</columns>
+        <columns>Unit_Of_Measurement__c</columns>
+        <columns>Revenue_Recognition_Rule__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
     <nameField>
         <label>Product Rate Plan Charge Name</label>
         <type>Text</type>

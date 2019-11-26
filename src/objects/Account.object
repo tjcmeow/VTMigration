@@ -250,31 +250,6 @@
         <type>Picklist</type>
     </fields>
     <fields>
-        <fullName>Account_Currency__c</fullName>
-        <externalId>false</externalId>
-        <inlineHelpText>This field is used for Walport Training</inlineHelpText>
-        <label>Account Currency</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>GBP</fullName>
-                    <default>false</default>
-                    <label>GBP</label>
-                </value>
-                <value>
-                    <fullName>USD</fullName>
-                    <default>false</default>
-                    <label>USD</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
         <fullName>Account_Name_Text_NOT_EDITABLE__c</fullName>
         <externalId>false</externalId>
         <formula>Name</formula>
@@ -6853,6 +6828,17 @@ business/products</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Prospect_Type__c</picklist>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Rating</picklist>
             <values>
                 <fullName>Cold</fullName>
@@ -8430,6 +8416,17 @@ business/products</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Prospect_Type__c</picklist>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Rating</picklist>
             <values>
                 <fullName>Cold</fullName>
@@ -9983,6 +9980,17 @@ business/products</description>
             </values>
             <values>
                 <fullName>Training</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Prospect_Type__c</picklist>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -11543,6 +11551,17 @@ business/products</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Prospect_Type__c</picklist>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Rating</picklist>
             <values>
                 <fullName>Cold</fullName>
@@ -12479,6 +12498,17 @@ business/products</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Prospect_Type__c</picklist>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Rating</picklist>
             <values>
                 <fullName>Cold</fullName>
@@ -12618,7 +12648,7 @@ business/products</description>
         <searchResultsAdditionalFields>Parent_Account_Text__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Previous_Name_s__c</searchResultsAdditionalFields>
     </searchLayouts>
-    <sharingModel>Private</sharingModel>
+    <sharingModel>ReadWrite</sharingModel>
     <validationRules>
         <fullName>Company_IMO_Number_7_digits</fullName>
         <active>true</active>

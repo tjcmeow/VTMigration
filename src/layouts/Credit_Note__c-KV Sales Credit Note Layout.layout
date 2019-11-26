@@ -38,6 +38,10 @@
                 <behavior>Readonly</behavior>
                 <field>Legal_Entity__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>CurrencyL__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

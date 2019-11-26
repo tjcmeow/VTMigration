@@ -346,6 +346,8 @@
         <searchFilterFields>Description__c</searchFilterFields>
         <searchResultsAdditionalFields>Description__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Commissionable_Product__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Effective_Period__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>External_ID__c</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>

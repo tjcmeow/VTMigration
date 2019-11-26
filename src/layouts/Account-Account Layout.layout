@@ -352,10 +352,23 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
+        <fields>Order_Number__c</fields>
+        <fields>Shipping_Contact__c</fields>
+        <fields>Status__c</fields>
+        <fields>Total__c</fields>
+        <fields>Master_Order_Record_Id__c</fields>
+        <fields>Master_Order__c</fields>
         <relatedList>Job__c.Account__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
+        <fields>Order_Number__c</fields>
+        <fields>Account__c</fields>
+        <fields>Shipping_Contact__c</fields>
+        <fields>Status__c</fields>
+        <fields>Total__c</fields>
+        <fields>Master_Order_Record_Id__c</fields>
+        <fields>Master_Order__c</fields>
         <relatedList>Job__c.Shipping_Account__c</relatedList>
     </relatedLists>
     <relatedLists>

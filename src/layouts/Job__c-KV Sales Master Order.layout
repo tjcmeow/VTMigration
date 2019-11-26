@@ -69,6 +69,10 @@
                 <behavior>Readonly</behavior>
                 <field>Currency_Symbol__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Legacy_Created_Date__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

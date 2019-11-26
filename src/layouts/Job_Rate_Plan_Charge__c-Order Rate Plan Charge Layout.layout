@@ -8,10 +8,6 @@
         <label>Information</label>
         <layoutColumns>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Charge_Name__c</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Required</behavior>
                 <field>Name</field>
             </layoutItems>
@@ -39,14 +35,6 @@
                 <behavior>Readonly</behavior>
                 <field>OrderID__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>External_Id__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>CurrencyL__c</field>
-            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -72,6 +60,10 @@
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>Select_Titles__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>External_Id__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
@@ -370,23 +362,7 @@
     </layoutSections>
     <relatedLists>
         <fields>NAME</fields>
-        <relatedList>Job_Rate_Plan_Charge__c.Billing_Master_Order_Rate_Plan_Charge__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
-        <relatedList>Job_Rate_Plan_Charge__c.Charge_Adjusted_From__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
-        <relatedList>Job_Rate_Plan_Charge__c.Renewed_From__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
-        <relatedList>Job_Rate_Plan_Charge__c.Required_By__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
-        <relatedList>Dispatched_Item__c.Order_Rate_Plan_Charge__c</relatedList>
+        <relatedList>Revenue_Forecast__c.Order_Rate_Plan_Charge__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
@@ -394,23 +370,10 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
-        <relatedList>Credit_Line__c.Order_Rate_Plan_Charge__c</relatedList>
+        <relatedList>Order_Charge_Titles__c.Order_Rate_Plan_Charge__c</relatedList>
     </relatedLists>
     <relatedLists>
-        <fields>NAME</fields>
-        <relatedList>Revenue_Transaction__c.Order_Rate_Plan_Charge__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
-        <relatedList>Revenue_Forecast__c.Order_Rate_Plan_Charge__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
-        <relatedList>Job_Rate_Plan_Charge_Tier__c.Order_Rate_Plan_Charge__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
-        <relatedList>Quote_Rate_Plan_Charge__c.Renewed_From__c</relatedList>
+        <relatedList>RelatedEntityHistoryList</relatedList>
     </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>

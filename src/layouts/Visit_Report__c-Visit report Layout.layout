@@ -89,7 +89,7 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Main_competitor__c</field>
+                <field>Main_Competitor__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>

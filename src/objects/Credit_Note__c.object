@@ -401,6 +401,19 @@ IF(Legal_Entity__c == &apos;VMA&apos;, &apos;a0C1300001PXlHY&apos;, &apos;a0C130
         <type>Date</type>
     </fields>
     <fields>
+        <fullName>CurrencyL__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Currency</label>
+        <referenceTo>Currency__c</referenceTo>
+        <relationshipLabel>Credit Notes</relationshipLabel>
+        <relationshipName>Credit_Notes</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>Customer_Account_Number__c</fullName>
         <externalId>false</externalId>
         <formula>Related_Invoice__r.Customer_Reference__c</formula>

@@ -514,6 +514,19 @@
         <type>Summary</type>
     </fields>
     <fields>
+        <fullName>CurrencyL__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Currency</label>
+        <referenceTo>Currency__c</referenceTo>
+        <relationshipLabel>Invoices</relationshipLabel>
+        <relationshipName>Invoices</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>Customer_Reference__c</fullName>
         <externalId>false</externalId>
         <formula>Account__r.Customer_Account_Number__c</formula>
@@ -1692,39 +1705,7 @@ AND(Unpaid_Amount__c != 0, Paid_Amount__c != 0),
         <type>Text</type>
     </nameField>
     <pluralLabel>Invoices</pluralLabel>
-    <searchLayouts>
-        <customTabListAdditionalFields>Account__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Invoice_Date__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Total_Invoice_Value__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>CurrencyL__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Invoice_Status__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Status_Flag_KVH__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Payment_Status__c</customTabListAdditionalFields>
-        <excludedStandardButtons>New</excludedStandardButtons>
-        <lookupDialogsAdditionalFields>Invoice_Reference__c</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>Account__c</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>Invoice_Date__c</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>Total_Invoice_Value__c</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>CurrencyL__c</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>Invoice_Status__c</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>Payment_Status__c</lookupDialogsAdditionalFields>
-        <searchFilterFields>NAME</searchFilterFields>
-        <searchFilterFields>Account__c</searchFilterFields>
-        <searchFilterFields>Billing_Contact__c</searchFilterFields>
-        <searchFilterFields>Shipping_Contact__c</searchFilterFields>
-        <searchFilterFields>Invoice_Date__c</searchFilterFields>
-        <searchFilterFields>Total_Invoice_Value__c</searchFilterFields>
-        <searchFilterFields>CurrencyL__c</searchFilterFields>
-        <searchFilterFields>Invoice_Status__c</searchFilterFields>
-        <searchFilterFields>Payment_Status__c</searchFilterFields>
-        <searchFilterFields>CREATEDBY_USER</searchFilterFields>
-        <searchResultsAdditionalFields>Account__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Invoice_Date__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Total_Invoice_Value__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>CurrencyL__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Invoice_Status__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Payment_Status__c</searchResultsAdditionalFields>
-    </searchLayouts>
+    <searchLayouts/>
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
     <webLinks>
