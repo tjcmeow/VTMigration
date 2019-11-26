@@ -33,7 +33,7 @@ public with sharing class VTMig_CloneOrder {
                         Despatch_Date_Errors__c, Discount_Code__c, Discount_Value__c, Discount_Percent__c, Total__c, Has_Assets__c, Initial_Agreement_Date_BMS__c,
                         Initial_Term__c, Invoice_Batch__c, Invoice_Details__c, Is_Billing_Master_Order__c, Master_Order__c, Mid_Term_Order__c, Minimum_Next_Charge_Date_For_Product__c,
                         Name_of_Assessor__c, Nationality__c, Net_Total__c, No_Of_Child_Orders__c, Official_Termination_Given__c, Opportunity__c, Start_Date__c,
-                        Order_Number__c, Order_Type__c, Order_Type_VT__c, Override_VAT_Tax__c, Partner__c, Partner_Agent__c, Partner_Text__c, Payment_Terms__c,
+                        Order_Type__c, Order_Type_VT__c, Override_VAT_Tax__c, Partner__c, Partner_Agent__c, Partner_Text__c, Payment_Terms__c,
                         Preferred_Addressee__c, Preferred_Billing_Day__c, Product_Type__c, Recalculate__c, Regional_Format__c, Renewal_Order__c, Renewal_Terms_Months__c,
                         Renew_to__c, Scheduled_Date__c, Second_Billing_Contact__c, Service_Activation_Date__c, Service_End_Date__c, Ship_Count_BMS__c, BillingCity_Shipping__c,
                         BillingCountry_Shipping__c, BillingPostalCode_Shipping__c, BillingState_Shipping__c, BillingStreet_Shipping__c, Special_Terms__c, Special_Terms_Details__c,

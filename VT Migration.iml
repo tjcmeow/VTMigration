@@ -177,7 +177,11 @@
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="VTMig_CreateOrderFromOpp" />
+                            <option name="name" value="VTMig_IITClassAfterOnInvoiceLine" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="VTMig_IITCommonUtilClass" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -406,7 +410,11 @@
                       <option name="entries">
                         <list>
                           <MetadataEntry>
-                            <option name="name" value="OrderCommisionTrigger" />
+                            <option name="name" value="VTMig_OrderCommisionTrigger" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="VTMig_OrderInvoiceITTrigger" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
                         </list>

@@ -19,17 +19,13 @@
                 <behavior>Edit</behavior>
                 <field>Recognition_Date__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>External_ID__c</field>
-            </layoutItems>
         </layoutColumns>
         <layoutColumns/>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
     <layoutSections>
         <customLabel>false</customLabel>
-        <detailHeading>false</detailHeading>
+        <detailHeading>true</detailHeading>
         <editHeading>true</editHeading>
         <label>System Information</label>
         <layoutColumns>
@@ -57,47 +53,15 @@
         <style>CustomLinks</style>
     </layoutSections>
     <relatedLists>
-        <fields>TASK.SUBJECT</fields>
-        <fields>TASK.WHO_NAME</fields>
-        <fields>ACTIVITY.TASK</fields>
-        <fields>TASK.DUE_DATE</fields>
-        <fields>TASK.STATUS</fields>
-        <fields>TASK.PRIORITY</fields>
-        <fields>CORE.USERS.FULL_NAME</fields>
-        <relatedList>RelatedActivityList</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>TASK.SUBJECT</fields>
-        <fields>TASK.WHO_NAME</fields>
-        <fields>ACTIVITY.TASK</fields>
-        <fields>TASK.DUE_DATE</fields>
-        <fields>CORE.USERS.FULL_NAME</fields>
-        <fields>TASK.LAST_UPDATE</fields>
-        <relatedList>RelatedHistoryList</relatedList>
-    </relatedLists>
-    <relatedLists>
+        <excludeButtons>New</excludeButtons>
         <fields>NAME</fields>
-        <relatedList>Revenue_Recognition_Schedule__c.Revenue_Recognition_Rule__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
+        <fields>Unit_Of_Measurement__c</fields>
+        <fields>Unit_Price__c</fields>
+        <fields>CurrencyL__c</fields>
+        <fields>Price_Type__c</fields>
+        <fields>Pricing_Format__c</fields>
+        <fields>Accounting_Code__c</fields>
         <relatedList>Product_Rate_Plan_Charge__c.Revenue_Recognition_Rule__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
-        <relatedList>Invoice_Line__c.Revenue_Recognition_Rule__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
-        <relatedList>Invoice_Line__c.RevenueRecognitionRuleNew__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
-        <relatedList>Revenue_Transaction__c.Applied_Revenue_Recognition_Rule__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
-        <relatedList>Revenue_Forecast__c.Applied_Revenue_Recognition_Rule__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
@@ -105,15 +69,27 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
-        <relatedList>Credit_Line__c.Revenue_Recognition_Rule__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
+        <fields>Accounting_Code__c</fields>
+        <fields>Calculated_Quantity__c</fields>
+        <fields>Charge_End_Date__c</fields>
+        <fields>Charge_Start_Date__c</fields>
+        <fields>CREATEDBY_USER.ALIAS</fields>
+        <fields>CREATED_DATE</fields>
+        <fields>Credit_Start_Date__c</fields>
+        <fields>Credit_End_Date__c</fields>
         <relatedList>Credit_Line__c.RevenueRecognitionRuleNew__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
-        <relatedList>Job_Rate_Plan_Charge__c.Revenue_Recognition_Rule__c</relatedList>
+        <fields>BillingPeriod__c</fields>
+        <fields>Calculated_Quantity__c</fields>
+        <fields>Service_Start_Date__c</fields>
+        <fields>Service_End_Date__c</fields>
+        <fields>Commissionable_Product__c</fields>
+        <fields>CREATEDBY_USER.ALIAS</fields>
+        <fields>CREATED_DATE</fields>
+        <fields>Invoice__c</fields>
+        <relatedList>Invoice_Line__c.RevenueRecognitionRuleNew__c</relatedList>
     </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>
@@ -121,7 +97,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h4J000002Onlu</masterLabel>
+        <masterLabel>00h13000007nbwU</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>
