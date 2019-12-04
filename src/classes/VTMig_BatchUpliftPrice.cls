@@ -17,7 +17,15 @@ global without sharing class VTMig_BatchUpliftPrice implements Database.Batchabl
         orderIds = new set<Id>();
 
         if(useInternalQuery == true || useInternalQuery == null) {
-            this.query = 'SELECT BMS_Contract_Year__c, AnnualRentYear2__c, AnnualRentYear3__c, AnnualRentYear4__c, Unit_Price_2nd_Year__c, Unit_Price_3rd_Year__c, Unit_Price_4th_Year__c, Quantity__c, Uplift__c, Uplift_Frequency__c, Price_Type__c,Order__c, Legacy_Orders__c, Next_Uplift_Date__c, Unit_Price__c, Order__r.BMS_Contract_Year__c FROM Job_Rate_Plan_Charge__c WHERE (Uplift__c > 0 OR Legacy_Orders__c = true) AND (Service_End_Date__c = null OR Service_End_Date__c >=:dateToday) AND Next_Uplift_Date__c!= null AND Next_Uplift_Date__c <=:dateToday';
+            this.query = 'SELECT BMS_Contract_Year__c, AnnualRentYear2__c, AnnualRentYear3__c, AnnualRentYear4__c, Net_Total__c, ' +
+                    'Unit_Price_2nd_Year__c, Unit_Price_3rd_Year__c, Unit_Price_4th_Year__c, Quantity__c, Discount_Value__c, ' +
+                    'Uplift__c, Uplift_Frequency__c, Price_Type__c,Order__c, Legacy_Orders__c, Next_Uplift_Date__c, ' +
+                    'Unit_Price__c, Order__r.BMS_Contract_Year__c FROM Job_Rate_Plan_Charge__c ' +
+                    'WHERE (Uplift__c > 0 OR Legacy_Orders__c = true) ' +
+                    'AND (Service_End_Date__c = null ' +
+                    'OR Service_End_Date__c >=:dateToday) ' +
+                    'AND Next_Uplift_Date__c!= null ' +
+                    'AND Next_Uplift_Date__c <=:dateToday';
         } else {
             this.query = query;
         }
@@ -74,6 +82,7 @@ global without sharing class VTMig_BatchUpliftPrice implements Database.Batchabl
                     // update the price
                     charge.Unit_Price__c = newPrice;
                     charge.Price__c = charge.Quantity__c * charge.Unit_Price__c;
+                    charge.Net_Total__c = charge.Price__c - charge.Discount_Value__c;
 
                     system.debug('Next_Uplift_Date__c is ' + charge.Next_Uplift_Date__c);
 
@@ -134,8 +143,11 @@ global without sharing class VTMig_BatchUpliftPrice implements Database.Batchabl
         }
         update batchJob;
 
-        VTMig_IITBatchProcessForRecalculateOrder batchProcessForRecalculateOrder = new VTMig_IITBatchProcessForRecalculateOrder(orderIds);
-        Database.executeBatch(batchProcessForRecalculateOrder,1);
+
+        if(!Test.isRunningTest()) {
+            VTMig_IITBatchProcessForRecalculateOrder batchProcessForRecalculateOrder = new VTMig_IITBatchProcessForRecalculateOrder(orderIds);
+            Database.executeBatch(batchProcessForRecalculateOrder,1);
+        }
     }
 
 }

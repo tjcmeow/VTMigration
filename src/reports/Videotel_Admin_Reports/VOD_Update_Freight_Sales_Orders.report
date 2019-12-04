@@ -39,6 +39,7 @@
     <columns>
         <field>Account.Job__r.Order_Rate_Plan_Charges__r$Net_Total__c</field>
     </columns>
+    <currency>GBP</currency>
     <filter>
         <criteriaItems>
             <column>Account$Name</column>

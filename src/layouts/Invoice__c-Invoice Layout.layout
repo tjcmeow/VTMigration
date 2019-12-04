@@ -113,6 +113,10 @@
                 <behavior>Readonly</behavior>
                 <field>Third_Contact_Email__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>CurrencyIsoCode</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

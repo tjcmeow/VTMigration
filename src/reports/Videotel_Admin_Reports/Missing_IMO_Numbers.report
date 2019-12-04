@@ -30,6 +30,7 @@
     <columns>
         <field>Job__c.IMO__c</field>
     </columns>
+    <currency>GBP</currency>
     <description>For active orders check for missing IMOs</description>
     <filter>
         <criteriaItems>

@@ -75,6 +75,10 @@
                 <behavior>Readonly</behavior>
                 <field>APXTConga4__Launch_C8_Formula_Button__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>CurrencyIsoCode</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

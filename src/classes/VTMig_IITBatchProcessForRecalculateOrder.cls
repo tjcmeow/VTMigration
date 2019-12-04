@@ -2,10 +2,10 @@
  * Created by triciaigoe on 2019-11-27.
  */
 
-global with sharing class VTMig_IITBatchProcessForRecalculateOrder {
+global with sharing class VTMig_IITBatchProcessForRecalculateOrder implements Database.Batchable<sObject>{
 
     global string squery;
-    global Job__c OrderObj;
+    global Job__c OrderObj; 
     global set<Id> orderIds = new set<Id>();
 
     global VTMig_IITBatchProcessForRecalculateOrder(set<Id> orderIds) {

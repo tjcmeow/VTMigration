@@ -21,6 +21,7 @@
     <columns>
         <field>CUST_CREATED_NAME</field>
     </columns>
+    <currency>GBP</currency>
     <description>Master Orders Created in the Last Week</description>
     <filter>
         <criteriaItems>

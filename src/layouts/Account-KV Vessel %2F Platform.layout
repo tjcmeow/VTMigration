@@ -81,6 +81,10 @@
                 <behavior>Edit</behavior>
                 <field>Refit_Year__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>CurrencyIsoCode</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

@@ -33,6 +33,7 @@
     <columns>
         <field>RMA__c.Asset_s_Account_Name__c</field>
     </columns>
+    <currency>GBP</currency>
     <filter>
         <criteriaItems>
             <column>RMA__c.RMA_Status__c</column>

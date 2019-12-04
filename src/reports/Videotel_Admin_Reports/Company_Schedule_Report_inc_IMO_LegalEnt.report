@@ -39,6 +39,7 @@
     <columns>
         <field>FK_ACC_OWNER_NAME</field>
     </columns>
+    <currency>GBP</currency>
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>

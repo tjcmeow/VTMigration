@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customButtons>Add_Products</customButtons>
     <customButtons>Clone</customButtons>
     <customButtons>Update_Order_Status</customButtons>
-    <customButtons>Generate_Agreement_Queries</customButtons>
-    <customButtons>Upload_Esign_Agreement</customButtons>
-    <customButtons>New_Agent_Upload_and_Send_Agreement</customButtons>
     <excludeButtons>Clone</excludeButtons>
     <excludeButtons>PrintableView</excludeButtons>
     <excludeButtons>Share</excludeButtons>
@@ -66,6 +64,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Legacy_Created_Date__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>CurrencyIsoCode</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -344,7 +346,12 @@
                 <field>CreatedById</field>
             </layoutItems>
         </layoutColumns>
-        <layoutColumns/>
+        <layoutColumns>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>LastModifiedById</field>
+            </layoutItems>
+        </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
     <miniLayout>

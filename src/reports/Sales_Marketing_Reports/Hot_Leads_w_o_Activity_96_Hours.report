@@ -21,6 +21,7 @@
     <columns>
         <field>EMAIL</field>
     </columns>
+    <currency>GBP</currency>
     <filter>
         <criteriaItems>
             <column>LAST_ACTIVITY</column>

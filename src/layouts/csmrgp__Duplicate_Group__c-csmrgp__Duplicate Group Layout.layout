@@ -20,6 +20,10 @@
                 <behavior>Readonly</behavior>
                 <field>csmrgp__Duplicate_Case_Count__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>CurrencyIsoCode</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

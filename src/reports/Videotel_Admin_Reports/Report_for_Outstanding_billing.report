@@ -75,6 +75,7 @@
     <columns>
         <field>Job__c$BMS_Year_4__c</field>
     </columns>
+    <currency>GBP</currency>
     <filter>
         <booleanFilter>(1 AND 2 AND 3 AND 4) AND ( 5 OR 6)</booleanFilter>
         <criteriaItems>

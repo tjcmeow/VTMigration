@@ -147,6 +147,10 @@
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>CurrencyIsoCode</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
         <fullName>Date_Removed__c</fullName>
         <externalId>false</externalId>
         <label>Date Removed</label>

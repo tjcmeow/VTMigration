@@ -54,6 +54,7 @@
     <columns>
         <field>Job__c$Legal_Entity__c</field>
     </columns>
+    <currency>GBP</currency>
     <filter>
         <criteriaItems>
             <column>Job__c$Status__c</column>

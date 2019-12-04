@@ -62,6 +62,7 @@
     <columns>
         <field>ACCOUNT_NAME</field>
     </columns>
+    <currency>GBP</currency>
     <filter>
         <booleanFilter>1 OR 2</booleanFilter>
         <criteriaItems>

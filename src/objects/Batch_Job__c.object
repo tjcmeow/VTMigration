@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
     <actionOverrides>
-        <actionName>Add</actionName>
+        <actionName>Accept</actionName>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Add</actionName>
+        <actionName>Accept</actionName>
         <formFactor>Large</formFactor>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Add</actionName>
+        <actionName>Accept</actionName>
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
@@ -85,6 +85,20 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>SaveEdit</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -126,132 +140,154 @@
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>This holds the records for batch process of MRR and Renew Orders</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
     <fields>
-        <fullName>CurrencyIsoCode</fullName>
-        <trackHistory>false</trackHistory>
-    </fields>
-    <fields>
-        <fullName>Description</fullName>
-        <trackHistory>false</trackHistory>
-    </fields>
-    <fields>
-        <fullName>DisplayUrl</fullName>
-        <trackHistory>false</trackHistory>
-    </fields>
-    <fields>
-        <fullName>ExternalDataSourceId</fullName>
-        <trackHistory>false</trackHistory>
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>ExternalId</fullName>
-        <trackHistory>false</trackHistory>
-    </fields>
-    <fields>
-        <fullName>Family</fullName>
-        <trackHistory>false</trackHistory>
-        <type>Picklist</type>
-    </fields>
-    <fields>
-        <fullName>IsActive</fullName>
-        <trackHistory>false</trackHistory>
-    </fields>
-    <fields>
-        <fullName>Name</fullName>
-        <trackHistory>false</trackHistory>
-    </fields>
-    <fields>
-        <fullName>ProductCode</fullName>
-        <trackHistory>false</trackHistory>
-    </fields>
-    <fields>
-        <fullName>QuantityUnitOfMeasure</fullName>
-        <trackHistory>false</trackHistory>
-        <type>Picklist</type>
-    </fields>
-    <fields>
-        <fullName>StockKeepingUnit</fullName>
-        <trackHistory>false</trackHistory>
-    </fields>
-    <fields>
-        <fullName>VOD_Product_Sub_Type__c</fullName>
+        <fullName>Completed_Date_and_Time__c</fullName>
         <externalId>false</externalId>
-        <label>VOD Product Sub Type</label>
+        <label>Completed Date and Time</label>
         <required>false</required>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Exception_Log__c</fullName>
+        <externalId>false</externalId>
+        <label>Exception Log</label>
+        <length>32768</length>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Start_Date_and_Time__c</fullName>
+        <externalId>false</externalId>
+        <label>Start Date and Time</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
-                    <fullName>Flexi</fullName>
+                    <fullName>Started</fullName>
                     <default>false</default>
-                    <label>Flexi</label>
+                    <label>Started</label>
                 </value>
                 <value>
-                    <fullName>Fill</fullName>
+                    <fullName>Processing</fullName>
                     <default>false</default>
-                    <label>Fill</label>
+                    <label>Processing</label>
                 </value>
                 <value>
-                    <fullName>Midi</fullName>
+                    <fullName>Completed</fullName>
                     <default>false</default>
-                    <label>Midi</label>
+                    <label>Completed</label>
                 </value>
                 <value>
-                    <fullName>Mini</fullName>
+                    <fullName>Completed with errors</fullName>
                     <default>false</default>
-                    <label>Mini</label>
+                    <label>Completed with errors</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
     </fields>
     <fields>
-        <fullName>VOD_Product_Type__c</fullName>
+        <fullName>Type__c</fullName>
         <externalId>false</externalId>
-        <label>VOD Product Type</label>
+        <label>Type</label>
         <required>false</required>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
-                    <fullName>VOD</fullName>
+                    <fullName>MRR Calculation</fullName>
                     <default>false</default>
-                    <label>VOD</label>
+                    <label>MRR Calculation</label>
                 </value>
                 <value>
-                    <fullName>NVOD</fullName>
+                    <fullName>Auto Renewals</fullName>
                     <default>false</default>
-                    <label>NVOD</label>
+                    <label>Auto Renewals</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
     </fields>
+    <label>SteelBrick Batch Jobs</label>
     <listViews>
-        <fullName>AllProducts</fullName>
+        <fullName>All_Batch_Jobs</fullName>
+        <columns>NAME</columns>
+        <columns>Type__c</columns>
+        <columns>Status__c</columns>
+        <columns>Start_Date_and_Time__c</columns>
+        <columns>Completed_Date_and_Time__c</columns>
+        <columns>Exception_Log__c</columns>
         <filterScope>Everything</filterScope>
-        <label>All Products</label>
+        <label>All Batch Jobs</label>
+        <language>en_US</language>
     </listViews>
+    <listViews>
+        <fullName>All_House_Keeping</fullName>
+        <columns>NAME</columns>
+        <columns>Start_Date_and_Time__c</columns>
+        <columns>Completed_Date_and_Time__c</columns>
+        <columns>Status__c</columns>
+        <columns>Type__c</columns>
+        <columns>Exception_Log__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All House Keeping</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Eleanor</fullName>
+        <columns>NAME</columns>
+        <columns>Start_Date_and_Time__c</columns>
+        <columns>Status__c</columns>
+        <columns>Type__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CREATEDBY_USER</field>
+            <operation>contains</operation>
+            <value>Eleanor</value>
+        </filters>
+        <label>Eleanor&apos;s Batch Jobs</label>
+    </listViews>
+    <nameField>
+        <label>Name</label>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Invoice IT Batch Jobs</pluralLabel>
     <searchLayouts>
-        <customTabListAdditionalFields>PRODUCT2.NAME</customTabListAdditionalFields>
-        <customTabListAdditionalFields>PRODUCT2.CUSTOMER_PRODUCT_ID</customTabListAdditionalFields>
-        <customTabListAdditionalFields>PRODUCT2.DESCRIPTION</customTabListAdditionalFields>
-        <lookupDialogsAdditionalFields>PRODUCT2.NAME</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>PRODUCT2.CUSTOMER_PRODUCT_ID</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>PRODUCT2.DESCRIPTION</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>PRODUCT2.FAMILY</lookupDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>PRODUCT2.NAME</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>PRODUCT2.CUSTOMER_PRODUCT_ID</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>PRODUCT2.DESCRIPTION</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>PRODUCT2.FAMILY</lookupPhoneDialogsAdditionalFields>
-        <searchResultsAdditionalFields>PRODUCT2.NAME</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>PRODUCT2.CUSTOMER_PRODUCT_ID</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>PRODUCT2.DESCRIPTION</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>PRODUCT2.FAMILY</searchResultsAdditionalFields>
+        <excludedStandardButtons>New</excludedStandardButtons>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
 </CustomObject>

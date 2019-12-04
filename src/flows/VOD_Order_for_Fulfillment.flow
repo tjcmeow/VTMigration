@@ -1,21 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
-    <assignments>
-        <name>myVariable_waitStartTimeAssignment</name>
-        <label>myVariable_waitStartTimeAssignment</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <assignmentItems>
-            <assignToReference>myVariable_waitStartTimeVariable</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>$Flow.CurrentDateTime</elementReference>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>myDecision</targetReference>
-        </connector>
-    </assignments>
     <decisions>
         <processMetadataValues>
             <name>index</name>
@@ -617,7 +601,7 @@
             <label>Previously Met - Prev</label>
         </rules>
     </decisions>
-    <interviewLabel>VOD_Order_for_Fulfillment-12_InterviewLabel</interviewLabel>
+    <interviewLabel>VOD_Order_for_Fulfillment-3_InterviewLabel</interviewLabel>
     <label>New Order Fulfillment - 3</label>
     <processMetadataValues>
         <name>ObjectType</name>
@@ -706,7 +690,7 @@
             </processMetadataValues>
             <field>BusinessHoursId</field>
             <value>
-                <stringValue>01m13000000LHW2</stringValue>
+                <stringValue>01m4J000000BPuJ</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -766,7 +750,7 @@
             </processMetadataValues>
             <field>OwnerId</field>
             <value>
-                <stringValue>00G13000003oa8K</stringValue>
+                <stringValue>00G0C000000lfen</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -826,7 +810,7 @@
             </processMetadataValues>
             <field>RecordTypeId</field>
             <value>
-                <stringValue>01213000001CDKO</stringValue>
+                <stringValue>0120C0000006kyYQAQ</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -930,36 +914,6 @@
             <processMetadataValues>
                 <name>dataType</name>
                 <value>
-                    <stringValue>ID</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>isRequired</name>
-                <value>
-                    <booleanValue>false</booleanValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideLabel</name>
-                <value>
-                    <stringValue>Assigned To ID</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>rightHandSideType</name>
-                <value>
-                    <stringValue>ID</stringValue>
-                </value>
-            </processMetadataValues>
-            <field>OwnerId</field>
-            <value>
-                <stringValue>0051300000BJxPn</stringValue>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <processMetadataValues>
-                <name>dataType</name>
-                <value>
                     <stringValue>Picklist</stringValue>
                 </value>
             </processMetadataValues>
@@ -1018,7 +972,7 @@
         </inputAssignments>
         <object>Task</object>
     </recordCreates>
-    <startElementReference>myVariable_waitStartTimeAssignment</startElementReference>
+    <startElementReference>myDecision</startElementReference>
     <status>Active</status>
     <variables>
         <name>myVariable_current</name>
@@ -1035,15 +989,5 @@
         <isInput>true</isInput>
         <isOutput>false</isOutput>
         <objectType>Job_Product__c</objectType>
-    </variables>
-    <variables>
-        <name>myVariable_waitStartTimeVariable</name>
-        <dataType>DateTime</dataType>
-        <isCollection>false</isCollection>
-        <isInput>false</isInput>
-        <isOutput>false</isOutput>
-        <value>
-            <elementReference>$Flow.CurrentDateTime</elementReference>
-        </value>
     </variables>
 </Flow>

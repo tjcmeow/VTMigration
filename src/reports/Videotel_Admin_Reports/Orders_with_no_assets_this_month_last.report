@@ -24,6 +24,7 @@
         <relatedTable>Asset</relatedTable>
         <relatedTableJoinColumn>Order__c</relatedTableJoinColumn>
     </crossFilters>
+    <currency>GBP</currency>
     <filter>
         <criteriaItems>
             <column>Job__c$RecordType</column>

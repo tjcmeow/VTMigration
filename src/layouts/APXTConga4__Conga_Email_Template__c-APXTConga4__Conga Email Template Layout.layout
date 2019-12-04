@@ -24,6 +24,10 @@
                 <behavior>Edit</behavior>
                 <field>APXTConga4__Is_Body_Attachment__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>CurrencyIsoCode</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

@@ -6,7 +6,12 @@
         <detailHeading>true</detailHeading>
         <editHeading>true</editHeading>
         <label>Tax/VAT</label>
-        <layoutColumns/>
+        <layoutColumns>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>CurrencyIsoCode</field>
+            </layoutItems>
+        </layoutColumns>
         <layoutColumns/>
         <style>TwoColumnsLeftToRight</style>
     </layoutSections>

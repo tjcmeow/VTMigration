@@ -429,15 +429,17 @@
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Customer_Account_Number__c</fullName>
-        <externalId>false</externalId>
-        <label>Customer Account Number</label>
-        <length>255</length>
-        <required>false</required>
+        <fullName>CurrencyIsoCode</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Customer_Account_Number__c</fullName>
+        <displayFormat>{0000000}</displayFormat>
+        <externalId>false</externalId>
+        <label>Customer Account Number</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
     </fields>
     <fields>
         <fullName>Customer_Class__c</fullName>
@@ -3818,6 +3820,17 @@ Account.Product_Interest_2__c</description>
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>Record_Type_Hidden__c</fullName>
+        <externalId>false</externalId>
+        <label>Record Type (Hidden)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Refit_Year__c</fullName>
         <externalId>false</externalId>
         <label>Refit Year</label>
@@ -4396,6 +4409,7 @@ business/products</description>
     <listViews>
         <fullName>AllAccounts</fullName>
         <columns>ACCOUNT.NAME</columns>
+        <columns>Customer_Account_Number__c</columns>
         <columns>ACCOUNT.ADDRESS1_STATE</columns>
         <columns>ACCOUNT.PHONE1</columns>
         <columns>ACCOUNT.TYPE</columns>

@@ -45,6 +45,7 @@
     <columns>
         <field>Job__c$IMO__c</field>
     </columns>
+    <currency>GBP</currency>
     <filter>
         <criteriaItems>
             <column>Job__c$RecordType</column>

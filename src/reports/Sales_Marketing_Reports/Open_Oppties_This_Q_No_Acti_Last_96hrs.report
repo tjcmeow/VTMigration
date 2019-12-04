@@ -58,6 +58,7 @@
     <columns>
         <field>ROLLUP_DESCRIPTION</field>
     </columns>
+    <currency>GBP</currency>
     <filter>
         <criteriaItems>
             <column>LAST_ACTIVITY</column>

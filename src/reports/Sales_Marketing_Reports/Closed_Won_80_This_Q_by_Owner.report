@@ -64,6 +64,7 @@
     <columns>
         <field>ACCOUNT_NAME</field>
     </columns>
+    <currency>GBP</currency>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>

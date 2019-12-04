@@ -177,10 +177,11 @@ public with sharing class VTMig_CloneOrder {
         List<Job__c> ordersForInsert = new List<Job__c>();
         for(Integer i = 0; i < iCountOfChild; i++) {
             Job__c newOrder = new Job__c();
-            newOrder = order.clone(false, false);
+            newOrder = order.clone(false, false, false, false);
             newOrder.RecordTypeId = recordTypeId;
             if(!isMasterOrder) {
                 newOrder.Master_Order__c = orderId;
+                newOrder.Service_Activation_Date__c = null;
             }
             ordersForInsert.add(newOrder);
         }

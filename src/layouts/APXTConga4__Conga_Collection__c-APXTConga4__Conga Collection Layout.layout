@@ -22,6 +22,10 @@
                 <behavior>Edit</behavior>
                 <field>APXTConga4__SF1_Binding_sObject_Type__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>CurrencyIsoCode</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

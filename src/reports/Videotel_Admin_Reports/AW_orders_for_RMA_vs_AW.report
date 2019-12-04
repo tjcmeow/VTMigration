@@ -39,6 +39,7 @@
     <columns>
         <field>Job__c.Job_Product__r$Name</field>
     </columns>
+    <currency>GBP</currency>
     <filter>
         <criteriaItems>
             <column>Job__c$Status__c</column>

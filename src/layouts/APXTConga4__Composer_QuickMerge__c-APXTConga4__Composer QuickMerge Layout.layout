@@ -15,6 +15,10 @@
                 <behavior>Edit</behavior>
                 <field>APXTConga4__Conga_Solution__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>CurrencyIsoCode</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

@@ -680,6 +680,30 @@
         <type>Date</type>
     </fields>
     <fields>
+        <fullName>Legacy_Master_Order_Id__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Order_Record_Type_Name__c = &apos;Master_Order&apos;, Order__r.External_Id__c, Order__r.Master_Order__r.External_Id__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Legacy Master Order Id</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Legacy_Order_Id__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Order_Record_Type_Name__c = &apos;Master Order&apos;, &apos;&apos;, Order__r.External_Id__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Legacy Order Id</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Legacy_Orders__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -687,6 +711,18 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Legacy_Product_Id__c</fullName>
+        <externalId>false</externalId>
+        <formula>Job_Rate_Plan__r.Job_Product__r.Product__r.External_ID__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Legacy Product Id</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Max_Customer_Spend__c</fullName>
@@ -797,7 +833,7 @@
     <fields>
         <fullName>OrderID__c</fullName>
         <externalId>false</externalId>
-        <formula>Order__r.Id</formula>
+        <formula>CASESAFEID(Order__r.Id)</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>OrderID</label>
         <required>false</required>
@@ -805,6 +841,15 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Order_Rate_Plan_Charge_Reference__c</fullName>
+        <displayFormat>ORPC-{00000}</displayFormat>
+        <externalId>false</externalId>
+        <label>Order Rate Plan Charge Reference</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
     </fields>
     <fields>
         <fullName>Order_Record_Type_Name__c</fullName>

@@ -9,11 +9,11 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>Product_Rate_Plan__c</field>
+                <field>Name</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>Name</field>
+                <field>Product_Rate_Plan__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -32,8 +32,12 @@
                 <field>Cost_Price__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
                 <field>Unit_Price__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>CurrencyL__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -69,6 +73,10 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
+                <field>CurrencyIsoCode</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
                 <field>Revenue_Recognition_Rule__c</field>
             </layoutItems>
             <layoutItems>
@@ -78,14 +86,6 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Transfer_Price__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>External_ID__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>CurrencyL__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -125,33 +125,33 @@
         <layoutColumns/>
         <style>CustomLinks</style>
     </layoutSections>
+    <miniLayout>
+        <fields>Product_Rate_Plan__c</fields>
+        <fields>Unit_Price__c</fields>
+        <fields>CurrencyL__c</fields>
+    </miniLayout>
     <relatedLists>
         <fields>NAME</fields>
-        <relatedList>Invoice_Line__c.Product_Rate_Plan_Charge__c</relatedList>
+        <fields>Job_Rate_Plan__c</fields>
+        <fields>HK_VOD__c</fields>
+        <fields>Order__c</fields>
+        <fields>Price_Type__c</fields>
+        <fields>UPDATEDBY_USER.ALIAS</fields>
+        <fields>LAST_UPDATE</fields>
+        <relatedList>Job_Rate_Plan_Charge__c.Product_Rate_Plan_Charge__c</relatedList>
     </relatedLists>
     <relatedLists>
-        <fields>NAME</fields>
-        <relatedList>Credit_Line__c.Product_Rate_Plan_Charge__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
+        <fields>Start_Unit__c</fields>
+        <fields>End_Unit__c</fields>
+        <fields>Unit_Price__c</fields>
+        <fields>Unit_Cost_Price__c</fields>
         <relatedList>Product_Rate_Plan_Charge_Tier__c.Product_Rate_Plan_Charge__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
-        <relatedList>Quote_Rate_Plan_Charge__c.Product_Rate_Plan_Charge__c</relatedList>
+        <sortField>Start_Unit__c</sortField>
+        <sortOrder>Asc</sortOrder>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
         <relatedList>Product_Bundle_Line__c.Product_Rate_Plan_Charge__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
-        <relatedList>Job_Rate_Plan_Charge__c.Product_Rate_Plan_Charge__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
-        <relatedList>Opportunity_Rate_Plan_Charge__c.Product_Rate_Plan_Charge__c</relatedList>
     </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>

@@ -48,6 +48,7 @@
     <columns>
         <field>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r$Unit_Price_4th_Year__c</field>
     </columns>
+    <currency>GBP</currency>
     <filter>
         <criteriaItems>
             <column>Job__c$RecordType</column>

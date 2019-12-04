@@ -85,6 +85,17 @@ public with sharing class VTMig_OrderInvoiceITTriggerClass {
             dontRunAgain = false;
             CommisionDealerCreationMethod(invoiceOrderJob,newInvoiceJobs,oldInvoiceJobs,invoicejobsITProducts);
         }
+        List<Job__c> ordersToRecalc = new List<Job__c>();
+        for(Job__c order : oldInvoiceJobs.values()){
+
+            if(order.Recalculate__c != newInvoiceJobs.get(order.Id).Recalculate__c && newInvoiceJobs.get(order.Id).Recalculate__c) {
+                ordersToRecalc.add(order);
+            }
+        }
+
+        if(ordersToRecalc.size() > 0) {
+            recalcOrder(ordersToRecalc);
+        }
     }
 
     public static void CommisionDealerCreationMethod(List<Job__c> invoiceOrderJob,Map<ID,Job__c> newInvoiceJobs,Map<ID,Job__c> oldInvoiceJobs,Map<ID,list<ID>> invoicejobsITProducts){
@@ -228,5 +239,65 @@ public with sharing class VTMig_OrderInvoiceITTriggerClass {
         }
         if(ClonedRecords.size()>0)
             insert ClonedRecords;
+    }
+
+    public static void recalcOrder(List<Job__c> orders) {
+
+        List<Id> orderIds = new List<Id>();
+        Map<Id, Job__c> orderMap = new Map<Id, Job__c>();
+        for(Job__c order : orders) {
+            orderIds.add(order.Id);
+            orderMap.put(order.Id, order);
+        }
+
+        List<Job_Rate_Plan_Charge__c> orpcs = [
+                SELECT Quantity__c, Unit_Price__c, Row_Total__c, Id, Order__c, Price__c, Discount_Value__c,
+                        Net_Total__c, VAT__c, Tax__c
+                FROM Job_Rate_Plan_Charge__c WHERE Order__c IN : orderIds
+        ];
+
+        Map<Id, List<Job_Rate_Plan_Charge__c>> orpcMap = new Map<Id, List<Job_Rate_Plan_Charge__c>>();
+
+        for(Job_Rate_Plan_Charge__c orpc: orpcs) {
+            List<Job_Rate_Plan_Charge__c> tempCharges = new List<Job_Rate_Plan_Charge__c>();
+            if(orpcMap.keySet().contains(orpc.Order__c)) {
+                tempCharges = orpcMap.get(orpc.Order__c);
+            }
+            tempCharges.add(orpc);
+            orpcMap.put(orpc.Order__c, tempCharges);
+        }
+
+        for(Job__c order : orders) {
+
+            List<Job_Rate_Plan_Charge__c> charges = new List<Job_Rate_Plan_Charge__c>();
+            Decimal total = 0;
+            Decimal discount = 0;
+            Decimal vat = 0;
+            Decimal tax = 0;
+            Decimal subtotal = 0;
+            Decimal netTotal = 0;
+
+            if(orpcMap.keySet().contains(order.Id)) {
+                charges = orpcMap.get(order.Id);
+                for(Job_Rate_Plan_Charge__c charge : charges) {
+                    total += charge.Row_Total__c;
+                    discount += charge.Discount_Value__c;
+                    vat += charge.VAT__c;
+                    tax += charge.Tax__c;
+                    subtotal += charge.Price__c;
+                    netTotal += charge.Net_Total__c;
+                }
+            }
+
+            order.Net_Total__c = netTotal;
+            order.Sub_total__c = subtotal;
+            order.VAT__c = vat;
+            order.Tax__c = tax;
+            order.Discount_Value__c = discount;
+            order.Total__c = total;
+            order.Recalculate__c = false;
+        }
+
+        update orders;
     }
 }
