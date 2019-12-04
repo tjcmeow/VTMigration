@@ -280,12 +280,24 @@ public with sharing class VTMig_OrderInvoiceITTriggerClass {
             if(orpcMap.keySet().contains(order.Id)) {
                 charges = orpcMap.get(order.Id);
                 for(Job_Rate_Plan_Charge__c charge : charges) {
-                    total += charge.Row_Total__c;
-                    discount += charge.Discount_Value__c;
-                    vat += charge.VAT__c;
-                    tax += charge.Tax__c;
-                    subtotal += charge.Price__c;
-                    netTotal += charge.Net_Total__c;
+                    if(charge.Row_Total__c != null) {
+                        total += charge.Row_Total__c;
+                    }
+                    if(charge.Discount_Value__c != null) {
+                        discount += charge.Discount_Value__c;
+                    }
+                    if(charge.VAT__c != null) {
+                        vat += charge.VAT__c;
+                    }
+                    if(charge.Tax__c != null) {
+                        tax += charge.Tax__c;
+                    }
+                    if(charge.Price__c != null) {
+                        subtotal += charge.Price__c;
+                    }
+                    if(charge.Net_Total__c != null) {
+                        netTotal += charge.Net_Total__c;
+                    }
                 }
             }
 
