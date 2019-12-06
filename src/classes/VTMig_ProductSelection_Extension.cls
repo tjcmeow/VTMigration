@@ -37,7 +37,7 @@ public with sharing class VTMig_ProductSelection_Extension {
         showCharges = false;
         pageStep = '1';
         grandTotal = 0;
-        Opp = [SELECT Name, AccountId, Wet_or_Dry_Cargo__c, Platform_or_Vessel_Detail__c, Shipping_Account__c, Shipping_Contact__c, Partner_Agent__c, IITIntended_Use__c, Legal_Entity__c FROM Opportunity WHERE Id = : OppId];
+        Opp = [SELECT Name, AccountId, Wet_or_Dry_Cargo__c, Partner_Agent_Account__c, Platform_or_Vessel_Detail__c, Shipping_Account__c, Shipping_Contact__c, Partner_Agent__c, IITIntended_Use__c, Legal_Entity__c FROM Opportunity WHERE Id = : OppId];
         List<Opportunity_Rate_Plan_Charge__c> currentCharges = [SELECT Id, Name, Product_Charge_Category__c, Subscription_Product__c, Opportunity_Rate_Plan__r.Opportunity_Product__r.Name,
                 Opportunity_Rate_Plan__r.Opportunity_Product__r.Product__c, Product_Rate_Plan_Charge__c,
                 Title_Product__c, Unit_Of_Measurement__c, Price_Type__c, Pricing_Model__c, Unit_Price__c,

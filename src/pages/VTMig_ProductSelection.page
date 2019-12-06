@@ -30,7 +30,7 @@
                 <apex:inputField id="shipContact" label="Primary(Shipping) Contact" value="{!Opp.Shipping_Contact__c}"/>
                 <apex:inputField id="shipAcct" label="Shipping Account" value="{!Opp.Shipping_Account__c}"/>
                 <apex:inputField id="legalEntity"  label="Legal Entity" value="{!Opp.Legal_Entity__c}"/>
-                <apex:inputField id="partnerAcct" label="Partner Agent Account" value="{!Opp.Partner_Agent__c}"/>
+                <apex:inputField id="partnerAcct" label="Partner Agent Account" value="{!Opp.Partner_Agent_Account__c}"/>
                 <apex:inputField id="intendedUse" label="Intended Use" value="{!Opp.IITIntended_Use__c}"/>
                 <apex:inputField id="cargotype" label="Wet or Dry Cargo" value="{!Opp.Wet_or_Dry_Cargo__c}"/>
                 <apex:inputField id="platformOrVessel" label="Platform or Vessel Detail" value="{!Opp.Platform_or_Vessel_Detail__c}"/>

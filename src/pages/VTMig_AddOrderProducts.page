@@ -69,38 +69,40 @@
                     </apex:column>
                 </apex:pageBlockTable>
                 <apex:outputText value="Selected Products" rendered="{!showChosenCharges}" style="font-weight:bold;margin-top:15px;"/>
-                <apex:pageBlockTable title="Rate Plan Charges" value="{!selectedProdCharges}" var="charge" rendered="{!showChosenCharges}">
+                <apex:variable value="{!0}" var="rowNum"/>
+                <apex:pageBlockTable title="Rate Plan Charges" value="{!selectedCharges}" var="charge" rendered="{!showChosenCharges}">
                     <apex:column >
                         <apex:commandButton value="Remove" action="{!removeCharge}" reRender="table">
-                            <apex:param name="chargeId" value="{!charge.prodCharge.Id}" assignTo="{!removeChargeId}"/>
+                            <apex:param name="chargeId" value="{!rowNum}" assignTo="{!removeChargeId}"/>
                         </apex:commandButton>
                     </apex:column>
                     <apex:column headerValue="Product Name">
-                        <apex:inputField value="{!charge.prodCharge.Product_Rate_Plan__r.Product__r.Name}"/>
+                        <apex:inputField value="{!charge.productName}"/>
                     </apex:column>
                     <apex:column headerValue="Product Code">
-                        <apex:inputField value="{!charge.prodCharge.Product_Rate_Plan__r.Product__r.Product_Code__c}"/>
+                        <apex:inputField value="{!charge.orderRatePlanCharge.Product_Rate_Plan_Charge__r.Product_Rate_Plan__r.Product__r.Product_Code__c}"/>
                     </apex:column>
                     <apex:column headerValue="Quantity">
-                        <apex:input type="number" value="{!charge.quantity}" required="true"/>
+                        <apex:inputField type="number" value="{!charge.orderRatePlanCharge.Quantity__c}" required="true"/>
                     </apex:column>
-                    <apex:column value="{!charge.prodCharge.Unit_Of_Measurement__c}">
+                    <apex:column value="{!charge.orderRatePlanCharge.Unit_Of_Measurement__c}">
                     </apex:column>
                     <apex:column headerValue="Charge Name">
-                        <a target="_blank" href="{!'/'+charge.chargeId}">
-                            <apex:outputText value="{!charge.chargeName}" rendered="{!charge.chargeId != ''}"/>
+                        <a target="_blank" href="{!'/'+charge.orderRatePlanCharge.Id}">
+                            <apex:outputText value="{!charge.orderRatePlanCharge.Name}" rendered="{!charge.orderRatePlanCharge.Id != ''}"/>
                         </a>
                     </apex:column>
-                    <apex:column value="{!charge.prodCharge.Price_Type__c}">
+                    <apex:column value="{!charge.orderRatePlanCharge.Price_Type__c}">
                     </apex:column>
-                    <apex:column value="{!charge.prodCharge.Pricing_Format__c}">
+                    <apex:column value="{!charge.orderRatePlanCharge.Price_Format__c}">
                     </apex:column>
                     <apex:column headerValue="Unit Price">
-                        <apex:inputField value="{!charge.prodCharge.Unit_Price__c}"/>
+                        <apex:inputField value="{!charge.orderRatePlanCharge.Unit_Price__c}"/>
                     </apex:column>
                     <apex:column headerValue="Uplift">
-                        <apex:inputField value="{!charge.prodCharge.Uplift__c}"/>
+                        <apex:inputField value="{!charge.orderRatePlanCharge.Uplift__c}"/>
                     </apex:column>
+                    <apex:variable var="rowNum" value="{!rowNum + 1}"/>
                 </apex:pageBlockTable>
             </apex:pageBlockSection>
         </apex:pageBlock>
@@ -113,7 +115,7 @@
             </apex:pageBlockButtons>
             <apex:pageBlockSection title="Products" collapsible="false" columns="1">
                 <apex:pageBlockTable title="Selected Products" value="{!selectedCharges}" var="charge">
-                    <apex:column headerValue="Product Name" value="{!charge.orderProduct.Name}">
+                    <apex:column headerValue="Product Name" value="{!charge.productName}">
                     </apex:column>
                     <apex:column value="{!charge.orderProduct.Product_Code__c}">
                     </apex:column>
