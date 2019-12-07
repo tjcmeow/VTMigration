@@ -57,7 +57,7 @@
                 <field>Vat_Code__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
                 <field>KV_Sales_Agent__c</field>
             </layoutItems>
             <layoutItems>
@@ -69,16 +69,12 @@
                 <field>Parent_Account_ID_18_Char__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
                 <field>Videotel_Legal_Entity__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Suspension_Date__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>External_ID__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -111,20 +107,8 @@
                 <field>Account_Status__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Type</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>Grand_Parent_Account__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Receive_Statements__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Do_Not_Send_Statement__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -195,7 +179,7 @@
                 <field>VAT_No__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Readonly</behavior>
                 <field>Date_Invoiced__c</field>
             </layoutItems>
             <layoutItems>
@@ -244,7 +228,7 @@
                 <field>Market_Sector__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Readonly</behavior>
                 <field>Industry_Designation__c</field>
             </layoutItems>
             <layoutItems>
@@ -282,6 +266,10 @@
                 <behavior>Readonly</behavior>
                 <field>Acct_ID_18_Char__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>External_ID__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns/>
         <style>TwoColumnsTopToBottom</style>
@@ -317,7 +305,6 @@
         <fields>ParentId</fields>
         <fields>Phone</fields>
         <fields>Fax</fields>
-        <fields>Type</fields>
         <relatedLists>
             <relatedList>RelatedContactList</relatedList>
         </relatedLists>

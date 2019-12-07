@@ -2,7 +2,6 @@
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
     <customButtons>Add_Products</customButtons>
     <customButtons>Create_Order</customButtons>
-    <excludeButtons>Submit</excludeButtons>
     <layoutSections>
         <customLabel>false</customLabel>
         <detailHeading>false</detailHeading>
@@ -12,10 +11,6 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>OwnerId</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>IsPrivate</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
@@ -32,6 +27,14 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>LeadSource</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Discount_Code__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Synced_Quote__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -53,23 +56,11 @@
                 <behavior>Edit</behavior>
                 <field>Legal_Entity__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Approval_URL__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Required</behavior>
-                <field>CurrencyIsoCode</field>
-            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>Amount</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>ExpectedRevenue</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
@@ -92,12 +83,12 @@
                 <field>CampaignId</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Deal_Lost_to_Training_Provider__c</field>
+                <behavior>Required</behavior>
+                <field>CurrencyIsoCode</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Total_Opportunity_Discount_Percent__c</field>
+                <behavior>Edit</behavior>
+                <field>Deal_Lost_to_Training_Provider__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -190,10 +181,6 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>Vat_Roll_Up__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
                 <field>Total__c</field>
             </layoutItems>
         </layoutColumns>
@@ -201,6 +188,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>CurrencyL__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Exchange_Rate_Applied__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
@@ -216,7 +207,12 @@
                 <field>TotalOrderValue__c</field>
             </layoutItems>
         </layoutColumns>
-        <layoutColumns/>
+        <layoutColumns>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>TotalQuoteValue__c</field>
+            </layoutItems>
+        </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
     </layoutSections>
     <layoutSections>

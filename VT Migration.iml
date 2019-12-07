@@ -457,6 +457,9 @@
                           <MetadataEntry>
                             <option name="name" value="Opportunity.Approval_Discount_on_Opportunity_10" />
                           </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Opportunity.Approval_Discount_on_Opportunity_More10" />
+                          </MetadataEntry>
                         </list>
                       </option>
                       <option name="name" value="ApprovalProcess" />
@@ -704,6 +707,9 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Relationship_Management" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__DupeCatcher" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Sales_Leadership" />
@@ -1244,6 +1250,9 @@
                             <option name="name" value="Account.Industry_Designation__c" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Account.Installation_Type__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Account.Invoice_Balance__c" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -1397,6 +1406,9 @@
                             <option name="name" value="Account.Receive_Statements__c" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Account.Record_Type_Hidden__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Account.Refit_Year__c" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -1404,6 +1416,9 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Account.Registered_Owner__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Account.SFSSDupeCatcher__Override_DupeCatcher__c" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Account.Sales_Agent_Partner__c" />
@@ -1544,6 +1559,21 @@
                             <option name="name" value="Asset.VOD_Supplier__c" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Batch_Job__c.Completed_Date_and_Time__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Batch_Job__c.Exception_Log__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Batch_Job__c.Start_Date_and_Time__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Batch_Job__c.Status__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Batch_Job__c.Type__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Beneficial_Organizations__c.Account__c" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -1664,6 +1694,9 @@
                             <option name="name" value="Contact.Contact_BMS_Code__c" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Contact.Contact_Reference__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Contact.Email_2__c" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -1694,10 +1727,22 @@
                             <option name="name" value="Contact.Market__c" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Contact.SFSSDupeCatcher__Override_DupeCatcher__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Contact.Sales_Agent_s__c" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Contact.Sales_Office__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Contract_Addendum__c.Addendum_Signed_Date__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Contract_Addendum__c.Addendum_Signed_by__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Contract_Addendum__c.Order__c" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Credit_Line__c.Account__c" />
@@ -3140,7 +3185,16 @@
                             <option name="name" value="Job_Rate_Plan_Charge__c.Last_Uplift_Date__c" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Job_Rate_Plan_Charge__c.Legacy_Master_Order_Id__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Job_Rate_Plan_Charge__c.Legacy_Order_Id__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Job_Rate_Plan_Charge__c.Legacy_Orders__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Job_Rate_Plan_Charge__c.Legacy_Product_Id__c" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Job_Rate_Plan_Charge__c.Max_Customer_Spend__c" />
@@ -3168,6 +3222,9 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Job_Rate_Plan_Charge__c.OrderID__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Job_Rate_Plan_Charge__c.Order_Rate_Plan_Charge_Reference__c" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Job_Rate_Plan_Charge__c.Order_Record_Type_Name__c" />
@@ -3584,6 +3641,12 @@
                             <option name="name" value="Job__c.Company_IMO__c" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Job__c.Contract_Signed_Date__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Job__c.Contract_Signed_by__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Job__c.Contracted_MRR__c" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -3923,6 +3986,9 @@
                             <option name="name" value="Job__c.VOD_Order__c" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Job__c.Vessel_Name_on_Contract__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Job__c.Wet_or_Dry_Cargo__c" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -3966,6 +4032,9 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Job__c.Year_4_VAT__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Lead.Account_Record_Type__c" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Lead.Chart_File_Delivery_Method__c" />
@@ -4035,6 +4104,9 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Lead.Rig__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Lead.SFSSDupeCatcher__Override_DupeCatcher__c" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Lead.Sales_Office__c" />
@@ -5558,6 +5630,204 @@
                             <option name="name" value="Revenue_Transaction__c.Revenue_Period__c" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Application_Properties__c.SFSSDupeCatcher__Create_Immediate_Reminder_For_Tasks__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Application_Properties__c.SFSSDupeCatcher__Web_Lead_Sources__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Application_Settings__c.SFSSDupeCatcher__Admin_Email__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Application_Settings__c.SFSSDupeCatcher__Customer_Subdomain_URL__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__DCStats__c.SFSSDupeCatcher__statsText__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__DC_Application_Properties__c.SFSSDupeCatcher__Allow_Block_Override__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__DC_Application_Properties__c.SFSSDupeCatcher__Bypass_Filters_For_Users__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__DC_Application_Properties__c.SFSSDupeCatcher__DC_Token__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__DC_Application_Properties__c.SFSSDupeCatcher__Ignore_Cloudingo_User__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__DC_Application_Properties__c.SFSSDupeCatcher__Ignore_Email_Domains__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__DC_Application_Properties__c.SFSSDupeCatcher__Ignore_Public_Email_Domains__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__DC_Application_Properties__c.SFSSDupeCatcher__Immediate_Reminder_For_Tasks__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__DC_Application_Properties__c.SFSSDupeCatcher__Org_Allowed_To_Use_API__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__DC_Application_Properties__c.SFSSDupeCatcher__Person_Account_Support__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__DC_Application_Properties__c.SFSSDupeCatcher__Web_Lead_Sources__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__DcIn__c.SFSSDupeCatcher__P1__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__DcIn__c.SFSSDupeCatcher__P2__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__DcIn__c.SFSSDupeCatcher__P3__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__DcIn__c.SFSSDupeCatcher__P4__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__DcIn__c.SFSSDupeCatcher__P5__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__DcIn__c.SFSSDupeCatcher__R1__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__DcIn__c.SFSSDupeCatcher__T1__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__DcIn__c.SFSSDupeCatcher__stat__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__DcIn__c.SFSSDupeCatcher__wsm__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Duplicate_Warning__c.SFSSDupeCatcher__Scenario_Type__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Duplicate_Warning__c.SFSSDupeCatcher__Scenario__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Duplicate_Warning__c.SFSSDupeCatcher__Triggering_Action__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Override_Cache__c.SFSSDupeCatcher__Session_Id__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Potential_Duplicate__c.SFSSDupeCatcher__Account__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Potential_Duplicate__c.SFSSDupeCatcher__Contact_Display__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Potential_Duplicate__c.SFSSDupeCatcher__Contact__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Potential_Duplicate__c.SFSSDupeCatcher__Criteria__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Potential_Duplicate__c.SFSSDupeCatcher__Duplicate_Warning__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Potential_Duplicate__c.SFSSDupeCatcher__Email__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Potential_Duplicate__c.SFSSDupeCatcher__Lead_Display__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Potential_Duplicate__c.SFSSDupeCatcher__Lead__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Potential_Duplicate__c.SFSSDupeCatcher__Object_Type__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Potential_Duplicate__c.SFSSDupeCatcher__Phone__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Potential_Duplicate__c.SFSSDupeCatcher__Scenario_Type__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Potential_Duplicate__c.SFSSDupeCatcher__Scenario__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Potential_Duplicate__c.SFSSDupeCatcher__Warning_Display__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__RequiredFieldSupport__c.SFSSDupeCatcher__Reminder_Date__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Scenario_Rule__c.SFSSDupeCatcher__First_N_Letters__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Scenario_Rule__c.SFSSDupeCatcher__Fuzzy_Match__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Scenario_Rule__c.SFSSDupeCatcher__Mapping_Approach__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Scenario_Rule__c.SFSSDupeCatcher__Match_Blanks__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Scenario_Rule__c.SFSSDupeCatcher__Match_field__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Scenario_Rule__c.SFSSDupeCatcher__Scenario_Formula__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Scenario_Rule__c.SFSSDupeCatcher__Scenario_Type_Formula__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Scenario_Rule__c.SFSSDupeCatcher__Scenario_Type__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Scenario_Rule__c.SFSSDupeCatcher__Scenario__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Scenario_Rule__c.SFSSDupeCatcher__Target_Match_Field__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Scenario__c.SFSSDupeCatcher__Blocked_Duplicates__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Scenario__c.SFSSDupeCatcher__Bypass_Security__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Scenario__c.SFSSDupeCatcher__Converted_Duplicates__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Scenario__c.SFSSDupeCatcher__Create_Tasks_for_Warnings__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Scenario__c.SFSSDupeCatcher__Deployed__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Scenario__c.SFSSDupeCatcher__Duplicate_Warning_Count__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Scenario__c.SFSSDupeCatcher__Error_Message__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Scenario__c.SFSSDupeCatcher__Match_On_Insert_Action__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Scenario__c.SFSSDupeCatcher__Match_On_Update_Action__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Scenario__c.SFSSDupeCatcher__Merged_Duplicates__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Scenario__c.SFSSDupeCatcher__Person_Account_Filter__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Scenario__c.SFSSDupeCatcher__Potential_Duplicate_Count__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Scenario__c.SFSSDupeCatcher__Scenario_Rule_Count__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Scenario__c.SFSSDupeCatcher__Scenario_Type__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Stock_Item__c.Available_Quantity__c" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -6897,6 +7167,10 @@
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Contract_Addendum__c" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="ContractContactRole" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
@@ -7365,6 +7639,46 @@
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Application_Properties__c" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Application_Settings__c" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__DcIn__c" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Duplicate_Warning__c" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Override_Cache__c" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Potential_Duplicate__c" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__RequiredFieldSupport__c" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Scenario__c" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Scenario_Rule__c" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Web_To_Lead_Sources__c" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Site" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
@@ -7657,6 +7971,9 @@
                             <option name="name" value="Contract-zh_TW" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Contract_Addendum__c-en_US" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Credit_Line__c-en_US" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -7892,6 +8209,36 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Revenue_Transaction__c-en_US" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Application_Properties__c-en_US" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Application_Settings__c-en_US" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__DcIn__c-en_US" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Duplicate_Warning__c-en_US" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Override_Cache__c-en_US" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Potential_Duplicate__c-en_US" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__RequiredFieldSupport__c-en_US" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Scenario_Rule__c-en_US" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Scenario__c-en_US" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Web_To_Lead_Sources__c-en_US" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Stock_Item__c-en_US" />
@@ -8368,6 +8715,9 @@
                             <option name="name" value="Job__c" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Partner_Commission_Rates__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Product_Rate_Plan_Charge__c" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -8375,6 +8725,24 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Quote__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="RMA__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__DC_DupeCatcher_Application_Settings" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__DC_DupeCatcher_Data_Quality" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__DC_DupeCatcher_Getting_Started" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Duplicate_Warning__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Scenario__c" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Visit_Report__c" />
@@ -8673,6 +9041,9 @@
                     <MetadataType>
                       <option name="entries">
                         <list>
+                          <MetadataEntry>
+                            <option name="name" value="Account.IMO" />
+                          </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Account.Standard_Account_Duplicate_Rule" />
                           </MetadataEntry>
@@ -10041,6 +10412,9 @@
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="KV_RMA_Processing" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="KV_Sales_Agent_on_Account" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
@@ -10087,6 +10461,9 @@
                             <option name="name" value="Invoice_Payment" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="KV_RMA_Processing" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="KV_Sales_Agent_on_Account" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -10123,6 +10500,9 @@
                           <MetadataEntry>
                             <option name="name" value="Days_of_the_Month" />
                             <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Installation_Type" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Intended_Use" />
@@ -10236,6 +10616,9 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="E2CP" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="csmrgp" />
@@ -10456,6 +10839,9 @@
                           <MetadataEntry>
                             <option name="name" value="Contract-Contract Layout" />
                             <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Contract_Addendum__c-Contract Addendum Layout" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Credit_Line__c-Credit Line Layout" />
@@ -10915,6 +11301,30 @@
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Application_Settings__c-SFSSDupeCatcher__DupeCatcher Application Setting Layout" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__DcIn__c-SFSSDupeCatcher__DcIn Layout" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Duplicate_Warning__c-SFSSDupeCatcher__Duplicate Warning Layout" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Override_Cache__c-SFSSDupeCatcher__Override Cache Layout" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Potential_Duplicate__c-SFSSDupeCatcher__Potential Duplicate Layout" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__RequiredFieldSupport__c-SFSSDupeCatcher__DupeCatcher Required Field Support Layout" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Scenario__c-SFSSDupeCatcher__Scenario Layout" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Scenario_Rule__c-SFSSDupeCatcher__Scenario Rule Layout" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="SocialPersona-Social Persona Layout" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
@@ -11248,6 +11658,15 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="AuthorizationFormText.All_AuthorizationFormText" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Batch_Job__c.All_Batch_Jobs" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Batch_Job__c.All_House_Keeping" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Batch_Job__c.Eleanor" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Beneficial_Organizations__c.All" />
@@ -11619,6 +12038,9 @@
                             <option name="name" value="Quote__c.All" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="RMA__c.All" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Rank_Codes__c.All" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -11626,6 +12048,24 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Recommendation.All_Recommendations" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Duplicate_Warning__c.SFSSDupeCatcher__All" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Duplicate_Warning__c.SFSSDupeCatcher__All_Account_Warnings" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Duplicate_Warning__c.SFSSDupeCatcher__All_Contact_Warnings" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Duplicate_Warning__c.SFSSDupeCatcher__All_Lead_Warnings" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Duplicate_Warning__c.SFSSDupeCatcher__All_Lead_to_Contact_Warnings" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Duplicate_Warning__c.SFSSDupeCatcher__Lead_to_Account_Warnings" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Scorecard.AllScorecards" />
@@ -11761,6 +12201,9 @@
                     <MetadataType>
                       <option name="entries">
                         <list>
+                          <MetadataEntry>
+                            <option name="name" value="Account.IMO" />
+                          </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Account.Standard_Account_Match_Rule_v1_0" />
                           </MetadataEntry>
@@ -11916,6 +12359,13 @@
                       <option name="wildcard" value="false" />
                     </MetadataType>
                     <MetadataType>
+                      <option name="entries">
+                        <list>
+                          <MetadataEntry>
+                            <option name="name" value="Opportunity.Opportunity_Approval_Post_Template" />
+                          </MetadataEntry>
+                        </list>
+                      </option>
                       <option name="name" value="PostTemplate" />
                       <option name="wildcard" value="false" />
                     </MetadataType>
@@ -12587,6 +13037,11 @@
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Albatross_Data_Reports/Tri_Order_Rate_Plan_Charge_Prod_Line" />
+                            <option name="parentFolder" value="Albatross_Data_Reports" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="folder" value="true" />
                             <option name="name" value="DashboardReportsAdoption" />
                             <option name="selected" value="true" />
@@ -13142,6 +13597,11 @@
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="unfiled$public/Blank_Customer_Number" />
+                            <option name="parentFolder" value="unfiled$public" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="unfiled$public/SampleReportActiveUsers" />
                             <option name="parentFolder" value="unfiled$public" />
                             <option name="selected" value="true" />
@@ -13651,6 +14111,10 @@
                             <option name="name" value="Orders_with_without_assets" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Scenarios_with_Duplicate_Warnings_with_Potential_Duplicates" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
                         </list>
                       </option>
                       <option name="name" value="ReportType" />
@@ -14104,9 +14568,6 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="AuthorizationFormDataUse" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="Batch_Job__c" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Calendar2" />
@@ -14578,6 +15039,9 @@
                             <option name="name" value="Contract" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Contract_Addendum__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Credit_Line__c" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -14746,6 +15210,30 @@
                             <option name="name" value="Revenue_Transaction__c" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Application_Settings__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__DcIn__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Duplicate_Warning__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Override_Cache__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Potential_Duplicate__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__RequiredFieldSupport__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Scenario_Rule__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Scenario__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Solution" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -14850,6 +15338,10 @@
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Account.Vessel_IMO_Required_for_Vessel" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Account.Vessel_IMO_number_7_digits" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
@@ -14875,6 +15367,18 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Order_Commissions__c.Order_Commision_Product_Validation" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Scenario_Rule__c.SFSSDupeCatcher__Validate_Scenario_Type" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Scenario__c.SFSSDupeCatcher__PersonAccount_Contact_Filtertype" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Scenario__c.SFSSDupeCatcher__PersonAccount_Lead2Contact_Filtertype" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
                         </list>
@@ -15059,6 +15563,12 @@
                             <option name="name" value="Opportunity.dsfs__Send_with_DocuSign" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Duplicate_Warning__c.SFSSDupeCatcher__Browse_Dupes" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SFSSDupeCatcher__Duplicate_Warning__c.SFSSDupeCatcher__Merge_Duplicates" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Solution.APXTConga4__Conga_Composer_OAuth" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -15109,6 +15619,10 @@
                       <option name="entries">
                         <list>
                           <MetadataEntry>
+                            <option name="name" value="Account" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Invoice__c" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
@@ -15137,6 +15651,10 @@
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="RMA__c" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Visit_Report__c" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
@@ -15148,161 +15666,219 @@
                       <option name="entries">
                         <list>
                           <MetadataEntry>
+                            <option name="name" value="RMA__c.Email_Order_Administration_on_VOD_Returned_for_Vessel_Sold_or_Exchange" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="RMA__c.VOD_RMA_received_for_Vessel_Sold_or_Exchange" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Visit_Report__c.Notify_KV_of_New_Visit_Report" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                         </list>
                       </option>
                       <option name="name" value="WorkflowAlert" />
-                      <option name="wildcard" value="false" />
                     </MetadataType>
                     <MetadataType>
                       <option name="entries">
                         <list>
                           <MetadataEntry>
+                            <option name="name" value="Account.Update_Account_Record_Type" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Invoice_Line__c.Invoice_Line_Active" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Invoice_Line__c.Update_Legal_Entity" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Invoice_Line__c.Update_Master_Order_ID_Field_On_invoice" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Invoice_Line__c.Update_Master_Order_Name_Field_On_Invoic" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Invoice_Line__c.Update_Revenue_Recognition_Date" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Invoice_Line__c.Update_Revenue_Recognition_End_Date" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Invoice_Line__c.update_payment_terms_field" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Invoice__c.Cancel_Invoice" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Invoice__c.Invalid_Invoice_Status" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Invoice__c.Invoice_Date_Paid" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Invoice__c.Update_Due_Date_Field_On_Invoice" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Invoice__c.Update_Invoice_Email_Sent_Field" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Job_Rate_Plan_Charge__c.Update_Next_Uplift_Date_Field" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Job_Rate_Plan_Charge__c.Update_Unit_Price_for_1st_Year" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Job_Rate_Plan_Charge__c.Update_Year_1_Net_Total" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Job_Rate_Plan_Charge__c.Update_Year_1_Row_Total" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Job_Rate_Plan_Charge__c.Update_Year_1_VAT" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Job__c.Fill_In_Shipping_Country" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Job__c.Fill_In_Shipping_Postal_Code" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Job__c.Fill_in_Shipping_City" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Job__c.Fill_in_Shipping_State" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Job__c.Fill_in_Shipping_Street" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Job__c.Set_Order_Scheduled_Date" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Job__c.Update_BillingCity" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Job__c.Update_BillingCity_Shipping" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Job__c.Update_BillingCountry" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Job__c.Update_BillingCountry_Shipping" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Job__c.Update_BillingPostalCode" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Job__c.Update_BillingPostalCode_Shipping" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Job__c.Update_BillingState_Shipping" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Job__c.Update_BillingStreet" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Job__c.Update_BillingStreet_Shipping" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Job__c.Update_Order_Partner_Text" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Job__c.Update_Recalculate_Check_Box_On_Order" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Job__c.Update_Record_Type_to_Sale_Order" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Job__c.Update_the_Service_Activation_Date_of_Or" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Job__c.update_BillingState" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Opportunity.Approved" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Opportunity.Pending_Approval" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Opportunity.Rejected" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Quote_Rate_Plan_Charge__c.Update_Annual_Net_Total" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Quote_Rate_Plan_Charge__c.Update_Annual_Row_Total" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Quote_Rate_Plan_Charge__c.Update_Annual_VAT" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Quote__c.Update_Recalculate_Check_Box" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Quote__c.Update_Record_Type_On_Quote_Approve" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Quote__c.Update_Record_Type_On_Quote_RentPending" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Quote__c.Update_Record_Type_On_Quote_SalePending" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                         </list>
                       </option>
                       <option name="name" value="WorkflowFieldUpdate" />
-                      <option name="wildcard" value="false" />
                     </MetadataType>
                     <MetadataType>
                       <option name="name" value="WorkflowOutboundMessage" />
@@ -15312,90 +15888,120 @@
                       <option name="entries">
                         <list>
                           <MetadataEntry>
+                            <option name="name" value="Account.Add KV Prospect Record Type" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Invoice_Line__c.Cancelled to Draft" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Invoice_Line__c.Invoice Line Update Date" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Invoice_Line__c.Set Master Order On Invoice" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Invoice_Line__c.Update Legal Entity On Invoice" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Invoice_Line__c.Update Payment Terms On Invoice" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Invoice__c.Cancel Invoice from Credit Note" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Invoice__c.Invalid Invoice Status" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Invoice__c.Invoice Paid" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Invoice__c.Update Due Date For Consolidate Invoices" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Job_Rate_Plan_Charge__c.Videotel%3A Calculate Order Subscription Charges Year 1 values" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Job_Rate_Plan_Charge__c.Videotel%3A Update Next Uplift Date" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Job_Rate_Plan_Charge__c.Videotel%3A Update Unit Price for 1st Year" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Job__c.Create Sale Order" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Job__c.Fill In Shipping Address" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Job__c.KV Partner Order" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Job__c.Recalculate Values On Order" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Job__c.Scheduled Date" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Job__c.Update Order Address" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Job__c.Update the Service Activation Date of Order To Despatch Plus Five" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Quote_Rate_Plan_Charge__c.Calculate Annual Net Total" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Quote_Rate_Plan_Charge__c.Calculate Annual Row Total" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Quote_Rate_Plan_Charge__c.Calculate Annual VAT" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Quote__c.Recalculate Values On Quote" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Quote__c.Update Quote Record Type To Approve" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Quote__c.Update Quote Record Type To Pending Rental" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Quote__c.Update Quote Record Type To Pending Sale" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Visit_Report__c.New Videotel Report" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                         </list>
                       </option>
                       <option name="name" value="WorkflowRule" />
-                      <option name="wildcard" value="false" />
                     </MetadataType>
                     <MetadataType>
                       <option name="name" value="WorkflowSend" />

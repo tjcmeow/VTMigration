@@ -27,6 +27,7 @@
     <columns>
         <field>Account.Job__r.Order_Rate_Plan_Charges__r$Service_Activation_Date__c</field>
     </columns>
+    <currency>GBP</currency>
     <filter>
         <booleanFilter>(1 AND 2 AND 3 AND ((4 AND 5) OR (6 AND 7))) AND 8</booleanFilter>
         <criteriaItems>

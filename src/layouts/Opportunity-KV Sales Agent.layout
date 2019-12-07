@@ -3,7 +3,6 @@
     <customButtons>Add_Products</customButtons>
     <customButtons>Create_Order</customButtons>
     <excludeButtons>Share</excludeButtons>
-    <excludeButtons>Submit</excludeButtons>
     <layoutSections>
         <customLabel>false</customLabel>
         <detailHeading>false</detailHeading>

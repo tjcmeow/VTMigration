@@ -2,16 +2,6 @@
 <StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <sorted>false</sorted>
     <standardValue>
-        <fullName>Unsolicited Quote</fullName>
-        <default>false</default>
-        <description>An unsolicited quote is being sent to a prospective customer.</description>
-        <label>Unsolicited Quote</label>
-        <closed>false</closed>
-        <forecastCategory>Pipeline</forecastCategory>
-        <probability>15</probability>
-        <won>false</won>
-    </standardValue>
-    <standardValue>
         <fullName>Identify Prospect</fullName>
         <default>false</default>
         <label>Identify Prospect</label>
@@ -30,40 +20,12 @@
         <won>false</won>
     </standardValue>
     <standardValue>
-        <fullName>Discovery</fullName>
-        <default>false</default>
-        <description>This stage represent our initial communications with the prospect as we try to collect information about their business</description>
-        <label>Discovery</label>
-        <closed>false</closed>
-        <forecastCategory>Pipeline</forecastCategory>
-        <probability>10</probability>
-        <won>false</won>
-    </standardValue>
-    <standardValue>
-        <fullName>Presentation</fullName>
-        <default>false</default>
-        <label>Presentation</label>
-        <closed>false</closed>
-        <forecastCategory>Pipeline</forecastCategory>
-        <probability>20</probability>
-        <won>false</won>
-    </standardValue>
-    <standardValue>
         <fullName>Presentation/WebEx</fullName>
         <default>false</default>
         <label>Presentation/WebEx</label>
         <closed>false</closed>
         <forecastCategory>Pipeline</forecastCategory>
         <probability>20</probability>
-        <won>false</won>
-    </standardValue>
-    <standardValue>
-        <fullName>Demonstration</fullName>
-        <default>false</default>
-        <label>Demonstration</label>
-        <closed>false</closed>
-        <forecastCategory>Pipeline</forecastCategory>
-        <probability>40</probability>
         <won>false</won>
     </standardValue>
     <standardValue>
@@ -86,16 +48,6 @@
         <won>false</won>
     </standardValue>
     <standardValue>
-        <fullName>Services Consultation</fullName>
-        <default>false</default>
-        <description>Services Consultation initiates services review of Field Service and Application Engineering Changes</description>
-        <label>Services Consultation</label>
-        <closed>false</closed>
-        <forecastCategory>Pipeline</forecastCategory>
-        <probability>75</probability>
-        <won>false</won>
-    </standardValue>
-    <standardValue>
         <fullName>Negotiation</fullName>
         <default>false</default>
         <label>Negotiation</label>
@@ -112,34 +64,6 @@
         <closed>false</closed>
         <forecastCategory>Pipeline</forecastCategory>
         <probability>90</probability>
-        <won>false</won>
-    </standardValue>
-    <standardValue>
-        <fullName>Closed PO/Verbal</fullName>
-        <default>false</default>
-        <description>This stage indicates that we have a formal PO or verbal agreement from the prospect (now a customer!)</description>
-        <label>Closed PO/Verbal</label>
-        <closed>true</closed>
-        <forecastCategory>Closed</forecastCategory>
-        <probability>100</probability>
-        <won>true</won>
-    </standardValue>
-    <standardValue>
-        <fullName>Commitment to Buy</fullName>
-        <default>false</default>
-        <label>Commitment to Buy</label>
-        <closed>false</closed>
-        <forecastCategory>Pipeline</forecastCategory>
-        <probability>100</probability>
-        <won>false</won>
-    </standardValue>
-    <standardValue>
-        <fullName>Sales Fulfillment</fullName>
-        <default>false</default>
-        <label>Sales Fulfillment</label>
-        <closed>false</closed>
-        <forecastCategory>Pipeline</forecastCategory>
-        <probability>100</probability>
         <won>false</won>
     </standardValue>
     <standardValue>

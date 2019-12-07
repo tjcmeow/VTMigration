@@ -870,19 +870,11 @@ Grand Total</inlineHelpText>
         <picklistValues>
             <picklist>Legal_Entity__c</picklist>
             <values>
-                <fullName>VCR</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>VMA</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>VMI</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>VTS</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -1052,19 +1044,11 @@ Grand Total</inlineHelpText>
         <picklistValues>
             <picklist>Legal_Entity__c</picklist>
             <values>
-                <fullName>VCR</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>VMA</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>VMI</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>VTS</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -1234,19 +1218,11 @@ Grand Total</inlineHelpText>
         <picklistValues>
             <picklist>Legal_Entity__c</picklist>
             <values>
-                <fullName>VCR</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>VMA</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>VMI</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>VTS</fullName>
                 <default>false</default>
             </values>
         </picklistValues>

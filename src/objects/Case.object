@@ -1247,6 +1247,16 @@ IF (MID ( Id, 14, 1) &lt;&gt;&quot;0&quot;, RIGHT(Id, 2), &quot;&quot;) ) ) ) ) 
         <externalId>false</externalId>
         <inlineHelpText>Search for the correct Platform or Asset Account</inlineHelpText>
         <label>Search Platform / Asset Account</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Account must be of KV Platform account Type</errorMessage>
+            <filterItems>
+                <field>Account.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>KV Platform</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
         <referenceTo>Account</referenceTo>
         <relationshipLabel>Cases (Platform / Asset Account)</relationshipLabel>
         <relationshipName>Cases1</relationshipName>
@@ -2042,19 +2052,11 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
         <picklistValues>
             <picklist>Legal_Entity__c</picklist>
             <values>
-                <fullName>VCR</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>VMA</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>VMI</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>VTS</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -2572,19 +2574,11 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
         <picklistValues>
             <picklist>Legal_Entity__c</picklist>
             <values>
-                <fullName>VCR</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>VMA</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>VMI</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>VTS</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -3114,19 +3108,11 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
         <picklistValues>
             <picklist>Legal_Entity__c</picklist>
             <values>
-                <fullName>VCR</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>VMA</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>VMI</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>VTS</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -3648,19 +3634,11 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
         <picklistValues>
             <picklist>Legal_Entity__c</picklist>
             <values>
-                <fullName>VCR</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>VMA</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>VMI</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>VTS</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -4178,19 +4156,11 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
         <picklistValues>
             <picklist>Legal_Entity__c</picklist>
             <values>
-                <fullName>VCR</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>VMA</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>VMI</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>VTS</fullName>
                 <default>false</default>
             </values>
         </picklistValues>

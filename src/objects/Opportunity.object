@@ -163,10 +163,6 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Legal Review</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Negotiation</fullName>
             <default>false</default>
         </values>
@@ -180,15 +176,7 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Closed PO%2FVerbal</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Closed%2FWon</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Commitment to Buy</fullName>
             <default>false</default>
         </values>
         <values>
@@ -196,27 +184,11 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Demonstration</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Discovery</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Identify Prospect</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Legal Review</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Negotiation</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Presentation</fullName>
             <default>false</default>
         </values>
     </businessProcesses>
@@ -672,6 +644,7 @@
     </fields>
     <fields>
         <fullName>NextStep</fullName>
+        <inlineHelpText>Use this field to answer in advance the anticipated question about this opportunity.</inlineHelpText>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>

@@ -538,7 +538,7 @@
         <caseSensitive>true</caseSensitive>
         <externalId>true</externalId>
         <inlineHelpText>Old Id from KVH</inlineHelpText>
-        <label>External ID</label>
+        <label>Legacy Account ID</label>
         <length>18</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -1113,6 +1113,19 @@ Name)))))</formula>
                 <controllingFieldValue>Maritime</controllingFieldValue>
                 <valueName>Tankers</valueName>
             </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Installation_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Installation Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Installation_Type</valueSetName>
         </valueSet>
     </fields>
     <fields>
@@ -3864,6 +3877,16 @@ Account.Product_Interest_2__c</description>
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>SFSSDupeCatcher__Override_DupeCatcher__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Account Override DupeCatcher</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>Sales_Agent_Partner__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Select the Partners that this Account will be shared with in the Partner Community.</inlineHelpText>
@@ -5810,6 +5833,21 @@ business/products</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Installation_Type__c</picklist>
+            <values>
+                <fullName>Land</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vessel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vessel %28Awaiting IMO%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Invoice_Delivery_Type__c</picklist>
             <values>
                 <fullName>Email</fullName>
@@ -7394,6 +7432,21 @@ business/products</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Installation_Type__c</picklist>
+            <values>
+                <fullName>Land</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vessel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vessel %28Awaiting IMO%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Invoice_Delivery_Type__c</picklist>
             <values>
                 <fullName>Email</fullName>
@@ -8950,6 +9003,21 @@ business/products</description>
             </values>
             <values>
                 <fullName>Van%2FMiniVan</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Installation_Type__c</picklist>
+            <values>
+                <fullName>Land</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vessel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vessel %28Awaiting IMO%29</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -10529,6 +10597,21 @@ business/products</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Installation_Type__c</picklist>
+            <values>
+                <fullName>Land</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vessel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vessel %28Awaiting IMO%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Invoice_Delivery_Type__c</picklist>
             <values>
                 <fullName>Email</fullName>
@@ -12008,6 +12091,21 @@ business/products</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Installation_Type__c</picklist>
+            <values>
+                <fullName>Land</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vessel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vessel %28Awaiting IMO%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Invoice_Delivery_Type__c</picklist>
             <values>
                 <fullName>Email</fullName>
@@ -12689,6 +12787,24 @@ business/products</description>
         <description>This rule ensures that Platform Account Record Types will never have children</description>
         <errorConditionFormula>CONTAINS( Parent.RecordType.DeveloperName , &quot;Platform&quot;)</errorConditionFormula>
         <errorMessage>&quot;Platform&quot; Account Record Types cannot have child Accounts</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Vessel_IMO_Required_for_Vessel</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+ISPICKVAL( Installation_Type__c , &quot;Vessel&quot;),  
+ISBLANK(  Vessel_IMO__c  ))</errorConditionFormula>
+        <errorDisplayField>Vessel_IMO__c</errorDisplayField>
+        <errorMessage>Please complete the Vessel IMO #.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Vessel_IMO_not_Required_for_Land</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+ISPICKVAL( Installation_Type__c , &quot;Land&quot;),  
+NOT(ISBLANK( Vessel_IMO__c  )))</errorConditionFormula>
+        <errorDisplayField>Vessel_IMO__c</errorDisplayField>
+        <errorMessage>Vessel IMO # should not be completed if the Installation Type is Land.</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>Vessel_IMO_number_7_digits</fullName>

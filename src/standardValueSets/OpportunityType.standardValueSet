@@ -3,32 +3,12 @@
     <sorted>false</sorted>
     <standardValue>
         <fullName>Sale</fullName>
-        <default>true</default>
+        <default>false</default>
         <label>Sale</label>
     </standardValue>
     <standardValue>
-        <fullName>Lease</fullName>
-        <default>false</default>
-        <label>Lease</label>
-    </standardValue>
-    <standardValue>
-        <fullName>Existing Business</fullName>
-        <default>false</default>
-        <label>Existing Business</label>
-    </standardValue>
-    <standardValue>
-        <fullName>New Business</fullName>
-        <default>false</default>
-        <label>New Business</label>
-    </standardValue>
-    <standardValue>
         <fullName>Rental</fullName>
-        <default>false</default>
+        <default>true</default>
         <label>Rental</label>
-    </standardValue>
-    <standardValue>
-        <fullName>Subscription</fullName>
-        <default>false</default>
-        <label>Subscription</label>
     </standardValue>
 </StandardValueSet>

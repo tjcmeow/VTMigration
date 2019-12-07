@@ -172,6 +172,16 @@
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
         <label>Account</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Account must be a KV Customer</errorMessage>
+            <filterItems>
+                <field>Account.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>KV Customers</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
         <referenceTo>Account</referenceTo>
         <relationshipLabel>Orders (Account)</relationshipLabel>
         <relationshipName>Job</relationshipName>
@@ -599,7 +609,7 @@
         <relationshipName>Orders4</relationshipName>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
@@ -730,6 +740,28 @@
         <formula>Shipping_Account__r.Company_IMO__c</formula>
         <label>Company IMO Number</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contract_Signed_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Contract Signed Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Contract_Signed_by__c</fullName>
+        <externalId>false</externalId>
+        <label>Contract Signed by</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
@@ -1349,7 +1381,7 @@
         <label>Official Termination Given</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
     </fields>
@@ -1380,6 +1412,7 @@
     </fields>
     <fields>
         <fullName>Order_Number__c</fullName>
+        <displayFormat>{00000}</displayFormat>
         <externalId>false</externalId>
         <label>Order Number</label>
         <trackHistory>false</trackHistory>
@@ -1477,7 +1510,18 @@
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
         <label>Partner</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Account must be KV Partner</errorMessage>
+            <filterItems>
+                <field>Account.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>KV Partner</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
         <referenceTo>Account</referenceTo>
+        <relationshipLabel>Orders (Partner)</relationshipLabel>
         <relationshipName>Orders2</relationshipName>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -1552,7 +1596,7 @@
         <label>Vessel or Platform Detail</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -2576,9 +2620,22 @@
         <externalId>false</externalId>
         <label>VOD Order</label>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Vessel_Name_on_Contract__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>This should be the vessel name as per the contract. Note over time the vessel name may change yet this value should remain as contract.</inlineHelpText>
+        <label>Vessel Name on Contract</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Wet_or_Dry_Cargo__c</fullName>
@@ -3821,19 +3878,11 @@
         <picklistValues>
             <picklist>Legal_Entity__c</picklist>
             <values>
-                <fullName>VCR</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>VMA</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>VMI</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>VTS</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -5431,19 +5480,11 @@
         <picklistValues>
             <picklist>Legal_Entity__c</picklist>
             <values>
-                <fullName>VCR</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>VMA</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>VMI</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>VTS</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -6479,10 +6520,6 @@
                 <fullName>Rental</fullName>
                 <default>false</default>
             </values>
-            <values>
-                <fullName>Sale</fullName>
-                <default>false</default>
-            </values>
         </picklistValues>
         <picklistValues>
             <picklist>Order_Type__c</picklist>
@@ -7028,19 +7065,11 @@
         <picklistValues>
             <picklist>Legal_Entity__c</picklist>
             <values>
-                <fullName>VCR</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>VMA</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>VMI</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>VTS</fullName>
                 <default>false</default>
             </values>
         </picklistValues>

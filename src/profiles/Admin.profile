@@ -953,6 +953,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Account.Installation_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Account.Invoice_Balance__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -1254,6 +1259,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Registered_Owner__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.SFSSDupeCatcher__Override_DupeCatcher__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1912,7 +1922,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Case.AccountId</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -2344,6 +2354,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Contact.ReportsToId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.SFSSDupeCatcher__Override_DupeCatcher__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -5668,6 +5683,16 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Job__c.Contract_Signed_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Job__c.Contract_Signed_by__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Job__c.Contracted_MRR__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -6233,6 +6258,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Job__c.Vessel_Name_on_Contract__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Job__c.Wet_or_Dry_Cargo__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -6509,6 +6539,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Lead.Rig__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.SFSSDupeCatcher__Override_DupeCatcher__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -10730,10 +10765,6 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Account-Account Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Account-Account Layout</layout>
-        <recordType>Account.KV_Partner</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Account-KV Customer</layout>

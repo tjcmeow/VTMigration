@@ -815,6 +815,16 @@
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>SFSSDupeCatcher__Override_DupeCatcher__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Contact Override DupeCatcher</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>Sales_Agent_s__c</fullName>
         <externalId>false</externalId>
         <formula>Account.KV_SalesAgentText__c</formula>

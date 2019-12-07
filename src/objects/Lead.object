@@ -717,6 +717,7 @@
     <fields>
         <fullName>Lead_Type__c</fullName>
         <externalId>false</externalId>
+        <inlineHelpText>defines lead&apos;s interest in buying (Customer) or interest in selling (Partner)</inlineHelpText>
         <label>Lead Type</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -726,7 +727,7 @@
                 <sorted>false</sorted>
                 <value>
                     <fullName>None</fullName>
-                    <default>false</default>
+                    <default>true</default>
                     <label>None</label>
                 </value>
                 <value>
@@ -896,6 +897,15 @@
         <trackFeedHistory>false</trackFeedHistory>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SFSSDupeCatcher__Override_DupeCatcher__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Lead Override DupeCatcher</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
     </fields>
     <fields>
         <fullName>Sales_Office__c</fullName>

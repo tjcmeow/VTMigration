@@ -124,6 +124,7 @@ public with sharing class VTMig_AddOrderProduct_Test {
         controller.recalculate();
         System.assertNotEquals(controller.grandTotal, total);
 
+        controller.removeChargeId = 0;
         controller.removeCharge();
 
         PageReference pageRef2 = controller.saveProducts();

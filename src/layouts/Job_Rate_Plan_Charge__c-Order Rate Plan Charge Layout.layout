@@ -8,6 +8,10 @@
         <label>Information</label>
         <layoutColumns>
             <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Order_Rate_Plan_Charge_Reference__c</field>
+            </layoutItems>
+            <layoutItems>
                 <behavior>Required</behavior>
                 <field>Name</field>
             </layoutItems>
@@ -34,10 +38,6 @@
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>OrderID__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Order_Rate_Plan_Charge_Reference__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>

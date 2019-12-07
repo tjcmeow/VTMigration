@@ -77,7 +77,7 @@
                         </apex:commandButton>
                     </apex:column>
                     <apex:column headerValue="Product Name">
-                        <apex:inputField value="{!charge.productName}"/>
+                        <apex:input type="text" value="{!charge.productName}"/>
                     </apex:column>
                     <apex:column headerValue="Product Code">
                         <apex:inputField value="{!charge.orderRatePlanCharge.Product_Rate_Plan_Charge__r.Product_Rate_Plan__r.Product__r.Product_Code__c}"/>

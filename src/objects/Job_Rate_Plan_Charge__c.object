@@ -1253,7 +1253,7 @@
     <fields>
         <fullName>Service_Activation_Date__c</fullName>
         <externalId>false</externalId>
-        <label>Service Activation Date</label>
+        <label>Service Start Date</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
@@ -1397,7 +1397,7 @@
         <label>Tax Percentage Applied</label>
         <precision>18</precision>
         <required>false</required>
-        <scale>2</scale>
+        <scale>9</scale>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
@@ -1693,7 +1693,7 @@
         <label>VAT Percentage Applied</label>
         <precision>18</precision>
         <required>false</required>
-        <scale>2</scale>
+        <scale>9</scale>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
@@ -1928,7 +1928,7 @@
         <label>All</label>
     </listViews>
     <nameField>
-        <label>Order Rate Plan Charge Name</label>
+        <label>Charge Name</label>
         <trackHistory>false</trackHistory>
         <type>Text</type>
     </nameField>
