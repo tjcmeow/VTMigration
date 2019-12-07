@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Job__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Job__r.Order_Rate_Plan_Charges__r$Name</field>
+    </columns>
+    <currency>GBP</currency>
+    <filter>
+        <booleanFilter>((1 OR 2) AND 3) AND 4</booleanFilter>
+        <criteriaItems>
+            <column>Account$Parent</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Vroon</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$Name</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Vroon</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Job__r.Order_Rate_Plan_Charges__r$Charge_Name__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>freight,credits,webfta</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Job__r$Status__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>In Service</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Fleet List Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_with_Orders_and_Contacts__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

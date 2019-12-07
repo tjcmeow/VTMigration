@@ -1140,6 +1140,30 @@ Name)))))</formula>
         <type>Currency</type>
     </fields>
     <fields>
+        <fullName>Invoice_Currency__c</fullName>
+        <externalId>false</externalId>
+        <label>Invoice Currency</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>USD or Euro Upon Request</fullName>
+                    <default>false</default>
+                    <label>USD or Euro Upon Request</label>
+                </value>
+                <value>
+                    <fullName>Local Currency Only</fullName>
+                    <default>false</default>
+                    <label>Local Currency Only</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>Invoice_Delivery_Type__c</fullName>
         <description>It provides either Print/Email/Email &amp; Print for invoice</description>
         <externalId>false</externalId>
@@ -5848,6 +5872,17 @@ business/products</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Invoice_Currency__c</picklist>
+            <values>
+                <fullName>Local Currency Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USD or Euro Upon Request</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Invoice_Delivery_Type__c</picklist>
             <values>
                 <fullName>Email</fullName>
@@ -7447,6 +7482,17 @@ business/products</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Invoice_Currency__c</picklist>
+            <values>
+                <fullName>Local Currency Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USD or Euro Upon Request</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Invoice_Delivery_Type__c</picklist>
             <values>
                 <fullName>Email</fullName>
@@ -9018,6 +9064,17 @@ business/products</description>
             </values>
             <values>
                 <fullName>Vessel %28Awaiting IMO%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Invoice_Currency__c</picklist>
+            <values>
+                <fullName>Local Currency Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USD or Euro Upon Request</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -10612,6 +10669,17 @@ business/products</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Invoice_Currency__c</picklist>
+            <values>
+                <fullName>Local Currency Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USD or Euro Upon Request</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Invoice_Delivery_Type__c</picklist>
             <values>
                 <fullName>Email</fullName>
@@ -12102,6 +12170,17 @@ business/products</description>
             </values>
             <values>
                 <fullName>Vessel %28Awaiting IMO%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Invoice_Currency__c</picklist>
+            <values>
+                <fullName>Local Currency Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USD or Euro Upon Request</fullName>
                 <default>false</default>
             </values>
         </picklistValues>

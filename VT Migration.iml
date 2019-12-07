@@ -1256,6 +1256,9 @@
                             <option name="name" value="Account.Invoice_Balance__c" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Account.Invoice_Currency__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Account.Invoice_Delivery_Type__c" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -12134,6 +12137,9 @@
                             <option name="name" value="User.AllUsers" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="User.KV_Partners" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="User.dsfs__DocuSignActiveUsers" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -13207,6 +13213,11 @@
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="reports/Videotel_Pre_Invoicing_Validation-meta.xml" />
+                            <option name="parentFolder" value="reports" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="folder" value="true" />
                             <option name="name" value="Sales_and_Marketing_Reports" />
                             <option name="selected" value="true" />
@@ -13869,6 +13880,31 @@
                           <MetadataEntry>
                             <option name="name" value="Videotel_Finance/order_line_info_report_for_Sage_Upload" />
                             <option name="parentFolder" value="Videotel_Finance" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="folder" value="true" />
+                            <option name="name" value="Videotel_Pre_Invoicing_Validation" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Videotel_Pre_Invoicing_Validation/Invoices_without_Partner_Agent" />
+                            <option name="parentFolder" value="Videotel_Pre_Invoicing_Validation" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Videotel_Pre_Invoicing_Validation/Orders_to_Ad_Hoc" />
+                            <option name="parentFolder" value="Videotel_Pre_Invoicing_Validation" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Videotel_Pre_Invoicing_Validation/Orders_Uplift_Errors" />
+                            <option name="parentFolder" value="Videotel_Pre_Invoicing_Validation" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Videotel_Pre_Invoicing_Validation/Orders_with_no_Next_Charge_Date" />
+                            <option name="parentFolder" value="Videotel_Pre_Invoicing_Validation" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -15339,6 +15375,10 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Account.Vessel_IMO_Required_for_Vessel" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Account.Vessel_IMO_not_Required_for_Land" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
