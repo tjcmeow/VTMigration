@@ -15,6 +15,7 @@
     <apex:sectionHeader title="Update Order Status for " subtitle="{!order.Name}" />
 
     <apex:form >
+        <apex:pageMessages />
         <apex:pageBlock >
             <apex:pageBlockButtons location="both">
                 <apex:commandButton action="{!saveOrder}" value="Save"/>

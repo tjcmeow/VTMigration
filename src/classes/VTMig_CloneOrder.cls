@@ -45,7 +45,7 @@ public with sharing class VTMig_CloneOrder {
         ];
         orderProducts = [
                 SELECT Id, Bundle_SequenceNumber__c, Cloned_Id__c, Description__c, Minimum_Next_Charge_Date_For_Product__c, SequenceNumber__c,
-                        Product__c, Product_Bundle__c, Product_Code__c, Product_Family__c
+                        Product__c, Product_Bundle__c, Product_Code__c, Product_Family__c, Name
                 FROM Job_Product__c WHERE Job__c = : orderId
         ];
         orderProductsMap.put(orderId, orderProducts);
@@ -57,7 +57,7 @@ public with sharing class VTMig_CloneOrder {
         }
 
         orderRatePlans = [
-                SELECT Id, Job_Product__c, Description__c, Sequence_Number__c, Cloned_Id__c, Product_Rate_Plan__c
+                SELECT Id, Job_Product__c, Description__c, Sequence_Number__c, Cloned_Id__c, Product_Rate_Plan__c, Name
                 FROM Job_Rate_Plan__c WHERE Job_Product__c IN: orderProductIds
         ];
         List<Id> orderRatePlanIds = new List<Id>();
@@ -120,6 +120,7 @@ public with sharing class VTMig_CloneOrder {
             List<Job_Product__c> tempJobProducts = new List<Job_Product__c>();
             for(Job_Product__c orderProduct : orderProducts) {
                 Job_Product__c jobProduct = orderProduct.clone(false);
+                jobProduct.Name = orderProduct.Name;
                 jobProduct.Job__c = newOrder.Id;
                 jobProduct.Cloned_Id__c = orderProduct.Id;
                 tempJobProducts.add(jobProduct);
@@ -131,9 +132,14 @@ public with sharing class VTMig_CloneOrder {
 
         for(Job__c newOrder : newOrders) {
             for(Job_Product__c jobProduct : orderProductsMap.get(newOrder.Id)) {
+                List<Job_Rate_Plan__c> orderRatePlansFromMap = new List<Job_Rate_Plan__c>();
+                if(orderRatePlansMap.keySet().contains(jobProduct.Cloned_Id__c)) {
+                    orderRatePlansFromMap = orderRatePlansMap.get(jobProduct.Cloned_Id__c);
+                }
                 List<Job_Rate_Plan__c> tempRatePlans = New List<Job_Rate_Plan__c>();
-                for(Job_Rate_Plan__c orderRatePlan : orderRatePlansMap.get(jobProduct.Cloned_Id__c)) {
+                for(Job_Rate_Plan__c orderRatePlan : orderRatePlansFromMap) {
                     Job_Rate_Plan__c jobRatePlan = orderRatePlan.clone(false);
+                    jobRatePlan.Name = orderRatePlan.Name;
                     jobRatePlan.Job_Product__c = jobProduct.Id;
                     jobRatePlan.Cloned_Id__c = orderRatePlan.Id;
                     tempRatePlans.add(jobRatePlan);
@@ -148,7 +154,11 @@ public with sharing class VTMig_CloneOrder {
             for(Job_Product__c jobProduct : orderProductsMap.get(newOrder.Id)) {
                 for(Job_Rate_Plan__c orderRatePlan : orderRatePlansMap.get(jobProduct.Id)) {
                     List<Job_Rate_Plan_Charge__c> tempCharges = new List<Job_Rate_Plan_Charge__c>();
-                    for(Job_Rate_Plan_Charge__c orderRatePlanCharge : orderRatePlanChargesMap.get(orderRatePlan.Cloned_Id__c)) {
+                    List<Job_Rate_Plan_Charge__c> orderChargesFromMap = new List<Job_Rate_Plan_Charge__c>();
+                    if(orderRatePlanChargesMap.keySet().contains(orderRatePlan.Cloned_Id__c)) {
+                        orderChargesFromMap = orderRatePlanChargesMap.get(orderRatePlan.Cloned_Id__c);
+                    }
+                    for(Job_Rate_Plan_Charge__c orderRatePlanCharge : orderChargesFromMap) {
                         Job_Rate_Plan_Charge__c jobRatePlanCharge = orderRatePlanCharge.clone(false);
                         jobRatePlanCharge.Order__c = newOrder.Id;
                         jobRatePlanCharge.Job_Rate_Plan__c = orderRatePlan.Id;

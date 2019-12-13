@@ -154,31 +154,10 @@
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>ControlledByParent</externalSharingModel>
     <fields>
-        <fullName>Addendum_Signed_Date__c</fullName>
-        <externalId>false</externalId>
-        <label>Addendum Signed Date</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Date</type>
-    </fields>
-    <fields>
-        <fullName>Addendum_Signed_by__c</fullName>
-        <externalId>false</externalId>
-        <label>Addendum Signed by</label>
-        <length>255</length>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>Order__c</fullName>
         <externalId>false</externalId>
         <label>Order</label>
         <referenceTo>Job__c</referenceTo>
-        <relationshipLabel>Contract Addendums</relationshipLabel>
         <relationshipName>Contract_Addendums</relationshipName>
         <relationshipOrder>0</relationshipOrder>
         <reparentableMasterDetail>false</reparentableMasterDetail>
@@ -187,14 +166,59 @@
         <type>MasterDetail</type>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
     </fields>
-    <label>Contract Addendum</label>
+    <fields>
+        <fullName>Signed_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Signed Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Signed_by__c</fullName>
+        <externalId>false</externalId>
+        <label>Signed by</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Contract</fullName>
+                    <default>false</default>
+                    <label>Contract</label>
+                </value>
+                <value>
+                    <fullName>Addendum</fullName>
+                    <default>false</default>
+                    <label>Addendum</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Contract &amp; Addendums</label>
     <nameField>
-        <displayFormat>Add-{00000}</displayFormat>
-        <label>Contract Add Name</label>
+        <displayFormat>C/A-{00000}</displayFormat>
+        <label>Contract/Add Name</label>
         <trackHistory>false</trackHistory>
         <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>Contract Addendums</pluralLabel>
+    <pluralLabel>Contract &amp; Addendums</pluralLabel>
     <searchLayouts/>
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>

@@ -14,8 +14,9 @@ public with sharing class VTMig_BatchUplift_Test {
         Revenue_Recognition_Rule__c rule = new Revenue_Recognition_Rule__c(Name = 'Full Recognition - On Invoice Date');
         insert rule;
 
-        Id kvaccountRecordTypeId = Schema.SObjectType.Account.getRecordTypeInfosByName().get('KV Platform').getRecordTypeId();
+        Id kvaccountRecordTypeId = Schema.SObjectType.Account.getRecordTypeInfosByName().get('KV Customers').getRecordTypeId();
         Id kvPartnerRecordTypeId = Schema.SObjectType.Account.getRecordTypeInfosByName().get('KV Partner').getRecordTypeId();
+        Id kvPlatformRecordTypeId = Schema.SObjectType.Account.getRecordTypeInfosByName().get('KV Platform').getRecordTypeId();
 
         // don't change the billing country field as VAT will be calculated based on this
         Account acc = new Account(Name = 'Test Account', BillingCountry = 'United Kingdom', recordtypeID = kvaccountRecordTypeId);
@@ -23,6 +24,9 @@ public with sharing class VTMig_BatchUplift_Test {
 
         Account acc2 = new Account(Name = 'Test Partner', BillingCountry = 'United Kingdom', recordtypeID = kvPartnerRecordTypeId);
         insert acc2;
+
+        Account acc3 = new Account(Name = 'Test Platform', BillingCountry = 'United Kingdom', recordtypeID = kvPlatformRecordTypeId);
+        insert acc3;
 
         Product__c invoiceItProduct = new Product__c(Valid_From_Date__c = system.today(), Name = 'VOD');
         insert invoiceItProduct;
@@ -43,13 +47,13 @@ public with sharing class VTMig_BatchUplift_Test {
         // this will cover the IITClassAfterOnOrderRatePlanCharges
         Job__c job = new Job__c(Account__c = acc.id, Sub_Total__c = 100, Discount_Value__c = 0, CurrencyL__c = currency1.Id);
         job.Account__c = acc.Id;
-        job.Shipping_Account__c = acc.Id;
+        job.Shipping_Account__c = acc3.Id;
         job.IITIntended_Use__c = 'LOCAL UK WATERS';
         job.Withholding_Tax_Percentage__c = 10;
         job.BMS_Contract_Year__c = 2;
         job.Status__c = 'Ready for Fulfillment';
         job.Partner__c = acc2.Id;
-        //job.Mid_Term_Order__c = true;
+        job.RecordTypeId = Schema.SObjectType.Job__c.getRecordTypeInfosByName().get('Child Order').getRecordTypeId();
         insert job;
 
         Job_Product__c  jobProduct= new Job_Product__c(Product__c = invoiceItProduct.Id, Name = 'VOD',Job__c = job.Id);

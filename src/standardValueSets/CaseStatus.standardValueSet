@@ -44,12 +44,6 @@
         <closed>true</closed>
     </standardValue>
     <standardValue>
-        <fullName>Closed As Duplicate</fullName>
-        <default>false</default>
-        <label>Closed As Duplicate</label>
-        <closed>true</closed>
-    </standardValue>
-    <standardValue>
         <fullName>Completed</fullName>
         <default>false</default>
         <label>Completed</label>
@@ -162,5 +156,11 @@
         <default>false</default>
         <label>With VOD Prod</label>
         <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed As Duplicate</fullName>
+        <default>false</default>
+        <label>Closed As Duplicate</label>
+        <closed>true</closed>
     </standardValue>
 </StandardValueSet>

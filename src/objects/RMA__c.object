@@ -143,7 +143,7 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
-    <enableActivities>false</enableActivities>
+    <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
     <enableHistory>true</enableHistory>
@@ -165,6 +165,18 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Asset_Item__c</fullName>
+        <externalId>false</externalId>
+        <formula>Asset__r.Item__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Asset Item</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Asset__c</fullName>
@@ -193,6 +205,40 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Billing_Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Billing Notes</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Case_Account__c</fullName>
+        <externalId>false</externalId>
+        <formula>Case__r.Contact.Acct_Name__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Case Account</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Case_Reference_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>Case__r.Thread_ID__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Case Reference ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Case__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -205,6 +251,51 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Customer_Part__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the Customer&apos;s Part # if available</inlineHelpText>
+        <label>Customer Part #</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Customer_Serial_Number__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter if the Customer has their unique serial number added to the device</inlineHelpText>
+        <label>Customer Serial Number</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Date_Final_Assembly_Completed__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Date Final Assembly completed</inlineHelpText>
+        <label>Date Final Assembly Completed</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_Incoming_Processing_Completed__c</fullName>
+        <description>KC Proj</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date Incoming Processing is Completed</inlineHelpText>
+        <label>Service Incoming Completed</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
     </fields>
     <fields>
         <fullName>Date_Issued__c</fullName>
@@ -226,6 +317,482 @@
         <type>Date</type>
     </fields>
     <fields>
+        <fullName>Date_Shipped__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Date Shipped to be completed by Shipping</inlineHelpText>
+        <label>Date Shipped</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_Unit_off_Hold__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Date unit released from Hold, if applicable (funding or communication with customer.)</inlineHelpText>
+        <label>Date Unit off Hold</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_Unit_on_Hold__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Date the Unit was place on Hold if applicable (funding or communication with customer.)</inlineHelpText>
+        <label>Date Unit on Hold</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_time_RMA_requested__c</fullName>
+        <externalId>false</externalId>
+        <label>Date/Time RMA requested</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Days_for_Evaluation__c</fullName>
+        <externalId>false</externalId>
+        <formula>Evaluation_Complete__c -  Date_Incoming_Processing_Completed__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Calculated days between Incoming Processing completed to Evaluation Complete</inlineHelpText>
+        <label>Days for Bench Test</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Days_for_Final_Assy_Packing__c</fullName>
+        <externalId>false</externalId>
+        <formula>Date_Final_Assembly_Completed__c -  Verification_of_Contents_Compl__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Calculated days between Final Assy &amp; Testing and Verification of Contents Completed</inlineHelpText>
+        <label>Days for Final Assy &amp; Packing</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Days_for_Rework_Test__c</fullName>
+        <externalId>false</externalId>
+        <formula>Rework_Testing_Completed__c -  Evaluation_Complete__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Calculated days between Evaluation and Rework &amp; Testing</inlineHelpText>
+        <label>Days for Rework &amp; Test</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Days_for_Verification_of_Contents__c</fullName>
+        <externalId>false</externalId>
+        <formula>Verification_of_Contents_Compl__c -  Rework_Testing_Completed__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Calculated days between Verification of Contents and Rework &amp; Testing completed</inlineHelpText>
+        <label>Days for Service Outgoing</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Days_in_Shipping__c</fullName>
+        <externalId>false</externalId>
+        <formula>Date_Shipped__c -  Date_Final_Assembly_Completed__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Calculated days between Final Assy. and Shipping Completed</inlineHelpText>
+        <label>Days in Shipping</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Days_in_house__c</fullName>
+        <externalId>false</externalId>
+        <formula>Today() -  Date_Received__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Total days in house as of today</inlineHelpText>
+        <label>Days in house</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Defect__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the Defect that is based on the Record Type</inlineHelpText>
+        <label>Defect</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Accelerometer</fullName>
+                    <default>false</default>
+                    <label>Accelerometer</label>
+                </value>
+                <value>
+                    <fullName>Accelerometer Cable</fullName>
+                    <default>false</default>
+                    <label>Accelerometer Cable</label>
+                </value>
+                <value>
+                    <fullName>Accelerometer PCB</fullName>
+                    <default>false</default>
+                    <label>Accelerometer PCB</label>
+                </value>
+                <value>
+                    <fullName>Age and Wear</fullName>
+                    <default>false</default>
+                    <label>Age and Wear</label>
+                </value>
+                <value>
+                    <fullName>Bad Electrical Connection</fullName>
+                    <default>false</default>
+                    <label>Bad Electrical Connection</label>
+                </value>
+                <value>
+                    <fullName>Base Plate</fullName>
+                    <default>false</default>
+                    <label>Base Plate</label>
+                </value>
+                <value>
+                    <fullName>Broken Fiber</fullName>
+                    <default>false</default>
+                    <label>Broken Fiber</label>
+                </value>
+                <value>
+                    <fullName>Broken Splice</fullName>
+                    <default>false</default>
+                    <label>Broken Splice</label>
+                </value>
+                <value>
+                    <fullName>Cable / Connector</fullName>
+                    <default>false</default>
+                    <label>Cable / Connector</label>
+                </value>
+                <value>
+                    <fullName>Coil</fullName>
+                    <default>false</default>
+                    <label>Coil</label>
+                </value>
+                <value>
+                    <fullName>Cosmetic</fullName>
+                    <default>false</default>
+                    <label>Cosmetic</label>
+                </value>
+                <value>
+                    <fullName>Coupler</fullName>
+                    <default>false</default>
+                    <label>Coupler</label>
+                </value>
+                <value>
+                    <fullName>Customer Damage</fullName>
+                    <default>false</default>
+                    <label>Customer Damage</label>
+                </value>
+                <value>
+                    <fullName>Customer Induced Failure</fullName>
+                    <default>false</default>
+                    <label>Customer Induced Failure</label>
+                </value>
+                <value>
+                    <fullName>Detector Saddle</fullName>
+                    <default>false</default>
+                    <label>Detector Saddle</label>
+                </value>
+                <value>
+                    <fullName>E/O PCB</fullName>
+                    <default>false</default>
+                    <label>E/O PCB</label>
+                </value>
+                <value>
+                    <fullName>Finish Defect</fullName>
+                    <default>false</default>
+                    <label>Finish Defect</label>
+                </value>
+                <value>
+                    <fullName>GCB PCB</fullName>
+                    <default>false</default>
+                    <label>GCB PCB</label>
+                </value>
+                <value>
+                    <fullName>Gyro Chip</fullName>
+                    <default>false</default>
+                    <label>Gyro Chip</label>
+                </value>
+                <value>
+                    <fullName>Gyro PCB</fullName>
+                    <default>false</default>
+                    <label>Gyro PCB</label>
+                </value>
+                <value>
+                    <fullName>Hardware</fullName>
+                    <default>false</default>
+                    <label>Hardware</label>
+                </value>
+                <value>
+                    <fullName>Harness</fullName>
+                    <default>false</default>
+                    <label>Harness</label>
+                </value>
+                <value>
+                    <fullName>Housing</fullName>
+                    <default>false</default>
+                    <label>Housing</label>
+                </value>
+                <value>
+                    <fullName>ICB PCB</fullName>
+                    <default>false</default>
+                    <label>ICB PCB</label>
+                </value>
+                <value>
+                    <fullName>Isolator Plate</fullName>
+                    <default>false</default>
+                    <label>Isolator Plate</label>
+                </value>
+                <value>
+                    <fullName>LCD</fullName>
+                    <default>false</default>
+                    <label>LCD</label>
+                </value>
+                <value>
+                    <fullName>Magnetized Antenna</fullName>
+                    <default>false</default>
+                    <label>Magnetized Antenna</label>
+                </value>
+                <value>
+                    <fullName>Main PCB</fullName>
+                    <default>false</default>
+                    <label>Main PCB</label>
+                </value>
+                <value>
+                    <fullName>Misc Part Switch / Knob</fullName>
+                    <default>false</default>
+                    <label>Misc Part Switch / Knob</label>
+                </value>
+                <value>
+                    <fullName>Modulator</fullName>
+                    <default>false</default>
+                    <label>Modulator</label>
+                </value>
+                <value>
+                    <fullName>Multiple defects</fullName>
+                    <default>false</default>
+                    <label>Multiple defects</label>
+                </value>
+                <value>
+                    <fullName>Multiple failures see details</fullName>
+                    <default>false</default>
+                    <label>Multiple failures see details</label>
+                </value>
+                <value>
+                    <fullName>No Problem Found</fullName>
+                    <default>false</default>
+                    <label>No Problem Found</label>
+                </value>
+                <value>
+                    <fullName>Optical Circuit</fullName>
+                    <default>false</default>
+                    <label>Optical Circuit</label>
+                </value>
+                <value>
+                    <fullName>Optical circuit (Bias Drift)</fullName>
+                    <default>false</default>
+                    <label>Optical circuit (Bias Drift)</label>
+                </value>
+                <value>
+                    <fullName>Optical Circuit (Bias Offset)</fullName>
+                    <default>false</default>
+                    <label>Optical Circuit (Bias Offset)</label>
+                </value>
+                <value>
+                    <fullName>Optical Circuit (Bias Over Temp)</fullName>
+                    <default>false</default>
+                    <label>Optical Circuit (Bias Over Temp)</label>
+                </value>
+                <value>
+                    <fullName>O-ring</fullName>
+                    <default>false</default>
+                    <label>O-ring</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Packaging</fullName>
+                    <default>false</default>
+                    <label>Packaging</label>
+                </value>
+                <value>
+                    <fullName>PCB Calibration</fullName>
+                    <default>false</default>
+                    <label>PCB Calibration</label>
+                </value>
+                <value>
+                    <fullName>PCB Failure / PCB Component Replacement</fullName>
+                    <default>false</default>
+                    <label>PCB Failure / PCB Component Replacement</label>
+                </value>
+                <value>
+                    <fullName>PCB Software</fullName>
+                    <default>false</default>
+                    <label>PCB Software</label>
+                </value>
+                <value>
+                    <fullName>Polarizer</fullName>
+                    <default>false</default>
+                    <label>Polarizer</label>
+                </value>
+                <value>
+                    <fullName>Power PCB</fullName>
+                    <default>false</default>
+                    <label>Power PCB</label>
+                </value>
+                <value>
+                    <fullName>PZT</fullName>
+                    <default>false</default>
+                    <label>PZT</label>
+                </value>
+                <value>
+                    <fullName>PZT Joint</fullName>
+                    <default>false</default>
+                    <label>PZT Joint</label>
+                </value>
+                <value>
+                    <fullName>PZT mount</fullName>
+                    <default>false</default>
+                    <label>PZT mount</label>
+                </value>
+                <value>
+                    <fullName>PZT Pins</fullName>
+                    <default>false</default>
+                    <label>PZT Pins</label>
+                </value>
+                <value>
+                    <fullName>PZT Wire</fullName>
+                    <default>false</default>
+                    <label>PZT Wire</label>
+                </value>
+                <value>
+                    <fullName>Segment Failure</fullName>
+                    <default>false</default>
+                    <label>Segment Failure</label>
+                </value>
+                <value>
+                    <fullName>Source</fullName>
+                    <default>false</default>
+                    <label>Source</label>
+                </value>
+                <value>
+                    <fullName>Splice 1</fullName>
+                    <default>false</default>
+                    <label>Splice 1</label>
+                </value>
+                <value>
+                    <fullName>Splice 2</fullName>
+                    <default>false</default>
+                    <label>Splice 2</label>
+                </value>
+                <value>
+                    <fullName>SW Corrupt</fullName>
+                    <default>false</default>
+                    <label>SW Corrupt</label>
+                </value>
+                <value>
+                    <fullName>SW Upgrade</fullName>
+                    <default>false</default>
+                    <label>SW Upgrade</label>
+                </value>
+                <value>
+                    <fullName>TBD - To Be Determined</fullName>
+                    <default>true</default>
+                    <label>TBD - To Be Determined</label>
+                </value>
+                <value>
+                    <fullName>Undetermined</fullName>
+                    <default>false</default>
+                    <label>Undetermined</label>
+                </value>
+                <value>
+                    <fullName>Workmanship</fullName>
+                    <default>false</default>
+                    <label>Workmanship</label>
+                </value>
+                <value>
+                    <fullName>Workmanship / Hardware / Wiring</fullName>
+                    <default>false</default>
+                    <label>Workmanship / Hardware / Wiring</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Est_Completion_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>Turnaround_Time_Days__c +  Date_Received__c</formula>
+        <label>Est. Completion Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Evaluation_Complete__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Date that the initial evaluation is completed</inlineHelpText>
+        <label>Bench Evaluation Completed</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Evaluation_Results__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the Results of the Evaluation</inlineHelpText>
+        <label>Evaluation Results</label>
+        <length>1000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
         <fullName>Exception_End_Date__c</fullName>
         <externalId>false</externalId>
         <label>Exception End Date</label>
@@ -245,6 +812,100 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>First_PO_Review__c</fullName>
+        <description>The first person completing the financial check.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The first person completing the financial check.</inlineHelpText>
+        <label>1st PO Review</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Danny Marble</fullName>
+                    <default>false</default>
+                    <label>Danny Marble</label>
+                </value>
+                <value>
+                    <fullName>Debbie Turyn</fullName>
+                    <default>false</default>
+                    <label>Debbie Turyn</label>
+                </value>
+                <value>
+                    <fullName>Paul Angielski</fullName>
+                    <default>false</default>
+                    <label>Paul Angielski</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Incoming_Processing_Time__c</fullName>
+        <externalId>false</externalId>
+        <formula>Date_Incoming_Processing_Completed__c -  Date_Received__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Days between Receiving and Incoming Processing</inlineHelpText>
+        <label>Days for Service Incoming</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Internal_Processing_Completed__c</fullName>
+        <description>New Requirement - 10/13/17</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date the internal processing is completed and ready to move tot he next stage.</inlineHelpText>
+        <label>Service Prep Completed</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>KV_Owner_Email__c</fullName>
+        <externalId>false</externalId>
+        <formula>Order__r.Account__r.Owner.Email</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>KV Owner Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Most_Recent_Hold_Days__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(Date_Unit_off_Hold__c &gt; Date_Unit_on_Hold__c, Date_Unit_off_Hold__c -  Date_Unit_on_Hold__c, 0)</formula>
+        <inlineHelpText>If the Date off Hold is greater than the Date on Hold, calculate the difference between the Date off Hold and the Date on Hold.</inlineHelpText>
+        <label>Most Recent Hold Days</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Multiple_RMA_per_Case__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Check if there are multiple RMA&apos;s to be created for this case.</inlineHelpText>
+        <label>Multiple RMA per Case</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
     </fields>
     <fields>
         <fullName>Order_Shipping_Account_IMO__c</fullName>
@@ -309,6 +970,32 @@
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>Product_description__c</fullName>
+        <description>Changed from Product Model to the Item Description</description>
+        <externalId>false</externalId>
+        <formula>Asset__r.Item_Description__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Item Description from the Asset</inlineHelpText>
+        <label>Product description</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Purchase_Order__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Customer Purchase Order</inlineHelpText>
+        <label>Purchase Order #</label>
+        <length>24</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>RMA_Comment__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Additional comment - Note that you can also add notes to the RMA</inlineHelpText>
@@ -318,6 +1005,25 @@
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>RMA_Completed_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Service Process Completed</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>RMA_Receiving_Comments__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter comments regarding the product on receipt</inlineHelpText>
+        <label>RMA Receiving Comments</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
     </fields>
     <fields>
         <fullName>RMA_Status__c</fullName>
@@ -379,8 +1085,44 @@
         </valueSet>
     </fields>
     <fields>
+        <fullName>RMA_Type__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Type of RMA for KC Repair</inlineHelpText>
+        <label>RMA Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>FOG</fullName>
+                    <default>false</default>
+                    <label>FOG</label>
+                </value>
+                <value>
+                    <fullName>Military</fullName>
+                    <default>false</default>
+                    <label>Military</label>
+                </value>
+                <value>
+                    <fullName>MBB_AGILEPLANS</fullName>
+                    <default>false</default>
+                    <label>MBB AgilePlans</label>
+                </value>
+                <value>
+                    <fullName>MBB_NonAgile</fullName>
+                    <default>false</default>
+                    <label>MBB Non Agile</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>Reason_for_RMA__c</fullName>
         <externalId>false</externalId>
+        <inlineHelpText>Select the required reason for the RMA</inlineHelpText>
         <label>Reason for RMA</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
@@ -390,9 +1132,19 @@
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
+                    <fullName>Calibrate</fullName>
+                    <default>false</default>
+                    <label>Calibrate</label>
+                </value>
+                <value>
                     <fullName>Client Cancelled</fullName>
                     <default>false</default>
                     <label>Client Cancelled</label>
+                </value>
+                <value>
+                    <fullName>Decommission Request</fullName>
+                    <default>false</default>
+                    <label>Decommission Request</label>
                 </value>
                 <value>
                     <fullName>Exchange/Renewal</fullName>
@@ -420,6 +1172,46 @@
                     <label>Replacement</label>
                 </value>
                 <value>
+                    <fullName>Upgrade</fullName>
+                    <default>false</default>
+                    <label>Upgrade</label>
+                </value>
+                <value>
+                    <fullName>Damaged Equipment</fullName>
+                    <default>false</default>
+                    <label>Damaged Equipment</label>
+                </value>
+                <value>
+                    <fullName>Project Cancellation</fullName>
+                    <default>false</default>
+                    <label>Project Cancellation</label>
+                </value>
+                <value>
+                    <fullName>Pricing Error</fullName>
+                    <default>false</default>
+                    <label>Pricing Error</label>
+                </value>
+                <value>
+                    <fullName>Incorrect Part Shipped</fullName>
+                    <default>false</default>
+                    <label>Incorrect Part Shipped</label>
+                </value>
+                <value>
+                    <fullName>Management Swap</fullName>
+                    <default>false</default>
+                    <label>Management Swap</label>
+                </value>
+                <value>
+                    <fullName>Paperwork Update</fullName>
+                    <default>false</default>
+                    <label>Paperwork Update</label>
+                </value>
+                <value>
+                    <fullName>Shipping Credit</fullName>
+                    <default>false</default>
+                    <label>Shipping Credit</label>
+                </value>
+                <value>
                     <fullName>Vessel Scrapped</fullName>
                     <default>false</default>
                     <label>Vessel Scrapped</label>
@@ -428,6 +1220,80 @@
                     <fullName>Vessel SOLD</fullName>
                     <default>false</default>
                     <label>Vessel SOLD</label>
+                </value>
+                <value>
+                    <fullName>Vessel Swap</fullName>
+                    <default>false</default>
+                    <label>Vessel Swap</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Reasons_for_Delay__c</fullName>
+        <externalId>false</externalId>
+        <label>Reasons for Delay</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Funding Delay</fullName>
+                    <default>false</default>
+                    <label>Funding Delay</label>
+                </value>
+                <value>
+                    <fullName>Communication Delay</fullName>
+                    <default>false</default>
+                    <label>Communication Delay</label>
+                </value>
+                <value>
+                    <fullName>Service Delay</fullName>
+                    <default>false</default>
+                    <label>Service Delay</label>
+                </value>
+                <value>
+                    <fullName>Extended Repairs</fullName>
+                    <default>false</default>
+                    <label>Extended Repairs</label>
+                </value>
+                <value>
+                    <fullName>Manuf Delay</fullName>
+                    <default>false</default>
+                    <label>Manuf Delay</label>
+                </value>
+                <value>
+                    <fullName>Pack Delay</fullName>
+                    <default>false</default>
+                    <label>Pack Delay</label>
+                </value>
+                <value>
+                    <fullName>Ship Delay</fullName>
+                    <default>false</default>
+                    <label>Ship Delay</label>
+                </value>
+                <value>
+                    <fullName>Evaluation Delay</fullName>
+                    <default>false</default>
+                    <label>Evaluation Delay</label>
+                </value>
+                <value>
+                    <fullName>Multi Unit Shipment Delay</fullName>
+                    <default>false</default>
+                    <label>Multi Unit Shipment Delay</label>
+                </value>
+                <value>
+                    <fullName>N/A On Time</fullName>
+                    <default>false</default>
+                    <label>N/A On Time</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -445,20 +1311,492 @@
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
+    <fields>
+        <fullName>Rework_Testing_Completed__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Date that the unit rework and testing is completed</inlineHelpText>
+        <label>Rework &amp; Testing Completed</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Ship_Method__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the Shipping Carrier for the item being shipped</inlineHelpText>
+        <label>Ship Method</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Customer&apos;s Account</fullName>
+                    <default>false</default>
+                    <label>Customer&apos;s Account</label>
+                </value>
+                <value>
+                    <fullName>DHL Express</fullName>
+                    <default>false</default>
+                    <label>DHL Express</label>
+                </value>
+                <value>
+                    <fullName>DHL Global Forwarding</fullName>
+                    <default>false</default>
+                    <label>DHL Global Forwarding</label>
+                </value>
+                <value>
+                    <fullName>FedEx 2 Day</fullName>
+                    <default>false</default>
+                    <label>FedEx 2 Day</label>
+                </value>
+                <value>
+                    <fullName>FedEx Express Saver</fullName>
+                    <default>false</default>
+                    <label>FedEx Express Saver</label>
+                </value>
+                <value>
+                    <fullName>FedEx Ground</fullName>
+                    <default>false</default>
+                    <label>FedEx Ground</label>
+                </value>
+                <value>
+                    <fullName>FedEx International Economy</fullName>
+                    <default>false</default>
+                    <label>FedEx International Economy</label>
+                </value>
+                <value>
+                    <fullName>FedEx International Priority</fullName>
+                    <default>false</default>
+                    <label>FedEx International Priority</label>
+                </value>
+                <value>
+                    <fullName>FedEx Priority Overnight</fullName>
+                    <default>false</default>
+                    <label>FedEx Priority Overnight</label>
+                </value>
+                <value>
+                    <fullName>FedEx Standard Overnight</fullName>
+                    <default>false</default>
+                    <label>FedEx Standard Overnight</label>
+                </value>
+                <value>
+                    <fullName>UPS 2 Day</fullName>
+                    <default>false</default>
+                    <label>UPS 2 Day</label>
+                </value>
+                <value>
+                    <fullName>UPS 3 Day</fullName>
+                    <default>false</default>
+                    <label>UPS 3 Day</label>
+                </value>
+                <value>
+                    <fullName>UPS Expedited</fullName>
+                    <default>false</default>
+                    <label>UPS Expedited</label>
+                </value>
+                <value>
+                    <fullName>UPS Express</fullName>
+                    <default>false</default>
+                    <label>UPS Express</label>
+                </value>
+                <value>
+                    <fullName>UPS Express Saver</fullName>
+                    <default>false</default>
+                    <label>UPS Express Saver</label>
+                </value>
+                <value>
+                    <fullName>UPS Freight</fullName>
+                    <default>false</default>
+                    <label>UPS Freight</label>
+                </value>
+                <value>
+                    <fullName>UPS Ground</fullName>
+                    <default>false</default>
+                    <label>UPS Ground</label>
+                </value>
+                <value>
+                    <fullName>UPS Next Day</fullName>
+                    <default>false</default>
+                    <label>UPS Next Day</label>
+                </value>
+                <value>
+                    <fullName>UPS Next Day Early AM</fullName>
+                    <default>false</default>
+                    <label>UPS Next Day Early AM</label>
+                </value>
+                <value>
+                    <fullName>UPS SCS</fullName>
+                    <default>false</default>
+                    <label>UPS SCS</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Shipping_Charges__c</fullName>
+        <externalId>false</externalId>
+        <label>Shipping Charges</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Shipping_Street__c</fullName>
+        <description>Acct Shipping Address Reference</description>
+        <externalId>false</externalId>
+        <formula>Account__r.ShippingStreet</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Shipping Street</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SpecialShipping_Instructions__c</fullName>
+        <description>KC RMA</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Add any special packing instructions, special shipping information, freight forwarder information, freight forwarder address...etc.</inlineHelpText>
+        <label>SpecialShipping Instructions</label>
+        <length>600</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Special_Service_Requirements__c</fullName>
+        <description>This is a formula field from the Account record.</description>
+        <externalId>false</externalId>
+        <formula>Account__r.Special_Service_Requirements__c</formula>
+        <inlineHelpText>Special Warranty Details from the Account</inlineHelpText>
+        <label>Special Service Requirements</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Symptom_Observed_During_Evaluation__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the Symptoms that are observed during evaluation</inlineHelpText>
+        <label>Symptom Observed During Evaluation</label>
+        <length>1000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Symptom_s_Reported_by_Customer__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Ender description of Symptoms reported by the Customer</inlineHelpText>
+        <label>Symptom(s) Reported by Customer</label>
+        <length>1000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Terms__c</fullName>
+        <defaultValue>&quot;Prepay Wire Transfer or Credit Card&quot;</defaultValue>
+        <externalId>false</externalId>
+        <label>Terms</label>
+        <length>60</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Terms_of_Payment__c</fullName>
+        <externalId>false</externalId>
+        <formula>Case__r.Account.Terms_of_Payment__c</formula>
+        <inlineHelpText>Terms of Payment from the Accoount</inlineHelpText>
+        <label>Terms of Payment</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Custom_Hold_Days__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Total number of days on Customer Hold</inlineHelpText>
+        <label>Total Custom Hold Days</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_KVH_Turnaround_Time__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+            Or(
+            (ISPICKVAL(RMA_Status__c, &quot;Returned Unrepaired&quot;)),
+            (ISPICKVAL(RMA_Status__c, &quot;Shipped Complete&quot; )),
+            (ISPICKVAL(RMA_Status__c, &quot;Completed&quot;))  ),
+
+            ((Date_Shipped__c -  Date_Received__c)- Total_Custom_Hold_Days__c ) , 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>If the RMA Status is Returned Unrepaired or Shipped Complete, make the Total KVH Turnaround Time = (Ship Date - Date Received) - Total Customer Hold Days</inlineHelpText>
+        <label>Total KVH Turnaround Time</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Repair_Price__c</fullName>
+        <defaultValue>0.00</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Total Price of the repair</inlineHelpText>
+        <label>Total Repair Price</label>
+        <precision>9</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Turnaround_Time__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+            Or(
+            (ISPICKVAL(RMA_Status__c, &quot;Returned Unrepaired&quot;)),
+            (ISPICKVAL(RMA_Status__c, &quot;Shipped Complete&quot; )),
+            (ISPICKVAL(RMA_Status__c, &quot;Completed&quot;))),
+            Date_Shipped__c - Date_Received__c , 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>If RMA Status = Returned Unrepaired or Shipped Complete, set the Total Turnaround Time = Ship Date - Received Date.</inlineHelpText>
+        <label>Total Turnaround Time</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tracking_Number__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Shipping enters the Tracking Number</inlineHelpText>
+        <label>Tracking Number</label>
+        <length>24</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Turnaround_Time_Days__c</fullName>
+        <defaultValue>29</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Default to 29 days. Update as necessary.</inlineHelpText>
+        <label>Turnaround Time Days</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Verification_of_Contents_Compl__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Date the verification of Contents Form is completed</inlineHelpText>
+        <label>Service Outgoing Completed</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Warranty_Repair__c</fullName>
+        <externalId>false</externalId>
+        <label>Warranty Repair</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
     <label>RMA</label>
     <listViews>
         <fullName>All</fullName>
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>
+    <listViews>
+        <fullName>Order_Administration_RMA</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Order Administration</label>
+        <queue>Order_Administration</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>RMA_s_Pending_Receipt</fullName>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Order__c</columns>
+        <columns>Case__c</columns>
+        <columns>Order_Shipping_Acct__c</columns>
+        <columns>Asset_s_Account_Name__c</columns>
+        <columns>Date_Issued__c</columns>
+        <columns>Date_Received__c</columns>
+        <columns>Person_Requesting_RMA__c</columns>
+        <columns>Reason_for_RMA__c</columns>
+        <columns>Received_By__c</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>Asset__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Date_Received__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>Received_By__c</field>
+            <operation>equals</operation>
+        </filters>
+        <label>RMA&apos;s Pending Receipt</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>RMA_s_Shipped_Complete</fullName>
+        <columns>NAME</columns>
+        <columns>Date_Final_Assembly_Completed__c</columns>
+        <columns>Date_Issued__c</columns>
+        <columns>Date_Received__c</columns>
+        <columns>Date_Shipped__c</columns>
+        <columns>Date_Unit_off_Hold__c</columns>
+        <columns>Days_for_Evaluation__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RMA_Status__c</field>
+            <operation>equals</operation>
+            <value>Shipped Complete</value>
+        </filters>
+        <filters>
+            <field>RMA_Type__c</field>
+            <operation>equals</operation>
+            <value>FOG,Military</value>
+        </filters>
+        <label>RMA&apos;s Shipped Complete</label>
+        <language>en_US</language>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
     <nameField>
+        <displayFormat>RMA-{0000}</displayFormat>
         <label>RMA Name</label>
         <trackHistory>false</trackHistory>
-        <type>Text</type>
+        <type>AutoNumber</type>
     </nameField>
     <pluralLabel>RMAs</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts>
+        <customTabListAdditionalFields>Asset__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Asset_s_Account_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Date_Issued__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Date_Received__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Order__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Order_Shipping_Acct__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Person_Requesting_RMA__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Received_By__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Asset__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Asset_s_Account_Name__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Date_Issued__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Date_Received__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Order__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Order_Shipping_Acct__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Person_Requesting_RMA__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Received_By__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Asset__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Asset_s_Account_Name__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Order__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Order_Shipping_Acct__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>Asset__c</searchFilterFields>
+        <searchFilterFields>Asset_s_Account_Name__c</searchFilterFields>
+        <searchFilterFields>Order_Shipping_Acct__c</searchFilterFields>
+        <searchFilterFields>Person_Requesting_RMA__c</searchFilterFields>
+        <searchFilterFields>Order__c</searchFilterFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>Case__c</searchFilterFields>
+        <searchResultsAdditionalFields>Asset__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Asset_s_Account_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Date_Issued__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Date_Received__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Order__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Order_Shipping_Acct__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Person_Requesting_RMA__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Received_By__c</searchResultsAdditionalFields>
+    </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <startsWith>Vowel</startsWith>
+    <validationRules>
+        <fullName>RMA_off_Hold_Date_GreaterThan_Today</fullName>
+        <active>true</active>
+        <description>RMA Hold Date cannot be greater than today</description>
+        <errorConditionFormula>Date_Unit_off_Hold__c &gt;  TODAY()</errorConditionFormula>
+        <errorMessage>You cannot set the RMA off Hold Date to be greater than today</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>RMA_off_Hold_Date_Less_Than_On_Hold_Date</fullName>
+        <active>true</active>
+        <description>RMA Hold Date cannot be Less than the On Hold Date</description>
+        <errorConditionFormula>Date_Unit_off_Hold__c &lt; Date_Unit_on_Hold__c</errorConditionFormula>
+        <errorMessage>You cannot set the RMA off Hold Date to be less than the Date On Hold</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>RMA_on_Hold</fullName>
+        <active>true</active>
+        <description>RMA on Hold cannot have an RMA Off Hold Date</description>
+        <errorConditionFormula>And(ISPICKVAL(RMA_Status__c, &quot;on Hold&quot;), Date_Unit_off_Hold__c  &gt;  DATE(2015,01,01) )</errorConditionFormula>
+        <errorMessage>You cannot set the RMA on Hold if there is an RMA off Hold Date</errorMessage>
+    </validationRules>
     <visibility>Public</visibility>
 </CustomObject>

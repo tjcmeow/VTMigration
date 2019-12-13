@@ -20,6 +20,7 @@
 
     </script>
     <apex:form >
+        <apex:pageMessages />
         <apex:sectionHeader title="Clone order" subtitle="Order Name : {!order.Name}"/>
         <div class="bPageTitle">
             <div class="ptBreadcrumb">

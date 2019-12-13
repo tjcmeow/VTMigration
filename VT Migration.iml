@@ -37,6 +37,22 @@
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="AssetHirerachy_Controller" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="AssetHirerachy_ControllerTest" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="AssetStructure" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="AssetStructureEngine" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="ChangePasswordController" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
@@ -260,6 +276,10 @@
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="AssetHierarchyTree" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="SiteFooter" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
@@ -288,6 +308,14 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="AnswersHome" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="AssetHierarchyFullPage" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="AssetHierarchyPage" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>

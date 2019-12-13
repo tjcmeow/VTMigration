@@ -588,7 +588,7 @@
                 <valueField>$Source.Partner__c</valueField>
             </filterItems>
             <infoMessage>You can pick a contact that belongs to the selected Account or Partner. This can be overridden.</infoMessage>
-            <isOptional>false</isOptional>
+            <isOptional>true</isOptional>
         </lookupFilter>
         <referenceTo>Contact</referenceTo>
         <relationshipLabel>Orders (Billing Contact)</relationshipLabel>
@@ -1356,6 +1356,21 @@
         <externalId>false</externalId>
         <label>No of Products</label>
         <summaryForeignKey>Job_Product__c.Job__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Number_of_Contracts__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of Contracts</label>
+        <summaryFilterItems>
+            <field>Contract_Addendum__c.Type__c</field>
+            <operation>equals</operation>
+            <value>Contract</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Contract_Addendum__c.Order__c</summaryForeignKey>
         <summaryOperation>count</summaryOperation>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
@@ -4916,7 +4931,7 @@
             <picklist>Order_Type_VT__c</picklist>
             <values>
                 <fullName>Rental</fullName>
-                <default>false</default>
+                <default>true</default>
             </values>
             <values>
                 <fullName>Sale</fullName>
@@ -6518,7 +6533,7 @@
             <picklist>Order_Type_VT__c</picklist>
             <values>
                 <fullName>Rental</fullName>
-                <default>false</default>
+                <default>true</default>
             </values>
         </picklistValues>
         <picklistValues>
@@ -8102,12 +8117,8 @@
         <picklistValues>
             <picklist>Order_Type_VT__c</picklist>
             <values>
-                <fullName>Rental</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Sale</fullName>
-                <default>false</default>
+                <default>true</default>
             </values>
         </picklistValues>
         <picklistValues>
@@ -8669,6 +8680,32 @@
         <searchResultsAdditionalFields>Master_Order__c</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Only_one_contract_can_exist</fullName>
+        <active>true</active>
+        <errorConditionFormula>Number_of_Contracts__c &gt; 1</errorConditionFormula>
+        <errorMessage>Only one contract can be added per order</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Shipping_Account_Must_Exist</fullName>
+        <active>true</active>
+        <description>Status is 
+
+- In Service
+- Awaiting Return
+- Cancelled
+
+AND the Shipping Account is left blank.</description>
+        <errorConditionFormula>AND(
+
+OR(
+ISPICKVAL( Status__c , &quot;In Service&quot;), 
+ISPICKVAL( Status__c , &quot;Awaiting Return&quot;), 
+ISPICKVAL( Status__c , &quot;Cancelled&quot;)),
+NOT(ISPICKVAL(Product_Type__c , &quot;Online Training&quot;)),  
+ISBLANK( Shipping_Account__c ))</errorConditionFormula>
+        <errorMessage>Please complete the Shipping Account before updating the Order Status to either In Service, Awaiting Return or Cancelled.</errorMessage>
+    </validationRules>
     <visibility>Public</visibility>
     <webLinks>
         <fullName>Add_Products</fullName>

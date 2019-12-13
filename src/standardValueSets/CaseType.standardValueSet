@@ -136,4 +136,9 @@
         <default>false</default>
         <label>Credit Request</label>
     </standardValue>
+    <standardValue>
+        <fullName>Add or Change a Video/Training Service</fullName>
+        <default>false</default>
+        <label>Add or Change a Video/Training Service</label>
+    </standardValue>
 </StandardValueSet>

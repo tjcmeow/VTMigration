@@ -18,6 +18,7 @@
     <apex:sectionHeader title="Step 1 of 2" subtitle="{!order.Name}" rendered="{!IF(pageStep == '1', true, false)}" />
     <apex:sectionHeader title="Step 2 of 2" subtitle="{!order.Name}" rendered="{!IF(pageStep == '2', true, false)}" />
     <apex:form >
+        <apex:pageMessages />
         <apex:actionFunction name="openList" action="{!openList}"/>
         <!-- pageBlocks below render for each step of process -->
         <apex:pageBlock rendered="{!IF(pageStep == '1', true, false)}">
@@ -69,11 +70,10 @@
                     </apex:column>
                 </apex:pageBlockTable>
                 <apex:outputText value="Selected Products" rendered="{!showChosenCharges}" style="font-weight:bold;margin-top:15px;"/>
-                <apex:variable value="{!0}" var="rowNum"/>
                 <apex:pageBlockTable title="Rate Plan Charges" value="{!selectedCharges}" var="charge" rendered="{!showChosenCharges}">
                     <apex:column >
                         <apex:commandButton value="Remove" action="{!removeCharge}" reRender="table">
-                            <apex:param name="chargeId" value="{!rowNum}" assignTo="{!removeChargeId}"/>
+                            <apex:param name="indexInteger" value="{!charge.indexInteger}" assignTo="{!removeChargeId}"/>
                         </apex:commandButton>
                     </apex:column>
                     <apex:column headerValue="Product Name">
@@ -102,7 +102,6 @@
                     <apex:column headerValue="Uplift">
                         <apex:inputField value="{!charge.orderRatePlanCharge.Uplift__c}"/>
                     </apex:column>
-                    <apex:variable var="rowNum" value="{!rowNum + 1}"/>
                 </apex:pageBlockTable>
             </apex:pageBlockSection>
         </apex:pageBlock>

@@ -2,9 +2,24 @@
  * Created by triciaigoe on 2019-11-24.
  */
 
-public with sharing class VTMig_OrderInvoiceITTriggerClass {
+public without sharing class VTMig_OrderInvoiceITTriggerClass {
 
     Public Static Boolean dontRunAgain = true;
+
+    public static void beforeInsertUpdate(Map<ID,Job__c> newInvoiceJobs,Map<ID,Job__c> oldInvoiceJobs){
+
+        List<Job__c> ordersToRecalc = new List<Job__c>();
+        for(Job__c order : newInvoiceJobs.values()){
+
+            if(order.Recalculate__c != newInvoiceJobs.get(order.Id).Recalculate__c && newInvoiceJobs.get(order.Id).Recalculate__c) {
+                ordersToRecalc.add(order);
+            }
+        }
+
+        if(ordersToRecalc.size() > 0) {
+            recalcOrder(ordersToRecalc);
+        }
+    }
 
     Public static void ExecuteUpdateEvents(List<Job__c> invoiceOrderJob,Map<ID,Job__c> newInvoiceJobs,Map<ID,Job__c> oldInvoiceJobs){
 
@@ -84,17 +99,6 @@ public with sharing class VTMig_OrderInvoiceITTriggerClass {
         if(dontRunAgain){
             dontRunAgain = false;
             CommisionDealerCreationMethod(invoiceOrderJob,newInvoiceJobs,oldInvoiceJobs,invoicejobsITProducts);
-        }
-        List<Job__c> ordersToRecalc = new List<Job__c>();
-        for(Job__c order : oldInvoiceJobs.values()){
-
-            if(order.Recalculate__c != newInvoiceJobs.get(order.Id).Recalculate__c && newInvoiceJobs.get(order.Id).Recalculate__c) {
-                ordersToRecalc.add(order);
-            }
-        }
-
-        if(ordersToRecalc.size() > 0) {
-            recalcOrder(ordersToRecalc);
         }
     }
 
@@ -310,6 +314,5 @@ public with sharing class VTMig_OrderInvoiceITTriggerClass {
             order.Recalculate__c = false;
         }
 
-        update orders;
     }
 }

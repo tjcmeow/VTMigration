@@ -106,6 +106,28 @@
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>Account_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Vessel_Email__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account.Vessel_Email__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Vessel Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Acct_Record_Type__c</fullName>
         <externalId>false</externalId>
         <formula>Account.RecordType.Name</formula>
@@ -175,6 +197,16 @@
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
+        <fullName>Installed_By__c</fullName>
+        <externalId>false</externalId>
+        <label>Installed By</label>
+        <length>200</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>IsCompetitorProduct</fullName>
         <trackHistory>false</trackHistory>
     </fields>
@@ -193,6 +225,24 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Item_Family__c</fullName>
+        <externalId>false</externalId>
+        <label>Item Family</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Item_Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Item Notes</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
         <fullName>Item__c</fullName>
         <externalId>false</externalId>
         <label>Item</label>
@@ -201,6 +251,15 @@
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mfg_Date__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the Manufacturing Date / date that we stocked the device or unit.</inlineHelpText>
+        <label>Mfg. Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
     </fields>
     <fields>
         <fullName>Name</fullName>
@@ -219,6 +278,26 @@
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>Original_Customer_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Original Customer Name</label>
+        <length>155</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Original_Customer_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Original Customer Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>OwnerId</fullName>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
@@ -227,6 +306,50 @@
         <fullName>ParentId</fullName>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Parent_Asset_Description__c</fullName>
+        <externalId>false</externalId>
+        <formula>Parent.Item_Description__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Parent Asset Description</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Parent_Asset_Serial_No__c</fullName>
+        <externalId>false</externalId>
+        <formula>Parent.SerialNumber</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Parent Asset Serial No</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Platform_Detail__c</fullName>
+        <externalId>false</externalId>
+        <formula>Text( Account.Platform_Detail__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Platform Detail</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Platform_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>Text ( Account.Industry_Designation__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Platform Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Previous_Account__c</fullName>
@@ -258,12 +381,33 @@
         <type>Picklist</type>
     </fields>
     <fields>
+        <fullName>Product_Family__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT( Product2.Family )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Product Family</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>PurchaseDate</fullName>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>Quantity</fullName>
         <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Revision_No__c</fullName>
+        <externalId>false</externalId>
+        <label>Revision No</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>RootAssetId</fullName>

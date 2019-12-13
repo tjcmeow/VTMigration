@@ -216,10 +216,6 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Closed As Duplicate</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Completed</fullName>
             <default>false</default>
         </values>
@@ -599,11 +595,61 @@
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>Account_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Owner__c</fullName>
+        <description>Contact&apos;s Account Owner</description>
+        <externalId>false</externalId>
+        <formula>Account.OwnerId</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Contact&apos;s Account Owner</inlineHelpText>
+        <label>Account Owner</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Partner_Role__c</fullName>
+        <externalId>false</externalId>
+        <formula>text(Account.Partner_Role__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Partner Role</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Record_Type_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account.RecordTypeId</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Record Type ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Action_Plan__c</fullName>
         <externalId>false</externalId>
         <label>Action Plan</label>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
+        <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
@@ -611,12 +657,173 @@
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
-                    <fullName>Add a Service</fullName>
+                    <fullName>Activate A/S</fullName>
                     <default>false</default>
-                    <label>Add a Service</label>
+                    <label>Activate A/S</label>
+                </value>
+                <value>
+                    <fullName>Activate TV Product</fullName>
+                    <default>false</default>
+                    <label>Activate TV Product</label>
+                </value>
+                <value>
+                    <fullName>Add A Service</fullName>
+                    <default>false</default>
+                    <label>Add A Service</label>
+                </value>
+                <value>
+                    <fullName>Advance Replacement - FRU</fullName>
+                    <default>false</default>
+                    <label>Advance Replacement - FRU</label>
+                </value>
+                <value>
+                    <fullName>Advance Replacement - System</fullName>
+                    <default>false</default>
+                    <label>Advance Replacement - System</label>
+                </value>
+                <value>
+                    <fullName>Airtime Services</fullName>
+                    <default>false</default>
+                    <label>Airtime Services</label>
+                </value>
+                <value>
+                    <fullName>Cancel Order / Request</fullName>
+                    <default>false</default>
+                    <label>Cancel Order / Request</label>
+                </value>
+                <value>
+                    <fullName>Change Plan</fullName>
+                    <default>false</default>
+                    <label>Change Plan</label>
+                </value>
+                <value>
+                    <fullName>Depot Repair Service - RMA</fullName>
+                    <default>false</default>
+                    <label>Depot Repair Service - RMA</label>
+                </value>
+                <value>
+                    <fullName>Escalate - Engineering</fullName>
+                    <default>false</default>
+                    <label>Escalate - Engineering</label>
+                </value>
+                <value>
+                    <fullName>Escalate - Sales</fullName>
+                    <default>false</default>
+                    <label>Escalate - Sales</label>
+                </value>
+                <value>
+                    <fullName>Escalate - Support</fullName>
+                    <default>false</default>
+                    <label>Escalate - Support</label>
+                </value>
+                <value>
+                    <fullName>Follow-up</fullName>
+                    <default>true</default>
+                    <label>Follow-up</label>
+                </value>
+                <value>
+                    <fullName>Information - Obsolete Product</fullName>
+                    <default>false</default>
+                    <label>Information - Obsolete Product</label>
+                </value>
+                <value>
+                    <fullName>Modify Configuration</fullName>
+                    <default>false</default>
+                    <label>Modify Configuration</label>
+                </value>
+                <value>
+                    <fullName>Obtain Tools</fullName>
+                    <default>false</default>
+                    <label>Obtain Tools</label>
+                </value>
+                <value>
+                    <fullName>Provide dealer Info</fullName>
+                    <default>false</default>
+                    <label>Provide dealer Info</label>
+                </value>
+                <value>
+                    <fullName>Reactivate A/S</fullName>
+                    <default>false</default>
+                    <label>Reactivate A/S</label>
+                </value>
+                <value>
+                    <fullName>Return Customer Call</fullName>
+                    <default>false</default>
+                    <label>Return Customer Call</label>
+                </value>
+                <value>
+                    <fullName>Return Customer E-mail</fullName>
+                    <default>false</default>
+                    <label>Return Customer E-mail</label>
+                </value>
+                <value>
+                    <fullName>Service Order - Credit</fullName>
+                    <default>false</default>
+                    <label>Service Order - Credit</label>
+                </value>
+                <value>
+                    <fullName>Service Order - Parts Sale</fullName>
+                    <default>false</default>
+                    <label>Service Order - Parts Sale</label>
+                </value>
+                <value>
+                    <fullName>Suspend A/S</fullName>
+                    <default>false</default>
+                    <label>Suspend A/S</label>
+                </value>
+                <value>
+                    <fullName>Tech Support Actions</fullName>
+                    <default>false</default>
+                    <label>Tech Support Actions</label>
+                </value>
+                <value>
+                    <fullName>Terminate A/S</fullName>
+                    <default>false</default>
+                    <label>Terminate A/S</label>
+                </value>
+                <value>
+                    <fullName>Troubleshoot in Field</fullName>
+                    <default>false</default>
+                    <label>Troubleshoot in Field</label>
+                </value>
+                <value>
+                    <fullName>Update Account Info</fullName>
+                    <default>false</default>
+                    <label>Update Account Info</label>
+                </value>
+                <value>
+                    <fullName>Update CC Info</fullName>
+                    <default>false</default>
+                    <label>Update CC Info</label>
+                </value>
+                <value>
+                    <fullName>Upgrade S/W</fullName>
+                    <default>false</default>
+                    <label>Upgrade S/W</label>
+                </value>
+                <value>
+                    <fullName>Awaiting Information from Customer</fullName>
+                    <default>false</default>
+                    <label>Awaiting Information from Customer</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
+    </fields>
+    <fields>
+        <fullName>Age_Days__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(IsClosed,
+            (ClosedDate - CreatedDate),
+            (NOW() - CreatedDate))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Age (Days)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Alt_Contact_Email__c</fullName>
@@ -873,6 +1080,32 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
+    </fields>
+    <fields>
+        <fullName>Case_Thread_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>E2CP__Case_Thread_Id__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Case Thread ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Child_Asset__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Child Asset</label>
+        <referenceTo>Asset</referenceTo>
+        <relationshipLabel>Cases</relationshipLabel>
+        <relationshipName>Cases</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
     </fields>
     <fields>
         <fullName>ClosedDate</fullName>
@@ -1181,6 +1414,17 @@ IF (MID ( Id, 14, 1) &lt;&gt;&quot;0&quot;, RIGHT(Id, 2), &quot;&quot;) ) ) ) ) 
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Legacy_Created_Date__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Created Date for this case from the KVH System</inlineHelpText>
+        <label>Legacy Created Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
         <fullName>Legal_Entity__c</fullName>
         <externalId>false</externalId>
         <label>Legal Entity</label>
@@ -1211,6 +1455,15 @@ IF (MID ( Id, 14, 1) &lt;&gt;&quot;0&quot;, RIGHT(Id, 2), &quot;&quot;) ) ) ) ) 
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
         <label>Order</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Job__c.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Child Order</value>
+            </filterItems>
+            <isOptional>true</isOptional>
+        </lookupFilter>
         <referenceTo>Job__c</referenceTo>
         <relationshipLabel>Cases</relationshipLabel>
         <relationshipName>Cases</relationshipName>
@@ -1249,13 +1502,12 @@ IF (MID ( Id, 14, 1) &lt;&gt;&quot;0&quot;, RIGHT(Id, 2), &quot;&quot;) ) ) ) ) 
         <label>Search Platform / Asset Account</label>
         <lookupFilter>
             <active>true</active>
-            <errorMessage>Account must be of KV Platform account Type</errorMessage>
             <filterItems>
                 <field>Account.RecordTypeId</field>
                 <operation>equals</operation>
                 <value>KV Platform</value>
             </filterItems>
-            <isOptional>false</isOptional>
+            <isOptional>true</isOptional>
         </lookupFilter>
         <referenceTo>Account</referenceTo>
         <relationshipLabel>Cases (Platform / Asset Account)</relationshipLabel>
@@ -1388,6 +1640,7 @@ IF (MID ( Id, 14, 1) &lt;&gt;&quot;0&quot;, RIGHT(Id, 2), &quot;&quot;) ) ) ) ) 
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
+            <controllingField>Type</controllingField>
             <restricted>true</restricted>
             <valueSetDefinition>
                 <sorted>false</sorted>
@@ -1472,6 +1725,77 @@ IF (MID ( Id, 14, 1) &lt;&gt;&quot;0&quot;, RIGHT(Id, 2), &quot;&quot;) ) ) ) ) 
                     <label>Taskbooks</label>
                 </value>
             </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Add or Change a Video / Training Service</controllingFieldValue>
+                <controllingFieldValue>Report a Service or Product Problem</controllingFieldValue>
+                <controllingFieldValue>Information on an Existing Service</controllingFieldValue>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <valueName>Courses</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Add or Change a Video / Training Service</controllingFieldValue>
+                <controllingFieldValue>Report a Service or Product Problem</controllingFieldValue>
+                <controllingFieldValue>Information on an Existing Service</controllingFieldValue>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <valueName>Other</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Add or Change a Video / Training Service</controllingFieldValue>
+                <controllingFieldValue>Report a Service or Product Problem</controllingFieldValue>
+                <controllingFieldValue>Information on an Existing Service</controllingFieldValue>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <valueName>OTM</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Add or Change a Video / Training Service</controllingFieldValue>
+                <controllingFieldValue>Report a Service or Product Problem</controllingFieldValue>
+                <controllingFieldValue>Information on an Existing Service</controllingFieldValue>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <valueName>VOA - Online Assessments</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Add or Change a Video / Training Service</controllingFieldValue>
+                <controllingFieldValue>Report a Service or Product Problem</controllingFieldValue>
+                <controllingFieldValue>Information on an Existing Service</controllingFieldValue>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <valueName>VOD</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Add or Change a Video / Training Service</controllingFieldValue>
+                <controllingFieldValue>Report a Service or Product Problem</controllingFieldValue>
+                <controllingFieldValue>Information on an Existing Service</controllingFieldValue>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <valueName>VOD Online</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Add or Change a Video / Training Service</controllingFieldValue>
+                <controllingFieldValue>Report a Service or Product Problem</controllingFieldValue>
+                <controllingFieldValue>Information on an Existing Service</controllingFieldValue>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <valueName>Web FTA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Report a Service or Product Problem</controllingFieldValue>
+                <valueName>VOD Product</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Report a Service or Product Problem</controllingFieldValue>
+                <controllingFieldValue>Information on an Existing Service</controllingFieldValue>
+                <valueName>VPM</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Report a Service or Product Problem</controllingFieldValue>
+                <controllingFieldValue>Information on an Existing Service</controllingFieldValue>
+                <valueName>Taskbooks</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Information on an Existing Service</controllingFieldValue>
+                <valueName>Billing Inquiry or Dispute</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Information on an Existing Service</controllingFieldValue>
+                <valueName>General Account or Service Inquiry</valueName>
+            </valueSettings>
         </valueSet>
     </fields>
     <fields>
@@ -1491,6 +1815,7 @@ IF (MID ( Id, 14, 1) &lt;&gt;&quot;0&quot;, RIGHT(Id, 2), &quot;&quot;) ) ) ) ) 
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
+            <controllingField>Case_Symptom__c</controllingField>
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
@@ -1704,6 +2029,251 @@ IF (MID ( Id, 14, 1) &lt;&gt;&quot;0&quot;, RIGHT(Id, 2), &quot;&quot;) ) ) ) ) 
                     <label>Written-off (Bad Debt)</label>
                 </value>
             </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Vessel List</controllingFieldValue>
+                <controllingFieldValue>VOA</controllingFieldValue>
+                <controllingFieldValue>VOD DVD drive</controllingFieldValue>
+                <controllingFieldValue>VOD Graphics Card</controllingFieldValue>
+                <controllingFieldValue>VOD HDD</controllingFieldValue>
+                <controllingFieldValue>VOD Memory</controllingFieldValue>
+                <controllingFieldValue>VOD Monitor</controllingFieldValue>
+                <controllingFieldValue>VOD Mother Board</controllingFieldValue>
+                <controllingFieldValue>VOD Network</controllingFieldValue>
+                <controllingFieldValue>VOD Power</controllingFieldValue>
+                <controllingFieldValue>VOD Sound</controllingFieldValue>
+                <controllingFieldValue>Software Browser</controllingFieldValue>
+                <controllingFieldValue>VODstick</controllingFieldValue>
+                <controllingFieldValue>Software Content</controllingFieldValue>
+                <controllingFieldValue>Software Unlock</controllingFieldValue>
+                <controllingFieldValue>Software Update</controllingFieldValue>
+                <controllingFieldValue>System Software</controllingFieldValue>
+                <controllingFieldValue>Import Export</controllingFieldValue>
+                <controllingFieldValue>Training Records</controllingFieldValue>
+                <valueName>No Fault</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Vessel List</controllingFieldValue>
+                <controllingFieldValue>VOA</controllingFieldValue>
+                <controllingFieldValue>VOD DVD drive</controllingFieldValue>
+                <controllingFieldValue>VOD Graphics Card</controllingFieldValue>
+                <controllingFieldValue>VOD HDD</controllingFieldValue>
+                <controllingFieldValue>VOD Memory</controllingFieldValue>
+                <controllingFieldValue>VOD Monitor</controllingFieldValue>
+                <controllingFieldValue>VOD Mother Board</controllingFieldValue>
+                <controllingFieldValue>VOD Network</controllingFieldValue>
+                <controllingFieldValue>VOD Power</controllingFieldValue>
+                <controllingFieldValue>VOD Sound</controllingFieldValue>
+                <controllingFieldValue>Software Browser</controllingFieldValue>
+                <controllingFieldValue>VODstick</controllingFieldValue>
+                <controllingFieldValue>Software Content</controllingFieldValue>
+                <controllingFieldValue>Software Unlock</controllingFieldValue>
+                <controllingFieldValue>Software Update</controllingFieldValue>
+                <controllingFieldValue>Status Report Request</controllingFieldValue>
+                <controllingFieldValue>System Software</controllingFieldValue>
+                <controllingFieldValue>General Questions</controllingFieldValue>
+                <controllingFieldValue>Import Export</controllingFieldValue>
+                <controllingFieldValue>Other (Ref. Subject</controllingFieldValue>
+                <controllingFieldValue>Report Request</controllingFieldValue>
+                <controllingFieldValue>Training Records</controllingFieldValue>
+                <valueName>No Response from Customer</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Vessel List</controllingFieldValue>
+                <controllingFieldValue>VOA</controllingFieldValue>
+                <controllingFieldValue>VOD DVD drive</controllingFieldValue>
+                <controllingFieldValue>VOD Graphics Card</controllingFieldValue>
+                <controllingFieldValue>VOD HDD</controllingFieldValue>
+                <controllingFieldValue>VOD Memory</controllingFieldValue>
+                <controllingFieldValue>VOD Monitor</controllingFieldValue>
+                <controllingFieldValue>VOD Mother Board</controllingFieldValue>
+                <controllingFieldValue>VOD Network</controllingFieldValue>
+                <controllingFieldValue>VOD Power</controllingFieldValue>
+                <controllingFieldValue>Schedules</controllingFieldValue>
+                <controllingFieldValue>VOD Sound</controllingFieldValue>
+                <controllingFieldValue>Software Browser</controllingFieldValue>
+                <controllingFieldValue>VODstick</controllingFieldValue>
+                <controllingFieldValue>Software Content</controllingFieldValue>
+                <controllingFieldValue>Software Unlock</controllingFieldValue>
+                <controllingFieldValue>Software Update</controllingFieldValue>
+                <controllingFieldValue>Status Report Request</controllingFieldValue>
+                <controllingFieldValue>System Software</controllingFieldValue>
+                <controllingFieldValue>Import Export</controllingFieldValue>
+                <controllingFieldValue>Other (Ref. Subject</controllingFieldValue>
+                <controllingFieldValue>Training Records</controllingFieldValue>
+                <valueName>Other</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Vessel List</controllingFieldValue>
+                <controllingFieldValue>VOA</controllingFieldValue>
+                <controllingFieldValue>VOD Activation</controllingFieldValue>
+                <controllingFieldValue>VOD Network</controllingFieldValue>
+                <controllingFieldValue>Request Credits</controllingFieldValue>
+                <controllingFieldValue>Schedules</controllingFieldValue>
+                <controllingFieldValue>Software Browser</controllingFieldValue>
+                <controllingFieldValue>Software Content</controllingFieldValue>
+                <controllingFieldValue>Software Unlock</controllingFieldValue>
+                <controllingFieldValue>Software Update</controllingFieldValue>
+                <controllingFieldValue>Status Report Request</controllingFieldValue>
+                <controllingFieldValue>System/User Error</controllingFieldValue>
+                <controllingFieldValue>System Software</controllingFieldValue>
+                <controllingFieldValue>Billing Inquiry or Dispute</controllingFieldValue>
+                <controllingFieldValue>General Questions</controllingFieldValue>
+                <controllingFieldValue>Import Export</controllingFieldValue>
+                <controllingFieldValue>Other (Ref. Subject</controllingFieldValue>
+                <controllingFieldValue>Renew License</controllingFieldValue>
+                <controllingFieldValue>Training Records</controllingFieldValue>
+                <controllingFieldValue>Training Request</controllingFieldValue>
+                <valueName>Provided Information</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>VOA</controllingFieldValue>
+                <controllingFieldValue>VOD DVD drive</controllingFieldValue>
+                <controllingFieldValue>VOD Graphics Card</controllingFieldValue>
+                <controllingFieldValue>VOD HDD</controllingFieldValue>
+                <controllingFieldValue>VOD Memory</controllingFieldValue>
+                <controllingFieldValue>VOD Monitor</controllingFieldValue>
+                <controllingFieldValue>VOD Mother Board</controllingFieldValue>
+                <controllingFieldValue>VOD Network</controllingFieldValue>
+                <controllingFieldValue>VOD Power</controllingFieldValue>
+                <controllingFieldValue>Schedules</controllingFieldValue>
+                <controllingFieldValue>VOD Sound</controllingFieldValue>
+                <controllingFieldValue>Software Browser</controllingFieldValue>
+                <controllingFieldValue>VODstick</controllingFieldValue>
+                <controllingFieldValue>Software Content</controllingFieldValue>
+                <controllingFieldValue>Software Unlock</controllingFieldValue>
+                <controllingFieldValue>Software Update</controllingFieldValue>
+                <controllingFieldValue>System/User Error</controllingFieldValue>
+                <controllingFieldValue>System Software</controllingFieldValue>
+                <controllingFieldValue>Configuration</controllingFieldValue>
+                <controllingFieldValue>Import Export</controllingFieldValue>
+                <controllingFieldValue>VPM Software</controllingFieldValue>
+                <valueName>Solution Sent</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>VOD Activation</controllingFieldValue>
+                <valueName>Activation Declined</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>VOD Activation</controllingFieldValue>
+                <valueName>Issued Activation File</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>VOD Activation</controllingFieldValue>
+                <controllingFieldValue>Renew License</controllingFieldValue>
+                <valueName>Issued License</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>VOD DVD drive</controllingFieldValue>
+                <controllingFieldValue>VOD Graphics Card</controllingFieldValue>
+                <controllingFieldValue>VOD HDD</controllingFieldValue>
+                <controllingFieldValue>VOD Memory</controllingFieldValue>
+                <controllingFieldValue>VOD Monitor</controllingFieldValue>
+                <controllingFieldValue>VOD Mother Board</controllingFieldValue>
+                <controllingFieldValue>VOD Network</controllingFieldValue>
+                <controllingFieldValue>VOD Power</controllingFieldValue>
+                <controllingFieldValue>VOD Sound</controllingFieldValue>
+                <controllingFieldValue>VODstick</controllingFieldValue>
+                <valueName>VOD Repaired</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>VOD DVD drive</controllingFieldValue>
+                <controllingFieldValue>VOD Graphics Card</controllingFieldValue>
+                <controllingFieldValue>VOD HDD</controllingFieldValue>
+                <controllingFieldValue>VOD Memory</controllingFieldValue>
+                <controllingFieldValue>VOD Monitor</controllingFieldValue>
+                <controllingFieldValue>VOD Mother Board</controllingFieldValue>
+                <controllingFieldValue>VOD Network</controllingFieldValue>
+                <controllingFieldValue>VOD Power</controllingFieldValue>
+                <controllingFieldValue>VOD Sound</controllingFieldValue>
+                <controllingFieldValue>VODstick</controllingFieldValue>
+                <valueName>VOD Replaced</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Request Credits</controllingFieldValue>
+                <controllingFieldValue>Billing Inquiry or Dispute</controllingFieldValue>
+                <valueName>Issued Credit(s)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Clone VOD</controllingFieldValue>
+                <valueName>Clone Info provided</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Clone VOD</controllingFieldValue>
+                <controllingFieldValue>Configuration</controllingFieldValue>
+                <controllingFieldValue>OTM Issue</controllingFieldValue>
+                <valueName>File Sent</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Crew Issue</controllingFieldValue>
+                <valueName>Crew Issue resolved</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Data Issue</controllingFieldValue>
+                <valueName>Data Issue resolved</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Spam Email</controllingFieldValue>
+                <valueName>Spam Email - Closed</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>VPM Crew Data</controllingFieldValue>
+                <valueName>Crew File Sent</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Status Report Request</controllingFieldValue>
+                <valueName>Provided Report</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>VPM Enhancement</controllingFieldValue>
+                <valueName>Enhancement declined</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>VPM Enhancement</controllingFieldValue>
+                <valueName>Enhancement made</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>System Software</controllingFieldValue>
+                <controllingFieldValue>Import Export</controllingFieldValue>
+                <controllingFieldValue>Other (Ref. Subject</controllingFieldValue>
+                <controllingFieldValue>Training Request</controllingFieldValue>
+                <valueName>Provided User Training</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Administrative Account Update</controllingFieldValue>
+                <valueName>Updated Account</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Billing Inquiry or Dispute</controllingFieldValue>
+                <valueName>Terminated Account</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Billing Inquiry or Dispute</controllingFieldValue>
+                <valueName>Unresolved</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Billing Inquiry or Dispute</controllingFieldValue>
+                <valueName>Written-off (Bad Debt)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Configuration</controllingFieldValue>
+                <valueName>Requested Batch ID</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Other (Ref. Subject</controllingFieldValue>
+                <valueName>Activated New Service</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>VPM Reports</controllingFieldValue>
+                <valueName>Report Sent</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>New VOD Order</controllingFieldValue>
+                <valueName>Provision New VOD</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>New VOD Order</controllingFieldValue>
+                <valueName>Updated Configuration</valueName>
+            </valueSettings>
         </valueSet>
     </fields>
     <fields>
@@ -1751,6 +2321,18 @@ IF (MID ( Id, 14, 1) &lt;&gt;&quot;0&quot;, RIGHT(Id, 2), &quot;&quot;) ) ) ) ) 
     <fields>
         <fullName>SuppliedPhone</fullName>
         <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Thread_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>&quot;ref:_00D&quot;&amp;MID(Id,4,1)&amp;RIGHT($Organization.Id, 4) &amp;&quot;._&quot;&amp; LEFT(Id,4)&amp;RIGHT(Id,5) &amp;&quot;:ref&quot;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Thread ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Type</fullName>
@@ -1828,6 +2410,17 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
     </fields>
     <listViews>
         <fullName>AllOpenCases</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>Legacy_Created_Date__c</columns>
+        <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Platform_Asset_Account__c</columns>
+        <columns>NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CASES.RECORDTYPE</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>CASES.CLOSED</field>
@@ -1847,6 +2440,17 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
     </listViews>
     <listViews>
         <fullName>KV_DCU_Queue_Case</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>Legacy_Created_Date__c</columns>
+        <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Platform_Asset_Account__c</columns>
+        <columns>NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CASES.RECORDTYPE</columns>
         <filterScope>Queue</filterScope>
         <label>DCU Queue</label>
         <queue>KV_DCU_Queue</queue>
@@ -1865,11 +2469,38 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
     </listViews>
     <listViews>
         <fullName>MyCases</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>Legacy_Created_Date__c</columns>
+        <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Platform_Asset_Account__c</columns>
+        <columns>NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CASES.RECORDTYPE</columns>
         <filterScope>Mine</filterScope>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
         <label>My Cases</label>
     </listViews>
     <listViews>
         <fullName>MyOpenCases</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>Legacy_Created_Date__c</columns>
+        <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Platform_Asset_Account__c</columns>
+        <columns>NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CASES.RECORDTYPE</columns>
         <filterScope>Mine</filterScope>
         <filters>
             <field>CASES.CLOSED</field>
@@ -1888,7 +2519,40 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
         </sharedTo>
     </listViews>
     <listViews>
+        <fullName>Support_Queue_Open_Cases</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Case.KV_Support</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>notEqual</operation>
+            <value>Closed,Closed As Duplicate</value>
+        </filters>
+        <label>Support Queue - Open Cases</label>
+    </listViews>
+    <listViews>
         <fullName>VOD_Production_Team_Case</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>Legacy_Created_Date__c</columns>
+        <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Platform_Asset_Account__c</columns>
+        <columns>NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CASES.RECORDTYPE</columns>
         <filterScope>Queue</filterScope>
         <label>VOD Production Team</label>
         <queue>VOD_Production_Team</queue>
@@ -1906,7 +2570,7 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
         <picklistValues>
             <picklist>Action_Plan__c</picklist>
             <values>
-                <fullName>Add a Service</fullName>
+                <fullName>Add A Service</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -2400,7 +3064,7 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
         <picklistValues>
             <picklist>Action_Plan__c</picklist>
             <values>
-                <fullName>Add a Service</fullName>
+                <fullName>Add A Service</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -2954,7 +3618,7 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
         <picklistValues>
             <picklist>Action_Plan__c</picklist>
             <values>
-                <fullName>Add a Service</fullName>
+                <fullName>Add A Service</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -3460,7 +4124,7 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
         <picklistValues>
             <picklist>Action_Plan__c</picklist>
             <values>
-                <fullName>Add a Service</fullName>
+                <fullName>Add A Service</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -4010,7 +4674,7 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
         <picklistValues>
             <picklist>Action_Plan__c</picklist>
             <values>
-                <fullName>Add a Service</fullName>
+                <fullName>Add A Service</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -4492,6 +5156,7 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
         <customTabListAdditionalFields>CASES.SUBJECT</customTabListAdditionalFields>
         <customTabListAdditionalFields>CASES.CREATED_DATE</customTabListAdditionalFields>
         <customTabListAdditionalFields>CASES.PRIORITY</customTabListAdditionalFields>
+        <listViewButtons>csmrgp__CsMrgListBtn</listViewButtons>
         <lookupDialogsAdditionalFields>CASES.CASE_NUMBER</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>CASES.SUBJECT</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>NAME</lookupDialogsAdditionalFields>

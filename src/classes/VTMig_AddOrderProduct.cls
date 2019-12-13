@@ -12,6 +12,7 @@ public with sharing class VTMig_AddOrderProduct {
         public String selectedPlanId {get; set;}
         public String selectedChargeId {get; set;}
         public Integer removeChargeId {get; set;}
+        public Integer highestInteger {get; set;}
         public Decimal overallDiscount {get;set;}
         public Decimal grandTotal {get;set;}
         public Product_Rate_Plan_Charge__c selectedCharge {get; set;}
@@ -28,6 +29,7 @@ public with sharing class VTMig_AddOrderProduct {
         public OrderCharge currentOrderCharge {get; set;}
 
         public VTMig_AddOrderProduct(ApexPages.StandardController ctrlr){
+            highestInteger = 0;
             orderId = ApexPages.currentPage().getParameters().get('Id');
             selectedCharges = new List<OrderCharge>();
             prodCharges = new List<ProdCharge>();
@@ -41,17 +43,21 @@ public with sharing class VTMig_AddOrderProduct {
             removedCharges = new List<OrderCharge>();
             order = [
                     SELECT Id, Account__c, Shipping_Contact__c, Shipping_Account__c, Legal_Entity__c, Partner_Agent__c, IITIntended_Use__c,
-                            Wet_or_Dry_Cargo__c, Platform_or_Vessel_detail__c, Name
+                            Wet_or_Dry_Cargo__c, Platform_or_Vessel_detail__c, Name, Discount_Percent__c, VAT__c, Tax__c
                     FROM Job__c WHERE Id = : orderId
             ];
+            overallDiscount = order.Discount_Percent__c;
             List<Job_Rate_Plan_Charge__c> currentCharges = [SELECT Id, Name, Product_Charge_Category__c, Subscription_Product__c, Job_Rate_Plan__r.Job_Product__r.Name,
                     Job_Rate_Plan__r.Job_Product__r.Product__c, Product_Rate_Plan_Charge__c, Product_Rate_Plan_Charge__r.Product_Rate_Plan__r.Product__r.Name, Net_Total__c,
                     Title_Product__c, Unit_Of_Measurement__c, Price_Type__c, Price_Format__c, Unit_Price__c, Product_Rate_Plan_Charge__r.Product_Rate_Plan__r.Product__r.Product_Code__c,
                     Quantity__c, Job_Rate_Plan__r.Job_Product__r.Product_Code__c, Job_Rate_Plan__r.Product_Rate_Plan__c, Uplift__c, Discount_Percent__c, Price__c, Discount_Value__c
             FROM Job_Rate_Plan_Charge__c WHERE Order__c = : orderId];
             if(currentCharges.size() > 0) {
+
                 for(Job_Rate_Plan_Charge__c currentCharge : currentCharges) {
                     OrderCharge newCharge = new OrderCharge();
+                    newCharge.indexInteger = highestInteger;
+                    highestInteger++;
                     newCharge.chargeId  = currentCharge.Id;
                     newCharge.orderRatePlanCharge = currentCharge;
                     newCharge.productName = currentCharge.Product_Rate_Plan_Charge__r.Product_Rate_Plan__r.Product__r.Name;
@@ -134,6 +140,8 @@ public with sharing class VTMig_AddOrderProduct {
                     newCharge.orderRatePlanCharge = orderRatePlanCharge;
                     newCharge.prodCharge = prodCharge;
                     newCharge.productName = ProdCharge.prodCharge.Product_Rate_Plan__r.Product__r.Name;
+                    newCharge.indexInteger = highestInteger;
+                    highestInteger++;
                     selectedCharges.add(newCharge);
                 }
             }
@@ -150,8 +158,14 @@ public with sharing class VTMig_AddOrderProduct {
         }
 
         public void removeCharge(){
-            removedCharges.add(selectedCharges[removeChargeId]);
-            selectedCharges.remove(removeChargeId);
+
+            for(OrderCharge selectedCharge : selectedCharges) {
+                if(removeChargeId == selectedCharge.indexInteger) {
+                    selectedCharges.remove(selectedCharges.indexOf(selectedCharge));
+                    removedCharges.add(selectedCharge);
+                    break;
+                }
+            }
             removeChargeId = null;
         }
 
@@ -163,6 +177,7 @@ public with sharing class VTMig_AddOrderProduct {
                 currentCharge.orderRatePlan = configOrderPlan(currentCharge.prodCharge.planId, currentCharge.orderProduct.Id, currentCharge.prodCharge.chargeId);
                 grandTotal = grandTotal + currentCharge.orderRatePlanCharge.Price__c;
             }
+            grandTotal = grandTotal*(1-overallDiscount/100);
             pageStep = '2';
         }
 
@@ -193,7 +208,7 @@ public with sharing class VTMig_AddOrderProduct {
                 OrderRatePlans.add(OrderRatePlan);
             }
             upsert OrderRatePlans;
-            Decimal runningTotal = 0;
+            Decimal runningSubtotal = 0;
             for(OrderCharge OrderCharge : selectedCharges) {
                 Id ratePlanId;
                 for(Job_Rate_Plan__c OrderRatePlan : OrderRatePlans) {
@@ -201,16 +216,19 @@ public with sharing class VTMig_AddOrderProduct {
                         ratePlanId = OrderRatePlan.Id;
                     }
                 }
-                runningTotal = runningTotal + OrderCharge.orderRatePlanCharge.Unit_Price__c * OrderCharge.orderRatePlanCharge.Quantity__c;
+                runningSubtotal = runningSubtotal + OrderCharge.orderRatePlanCharge.Unit_Price__c * OrderCharge.orderRatePlanCharge.Quantity__c;
+
                 Job_Rate_Plan_Charge__c OrderRatePlanCharge = new Job_Rate_Plan_Charge__c();
                 OrderRatePlanCharge.Job_Rate_Plan__c = ratePlanId;
                 OrderRatePlanCharge = configOrderCharge(OrderCharge.orderRatePlanCharge, OrderCharge.chargeId, OrderRatePlanCharge);
                 OrderRatePlanCharges.add(OrderRatePlanCharge);
             }
             upsert OrderRatePlanCharges;
-            order.Discount_Value__c = runningTotal - grandTotal;
-            order.Total__c = grandTotal;
-            order.Net_Total__c = order.Total__c - order.Discount_Value__c;
+            order.Sub_total__c = runningSubtotal;
+            order.Discount_Value__c = order.Sub_total__c * (overallDiscount/100);
+            order.Discount_Percent__c = overallDiscount;
+            order.Net_Total__c = order.Sub_total__c - order.Discount_Value__c;
+            order.Total__c = order.Net_Total__c + order.VAT__c + order.Tax__c;
             update order;
             if(removedCharges.size() > 0) {
                 removeCharges();
@@ -296,10 +314,11 @@ public with sharing class VTMig_AddOrderProduct {
             newCharge.Quantity__c = charge.Quantity__c;
             newCharge.Price__c = charge.Unit_Price__c * charge.Quantity__c;
             newCharge.Discount_Percent__c = charge.Discount_Percent__c;
-            newCharge.Discount_Value__c = charge.Discount_Value__c;
-            newCharge.Net_Total__c = charge.Net_Total__c;
+            newCharge.Discount_Value__c = newCharge.Price__c * newCharge.Discount_Percent__c/100;
+            newCharge.Net_Total__c = newCharge.Price__c - newCharge.Discount_Value__c;
             newCharge.Order__c = orderId;
             newCharge.Id = chargeId;
+            newCharge.Uplift__c = charge.Uplift__c;
             return newCharge;
         }
 
@@ -347,6 +366,7 @@ public with sharing class VTMig_AddOrderProduct {
             public Job_Rate_Plan_Charge__c orderRatePlanCharge {get;set;}
             public String chargeId {get;set;}
             public String productName {get;set;}
+            public Integer indexInteger {get;set;}
 
             public OrderCharge(){}
         }

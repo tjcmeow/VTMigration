@@ -12,6 +12,9 @@
         <sobjectType>Order_Commissions__c</sobjectType>
     </queueSobject>
     <queueSobject>
+        <sobjectType>RMA__c</sobjectType>
+    </queueSobject>
+    <queueSobject>
         <sobjectType>Titles__c</sobjectType>
     </queueSobject>
     <queueSobject>

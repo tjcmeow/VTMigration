@@ -1671,6 +1671,17 @@ PRINT &amp; STAMP- Customer receives the invoice in the Post (by mail), BUT the 
         <type>Hierarchy</type>
     </fields>
     <fields>
+        <fullName>Parent_Account_Customer_Account_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>Parent.Customer_Account_Number__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Parent Account Customer Account Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Parent_Account_ID_18_Char__c</fullName>
         <externalId>false</externalId>
         <formula>Parent.Acct_ID_18_Char__c</formula>
@@ -3901,16 +3912,6 @@ Account.Product_Interest_2__c</description>
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>SFSSDupeCatcher__Override_DupeCatcher__c</fullName>
-        <defaultValue>false</defaultValue>
-        <deprecated>false</deprecated>
-        <externalId>false</externalId>
-        <label>Account Override DupeCatcher</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
         <fullName>Sales_Agent_Partner__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Select the Partners that this Account will be shared with in the Partner Community.</inlineHelpText>
@@ -4082,6 +4083,19 @@ Account.Product_Interest_2__c</description>
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>SeaWeb_Vessel_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>SeaWeb Vessel Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>SeaWeb_Vessel_Status</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>Secondary_Phone__c</fullName>
         <description>An alternate general phone number for the account</description>
         <externalId>false</externalId>
@@ -4144,6 +4158,17 @@ Account.Product_Interest_2__c</description>
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Special_Service_Requirements__c</fullName>
+        <description>Created as a text fireld for KC Repairs. This may be extended for other teams as necessary.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter Special Service Details that will be used initially for KC Service Cases</inlineHelpText>
+        <label>Special Service Requirements</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
     </fields>
     <fields>
         <fullName>Subscription_Value__c</fullName>
@@ -7023,6 +7048,89 @@ business/products</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>SeaWeb_Vessel_Status__c</picklist>
+            <values>
+                <fullName>Broken Up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancelled Before Construction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Continued Existence in Doubt</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Converting%2FRebuilding</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Government Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hulked</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Casualty%2For repairing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Service%2FCommission</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Keel Laid</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Laid Up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Launched</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Longer Meets HIS Maritime Criteria</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On-order%2FNot commenced</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Projected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Scrapped before completion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Scuttled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>To be Broken Up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Total Loss</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>US Reserve Fleet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Under Construction</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Type</picklist>
             <values>
                 <fullName>Analyst</fullName>
@@ -8570,6 +8678,89 @@ business/products</description>
             <values>
                 <fullName>KV UK</fullName>
                 <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SeaWeb_Vessel_Status__c</picklist>
+            <values>
+                <fullName>Broken Up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancelled Before Construction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Continued Existence in Doubt</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Converting%2FRebuilding</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Government Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hulked</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Casualty%2For repairing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Service%2FCommission</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Keel Laid</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Laid Up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Launched</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Longer Meets HIS Maritime Criteria</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On-order%2FNot commenced</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Projected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Scrapped before completion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Scuttled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>To be Broken Up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Total Loss</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>US Reserve Fleet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Under Construction</fullName>
+                <default>false</default>
             </values>
         </picklistValues>
         <picklistValues>
@@ -10223,6 +10414,89 @@ business/products</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>SeaWeb_Vessel_Status__c</picklist>
+            <values>
+                <fullName>Broken Up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancelled Before Construction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Continued Existence in Doubt</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Converting%2FRebuilding</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Government Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hulked</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Casualty%2For repairing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Service%2FCommission</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Keel Laid</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Laid Up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Launched</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Longer Meets HIS Maritime Criteria</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On-order%2FNot commenced</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Projected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Scrapped before completion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Scuttled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>To be Broken Up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Total Loss</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>US Reserve Fleet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Under Construction</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Type</picklist>
             <values>
                 <fullName>Analyst</fullName>
@@ -11760,6 +12034,89 @@ business/products</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>SeaWeb_Vessel_Status__c</picklist>
+            <values>
+                <fullName>Broken Up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancelled Before Construction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Continued Existence in Doubt</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Converting%2FRebuilding</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Government Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hulked</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Casualty%2For repairing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Service%2FCommission</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Keel Laid</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Laid Up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Launched</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Longer Meets HIS Maritime Criteria</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On-order%2FNot commenced</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Projected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Scrapped before completion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Scuttled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>To be Broken Up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Total Loss</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>US Reserve Fleet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Under Construction</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Type</picklist>
             <values>
                 <fullName>Analyst</fullName>
@@ -12733,6 +13090,89 @@ business/products</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>SeaWeb_Vessel_Status__c</picklist>
+            <values>
+                <fullName>Broken Up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancelled Before Construction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Continued Existence in Doubt</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Converting%2FRebuilding</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Government Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hulked</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Casualty%2For repairing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Service%2FCommission</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Keel Laid</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Laid Up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Launched</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Longer Meets HIS Maritime Criteria</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On-order%2FNot commenced</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Projected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Scrapped before completion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Scuttled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>To be Broken Up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Total Loss</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>US Reserve Fleet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Under Construction</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Type</picklist>
             <values>
                 <fullName>Analyst</fullName>
@@ -12796,48 +13236,51 @@ business/products</description>
     </recordTypes>
     <searchLayouts>
         <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.ACCOUNT_NUMBER</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Vessel_IMO__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Previous_Name_s__c</customTabListAdditionalFields>
         <customTabListAdditionalFields>ACCOUNT.RECORDTYPE</customTabListAdditionalFields>
         <customTabListAdditionalFields>PARENT_NAME</customTabListAdditionalFields>
-        <customTabListAdditionalFields>ACCOUNT.ADDRESS1_CITY</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Parent_Account_Customer_Account_Number__c</customTabListAdditionalFields>
         <customTabListAdditionalFields>ACCOUNT.ADDRESS1_COUNTRY</customTabListAdditionalFields>
-        <customTabListAdditionalFields>ACCOUNT.PHONE1</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Sales_Office__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>KV_Asia_Account_Code__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>KV_CustAcctNo__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.TYPE</customTabListAdditionalFields>
         <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>Customer_Account_Number__c</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>PARENT_NAME</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>ACCOUNT.ACCOUNT_NUMBER</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>Account_Status__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Vessel_IMO__c</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>ACCOUNT.RECORDTYPE</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>CORE.USERS.ALIAS</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>KV_Company_Ref_No__c</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>ACCOUNT.ADDRESS1_COUNTRY</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>PARENT_NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Parent_Account_Customer_Account_Number__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.ACCOUNT_NUMBER</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>Previous_Name_s__c</lookupDialogsAdditionalFields>
-        <lookupFilterFields>ACCOUNT.RECORDTYPE</lookupFilterFields>
-        <lookupFilterFields>ACCOUNT.ADDRESS1_COUNTRY</lookupFilterFields>
-        <lookupFilterFields>Sales_Office__c</lookupFilterFields>
-        <lookupFilterFields>ACCOUNT.TYPE</lookupFilterFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.TYPE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.ADDRESS1_COUNTRY</lookupDialogsAdditionalFields>
+        <lookupFilterFields>ACCOUNT.NAME</lookupFilterFields>
+        <lookupFilterFields>Vessel_IMO__c</lookupFilterFields>
+        <lookupFilterFields>ACCOUNT.ACCOUNT_NUMBER</lookupFilterFields>
+        <lookupFilterFields>Previous_Name_s__c</lookupFilterFields>
+        <lookupFilterFields>PARENT_NAME</lookupFilterFields>
+        <lookupFilterFields>Parent_Account_Customer_Account_Number__c</lookupFilterFields>
         <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>ACCOUNT.SITE</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>CORE.USERS.ALIAS</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>ACCOUNT.TYPE</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>ACCOUNT.PHONE1</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>Secondary_Phone__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>ACCOUNT.NAME</searchFilterFields>
+        <searchFilterFields>Vessel_IMO__c</searchFilterFields>
         <searchFilterFields>ACCOUNT.RECORDTYPE</searchFilterFields>
         <searchFilterFields>ACCOUNT.ADDRESS1_COUNTRY</searchFilterFields>
         <searchFilterFields>ACCOUNT.TYPE</searchFilterFields>
         <searchFilterFields>Customer_Account_Number__c</searchFilterFields>
-        <searchFilterFields>ACCOUNT.NAME</searchFilterFields>
         <searchFilterFields>ACCOUNT.ACCOUNT_NUMBER</searchFilterFields>
-        <searchFilterFields>Sales_Office__c</searchFilterFields>
         <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>ACCOUNT.RECORDTYPE</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Account_Status__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Customer_Account_Number__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Parent_Account_Text__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Vessel_IMO__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.ACCOUNT_NUMBER</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Previous_Name_s__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PARENT_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Parent_Account_Customer_Account_Number__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.RECORDTYPE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.ADDRESS1_COUNTRY</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.TYPE</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <validationRules>

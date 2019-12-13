@@ -5,7 +5,7 @@
         <description>Notify KV of New Visit Report</description>
         <protected>false</protected>
         <recipients>
-            <recipient>arothwell@videotel.com</recipient>
+            <recipient>aclarkson@videotel.com</recipient>
             <type>user</type>
         </recipients>
         <recipients>
@@ -22,10 +22,6 @@
         </recipients>
         <recipients>
             <recipient>jbarreto@videotel.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>jcollin@kvh.com</recipient>
             <type>user</type>
         </recipients>
         <recipients>
