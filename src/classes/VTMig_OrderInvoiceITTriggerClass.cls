@@ -4,19 +4,25 @@
 
 public without sharing class VTMig_OrderInvoiceITTriggerClass {
 
-    Public Static Boolean dontRunAgain = true;
+    public static Boolean dontRunAgain = true;
 
-    public static void beforeInsertUpdate(Map<ID,Job__c> newInvoiceJobs,Map<ID,Job__c> oldInvoiceJobs){
+    public static void beforeInsertUpdate(Map<Id,Job__c> newInvoiceJobs,Map<Id,Job__c> oldInvoiceJobs){
 
         List<Job__c> ordersToRecalc = new List<Job__c>();
         for(Job__c order : newInvoiceJobs.values()){
 
-            if(order.Recalculate__c != newInvoiceJobs.get(order.Id).Recalculate__c && newInvoiceJobs.get(order.Id).Recalculate__c) {
+            System.debug(order.Recalculate__c);
+            System.debug(order.Recalculate__c != oldInvoiceJobs.get(order.Id).Recalculate__c);
+            System.debug(order);
+            System.debug(oldInvoiceJobs.get(order.Id));
+            if(order.Recalculate__c) {
                 ordersToRecalc.add(order);
             }
         }
 
         if(ordersToRecalc.size() > 0) {
+
+            System.debug('Made it');
             recalcOrder(ordersToRecalc);
         }
     }

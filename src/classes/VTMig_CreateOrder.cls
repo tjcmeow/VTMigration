@@ -82,15 +82,17 @@ public with sharing class VTMig_CreateOrder {
             insert order;
             orderId = order.Id;
 
-            List<Job_Product__c> orderProducts = configProducts();
-            insert orderProducts;
+            if(opportunityProducts.size() > 0) {
+                List<Job_Product__c> orderProducts = configProducts();
+                insert orderProducts;
 
-            List<Job_Rate_Plan__c> ratePlans = configPlans(orderProducts);
-            insert ratePlans;
+                List<Job_Rate_Plan__c> ratePlans = configPlans(orderProducts);
+                insert ratePlans;
 
-            List<Job_Rate_Plan_Charge__c> ratePlanCharges = configCharges(ratePlans);
-            insert ratePlanCharges;
+                List<Job_Rate_Plan_Charge__c> ratePlanCharges = configCharges(ratePlans);
+                insert ratePlanCharges;
 
+            }
             PageReference pg = new PageReference('/'+opp.Id);
             return pg;
         } catch(Exception ex) {

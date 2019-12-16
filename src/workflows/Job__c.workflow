@@ -40,7 +40,7 @@
     <fieldUpdates>
         <fullName>Fill_in_Shipping_Street</fullName>
         <field>BillingStreet_Shipping__c</field>
-        <formula>BillingStreet__c</formula>
+        <formula>Account__r.BillingStreet</formula>
         <name>Fill in Shipping Street</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>

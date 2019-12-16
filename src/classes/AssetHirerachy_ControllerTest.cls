@@ -8,7 +8,7 @@
 * @repository     https://bitbucket.org/kvhdev/asset-hierarchy/src/master/
 */
 @isTest
-public class AssetHirerachy_ControllerTest{
+public class VTMig_AssetHierarchy_ControllerTest{
     
      @testSetup static void setup() {
         Account acct = New Account();

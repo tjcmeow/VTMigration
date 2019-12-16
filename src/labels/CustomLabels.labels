@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
     <labels>
+        <fullName>AssetLevelExecution</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AssetLevelExecution</shortDescription>
+        <value>2</value>
+    </labels>
+    <labels>
         <fullName>Jon_Buttler_UserID</fullName>
         <language>en_US</language>
         <protected>false</protected>
@@ -14,5 +21,12 @@
         <shortDescription>NewLine</shortDescription>
         <value>-
 -</value>
+    </labels>
+    <labels>
+        <fullName>VTMig_AssetLevelExecution</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AssetLevelExecution</shortDescription>
+        <value>2</value>
     </labels>
 </CustomLabels>

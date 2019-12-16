@@ -5,7 +5,7 @@
 global with sharing class VTMig_IITBatchProcessForRecalculateOrder implements Database.Batchable<sObject>{
 
     global string squery;
-    global Job__c OrderObj; 
+    global Job__c OrderObj;
     global set<Id> orderIds = new set<Id>();
 
     global VTMig_IITBatchProcessForRecalculateOrder(set<Id> orderIds) {
@@ -24,7 +24,7 @@ global with sharing class VTMig_IITBatchProcessForRecalculateOrder implements Da
             Job__c  orderObj = new Job__c(Id = listOfOrder[0].Id, Recalculate__c = true);
             update orderObj;
         } catch(exception ex) {
-
+            System.debug(ex.getMessage());
         }
     }
 

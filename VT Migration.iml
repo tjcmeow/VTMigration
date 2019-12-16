@@ -177,6 +177,30 @@
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="VTMig_AssetHierarchy_ControllerTest" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="VTMig_AssetHierarchyController" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="VTMig_AssetStructure" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="VTMig_AssetStructureEngine" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="VTMig_AssetStructureTest" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="VTMig_AssetTestData" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="VTMig_BatchUplift_Test" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
@@ -10457,6 +10481,10 @@
                             <option name="name" value="Previous_Name" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="RMA_Case_Processing" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Test" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -12436,6 +12464,10 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="KV Sales Agent" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="KV Sales User" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>

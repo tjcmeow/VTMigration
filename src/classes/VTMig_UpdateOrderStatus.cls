@@ -33,17 +33,23 @@ public with sharing class VTMig_UpdateOrderStatus {
         newOrder.Alignment_Date_2__c = order.Alignment_Date_2__c;
         newOrder.Alignment_Date_1__c = order.Alignment_Date_1__c;
         newOrder.Initial_Term__c = order.Initial_Term__c;
-        update newOrder;
-        for(Job_Rate_Plan_Charge__c selectedCharge : selectedCharges) {
-            selectedCharge.Price__c = selectedCharge.Unit_Price__c * selectedCharge.Quantity__c;
-            if(selectedCharge.Discount_Value__c == null) {
-                selectedCharge.Discount_Value__c = 0;
+        try{
+            update newOrder;
+            for(Job_Rate_Plan_Charge__c selectedCharge : selectedCharges) {
+                selectedCharge.Price__c = selectedCharge.Unit_Price__c * selectedCharge.Quantity__c;
+                if(selectedCharge.Discount_Value__c == null) {
+                    selectedCharge.Discount_Value__c = 0;
+                }
+                selectedCharge.Net_Total__c = selectedCharge.Price__c - selectedCharge.Discount_Value__c;
             }
-            selectedCharge.Net_Total__c = selectedCharge.Price__c - selectedCharge.Discount_Value__c;
+            update selectedCharges;
+            PageReference pageRef = new PageReference('/' + orderId);
+            return pageRef;
+        } catch(Exception ex) {
+            ApexPages.addmessage(new ApexPages.message(ApexPages.severity.FATAL,ex.getMessage()));
         }
-        update selectedCharges;
-        PageReference pageRef = new PageReference('/' + orderId);
-        return pageRef;
+
+        return null;
     }
 
 }
