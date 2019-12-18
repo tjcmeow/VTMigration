@@ -445,6 +445,18 @@
         <trackTrending>false</trackTrending>
     </fields>
     <fields>
+        <fullName>DiscountPercent__c</fullName>
+        <externalId>false</externalId>
+        <label>Discount Percent</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
         <fullName>Discount_Code__c</fullName>
         <externalId>false</externalId>
         <label>Discount Code</label>
@@ -987,6 +999,7 @@
     <fields>
         <fullName>Total__c</fullName>
         <externalId>false</externalId>
+        <inlineHelpText>Including VAT</inlineHelpText>
         <label>Grand Total</label>
         <precision>18</precision>
         <required>false</required>

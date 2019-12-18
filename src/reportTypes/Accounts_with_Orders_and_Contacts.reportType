@@ -131,6 +131,11 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>Installation_Type__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>Cash_Allocation_Rule__c</field>
             <table>Account</table>
         </columns>
@@ -1590,6 +1595,11 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Master_Order_Record_Id__c</field>
+            <table>Account.Job__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Shipping_Account__c.Installation_Type__c</field>
             <table>Account.Job__r</table>
         </columns>
         <masterLabel>Orders (Account)</masterLabel>

@@ -119,15 +119,6 @@
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>Update_BillingStreet</fullName>
-        <field>BillingStreet__c</field>
-        <formula>Account__r.BillingStreet</formula>
-        <name>Update BillingStreet</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Formula</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
         <fullName>Update_BillingStreet_Shipping</fullName>
         <field>BillingStreet_Shipping__c</field>
         <formula>Shipping_Account__r.BillingStreet</formula>
@@ -298,10 +289,6 @@
         </actions>
         <actions>
             <name>Update_BillingState_Shipping</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
-            <name>Update_BillingStreet</name>
             <type>FieldUpdate</type>
         </actions>
         <actions>

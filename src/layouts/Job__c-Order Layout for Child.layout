@@ -54,10 +54,6 @@
                 <behavior>Edit</behavior>
                 <field>Renewal_Order__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>CurrencyIsoCode</field>
-            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -220,7 +216,7 @@
                 <field>Shipping_Country_from_Account_for_VAT__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Readonly</behavior>
                 <field>External_Id__c</field>
             </layoutItems>
         </layoutColumns>
@@ -395,19 +391,19 @@
         <label>BMS Order Details</label>
         <layoutColumns>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Readonly</behavior>
                 <field>BMS_ScheduleNo__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Readonly</behavior>
                 <field>BMS_Order_RecordID__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Readonly</behavior>
                 <field>Company_Cod_from_BMS__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Readonly</behavior>
                 <field>CustAcctNo_BMS__c</field>
             </layoutItems>
             <layoutItems>
@@ -415,11 +411,11 @@
                 <field>VMA_CustAccountCode__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Readonly</behavior>
                 <field>VMA_Legacy_Acct_Code__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Readonly</behavior>
                 <field>BMS_Initial_Invoice_Date2__c</field>
             </layoutItems>
             <layoutItems>
@@ -429,15 +425,15 @@
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Readonly</behavior>
                 <field>BMS_VOD_Initial_Terms__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Readonly</behavior>
                 <field>BMS_Next_Invoice_Date__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Readonly</behavior>
                 <field>BMS_Invoiceevery__c</field>
             </layoutItems>
             <layoutItems>
@@ -478,7 +474,7 @@
                 <field>No_of_Products__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Readonly</behavior>
                 <field>DocuSign_Status__c</field>
             </layoutItems>
         </layoutColumns>

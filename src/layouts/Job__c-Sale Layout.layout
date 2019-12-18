@@ -55,7 +55,7 @@
                 <field>Despatch_Date__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
                 <field>Product_Type__c</field>
             </layoutItems>
             <layoutItems>
@@ -149,7 +149,7 @@
                 <field>Official_Termination_Given__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Readonly</behavior>
                 <field>External_Id__c</field>
             </layoutItems>
         </layoutColumns>
@@ -170,7 +170,7 @@
                 <field>Preferred_Addressee__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
                 <field>Billing_Contact__c</field>
             </layoutItems>
             <layoutItems>
@@ -295,10 +295,6 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>CurrencyIsoCode</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
                 <field>Invoice_Details__c</field>
             </layoutItems>
         </layoutColumns>
@@ -347,7 +343,7 @@
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
-                <behavior>Readonly</behavior>
+                <behavior>Edit</behavior>
                 <field>CurrencyL__c</field>
             </layoutItems>
             <layoutItems>

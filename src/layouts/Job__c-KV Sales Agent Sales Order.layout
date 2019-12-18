@@ -34,7 +34,7 @@
                 <field>X3rd_Billing_Contact__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
                 <field>Initial_Term__c</field>
             </layoutItems>
             <layoutItems>
@@ -64,10 +64,6 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Legacy_Created_Date__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>CurrencyIsoCode</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -121,7 +117,7 @@
                 <field>Preferred_Addressee__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
                 <field>Billing_Contact__c</field>
             </layoutItems>
             <layoutItems>
@@ -230,7 +226,7 @@
                 <field>Regional_Format__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
                 <field>Product_Type__c</field>
             </layoutItems>
         </layoutColumns>
@@ -243,7 +239,7 @@
         <label>Invoice Details</label>
         <layoutColumns>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
                 <field>Legal_Entity__c</field>
             </layoutItems>
             <layoutItems>

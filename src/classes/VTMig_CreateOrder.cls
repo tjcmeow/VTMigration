@@ -19,7 +19,7 @@ public with sharing class VTMig_CreateOrder {
         opp  = [
                 SELECT Id, IsWon, Account.Name, Shipping_Account__c, Legal_Entity__c, Shipping_Contact__c,
                         Billing_Contact__c, IItIntended_Use__c, Platform_or_Vessel_detail__c, 
-                        Wet_or_Dry_Cargo__c, Partner_Agent__c
+                        Wet_or_Dry_Cargo__c, Partner_Agent__c, AccountId, Account.RecordType.Name, Account.RecordTypeId
                 FROM Opportunity WHERE Id =: opp.Id
         ];
         opportunityRatePlanMap = new Map<Id, List<Opportunity_Rate_Plan__c>>();
@@ -78,6 +78,11 @@ public with sharing class VTMig_CreateOrder {
 
     public PageReference createOrder() {
         try {
+            if(opp.Account.RecordType.Name != 'KV Customers') {
+                Account oppAccount = [SELECT RecordTypeId, Id FROM Account WHERE Id =: opp.AccountId];
+                oppAccount.RecordTypeId = Schema.SObjectType.Account.getRecordTypeInfosByName().get('KV Customers').getRecordTypeId();
+                update oppAccount;
+            }
             Job__c order = configOrder();
             insert order;
             orderId = order.Id;

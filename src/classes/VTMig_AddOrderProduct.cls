@@ -46,7 +46,12 @@ public with sharing class VTMig_AddOrderProduct {
                             Wet_or_Dry_Cargo__c, Platform_or_Vessel_detail__c, Name, Discount_Percent__c, VAT__c, Tax__c
                     FROM Job__c WHERE Id = : orderId
             ];
-            overallDiscount = order.Discount_Percent__c;
+            if(order.Discount_Percent__c != null) {
+                overallDiscount = order.Discount_Percent__c;
+            } else {
+                overallDiscount = 0;
+            }
+
             List<Job_Rate_Plan_Charge__c> currentCharges = [SELECT Id, Name, Product_Charge_Category__c, Subscription_Product__c, Job_Rate_Plan__r.Job_Product__r.Name,
                     Job_Rate_Plan__r.Job_Product__r.Product__c, Product_Rate_Plan_Charge__c, Product_Rate_Plan_Charge__r.Product_Rate_Plan__r.Product__r.Name, Net_Total__c,
                     Title_Product__c, Unit_Of_Measurement__c, Price_Type__c, Price_Format__c, Unit_Price__c, Product_Rate_Plan_Charge__r.Product_Rate_Plan__r.Product__r.Product_Code__c,
@@ -228,6 +233,12 @@ public with sharing class VTMig_AddOrderProduct {
             order.Discount_Value__c = order.Sub_total__c * (overallDiscount/100);
             order.Discount_Percent__c = overallDiscount;
             order.Net_Total__c = order.Sub_total__c - order.Discount_Value__c;
+            if(order.VAT__c == null) {
+                order.VAT__c = 0;
+            }
+            if(order.Tax__c == null) {
+                order.Tax__c = 0;
+            }
             order.Total__c = order.Net_Total__c + order.VAT__c + order.Tax__c;
             update order;
             if(removedCharges.size() > 0) {

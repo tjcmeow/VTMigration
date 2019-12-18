@@ -13236,7 +13236,7 @@ business/products</description>
     </recordTypes>
     <searchLayouts>
         <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
-        <customTabListAdditionalFields>ACCOUNT.ACCOUNT_NUMBER</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Customer_Account_Number__c</customTabListAdditionalFields>
         <customTabListAdditionalFields>Vessel_IMO__c</customTabListAdditionalFields>
         <customTabListAdditionalFields>Previous_Name_s__c</customTabListAdditionalFields>
         <customTabListAdditionalFields>ACCOUNT.RECORDTYPE</customTabListAdditionalFields>
@@ -13249,13 +13249,13 @@ business/products</description>
         <lookupDialogsAdditionalFields>ACCOUNT.RECORDTYPE</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>PARENT_NAME</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>Parent_Account_Customer_Account_Number__c</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>ACCOUNT.ACCOUNT_NUMBER</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Customer_Account_Number__c</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>Previous_Name_s__c</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>ACCOUNT.TYPE</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>ACCOUNT.ADDRESS1_COUNTRY</lookupDialogsAdditionalFields>
         <lookupFilterFields>ACCOUNT.NAME</lookupFilterFields>
         <lookupFilterFields>Vessel_IMO__c</lookupFilterFields>
-        <lookupFilterFields>ACCOUNT.ACCOUNT_NUMBER</lookupFilterFields>
+        <lookupFilterFields>Customer_Account_Number__c</lookupFilterFields>
         <lookupFilterFields>Previous_Name_s__c</lookupFilterFields>
         <lookupFilterFields>PARENT_NAME</lookupFilterFields>
         <lookupFilterFields>Parent_Account_Customer_Account_Number__c</lookupFilterFields>
@@ -13271,7 +13271,6 @@ business/products</description>
         <searchFilterFields>ACCOUNT.ADDRESS1_COUNTRY</searchFilterFields>
         <searchFilterFields>ACCOUNT.TYPE</searchFilterFields>
         <searchFilterFields>Customer_Account_Number__c</searchFilterFields>
-        <searchFilterFields>ACCOUNT.ACCOUNT_NUMBER</searchFilterFields>
         <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Vessel_IMO__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>ACCOUNT.ACCOUNT_NUMBER</searchResultsAdditionalFields>

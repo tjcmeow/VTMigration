@@ -47,8 +47,8 @@
                 <field>ExpectedRevenue</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Discount_Percent__c</field>
+                <behavior>Edit</behavior>
+                <field>DiscountPercent__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>

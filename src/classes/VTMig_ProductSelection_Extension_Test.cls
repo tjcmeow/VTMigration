@@ -8,10 +8,15 @@ public with sharing class VTMig_ProductSelection_Extension_Test {
     @TestSetup
     static void setUpData(){
 
+        Account newAccount = new Account();
+        newAccount.Name = 'New Account';
+        insert newAccount;
+
         Opportunity newOpp = new Opportunity();
         newOpp.Name = 'New Opportunity';
         newOpp.CloseDate = System.today();
         newOpp.StageName = 'Qualification';
+        newOpp.AccountId = newAccount.Id;
         insert newOpp;
 
         Product__c newProduct = new Product__c();
@@ -40,16 +45,6 @@ public with sharing class VTMig_ProductSelection_Extension_Test {
         opportunityRatePlan.Product_Rate_Plan__c = newProductRatePlan.Id;
         opportunityRatePlan.Opportunity_Product__c = opportunityProduct.Id;
         insert opportunityRatePlan;
-
-        Account newAccount = new Account();
-        newAccount.Name = 'New Account';
-        insert newAccount;
-
-        Job__c newOrder = new Job__c();
-        newOrder.Account__c = newAccount.Id;
-        newOrder.Opportunity__c = newOpp.Id;
-        newOrder.Name = 'New Order';
-
     }
 
     @IsTest
@@ -76,19 +71,21 @@ public with sharing class VTMig_ProductSelection_Extension_Test {
 
         Opportunity newOpp = [SELECT Id FROM Opportunity];
 
-        Opportunity_Rate_Plan__c opportunityRatePlan = [SELECT Id FROM Opportunity_Rate_Plan__c];
+        Opportunity_Rate_Plan__c oppRatePlan = [SELECT Id FROM Opportunity_Rate_Plan__c];
 
         Product_Rate_Plan_Charge__c productRatePlanCharge = [SELECT Id FROM Product_Rate_Plan_Charge__c];
 
-        Opportunity_Rate_Plan_Charge__c opportunityRatePlanCharge = new Opportunity_Rate_Plan_Charge__c();
-        opportunityRatePlanCharge.Opportunity__c = newOpp.Id;
-        opportunityRatePlanCharge.Quantity__c = 1;
-        opportunityRatePlanCharge.Opportunity_Rate_Plan__c = opportunityRatePlan.Id;
-        opportunityRatePlanCharge.Product_Rate_Plan_Charge__c = productRatePlanCharge.Id;
-        opportunityRatePlanCharge.Unit_Price__c = 100;
-        opportunityRatePlanCharge.Name = 'New Opp Rate Plan Charge';
-        opportunityRatePlanCharge.Price__c = 100;
-        insert opportunityRatePlanCharge;
+        Opportunity_Rate_Plan_Charge__c oppRatePlanCharge = new Opportunity_Rate_Plan_Charge__c();
+        oppRatePlanCharge.Opportunity_Rate_Plan__c = oppRatePlan.Id;
+        oppRatePlanCharge.Quantity__c = 1;
+        oppRatePlanCharge.Opportunity__c = newOpp.Id;
+        oppRatePlanCharge.Product_Rate_Plan_Charge__c = productRatePlanCharge.Id;
+        oppRatePlanCharge.Unit_Price__c = 100;
+        oppRatePlanCharge.Name = 'New Opp Rate Plan Charge';
+        oppRatePlanCharge.Price__c = 100;
+        oppRatePlanCharge.Discount_Value__c = 0;
+        oppRatePlanCharge.Discount_Percent__c = 0;
+        insert oppRatePlanCharge;
 
         Test.startTest();
 
@@ -128,7 +125,9 @@ public with sharing class VTMig_ProductSelection_Extension_Test {
         controller.recalculate();
         System.assertNotEquals(controller.grandTotal, total);
 
+        controller.removeChargeId = 0;
         controller.removeCharge();
+        controller.removeCharges();
 
         PageReference pageRef2 = controller.saveProducts();
 

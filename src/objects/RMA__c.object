@@ -1132,19 +1132,9 @@
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
-                    <fullName>Calibrate</fullName>
-                    <default>false</default>
-                    <label>Calibrate</label>
-                </value>
-                <value>
                     <fullName>Client Cancelled</fullName>
                     <default>false</default>
                     <label>Client Cancelled</label>
-                </value>
-                <value>
-                    <fullName>Decommission Request</fullName>
-                    <default>false</default>
-                    <label>Decommission Request</label>
                 </value>
                 <value>
                     <fullName>Exchange/Renewal</fullName>
@@ -1172,46 +1162,6 @@
                     <label>Replacement</label>
                 </value>
                 <value>
-                    <fullName>Upgrade</fullName>
-                    <default>false</default>
-                    <label>Upgrade</label>
-                </value>
-                <value>
-                    <fullName>Damaged Equipment</fullName>
-                    <default>false</default>
-                    <label>Damaged Equipment</label>
-                </value>
-                <value>
-                    <fullName>Project Cancellation</fullName>
-                    <default>false</default>
-                    <label>Project Cancellation</label>
-                </value>
-                <value>
-                    <fullName>Pricing Error</fullName>
-                    <default>false</default>
-                    <label>Pricing Error</label>
-                </value>
-                <value>
-                    <fullName>Incorrect Part Shipped</fullName>
-                    <default>false</default>
-                    <label>Incorrect Part Shipped</label>
-                </value>
-                <value>
-                    <fullName>Management Swap</fullName>
-                    <default>false</default>
-                    <label>Management Swap</label>
-                </value>
-                <value>
-                    <fullName>Paperwork Update</fullName>
-                    <default>false</default>
-                    <label>Paperwork Update</label>
-                </value>
-                <value>
-                    <fullName>Shipping Credit</fullName>
-                    <default>false</default>
-                    <label>Shipping Credit</label>
-                </value>
-                <value>
                     <fullName>Vessel Scrapped</fullName>
                     <default>false</default>
                     <label>Vessel Scrapped</label>
@@ -1220,16 +1170,6 @@
                     <fullName>Vessel SOLD</fullName>
                     <default>false</default>
                     <label>Vessel SOLD</label>
-                </value>
-                <value>
-                    <fullName>Vessel Swap</fullName>
-                    <default>false</default>
-                    <label>Vessel Swap</label>
-                </value>
-                <value>
-                    <fullName>Other</fullName>
-                    <default>false</default>
-                    <label>Other</label>
                 </value>
             </valueSetDefinition>
         </valueSet>

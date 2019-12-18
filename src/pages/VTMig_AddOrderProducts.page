@@ -11,7 +11,7 @@
             return false;
         }
         function displayTheCharge(theCharge){
-            console.log(theCharge);
+            console.log(theCharge); 
         }
     </script>
     <apex:outputField value="{!order.Name}" rendered="false"/>
