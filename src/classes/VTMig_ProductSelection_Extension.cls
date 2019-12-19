@@ -15,7 +15,6 @@ public with sharing class VTMig_ProductSelection_Extension {
     public Integer highestInteger {get;set;}
     public Decimal overallDiscount {get;set;}
     public Decimal grandTotal {get;set;}
-    public Product_Rate_Plan_Charge__c selectedCharge {get; set;}
     public List<Product_Rate_Plan__c> plans {get; set;}
     public List<ProdCharge> prodCharges {get; set;}
     public Boolean showProducts {get; set;}
@@ -26,7 +25,7 @@ public with sharing class VTMig_ProductSelection_Extension {
     public List<OppCharge> selectedCharges {get;set;}
     public List<OppCharge> removedCharges {get; set;}
     public List<ProdCharge> selectedProdCharges {get;set;}
-    public OppCharge currentOppCharge {get; set;}
+    public OppCharge newCharge {get; set;}
 
     public VTMig_ProductSelection_Extension(ApexPages.StandardController ctrlr){
         highestInteger = 0;
@@ -40,36 +39,35 @@ public with sharing class VTMig_ProductSelection_Extension {
         showCharges = false;
         pageStep = '1';
         grandTotal = 0;
+        newCharge = new OppCharge();
         removedCharges = new List<OppCharge>();
         Opp = [
                 SELECT Name, AccountId, Wet_or_Dry_Cargo__c, Partner_Agent_Account__c, Platform_or_Vessel_Detail__c, Shipping_Account__c,
-                        Shipping_Contact__c, Partner_Agent__c, IITIntended_Use__c, Legal_Entity__c, Discount_Percent__c,
-                        VAT__c, Tax__c
+                        Shipping_Contact__c, Partner_Agent__c, IITIntended_Use__c, Legal_Entity__c, Discount_Percent__c, VAT__c, Tax__c
                 FROM Opportunity WHERE Id = : OppId
         ];
-
         if(Opp.Discount_Percent__c != null) {
             overallDiscount = Opp.Discount_Percent__c;
         } else {
             overallDiscount = 0;
         }
 
-        List<Opportunity_Rate_Plan_Charge__c> currentCharges = [
-                SELECT Id, Name, Product_Charge_Category__c, Subscription_Product__c, Opportunity_Rate_Plan__r.Opportunity_Product__r.Name,
+        List<Opportunity_Rate_Plan_Charge__c> currentCharges = [ SELECT Id, Name, Product_Charge_Category__c, Subscription_Product__c, Opportunity_Rate_Plan__r.Opportunity_Product__r.Name,
                         Opportunity_Rate_Plan__r.Opportunity_Product__r.Product__c, Product_Rate_Plan_Charge__c, Product_Rate_Plan_Charge__r.Product_Rate_Plan__r.Product__r.Name,
                         Title_Product__c, Unit_Of_Measurement__c, Price_Type__c, Pricing_Model__c, Unit_Price__c, Uplift__c, Net_Total__c,
                         Quantity__c, Opportunity_Rate_Plan__r.Opportunity_Product__r.Product_Code__c, Opportunity_Rate_Plan__r.Product_Rate_Plan__c,
-                        Product_Rate_Plan_Charge__r.Product_Rate_Plan__r.Product__r.Product_Code__c, Discount_Percent__c, Price__c, Discount_Value__c
-                FROM Opportunity_Rate_Plan_Charge__c WHERE Opportunity__c = : OppId
-        ];
+                        Discount_Percent__c, Price__c, Discount_Value__c, Opportunity_Rate_Plan__c, Opportunity_Rate_Plan__r.Opportunity_Product__c,
+                        Product_Rate_Plan_Charge__r.Product_Rate_Plan__r.Product__r.Product_Code__c
+                FROM Opportunity_Rate_Plan_Charge__c WHERE Opportunity__c = : OppId ];
         if(currentCharges.size() > 0) {
+
             for(Opportunity_Rate_Plan_Charge__c currentCharge : currentCharges) {
-                OppCharge newCharge = new OppCharge();
-                newCharge.indexInteger = highestInteger;
+                OppCharge thisCharge = new OppCharge();
+                thisCharge.indexInteger = highestInteger;
                 highestInteger++;
-                newCharge.chargeId  = currentCharge.Id;
-                newCharge.opportunityRatePlanCharge = currentCharge;
-                newCharge.productName = currentCharge.Product_Rate_Plan_Charge__r.Product_Rate_Plan__r.Product__r.Name;
+                thisCharge.chargeId  = currentCharge.Id;
+                thisCharge.opportunityRatePlanCharge = currentCharge;
+                thisCharge.productName = currentCharge.Product_Rate_Plan_Charge__r.Product_Rate_Plan__r.Product__r.Name;
 
                 ProdCharge singleProdCharge = new ProdCharge();
                 singleProdCharge.prodCharge = [
@@ -82,8 +80,8 @@ public with sharing class VTMig_ProductSelection_Extension {
                 singleProdCharge.prodId = currentCharge.Opportunity_Rate_Plan__r.Opportunity_Product__r.Product__c;
                 singleProdCharge.chargeId = currentCharge.Id;
                 singleProdCharge.chargeName = currentCharge.Name;
-                newCharge.prodCharge = singleProdCharge;
-                selectedCharges.add(newCharge);
+                thisCharge.prodCharge = singleProdCharge;
+                selectedCharges.add(thisCharge);
             }
             showChosenCharges = true;
         } else {
@@ -109,6 +107,7 @@ public with sharing class VTMig_ProductSelection_Extension {
 
     public void selectProduct(){
         System.debug(selectedProductId);
+        newCharge.opportunityProduct = configOppProd(selectedProductId, null);
         showProducts = false;
         showCharges = false;
         plans = [SELECT Id, Name, Description__c FROM Product_Rate_Plan__c WHERE Status__c = 'Active' AND Product__c = : selectedProductId];
@@ -118,11 +117,13 @@ public with sharing class VTMig_ProductSelection_Extension {
     public void selectPlan(){
         showProducts = false;
         showPlans = false;
+        newCharge.opportunityRatePlan = configOppPlan(selectedPlanId, null);
         List<Product_Rate_Plan_Charge__c> charges = [
                 SELECT Id, Name, Product_Charge_Category__c, Subscription_Product__c, Product_Rate_Plan__r.Product__r.Name,
                         Title_Product__c, Unit_Of_Measurement__c, Price_Type__c, Pricing_Format__c, Unit_Price__c, Quantity__c,
                         Product_Rate_Plan__r.Product__r.Product_Code__c, Uplift__c
         FROM Product_Rate_Plan_Charge__c WHERE Product_Rate_Plan__c = : selectedPlanId];
+        prodCharges.clear();
         for(Product_Rate_Plan_Charge__c charge : charges) {
             ProdCharge newProdCharge = new ProdCharge();
             newProdCharge.prodCharge = charge;
@@ -144,16 +145,15 @@ public with sharing class VTMig_ProductSelection_Extension {
                 selectedProdCharge = prodCharge;
                 opportunityRatePlanCharge.Quantity__c = quantity;
                 opportunityRatePlanCharge = configCharge(opportunityRatePlanCharge, prodCharge.prodCharge);
-                OppCharge newCharge = new OppCharge();
                 newCharge.opportunityRatePlanCharge = opportunityRatePlanCharge;
                 newCharge.prodCharge = prodCharge;
-                newCharge.productName = ProdCharge.prodCharge.Product_Rate_Plan__r.Product__r.Name;
+                newCharge.productName = prodCharge.prodCharge.Product_Rate_Plan__r.Product__r.Name;
                 newCharge.indexInteger = highestInteger;
                 highestInteger++;
                 selectedCharges.add(newCharge);
             }
         }
-
+        newCharge = new OppCharge();
         prodSearchText = '';
         selectedChargeId = '';
         selectedPlanId = '';
@@ -172,6 +172,7 @@ public with sharing class VTMig_ProductSelection_Extension {
             if(removeChargeId == selectedCharge.indexInteger) {
                 selectedCharges.remove(selectedCharges.indexOf(selectedCharge));
                 removedCharges.add(selectedCharge);
+                System.debug(removedCharges);
                 break;
             }
         }
@@ -182,55 +183,30 @@ public with sharing class VTMig_ProductSelection_Extension {
 
         for(OppCharge currentCharge : selectedCharges) {
             currentCharge.chargeId = currentCharge.prodCharge.chargeId;
-            currentCharge.opportunityProduct = configOppProd(currentCharge.prodCharge.prodId, currentCharge.prodCharge.chargeId, currentCharge);
-            currentCharge.opportunityRatePlan = configOppPlan(currentCharge.prodCharge.planId, currentCharge.opportunityProduct.Id, currentCharge.prodCharge.chargeId);
+            currentCharge.opportunityProduct = configOppProd(currentCharge.prodCharge.prodId, currentCharge.prodCharge.chargeId);
+            currentCharge.opportunityRatePlan = configOppPlan(currentCharge.prodCharge.planId, currentCharge.prodCharge.chargeId);
             grandTotal = grandTotal + currentCharge.opportunityRatePlanCharge.Price__c;
         }
+        grandTotal = grandTotal*(1-overallDiscount/100);
         pageStep = '2';
     }
 
     public void step1(){
-        selectedCharges.clear();
         pageStep = '1';
     }
 
     public PageReference saveProducts(){
-
-        List<Opportunity_Product__c> oppProducts = new List<Opportunity_Product__c>();
-        List<Opportunity_Rate_Plan__c> oppRatePlans = new List<Opportunity_Rate_Plan__c>();
-        List<Opportunity_Rate_Plan_Charge__c> oppCharges = new List<Opportunity_Rate_Plan_Charge__c>();
-        for(OppCharge opportunityCharge : selectedCharges) {
-            if(opportunityCharge.chargeId == null) {
-                oppProducts.add(opportunityCharge.opportunityProduct);
-            }
-        }
-        upsert oppProducts;
-        for(OppCharge opportunityCharge : selectedCharges) {
-            Id oppProdId;
-            for(Opportunity_Product__c oppProduct : oppProducts) {
-                if(oppProduct.Product__c == opportunityCharge.prodCharge.prodId){
-                    oppProdId = oppProduct.Id;
-                }
-            }
-            Opportunity_Rate_Plan__c oppRatePlan = configOppPlan(opportunityCharge.prodCharge.planId, oppProdId, opportunityCharge.chargeId);
-            oppRatePlans.add(oppRatePlan);
-        }
-        upsert oppRatePlans;
         Decimal runningSubtotal = 0;
-        for(OppCharge opportunityCharge : selectedCharges) {
-            Id ratePlanId;
-            for(Opportunity_Rate_Plan__c oppRatePlan : oppRatePlans) {
-                if(oppRatePlan.Product_Rate_Plan__c == opportunityCharge.prodCharge.planId) {
-                    ratePlanId = oppRatePlan.Id;
-                }
+        for(OppCharge theCharge : selectedCharges) {
+            if(theCharge.chargeId == null) {
+                insert theCharge.opportunityProduct;
+                theCharge.opportunityRatePlan.Opportunity_Product__c = theCharge.opportunityProduct.Id;
+                insert theCharge.opportunityRatePlan;
+                theCharge.opportunityRatePlanCharge.Opportunity_Rate_Plan__c = theCharge.opportunityRatePlan.Id;
+                insert theCharge.opportunityRatePlanCharge;
+                runningSubtotal = runningSubtotal + theCharge.opportunityRatePlanCharge.Unit_Price__c * theCharge.opportunityRatePlanCharge.Quantity__c;
             }
-            runningSubtotal = runningSubtotal + opportunityCharge.opportunityRatePlanCharge.Unit_Price__c * opportunityCharge.opportunityRatePlanCharge.Quantity__c;
-            Opportunity_Rate_Plan_Charge__c opportunityRatePlanCharge = new Opportunity_Rate_Plan_Charge__c();
-            opportunityRatePlanCharge.Opportunity_Rate_Plan__c = ratePlanId;
-            opportunityRatePlanCharge = configOppCharge(opportunityCharge.opportunityRatePlanCharge, opportunityCharge.chargeId, opportunityRatePlanCharge);
-            oppCharges.add(opportunityRatePlanCharge);
         }
-        upsert oppCharges;
         Opp.Sub_total__c = runningSubtotal;
         Opp.Discount_Value__c = Opp.Sub_total__c * (overallDiscount/100);
         Opp.Net_Total__c = Opp.Sub_total__c - Opp.Discount_Value__c;
@@ -266,6 +242,9 @@ public with sharing class VTMig_ProductSelection_Extension {
             }
             List<Opportunity_Rate_Plan__c> plans = [SELECT Id, Opportunity_Product__c FROM Opportunity_Rate_Plan__c WHERE Id IN : removedPlanIds];
             List<Id> removedProductIds = new List<Id>();
+            for(Opportunity_Rate_Plan__c plan : plans) {
+                removedProductIds.add(plan.Opportunity_Product__c);
+            }
             List<Opportunity_Product__c> products = [SELECT Id FROM Opportunity_Product__c WHERE Id IN : removedProductIds];
             try {
                 delete charges;
@@ -277,7 +256,7 @@ public with sharing class VTMig_ProductSelection_Extension {
         }
     }
 
-    public Opportunity_Rate_Plan__c configOppPlan(String planId, String oppProdId, Id chargeId) {
+    public Opportunity_Rate_Plan__c configOppPlan(String planId, Id chargeId) {
 
         Opportunity_Rate_Plan__c oppRatePlan = new Opportunity_Rate_Plan__c();
         if(chargeId == null) {
@@ -285,7 +264,7 @@ public with sharing class VTMig_ProductSelection_Extension {
             oppRatePlan.Name = ratePlan.Name;
             oppRatePlan.Product_Rate_Plan__c = ratePlan.Id;
             oppRatePlan.Description__c = ratePlan.Description__c;
-            oppRatePlan.Opportunity_Product__c = oppProdId;
+            oppRatePlan.SequenceNumber__c = ratePlan.Sequence_Number__c;
         } else {
             String oppPlanId = [SELECT Opportunity_Rate_Plan__r.Id FROM Opportunity_Rate_Plan_Charge__c WHERE Id =: chargeId].Opportunity_Rate_Plan__r.Id;
             oppRatePlan = [SELECT Name, Id, Product_Rate_Plan__c, Description__c, Opportunity_Product__c FROM Opportunity_Rate_Plan__c WHERE Id = : oppPlanId];
@@ -293,17 +272,17 @@ public with sharing class VTMig_ProductSelection_Extension {
         return oppRatePlan;
     }
 
-    public Opportunity_Product__c configOppProd(String prodId, Id chargeId, OppCharge theOppCharge) {
+    public Opportunity_Product__c configOppProd(String prodId, Id chargeId) {
 
         Opportunity_Product__c OppProduct = new Opportunity_Product__c();
         if(chargeId == null) {
             Product__c chosenProduct = [SELECT Id, Description__c, Product_Code__c, Product_Family__c, Name FROM Product__c WHERE Id =: prodId];
-            OppProduct.Name = theOppCharge.productName;
+            OppProduct.Name = chosenProduct.Name;
             OppProduct.Description__c = chosenProduct.Description__c;
             OppProduct.Product__c = prodId;
             OppProduct.Product_Family__c = chosenProduct.Product_Family__c;
             OppProduct.Product_Code__c = chosenProduct.Product_Code__c;
-            OppProduct.Opportunity__c = oppId;
+            OppProduct.Opportunity__c = OppId;
         } else {
             String oppProductId = [SELECT Opportunity_Rate_Plan__r.Opportunity_Product__r.Id FROM Opportunity_Rate_Plan_Charge__c WHERE Id =: chargeId].Opportunity_Rate_Plan__r.Opportunity_Product__r.Id;
             OppProduct = [SELECT Id, Name, Description__c, Product__c, Product_Family__c, Product_Code__c, Opportunity__c FROM Opportunity_Product__c WHERE Id =: oppProductId];
@@ -311,48 +290,25 @@ public with sharing class VTMig_ProductSelection_Extension {
         return OppProduct;
     }
 
-    public Opportunity_Rate_Plan_Charge__c configOppCharge(Opportunity_Rate_Plan_Charge__c charge, Id chargeId, Opportunity_Rate_Plan_Charge__c newCharge) {
+    public Opportunity_Rate_Plan_Charge__c configCharge(Opportunity_Rate_Plan_Charge__c newOppCharge, Product_Rate_Plan_Charge__c charge){
 
-        newCharge.Name = charge.Name;
-        newCharge.Product_Charge_Category__c = charge.Product_Charge_Category__c;
-        newCharge.Subscription_Product__c = charge.Subscription_Product__c;
-        newCharge.Title_Product__c = charge.Title_Product__c;
-        newCharge.Unit_Of_Measurement__c = charge.Unit_Of_Measurement__c;
-        newCharge.Price_Type__c = charge.Price_Type__c;
-        newCharge.Pricing_Model__c = charge.Pricing_Model__c;
-        newCharge.Unit_Price__c = charge.Unit_Price__c;
-        newCharge.External_Id__c = selectedPlanId;
-        newCharge.Product_Rate_Plan_Charge__c = charge.Product_Rate_Plan_Charge__c;
-        newCharge.Quantity__c = charge.Quantity__c;
-        newCharge.Price__c = charge.Unit_Price__c * charge.Quantity__c;
-        newCharge.Discount_Percent__c = charge.Discount_Percent__c;
-        newCharge.Discount_Value__c = newCharge.Price__c * newCharge.Discount_Percent__c/100;
-        newCharge.Net_Total__c = newCharge.Price__c - newCharge.Discount_Value__c;
-        newCharge.Opportunity__c = OppId;
-        newCharge.Id = chargeId;
-        newCharge.Uplift__c = charge.Uplift__c;
-        return newCharge;
-    }
-
-    public Opportunity_Rate_Plan_Charge__c configCharge(Opportunity_Rate_Plan_Charge__c newCharge, Product_Rate_Plan_Charge__c charge){
-
-        newCharge.Name = charge.Name;
-        newCharge.Product_Charge_Category__c = charge.Product_Charge_Category__c;
-        newCharge.Subscription_Product__c = charge.Subscription_Product__c;
-        newCharge.Title_Product__c = charge.Title_Product__c;
-        newCharge.Unit_Of_Measurement__c = charge.Unit_Of_Measurement__c;
-        newCharge.Price_Type__c = charge.Price_Type__c;
-        newCharge.Pricing_Model__c = charge.Pricing_Format__c;
-        newCharge.Unit_Price__c = charge.Unit_Price__c;
-        newCharge.External_Id__c = selectedPlanId;
-        newCharge.Product_Rate_Plan_Charge__c = charge.Id;
-        newCharge.Price__c = charge.Unit_Price__c * newCharge.Quantity__c;
-        newCharge.Discount_Percent__c = 0.00;
-        newCharge.Discount_Value__c = 0;
-        newCharge.Net_Total__c = newCharge.Price__c - newCharge.Discount_Value__c;
-        newCharge.Opportunity__c = oppId;
-        newCharge.Uplift__c = charge.Uplift__c;
-        return newCharge;
+        newOppCharge.Name = charge.Name;
+        newOppCharge.Product_Charge_Category__c = charge.Product_Charge_Category__c;
+        newOppCharge.Subscription_Product__c = charge.Subscription_Product__c;
+        newOppCharge.Title_Product__c = charge.Title_Product__c;
+        newOppCharge.Unit_Of_Measurement__c = charge.Unit_Of_Measurement__c;
+        newOppCharge.Price_Type__c = charge.Price_Type__c;
+        newOppCharge.Pricing_Model__c = charge.Pricing_Format__c;
+        newOppCharge.Unit_Price__c = charge.Unit_Price__c;
+        newOppCharge.External_Id__c = selectedPlanId;
+        newOppCharge.Product_Rate_Plan_Charge__c = charge.Id;
+        newOppCharge.Price__c = charge.Unit_Price__c * newOppCharge.Quantity__c;
+        newOppCharge.Discount_Percent__c = 0.00;
+        newOppCharge.Discount_Value__c = 0;
+        newOppCharge.Net_Total__c = newOppCharge.Price__c - newOppCharge.Discount_Value__c;
+        newOppCharge.Opportunity__c = OppId;
+        newOppCharge.Uplift__c = charge.Uplift__c;
+        return newOppCharge;
 
     }
 

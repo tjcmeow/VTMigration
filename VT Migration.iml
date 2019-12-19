@@ -10455,6 +10455,10 @@
                             <option name="name" value="Active_Orders" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Create_New_Asset" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Credit_Line_Creation" />
                             <option name="selected" value="true" />
                           </MetadataEntry>

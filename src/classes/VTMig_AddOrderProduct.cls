@@ -15,7 +15,6 @@ public with sharing class VTMig_AddOrderProduct {
         public Integer highestInteger {get; set;}
         public Decimal overallDiscount {get;set;}
         public Decimal grandTotal {get;set;}
-        public Product_Rate_Plan_Charge__c selectedCharge {get; set;}
         public List<Product_Rate_Plan__c> plans {get; set;}
         public List<ProdCharge> prodCharges {get; set;}
         public Boolean showProducts {get; set;}
@@ -26,7 +25,7 @@ public with sharing class VTMig_AddOrderProduct {
         public List<OrderCharge> selectedCharges {get;set;}
         public List<OrderCharge> removedCharges {get;set;}
         public List<ProdCharge> selectedProdCharges {get;set;}
-        public OrderCharge currentOrderCharge {get; set;}
+        public OrderCharge newCharge {get; set;}
 
         public VTMig_AddOrderProduct(ApexPages.StandardController ctrlr){
             highestInteger = 0;
@@ -40,10 +39,11 @@ public with sharing class VTMig_AddOrderProduct {
             showCharges = false;
             pageStep = '1';
             grandTotal = 0;
+            newCharge = new OrderCharge();
             removedCharges = new List<OrderCharge>();
             order = [
                     SELECT Id, Account__c, Shipping_Contact__c, Shipping_Account__c, Legal_Entity__c, Partner_Agent__c, IITIntended_Use__c,
-                            Wet_or_Dry_Cargo__c, Platform_or_Vessel_detail__c, Name, Discount_Percent__c, VAT__c, Tax__c
+                            Wet_or_Dry_Cargo__c, Platform_or_Vessel_detail__c, Name, Discount_Percent__c, VAT__c, Tax__c, RecordType.Name
                     FROM Job__c WHERE Id = : orderId
             ];
             if(order.Discount_Percent__c != null) {
@@ -55,17 +55,18 @@ public with sharing class VTMig_AddOrderProduct {
             List<Job_Rate_Plan_Charge__c> currentCharges = [SELECT Id, Name, Product_Charge_Category__c, Subscription_Product__c, Job_Rate_Plan__r.Job_Product__r.Name,
                     Job_Rate_Plan__r.Job_Product__r.Product__c, Product_Rate_Plan_Charge__c, Product_Rate_Plan_Charge__r.Product_Rate_Plan__r.Product__r.Name, Net_Total__c,
                     Title_Product__c, Unit_Of_Measurement__c, Price_Type__c, Price_Format__c, Unit_Price__c, Product_Rate_Plan_Charge__r.Product_Rate_Plan__r.Product__r.Product_Code__c,
-                    Quantity__c, Job_Rate_Plan__r.Job_Product__r.Product_Code__c, Job_Rate_Plan__r.Product_Rate_Plan__c, Uplift__c, Discount_Percent__c, Price__c, Discount_Value__c
+                    Quantity__c, Job_Rate_Plan__r.Job_Product__r.Product_Code__c, Job_Rate_Plan__r.Product_Rate_Plan__c, Uplift__c, Discount_Percent__c, Price__c,
+                    Discount_Value__c, Job_Rate_Plan__c, Job_Rate_Plan__r.Job_Product__c
             FROM Job_Rate_Plan_Charge__c WHERE Order__c = : orderId];
             if(currentCharges.size() > 0) {
 
                 for(Job_Rate_Plan_Charge__c currentCharge : currentCharges) {
-                    OrderCharge newCharge = new OrderCharge();
-                    newCharge.indexInteger = highestInteger;
+                    OrderCharge thisCharge = new OrderCharge();
+                    thisCharge.indexInteger = highestInteger;
                     highestInteger++;
-                    newCharge.chargeId  = currentCharge.Id;
-                    newCharge.orderRatePlanCharge = currentCharge;
-                    newCharge.productName = currentCharge.Product_Rate_Plan_Charge__r.Product_Rate_Plan__r.Product__r.Name;
+                    thisCharge.chargeId  = currentCharge.Id;
+                    thisCharge.orderRatePlanCharge = currentCharge;
+                    thisCharge.productName = currentCharge.Product_Rate_Plan_Charge__r.Product_Rate_Plan__r.Product__r.Name;
 
                     ProdCharge singleProdCharge = new ProdCharge();
                     singleProdCharge.prodCharge = [
@@ -78,8 +79,8 @@ public with sharing class VTMig_AddOrderProduct {
                     singleProdCharge.prodId = currentCharge.Job_Rate_Plan__r.Job_Product__r.Product__c;
                     singleProdCharge.chargeId = currentCharge.Id;
                     singleProdCharge.chargeName = currentCharge.Name;
-                    newCharge.prodCharge = singleProdCharge;
-                    selectedCharges.add(newCharge);
+                    thisCharge.prodCharge = singleProdCharge;
+                    selectedCharges.add(thisCharge);
                 }
                 showChosenCharges = true;
             } else {
@@ -95,7 +96,10 @@ public with sharing class VTMig_AddOrderProduct {
                     'FROM Product__c WHERE Status__c = : activeStatus ';
             if(String.isNotEmpty(prodSearchText)){
                 String prodSearch = '%' + prodSearchText + '%';
-                query = query + 'AND Name LIKE : prodSearch';
+                query = query + 'AND Name LIKE : prodSearch ';
+            }
+            if(order.RecordType.Name == 'Sale Order') {
+                query = query + 'AND NAME IN : [\'MEETS\', \'Other Charges and Fees\', \'SETS Pro\', \'SETSPlus\', \'Training Titles\']';
             }
             productList = Database.query(query);
             showProducts = true;
@@ -105,6 +109,7 @@ public with sharing class VTMig_AddOrderProduct {
 
         public void selectProduct(){
             System.debug(selectedProductId);
+            newCharge.orderProduct = configOrderProd(selectedProductId, null);
             showProducts = false;
             showCharges = false;
             plans = [SELECT Id, Name, Description__c FROM Product_Rate_Plan__c WHERE Status__c = 'Active' AND Product__c = : selectedProductId];
@@ -114,6 +119,7 @@ public with sharing class VTMig_AddOrderProduct {
         public void selectPlan(){
             showProducts = false;
             showPlans = false;
+            newCharge.orderRatePlan = configOrderPlan(selectedPlanId, null);
             List<Product_Rate_Plan_Charge__c> charges = [
                     SELECT Id, Name, Product_Charge_Category__c, Subscription_Product__c, Product_Rate_Plan__r.Product__r.Name,
                             Title_Product__c, Unit_Of_Measurement__c, Price_Type__c, Pricing_Format__c, Unit_Price__c,
@@ -141,7 +147,6 @@ public with sharing class VTMig_AddOrderProduct {
                     selectedProdCharge = prodCharge;
                     orderRatePlanCharge.Quantity__c = quantity;
                     orderRatePlanCharge = configCharge(orderRatePlanCharge, prodCharge.prodCharge);
-                    OrderCharge newCharge = new OrderCharge();
                     newCharge.orderRatePlanCharge = orderRatePlanCharge;
                     newCharge.prodCharge = prodCharge;
                     newCharge.productName = ProdCharge.prodCharge.Product_Rate_Plan__r.Product__r.Name;
@@ -150,6 +155,7 @@ public with sharing class VTMig_AddOrderProduct {
                     selectedCharges.add(newCharge);
                 }
             }
+            newCharge = new OrderCharge();
             prodSearchText = '';
             selectedChargeId = '';
             selectedPlanId = '';
@@ -168,6 +174,7 @@ public with sharing class VTMig_AddOrderProduct {
                 if(removeChargeId == selectedCharge.indexInteger) {
                     selectedCharges.remove(selectedCharges.indexOf(selectedCharge));
                     removedCharges.add(selectedCharge);
+                    System.debug(removedCharges);
                     break;
                 }
             }
@@ -178,8 +185,8 @@ public with sharing class VTMig_AddOrderProduct {
 
             for(OrderCharge currentCharge : selectedCharges) {
                 currentCharge.chargeId = currentCharge.prodCharge.chargeId;
-                currentCharge.orderProduct = configOrderProd(currentCharge.prodCharge.prodId, currentCharge.prodCharge.chargeId, currentCharge);
-                currentCharge.orderRatePlan = configOrderPlan(currentCharge.prodCharge.planId, currentCharge.orderProduct.Id, currentCharge.prodCharge.chargeId);
+                currentCharge.orderProduct = configOrderProd(currentCharge.prodCharge.prodId, currentCharge.prodCharge.chargeId);
+                currentCharge.orderRatePlan = configOrderPlan(currentCharge.prodCharge.planId, currentCharge.prodCharge.chargeId);
                 grandTotal = grandTotal + currentCharge.orderRatePlanCharge.Price__c;
             }
             grandTotal = grandTotal*(1-overallDiscount/100);
@@ -192,28 +199,19 @@ public with sharing class VTMig_AddOrderProduct {
 
         public PageReference saveProducts(){
 
-            List<Job_Product__c> OrderProducts = new List<Job_Product__c>();
-            List<Job_Rate_Plan__c> OrderRatePlans = new List<Job_Rate_Plan__c>();
-            List<Job_Rate_Plan_Charge__c> OrderRatePlanCharges = new List<Job_Rate_Plan_Charge__c>();
-            for(OrderCharge OrderCharge : selectedCharges) {
-                if(OrderCharge.chargeId == null) {
-                    OrderProducts.add(OrderCharge.orderProduct);
+            Decimal runningSubtotal = 0;
+            for(OrderCharge theCharge : selectedCharges) {
+                if(theCharge.chargeId == null) {
+                    insert theCharge.orderProduct;
+                    theCharge.orderRatePlan.Job_Product__c = theCharge.orderProduct.Id;
+                    insert theCharge.orderRatePlan;
+                    theCharge.orderRatePlanCharge.Job_Rate_Plan__c = theCharge.orderRatePlan.Id;
+                    insert theCharge.orderRatePlanCharge;
+                    runningSubtotal = runningSubtotal + theCharge.orderRatePlanCharge.Unit_Price__c * theCharge.orderRatePlanCharge.Quantity__c;
                 }
 
             }
-            upsert OrderProducts;
-            for(OrderCharge OrderCharge : selectedCharges) {
-                Id OrderProdId;
-                for(Job_Product__c OrderProduct : OrderProducts) {
-                    if(OrderProduct.Product__c == OrderCharge.prodCharge.prodId){
-                        OrderProdId = OrderProduct.Id;
-                    }
-                }
-                Job_Rate_Plan__c OrderRatePlan = configOrderPlan(OrderCharge.prodCharge.planId, OrderProdId, OrderCharge.chargeId);
-                OrderRatePlans.add(OrderRatePlan);
-            }
-            upsert OrderRatePlans;
-            Decimal runningSubtotal = 0;
+            /*
             for(OrderCharge OrderCharge : selectedCharges) {
                 Id ratePlanId;
                 for(Job_Rate_Plan__c OrderRatePlan : OrderRatePlans) {
@@ -221,14 +219,14 @@ public with sharing class VTMig_AddOrderProduct {
                         ratePlanId = OrderRatePlan.Id;
                     }
                 }
-                runningSubtotal = runningSubtotal + OrderCharge.orderRatePlanCharge.Unit_Price__c * OrderCharge.orderRatePlanCharge.Quantity__c;
+
 
                 Job_Rate_Plan_Charge__c OrderRatePlanCharge = new Job_Rate_Plan_Charge__c();
                 OrderRatePlanCharge.Job_Rate_Plan__c = ratePlanId;
                 OrderRatePlanCharge = configOrderCharge(OrderCharge.orderRatePlanCharge, OrderCharge.chargeId, OrderRatePlanCharge);
                 OrderRatePlanCharges.add(OrderRatePlanCharge);
             }
-            upsert OrderRatePlanCharges;
+            upsert OrderRatePlanCharges;*/
             order.Sub_total__c = runningSubtotal;
             order.Discount_Value__c = order.Sub_total__c * (overallDiscount/100);
             order.Discount_Percent__c = overallDiscount;
@@ -250,32 +248,38 @@ public with sharing class VTMig_AddOrderProduct {
 
         public void removeCharges(){
 
+            System.debug(removedCharges);
             List<Id> removedChargeIds = new List<Id>();
             for(OrderCharge removedCharge : removedCharges) {
                 if(String.isNotBlank(removedCharge.chargeId)) {
                     removedChargeIds.add(removedCharge.chargeId);
                 }
             }
-            List<Job_Rate_Plan_Charge__c> charges = [SELECT Id, Job_Rate_Plan__c FROM Job_Rate_Plan_Charge__c WHERE Id IN : removedChargeIds];
-            if(charges.size() > 0) {
+            List<Job_Rate_Plan_Charge__c> removeTheseCharges = [SELECT Id, Job_Rate_Plan__c FROM Job_Rate_Plan_Charge__c WHERE Id IN : removedChargeIds];
+            System.debug(removedChargeIds);
+            if(removeTheseCharges.size() > 0) {
                 List<Id> removedPlanIds = new List<Id>();
-                for(Job_Rate_Plan_Charge__c charge : charges) {
+                for(Job_Rate_Plan_Charge__c charge : removeTheseCharges) {
                     removedPlanIds.add(charge.Job_Rate_Plan__c);
                 }
-                List<Job_Rate_Plan__c> plans = [SELECT Id, Job_Product__c FROM Job_Rate_Plan__c WHERE Id IN : removedPlanIds];
+                List<Job_Rate_Plan__c> removeThesePlans = [SELECT Id, Job_Product__c FROM Job_Rate_Plan__c WHERE Id IN : removedPlanIds];
                 List<Id> removedProductIds = new List<Id>();
-                List<Job_Product__c> products = [SELECT Id FROM Job_Product__c WHERE Id IN : removedProductIds];
+                for(Job_Rate_Plan__c plan : removeThesePlans) {
+                    removedProductIds.add(plan.Job_Product__c);
+                }
+                List<Job_Product__c> removeTheseProducts = [SELECT Id FROM Job_Product__c WHERE Id IN : removedProductIds];
                 try {
-                    delete charges;
-                    delete plans;
-                    delete products;
+                    System.debug(removeTheseCharges);
+                    delete removeTheseCharges;
+                    delete removeThesePlans;
+                    delete removeTheseProducts;
                 } catch (Exception e) {
                     System.debug(e.getMessage());
                 }
             }
         }
 
-        public Job_Rate_Plan__c configOrderPlan(String planId, String OrderProdId, Id chargeId) {
+        public Job_Rate_Plan__c configOrderPlan(String planId, Id chargeId) {
 
             Job_Rate_Plan__c OrderRatePlan = new Job_Rate_Plan__c();
             if(chargeId == null) {
@@ -284,20 +288,20 @@ public with sharing class VTMig_AddOrderProduct {
                 OrderRatePlan.Product_Rate_Plan__c = ratePlan.Id;
                 OrderRatePlan.Description__c = ratePlan.Description__c;
                 OrderRatePlan.Sequence_Number__c = ratePlan.Sequence_Number__c;
-                OrderRatePlan.Job_Product__c = OrderProdId;
             } else {
                 String orderPlanId = [SELECT Job_Rate_Plan__r.Id FROM Job_Rate_Plan_Charge__c WHERE Id =: chargeId].Job_Rate_Plan__r.Id;
                 OrderRatePlan = [SELECT Name, Id, Product_Rate_Plan__c, Description__c, Sequence_Number__c, Job_Product__c FROM Job_Rate_Plan__c WHERE Id = : orderPlanId];
             }
+            System.debug(OrderRatePlan);
             return OrderRatePlan;
         }
 
-        public Job_Product__c configOrderProd(String prodId, String chargeId, OrderCharge theOrderCharge) {
+        public Job_Product__c configOrderProd(String prodId, String chargeId) {
 
             Job_Product__c OrderProduct = new Job_Product__c();
             if(chargeId == null) {
                 Product__c chosenProduct = [SELECT Id, Description__c, Product_Code__c, Product_Family__c, Name FROM Product__c WHERE Id =: prodId];
-                OrderProduct.Name = theOrderCharge.productName;
+                OrderProduct.Name = chosenProduct.Name;
                 OrderProduct.Description__c = chosenProduct.Description__c;
                 OrderProduct.Product__c = prodId;
                 OrderProduct.Product_Family__c = chosenProduct.Product_Family__c;
@@ -307,30 +311,8 @@ public with sharing class VTMig_AddOrderProduct {
                 String orderProductId = [SELECT Job_Rate_Plan__r.Job_Product__r.Id FROM Job_Rate_Plan_Charge__c WHERE Id =: chargeId].Job_Rate_Plan__r.Job_Product__r.Id;
                 OrderProduct = [SELECT Id, Name, Description__c, Product__c, Product_Family__c, Product_Code__c, Job__c FROM Job_Product__c WHERE Id =: orderProductId];
             }
+            System.debug(OrderProduct);
             return OrderProduct;
-        }
-
-        public Job_Rate_Plan_Charge__c configOrderCharge(Job_Rate_Plan_Charge__c charge, Id chargeId, Job_Rate_Plan_Charge__c newCharge) {
-
-            newCharge.Name = charge.Name;
-            newCharge.Product_Charge_Category__c = charge.Product_Charge_Category__c;
-            newCharge.Subscription_Product__c = charge.Subscription_Product__c;
-            newCharge.Title_Product__c = charge.Title_Product__c;
-            newCharge.Unit_Of_Measurement__c = charge.Unit_Of_Measurement__c;
-            newCharge.Price_Type__c = charge.Price_Type__c;
-            newCharge.Price_Format__c = charge.Price_Format__c;
-            newCharge.Unit_Price__c = charge.Unit_Price__c;
-            newCharge.External_Id__c = selectedPlanId;
-            newCharge.Product_Rate_Plan_Charge__c = charge.Product_Rate_Plan_Charge__c;
-            newCharge.Quantity__c = charge.Quantity__c;
-            newCharge.Price__c = charge.Unit_Price__c * charge.Quantity__c;
-            newCharge.Discount_Percent__c = charge.Discount_Percent__c;
-            newCharge.Discount_Value__c = newCharge.Price__c * newCharge.Discount_Percent__c/100;
-            newCharge.Net_Total__c = newCharge.Price__c - newCharge.Discount_Value__c;
-            newCharge.Order__c = orderId;
-            newCharge.Id = chargeId;
-            newCharge.Uplift__c = charge.Uplift__c;
-            return newCharge;
         }
 
     public Job_Rate_Plan_Charge__c configCharge(Job_Rate_Plan_Charge__c newCharge, Product_Rate_Plan_Charge__c charge){

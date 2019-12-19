@@ -129,6 +129,17 @@
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>false</enableFeeds>
     <fields>
+        <fullName>Create_New_Asset__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;/apex/VW_CreateNewAsset?Item_Number=&quot; +  ProductCode , &quot;Launch Visual Flow&quot; , &quot;_top&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Create New Asset...</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CurrencyIsoCode</fullName>
         <trackHistory>false</trackHistory>
     </fields>
@@ -161,6 +172,16 @@
     <fields>
         <fullName>Name</fullName>
         <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Product_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>Product ID</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>true</unique>
     </fields>
     <fields>
         <fullName>ProductCode</fullName>

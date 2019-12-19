@@ -139,6 +139,16 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Asset_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>Asset ID</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
         <fullName>AssetLevel</fullName>
         <trackHistory>false</trackHistory>
     </fields>
@@ -400,6 +410,30 @@
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
+        <fullName>Region__c</fullName>
+        <externalId>false</externalId>
+        <label>Region</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>US</fullName>
+                    <default>false</default>
+                    <label>US</label>
+                </value>
+                <value>
+                    <fullName>EU</fullName>
+                    <default>false</default>
+                    <label>EU</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>Revision_No__c</fullName>
         <externalId>false</externalId>
         <label>Revision No</label>
@@ -413,6 +447,16 @@
         <fullName>RootAssetId</fullName>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Sequence_No__c</fullName>
+        <description>This field is used by the BaaN --&gt; Salesforce integration program, as well as when Assets are entered directly into SF. It&apos;s primary function is to serve as a sorting mechanism. Sequence No is typically incremented by 10 to allow for Assets to be inserted in-between.</description>
+        <externalId>false</externalId>
+        <label>Sequence No</label>
+        <length>10</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>SerialNumber</fullName>
