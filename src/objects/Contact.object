@@ -377,7 +377,7 @@
         <fullName>Contact_Reference__c</fullName>
         <displayFormat>C-{00000}</displayFormat>
         <externalId>false</externalId>
-        <label>Contact Reference</label>
+        <label>Contact Number</label>
         <trackHistory>false</trackHistory>
         <type>AutoNumber</type>
     </fields>
@@ -890,6 +890,7 @@
         <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE4</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE5</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE6</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>ACCOUNT.NAME</searchFilterFields>
         <searchResultsAdditionalFields>FULL_NAME</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CONTACT.PHONE1</searchResultsAdditionalFields>

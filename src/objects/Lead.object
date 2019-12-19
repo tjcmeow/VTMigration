@@ -1107,6 +1107,12 @@
         <lookupPhoneDialogsAdditionalFields>LEAD.COMPANY</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>LEAD.PHONE</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>LEAD.MOBILE_PHONE</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>LEAD.LAST_NAME</searchFilterFields>
+        <searchFilterFields>LEAD.FIRST_NAME</searchFilterFields>
+        <searchFilterFields>LEAD.TITLE</searchFilterFields>
+        <searchFilterFields>LEAD.EMAIL</searchFilterFields>
+        <searchFilterFields>LEAD.COMPANY</searchFilterFields>
+        <searchFilterFields>LEAD.STATUS</searchFilterFields>
         <searchResultsAdditionalFields>FULL_NAME</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>LEAD.TITLE</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>LEAD.COMPANY</searchResultsAdditionalFields>

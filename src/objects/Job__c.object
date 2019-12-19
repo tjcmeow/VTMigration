@@ -8656,6 +8656,12 @@
         <lookupDialogsAdditionalFields>Total__c</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>CREATED_DATE</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>OBJECT_ID</lookupDialogsAdditionalFields>
+        <lookupFilterFields>Order_Number__c</lookupFilterFields>
+        <lookupFilterFields>NAME</lookupFilterFields>
+        <lookupFilterFields>RECORDTYPE</lookupFilterFields>
+        <lookupFilterFields>Account__c</lookupFilterFields>
+        <lookupFilterFields>Shipping_Account__c</lookupFilterFields>
+        <lookupFilterFields>Status__c</lookupFilterFields>
         <lookupPhoneDialogsAdditionalFields>Order_Number__c</lookupPhoneDialogsAdditionalFields>
         <searchFilterFields>NAME</searchFilterFields>
         <searchFilterFields>Order_Number__c</searchFilterFields>

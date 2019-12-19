@@ -80,7 +80,7 @@
         <defaultConnectorLabel>default</defaultConnectorLabel>
         <rules>
             <name>myRule_1</name>
-            <conditionLogic>and</conditionLogic>
+            <conditionLogic>2 AND 3 AND 4 AND (1 OR 5)</conditionLogic>
             <conditions>
                 <processMetadataValues>
                     <name>inputDataType</name>
@@ -203,6 +203,37 @@
                 <operator>IsNull</operator>
                 <rightValue>
                     <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <processMetadataValues>
+                    <name>inputDataType</name>
+                    <value>
+                        <stringValue>Picklist</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>leftHandSideType</name>
+                    <value>
+                        <stringValue>Picklist</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>operatorDataType</name>
+                    <value>
+                        <stringValue>String</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>rightHandSideType</name>
+                    <value>
+                        <stringValue>Picklist</stringValue>
+                    </value>
+                </processMetadataValues>
+                <leftValueReference>myVariable_current.Reason_for_RMA__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Vessel SOLD</stringValue>
                 </rightValue>
             </conditions>
             <connector>
@@ -981,7 +1012,7 @@
         </rules>
         <rules>
             <name>myRule_1_pmetrule</name>
-            <conditionLogic>and</conditionLogic>
+            <conditionLogic>2 AND 3 AND 4 AND (1 OR 5)</conditionLogic>
             <conditions>
                 <processMetadataValues>
                     <name>inputDataType</name>
@@ -1104,6 +1135,37 @@
                 <operator>IsNull</operator>
                 <rightValue>
                     <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <processMetadataValues>
+                    <name>inputDataType</name>
+                    <value>
+                        <stringValue>Picklist</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>leftHandSideType</name>
+                    <value>
+                        <stringValue>Picklist</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>operatorDataType</name>
+                    <value>
+                        <stringValue>String</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>rightHandSideType</name>
+                    <value>
+                        <stringValue>Picklist</stringValue>
+                    </value>
+                </processMetadataValues>
+                <leftValueReference>myVariable_old.Reason_for_RMA__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Vessel SOLD</stringValue>
                 </rightValue>
             </conditions>
             <label>Previously Met - Prev</label>
@@ -1758,7 +1820,7 @@
         </rules>
     </decisions>
     <description>Update for New RMA Created - Add Record Type</description>
-    <interviewLabel>RMA_Case_Processing-2_InterviewLabel</interviewLabel>
+    <interviewLabel>RMA_Case_Processing-3_InterviewLabel</interviewLabel>
     <label>KV RMA Processing</label>
     <processMetadataValues>
         <name>ObjectType</name>

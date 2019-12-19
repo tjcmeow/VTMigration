@@ -93,6 +93,13 @@
         <fullName>CcAddress</fullName>
     </fields>
     <fields>
+        <fullName>Created_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Created Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
         <fullName>FirstOpenedDate</fullName>
     </fields>
     <fields>

@@ -4,6 +4,7 @@
     <excludeButtons>ChangeRecordType</excludeButtons>
     <excludeButtons>CreateCallList</excludeButtons>
     <excludeButtons>CreateSurveyInvitation</excludeButtons>
+    <excludeButtons>DataDotComClean</excludeButtons>
     <excludeButtons>FindDup</excludeButtons>
     <excludeButtons>PrintableView</excludeButtons>
     <excludeButtons>Share</excludeButtons>
@@ -82,10 +83,6 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Partner_Role__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Required</behavior>
-                <field>Sales_Office__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>

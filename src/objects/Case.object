@@ -5167,6 +5167,12 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
         <lookupPhoneDialogsAdditionalFields>NAME</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>CASES.STATUS</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>CASES.CASE_NUMBER</searchFilterFields>
+        <searchFilterFields>ACCOUNT.NAME</searchFilterFields>
+        <searchFilterFields>CASES.SUBJECT</searchFilterFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>CONTACT.ACCOUNT</searchFilterFields>
+        <searchFilterFields>CASES.RECORDTYPE</searchFilterFields>
         <searchResultsAdditionalFields>CASES.CASE_NUMBER</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CASES.SUBJECT</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CASES.STATUS</searchResultsAdditionalFields>

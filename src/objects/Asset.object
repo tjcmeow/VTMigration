@@ -139,16 +139,6 @@
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Asset_ID__c</fullName>
-        <caseSensitive>false</caseSensitive>
-        <externalId>true</externalId>
-        <label>Asset ID</label>
-        <length>255</length>
-        <required>false</required>
-        <type>Text</type>
-        <unique>true</unique>
-    </fields>
-    <fields>
         <fullName>AssetLevel</fullName>
         <trackHistory>false</trackHistory>
     </fields>
@@ -172,6 +162,17 @@
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Asset_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>Asset ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
     </fields>
     <fields>
         <fullName>ContactId</fullName>
@@ -414,7 +415,6 @@
         <externalId>false</externalId>
         <label>Region</label>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
         <valueSet>
@@ -455,6 +455,7 @@
         <label>Sequence No</label>
         <length>10</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
     </fields>
@@ -530,6 +531,9 @@
         <lookupPhoneDialogsAdditionalFields>ASSET.INSTALL_DATE</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>CONTACT.NAME</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>ASSET.NAME</searchFilterFields>
+        <searchFilterFields>PRODUCT2.NAME</searchFilterFields>
+        <searchFilterFields>ASSET.PARENT</searchFilterFields>
         <searchResultsAdditionalFields>ASSET.NAME</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>ASSET.SERIAL_NUMBER</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>ASSET.INSTALL_DATE</searchResultsAdditionalFields>

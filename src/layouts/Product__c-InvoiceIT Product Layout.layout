@@ -107,6 +107,7 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
+        <fields>Status__c</fields>
         <relatedList>Product_Rate_Plan__c.Product__c</relatedList>
     </relatedLists>
     <relatedLists>

@@ -125,7 +125,9 @@ ISNEW(),
 NOT(ISBLANK([Case].Platform_Asset_Account__c.ParentId))), 
 
 AND(
-ISCHANGED([Case].Platform_Asset_Account__c.ParentId)))</stringValue>
+ISCHANGED([Case].Platform_Asset_Account__c ), 
+NOT(ISBLANK([Case].Platform_Asset_Account__c ))
+))</stringValue>
             </value>
         </processMetadataValues>
         <name>formula_myRule_1</name>
@@ -137,9 +139,11 @@ ISNEW(),
 NOT(ISBLANK({!myVariable_current.Platform_Asset_Account__r.ParentId}))), 
 
 AND(
-ISCHANGED({!myVariable_current.Platform_Asset_Account__r.ParentId})))</expression>
+ISCHANGED({!myVariable_current.Platform_Asset_Account__c} ), 
+NOT(ISBLANK({!myVariable_current.Platform_Asset_Account__c} ))
+))</expression>
     </formulas>
-    <interviewLabel>Update_Child_Order_when_VOD_Production_Case_is_Set_to_Ready_for_Dispatch-2_InterviewLabel</interviewLabel>
+    <interviewLabel>Update_Child_Order_when_VOD_Production_Case_is_Set_to_Ready_for_Dispatch-4_InterviewLabel</interviewLabel>
     <label>Case Process</label>
     <processMetadataValues>
         <name>ObjectType</name>
@@ -324,7 +328,7 @@ ISCHANGED({!myVariable_current.Platform_Asset_Account__r.ParentId})))</expressio
         <object>Job__c</object>
     </recordUpdates>
     <startElementReference>myDecision</startElementReference>
-    <status>Active</status>
+    <status>Obsolete</status>
     <variables>
         <name>myVariable_current</name>
         <dataType>SObject</dataType>
