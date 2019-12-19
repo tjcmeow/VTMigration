@@ -204,8 +204,9 @@ public with sharing class VTMig_ProductSelection_Extension {
                 insert theCharge.opportunityRatePlan;
                 theCharge.opportunityRatePlanCharge.Opportunity_Rate_Plan__c = theCharge.opportunityRatePlan.Id;
                 insert theCharge.opportunityRatePlanCharge;
-                runningSubtotal = runningSubtotal + theCharge.opportunityRatePlanCharge.Unit_Price__c * theCharge.opportunityRatePlanCharge.Quantity__c;
+
             }
+            runningSubtotal = runningSubtotal + theCharge.opportunityRatePlanCharge.Unit_Price__c * theCharge.opportunityRatePlanCharge.Quantity__c;
         }
         Opp.Sub_total__c = runningSubtotal;
         Opp.Discount_Value__c = Opp.Sub_total__c * (overallDiscount/100);
@@ -300,7 +301,6 @@ public with sharing class VTMig_ProductSelection_Extension {
         newOppCharge.Price_Type__c = charge.Price_Type__c;
         newOppCharge.Pricing_Model__c = charge.Pricing_Format__c;
         newOppCharge.Unit_Price__c = charge.Unit_Price__c;
-        newOppCharge.External_Id__c = selectedPlanId;
         newOppCharge.Product_Rate_Plan_Charge__c = charge.Id;
         newOppCharge.Price__c = charge.Unit_Price__c * newOppCharge.Quantity__c;
         newOppCharge.Discount_Percent__c = 0.00;

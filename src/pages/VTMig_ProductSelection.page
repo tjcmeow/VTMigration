@@ -103,7 +103,8 @@
                     </apex:column>
                     <apex:column value="{!charge.opportunityRatePlanCharge.Pricing_Model__c}">
                     </apex:column>
-                    <apex:column value="{!charge.opportunityRatePlanCharge.Unit_Price__c}">
+                    <apex:column headerValue="Unit Price">
+                        <apex:inputField value="{!charge.opportunityRatePlanCharge.Unit_Price__c}"/>
                     </apex:column>
                     <apex:column headerValue="Uplift">
                         <apex:inputField value="{!charge.opportunityRatePlanCharge.Uplift__c}"/>
@@ -133,7 +134,6 @@
                     <apex:column value="{!charge.opportunityRatePlanCharge.Price_Type__c}">
                     </apex:column>
                     <apex:column value="{!charge.opportunityRatePlanCharge.Unit_Price__c}">
-
                     </apex:column>
                     <apex:column value="{!charge.opportunityRatePlanCharge.Price__c}">
                     </apex:column>

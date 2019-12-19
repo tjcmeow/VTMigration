@@ -207,26 +207,10 @@ public with sharing class VTMig_AddOrderProduct {
                     insert theCharge.orderRatePlan;
                     theCharge.orderRatePlanCharge.Job_Rate_Plan__c = theCharge.orderRatePlan.Id;
                     insert theCharge.orderRatePlanCharge;
-                    runningSubtotal = runningSubtotal + theCharge.orderRatePlanCharge.Unit_Price__c * theCharge.orderRatePlanCharge.Quantity__c;
                 }
+                runningSubtotal = runningSubtotal + theCharge.orderRatePlanCharge.Unit_Price__c * theCharge.orderRatePlanCharge.Quantity__c;
 
             }
-            /*
-            for(OrderCharge OrderCharge : selectedCharges) {
-                Id ratePlanId;
-                for(Job_Rate_Plan__c OrderRatePlan : OrderRatePlans) {
-                    if(OrderRatePlan.Product_Rate_Plan__c == OrderCharge.prodCharge.planId) {
-                        ratePlanId = OrderRatePlan.Id;
-                    }
-                }
-
-
-                Job_Rate_Plan_Charge__c OrderRatePlanCharge = new Job_Rate_Plan_Charge__c();
-                OrderRatePlanCharge.Job_Rate_Plan__c = ratePlanId;
-                OrderRatePlanCharge = configOrderCharge(OrderCharge.orderRatePlanCharge, OrderCharge.chargeId, OrderRatePlanCharge);
-                OrderRatePlanCharges.add(OrderRatePlanCharge);
-            }
-            upsert OrderRatePlanCharges;*/
             order.Sub_total__c = runningSubtotal;
             order.Discount_Value__c = order.Sub_total__c * (overallDiscount/100);
             order.Discount_Percent__c = overallDiscount;
@@ -325,7 +309,6 @@ public with sharing class VTMig_AddOrderProduct {
         newCharge.Price_Type__c = charge.Price_Type__c;
         newCharge.Price_Format__c = charge.Pricing_Format__c;
         newCharge.Unit_Price__c = charge.Unit_Price__c;
-        newCharge.External_Id__c = selectedPlanId;
         newCharge.Product_Rate_Plan_Charge__c = charge.Id;
         newCharge.Price__c = charge.Unit_Price__c * newCharge.Quantity__c;
         newCharge.Discount_Percent__c = 0.00;
