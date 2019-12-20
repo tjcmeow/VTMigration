@@ -56,7 +56,7 @@ public with sharing class VTMig_AddOrderProduct {
                     Job_Rate_Plan__r.Job_Product__r.Product__c, Product_Rate_Plan_Charge__c, Product_Rate_Plan_Charge__r.Product_Rate_Plan__r.Product__r.Name, Net_Total__c,
                     Title_Product__c, Unit_Of_Measurement__c, Price_Type__c, Price_Format__c, Unit_Price__c, Product_Rate_Plan_Charge__r.Product_Rate_Plan__r.Product__r.Product_Code__c,
                     Quantity__c, Job_Rate_Plan__r.Job_Product__r.Product_Code__c, Job_Rate_Plan__r.Product_Rate_Plan__c, Uplift__c, Discount_Percent__c, Price__c,
-                    Discount_Value__c, Job_Rate_Plan__c, Job_Rate_Plan__r.Job_Product__c
+                    Discount_Value__c, Job_Rate_Plan__c, Job_Rate_Plan__r.Job_Product__c, VAT__c, Tax__c
             FROM Job_Rate_Plan_Charge__c WHERE Order__c = : orderId];
             if(currentCharges.size() > 0) {
 
@@ -200,6 +200,9 @@ public with sharing class VTMig_AddOrderProduct {
         public PageReference saveProducts(){
 
             Decimal runningSubtotal = 0;
+            Decimal runningVAT = 0;
+            Decimal runningTax = 0;
+            Decimal runningDiscountValue = 0;
             for(OrderCharge theCharge : selectedCharges) {
                 if(theCharge.chargeId == null) {
                     insert theCharge.orderProduct;
@@ -207,20 +210,34 @@ public with sharing class VTMig_AddOrderProduct {
                     insert theCharge.orderRatePlan;
                     theCharge.orderRatePlanCharge.Job_Rate_Plan__c = theCharge.orderRatePlan.Id;
                     insert theCharge.orderRatePlanCharge;
+                } else {
+                    theCharge.orderRatePlanCharge.Price__c = theCharge.orderRatePlanCharge.Unit_Price__c * theCharge.orderRatePlanCharge.Quantity__c;
+                    theCharge.orderRatePlanCharge.Discount_Value__c = theCharge.orderRatePlanCharge.Price__c * (theCharge.orderRatePlanCharge.Discount_Percent__c/100);
+                    theCharge.orderRatePlanCharge.Net_Total__c = theCharge.orderRatePlanCharge.Price__c - theCharge.orderRatePlanCharge.Discount_Value__c;
+                    if(theCharge.orderRatePlanCharge.VAT__c == null) {
+                        theCharge.orderRatePlanCharge.VAT__c = 0;
+                    }
+                    if(theCharge.orderRatePlanCharge.Tax__c == null) {
+                        theCharge.orderRatePlanCharge.Tax__c = 0;
+                    }
+                    update theCharge.orderRatePlanCharge;
                 }
-                runningSubtotal = runningSubtotal + theCharge.orderRatePlanCharge.Unit_Price__c * theCharge.orderRatePlanCharge.Quantity__c;
 
+                runningSubtotal = runningSubtotal + theCharge.orderRatePlanCharge.Unit_Price__c * theCharge.orderRatePlanCharge.Quantity__c;
+                runningDiscountValue = runningDiscountValue + theCharge.orderRatePlanCharge.Discount_Value__c;
+                if(theCharge.orderRatePlanCharge.VAT__c != null){
+                    runningVAT = runningVAT + theCharge.orderRatePlanCharge.VAT__c;
+                }
+                if(theCharge.orderRatePlanCharge.Tax__c != null) {
+                    runningTax = runningTax + theCharge.orderRatePlanCharge.Tax__c;
+                }
             }
             order.Sub_total__c = runningSubtotal;
-            order.Discount_Value__c = order.Sub_total__c * (overallDiscount/100);
+            order.Discount_Value__c = order.Sub_total__c * (overallDiscount/100) + runningDiscountValue;
             order.Discount_Percent__c = overallDiscount;
             order.Net_Total__c = order.Sub_total__c - order.Discount_Value__c;
-            if(order.VAT__c == null) {
-                order.VAT__c = 0;
-            }
-            if(order.Tax__c == null) {
-                order.Tax__c = 0;
-            }
+            order.VAT__c = runningVAT;
+            order.Tax__c = runningTax;
             order.Total__c = order.Net_Total__c + order.VAT__c + order.Tax__c;
             update order;
             if(removedCharges.size() > 0) {

@@ -197,6 +197,9 @@ public with sharing class VTMig_ProductSelection_Extension {
 
     public PageReference saveProducts(){
         Decimal runningSubtotal = 0;
+        Decimal runningVAT = 0;
+        Decimal runningTax = 0;
+        Decimal runningDiscountValue = 0;
         for(OppCharge theCharge : selectedCharges) {
             if(theCharge.chargeId == null) {
                 insert theCharge.opportunityProduct;
@@ -205,18 +208,32 @@ public with sharing class VTMig_ProductSelection_Extension {
                 theCharge.opportunityRatePlanCharge.Opportunity_Rate_Plan__c = theCharge.opportunityRatePlan.Id;
                 insert theCharge.opportunityRatePlanCharge;
 
+            } else {
+                theCharge.opportunityRatePlanCharge.Price__c = theCharge.opportunityRatePlanCharge.Unit_Price__c * theCharge.opportunityRatePlanCharge.Quantity__c;
+                theCharge.opportunityRatePlanCharge.Discount_Value__c = theCharge.opportunityRatePlanCharge.Price__c * (theCharge.opportunityRatePlanCharge.Discount_Percent__c/100);
+                theCharge.opportunityRatePlanCharge.Net_Total__c = theCharge.opportunityRatePlanCharge.Price__c - theCharge.opportunityRatePlanCharge.Discount_Value__c;
+                if(theCharge.opportunityRatePlanCharge.VAT__c == null) {
+                    theCharge.opportunityRatePlanCharge.VAT__c = 0;
+                }
+                if(theCharge.opportunityRatePlanCharge.Tax__c == null) {
+                    theCharge.opportunityRatePlanCharge.Tax__c = 0;
+                }
+                update theCharge.opportunityRatePlanCharge;
             }
             runningSubtotal = runningSubtotal + theCharge.opportunityRatePlanCharge.Unit_Price__c * theCharge.opportunityRatePlanCharge.Quantity__c;
+            runningDiscountValue = runningDiscountValue + theCharge.opportunityRatePlanCharge.Discount_Value__c;
+            if(theCharge.opportunityRatePlanCharge.VAT__c != null){
+                runningVAT = runningVAT + theCharge.opportunityRatePlanCharge.VAT__c;
+            }
+            if(theCharge.opportunityRatePlanCharge.Tax__c != null) {
+                runningTax = runningTax + theCharge.opportunityRatePlanCharge.Tax__c;
+            }
         }
         Opp.Sub_total__c = runningSubtotal;
         Opp.Discount_Value__c = Opp.Sub_total__c * (overallDiscount/100);
         Opp.Net_Total__c = Opp.Sub_total__c - Opp.Discount_Value__c;
-        if(Opp.VAT__c == null) {
-            Opp.VAT__c = 0;
-        }
-        if(Opp.Tax__c == null) {
-            Opp.Tax__c = 0;
-        }
+        Opp.VAT__c = runningVAT;
+        Opp.Tax__c = runningTax;
         Opp.Total__c = Opp.Net_Total__c + Opp.VAT__c + Opp.Tax__c;
         Opp.Amount = Opp.Total__c;
         update Opp;
