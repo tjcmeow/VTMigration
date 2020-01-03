@@ -350,6 +350,11 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>Order_Rate_Plan_Charge_Reference__c</field>
+            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>Start_Date__c</field>
             <table>Job__c</table>
         </columns>

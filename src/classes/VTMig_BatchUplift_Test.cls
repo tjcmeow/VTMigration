@@ -7,22 +7,16 @@ public with sharing class VTMig_BatchUplift_Test {
     @TestSetup
     static void setupData(){
 
-        //IITClassAfterOnOrderRatePlanCharges.ExecuteTrigger = false;
-        //system.debug('Indide');
-
-        //
         Revenue_Recognition_Rule__c rule = new Revenue_Recognition_Rule__c(Name = 'Full Recognition - On Invoice Date');
         insert rule;
 
-        Id kvaccountRecordTypeId = Schema.SObjectType.Account.getRecordTypeInfosByName().get('KV Customers').getRecordTypeId();
-        Id kvPartnerRecordTypeId = Schema.SObjectType.Account.getRecordTypeInfosByName().get('KV Partner').getRecordTypeId();
         Id kvPlatformRecordTypeId = Schema.SObjectType.Account.getRecordTypeInfosByName().get('KV Platform').getRecordTypeId();
 
         // don't change the billing country field as VAT will be calculated based on this
-        Account acc = new Account(Name = 'Test Account', BillingCountry = 'United Kingdom', recordtypeID = kvaccountRecordTypeId);
+        Account acc = VTMig_TestUtilities.createKVCustomer();
         insert acc;
 
-        Account acc2 = new Account(Name = 'Test Partner', BillingCountry = 'United Kingdom', recordtypeID = kvPartnerRecordTypeId);
+        Account acc2 = VTMig_TestUtilities.createKVPartner();
         insert acc2;
 
         Account acc3 = new Account(Name = 'Test Platform', BillingCountry = 'United Kingdom', recordtypeID = kvPlatformRecordTypeId);
@@ -175,14 +169,6 @@ public with sharing class VTMig_BatchUplift_Test {
         charge = [SELECT Id, Uplift_Frequency__c, Next_Uplift_Date__c, Discount_Value__c FROM Job_Rate_Plan_Charge__c WHERE Id =: charges[0].Id];
 
         system.debug('Next_Uplift_Date__c should be populated by the system');
-        //system.assert(charge.Next_Uplift_Date__c != null);
-
-        /* code for Suspension_Period__c period.
-        Suspension_Period__c sp = new Suspension_Period__c();
-        sp.Suspension_Start_Date__c = system.today();
-        sp.Suspension_End_Date__c = sp.Suspension_Start_Date__c.addMonths(1);
-        sp.Order_Rate_Plan_Charge_Suspension__c = charges[0].Id;
-        insert sp;*/
 
         charge = charges[0];
         charge.Next_Uplift_Date__c = system.today().addMonths(6);
@@ -191,7 +177,7 @@ public with sharing class VTMig_BatchUplift_Test {
         test.stopTest();
 
         // code for
-        Account acc = [SELECT Id FROM Account WHERE Name = 'Test Account'];
+        Account acc = [SELECT Id FROM Account WHERE Name = 'New Account'];
         Invoice__c invoice = new Invoice__c();
         invoice.Account__c = acc.Id;
         insert invoice;

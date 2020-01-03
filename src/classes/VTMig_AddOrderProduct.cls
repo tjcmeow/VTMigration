@@ -56,7 +56,7 @@ public with sharing class VTMig_AddOrderProduct {
                     Job_Rate_Plan__r.Job_Product__r.Product__c, Product_Rate_Plan_Charge__c, Product_Rate_Plan_Charge__r.Product_Rate_Plan__r.Product__r.Name, Net_Total__c,
                     Title_Product__c, Unit_Of_Measurement__c, Price_Type__c, Price_Format__c, Unit_Price__c, Product_Rate_Plan_Charge__r.Product_Rate_Plan__r.Product__r.Product_Code__c,
                     Quantity__c, Job_Rate_Plan__r.Job_Product__r.Product_Code__c, Job_Rate_Plan__r.Product_Rate_Plan__c, Uplift__c, Discount_Percent__c, Price__c,
-                    Discount_Value__c, Job_Rate_Plan__c, Job_Rate_Plan__r.Job_Product__c, VAT__c, Tax__c
+                    Discount_Value__c, Job_Rate_Plan__c, Job_Rate_Plan__r.Job_Product__c, VAT__c, Tax__c, CurrencyL__c
             FROM Job_Rate_Plan_Charge__c WHERE Order__c = : orderId];
             if(currentCharges.size() > 0) {
 
@@ -72,7 +72,7 @@ public with sharing class VTMig_AddOrderProduct {
                     singleProdCharge.prodCharge = [
                             SELECT Id, Name, Product_Charge_Category__c, Subscription_Product__c, Product_Rate_Plan__r.Product__r.Name,
                                     Title_Product__c, Unit_Of_Measurement__c, Price_Type__c, Pricing_Format__c, Unit_Price__c,
-                                    Product_Rate_Plan__r.Product__r.Product_Code__c, Uplift__c
+                                    Product_Rate_Plan__r.Product__r.Product_Code__c, Uplift__c, CurrencyL__c
                             FROM Product_Rate_Plan_Charge__c WHERE Id = : currentCharge.Product_Rate_Plan_Charge__c];
                     singleProdCharge.quantity = Integer.valueOf(currentCharge.Quantity__c);
                     singleProdCharge.planId = currentCharge.Job_Rate_Plan__r.Product_Rate_Plan__c;
@@ -99,7 +99,7 @@ public with sharing class VTMig_AddOrderProduct {
                 query = query + 'AND Name LIKE : prodSearch ';
             }
             if(order.RecordType.Name == 'Sale Order') {
-                query = query + 'AND NAME IN : [\'MEETS\', \'Other Charges and Fees\', \'SETS Pro\', \'SETSPlus\', \'Training Titles\']';
+                query = query + 'AND No_of_One_Time_Charges__c > 0';
             }
             productList = Database.query(query);
             showProducts = true;
@@ -112,7 +112,11 @@ public with sharing class VTMig_AddOrderProduct {
             newCharge.orderProduct = configOrderProd(selectedProductId, null);
             showProducts = false;
             showCharges = false;
-            plans = [SELECT Id, Name, Description__c FROM Product_Rate_Plan__c WHERE Status__c = 'Active' AND Product__c = : selectedProductId];
+            if(order.RecordType.Name == 'Sale Order') {
+                plans = [SELECT Id, Name, Description__c FROM Product_Rate_Plan__c WHERE Status__c = 'Active' AND Product__c = : selectedProductId AND No_of_One_Time_Charges__c > 0];
+            } else {
+                plans = [SELECT Id, Name, Description__c FROM Product_Rate_Plan__c WHERE Status__c = 'Active' AND Product__c = : selectedProductId];
+            }
             showPlans = true;
         }
 
@@ -120,11 +124,22 @@ public with sharing class VTMig_AddOrderProduct {
             showProducts = false;
             showPlans = false;
             newCharge.orderRatePlan = configOrderPlan(selectedPlanId, null);
-            List<Product_Rate_Plan_Charge__c> charges = [
-                    SELECT Id, Name, Product_Charge_Category__c, Subscription_Product__c, Product_Rate_Plan__r.Product__r.Name,
-                            Title_Product__c, Unit_Of_Measurement__c, Price_Type__c, Pricing_Format__c, Unit_Price__c,
-                            Quantity__c, Product_Rate_Plan__r.Product__r.Product_Code__c, Uplift__c
-                    FROM Product_Rate_Plan_Charge__c WHERE Product_Rate_Plan__c = : selectedPlanId];
+            List<Product_Rate_Plan_Charge__c> charges = new List<Product_Rate_Plan_Charge__c>();
+            if(order.RecordType.Name == 'Sale Order') {
+                charges = [
+                        SELECT Id, Name, Product_Charge_Category__c, Subscription_Product__c, Product_Rate_Plan__r.Product__r.Name,
+                                Title_Product__c, Unit_Of_Measurement__c, Price_Type__c, Pricing_Format__c, Unit_Price__c,
+                                Quantity__c, Product_Rate_Plan__r.Product__r.Product_Code__c, Uplift__c, CurrencyL__c
+                        FROM Product_Rate_Plan_Charge__c
+                        WHERE Product_Rate_Plan__c = : selectedPlanId
+                        AND Price_Type__c = 'One Time']; 
+            } else {
+                charges = [
+                        SELECT Id, Name, Product_Charge_Category__c, Subscription_Product__c, Product_Rate_Plan__r.Product__r.Name,
+                                Title_Product__c, Unit_Of_Measurement__c, Price_Type__c, Pricing_Format__c, Unit_Price__c,
+                                Quantity__c, Product_Rate_Plan__r.Product__r.Product_Code__c, Uplift__c, CurrencyL__c
+                        FROM Product_Rate_Plan_Charge__c WHERE Product_Rate_Plan__c = : selectedPlanId];
+            }
             prodCharges.clear();
             for(Product_Rate_Plan_Charge__c charge : charges) {
                 ProdCharge newProdCharge = new ProdCharge();
@@ -333,6 +348,7 @@ public with sharing class VTMig_AddOrderProduct {
         newCharge.Net_Total__c = newCharge.Price__c - newCharge.Discount_Value__c;
         newCharge.Order__c = orderId;
         newCharge.Uplift__c = charge.Uplift__c;
+        newCharge.CurrencyL__c = charge.CurrencyL__c;
         return newCharge;
 
     }

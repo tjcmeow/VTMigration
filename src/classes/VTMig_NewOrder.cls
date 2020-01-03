@@ -10,9 +10,12 @@ public with sharing class VTMig_NewOrder {
     public Boolean saleOrder {get; set; }
     public Boolean masterOrder {get; set; }
     public Boolean childOrder {get; set; }
+    public List<SelectOption> saleList {get;set;}
 
     public VTMig_NewOrder(ApexPages.StandardController ctrlr){
         order = new Job__c();
+        saleList = new List<SelectOption>();
+        saleList.add(new SelectOption('Sale','Sale'));
         recordTypeId = ApexPages.currentPage().getParameters().get('RecordType');
         recordTypeName = [SELECT Name FROM RecordType WHERE Id = : recordTypeId].Name;
         if(recordTypeName == 'Sale Order') {
@@ -26,6 +29,9 @@ public with sharing class VTMig_NewOrder {
 
     public PageReference saveOrder(){
         order.RecordTypeId = recordTypeId;
+        if(order.Start_Date__c == null) {
+            order.Start_Date__c = System.today();
+        }
         insert order;
         return new PageReference('/'+order.Id);
     }

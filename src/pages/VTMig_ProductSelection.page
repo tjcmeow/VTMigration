@@ -73,6 +73,8 @@
                     </apex:column>
                     <apex:column value="{!charge.prodCharge.Unit_Price__c}">
                     </apex:column>
+                    <apex:column value="{!charge.prodCharge.CurrencyL__c}">
+                    </apex:column>
                     <apex:column >
                         <apex:commandButton value="Add to Opportunity" action="{!selectCharge}" reRender="table">
                             <apex:param name="chargeId" value="{!charge.prodCharge.Id}" assignTo="{!selectedChargeId}"/>
@@ -97,11 +99,13 @@
                     <apex:column headerValue="Charge Name">
                         <a target="_blank" href="{!'/'+charge.opportunityRatePlanCharge.Id}">
                             <apex:outputText value="{!charge.opportunityRatePlanCharge.Name}" rendered="{!charge.opportunityRatePlanCharge.Id != ''}"/>
-                        </a>
+                        </a> 
                     </apex:column>
                     <apex:column value="{!charge.opportunityRatePlanCharge.Price_Type__c}">
                     </apex:column>
                     <apex:column value="{!charge.opportunityRatePlanCharge.Pricing_Model__c}">
+                    </apex:column>
+                    <apex:column value="{!charge.opportunityRatePlanCharge.CurrencyL__c}">
                     </apex:column>
                     <apex:column headerValue="Unit Price">
                         <apex:inputField value="{!charge.opportunityRatePlanCharge.Unit_Price__c}"/>

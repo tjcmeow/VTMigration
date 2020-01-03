@@ -8,41 +8,36 @@ public with sharing class OrderCommissionTriggerTest {
     public static void OrderCommisionTrigger() {
 
         //Partner Creation
-        Account acc = New Account();
-        acc.RecordTypeID = Schema.SObjectType.Account.getRecordTypeInfosByName().get('KV Partner').getRecordTypeId();
-        acc.Name = 'TestAcc';
+        Account acc = VTMig_TestUtilities.createKVPartner();
         insert acc;
 
         //Customer Creation
-        Account acc2 = New Account();
-        acc2.RecordTypeID = Schema.SObjectType.Account.getRecordTypeInfosByName().get('KV Customers').getRecordTypeId();
-        acc2.Name = 'TestAcc2';
+        Account acc2 = VTMig_TestUtilities.createKVCustomer();
         insert acc2;
 
         //Master order Creation
-        Job__c masterOrder = new Job__c(Account__c = acc2.id, Sub_Total__c = 100, Discount_Value__c = 0);
-        masterOrder.Account__c = acc2.Id;
+        Job__c masterOrder = VTMig_TestUtilities.createMasterOrder(acc2.Id);
+        masterOrder.Sub_total__c = 100;
         masterOrder.IITIntended_Use__c = 'LOCAL UK WATERS';
         masterOrder.Withholding_Tax_Percentage__c = 10;
         masterOrder.BMS_Contract_Year__c = 1;
-        masterOrder.RecordTypeId = Schema.SObjectType.Job__c.getRecordTypeInfosByName().get('Master Order').getRecordTypeId();
         insert masterOrder;
 
 
         //Child Order Creation
-        Job__c childOrder = new Job__c(Account__c = acc2.id, Sub_Total__c = 100, Discount_Value__c = 0);
-        childOrder.Account__c = acc2.Id;
+        Job__c childOrder = VTMig_TestUtilities.createMasterOrder(acc2.Id);
+        childOrder.Sub_total__c = 100;
         childOrder.IITIntended_Use__c = 'LOCAL UK WATERS';
         childOrder.Withholding_Tax_Percentage__c = 10;
         childOrder.BMS_Contract_Year__c = 1;
         childOrder.Mid_Term_Order__c = true;
-        childOrder.Master_Order__c = masterOrder.id;
+        childOrder.Master_Order__c = masterOrder.Id;
         childOrder.RecordTypeId = Schema.SObjectType.Job__c.getRecordTypeInfosByName().get('Child Order').getRecordTypeId();
         insert childOrder;
 
 
         //Product Creation
-        Product__c invoiceProduct = New Product__c(Name = '123');
+        Product__c invoiceProduct = VTMig_TestUtilities.createProduct();
         insert invoiceProduct;
 
         //Partner Commission Record Creation

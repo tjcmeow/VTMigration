@@ -61,6 +61,8 @@
                     </apex:column>
                     <apex:column value="{!charge.prodCharge.Pricing_Format__c}">
                     </apex:column>
+                    <apex:column value="{!charge.prodCharge.CurrencyL__c}">
+                    </apex:column>
                     <apex:column value="{!charge.prodCharge.Unit_Price__c}">
                     </apex:column>
                     <apex:column >
@@ -95,6 +97,8 @@
                     <apex:column value="{!charge.orderRatePlanCharge.Price_Type__c}">
                     </apex:column>
                     <apex:column value="{!charge.orderRatePlanCharge.Price_Format__c}">
+                    </apex:column>
+                    <apex:column value="{!charge.orderRatePlanCharge.CurrencyL__c}">
                     </apex:column>
                     <apex:column headerValue="Unit Price">
                         <apex:inputField value="{!charge.orderRatePlanCharge.Unit_Price__c}"/>

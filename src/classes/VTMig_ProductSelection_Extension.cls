@@ -49,7 +49,7 @@ public with sharing class VTMig_ProductSelection_Extension {
         if(Opp.Discount_Percent__c != null) {
             overallDiscount = Opp.Discount_Percent__c;
         } else {
-            overallDiscount = 0;
+            overallDiscount = 0; 
         }
 
         List<Opportunity_Rate_Plan_Charge__c> currentCharges = [ SELECT Id, Name, Product_Charge_Category__c, Subscription_Product__c, Opportunity_Rate_Plan__r.Opportunity_Product__r.Name,
@@ -57,7 +57,7 @@ public with sharing class VTMig_ProductSelection_Extension {
                         Title_Product__c, Unit_Of_Measurement__c, Price_Type__c, Pricing_Model__c, Unit_Price__c, Uplift__c, Net_Total__c,
                         Quantity__c, Opportunity_Rate_Plan__r.Opportunity_Product__r.Product_Code__c, Opportunity_Rate_Plan__r.Product_Rate_Plan__c,
                         Discount_Percent__c, Price__c, Discount_Value__c, Opportunity_Rate_Plan__c, Opportunity_Rate_Plan__r.Opportunity_Product__c,
-                        Product_Rate_Plan_Charge__r.Product_Rate_Plan__r.Product__r.Product_Code__c
+                        Product_Rate_Plan_Charge__r.Product_Rate_Plan__r.Product__r.Product_Code__c, VAT__c, Tax__c, CurrencyL__c
                 FROM Opportunity_Rate_Plan_Charge__c WHERE Opportunity__c = : OppId ];
         if(currentCharges.size() > 0) {
 
@@ -73,7 +73,7 @@ public with sharing class VTMig_ProductSelection_Extension {
                 singleProdCharge.prodCharge = [
                         SELECT Id, Name, Product_Charge_Category__c, Subscription_Product__c, Product_Rate_Plan__r.Product__r.Name,
                                 Title_Product__c, Unit_Of_Measurement__c, Price_Type__c, Pricing_Format__c, Unit_Price__c,
-                                Product_Rate_Plan__r.Product__r.Product_Code__c, Uplift__c
+                                Product_Rate_Plan__r.Product__r.Product_Code__c, Uplift__c, CurrencyL__c
                         FROM Product_Rate_Plan_Charge__c WHERE Id = : currentCharge.Product_Rate_Plan_Charge__c];
                 singleProdCharge.quantity = Integer.valueOf(currentCharge.Quantity__c);
                 singleProdCharge.planId = currentCharge.Opportunity_Rate_Plan__r.Product_Rate_Plan__c;
@@ -121,7 +121,7 @@ public with sharing class VTMig_ProductSelection_Extension {
         List<Product_Rate_Plan_Charge__c> charges = [
                 SELECT Id, Name, Product_Charge_Category__c, Subscription_Product__c, Product_Rate_Plan__r.Product__r.Name,
                         Title_Product__c, Unit_Of_Measurement__c, Price_Type__c, Pricing_Format__c, Unit_Price__c, Quantity__c,
-                        Product_Rate_Plan__r.Product__r.Product_Code__c, Uplift__c
+                        Product_Rate_Plan__r.Product__r.Product_Code__c, Uplift__c, CurrencyL__c
         FROM Product_Rate_Plan_Charge__c WHERE Product_Rate_Plan__c = : selectedPlanId];
         prodCharges.clear();
         for(Product_Rate_Plan_Charge__c charge : charges) {
@@ -325,6 +325,7 @@ public with sharing class VTMig_ProductSelection_Extension {
         newOppCharge.Net_Total__c = newOppCharge.Price__c - newOppCharge.Discount_Value__c;
         newOppCharge.Opportunity__c = OppId;
         newOppCharge.Uplift__c = charge.Uplift__c;
+        newOppCharge.CurrencyL__c = charge.CurrencyL__c;
         return newOppCharge;
 
     }

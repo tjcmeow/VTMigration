@@ -17,8 +17,8 @@ public with sharing class VTMig_CreateOrder {
         opp = new Opportunity();
         opp = (Opportunity) controller.getRecord();
         opp  = [
-                SELECT Id, IsWon, Account.Name, Shipping_Account__c, Legal_Entity__c, Shipping_Contact__c,
-                        Billing_Contact__c, IItIntended_Use__c, Platform_or_Vessel_detail__c, 
+                SELECT Id, IsWon, Account.Name, Shipping_Account__c, Legal_Entity__c, Shipping_Contact__c, Partner_Agent_Account__c,
+                        Billing_Contact__c, IItIntended_Use__c, Platform_or_Vessel_detail__c, CurrencyL__c, Name,
                         Wet_or_Dry_Cargo__c, Partner_Agent__c, AccountId, Account.RecordType.Name, Account.RecordTypeId
                 FROM Opportunity WHERE Id =: opp.Id
         ];
@@ -78,6 +78,51 @@ public with sharing class VTMig_CreateOrder {
 
     public PageReference createOrder() {
         try {
+            if(Opp.AccountId == null || Opp.CurrencyL__c == null || Opp.Name == null || Opp.Name == '' || Opp.Legal_Entity__c == null || Opp.Partner_Agent_Account__c == null || Opp.Billing_Contact__c == null) {
+                String missingFields = '';
+                if(Opp.AccountId == null) {
+                    missingFields += 'Account';
+                }
+                if(Opp.CurrencyL__c == null) {
+                    if(missingFields == '') {
+                        missingFields += 'Currency';
+                    } else {
+                        missingFields += ', Currency';
+                    }
+                }
+                if(Opp.Name == null) {
+                    if(missingFields == '') {
+                        missingFields += 'Opportunity Name';
+                    } else {
+                        missingFields += ', Opportunity Name';
+                    }
+                }
+                if(Opp.Legal_Entity__c == null) {
+                    if(missingFields == '') {
+                        missingFields += 'Legal Entity';
+                    } else {
+                        missingFields += ', Legal Entity';
+                    }
+                }
+                if(Opp.Partner_Agent_Account__c == null) {
+                    if(missingFields == '') {
+                        missingFields += 'Partner Account';
+                    } else {
+                        missingFields += ', Partner Account';
+                    }
+                }
+                if(Opp.Billing_Contact__c == null) {
+                    if(missingFields == '') {
+                        missingFields += 'Billing Contact';
+                    } else {
+                        missingFields += ', Billing Contact';
+                    }
+                }
+                String message = 'Missing mandatory fields for order: ' + missingFields +  '.  Please review and fill in all necessary details.';
+                ApexPages.Message errorMessage = new ApexPages.Message(ApexPages.Severity.ERROR, message);
+                ApexPages.addMessage(errorMessage);
+                return null;
+            }
             if(opp.Account.RecordType.Name != 'KV Customers') {
                 Account oppAccount = [SELECT RecordTypeId, Id FROM Account WHERE Id =: opp.AccountId];
                 oppAccount.RecordTypeId = Schema.SObjectType.Account.getRecordTypeInfosByName().get('KV Customers').getRecordTypeId();
@@ -176,7 +221,7 @@ public with sharing class VTMig_CreateOrder {
 
     public Job__c configOrder(){
         Job__c newOrder = new Job__c();
-        newOrder.Name = opp.Account.Name;
+        newOrder.Name = opp.Name;
         newOrder.Status__c = 'New';
         newOrder.Account__c = opp.AccountId;
         newOrder.Shipping_Account__c = opp.Shipping_Account__c;
@@ -188,6 +233,7 @@ public with sharing class VTMig_CreateOrder {
         newOrder.Wet_or_Dry_Cargo__c = opp.Wet_or_Dry_Cargo__c;
         newOrder.Partner_Agent__c = opp.Partner_Agent__c;
         newOrder.Opportunity__c = opp.Id;
+        newOrder.Start_Date__c = System.today();
         return newOrder;
     }
 

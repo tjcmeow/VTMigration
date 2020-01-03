@@ -1,3 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<EscalationRules xmlns="http://soap.sforce.com/2006/04/metadata"/>
-
+<EscalationRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <escalationRule>
+        <fullName>New Escalation Rules</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <businessHoursSource>Case</businessHoursSource>
+            <escalationAction>
+                <minutesToEscalation>30</minutesToEscalation>
+                <notifyCaseOwner>false</notifyCaseOwner>
+            </escalationAction>
+            <escalationStartTime>CaseCreation</escalationStartTime>
+            <formula>ISCHANGED( RecordTypeId )</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <businessHoursSource>Case</businessHoursSource>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>KV Production Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>New,New Incoming Email,New Customer Comment</value>
+            </criteriaItems>
+            <escalationAction>
+                <assignedTo>VOD_Production_Team</assignedTo>
+                <assignedToTemplate>KV_Support/KVSUPPORTNewassignmentnotificationSAMPLE</assignedToTemplate>
+                <assignedToType>Queue</assignedToType>
+                <minutesToEscalation>30</minutesToEscalation>
+                <notifyCaseOwner>true</notifyCaseOwner>
+                <notifyToTemplate>KV_Support/KVSUPPORTNewassignmentnotificationSAMPLE</notifyToTemplate>
+            </escalationAction>
+            <escalationAction>
+                <assignedTo>VOD_Production_Team</assignedTo>
+                <assignedToTemplate>KV_Support/KVSUPPORTNewassignmentnotificationSAMPLE</assignedToTemplate>
+                <assignedToType>Queue</assignedToType>
+                <minutesToEscalation>240</minutesToEscalation>
+                <notifyCaseOwner>true</notifyCaseOwner>
+                <notifyToTemplate>KV_Support/KVSUPPORTNewassignmentnotificationSAMPLE</notifyToTemplate>
+            </escalationAction>
+            <escalationStartTime>CaseCreation</escalationStartTime>
+        </ruleEntry>
+        <ruleEntry>
+            <businessHoursSource>Case</businessHoursSource>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>KV DCU</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>New,New Customer Comment,New Incoming Email</value>
+            </criteriaItems>
+            <escalationAction>
+                <assignedTo>KV_DCU_Queue</assignedTo>
+                <assignedToTemplate>KV_DCU/KV_DCU_SUPPORT_30_Min_assignment_notification</assignedToTemplate>
+                <assignedToType>Queue</assignedToType>
+                <minutesToEscalation>30</minutesToEscalation>
+                <notifyCaseOwner>true</notifyCaseOwner>
+                <notifyToTemplate>KV_DCU/KV_DCU_SUPPORT_30_Min_assignment_notification</notifyToTemplate>
+            </escalationAction>
+            <escalationAction>
+                <assignedTo>KV_DCU_Queue</assignedTo>
+                <assignedToTemplate>KV_DCU/KV_DCU_SUPPORT_4_hr_assignment_notification</assignedToTemplate>
+                <assignedToType>Queue</assignedToType>
+                <minutesToEscalation>240</minutesToEscalation>
+                <notifyCaseOwner>true</notifyCaseOwner>
+                <notifyToTemplate>KV_DCU/KV_DCU_SUPPORT_4_hr_assignment_notification</notifyToTemplate>
+            </escalationAction>
+            <escalationStartTime>CaseLastModified</escalationStartTime>
+        </ruleEntry>
+        <ruleEntry>
+            <businessHoursSource>Case</businessHoursSource>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>KV Production Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.OwnerId</field>
+                <operation>equals</operation>
+                <value>VOD Production Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>VOD RMA Received</value>
+            </criteriaItems>
+            <escalationAction>
+                <minutesToEscalation>2880</minutesToEscalation>
+                <notifyCaseOwner>false</notifyCaseOwner>
+                <notifyEmail>krodrigues@videotel.com</notifyEmail>
+                <notifyTo>krodrigues@videotel.com</notifyTo>
+                <notifyToTemplate>KV_Support/KV_VOD_Production</notifyToTemplate>
+            </escalationAction>
+            <escalationStartTime>CaseCreation</escalationStartTime>
+        </ruleEntry>
+    </escalationRule>
+</EscalationRules>

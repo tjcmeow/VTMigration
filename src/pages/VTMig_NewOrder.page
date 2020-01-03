@@ -53,7 +53,9 @@
                 <apex:inputField value="{!order.Regional_Format__c}"/>
                 <apex:inputField value="{!order.Invoice_Details__c}"/>
                 <apex:inputField value="{!order.Withholding_Tax_Percentage__c}"/>
-                <apex:inputField value="{!order.Order_Type_VT__c}"/>
+                <apex:selectList value="{!order.Order_Type_VT__c}" size="1">
+                    <apex:selectOptions value="{!saleList}"/> 
+                </apex:selectList>
                 <apex:inputField value="{!order.Alignment_Date_1__c}"/>
                 <apex:inputField value="{!order.Test_Invoice_Creation__c}"/>
                 <apex:inputField value="{!order.Alignment_Date_2__c}"/>

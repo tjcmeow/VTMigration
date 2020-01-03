@@ -7,46 +7,35 @@ public with sharing class VTMig_UpdateOrderStatus_Test {
     @TestSetup
     static void setUpData(){
 
-        Account newAccount = new Account();
-        newAccount.Name = 'New Account';
+        Account newAccount = VTMig_TestUtilities.createKVCustomer();
         insert newAccount;
 
-        Job__c newOrder = new Job__c();
-        newOrder.Account__c = newAccount.Id;
-        newOrder.Name = 'New Order';
+        Job__c newOrder = VTMig_TestUtilities.createMasterOrder(newAccount.Id);
         insert newOrder;
 
-        Product__c newProduct = new Product__c();
-        newProduct.Name = 'New Product';
-        newProduct.Valid_From_Date__c = System.today();
+        Product__c newProduct = VTMig_TestUtilities.createProduct();
         insert newProduct;
 
-        Product_Rate_Plan__c newProductRatePlan = new Product_Rate_Plan__c();
-        newProductRatePlan.Name = 'New Product Rate Plan';
-        newProductRatePlan.Valid_From_Date__c = System.today();
-        newProductRatePlan.Product__c = newProduct.Id;
+        Product_Rate_Plan__c newProductRatePlan = VTMig_TestUtilities.createRatePlan(newProduct.Id);
         insert newProductRatePlan;
 
-        Product_Rate_Plan_Charge__c newProductRatePlanCharge = new Product_Rate_Plan_Charge__c();
-        newProductRatePlanCharge.Name = 'New Product Rate Plan Charge';
-        newProductRatePlanCharge.Product_Rate_Plan__c = newProductRatePlan.Id;
-        newProductRatePlanCharge.Unit_Price__c = 100;
+        Product_Rate_Plan_Charge__c newProductRatePlanCharge = VTMig_TestUtilities.createProductCharge(newProductRatePlan.Id);
         insert newProductRatePlanCharge;
 
-        Job_Product__c orderProduct = new Job_Product__c();
-        orderProduct.Job__c = newOrder.Id;
-        orderProduct.Product__c = newProduct.Id;
+        Job_Product__c orderProduct = VTMig_TestUtilities.createOrderProduct(newOrder.Id, newProduct.Id);
         insert orderProduct;
 
-        Job_Rate_Plan__c orderRatePlan = new Job_Rate_Plan__c();
-        orderRatePlan.Product_Rate_Plan__c = newProductRatePlan.Id;
-        orderRatePlan.Job_Product__c = orderProduct.Id;
+        Job_Rate_Plan__c orderRatePlan = VTMig_TestUtilities.createOrderRatePlan(newProductRatePlan.Id, orderProduct.Id);
         insert orderRatePlan;
+
+        Job_Rate_Plan_Charge__c theCharge = VTMig_TestUtilities.createORPC(newOrder.Id, newProductRatePlanCharge.Id, orderRatePlan.Id);
+        theCharge.Discount_Value__c = null;
+        insert theCharge;
 
     }
 
     @IsTest
-    static void testOpenList(){
+    static void testSaveOrder(){ 
 
         Job__c theOrder = [SELECT Id FROM Job__c];
 

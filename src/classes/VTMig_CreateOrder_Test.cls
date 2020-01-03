@@ -7,36 +7,45 @@ public with sharing class VTMig_CreateOrder_Test {
     @TestSetup
     static void setUpData(){
 
-        Account newAccount = new Account();
-        newAccount.Name = 'New Account';
+        Account newAccount = VTMig_TestUtilities.createKVCustomer();
         insert newAccount;
 
-        Opportunity newOpp = new Opportunity();
-        newOpp.Name = 'New Opportunity';
-        newOpp.CloseDate = System.today();
-        newOpp.StageName = 'Qualification';
-        newOpp.AccountId = newAccount.Id;
+        Account newPartner = VTMig_TestUtilities.createKVPartner();
+        insert newPartner;
+
+        Contact newContact = VTMig_TestUtilities.createContact(newAccount.Id);
+        insert newContact;
+
+        Opportunity newOpp = VTMig_TestUtilities.createOpportunity(newAccount.Id);
         insert newOpp;
 
-        Product__c newProduct = new Product__c();
-        newProduct.Name = 'New Product';
-        newProduct.Valid_From_Date__c = System.today();
+        Currency__c curr = new Currency__c();
+        curr.Currency_Name__c = 'USD';
+        curr.Currency_Symbol__c = '$';
+        insert curr;
+
+        Opportunity newOpp2 = new Opportunity();
+        newOpp2.Name = 'New Opportunity2';
+        newOpp2.CloseDate = System.today();
+        newOpp2.StageName = 'Qualification';
+        newOpp2.AccountId = newAccount.Id;
+        newOpp2.Billing_Contact__c = newContact.Id;
+        newOpp2.Partner_Agent_Account__c = newPartner.Id;
+        newOpp2.Legal_Entity__c = 'VMI';
+        newOpp2.CurrencyL__c = curr.Id;
+        insert newOpp2;
+
+        Product__c newProduct = VTMig_TestUtilities.createProduct();
         insert newProduct;
 
-        Product_Rate_Plan__c newProductRatePlan = new Product_Rate_Plan__c();
-        newProductRatePlan.Name = 'New Product Rate Plan';
-        newProductRatePlan.Valid_From_Date__c = System.today();
-        newProductRatePlan.Product__c = newProduct.Id;
+        Product_Rate_Plan__c newProductRatePlan = VTMig_TestUtilities.createRatePlan(newProduct.Id);
         insert newProductRatePlan;
 
-        Product_Rate_Plan_Charge__c newProductRatePlanCharge = new Product_Rate_Plan_Charge__c();
-        newProductRatePlanCharge.Name = 'New Product Rate Plan Charge';
-        newProductRatePlanCharge.Product_Rate_Plan__c = newProductRatePlan.Id;
-        newProductRatePlanCharge.Unit_Price__c = 100;
+        Product_Rate_Plan_Charge__c newProductRatePlanCharge = VTMig_TestUtilities.createProductCharge(newProductRatePlan.Id);
         insert newProductRatePlanCharge;
 
         Opportunity_Product__c opportunityProduct = new Opportunity_Product__c();
-        opportunityProduct.Opportunity__c = newOpp.Id;
+        opportunityProduct.Opportunity__c = newOpp2.Id;
         opportunityProduct.Product__c = newProduct.Id;
         insert opportunityProduct;
 
@@ -46,7 +55,7 @@ public with sharing class VTMig_CreateOrder_Test {
         insert opportunityRatePlan;
 
         Opportunity_Rate_Plan_Charge__c opportunityRatePlanCharge = new Opportunity_Rate_Plan_Charge__c();
-        opportunityRatePlanCharge.Opportunity__c = newOpp.Id;
+        opportunityRatePlanCharge.Opportunity__c = newOpp2.Id;
         opportunityRatePlanCharge.Quantity__c = 1;
         opportunityRatePlanCharge.Opportunity_Rate_Plan__c = opportunityRatePlan.Id;
         opportunityRatePlanCharge.Product_Rate_Plan_Charge__c = newProductRatePlanCharge.Id;
@@ -60,7 +69,9 @@ public with sharing class VTMig_CreateOrder_Test {
     @IsTest
     static void testCreateOrder(){
 
-        Opportunity newOpp = [SELECT Id FROM Opportunity];
+        Opportunity newOpp = [SELECT Id FROM Opportunity WHERE Name = 'New Opportunity2'];
+        Account newAcc = [SELECT Id FROM Account WHERE Name = 'New Account'];
+        newOpp.AccountId = newAcc.Id;
         newOpp.StageName = 'Closed Won';
         update newOpp;
 
@@ -83,7 +94,7 @@ public with sharing class VTMig_CreateOrder_Test {
     @IsTest
     static void testError(){
 
-        Opportunity newOpp = [SELECT Id FROM Opportunity];
+        Opportunity newOpp = [SELECT Id FROM Opportunity WHERE Name = 'New Opportunity'];
 
         Test.startTest();
 

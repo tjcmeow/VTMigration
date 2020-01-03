@@ -7,52 +7,28 @@ public with sharing class VTMig_CloneOrder_Test {
     @TestSetup
     static void setUpData(){
 
-        Account newAccount = new Account();
-        newAccount.Name = 'New Account';
+        Account newAccount = VTMig_TestUtilities.createKVCustomer();
         insert newAccount;
 
-        Product__c newProduct = new Product__c();
-        newProduct.Name = 'New Product';
-        newProduct.Valid_From_Date__c = System.today();
+        Product__c newProduct = VTMig_TestUtilities.createProduct();
         insert newProduct;
 
-        Product_Rate_Plan__c newProductRatePlan = new Product_Rate_Plan__c();
-        newProductRatePlan.Name = 'New Product Rate Plan';
-        newProductRatePlan.Valid_From_Date__c = System.today();
-        newProductRatePlan.Product__c = newProduct.Id;
+        Product_Rate_Plan__c newProductRatePlan = VTMig_TestUtilities.createRatePlan(newProduct.Id);
         insert newProductRatePlan;
 
-        Product_Rate_Plan_Charge__c newProductRatePlanCharge = new Product_Rate_Plan_Charge__c();
-        newProductRatePlanCharge.Name = 'New Product Rate Plan Charge';
-        newProductRatePlanCharge.Product_Rate_Plan__c = newProductRatePlan.Id;
-        newProductRatePlanCharge.Unit_Price__c = 100;
+        Product_Rate_Plan_Charge__c newProductRatePlanCharge = VTMig_TestUtilities.createProductCharge(newProductRatePlan.Id);
         insert newProductRatePlanCharge;
 
-
-        Job__c newOrder = new Job__c();
-        newOrder.Account__c = newAccount.Id;
-        newOrder.RecordTypeId = Schema.SObjectType.Job__c.getRecordTypeInfosByName().get('Master Order').getRecordTypeId();
-        newOrder.Name = 'New Order';
+        Job__c newOrder = VTMig_TestUtilities.createMasterOrder(newAccount.Id);
         insert newOrder;
 
-        Job_Product__c newJobProduct = new Job_Product__c();
-        newJobProduct.Name = newProduct.Name;
-        newJobProduct.Job__c = newOrder.Id;
+        Job_Product__c newJobProduct = VTMig_TestUtilities.createOrderProduct(newOrder.Id, newProduct.Id);
         insert newJobProduct;
 
-        Job_Rate_Plan__c newJobPlan = new Job_Rate_Plan__c();
-        newJobPlan.Name = newProductRatePlan.Name;
-        newJobPlan.Job_Product__c = newJobProduct.Id;
-        newJobPlan.Product_Rate_Plan__c = newProductRatePlan.Id;
+        Job_Rate_Plan__c newJobPlan = VTMig_TestUtilities.createOrderRatePlan(newProductRatePlan.Id, newJobProduct.Id);
         insert newJobPlan;
 
-        Job_Rate_Plan_Charge__c newCharge = new Job_Rate_Plan_Charge__c();
-        newCharge.Product_Rate_Plan_Charge__c = newProductRatePlanCharge.Id;
-        newCharge.Order__c = newOrder.Id;
-        newCharge.Name = newProductRatePlanCharge.Name;
-        newCharge.Job_Rate_Plan__c = newJobPlan.Id;
-        newCharge.Quantity__c = 1;
-        newCharge.Unit_Price__c = newProductRatePlanCharge.Unit_Price__c;
+        Job_Rate_Plan_Charge__c newCharge = VTMig_TestUtilities.createORPC(newOrder.Id, newProductRatePlanCharge.Id, newJobPlan.Id);
         insert newCharge;
 
     }

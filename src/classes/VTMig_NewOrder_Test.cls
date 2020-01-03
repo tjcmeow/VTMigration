@@ -6,9 +6,8 @@ public with sharing class VTMig_NewOrder_Test {
 
     @TestSetup
     public static void setupData(){
-        Account newAccount = new Account();
-        newAccount.Name = 'New Account';
-        insert newAccount;
+        Account newAccount = VTMig_TestUtilities.createKVCustomer();
+        insert newAccount; 
     }
 
     @IsTest

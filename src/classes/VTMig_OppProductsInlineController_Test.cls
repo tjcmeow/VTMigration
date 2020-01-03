@@ -9,52 +9,28 @@ public with sharing class VTMig_OppProductsInlineController_Test {
     @TestSetup
     static void setUpData(){
 
-        Account newAccount = new Account();
-        newAccount.Name = 'New Account';
+        Account newAccount = VTMig_TestUtilities.createKVCustomer();
         insert newAccount;
 
-        Opportunity newOpp = new Opportunity();
-        newOpp.Name = 'New Opportunity';
-        newOpp.CloseDate = System.today();
-        newOpp.StageName = 'Qualification';
-        newOpp.AccountId = newAccount.Id;
+        Opportunity newOpp = VTMig_TestUtilities.createOpportunity(newAccount.Id);
         insert newOpp;
 
-        Product__c newProduct = new Product__c();
-        newProduct.Name = 'New Product';
-        newProduct.Valid_From_Date__c = System.today();
+        Product__c newProduct = VTMig_TestUtilities.createProduct();
         insert newProduct;
 
-        Product_Rate_Plan__c newProductRatePlan = new Product_Rate_Plan__c();
-        newProductRatePlan.Name = 'New Product Rate Plan';
-        newProductRatePlan.Valid_From_Date__c = System.today();
-        newProductRatePlan.Product__c = newProduct.Id;
+        Product_Rate_Plan__c newProductRatePlan = VTMig_TestUtilities.createRatePlan(newProduct.Id);
         insert newProductRatePlan;
 
-        Product_Rate_Plan_Charge__c newProductRatePlanCharge = new Product_Rate_Plan_Charge__c();
-        newProductRatePlanCharge.Name = 'New Product Rate Plan Charge';
-        newProductRatePlanCharge.Product_Rate_Plan__c = newProductRatePlan.Id;
-        newProductRatePlanCharge.Unit_Price__c = 100;
+        Product_Rate_Plan_Charge__c newProductRatePlanCharge = VTMig_TestUtilities.createProductCharge(newProductRatePlan.Id);
         insert newProductRatePlanCharge;
 
-        Opportunity_Product__c opportunityProduct = new Opportunity_Product__c();
-        opportunityProduct.Opportunity__c = newOpp.Id;
-        opportunityProduct.Product__c = newProduct.Id;
+        Opportunity_Product__c opportunityProduct = VTMig_TestUtilities.createOpportunityProduct(newProduct.Id, newOpp.Id);
         insert opportunityProduct;
 
-        Opportunity_Rate_Plan__c opportunityRatePlan = new Opportunity_Rate_Plan__c();
-        opportunityRatePlan.Product_Rate_Plan__c = newProductRatePlan.Id;
-        opportunityRatePlan.Opportunity_Product__c = opportunityProduct.Id;
+        Opportunity_Rate_Plan__c opportunityRatePlan = VTMig_TestUtilities.createOpportunityRatePlan(newProductRatePlan.Id, opportunityProduct.Id);
         insert opportunityRatePlan;
 
-        Opportunity_Rate_Plan_Charge__c opportunityRatePlanCharge = new Opportunity_Rate_Plan_Charge__c();
-        opportunityRatePlanCharge.Opportunity__c = newOpp.Id;
-        opportunityRatePlanCharge.Quantity__c = 1;
-        opportunityRatePlanCharge.Opportunity_Rate_Plan__c = opportunityRatePlan.Id;
-        opportunityRatePlanCharge.Product_Rate_Plan_Charge__c = newProductRatePlanCharge.Id;
-        opportunityRatePlanCharge.Unit_Price__c = 100;
-        opportunityRatePlanCharge.Name = 'New Opp Rate Plan Charge';
-        opportunityRatePlanCharge.Price__c = 100;
+        Opportunity_Rate_Plan_Charge__c opportunityRatePlanCharge = VTMig_TestUtilities.createOpportunityRatePlanCharge(opportunityRatePlan.Id, newOpp.Id, newProductRatePlanCharge.Id);
         insert opportunityRatePlanCharge;
 
     }

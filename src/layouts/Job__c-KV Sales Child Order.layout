@@ -178,6 +178,10 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
+                <field>IMO__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
                 <field>Platform_or_Vessel_detail__c</field>
             </layoutItems>
             <layoutItems>
@@ -211,10 +215,6 @@
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>BillingPostalCode_Shipping__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>IMO__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
@@ -267,6 +267,10 @@
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>Alignment_Date_1__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Preferred_Addressee_VAT_Number__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>

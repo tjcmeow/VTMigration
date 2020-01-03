@@ -2,7 +2,11 @@
  * Created by triciaigoe on 2019-11-25.
  */
 
-trigger VTMig_OrderInvoiceITTrigger on Job__c (before update, before insert, after update,after insert,after delete) {
+trigger VTMig_OrderInvoiceITTrigger on Job__c (before update, before insert, after update,after insert,before delete) {
+
+    if(Trigger.isBefore && Trigger.isDelete) {
+        VTMig_OrderInvoiceITTriggerClass.beforeDeleteCheckRecord(Trigger.oldMap);
+    }
 
     if(Trigger.isBefore && Trigger.isUpdate) {
         VTMig_OrderInvoiceITTriggerClass.beforeInsertUpdate(Trigger.newMap,Trigger.oldMap);

@@ -46,7 +46,12 @@ public with sharing class VTMig_UpdateOrderStatus {
             PageReference pageRef = new PageReference('/' + orderId);
             return pageRef;
         } catch(Exception ex) {
-            ApexPages.addmessage(new ApexPages.message(ApexPages.severity.FATAL,ex.getMessage()));
+            if(ex.getMessage().contains('Shipping Account')) {
+                ApexPages.addmessage(new ApexPages.message(ApexPages.severity.FATAL,'Please add Shipping Account'));
+            } else {
+                ApexPages.addmessage(new ApexPages.message(ApexPages.severity.FATAL,ex.getMessage()));
+            }
+
         }
 
         return null;

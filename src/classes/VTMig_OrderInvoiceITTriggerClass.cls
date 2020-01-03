@@ -321,4 +321,42 @@ public without sharing class VTMig_OrderInvoiceITTriggerClass {
         }
 
     }
+
+    public static void beforeDeleteCheckRecord(Map<Id,Job__c> oldInvoiceJobs) {
+
+        Id childOrderRecordType = Schema.SObjectType.Job__c.getRecordTypeInfosByName().get('Child Order').getRecordTypeId();
+        Id masterOrderRecordType = Schema.SObjectType.Job__c.getRecordTypeInfosByName().get('Master Order').getRecordTypeId();
+
+        List<Job__c> childOrders = [SELECT Id, Master_Order__c FROM Job__c WHERE Master_Order__c in : oldInvoiceJobs.keySet()];
+        Map<Id, List<Job__c>> orderMap = new Map<Id, List<Job__c>>();
+
+        for (Job__c childOrder : childOrders) {
+            List<Job__c> tempOrders = new List<Job__c>();
+            if(orderMap.keySet().contains(childOrder.Master_Order__c)) {
+                tempOrders = orderMap.get(childOrder.Master_Order__c);
+            }
+            tempOrders.add(childOrder);
+            System.debug(tempOrders);
+            orderMap.put(childOrder.Master_Order__c, tempOrders);
+        }
+
+        for(Job__c singleOrder : oldInvoiceJobs.values()) {
+            System.debug(masterOrderRecordType);
+            System.debug(childOrderRecordType);
+            System.debug(singleOrder.RecordTypeId);
+            System.debug(singleOrder.Shipping_Account__c);
+            System.debug(singleOrder.Status__c);
+            if(singleOrder.RecordTypeId == masterOrderRecordType) {
+                if(orderMap.keySet().contains(singleOrder.Id)) {
+                    singleOrder.addError('Cannot delete a master order with child orders');
+                }
+            } else if(singleOrder.RecordTypeId == childOrderRecordType) {
+                if(singleOrder.Shipping_Account__c != null) {
+                    singleOrder.addError('Cannot delete an order with a shipping account');
+                } else if(singleOrder.Status__c == 'In Service' || singleOrder.Status__c == 'Awaiting Return' || singleOrder.Status__c == 'Cancelled'){
+                    singleOrder.addError('Cannot delete an order with status equal to Awaiting Return, In Service or Cancelled');
+                }
+            }
+        }
+    }
 }

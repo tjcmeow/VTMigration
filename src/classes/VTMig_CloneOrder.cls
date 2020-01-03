@@ -190,6 +190,7 @@ public with sharing class VTMig_CloneOrder {
             Job__c newOrder = new Job__c();
             newOrder = order.clone(false, false, false, false);
             newOrder.RecordTypeId = recordTypeId;
+            newOrder.Start_Date__c = System.today();
             if(!isMasterOrder) {
                 newOrder.Master_Order__c = orderId;
                 newOrder.Service_Activation_Date__c = null;

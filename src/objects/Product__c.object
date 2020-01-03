@@ -245,6 +245,16 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>No_of_One_Time_Charges__c</fullName>
+        <externalId>false</externalId>
+        <label>No of One Time Charges</label>
+        <summarizedField>Product_Rate_Plan__c.No_of_One_Time_Charges__c</summarizedField>
+        <summaryForeignKey>Product_Rate_Plan__c.Product__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
         <fullName>No_of_Rate_Plans__c</fullName>
         <externalId>false</externalId>
         <label>No. of Rate Plans</label>
@@ -318,7 +328,7 @@
         <trackTrending>false</trackTrending>
         <type>Date</type>
     </fields>
-    <label>Invoice IT Product</label>
+    <label>Videotel Product</label>
     <listViews>
         <fullName>All</fullName>
         <filterScope>Everything</filterScope>
@@ -334,10 +344,10 @@
         </sharedTo>
     </listViews>
     <nameField>
-        <label>InvoiceIT Product  Name</label>
+        <label>Videotel Product Name</label>
         <type>Text</type>
     </nameField>
-    <pluralLabel>Invoice IT Products</pluralLabel>
+    <pluralLabel>Videotel Products</pluralLabel>
     <searchLayouts>
         <customTabListAdditionalFields>Description__c</customTabListAdditionalFields>
         <customTabListAdditionalFields>Commissionable_Product__c</customTabListAdditionalFields>

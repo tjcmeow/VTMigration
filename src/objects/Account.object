@@ -13283,6 +13283,18 @@ business/products</description>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <validationRules>
+        <fullName>Address_Required_for_KV_Customer</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+RecordType.DeveloperName = &quot;KV_Customers&quot;, 
+OR(
+ISBLANK(BillingCity),
+ISBLANK(BillingCountry),
+ISBLANK(BillingStreet)
+))</errorConditionFormula>
+        <errorMessage>Main Address is Required</errorMessage>
+    </validationRules>
+    <validationRules>
         <fullName>Company_IMO_Number_7_digits</fullName>
         <active>true</active>
         <description>Verifies that the Company IMO number is 7 digits long</description>
@@ -13308,6 +13320,14 @@ business/products</description>
         <description>This rule ensures that Platform Account Record Types will never have children</description>
         <errorConditionFormula>CONTAINS( Parent.RecordType.DeveloperName , &quot;Platform&quot;)</errorConditionFormula>
         <errorMessage>&quot;Platform&quot; Account Record Types cannot have child Accounts</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Sales_User_cannot_edit_non_prospect</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+$Profile.Name = &quot;KV Sales User&quot;, 
+NOT(RecordType.DeveloperName = &quot;KV_Prospect&quot;))</errorConditionFormula>
+        <errorMessage>Sales User cannot edit non prospect account record types</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>Vessel_IMO_Required_for_Vessel</fullName>
@@ -13408,35 +13428,6 @@ COPY THE URL FROM THIS BUTTON and paste it into your own custom button or link. 
         <width>900</width>
     </webLinks>
     <webLinks>
-        <fullName>Generate_Customer_Statement</fullName>
-        <availability>online</availability>
-        <displayType>button</displayType>
-        <encodingKey>UTF-8</encodingKey>
-        <hasMenubar>false</hasMenubar>
-        <hasScrollbars>true</hasScrollbars>
-        <hasToolbar>false</hasToolbar>
-        <height>600</height>
-        <isResizable>true</isResizable>
-        <linkType>url</linkType>
-        <masterLabel>Generate Customer Statement</masterLabel>
-        <openType>newWindow</openType>
-        <position>none</position>
-        <protected>false</protected>
-        <showsLocation>false</showsLocation>
-        <showsStatus>false</showsStatus>
-        <url>https://www.appextremes.com/apps/Conga/PointMerge.aspx?SessionId={!API.Session_ID} 
-&amp;ServerUrl={!API.Partner_Server_URL_80} 
-&amp;Id={! Account.Id  } 
-&amp;DefaultPDF=1 
-&amp;QMode=1 
-&amp;LG4=1 
-&amp;LG3=2 
-&amp;DS4=1 
-&amp;PartnerCode=0015000000Yd8nM 
-&amp;ReportID=00O13000008TV7K
-&amp;TemplateGroup=CustomerStatement</url>
-    </webLinks>
-    <webLinks>
         <fullName>GoogleMaps</fullName>
         <availability>online</availability>
         <displayType>link</displayType>
@@ -13492,29 +13483,6 @@ COPY THE URL FROM THIS BUTTON and paste it into your own custom button or link. 
         <showsLocation>false</showsLocation>
         <showsStatus>false</showsStatus>
         <url>http://www.google.com/search?q={!Account_Name}</url>
-    </webLinks>
-    <webLinks>
-        <fullName>Statement_by_Legal_Entity</fullName>
-        <availability>online</availability>
-        <displayType>button</displayType>
-        <height>600</height>
-        <linkType>page</linkType>
-        <masterLabel>Statement by Legal Entity</masterLabel>
-        <openType>sidebar</openType>
-        <page>IITCustomerStatementsbyEntity</page>
-        <protected>false</protected>
-    </webLinks>
-    <webLinks>
-        <fullName>Statements</fullName>
-        <availability>online</availability>
-        <description>It displays the statements</description>
-        <displayType>button</displayType>
-        <height>600</height>
-        <linkType>page</linkType>
-        <masterLabel>Statements</masterLabel>
-        <openType>sidebar</openType>
-        <page>IITCustomerStatements</page>
-        <protected>false</protected>
     </webLinks>
     <webLinks>
         <fullName>dsfs__Send_with_DocuSign</fullName>

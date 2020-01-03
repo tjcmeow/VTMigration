@@ -212,6 +212,10 @@
                 <field>Shipping_Account__c</field>
             </layoutItems>
             <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>IMO__c</field>
+            </layoutItems>
+            <layoutItems>
                 <behavior>Edit</behavior>
                 <field>BillingStreet_Shipping__c</field>
             </layoutItems>
@@ -230,10 +234,6 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>BillingPostalCode_Shipping__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>IMO__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
