@@ -123,11 +123,11 @@ public with sharing class VTMig_CreateOrder {
                 ApexPages.addMessage(errorMessage);
                 return null;
             }
-            if(opp.Account.RecordType.Name != 'KV Customers') {
+            /*if(opp.Account.RecordType.Name != 'KV Customers') {
                 Account oppAccount = [SELECT RecordTypeId, Id FROM Account WHERE Id =: opp.AccountId];
                 oppAccount.RecordTypeId = Schema.SObjectType.Account.getRecordTypeInfosByName().get('KV Customers').getRecordTypeId();
                 update oppAccount;
-            }
+            }*/
             Job__c order = configOrder();
             insert order;
             orderId = order.Id;
