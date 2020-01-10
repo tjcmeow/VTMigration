@@ -17,7 +17,7 @@
                 <apex:column headerValue="UOM" value="{!charge.Unit_Of_Measurement__c}">
                 </apex:column>
                 <apex:column headerValue="Charge Name">
-                    <a href="{!'/'+charge.Id}" target="_blank">
+                    <a href="{!URLFOR($Action.Job_Rate_Plan_Charge__c.View, charge.Id)}" target="_blank">
                         <apex:outputText value="{!charge.Name}"/>
                     </a>
                 </apex:column>

@@ -9,14 +9,14 @@
             <apex:outputPanel style="overflow:auto;">
                 <apex:pageBlockTable title="Products" value="{!charges}" var="charge">
                     <apex:column headerValue="Product">
-                        <a target="_blank" href="{!'/'+charge.Job_Rate_Plan__r.Product_Rate_Plan__r.Product__c}">
+                        <a target="_blank" href="{!URLFOR($Action.Product__c.View, charge.Job_Rate_Plan__r.Product_Rate_Plan__r.Product__c)}">
                             <apex:outputText value="{!charge.Job_Rate_Plan__r.Product_Rate_Plan__r.Product__r.Name}"/>
                         </a>
                     </apex:column>
                     <apex:column headerValue="Quantity" value="{!charge.Quantity__c}">
                     </apex:column>
                     <apex:column headerValue="Charge Name">
-                        <a target="_blank" href="{!'/'+charge.Id}">
+                        <a target="_blank" href="{!URLFOR($Action.Job_Rate_Plan_Charge__c.View, charge.Id)}">
                             <apex:outputText value="{!charge.Name}"/>
                         </a>
                     </apex:column>

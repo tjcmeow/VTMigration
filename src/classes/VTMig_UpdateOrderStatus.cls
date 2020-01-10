@@ -37,6 +37,7 @@ public with sharing class VTMig_UpdateOrderStatus {
             newOrder.Alignment_Date_2__c = order.Alignment_Date_2__c;
             newOrder.Alignment_Date_1__c = order.Alignment_Date_1__c;
             newOrder.Initial_Term__c = order.Initial_Term__c;
+            newOrder.Service_End_Date__c = order.Service_End_Date__c;
             try{
                 update newOrder;
                 for(Job_Rate_Plan_Charge__c selectedCharge : selectedCharges) {
