@@ -83,7 +83,7 @@
             <value>False</value>
         </criteriaItems>
         <description>This rule will reopen a case when a new incoming email is present on a closed case</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <triggerType>onCreateOnly</triggerType>
     </rules>
     <rules>
         <fullName>Update Created Date</fullName>

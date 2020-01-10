@@ -53,7 +53,6 @@
     <tabs>
         <customTab>Quote__c</customTab>
         <customTab>Job__c</customTab>
-        <customTab>dsfs__DocuSign_Status__c</customTab>
         <customTab>Visit_Report__c</customTab>
         <defaultTab>home</defaultTab>
         <standardTab>home</standardTab>

@@ -481,10 +481,6 @@
                 <behavior>Readonly</behavior>
                 <field>No_of_Products__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>DocuSign_Status__c</field>
-            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -509,10 +505,6 @@
         <fields>Status__c</fields>
         <fields>Total__c</fields>
     </miniLayout>
-    <relatedLists>
-        <fields>NAME</fields>
-        <relatedList>Contract_Addendum__c.Order__c</relatedList>
-    </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
         <relatedList>Job_Rate_Plan_Charge__c.Order__c</relatedList>

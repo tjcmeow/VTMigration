@@ -541,4 +541,16 @@
         <searchResultsAdditionalFields>CONTACT.NAME</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
+    <webLinks>
+        <fullName>Create_Child_Asset</fullName>
+        <availability>online</availability>
+        <description>URL for new child asset visual flow</description>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Create Child Asset</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <url>/apex/VTMig_CreateNewAsset?Item_Number=&amp;ParentAsset={!Asset.Id}&amp;InstalledBy={!User.Name}</url>
+    </webLinks>
 </CustomObject>

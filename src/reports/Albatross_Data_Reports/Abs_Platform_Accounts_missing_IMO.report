@@ -202,9 +202,6 @@
         <field>Account.Maritime_Links__c</field>
     </columns>
     <columns>
-        <field>Account.SeaWeb_Vessel_IMO__c</field>
-    </columns>
-    <columns>
         <field>Account.Name_of_Ship__c</field>
     </columns>
     <columns>

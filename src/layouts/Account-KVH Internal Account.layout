@@ -27,8 +27,8 @@
                 <field>Website</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Required</behavior>
-                <field>CurrencyIsoCode</field>
+                <behavior>Edit</behavior>
+                <field>Sea_Web_Vessel_IMO__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>

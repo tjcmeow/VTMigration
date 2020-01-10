@@ -1381,6 +1381,16 @@ PRINT &amp; STAMP- Customer receives the invoice in the Post (by mail), BUT the 
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
         <label>KV Sales Agent</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Account.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>KV Partner</value>
+            </filterItems>
+            <infoMessage>KV Sales Agent - To be a KV Partner account record type</infoMessage>
+            <isOptional>true</isOptional>
+        </lookupFilter>
         <referenceTo>Account</referenceTo>
         <relationshipLabel>Accounts (KV Sales Agent)</relationshipLabel>
         <relationshipName>Accounts2</relationshipName>
@@ -1666,6 +1676,16 @@ PRINT &amp; STAMP- Customer receives the invoice in the Post (by mail), BUT the 
     </fields>
     <fields>
         <fullName>ParentId</fullName>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Account.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>KV Customers</value>
+            </filterItems>
+            <infoMessage>Parent Account - To be a KV customer account record type</infoMessage>
+            <isOptional>true</isOptional>
+        </lookupFilter>
         <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <type>Hierarchy</type>
@@ -4072,17 +4092,6 @@ Account.Product_Interest_2__c</description>
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>SeaWeb_Vessel_IMO__c</fullName>
-        <externalId>false</externalId>
-        <formula>Vessel_IMO__c</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>SeaWeb Vessel IMO</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>SeaWeb_Vessel_Status__c</fullName>
         <externalId>false</externalId>
         <label>SeaWeb Vessel Status</label>
@@ -4094,6 +4103,17 @@ Account.Product_Interest_2__c</description>
             <restricted>true</restricted>
             <valueSetName>SeaWeb_Vessel_Status</valueSetName>
         </valueSet>
+    </fields>
+    <fields>
+        <fullName>Sea_Web_Vessel_IMO__c</fullName>
+        <externalId>false</externalId>
+        <label>Sea Web Vessel IMO</label>
+        <length>7</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Secondary_Phone__c</fullName>
@@ -10593,7 +10613,7 @@ business/products</description>
             </values>
             <values>
                 <fullName>In Review</fullName>
-                <default>false</default>
+                <default>true</default>
             </values>
             <values>
                 <fullName>Inactive</fullName>
@@ -13283,18 +13303,6 @@ business/products</description>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <validationRules>
-        <fullName>Address_Required_for_KV_Customer</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND(
-RecordType.DeveloperName = &quot;KV_Customers&quot;, 
-OR(
-ISBLANK(BillingCity),
-ISBLANK(BillingCountry),
-ISBLANK(BillingStreet)
-))</errorConditionFormula>
-        <errorMessage>Main Address is Required</errorMessage>
-    </validationRules>
-    <validationRules>
         <fullName>Company_IMO_Number_7_digits</fullName>
         <active>true</active>
         <description>Verifies that the Company IMO number is 7 digits long</description>
@@ -13315,6 +13323,15 @@ ISBLANK(BillingStreet)
         <errorMessage>The Company IMO Number must only contain numbers</errorMessage>
     </validationRules>
     <validationRules>
+        <fullName>Country_Required_for_KV_Customer</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+RecordType.DeveloperName = &quot;KV_Customers&quot;, 
+ISBLANK(BillingCountry)
+)</errorConditionFormula>
+        <errorMessage>Country is Required</errorMessage>
+    </validationRules>
+    <validationRules>
         <fullName>Platforms_cannot_have_children</fullName>
         <active>true</active>
         <description>This rule ensures that Platform Account Record Types will never have children</description>
@@ -13328,6 +13345,51 @@ ISBLANK(BillingStreet)
 $Profile.Name = &quot;KV Sales User&quot;, 
 NOT(RecordType.DeveloperName = &quot;KV_Prospect&quot;))</errorConditionFormula>
         <errorMessage>Sales User cannot edit non prospect account record types</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SeaWeb_Vessel_IMO_Required_for_Vessel</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+ISPICKVAL( Installation_Type__c , &quot;Vessel&quot;),
+ISBLANK(  Sea_Web_Vessel_IMO__c  ))</errorConditionFormula>
+        <errorDisplayField>Sea_Web_Vessel_IMO__c</errorDisplayField>
+        <errorMessage>Please complete the Vessel IMO #.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SeaWeb_Vessel_IMO_number_7_digits</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( NOT( ISBLANK(  Sea_Web_Vessel_IMO__c  )), NOT(  Sea_Web_Vessel_IMO__c  = &quot;LAND&quot;) , ( LEN(  Sea_Web_Vessel_IMO__c ) &lt;&gt;7))</errorConditionFormula>
+        <errorDisplayField>Sea_Web_Vessel_IMO__c</errorDisplayField>
+        <errorMessage>SeaWeb Vessel IMO#s must be 7 digits long</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SeaWeb_Vessel_IMO_number_checksum</fullName>
+        <active>true</active>
+        <description>Validates Vessel IMO number using checksum formula if the Vessel IMO# field is not blank</description>
+        <errorConditionFormula>IF( AND( NOT( ISBLANK(  Sea_Web_Vessel_IMO__c  )), NOT(  Sea_Web_Vessel_IMO__c  = &quot;LAND&quot;),MOD
+(
+(
+(VALUE(MID(  Sea_Web_Vessel_IMO__c  ,1,1)))*7 +
+(VALUE(MID(  Sea_Web_Vessel_IMO__c  ,2,1)))*6 +
+(VALUE(MID(  Sea_Web_Vessel_IMO__c ,3,1)))*5 +
+(VALUE(MID(  Sea_Web_Vessel_IMO__c  ,4,1)))*4 +
+(VALUE(MID(  Sea_Web_Vessel_IMO__c  ,5,1)))*3 +
+(VALUE(MID(  Sea_Web_Vessel_IMO__c  ,6,1)))*2
+)
+,10
+)
+&lt;&gt;(VALUE(MID(  Sea_Web_Vessel_IMO__c  ,7,1)))),true,false)</errorConditionFormula>
+        <errorDisplayField>Sea_Web_Vessel_IMO__c</errorDisplayField>
+        <errorMessage>Invalid SeWeb Vessel IMO#</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Street_Required_for_KV_Customer</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+RecordType.DeveloperName = &quot;KV_Customers&quot;, 
+ISBLANK( BillingStreet )
+)</errorConditionFormula>
+        <errorMessage>Street is Required</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>Vessel_IMO_Required_for_Vessel</fullName>
@@ -13483,6 +13545,19 @@ COPY THE URL FROM THIS BUTTON and paste it into your own custom button or link. 
         <showsLocation>false</showsLocation>
         <showsStatus>false</showsStatus>
         <url>http://www.google.com/search?q={!Account_Name}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>TRIMDA__Merge</fullName>
+        <availability>online</availability>
+        <description>Merge Accounts (Datatrim Dupe Alerts)</description>
+        <displayType>massActionButton</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Merge</masterLabel>
+        <openType>sidebar</openType>
+        <page>TRIMDA__TRIMDA_AccountMerge_ListButton</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
     </webLinks>
     <webLinks>
         <fullName>dsfs__Send_with_DocuSign</fullName>

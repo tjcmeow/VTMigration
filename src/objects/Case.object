@@ -1407,7 +1407,7 @@ IF (MID ( Id, 14, 1) &lt;&gt;&quot;0&quot;, RIGHT(Id, 2), &quot;&quot;) ) ) ) ) 
         <externalId>false</externalId>
         <label>Is New</label>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -2345,6 +2345,17 @@ IF (MID ( Id, 14, 1) &lt;&gt;&quot;0&quot;, RIGHT(Id, 2), &quot;&quot;) ) ) ) ) 
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>TimeBasedTrigger__c</fullName>
+        <externalId>false</externalId>
+        <formula>now() -  0.04045</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>TimeBasedTrigger</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
         <fullName>Type</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
@@ -2440,6 +2451,54 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
         <label>All Open Cases</label>
     </listViews>
     <listViews>
+        <fullName>AllOpenCasesKVSupport</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>Legacy_Created_Date__c</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Platform_Asset_Account__c</columns>
+        <columns>NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CASES.RECORDTYPE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>CASES.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Case.KV_Support</value>
+        </filters>
+        <label>All Open Cases - KV Support</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Open_Case_DCU_Queue</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>Legacy_Created_Date__c</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Platform_Asset_Account__c</columns>
+        <columns>NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CASES.RECORDTYPE</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>notEqual</operation>
+            <value>Closed,Completed,Closed As Duplicate</value>
+        </filters>
+        <label>All Open Case - DCU Queue</label>
+        <queue>KV_DCU_Queue</queue>
+    </listViews>
+    <listViews>
         <fullName>Billing_Team_Case</fullName>
         <filterScope>Queue</filterScope>
         <label>Billing Team</label>
@@ -2452,7 +2511,7 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
         <fullName>KV_DCU_Queue_Case</fullName>
         <columns>CASES.CASE_NUMBER</columns>
         <columns>Legacy_Created_Date__c</columns>
-        <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+        <columns>CASES.CREATED_DATE</columns>
         <columns>ACCOUNT.NAME</columns>
         <columns>Platform_Asset_Account__c</columns>
         <columns>NAME</columns>
@@ -2481,7 +2540,7 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
         <fullName>MyCases</fullName>
         <columns>CASES.CASE_NUMBER</columns>
         <columns>Legacy_Created_Date__c</columns>
-        <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+        <columns>CASES.CREATED_DATE</columns>
         <columns>ACCOUNT.NAME</columns>
         <columns>Platform_Asset_Account__c</columns>
         <columns>NAME</columns>
@@ -2502,7 +2561,7 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
         <fullName>MyOpenCases</fullName>
         <columns>CASES.CASE_NUMBER</columns>
         <columns>Legacy_Created_Date__c</columns>
-        <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+        <columns>CASES.CREATED_DATE</columns>
         <columns>ACCOUNT.NAME</columns>
         <columns>Platform_Asset_Account__c</columns>
         <columns>NAME</columns>
@@ -2554,7 +2613,7 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
         <fullName>VOD_Production_Team_Case</fullName>
         <columns>CASES.CASE_NUMBER</columns>
         <columns>Legacy_Created_Date__c</columns>
-        <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+        <columns>CASES.CREATED_DATE</columns>
         <columns>ACCOUNT.NAME</columns>
         <columns>Platform_Asset_Account__c</columns>
         <columns>NAME</columns>

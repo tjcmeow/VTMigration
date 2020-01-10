@@ -16,15 +16,24 @@ public without sharing class VTMig_AccountTriggerHelper {
         }
 
         if(prospectIds.size() > 0) {
+            Id masterRecordType = Schema.SObjectType.Job__c.getRecordTypeInfosByName().get('Master Order').getRecordTypeId();
             List<Opportunity> opportunities = [SELECT Id, AccountId FROM Opportunity WHERE AccountId IN : prospectIds];
-            List<Id> accountIds = new List<Id>();
+            List<Job__c> orders = [SELECT Id, Account__c FROM Job__c WHERE Account__c IN : prospectIds AND RecordTypeId = : masterRecordType];
+            List<Id> oppAccountIds = new List<Id>();
+            List<Id> orderAccountIds = new List<Id>();
             for(Opportunity opp: opportunities) {
-                accountIds.add(opp.AccountId);
+                oppAccountIds.add(opp.AccountId);
+            }
+
+            for(Job__c singleOrder : orders) {
+                orderAccountIds.add(singleOrder.Account__c);
             }
 
             for(Account theAccount : theAccounts.values()) {
-                if(accountIds.contains(theAccount.Id)) {
+                if(oppAccountIds.contains(theAccount.Id)) {
                     theAccount.addError('Prospect accounts with opportunities cannot be deleted.');
+                } else if(orderAccountIds.contains(theAccount.Id)) {
+                    theAccount.addError('Prospect accounts with master orders cannot be deleted.');
                 }
             }
         }

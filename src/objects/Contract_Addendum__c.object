@@ -154,6 +154,18 @@
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>ControlledByParent</externalSharingModel>
     <fields>
+        <fullName>Attachment_Name__c</fullName>
+        <description>List of the attachment names, copied up via a trigger to allow display in related list.</description>
+        <externalId>false</externalId>
+        <label>Attachment Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Order__c</fullName>
         <externalId>false</externalId>
         <label>Order</label>

@@ -310,11 +310,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>DocuSign_Status__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Enrollment_Date__c</field>
             <table>Job__c</table>
         </columns>

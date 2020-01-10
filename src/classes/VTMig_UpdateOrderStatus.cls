@@ -25,7 +25,7 @@ public with sharing class VTMig_UpdateOrderStatus {
     }
 
     public PageReference saveOrder(){
-        if((order.Status__c == 'Administration in Progress' || order.Status__c == 'Order Entry Complete')
+        if((order.Status__c == 'Order Entry Complete')
                 && order.Account__r.RecordType.DeveloperName == 'KV_Prospect') {
             ApexPages.addmessage(new ApexPages.message(ApexPages.severity.FATAL,'Please change account to KV Customer'));
         } else {

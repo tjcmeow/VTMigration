@@ -175,11 +175,16 @@
         <label>Account</label>
         <lookupFilter>
             <active>true</active>
-            <errorMessage>Account must be a KV Customer</errorMessage>
+            <booleanFilter>1 OR 2</booleanFilter>
             <filterItems>
                 <field>Account.RecordTypeId</field>
                 <operation>equals</operation>
                 <value>KV Customers</value>
+            </filterItems>
+            <filterItems>
+                <field>Account.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>KV Prospect</value>
             </filterItems>
             <isOptional>false</isOptional>
         </lookupFilter>
@@ -427,7 +432,7 @@
     <fields>
         <fullName>BillingCity__c</fullName>
         <externalId>false</externalId>
-        <label>Billing City</label>
+        <label>Main City/Town</label>
         <length>255</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -451,7 +456,7 @@
     <fields>
         <fullName>BillingCountry__c</fullName>
         <externalId>false</externalId>
-        <label>Billing Country</label>
+        <label>Main Country</label>
         <length>255</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -475,7 +480,7 @@
     <fields>
         <fullName>BillingPostalCode__c</fullName>
         <externalId>false</externalId>
-        <label>Billing Postal Code</label>
+        <label>Main Postcode</label>
         <length>15</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -499,7 +504,7 @@
     <fields>
         <fullName>BillingState__c</fullName>
         <externalId>false</externalId>
-        <label>Billing State</label>
+        <label>Main State/County</label>
         <length>255</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -521,7 +526,7 @@
     <fields>
         <fullName>BillingStreet__c</fullName>
         <externalId>false</externalId>
-        <label>Billing Street</label>
+        <label>Main Street</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
@@ -737,28 +742,6 @@
         <formula>Shipping_Account__r.Company_IMO__c</formula>
         <label>Company IMO Number</label>
         <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Contract_Signed_Date__c</fullName>
-        <externalId>false</externalId>
-        <label>Contract Signed Date</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Date</type>
-    </fields>
-    <fields>
-        <fullName>Contract_Signed_by__c</fullName>
-        <externalId>false</externalId>
-        <label>Contract Signed by</label>
-        <length>255</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
@@ -1001,20 +984,6 @@
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>DocuSign_Status__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
-        <externalId>false</externalId>
-        <label>DocuSign Status</label>
-        <referenceTo>dsfs__DocuSign_Status__c</referenceTo>
-        <relationshipLabel>Orders</relationshipLabel>
-        <relationshipName>Orders</relationshipName>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Lookup</type>
     </fields>
     <fields>
         <fullName>Enrollment_Date__c</fullName>
@@ -2079,7 +2048,17 @@
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
         <label>Shipping Account</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Account.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>KV Platform</value>
+            </filterItems>
+            <isOptional>true</isOptional>
+        </lookupFilter>
         <referenceTo>Account</referenceTo>
+        <relationshipLabel>Orders (Shipping Account)</relationshipLabel>
         <relationshipName>Orders1</relationshipName>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -10279,14 +10258,32 @@
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <validationRules>
+        <fullName>Account_Must_be_KV_Customers</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+OR(
+RecordType.DeveloperName = &quot;Master_Order_Complete&quot;,
+RecordType.DeveloperName = &quot;Master_Order&quot;),
+OR(
+ISPICKVAL(Status__c , &quot;Administration in Progress&quot;), 
+ISPICKVAL(  Status__c , &quot;Order Entry Complete&quot;)
+),
+NOT( Account__r.RecordType.DeveloperName = &quot;KV_Customers&quot; )
+)</errorConditionFormula>
+        <errorMessage>Master Orders that have a status of Admin in Progress or Order Entry Complete must have an account type of  KV Customer</errorMessage>
+    </validationRules>
+    <validationRules>
         <fullName>Master_order_has_a_Status_of_Order_Entry</fullName>
         <active>true</active>
         <description>Master order with a Status of Order Entry Complete cannot be Edited by KV Sales User</description>
         <errorConditionFormula>AND(
 ISPICKVAL( Status__c ,&quot;Order Entry Complete&quot;), 
 RecordType.DeveloperName = &quot;Master_Order_Complete&quot;, 
-$Profile.Name = &quot;KV Sales User&quot;)</errorConditionFormula>
-        <errorMessage>Master order with a Status of Order Entry Complete cannot be Edited by KV Sales user</errorMessage>
+OR(
+$Profile.Name = &quot;KV Sales User&quot;, 
+$Profile.Name = &quot;KV Sales Agent&quot;
+))</errorConditionFormula>
+        <errorMessage>Master order with a Status of Order Entry Complete cannot be Edited by KV Sales User/Agent</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>Only_one_contract_can_exist</fullName>
@@ -10298,9 +10295,11 @@ $Profile.Name = &quot;KV Sales User&quot;)</errorConditionFormula>
         <fullName>Sales_cannot_edit_Child_Orders</fullName>
         <active>true</active>
         <errorConditionFormula>AND(
+OR(
 $Profile.Name = &quot;KV Sales User&quot;, 
+$Profile.Name = &quot;KV Sales Agent&quot;), 
 RecordType.DeveloperName = &quot;Child_Order&quot;)</errorConditionFormula>
-        <errorMessage>Sales Users cannot edit Child Orders</errorMessage>
+        <errorMessage>Sales User/Agent cannot edit Child Orders</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>Shipping_Account_Must_Exist</fullName>

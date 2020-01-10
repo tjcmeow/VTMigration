@@ -213,6 +213,10 @@
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="VTMig_CreateNewAssetController" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="VTMig_CreateOrder" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
@@ -416,6 +420,10 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="VTMig_CloneOrder" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="VTMig_CreateNewAsset" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -8116,6 +8124,10 @@
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="DocuSign_Status__c" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="dsfs__CustomParameterMap__c" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
@@ -11894,10 +11906,6 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="dsfs__DocuSign_Recipient_Status__c-dsfs__DocuSign Recipient Status Layout" />
-                            <option name="selected" value="true" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="dsfs__DocuSign_Status__c-dsfs__DocuSign Status With View Button" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>

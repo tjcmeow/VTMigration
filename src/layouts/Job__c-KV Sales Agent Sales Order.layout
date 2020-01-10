@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <excludeButtons>ChangeOwnerOne</excludeButtons>
+    <excludeButtons>ChangeRecordType</excludeButtons>
     <excludeButtons>Clone</excludeButtons>
     <excludeButtons>Share</excludeButtons>
     <excludeButtons>Submit</excludeButtons>
@@ -48,10 +50,6 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>IITIntended_Use__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>DocuSign_Status__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -333,10 +331,6 @@
     </layoutSections>
     <relatedLists>
         <fields>NAME</fields>
-        <relatedList>Contract_Addendum__c.Order__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
         <fields>SequenceNumber__c</fields>
         <fields>Description__c</fields>
         <fields>Product__c</fields>
@@ -348,15 +342,14 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
+        <fields>Order_Number__c</fields>
         <fields>Account__c</fields>
-        <fields>Legal_Entity__c</fields>
         <fields>Shipping_Account__c</fields>
+        <fields>IMO__c</fields>
         <fields>Despatch_Date__c</fields>
         <fields>Service_Activation_Date__c</fields>
         <fields>Status__c</fields>
         <fields>Total__c</fields>
-        <fields>Partner__c</fields>
-        <fields>Billing_Master_Account__c</fields>
         <relatedList>Job__c.Master_Order__c</relatedList>
     </relatedLists>
     <relatedLists>

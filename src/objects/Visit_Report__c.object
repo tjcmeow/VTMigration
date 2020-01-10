@@ -357,9 +357,29 @@
                     <label>Inmarsat</label>
                 </value>
                 <value>
+                    <fullName>Karco</fullName>
+                    <default>false</default>
+                    <label>Karco</label>
+                </value>
+                <value>
                     <fullName>Marine Learning Systems (MLS)</fullName>
                     <default>false</default>
                     <label>Marine Learning Systems (MLS)</label>
+                </value>
+                <value>
+                    <fullName>Marlins</fullName>
+                    <default>false</default>
+                    <label>Marlins</label>
+                </value>
+                <value>
+                    <fullName>MTS (Maritime Training Services0</fullName>
+                    <default>false</default>
+                    <label>MTS (Maritime Training Services0</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
                 </value>
                 <value>
                     <fullName>Seagull</fullName>
@@ -367,9 +387,9 @@
                     <label>Seagull</label>
                 </value>
                 <value>
-                    <fullName>Other</fullName>
+                    <fullName>SQL</fullName>
                     <default>false</default>
-                    <label>Other</label>
+                    <label>SQL</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -564,11 +584,27 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Karco</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MTS %28Maritime Training Services0</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Marine Learning Systems %28MLS%29</fullName>
                 <default>false</default>
             </values>
             <values>
+                <fullName>Marlins</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SQL</fullName>
                 <default>false</default>
             </values>
             <values>

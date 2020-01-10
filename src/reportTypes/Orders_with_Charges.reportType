@@ -250,11 +250,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>DocuSign_Status__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Product_Type__c</field>
             <table>Job__c</table>
         </columns>

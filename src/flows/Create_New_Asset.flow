@@ -1,10 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <assignments>
+        <name>Asset_Already_Exists</name>
+        <label>Asset Already Exists</label>
+        <locationX>441</locationX>
+        <locationY>242</locationY>
+        <assignmentItems>
+            <assignToReference>ExistingAssetWarning</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>This Serial Number has already been assigned!</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Lookup_Product</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Asset_Id</name>
+        <label>Asset Id</label>
+        <locationX>459</locationX>
+        <locationY>394</locationY>
+        <assignmentItems>
+            <assignToReference>FormulaAssetId</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>KVHProductId</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>FormulaAssetId</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>_</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>FormulaAssetId</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>tb_Serial_Number</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Create_Asset</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>NoSuchProduct</name>
+        <label>NoSuchProduct</label>
+        <locationX>443</locationX>
+        <locationY>135</locationY>
+        <assignmentItems>
+            <assignToReference>No_Such_Product</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Produt not found! Please verify Part number.</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Lookup_Product</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
         <name>ProductToLookup</name>
         <label>ProductToLookup</label>
-        <locationX>171</locationX>
-        <locationY>203</locationY>
+        <locationX>180</locationX>
+        <locationY>113</locationY>
         <assignmentItems>
             <assignToReference>ProductSearchTerm</assignToReference>
             <operator>Assign</operator>
@@ -20,10 +82,67 @@
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>Lookup_Product</targetReference>
+            <targetReference>Find_Item</targetReference>
         </connector>
     </assignments>
-    <interviewLabel>Create New Asset {!$Flow.CurrentDateTime}</interviewLabel>
+    <constants>
+        <name>KVHDefaultAssetAccountID</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>00130000017uVZi</stringValue>
+        </value>
+    </constants>
+    <decisions>
+        <name>Duplicate_Asset</name>
+        <label>Duplicate Asset</label>
+        <locationX>174</locationX>
+        <locationY>656</locationY>
+        <defaultConnector>
+            <targetReference>Asset_Id</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Asset is Unique</defaultConnectorLabel>
+        <rules>
+            <name>Asset_Exists</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>ExistingAssetRecordId</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Asset_Already_Exists</targetReference>
+            </connector>
+            <label>Asset Exists</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Product_not_found</name>
+        <label>Product not found</label>
+        <locationX>178</locationX>
+        <locationY>385</locationY>
+        <defaultConnector>
+            <targetReference>Duplicate_Asset</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>FoundProduct</defaultConnectorLabel>
+        <rules>
+            <name>Prod_not_found</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>ProductId</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>NoSuchProduct</targetReference>
+            </connector>
+            <label>Prod_not_found</label>
+        </rules>
+    </decisions>
+    <description>This flow creates a new Asset</description>
     <label>Create New Asset</label>
     <processMetadataValues>
         <name>BuilderType</name>
@@ -31,21 +150,89 @@
             <stringValue>LightningFlowBuilder</stringValue>
         </value>
     </processMetadataValues>
-    <processMetadataValues>
-        <name>OriginBuilderType</name>
-        <value>
-            <stringValue>LightningFlowBuilder</stringValue>
-        </value>
-    </processMetadataValues>
     <processType>Flow</processType>
+    <recordCreates>
+        <name>Create_Asset</name>
+        <label>Create Asset</label>
+        <locationX>609</locationX>
+        <locationY>394</locationY>
+        <assignRecordIdToReference>BrandNewAsset</assignRecordIdToReference>
+        <connector>
+            <targetReference>done</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>AccountId</field>
+            <value>
+                <elementReference>KVHDefaultAssetAccountID</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Asset_ID__c</field>
+            <value>
+                <elementReference>FormulaAssetId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>InstallDate</field>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Installed_By__c</field>
+            <value>
+                <elementReference>InstalledBy</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Name</field>
+            <value>
+                <elementReference>tb_Serial_Number</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ParentId</field>
+            <value>
+                <elementReference>ParentAsset</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Product2Id</field>
+            <value>
+                <elementReference>ProductId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Region__c</field>
+            <value>
+                <stringValue>US</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Sequence_No__c</field>
+            <value>
+                <elementReference>Sequence</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>SerialNumber</field>
+            <value>
+                <elementReference>tb_Serial_Number</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Asset</object>
+    </recordCreates>
     <recordLookups>
         <name>Find_Item</name>
         <label>Find Item</label>
-        <locationX>163</locationX>
-        <locationY>331</locationY>
+        <locationX>184</locationX>
+        <locationY>195</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Find_serial_number</targetReference>
+        </connector>
         <filters>
-            <field>Id</field>
+            <field>Product_ID__c</field>
             <operator>EqualTo</operator>
             <value>
                 <elementReference>ProductSearchTerm</elementReference>
@@ -56,17 +243,67 @@
             <assignToReference>ProductId</assignToReference>
             <field>Id</field>
         </outputAssignments>
+        <outputAssignments>
+            <assignToReference>KVHProductId</assignToReference>
+            <field>Product_ID__c</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <name>Find_serial_number</name>
+        <label>Find serial number</label>
+        <locationX>184</locationX>
+        <locationY>290</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Product_not_found</targetReference>
+        </connector>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>tb_Serial_Number</elementReference>
+            </value>
+        </filters>
+        <object>Asset</object>
+        <outputAssignments>
+            <assignToReference>ExistingAssetRecordId</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
     </recordLookups>
     <screens>
-        <description>Lookup the SF Product Number 
+        <name>done</name>
+        <label>Asset Created!</label>
+        <locationX>765</locationX>
+        <locationY>394</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>Disp0</name>
+            <fieldText>{!KVHProductId}</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Disp1</name>
+            <fieldText>{!FormulaAssetId}</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <description>Lookup the SF Product number
 Should end in _US</description>
         <name>Lookup_Product</name>
         <label>Lookup Product</label>
-        <locationX>151</locationX>
-        <locationY>56</locationY>
+        <locationX>180</locationX>
+        <locationY>28</locationY>
         <allowBack>true</allowBack>
         <allowFinish>false</allowFinish>
         <allowPause>true</allowPause>
+        <connector>
+            <targetReference>ProductToLookup</targetReference>
+        </connector>
         <fields>
             <name>tb_Item_Number</name>
             <dataType>String</dataType>
@@ -75,11 +312,12 @@ Should end in _US</description>
             </defaultValue>
             <fieldText>Item Number</fieldText>
             <fieldType>InputField</fieldType>
+            <helpText>Enter the Item Number of the product that you want to create an Asset for</helpText>
             <isRequired>true</isRequired>
         </fields>
         <fields>
             <name>NoProduct</name>
-            <fieldText>&lt;p&gt;{!No_Such_Product}&lt;/p&gt;</fieldText>
+            <fieldText>{!No_Such_Product}</fieldText>
             <fieldType>DisplayText</fieldType>
         </fields>
         <fields>
@@ -87,11 +325,12 @@ Should end in _US</description>
             <dataType>String</dataType>
             <fieldText>Serial Number</fieldText>
             <fieldType>InputField</fieldType>
+            <helpText>Enter the Assets Serial Number (must be unique!)</helpText>
             <isRequired>true</isRequired>
         </fields>
         <fields>
-            <name>ExistingAssettWarn</name>
-            <fieldText>&lt;p&gt;{!ExistingAssetWarning}&lt;/p&gt;</fieldText>
+            <name>ExistingAssetWarn</name>
+            <fieldText>{!ExistingAssetWarning}</fieldText>
             <fieldType>DisplayText</fieldType>
         </fields>
         <fields>
@@ -103,15 +342,38 @@ Should end in _US</description>
         </fields>
         <fields>
             <name>tb_InstalledBy</name>
-            <fieldText>&lt;p&gt;{!InstalledBy}&lt;/p&gt;</fieldText>
+            <fieldText>{!InstalledBy}</fieldText>
             <fieldType>DisplayText</fieldType>
         </fields>
         <showFooter>true</showFooter>
         <showHeader>true</showHeader>
     </screens>
-    <status>InvalidDraft</status>
+    <startElementReference>Lookup_Product</startElementReference>
+    <status>Active</status>
+    <variables>
+        <name>BrandNewAsset</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>This is a record ID of an existing Asset</description>
+        <name>ExistingAssetRecordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
     <variables>
         <name>ExistingAssetWarning</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>FormulaAssetId</name>
         <dataType>String</dataType>
         <isCollection>false</isCollection>
         <isInput>false</isInput>
@@ -134,12 +396,27 @@ Should end in _US</description>
         <isOutput>false</isOutput>
     </variables>
     <variables>
+        <name>KVHProductId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
         <description>indicates that the Product has not been found</description>
         <name>No_Such_Product</name>
         <dataType>String</dataType>
         <isCollection>false</isCollection>
         <isInput>false</isInput>
         <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>This is the Parent Asset in the hierarchy</description>
+        <name>ParentAsset</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
     </variables>
     <variables>
         <description>SF record Id of the lookup Product2</description>
@@ -159,5 +436,13 @@ Should end in _US</description>
         <value>
             <elementReference>tb_Item_Number</elementReference>
         </value>
+    </variables>
+    <variables>
+        <description>This is the serial number of the new Asset, it might be an IP address, a MAC address, or a KVH serial number</description>
+        <name>Serial_Number</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
     </variables>
 </Flow>

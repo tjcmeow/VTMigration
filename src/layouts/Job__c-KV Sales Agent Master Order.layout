@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
-    <customButtons>New_Agent_Upload_and_Send_Agreement</customButtons>
+    <customButtons>Add_Products</customButtons>
+    <customButtons>Update_Order_Status</customButtons>
     <excludeButtons>Clone</excludeButtons>
     <excludeButtons>Share</excludeButtons>
     <excludeButtons>Submit</excludeButtons>
@@ -61,7 +62,7 @@
                 <field>RecordTypeId</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Readonly</behavior>
                 <field>Status__c</field>
             </layoutItems>
             <layoutItems>
@@ -119,15 +120,15 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>BillingCountry__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
                 <field>BillingState__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>BillingPostalCode__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>BillingCountry__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -260,16 +261,17 @@
                 <field>CreatedById</field>
             </layoutItems>
         </layoutColumns>
-        <layoutColumns>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>DocuSign_Status__c</field>
-            </layoutItems>
-        </layoutColumns>
+        <layoutColumns/>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
     <relatedLists>
         <fields>NAME</fields>
+        <fields>Type__c</fields>
+        <fields>Attachment_Name__c</fields>
+        <fields>Signed_Date__c</fields>
+        <fields>Signed_by__c</fields>
+        <fields>CREATED_DATE</fields>
+        <fields>CREATEDBY_USER</fields>
         <relatedList>Contract_Addendum__c.Order__c</relatedList>
     </relatedLists>
     <relatedLists>
@@ -316,16 +318,16 @@
         <sortOrder>Asc</sortOrder>
     </relatedLists>
     <relatedLists>
+        <excludeButtons>New</excludeButtons>
         <fields>NAME</fields>
+        <fields>Order_Number__c</fields>
         <fields>Account__c</fields>
-        <fields>Legal_Entity__c</fields>
         <fields>Shipping_Account__c</fields>
+        <fields>IMO__c</fields>
         <fields>Despatch_Date__c</fields>
         <fields>Service_Activation_Date__c</fields>
         <fields>Status__c</fields>
         <fields>Total__c</fields>
-        <fields>Partner__c</fields>
-        <fields>Billing_Master_Account__c</fields>
         <relatedList>Job__c.Master_Order__c</relatedList>
     </relatedLists>
     <relatedLists>
@@ -367,6 +369,8 @@
         <relatedList>RelatedEntityHistoryList</relatedList>
     </relatedLists>
     <relatedLists>
+        <excludeButtons>MassChangeOwner</excludeButtons>
+        <excludeButtons>New</excludeButtons>
         <fields>NAME</fields>
         <fields>Account__c</fields>
         <fields>Status__c</fields>
@@ -394,6 +398,8 @@
         <relatedList>RMA__c.Order__c</relatedList>
     </relatedLists>
     <relatedLists>
+        <excludeButtons>MassChangeOwner</excludeButtons>
+        <excludeButtons>New</excludeButtons>
         <fields>NAME</fields>
         <fields>dsfs__Sender__c</fields>
         <fields>dsfs__Subject__c</fields>

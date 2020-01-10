@@ -146,6 +146,7 @@ public with sharing class VTMig_AddOrderProduct {
                 newProdCharge.prodCharge = charge;
                 newProdCharge.prodId = selectedProductId;
                 newProdCharge.planId = selectedPlanId;
+                newProdCharge.Quantity = 1;
                 prodCharges.add(newProdCharge);
             }
             showCharges = true;

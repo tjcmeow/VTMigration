@@ -20,57 +20,7 @@
     <sections>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Id</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Owner</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>true</checkedByDefault>
-            <field>Name</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>CreatedDate</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>CreatedBy</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>LastModifiedDate</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>LastModifiedBy</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>LastActivityDate</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Alignment_Date_1__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Account__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Billing_Contact__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
@@ -80,152 +30,17 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Billing_Contact_Email__c</field>
+            <field>Alignment_Date_1__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Billing_Contact_Phone__c</field>
+            <field>Alignment_Date_2__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Shipping_Account__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>BillingCity__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>BillingCity_Shipping__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>BillingCountry__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>BillingCountry_Shipping__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>BillingPostalCode__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>BillingPostalCode_Shipping__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>BillingState__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>BillingState_Shipping__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>BillingStreet__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>BillingStreet_Shipping__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Candidate_Email_Address__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Candidate_First_Name__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Candidate_Last_Name__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Company_Cod_from_BMS__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Course_Authentication__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Course_Delivery_Method__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Current_Agreement_Date_BMS__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>CustAcctNo_BMS__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Customer_Purchase_Order_Number__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Date_of_Birth__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Date_Portfolio_Recieved__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Date_Portfolio_Sent_To_Assessor__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Despatch_Date__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Has_Assets__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Initial_Agreement_Date_BMS__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Invoice_Details__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Opportunity__c</field>
+            <field>Annual_Contract_Value_ACV__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
@@ -240,277 +55,97 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Discount_Code__c</field>
+            <field>Billing_Account__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Discount_Percent__c</field>
+            <field>Billing_and_Shipping_ACCOUNTS_the_same__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Exception_Log__c</field>
+            <field>Billing_and_Shipping_Address_the_same__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Master_Order__c</field>
+            <field>BillingCity__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Minimum_Next_Charge_Date_For_Product__c</field>
+            <field>Billing_Contact__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Order_Type__c</field>
+            <field>Billing_Contact_Email__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Partner__c</field>
+            <field>Billing_Contact_Phone__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Payment_Terms__c</field>
+            <field>BillingCountry__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Preferred_Billing_Day__c</field>
+            <field>Billing_Master_Account__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Recalculate__c</field>
+            <field>Billing_Master_Order__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Renew_to__c</field>
+            <field>BillingPostalCode__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Service_Activation_Date__c</field>
+            <field>BillingState__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Service_End_Date__c</field>
+            <field>BillingStreet__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Shipping_Contact__c</field>
+            <field>BMS_Year_1__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Start_Date__c</field>
+            <field>BMS_Year_2__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Status__c</field>
+            <field>BMS_Year_3__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Sub_total__c</field>
+            <field>BMS_Year_4__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Tax__c</field>
+            <field>BMS_Contract_Year__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Tax_Calculation_Status__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Tax_Engine__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Todays_MRR__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>SF_ID__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Todays_MRR_with_Tax__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Total__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Total_Contract_Value__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Total_Cost__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Total_Profit__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>TotalProfitPercent__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>VAT__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Legal_Entity__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Mid_Term_Order__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Name_of_Assessor__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Contracted_MRR__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Year_1_Net_Total__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Year_2_Net_Total__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Year_3_Net_Total__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Year_4_Net_Total__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Withholding_Tax_Percentage__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Wet_or_Dry_Cargo__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>VOD_Order__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>VMA_Legacy_Acct_Code__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>VAT_Roll_Up__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Special_Terms_Details__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Special_Terms__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Nationality__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Official_Termination_Given__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Order_ID_18_Char__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Order_Type_VT__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Platform_or_Vessel_detail__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Preferred_Addressee__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Product_Type__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Regional_Format__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Renewal_Order__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Scheduled_Date__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Second_Billing_Contact__c</field>
+            <field>BMS_Initial_Invoice_Date2__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
@@ -520,7 +155,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>BMS_Initial_Invoice_Date2__c</field>
+            <field>BMS_Invoiceevery__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
@@ -545,7 +180,77 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>BMS_VOD_Initial_Terms__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Candidate_Email_Address__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Candidate_First_Name__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Candidate_Last_Name__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Candidate_Number__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Company_Cod_from_BMS__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>Company_IMO__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Contracted_MRR__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Course_Authentication__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Course_Delivery_Method__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CreatedBy</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CreatedDate</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Current_Agreement_Date_BMS__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CustAcctNo_BMS__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Customer_Purchase_Order_Number__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
@@ -555,7 +260,42 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>Date_of_Birth__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Date_Portfolio_Recieved__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Date_Portfolio_Sent_To_Assessor__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Despatch_Date__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>Despatch_Date_Errors__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Discount_Code__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Discount_Percent__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Discount_Value__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
@@ -565,17 +305,62 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Master_Order_Special_Terms__c</field>
+            <field>Exception_Log__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Order_Number__c</field>
+            <field>Total__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Master_Order_Number__c</field>
+            <field>Has_Assets__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Initial_Agreement_Date_BMS__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Initial_Term__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Invoice_Details__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Is_Billing_Master_Order__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LastActivityDate</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LastModifiedBy</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LastModifiedDate</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Legal_Entity__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Master_Order__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
@@ -585,12 +370,182 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>Master_Order_Number__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Master_Order_Special_Terms__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Mid_Term_Order__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Minimum_Next_Charge_Date_For_Product__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Name_of_Assessor__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Nationality__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Net_Total__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Official_Termination_Given__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Opportunity__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Start_Date__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Id</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Order_ID_18_Char__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Name</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Order_Number__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Order_Type__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Order_Type_VT__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Override_VAT_Tax__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Owner</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Partner__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Payment_Terms__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Preferred_Addressee__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Preferred_Billing_Day__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Shipping_Contact__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Product_Type__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Recalculate__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Regional_Format__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Renewal_Order__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Renewal_Terms_Months__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Renew_to__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Scheduled_Date__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Second_Billing_Contact__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>Second_Contact_Email__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Shipping_Account_Fax__c</field>
+            <field>Service_End_Date__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Service_Activation_Date__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>SF_ID__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Shipping_Account__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
@@ -600,7 +555,17 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>Shipping_Account_Fax__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>Shipping_Account_Phone__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>BillingCity_Shipping__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
@@ -650,137 +615,62 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>BillingCountry_Shipping__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>Shipping_Country_from_Account_for_VAT__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Third_Billing_Contact__c</field>
+            <field>BillingPostalCode_Shipping__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>VAT_Percentage_Applied__c</field>
+            <field>BillingState_Shipping__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>VMA_CustAccountCode__c</field>
+            <field>BillingStreet_Shipping__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Year_1_VAT__c</field>
+            <field>Special_Terms__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Year_2_VAT__c</field>
+            <field>Special_Terms_Details__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Year_3_VAT__c</field>
+            <field>Status__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Year_4_VAT__c</field>
+            <field>Sub_total__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Alignment_Date_2__c</field>
+            <field>Tax__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Billing_and_Shipping_ACCOUNTS_the_same__c</field>
+            <field>Tax_Calculation_Status__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Billing_and_Shipping_Address_the_same__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>BMS_Contract_Year__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>BMS_Invoiceevery__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>BMS_VOD_Initial_Terms__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>BMS_Year_1__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>BMS_Year_2__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>BMS_Year_3__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>BMS_Year_4__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Candidate_Number__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Initial_Term__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Annual_Contract_Value_ACV__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Billing_Account__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Billing_Master_Account__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Billing_Master_Order__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Discount_Value__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Is_Billing_Master_Order__c</field>
-            <table>Job__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Net_Total__c</field>
+            <field>Tax_Engine__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
@@ -790,12 +680,122 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Override_VAT_Tax__c</field>
+            <field>Third_Billing_Contact__c</field>
             <table>Job__c</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Renewal_Terms_Months__c</field>
+            <field>Todays_MRR__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Todays_MRR_with_Tax__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Total_Contract_Value__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Total_Cost__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Total_Profit__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>TotalProfitPercent__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>VAT__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>VAT_Percentage_Applied__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>VAT_Roll_Up__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Platform_or_Vessel_detail__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>VMA_CustAccountCode__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>VMA_Legacy_Acct_Code__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>VOD_Order__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Wet_or_Dry_Cargo__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Withholding_Tax_Percentage__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Year_1_Net_Total__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Year_1_VAT__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Year_2_Net_Total__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Year_2_VAT__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Year_3_Net_Total__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Year_3_VAT__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Year_4_Net_Total__c</field>
+            <table>Job__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Year_4_VAT__c</field>
             <table>Job__c</table>
         </columns>
         <masterLabel>Orders</masterLabel>
@@ -803,17 +803,7 @@
     <sections>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Id</field>
-            <table>Job__c.Job_Product__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>true</checkedByDefault>
-            <field>Name</field>
-            <table>Job__c.Job_Product__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>CreatedDate</field>
+            <field>Bundle_SequenceNumber__c</field>
             <table>Job__c.Job_Product__r</table>
         </columns>
         <columns>
@@ -823,7 +813,12 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>LastModifiedDate</field>
+            <field>CreatedDate</field>
+            <table>Job__c.Job_Product__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Description__c</field>
             <table>Job__c.Job_Product__r</table>
         </columns>
         <columns>
@@ -833,12 +828,17 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Bundle_SequenceNumber__c</field>
+            <field>LastModifiedDate</field>
             <table>Job__c.Job_Product__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Description__c</field>
+            <field>Id</field>
+            <table>Job__c.Job_Product__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Name</field>
             <table>Job__c.Job_Product__r</table>
         </columns>
         <masterLabel>Order Products</masterLabel>
@@ -846,12 +846,7 @@
     <sections>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Id</field>
-            <table>Job__c.Job_Product__r.Job_Rate_Plan__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>true</checkedByDefault>
-            <field>Name</field>
+            <field>CreatedBy</field>
             <table>Job__c.Job_Product__r.Job_Rate_Plan__r</table>
         </columns>
         <columns>
@@ -861,12 +856,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>CreatedBy</field>
-            <table>Job__c.Job_Product__r.Job_Rate_Plan__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>LastModifiedDate</field>
+            <field>Description__c</field>
             <table>Job__c.Job_Product__r.Job_Rate_Plan__r</table>
         </columns>
         <columns>
@@ -876,7 +866,17 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Description__c</field>
+            <field>LastModifiedDate</field>
+            <table>Job__c.Job_Product__r.Job_Rate_Plan__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Id</field>
+            <table>Job__c.Job_Product__r.Job_Rate_Plan__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Name</field>
             <table>Job__c.Job_Product__r.Job_Rate_Plan__r</table>
         </columns>
         <columns>
@@ -887,36 +887,6 @@
         <masterLabel>Order Rate Plans</masterLabel>
     </sections>
     <sections>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Id</field>
-            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>true</checkedByDefault>
-            <field>Name</field>
-            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>CreatedDate</field>
-            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>CreatedBy</field>
-            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>LastModifiedDate</field>
-            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>LastModifiedBy</field>
-            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
-        </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Percentage_of_Other_Charges__c</field>
@@ -934,52 +904,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>AnnualRentYear2__c</field>
-            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>AnnualRentYear3__c</field>
-            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>BMS_Contract_Year__c</field>
-            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>AnnualRentYear4__c</field>
-            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Count_Of_Titles__c</field>
-            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Courier__c</field>
-            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Delivery__c</field>
-            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Hardware_Delivery__c</field>
-            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HK_VOD__c</field>
-            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Accounting_Code__c</field>
+            <field>Amount_To_Bill__c</field>
             <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
         </columns>
         <columns>
@@ -994,12 +919,57 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>Billing_Master_Order_Rate_Plan_Charge__c</field>
+            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>BMS_Contract_Year__c</field>
+            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>Bundle__c</field>
             <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>Charge_Adjusted_From__c</field>
+            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>Charge_Code__c</field>
+            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Name</field>
+            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Committed_Quantity__c</field>
+            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Count_Of_Titles__c</field>
+            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Courier__c</field>
+            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CreatedBy</field>
+            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CreatedDate</field>
             <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
         </columns>
         <columns>
@@ -1009,17 +979,12 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Cost__c</field>
-            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Cost_Price__c</field>
-            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Deferred_Revenue_Accounting_Code__c</field>
+            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Delivery__c</field>
             <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
         </columns>
         <columns>
@@ -1054,6 +1019,16 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>Hardware_Delivery__c</field>
+            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>HK_VOD__c</field>
+            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>Included_Quantity__c</field>
             <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
         </columns>
@@ -1070,6 +1045,26 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Is_Product_Editable__c</field>
+            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LastModifiedBy</field>
+            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LastModifiedDate</field>
+            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Last_Uplift_Date__c</field>
+            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Legacy_Orders__c</field>
             <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
         </columns>
         <columns>
@@ -1099,6 +1094,16 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>Next_Uplift_Date__c</field>
+            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Id</field>
+            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>Package__c</field>
             <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
         </columns>
@@ -1110,11 +1115,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Price_Type__c</field>
-            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Product_Charge_Category__c</field>
             <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
         </columns>
         <columns>
@@ -1134,7 +1134,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>RecreateUsageMediations__c</field>
+            <field>Quote_Charge_Id__c</field>
             <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
         </columns>
         <columns>
@@ -1144,12 +1144,37 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Revenue_Recognition_Start_Date__c</field>
+            <field>RecreateUsageMediations__c</field>
+            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>AnnualRentYear2__c</field>
+            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>AnnualRentYear3__c</field>
+            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>AnnualRentYear4__c</field>
+            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Accounting_Code__c</field>
             <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Revenue_Recognition_End_Date__c</field>
+            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Revenue_Recognition_Start_Date__c</field>
             <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
         </columns>
         <columns>
@@ -1174,12 +1199,22 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>Subscription_Product__c</field>
+            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>Subscription_Status__c</field>
             <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Tax__c</field>
+            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Product_Charge_Category__c</field>
             <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
         </columns>
         <columns>
@@ -1204,12 +1239,12 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Tax_Street__c</field>
+            <field>Tax_State__c</field>
             <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Tax_State__c</field>
+            <field>Tax_Street__c</field>
             <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
         </columns>
         <columns>
@@ -1219,7 +1254,22 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Unit_Of_Measurement__c</field>
+            <field>Title_Product__c</field>
+            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Cost__c</field>
+            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Transfer_Price__c</field>
+            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Cost_Price__c</field>
             <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
         </columns>
         <columns>
@@ -1229,12 +1279,27 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Uplift_Frequency__c</field>
+            <field>Unit_Price_1st_Year__c</field>
+            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Unit_Of_Measurement__c</field>
             <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Uplift__c</field>
+            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Uplift_Exception__c</field>
+            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Uplift_Frequency__c</field>
             <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
         </columns>
         <columns>
@@ -1279,67 +1344,22 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Last_Uplift_Date__c</field>
+            <field>Legacy_Master_Order_Id__c</field>
             <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Legacy_Orders__c</field>
+            <field>Legacy_Order_Id__c</field>
             <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Next_Uplift_Date__c</field>
+            <field>External_Id__c</field>
             <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Quote_Charge_Id__c</field>
-            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Subscription_Product__c</field>
-            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Title_Product__c</field>
-            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Transfer_Price__c</field>
-            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Unit_Price_1st_Year__c</field>
-            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Uplift_Exception__c</field>
-            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Amount_To_Bill__c</field>
-            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Billing_Master_Order_Rate_Plan_Charge__c</field>
-            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Charge_Adjusted_From__c</field>
-            <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Committed_Quantity__c</field>
+            <field>Legacy_Product_Id__c</field>
             <table>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r</table>
         </columns>
         <masterLabel>Order Rate Plan Charges</masterLabel>
