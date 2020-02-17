@@ -471,9 +471,19 @@
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
+                    <fullName>Account Review</fullName>
+                    <default>false</default>
+                    <label>Account Review</label>
+                </value>
+                <value>
                     <fullName>Courtesy</fullName>
                     <default>false</default>
                     <label>Courtesy</label>
+                </value>
+                <value>
+                    <fullName>Onboarding</fullName>
+                    <default>false</default>
+                    <label>Onboarding</label>
                 </value>
                 <value>
                     <fullName>Partner Review</fullName>
@@ -615,7 +625,15 @@
         <picklistValues>
             <picklist>Type__c</picklist>
             <values>
+                <fullName>Account Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Courtesy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Onboarding</fullName>
                 <default>false</default>
             </values>
             <values>

@@ -403,6 +403,186 @@
         <label>New Comment Case Fields</label>
     </fieldSets>
     <fieldSets>
+        <fullName>E2CP__New_Comment_Case_Summary_Fields</fullName>
+        <availableFields>
+            <field>AccountId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>BusinessHoursId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>CaseNumber</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>E2CP__Case_Thread_Id__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>ClosedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>ContactEmail</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>ContactFax</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>ContactId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>ContactMobile</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>ContactPhone</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>CreatedById</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>CreatedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Id</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>IsClosed</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>IsEscalated</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>E2CP__Knowledge_Base_URL__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LastModifiedById</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LastModifiedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LastReferencedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LastViewedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>MasterRecordId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Origin</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>OwnerId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>ParentId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Priority</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Reason</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Status</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SuppliedCompany</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SuppliedEmail</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SuppliedName</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SuppliedPhone</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SystemModstamp</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Type</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <description>New Comment Lightning Component</description>
+        <displayedFields>
+            <field>Subject</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Description</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>New Comment Case Summary Fields</label>
+    </fieldSets>
+    <fieldSets>
         <fullName>csmrgp__Case_Merge_Find</fullName>
         <availableFields>
             <field>CreatedById</field>
@@ -2809,6 +2989,25 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>1%2E Critical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2%2E High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3%2E Medium</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>4%2E Low</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Product_or_Service_Detail__c</picklist>
             <values>
                 <fullName>Activate VOD Unit</fullName>
@@ -3327,6 +3526,25 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
             </values>
             <values>
                 <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>1%2E Critical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2%2E High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3%2E Medium</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>4%2E Low</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -3865,6 +4083,25 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>1%2E Critical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2%2E High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3%2E Medium</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>4%2E Low</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Product_or_Service_Detail__c</picklist>
             <values>
                 <fullName>Activate VOD Unit</fullName>
@@ -4391,6 +4628,25 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>1%2E Critical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2%2E High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3%2E Medium</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>4%2E Low</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Product_or_Service_Detail__c</picklist>
             <values>
                 <fullName>Activate VOD Unit</fullName>
@@ -4913,6 +5169,25 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>1%2E Critical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2%2E High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3%2E Medium</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>4%2E Low</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Product_or_Service_Detail__c</picklist>
             <values>
                 <fullName>Activate VOD Unit</fullName>
@@ -5372,17 +5647,5 @@ srcUp(myURL);
         <page>csmrgp__CsMrgSelect</page>
         <protected>false</protected>
         <requireRowSelection>true</requireRowSelection>
-    </webLinks>
-    <webLinks>
-        <fullName>dsfs__Send_with_DocuSign</fullName>
-        <availability>online</availability>
-        <description>This button will initiate a DocuSign Envelope that is linked to the Case</description>
-        <displayType>button</displayType>
-        <height>600</height>
-        <linkType>page</linkType>
-        <masterLabel>Send with DocuSign</masterLabel>
-        <openType>noSidebar</openType>
-        <page>dsfs__CreateEnvelopeFromCase</page>
-        <protected>false</protected>
     </webLinks>
 </CustomObject>

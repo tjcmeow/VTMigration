@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
     <fieldUpdates>
+        <fullName>Add_Created_Date</fullName>
+        <field>Legacy_Created_Date__c</field>
+        <formula>CreatedDate</formula>
+        <name>Add Created Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Country_Field_Update</fullName>
+        <field>BillingCountry__c</field>
+        <formula>TEXT( Reporting_Country__c )</formula>
+        <name>Country Field Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Fill_In_Shipping_Country</fullName>
         <description>Enter shipping country for VAT</description>
         <field>BillingCountry_Shipping__c</field>
@@ -224,6 +242,16 @@
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
+        <fullName>Insert Created Date</fullName>
+        <actions>
+            <name>Add_Created_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>TRUE</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
         <fullName>KV Partner Order</fullName>
         <actions>
             <name>Update_Order_Partner_Text</name>
@@ -260,6 +288,16 @@
             <value>Child Order,Sale Order</value>
         </criteriaItems>
         <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Country Field</fullName>
+        <actions>
+            <name>Country_Field_Update</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>ISCHANGED( Reporting_Country__c )</formula>
+        <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
         <fullName>Update Order Address</fullName>

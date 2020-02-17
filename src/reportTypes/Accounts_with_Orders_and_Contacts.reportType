@@ -191,6 +191,11 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>Prospect_Type__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>Date_Invoiced__c</field>
             <table>Account</table>
         </columns>
@@ -1597,6 +1602,41 @@
             <field>Shipping_Account__c.Installation_Type__c</field>
             <table>Account.Job__r</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Master_Order__c.AccountId__c</field>
+            <table>Account.Job__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Master_Order__c.Legacy_Created_Date__c</field>
+            <table>Account.Job__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Master_Order__c.External_Id__c</field>
+            <table>Account.Job__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Master_Order__c.Master_Order_Account_ID__c</field>
+            <table>Account.Job__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Master_Order__c.Master_Order_Number__c</field>
+            <table>Account.Job__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Master_Order__c.Master_Order_Record_Id__c</field>
+            <table>Account.Job__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Master_Order__c.Status__c</field>
+            <table>Account.Job__r</table>
+        </columns>
         <masterLabel>Orders (Account)</masterLabel>
     </sections>
     <sections>
@@ -1653,6 +1693,16 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Bundle__c</field>
+            <table>Account.Job__r.Order_Rate_Plan_Charges__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Legacy_Master_Order_Id__c</field>
+            <table>Account.Job__r.Order_Rate_Plan_Charges__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Legacy_Order_Id__c</field>
             <table>Account.Job__r.Order_Rate_Plan_Charges__r</table>
         </columns>
         <columns>
@@ -2268,6 +2318,21 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Order__c</field>
+            <table>Account.Job__r.Order_Rate_Plan_Charges__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Billing_Master_Order_Rate_Plan_Charge__c.Id</field>
+            <table>Account.Job__r.Order_Rate_Plan_Charges__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Billing_Master_Order_Rate_Plan_Charge__c.Order_Rate_Plan_Charge_Reference__c</field>
+            <table>Account.Job__r.Order_Rate_Plan_Charges__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Billing_Master_Order_Rate_Plan_Charge__c.Order_Record_Type_Name__c</field>
             <table>Account.Job__r.Order_Rate_Plan_Charges__r</table>
         </columns>
         <masterLabel>Order Rate Plan Charges</masterLabel>

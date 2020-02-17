@@ -74,13 +74,6 @@
                 <elementReference>tb_Item_Number</elementReference>
             </value>
         </assignmentItems>
-        <assignmentItems>
-            <assignToReference>ProductSearchTerm</assignToReference>
-            <operator>Add</operator>
-            <value>
-                <stringValue>_US</stringValue>
-            </value>
-        </assignmentItems>
         <connector>
             <targetReference>Find_Item</targetReference>
         </connector>
@@ -89,7 +82,7 @@
         <name>KVHDefaultAssetAccountID</name>
         <dataType>String</dataType>
         <value>
-            <stringValue>00130000017uVZi</stringValue>
+            <stringValue>0010C000008yWq9QAE</stringValue>
         </value>
     </constants>
     <decisions>
@@ -348,7 +341,13 @@ Should end in _US</description>
         <showFooter>true</showFooter>
         <showHeader>true</showHeader>
     </screens>
-    <startElementReference>Lookup_Product</startElementReference>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Lookup_Product</targetReference>
+        </connector>
+    </start>
     <status>Active</status>
     <variables>
         <name>BrandNewAsset</name>

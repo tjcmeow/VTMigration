@@ -122,7 +122,7 @@
                 <field>Billing_Contact_Email__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
                 <field>BillingStreet__c</field>
             </layoutItems>
             <layoutItems>
@@ -135,11 +135,19 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
+                <field>BillingPostalCode__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
                 <field>BillingCountry__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>BillingPostalCode__c</field>
+                <field>Reporting_Country__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Country_ISO__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -209,11 +217,11 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>BillingCountry_Shipping__c</field>
+                <field>BillingPostalCode_Shipping__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>BillingPostalCode_Shipping__c</field>
+                <field>BillingCountry_Shipping__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
@@ -264,7 +272,7 @@
         <label>Invoice Details</label>
         <layoutColumns>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
                 <field>CurrencyL__c</field>
             </layoutItems>
             <layoutItems>
@@ -282,7 +290,7 @@
                 <field>Preferred_Addressee_VAT_Number__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
                 <field>Payment_Terms__c</field>
             </layoutItems>
             <layoutItems>
@@ -636,16 +644,16 @@
         <relatedList>RMA__c.Order__c</relatedList>
     </relatedLists>
     <relatedLists>
-        <fields>NAME</fields>
-        <fields>dsfs__Sender__c</fields>
-        <fields>dsfs__Subject__c</fields>
-        <fields>dsfs__Envelope_Status__c</fields>
-        <fields>dsfs__Hrs_Sent_to_Sign__c</fields>
-        <fields>dsfs__Sent_Date_Time__c</fields>
-        <relatedList>dsfs__DocuSign_Status__c.Order__c</relatedList>
+        <relatedList>RelatedEntityHistoryList</relatedList>
     </relatedLists>
     <relatedLists>
-        <relatedList>RelatedEntityHistoryList</relatedList>
+        <fields>NAME</fields>
+        <fields>Sender__c</fields>
+        <fields>Subject__c</fields>
+        <fields>Envelope_Status__c</fields>
+        <fields>Hrs_Sent_to_Sign__c</fields>
+        <fields>Sent_Date_Time__c</fields>
+        <relatedList>DocuSign_Status__c.Order__c</relatedList>
     </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>

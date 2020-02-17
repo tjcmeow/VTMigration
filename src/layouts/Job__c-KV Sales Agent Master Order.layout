@@ -111,7 +111,7 @@
                 <field>Preferred_Addressee__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
                 <field>BillingStreet__c</field>
             </layoutItems>
             <layoutItems>
@@ -127,8 +127,16 @@
                 <field>BillingPostalCode__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
                 <field>BillingCountry__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Reporting_Country__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Country_ISO__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -398,15 +406,13 @@
         <relatedList>RMA__c.Order__c</relatedList>
     </relatedLists>
     <relatedLists>
-        <excludeButtons>MassChangeOwner</excludeButtons>
-        <excludeButtons>New</excludeButtons>
         <fields>NAME</fields>
-        <fields>dsfs__Sender__c</fields>
-        <fields>dsfs__Subject__c</fields>
-        <fields>dsfs__Envelope_Status__c</fields>
-        <fields>dsfs__Hrs_Sent_to_Sign__c</fields>
-        <fields>dsfs__Sent_Date_Time__c</fields>
-        <relatedList>dsfs__DocuSign_Status__c.Order__c</relatedList>
+        <fields>Sender__c</fields>
+        <fields>Subject__c</fields>
+        <fields>Envelope_Status__c</fields>
+        <fields>Hrs_Sent_to_Sign__c</fields>
+        <fields>Sent_Date_Time__c</fields>
+        <relatedList>DocuSign_Status__c.Order__c</relatedList>
     </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>

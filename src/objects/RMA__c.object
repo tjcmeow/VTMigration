@@ -312,7 +312,7 @@
         <externalId>false</externalId>
         <label>Date Received</label>
         <required>false</required>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
     </fields>
@@ -941,7 +941,7 @@
         <relationshipLabel>RMAs</relationshipLabel>
         <relationshipName>RMAs</relationshipName>
         <required>false</required>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
@@ -1125,7 +1125,7 @@
         <inlineHelpText>Select the required reason for the RMA</inlineHelpText>
         <label>Reason for RMA</label>
         <required>false</required>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>

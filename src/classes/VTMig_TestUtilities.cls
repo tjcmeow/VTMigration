@@ -66,6 +66,12 @@ public without sharing class VTMig_TestUtilities {
         return newProduct;
     }
 
+    public static Product2 createStandardProduct(){
+        Product2 newProduct = new Product2();
+        newProduct.Name = 'New Product';
+        return newProduct;
+    }
+
     public static Product_Rate_Plan__c createRatePlan(Id productId){
         Product_Rate_Plan__c newProductRatePlan = new Product_Rate_Plan__c();
         newProductRatePlan.Name = 'New Product Rate Plan';

@@ -161,50 +161,6 @@
         </criteriaItems>
     </sharingCriteriaRules>
     <sharingOwnerRules>
-        <fullName>Queue_KV_Billing_Team</fullName>
-        <accessLevel>Edit</accessLevel>
-        <label>Queue: KV Billing Team</label>
-        <sharedTo>
-            <group>Videotel_Employees</group>
-        </sharedTo>
-        <sharedFrom>
-            <queue>Billing_Team</queue>
-        </sharedFrom>
-    </sharingOwnerRules>
-    <sharingOwnerRules>
-        <fullName>Queue_KV_DCU_Queue</fullName>
-        <accessLevel>Edit</accessLevel>
-        <label>Queue: KV DCU Queue</label>
-        <sharedTo>
-            <group>Videotel_Employees</group>
-        </sharedTo>
-        <sharedFrom>
-            <queue>KV_DCU_Queue</queue>
-        </sharedFrom>
-    </sharingOwnerRules>
-    <sharingOwnerRules>
-        <fullName>Queue_KV_Support_Queue</fullName>
-        <accessLevel>Edit</accessLevel>
-        <label>Queue: KV Support Queue</label>
-        <sharedTo>
-            <group>Videotel_Employees</group>
-        </sharedTo>
-        <sharedFrom>
-            <queue>KV_Support_Queue</queue>
-        </sharedFrom>
-    </sharingOwnerRules>
-    <sharingOwnerRules>
-        <fullName>Queue_VOD_Production_Team</fullName>
-        <accessLevel>Edit</accessLevel>
-        <label>Queue: VOD Production Team</label>
-        <sharedTo>
-            <group>Videotel_Employees</group>
-        </sharedTo>
-        <sharedFrom>
-            <queue>VOD_Production_Team</queue>
-        </sharedFrom>
-    </sharingOwnerRules>
-    <sharingOwnerRules>
         <fullName>Videotel_Employees</fullName>
         <accessLevel>Edit</accessLevel>
         <label>Videotel Employees</label>

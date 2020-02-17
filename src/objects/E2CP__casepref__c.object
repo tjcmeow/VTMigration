@@ -6,8 +6,9 @@
     <fields>
         <fullName>E2CP__prefcat__c</fullName>
         <deprecated>false</deprecated>
+        <description>Name of the grouping that this setting is associated with.</description>
         <externalId>false</externalId>
-        <label>prefcat</label>
+        <label>Category</label>
         <length>30</length>
         <required>false</required>
         <trackTrending>false</trackTrending>
@@ -17,8 +18,9 @@
     <fields>
         <fullName>E2CP__preflong__c</fullName>
         <deprecated>false</deprecated>
+        <description>A setting will assume the name specified in this field instead of the standard Name field when populated.</description>
         <externalId>false</externalId>
-        <label>preflong</label>
+        <label>Long Name</label>
         <length>255</length>
         <required>false</required>
         <trackTrending>false</trackTrending>
@@ -28,8 +30,9 @@
     <fields>
         <fullName>E2CP__prefval__c</fullName>
         <deprecated>false</deprecated>
+        <description>Value for this setting.</description>
         <externalId>false</externalId>
-        <label>prefval</label>
+        <label>Value</label>
         <length>255</length>
         <required>false</required>
         <trackTrending>false</trackTrending>

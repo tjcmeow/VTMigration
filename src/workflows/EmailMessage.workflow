@@ -91,7 +91,7 @@
             <name>New_Incoming_Email</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <formula>true</formula>
         <triggerType>onCreateOnly</triggerType>
     </rules>
