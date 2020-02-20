@@ -9,8 +9,9 @@ public without sharing class VTMig_TestUtilities {
         Account newAccount = new Account();
         newAccount.Name = 'New Account';
         newAccount.BillingCountry = 'United Kingdom';
-        newAccount.BillingStreet = '123 Test Lane';
-        newAccount.BillingCity = 'Some City';
+        newAccount.Reporting_Country__c = 'GB';
+        newAccount.New_Main_Street__c = '123 Test Lane';
+        newAccount.New_Main_City_Town__c = 'Some City';
         newAccount.RecordTypeId = customerRecordType;
         return newAccount;
     }
@@ -20,8 +21,9 @@ public without sharing class VTMig_TestUtilities {
         Account newAccount = new Account();
         newAccount.Name = 'New Account';
         newAccount.BillingCountry = 'United Kingdom';
-        newAccount.BillingStreet = '123 Test Lane';
-        newAccount.BillingCity = 'Some City';
+        newAccount.New_Main_Street__c = '123 Test Lane';
+        newAccount.New_Main_City_Town__c = 'Some City';
+        newAccount.Reporting_Country__c = 'GB';
         newAccount.RecordTypeId = prospectRecordType;
         return newAccount;
     }
@@ -30,6 +32,7 @@ public without sharing class VTMig_TestUtilities {
         Id partnerRecordType = Schema.SObjectType.Account.getRecordTypeInfosByName().get('KV Partner').getRecordTypeId();
         Account newPartner = new Account();
         newPartner.Name = 'New Partner';
+        newPartner.Reporting_Country__c = 'GB';
         newPartner.RecordTypeId = partnerRecordType;
         return newPartner;
     }

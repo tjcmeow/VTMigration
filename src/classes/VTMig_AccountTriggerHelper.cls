@@ -40,4 +40,23 @@ public without sharing class VTMig_AccountTriggerHelper {
 
     }
 
+    public static void beforeUpdateInsert(List<Account> newAccounts) {
+
+        Map<String, String> labelValue = new Map<String, String>();
+        Schema.DescribeFieldResult fieldResult = Account.Reporting_Country__c.getDescribe();
+        List<Schema.PicklistEntry> ple = fieldResult.getPicklistValues();
+        for( Schema.PicklistEntry pickListVal : ple){
+            labelValue.put(pickListVal.getValue(), pickListVal.getLabel());
+        }
+
+        for(Account newAccount : newAccounts) {
+            newAccount.BillingCountry = labelValue.get(newAccount.Reporting_Country__c);
+            newAccount.BillingState = newAccount.New_Main_State_County__c;
+            newAccount.BillingCity = newAccount.New_Main_City_Town__c;
+            newAccount.BillingPostalCode = newAccount.New_Main_Postcode__c;
+            newAccount.BillingStreet = newAccount.New_Main_Street__c;
+        }
+
+    }
+
 }

@@ -129,6 +129,7 @@ public with sharing class VTMig_CreateOrder {
                 update oppAccount;
             }*/
             Job__c order = configOrder();
+            System.debug(order);
             insert order;
             orderId = order.Id;
 

@@ -6,7 +6,21 @@ public without sharing class VTMig_OrderInvoiceITTriggerClass {
 
     public static Boolean dontRunAgain = true;
 
-    public static void beforeInsertUpdate(Map<Id,Job__c> newInvoiceJobs,Map<Id,Job__c> oldInvoiceJobs){
+    public static void beforeInsertUpdate(List<Job__c> theOrders) {
+
+        Map<String, String> labelValue = new Map<String, String>();
+        Schema.DescribeFieldResult fieldResult = Job__c.Reporting_Country__c.getDescribe();
+        List<Schema.PicklistEntry> ple = fieldResult.getPicklistValues();
+        for( Schema.PicklistEntry pickListVal : ple){
+            labelValue.put(pickListVal.getValue(), pickListVal.getLabel());
+        }
+
+        for(Job__c theOrder : theOrders) {
+            theOrder.BillingCountry__c = labelValue.get(theOrder.Reporting_Country__c);
+        }
+    }
+
+    public static void beforeUpdate(Map<Id,Job__c> newInvoiceJobs,Map<Id,Job__c> oldInvoiceJobs){
 
         List<Job__c> ordersToRecalc = new List<Job__c>();
         for(Job__c order : newInvoiceJobs.values()){

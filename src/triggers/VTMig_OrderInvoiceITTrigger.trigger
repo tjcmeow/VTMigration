@@ -8,8 +8,12 @@ trigger VTMig_OrderInvoiceITTrigger on Job__c (before update, before insert, aft
         VTMig_OrderInvoiceITTriggerClass.beforeDeleteCheckRecord(Trigger.oldMap);
     }
 
+    if(Trigger.isBefore && (Trigger.isUpdate || Trigger.isInsert)) {
+        VTMig_OrderInvoiceITTriggerClass.beforeInsertUpdate(Trigger.new);
+    }
+
     if(Trigger.isBefore && Trigger.isUpdate) {
-        VTMig_OrderInvoiceITTriggerClass.beforeInsertUpdate(Trigger.newMap,Trigger.oldMap);
+        VTMig_OrderInvoiceITTriggerClass.beforeUpdate(Trigger.newMap,Trigger.oldMap);
     }
 
     if(Trigger.isUpdate){
