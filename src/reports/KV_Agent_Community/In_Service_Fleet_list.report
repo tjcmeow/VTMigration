@@ -77,36 +77,42 @@
         <booleanFilter>(1 AND 2 AND 3 AND 4) AND ( 5 OR 6)</booleanFilter>
         <criteriaItems>
             <column>Job__c$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Job__c.Child_Order</value>
         </criteriaItems>
         <criteriaItems>
             <column>Job__c.Job_Product__r$Name</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>fees</value>
         </criteriaItems>
         <criteriaItems>
             <column>Job__c$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Ready for Admin Processing,Administration in Progress,Order Entry Complete,Ready for Fulfillment,In Fulfillment,Ready for Dispatch,In Service</value>
         </criteriaItems>
         <criteriaItems>
             <column>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Completed,Cancelled,Awaiting Customer Signature,Awaiting Return</value>
         </criteriaItems>
         <criteriaItems>
             <column>Job__c$Name</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>V Ships</value>
         </criteriaItems>
         <criteriaItems>
             <column>Job__c$Account__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>V Ships</value>

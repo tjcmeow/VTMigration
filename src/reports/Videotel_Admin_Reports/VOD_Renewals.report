@@ -12,24 +12,28 @@
     <filter>
         <criteriaItems>
             <column>Job__c$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Job__c.Child_Order</value>
         </criteriaItems>
         <criteriaItems>
             <column>Job__c$Order_Type_VT__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Rental</value>
         </criteriaItems>
         <criteriaItems>
             <column>Job__c.Job_Product__r.Job_Rate_Plan__r$Name</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>Freight</value>
         </criteriaItems>
         <criteriaItems>
             <column>Job__c.Job_Product__r$Name</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>VOD,NVOD,Rental Library,VPM</value>

@@ -27,6 +27,7 @@
     <filter>
         <criteriaItems>
             <column>Account.Job__r$Partner__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value></value>

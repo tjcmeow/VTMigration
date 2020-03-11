@@ -24,18 +24,21 @@
     <filter>
         <criteriaItems>
             <column>Job__c$Partner__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Nautical Training</value>
         </criteriaItems>
         <criteriaItems>
             <column>Job__c$Billing_Contact__c.Email</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>h.matsubara@ntsi.co.jp</value>
         </criteriaItems>
         <criteriaItems>
             <column>Job__c$Billing_Contact__c.Email_2__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>ntsi-tokyo2@ntsi.co.jp</value>

@@ -28,36 +28,42 @@
     <filter>
         <criteriaItems>
             <column>Account.Job__r.Order_Rate_Plan_Charges__r$Next_Charge_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Job__r.Order_Rate_Plan_Charges__r$Price_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>One Time</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Account.KV_Customers</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Job__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Job__c.Child_Order</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Job__r$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>In Service</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Job__r.Order_Rate_Plan_Charges__r$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Ready to Bill</value>

@@ -33,12 +33,14 @@
     <filter>
         <criteriaItems>
             <column>RMA__c.Reason_for_RMA__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Repair</value>
         </criteriaItems>
         <criteriaItems>
             <column>RMA__c.Date_Received__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

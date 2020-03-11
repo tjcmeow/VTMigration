@@ -34,12 +34,14 @@
     <filter>
         <criteriaItems>
             <column>Invoice__c.Invoice_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Posted</value>
         </criteriaItems>
         <criteriaItems>
             <column>Invoice__c.Payment_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>paid</value>

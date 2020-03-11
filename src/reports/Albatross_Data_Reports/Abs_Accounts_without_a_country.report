@@ -16,12 +16,14 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Account.KV_Customers,Account.KV_Partner,Account.KV_Prospect</value>
         </criteriaItems>
         <criteriaItems>
             <column>ADDRESS1_COUNTRY</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value></value>

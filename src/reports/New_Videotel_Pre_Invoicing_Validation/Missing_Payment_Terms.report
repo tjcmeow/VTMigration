@@ -24,6 +24,7 @@
     <filter>
         <criteriaItems>
             <column>Job__c.Payment_Terms__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value></value>

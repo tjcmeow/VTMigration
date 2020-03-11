@@ -31,24 +31,28 @@
     <filter>
         <criteriaItems>
             <column>Job__c$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Job__c.Child_Order</value>
         </criteriaItems>
         <criteriaItems>
             <column>Job__c$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Ready for Dispatch,In Service,Awaiting Return</value>
         </criteriaItems>
         <criteriaItems>
             <column>Job__c.Assets__r$Item_Description__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>batch</value>
         </criteriaItems>
         <criteriaItems>
             <column>Job__c$Product_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Full NVOD,G1 Flexi VOD,G1 Full VOD,G1 Midi VOD,G1 Mini VOD,G2 Flexi VOD,G2 Full VOD,G2 Midi VOD,G2 Mini VOD,Midi NVOD,Mini NVOD</value>

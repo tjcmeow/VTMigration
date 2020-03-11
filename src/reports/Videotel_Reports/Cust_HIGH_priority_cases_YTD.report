@@ -16,6 +16,7 @@
     <filter>
         <criteriaItems>
             <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>KVH Industries - Official Salesforce Account for ALL KVH Internal Contacts</value>

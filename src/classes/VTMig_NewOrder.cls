@@ -32,8 +32,14 @@ public with sharing class VTMig_NewOrder {
         if(order.Start_Date__c == null) {
             order.Start_Date__c = System.today();
         }
-        insert order;
-        return new PageReference('/'+order.Id);
+        try {
+            insert order;
+            return new PageReference('/'+order.Id);
+        } catch (Exception e) {
+            ApexPages.Message msg = new ApexPages.Message(ApexPages.Severity.Error, e.getMessage());
+            ApexPages.addMessage(msg);
+        }
+        return null;
     }
 
 }

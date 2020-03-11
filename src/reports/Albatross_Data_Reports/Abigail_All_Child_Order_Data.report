@@ -132,6 +132,7 @@
     <filter>
         <criteriaItems>
             <column>Account.Job__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Job__c.Child_Order</value>

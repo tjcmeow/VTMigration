@@ -44,42 +44,49 @@
         <booleanFilter>((5 AND 7 AND 6 AND (3 OR 4)) AND 1) AND 2</booleanFilter>
         <criteriaItems>
             <column>Account.Job__r$Payment_Terms__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Net 30,Net 45,Net 60,Due On Receipt,Letter of Credit</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Job__r$Despatch_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Job__r$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Cancelled</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Job__r.Order_Rate_Plan_Charges__r$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Cancelled</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Job__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Job__c.Sale_Order</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Job__r.Order_Rate_Plan_Charges__r$Charge_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Name</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>invoice,text</value>

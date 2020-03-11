@@ -124,12 +124,14 @@
     <filter>
         <criteriaItems>
             <column>Account.Job__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Job__c.Child_Order</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Job__r.Order_Rate_Plan_Charges__r$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Ready to Bill</value>

@@ -37,6 +37,7 @@
     <filter>
         <criteriaItems>
             <column>RMA__c.RMA_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Cancelled</value>

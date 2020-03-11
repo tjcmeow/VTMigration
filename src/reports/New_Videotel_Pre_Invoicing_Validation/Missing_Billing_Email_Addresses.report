@@ -33,18 +33,21 @@
     <filter>
         <criteriaItems>
             <column>Job__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>In Service</value>
         </criteriaItems>
         <criteriaItems>
             <column>Job__c.Billing_Contact_Email__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>FK_$Account.Invoice_Delivery_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Email,Email &amp; Print</value>

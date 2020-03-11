@@ -58,6 +58,7 @@
     <filter>
         <criteriaItems>
             <column>Job__c$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>New,Awaiting Customer Signature,Ready for Admin Processing,Administration in Progress,Order Entry Complete,Ready for Fulfillment,In Fulfillment,Ready for Dispatch</value>

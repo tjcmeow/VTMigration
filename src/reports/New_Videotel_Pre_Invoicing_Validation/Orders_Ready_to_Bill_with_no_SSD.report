@@ -15,12 +15,14 @@
     <filter>
         <criteriaItems>
             <column>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Ready to Bill</value>
         </criteriaItems>
         <criteriaItems>
             <column>Job__c$Service_Activation_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value></value>

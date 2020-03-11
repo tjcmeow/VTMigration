@@ -43,30 +43,35 @@
     <filter>
         <criteriaItems>
             <column>Account$Name</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notContain</operator>
             <value>Invoice,Test</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Job__r$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Cancelled</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Job__r.Order_Rate_Plan_Charges__r$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Cancelled</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Job__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Job__c.Sale_Order</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Job__r.Order_Rate_Plan_Charges__r$Charge_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Annual VOD Maintenance Freight</value>

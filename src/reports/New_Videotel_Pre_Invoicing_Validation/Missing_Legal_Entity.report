@@ -27,6 +27,7 @@
     <filter>
         <criteriaItems>
             <column>Job__c$Legal_Entity__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value></value>

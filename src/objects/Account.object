@@ -1614,34 +1614,40 @@ PRINT &amp; STAMP- Customer receives the invoice in the Post (by mail), BUT the 
     <fields>
         <fullName>New_Main_City_Town__c</fullName>
         <externalId>false</externalId>
-        <label>New Main City/Town</label>
+        <label>Main City/Town</label>
+        <length>40</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
-        <type>TextArea</type>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>New_Main_Postcode__c</fullName>
         <externalId>false</externalId>
-        <label>New Main Postcode</label>
+        <label>Main Postcode</label>
+        <length>20</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
-        <type>TextArea</type>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>New_Main_State_County__c</fullName>
         <externalId>false</externalId>
-        <label>New Main State/County</label>
+        <label>Main State/County</label>
+        <length>80</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
-        <type>TextArea</type>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>New_Main_Street__c</fullName>
         <externalId>false</externalId>
-        <label>New Main Street</label>
+        <label>Main Street</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -3729,10 +3735,11 @@ PRINT &amp; STAMP- Customer receives the invoice in the Post (by mail), BUT the 
         <fullName>Previous_Name_s__c</fullName>
         <externalId>false</externalId>
         <label>Previous Name(s)</label>
-        <required>false</required>
+        <length>131072</length>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
-        <type>TextArea</type>
+        <type>LongTextArea</type>
+        <visibleLines>4</visibleLines>
     </fields>
     <fields>
         <fullName>Product_Interest__c</fullName>
@@ -3994,7 +4001,7 @@ Account.Product_Interest_2__c</description>
     <fields>
         <fullName>Reporting_Country__c</fullName>
         <externalId>false</externalId>
-        <label>Reporting Country</label>
+        <label>Main Country</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -18375,6 +18382,17 @@ business/products</description>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <validationRules>
+        <fullName>Account_Name_must_be_less_than_60</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+OR(
+RecordType.DeveloperName = &quot;KV_Customers&quot;, 
+RecordType.DeveloperName = &quot;KV_Prospect&quot;), 
+LEN(Name) &gt; 60)</errorConditionFormula>
+        <errorDisplayField>Name</errorDisplayField>
+        <errorMessage>Account Name must be less than 60 characters</errorMessage>
+    </validationRules>
+    <validationRules>
         <fullName>Company_IMO_Number_7_digits</fullName>
         <active>true</active>
         <description>Verifies that the Company IMO number is 7 digits long</description>
@@ -18402,6 +18420,28 @@ RecordType.DeveloperName = &quot;KV_Customers&quot;,
 ISBLANK(BillingCountry)
 )</errorConditionFormula>
         <errorMessage>Country is Required</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Main_State_County_must_be_less_than_60</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+OR(
+RecordType.DeveloperName = &quot;KV_Customers&quot;, 
+RecordType.DeveloperName = &quot;KV_Prospect&quot;), 
+LEN(    New_Main_State_County__c   ) &gt; 60)</errorConditionFormula>
+        <errorDisplayField>New_Main_State_County__c</errorDisplayField>
+        <errorMessage>Main State/County must be less than 60 characters</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Main_Zip_Postal_C_must_be_less_than_60</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+OR(
+RecordType.DeveloperName = &quot;KV_Customers&quot;, 
+RecordType.DeveloperName = &quot;KV_Prospect&quot;), 
+LEN(  BillingPostalCode  ) &gt; 60)</errorConditionFormula>
+        <errorDisplayField>BillingPostalCode</errorDisplayField>
+        <errorMessage>Main Zip/Postal Code must be less than 60 characters</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>Platforms_cannot_have_children</fullName>

@@ -1,6 +1,6 @@
 /**
- * Created by triciaigoe on 2019-12-24.
- */
+* Created by triciaigoe on 2019-12-24.
+*/
 @IsTest
 public without sharing class VTMig_TestUtilities {
 
@@ -33,7 +33,7 @@ public without sharing class VTMig_TestUtilities {
         Account newPartner = new Account();
         newPartner.Name = 'New Partner';
         newPartner.Reporting_Country__c = 'GB';
-        newPartner.RecordTypeId = partnerRecordType;
+       newPartner.RecordTypeId = partnerRecordType;
         return newPartner;
     }
 

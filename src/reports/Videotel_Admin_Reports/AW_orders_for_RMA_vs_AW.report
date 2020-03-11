@@ -43,24 +43,28 @@
     <filter>
         <criteriaItems>
             <column>Job__c$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Awaiting Return</value>
         </criteriaItems>
         <criteriaItems>
             <column>Job__c$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Job__c.Child_Order</value>
         </criteriaItems>
         <criteriaItems>
             <column>Job__c$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Cancelled</value>
         </criteriaItems>
         <criteriaItems>
             <column>Job__c.Job_Product__r$Name</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>VOA (Videotel Online Assessment),ATR (Administration of Training Records),VOD Additional Titles &amp; Courses,Other Charges and Fees,Rental Library Additional Titles &amp; Courses,webFTA,Online Training,Task-based Competency</value>

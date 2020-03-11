@@ -32,48 +32,56 @@
         <booleanFilter>(1 AND 2 AND 3 AND ((4 AND 5) OR (6 AND 7))) AND 8</booleanFilter>
         <criteriaItems>
             <column>Account.Job__r$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>In Service</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Job__r.Order_Rate_Plan_Charges__r$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Ready to Bill</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Job__r.Order_Rate_Plan_Charges__r$Unit_Price__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Job__r.Order_Rate_Plan_Charges__r$Next_Charge_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Job__r.Order_Rate_Plan_Charges__r$Name</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>freight</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Job__r.Order_Rate_Plan_Charges__r$Charge_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Job__r.Order_Rate_Plan_Charges__r$Name</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>freight</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Job__r.Order_Rate_Plan_Charges__r$Charge_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value></value>

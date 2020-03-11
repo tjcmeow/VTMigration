@@ -9,5 +9,5 @@ trigger VTMig_AccountTrigger on Account (before delete, before update, before in
     } else if(Trigger.isBefore) {
         VTMig_AccountTriggerHelper.beforeUpdateInsert(Trigger.new);
     }
-
+    
 }

@@ -37,12 +37,14 @@
     <filter>
         <criteriaItems>
             <column>Job__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Ready for Admin Processing,Administration in Progress,Ready for Fulfillment,Ready for Dispatch,On boarding in progress</value>
         </criteriaItems>
         <criteriaItems>
             <column>CHILD_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>VPM,VOD</value>

@@ -88,18 +88,21 @@
     <filter>
         <criteriaItems>
             <column>Job__c$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>In Service,Awaiting Return</value>
         </criteriaItems>
         <criteriaItems>
             <column>Job__c.Job_Product__r.Job_Rate_Plan__r.Job_Rate_Plan_Charge__r$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Ready to Bill</value>
         </criteriaItems>
         <criteriaItems>
             <column>Job__c$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Job__c.Child_Order</value>

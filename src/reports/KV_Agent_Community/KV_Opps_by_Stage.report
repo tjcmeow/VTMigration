@@ -80,12 +80,14 @@
     <filter>
         <criteriaItems>
             <column>Account.Sales_Office__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>KV UK,KV ASIA</value>
         </criteriaItems>
         <criteriaItems>
             <column>STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Closed PO/Verbal,Closed/Won,Closed Lost,Deferred,Closed - no deal</value>

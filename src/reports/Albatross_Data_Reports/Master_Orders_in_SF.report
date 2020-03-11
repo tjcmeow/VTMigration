@@ -157,6 +157,7 @@
     <filter>
         <criteriaItems>
             <column>FK_$Job__c.Order_Number__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>31114</value>
