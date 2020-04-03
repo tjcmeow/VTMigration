@@ -14318,6 +14318,13 @@ NOT( Account__r.RecordType.DeveloperName = &quot;KV_Customers&quot; )
         <errorMessage>Master Orders that have a status of Admin in Progress or Order Entry Complete must have an account type of  KV Customer</errorMessage>
     </validationRules>
     <validationRules>
+        <fullName>Main_Street_greater_60_characters_Master</fullName>
+        <active>true</active>
+        <errorConditionFormula>LEN(BillingStreet__c) &gt; 60</errorConditionFormula>
+        <errorDisplayField>BillingStreet__c</errorDisplayField>
+        <errorMessage>Main Street must be less than 60 characters.</errorMessage>
+    </validationRules>
+    <validationRules>
         <fullName>Master_order_has_a_Status_of_Order_Entry</fullName>
         <active>true</active>
         <description>Master order with a Status of Order Entry Complete cannot be Edited by KV Sales User</description>
@@ -14364,7 +14371,7 @@ ISPICKVAL( Status__c , &quot;Awaiting Return&quot;),
 ISPICKVAL( Status__c , &quot;Cancelled&quot;)),
 
 NOT(RecordType.DeveloperName = &quot;Sale_Order&quot;), 
-NOT(ISPICKVAL(Product_Type__c , &quot;Online Training&quot;)),  
+ 
 ISBLANK( Shipping_Account__c ))</errorConditionFormula>
         <errorMessage>Please complete the Shipping Account before updating the Order Status to either In Service, Awaiting Return or Cancelled.</errorMessage>
     </validationRules>

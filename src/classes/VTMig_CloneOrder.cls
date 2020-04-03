@@ -22,7 +22,7 @@ public with sharing class VTMig_CloneOrder {
         orderId = ApexPages.currentPage().getParameters().get('Id');
         isRender = false;
         order = [
-                SELECT Id, Account__c, CurrencyL__c, Alignment_Date_1__c, Alignment_Date_2__c, Annual_Contract_Value_ACV__c, Auto_Renew__c, Auto_Renewal_Complete__c,
+                SELECT Id, Account__c, Reporting_Country__c, CurrencyL__c, Alignment_Date_1__c, Alignment_Date_2__c, Annual_Contract_Value_ACV__c, Auto_Renew__c, Auto_Renewal_Complete__c,
                         Billing_Account__c, Billing_and_Shipping_ACCOUNTS_the_same__c, Billing_and_Shipping_Address_the_same__c, BillingCity__c,
                         Billing_Contact__c, BillingCountry__c, Billing_Master_Account__c, Billing_Master_Order__c, BillingPostalCode__c, BillingState__c,
                         BillingStreet__c, BMS_Year_1__c, BMS_Year_2__c, BMS_Year_3__c, BMS_Year_4__c, BMS_Contract_Year__c, BMS_Initial_Invoice_Date__c,
@@ -192,6 +192,7 @@ public with sharing class VTMig_CloneOrder {
             newOrder.RecordTypeId = recordTypeId;
             newOrder.CurrencyL__c = order.CurrencyL__c;
             newOrder.Start_Date__c = System.today();
+            newOrder.BillingCountry__c = order.Reporting_Country__c;
             if(!isMasterOrder) {
                 newOrder.Master_Order__c = orderId;
                 newOrder.Service_Activation_Date__c = null;
